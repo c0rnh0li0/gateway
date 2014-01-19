@@ -1,0 +1,70 @@
+/* css reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin: 0;
+}
+
+ol,ol li {
+    list-style: decimal inside;
+}
+
+blockquote,q {
+    quotes: none;
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+    content: '';
+    content: none;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th {
+    text-align: left;
+}
+
+input,textarea {
+    font-family: arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+/* IE stretched buttons fix */
+input.submit {
+    width: 0;
+    overflow: visible;
+}
+
+input.submit[class] {
+    width: auto;
+}
+
+textarea[placeholder] {
+    color: #999;
+}

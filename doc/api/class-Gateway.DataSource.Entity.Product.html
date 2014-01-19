@@ -1,0 +1,2433 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class Gateway\DataSource\Entity\Product</title>
+
+	<script type="text/javascript" src="resources/combined.js?1479682893"></script>
+	<script type="text/javascript" src="elementlist.js?1567848024"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-AdminModule.html">AdminModule<span></span></a>
+						<ul>
+				<li><a href="namespace-AdminModule.Component.html">Component</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-ApiModule.html">ApiModule</a>
+						</li>
+				<li class="active"><a href="namespace-Gateway.html">Gateway<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-Gateway.DataSource.html">DataSource<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-Gateway.DataSource.Entity.html">Entity<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.Entity.Category.html">Category</a>
+						</li>
+				<li><a href="namespace-Gateway.DataSource.Entity.Customer.html">Customer</a>
+						</li>
+				<li><a href="namespace-Gateway.DataSource.Entity.Order.html">Order<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.Entity.Order.Payment.html">Payment</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.DataSource.Entity.Product.html">Product</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Gateway.Handler.html">Handler<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.html">Erp<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.html">Etron<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.XML.html">XML<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.XML.Reader.html">Reader<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.XML.Reader.Products.html">Products</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.Xml.Writer.html">Writer</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-Gateway.Handler.Shop.html">Shop<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.html">Magento<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.JSON.html">JSON<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.JSON.Reader.html">Reader</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.Magmi.html">Magmi<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.Magmi.Writer.html">Writer</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.SOAP.html">SOAP<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.SOAP.Writer.html">Writer<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.SOAP.Writer.Products.html">Products</a>
+						</li>
+							</ul></li></ul></li></ul></li></ul></li></ul></li>
+				<li><a href="namespace-Gateway.Mapping.html">Mapping<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Mapping.Rule.html">Rule</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Logger.html">Logger</a>
+						</li>
+				<li><a href="namespace-Nette.html">Nette<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Application.html">Application<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Application.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Application.Responses.html">Responses</a>
+						</li>
+				<li><a href="namespace-Nette.Application.Routers.html">Routers</a>
+						</li>
+				<li><a href="namespace-Nette.Application.UI.html">UI</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Caching.html">Caching<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Caching.Storages.html">Storages</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.ComponentModel.html">ComponentModel</a>
+						</li>
+				<li><a href="namespace-Nette.Config.html">Config<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Config.Adapters.html">Adapters</a>
+						</li>
+				<li><a href="namespace-Nette.Config.Extensions.html">Extensions</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Database.html">Database<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Database.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Drivers.html">Drivers</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Reflection.html">Reflection</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Table.html">Table</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.DI.html">DI<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.DI.Diagnostics.html">Diagnostics</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Forms.html">Forms<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Forms.Controls.html">Controls</a>
+						</li>
+				<li><a href="namespace-Nette.Forms.Rendering.html">Rendering</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Http.html">Http</a>
+						</li>
+				<li><a href="namespace-Nette.Iterators.html">Iterators</a>
+						</li>
+				<li><a href="namespace-Nette.Latte.html">Latte<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Latte.Macros.html">Macros</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Loaders.html">Loaders</a>
+						</li>
+				<li><a href="namespace-Nette.Localization.html">Localization</a>
+						</li>
+				<li><a href="namespace-Nette.Mail.html">Mail</a>
+						</li>
+				<li><a href="namespace-Nette.Reflection.html">Reflection</a>
+						</li>
+				<li><a href="namespace-Nette.Security.html">Security<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Security.Diagnostics.html">Diagnostics</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Templating.html">Templating</a>
+						</li>
+				<li><a href="namespace-Nette.Utils.html">Utils<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Utils.PhpGenerator.html">PhpGenerator</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-NetteModule.html">NetteModule</a>
+						</li>
+				<li><a href="namespace-NetteTranslator.html">NetteTranslator</a>
+						</li>
+				<li><a href="namespace-NiftyGrid.html">NiftyGrid</a>
+						</li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li><a href="namespace-Yourface.html">Yourface<span></span></a>
+						<ul>
+				<li><a href="namespace-Yourface.Application.html">Application<span></span></a>
+						<ul>
+				<li><a href="namespace-Yourface.Application.Responses.html">Responses</a>
+						</li>
+				<li><a href="namespace-Yourface.Application.Routers.html">Routers</a>
+						</li>
+				<li><a href="namespace-Yourface.Application.UI.html">UI</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Yourface.Iterators.html">Iterators</a>
+						</li>
+				<li><a href="namespace-Yourface.NiftyGrid.html">NiftyGrid</a>
+						</li>
+				<li><a href="namespace-Yourface.Utils.html">Utils</a>
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Gateway.DataSource.Entity.Address.html">Address</a></li>
+				<li><a href="class-Gateway.DataSource.Entity.Cart.html">Cart</a></li>
+				<li><a href="class-Gateway.DataSource.Entity.Category.html">Category</a></li>
+				<li><a href="class-Gateway.DataSource.Entity.Customer.html">Customer</a></li>
+				<li><a href="class-Gateway.DataSource.Entity.Localized.html">Localized</a></li>
+				<li><a href="class-Gateway.DataSource.Entity.Order.html">Order</a></li>
+				<li><a href="class-Gateway.DataSource.Entity.Person.html">Person</a></li>
+				<li class="active"><a href="class-Gateway.DataSource.Entity.Product.html">Product</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-Gateway.DataSource.Entity.ICustomer.html">ICustomer</a></li>
+				<li><a href="class-Gateway.DataSource.Entity.IProduct.html">IProduct</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Gateway.DataSource.Entity.html" title="Summary of Gateway\DataSource\Entity"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Product</h1>
+
+
+	<div class="description">
+	
+<p>Base product entity.</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-Nette.Object.html"><span>Nette\Object</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+			<a href="class-Gateway.DataSource.Entity.html"><span>Gateway\DataSource\Entity</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:60px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>Gateway\DataSource\Entity\Product</span></b>			
+			 implements 
+				<a href="class-Gateway.DataSource.Entity.IProduct.html"><span>Gateway\DataSource\Entity\IProduct</span></a>, 
+			
+				<a href="class-Gateway.DataSource.IEntity.html"><span>Gateway\DataSource\IEntity</span></a>
+			
+			
+		</dd>
+	</dl>
+
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-Gateway.DataSource.Entity.Product.Bundle.html">Gateway\DataSource\Entity\Product\Bundle</a>, 
+			<a href="class-Gateway.DataSource.Entity.Product.Configurable.html">Gateway\DataSource\Entity\Product\Configurable</a>, 
+			<a href="class-Gateway.DataSource.Entity.Product.Simple.html">Gateway\DataSource\Entity\Product\Simple</a>
+	</div>
+
+
+
+
+
+
+	<div class="info">
+		<b>Abstract</b><br />
+		
+		<b>Namespace:</b> <a href="namespace-Gateway.html">Gateway</a>\<a href="namespace-Gateway.DataSource.html">DataSource</a>\<a href="namespace-Gateway.DataSource.Entity.html">Entity</a><br />
+		
+
+				<b>Author:</b>
+				Lukas Bruha<br />
+		<b>Located at</b> <a href="source-class-Gateway.DataSource.Entity.Product.html#7-571" title="Go to source code">libs/Gateway/DataSource/Entity/Product.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="getId" id="_getId">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getId">#</a>
+		<code><a href="source-class-Gateway.DataSource.Entity.Product.html#141-148" title="Go to source code">getId</a>( )</code>
+
+		<div class="description short">
+			
+<p>Return property.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return property.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setId" id="_setId">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setId">#</a>
+		<code><a href="source-class-Gateway.DataSource.Entity.Product.html#150-157" title="Go to source code">setId</a>( <span>integer <var>$id</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets property.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets property.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$id</var></dt>
+					<dd><code>integer</code></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getParent" id="_getParent">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Gateway.DataSource.Entity.Product.html">Gateway\DataSource\Entity\Product</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getParent">#</a>
+		<code><a href="source-class-Gateway.DataSource.Entity.Product.html#159-166" title="Go to source code">getParent</a>( )</code>
+
+		<div class="description short">
+			
+<p>Return property.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return property.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Gateway.DataSource.Entity.Product.html">Gateway\DataSource\Entity\Product</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setParent" id="_setParent">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setParent">#</a>
+		<code><a href="source-class-Gateway.DataSource.Entity.Product.html#168-175" title="Go to source code">setParent</a>( <span><code><a href="class-Gateway.DataSource.Entity.Product.html">Gateway\DataSource\Entity\Product</a></code> <var>$parent</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets property.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets property.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$parent</var></dt>
+					<dd><code><code><a href="class-Gateway.DataSource.Entity.Product.html">Gateway\DataSource\Entity\Product</a></code></code></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getSku" id="_getSku">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getSku">#</a>
+		<code><a href="source-class-Gateway.DataSource.Entity.Product.html#177-184" title="Go to source code">getSku</a>( )</code>
+
+		<div class="description short">
+			
+<p>Return property.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return property.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setSku" id="_setSku">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setSku">#</a>
+		<code><a href="source-class-Gateway.DataSource.Entity.Product.html#186-193" title="Go to source code">setSku</a>( <span>string <var>$sku</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets property.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets property.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sku</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getType" id="_getType">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getType">#</a>
+		<code><a href="source-class-Gateway.DataSource.Entity.Product.html#195-202" title="Go to source code">getType</a>( )</code>
+
+		<div class="description short">
+			
+<p>Return property.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return property.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getPrice" id="_getPrice">
+
+		<td class="attributes"><code>
+			 public 
+			float
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getPrice">#</a>
+		<code><a href="source-class-Gateway.DataSource.Entity.Product.html#204-211" title="Go to source code">getPrice</a>( )</code>
+
+		<div class="description short">
+			
+<p>Return property.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return property.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>float</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setPrice" id="_setPrice">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setPrice">#</a>
+		<code><a href="source-class-Gateway.DataSource.Entity.Product.html#213-220" title="Go to source code">setPrice</a>( <span>float <var>$price</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets property.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets property.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$price</var></dt>
+					<dd><code>float</code></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getQuantity" id="_getQuantity">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getQuantity">#</a>
+		<code><a href="source-class-Gateway.DataSource.Entity.Product.html#222-229" title="Go to source code">getQuantity</a>( )</code>
+
+		<div class="description short">
+			
+<p>Return property.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return property.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setQuantity" id="_setQuantity">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setQuantity">#</a>
+		<code><a href="source-class-Gateway.DataSource.Entity.Product.html#231-238" title="Go to source code">setQuantity</a>( <span>integer <var>$quantity</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets property.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets property.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$quantity</var></dt>
+					<dd><code>integer</code></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getIsVisible" id="_getIsVisible">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getIsVisible">#</a>
+		<code><a href="source-class-Gateway.DataSource.Entity.Product.html#240-247" title="Go to source code">getIsVisible</a>( )</code>
+
+		<div class="description short">
+			
+<p>Return property.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return property.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setIsVisible" id="_setIsVisible">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setIsVisible">#</a>
+		<code><a href="source-class-Gateway.DataSource.Entity.Product.html#249-260" title="Go to source code">setIsVisible</a>( <span>boolean <var>$isVisible</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets property.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets property.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$isVisible</var></dt>
+					<dd><code>boolean</code></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getWeight" id="_getWeight">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getWeight">#</a>
+		<code><a href="source-class-Gateway.DataSource.Entity.Product.html#262-269" title="Go to source code">getWeight</a>( )</code>
+
+		<div class="description short">
+			
+<p>Return property.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return property.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setWeight" id="_setWeight">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setWeight">#</a>
+		<code><a href="source-class-Gateway.DataSource.Entity.Product.html#271-278" title="Go to source code">setWeight</a>( <span>string <var>$weight</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets property.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets property.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$weight</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getIsEnabled" id="_getIsEnabled">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getIsEnabled">#</a>
+		<code><a href="source-class-Gateway.DataSource.Entity.Product.html#280-287" title="Go to source code">getIsEnabled</a>( )</code>
+
+		<div class="description short">
+			
+<p>Return property.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return property.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setIsEnabled" id="_setIsEnabled">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setIsEnabled">#</a>
+		<code><a href="source-class-Gateway.DataSource.Entity.Product.html#289-296" title="Go to source code">setIsEnabled</a>( <span>boolean <var>$isEnabled</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets property.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets property.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$isEnabled</var></dt>
+					<dd><code>boolean</code></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getManufacturer" id="_getManufacturer">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getManufacturer">#</a>
+		<code><a href="source-class-Gateway.DataSource.Entity.Product.html#298-305" title="Go to source code">getManufacturer</a>( )</code>
+
+		<div class="description short">
+			
+<p>Return property.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return property.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setManufacturer" id="_setManufacturer">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setManufacturer">#</a>
+		<code><a href="source-class-Gateway.DataSource.Entity.Product.html#307-314" title="Go to source code">setManufacturer</a>( <span>string <var>$manufacturer</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets property.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets property.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$manufacturer</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getImages" id="_getImages">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getImages">#</a>
+		<code><a href="source-class-Gateway.DataSource.Entity.Product.html#316-323" title="Go to source code">getImages</a>( )</code>
+
+		<div class="description short">
+			
+<p>Return property.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return property.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasImages" id="_hasImages">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasImages">#</a>
+		<code><a href="source-class-Gateway.DataSource.Entity.Product.html#325-332" title="Go to source code">hasImages</a>( )</code>
+
+		<div class="description short">
+			
+<p>Checks if product has any image.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Checks if product has any image.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addImage" id="_addImage">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addImage">#</a>
+		<code><a href="source-class-Gateway.DataSource.Entity.Product.html#334-364" title="Go to source code">addImage</a>( <span>mixed <var>$image</var></span>, <span>mixed <var>$type</var> = <code><a href="class-Gateway.DataSource.Entity.Product.IImage.html#TYPE_GALLERY">Gateway\DataSource\Entity\Product\IImage::<b>TYPE_GALLERY</b></a></code></span> )</code>
+
+		<div class="description short">
+			
+<p>Adds image.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Adds image.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$image</var></dt>
+					<dd><code>mixed</code><br>$image $param string $type</dd>
+					<dt><var>$type</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addDescription" id="_addDescription">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addDescription">#</a>
+		<code><a href="source-class-Gateway.DataSource.Entity.Product.html#366-373" title="Go to source code">addDescription</a>( <span><code><a href="class-Gateway.DataSource.Entity.Product.Description.html">Gateway\DataSource\Entity\Product\Description</a></code> <var>$description</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Adds description.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Adds description.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$description</var></dt>
+					<dd><code><code><a href="class-Gateway.DataSource.Entity.Product.Description.html">Gateway\DataSource\Entity\Product\Description</a></code></code></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDescriptions" id="_getDescriptions">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDescriptions">#</a>
+		<code><a href="source-class-Gateway.DataSource.Entity.Product.html#375-382" title="Go to source code">getDescriptions</a>( )</code>
+
+		<div class="description short">
+			
+<p>Return property.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return property.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDescription" id="_getDescription">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDescription">#</a>
+		<code><a href="source-class-Gateway.DataSource.Entity.Product.html#384-395" title="Go to source code">getDescription</a>( <span>mixed <var>$lang</var> = <code><a href="class-Gateway.DataSource.Entity.Localized.html#NOT_LOCALIZED">Gateway\DataSource\Entity\Localized::<b>NOT_LOCALIZED</b></a></code></span> )</code>
+
+		<div class="description short">
+			
+<p>Return property.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return property.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasDescription" id="_hasDescription">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasDescription">#</a>
+		<code><a href="source-class-Gateway.DataSource.Entity.Product.html#397-414" title="Go to source code">hasDescription</a>( <span>mixed <var>$lang</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Return property.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return property.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDescriptions" id="_setDescriptions">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDescriptions">#</a>
+		<code><a href="source-class-Gateway.DataSource.Entity.Product.html#416-423" title="Go to source code">setDescriptions</a>( <span>array <var>$descriptions</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets descriptions.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets descriptions.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$descriptions</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getCategories" id="_getCategories">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getCategories">#</a>
+		<code><a href="source-class-Gateway.DataSource.Entity.Product.html#425-446" title="Go to source code">getCategories</a>( <span>string <var>$lang</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Return property or localized subproperty.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return property or localized subproperty.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$lang</var></dt>
+					<dd><code>string</code><br>$lang</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setCategories" id="_setCategories">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setCategories">#</a>
+		<code><a href="source-class-Gateway.DataSource.Entity.Product.html#448-455" title="Go to source code">setCategories</a>( <span>array <var>$categories</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets categories</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets categories</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$categories</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addCategory" id="_addCategory">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addCategory">#</a>
+		<code><a href="source-class-Gateway.DataSource.Entity.Product.html#457-466" title="Go to source code">addCategory</a>( <span><code><a href="class-Gateway.DataSource.Entity.Product.Category.html">Gateway\DataSource\Entity\Product\Category</a></code> <var>$category</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Adds attribute.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Adds attribute.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$category</var></dt>
+					<dd><code><code><a href="class-Gateway.DataSource.Entity.Product.Category.html">Gateway\DataSource\Entity\Product\Category</a></code></code></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAttributes" id="_getAttributes">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAttributes">#</a>
+		<code><a href="source-class-Gateway.DataSource.Entity.Product.html#468-484" title="Go to source code">getAttributes</a>( <span>string <var>$lang</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Return property or localized subproperty.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return property or localized subproperty.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$lang</var></dt>
+					<dd><code>string</code><br>$lang</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addAttribute" id="_addAttribute">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addAttribute">#</a>
+		<code><a href="source-class-Gateway.DataSource.Entity.Product.html#486-493" title="Go to source code">addAttribute</a>( <span><code><a href="class-Gateway.DataSource.Entity.Product.Attribute.html">Gateway\DataSource\Entity\Product\Attribute</a></code> <var>$attribute</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Adds attribute.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Adds attribute.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$attribute</var></dt>
+					<dd><code><code><a href="class-Gateway.DataSource.Entity.Product.Attribute.html">Gateway\DataSource\Entity\Product\Attribute</a></code></code></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTax" id="_getTax">
+
+		<td class="attributes"><code>
+			 public 
+			float
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTax">#</a>
+		<code><a href="source-class-Gateway.DataSource.Entity.Product.html#495-502" title="Go to source code">getTax</a>( )</code>
+
+		<div class="description short">
+			
+<p>Return property.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return property.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>float</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setTax" id="_setTax">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setTax">#</a>
+		<code><a href="source-class-Gateway.DataSource.Entity.Product.html#504-511" title="Go to source code">setTax</a>( <span>float <var>$tax</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets property.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets property.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$tax</var></dt>
+					<dd><code>float</code></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDiscount" id="_getDiscount">
+
+		<td class="attributes"><code>
+			 public 
+			float
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDiscount">#</a>
+		<code><a href="source-class-Gateway.DataSource.Entity.Product.html#513-520" title="Go to source code">getDiscount</a>( )</code>
+
+		<div class="description short">
+			
+<p>Return property.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return property.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>float</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDiscount" id="_setDiscount">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDiscount">#</a>
+		<code><a href="source-class-Gateway.DataSource.Entity.Product.html#522-529" title="Go to source code">setDiscount</a>( <span>float <var>$discount</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets property.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets property.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$discount</var></dt>
+					<dd><code>float</code></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isPriceInclTax" id="_isPriceInclTax">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isPriceInclTax">#</a>
+		<code><a href="source-class-Gateway.DataSource.Entity.Product.html#531-538" title="Go to source code">isPriceInclTax</a>( )</code>
+
+		<div class="description short">
+			
+<p>Return property.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return property.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setIsPriceInclTax" id="_setIsPriceInclTax">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setIsPriceInclTax">#</a>
+		<code><a href="source-class-Gateway.DataSource.Entity.Product.html#540-547" title="Go to source code">setIsPriceInclTax</a>( <span>boolean <var>$priceInclTax</var> = <span class="php-keyword1">true</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets property.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets property.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$priceInclTax</var></dt>
+					<dd><code>boolean</code></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getFinalPrice" id="_getFinalPrice">
+
+		<td class="attributes"><code>
+			 public 
+			float
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFinalPrice">#</a>
+		<code><a href="source-class-Gateway.DataSource.Entity.Product.html#549-556" title="Go to source code">getFinalPrice</a>( )</code>
+
+		<div class="description short">
+			
+<p>Return property.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return property.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>float</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setFinalPrice" id="_setFinalPrice">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setFinalPrice">#</a>
+		<code><a href="source-class-Gateway.DataSource.Entity.Product.html#558-560" title="Go to source code">setFinalPrice</a>( <span>mixed <var>$finalPrice</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getKey" id="_getKey">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getKey">#</a>
+		<code><a href="source-class-Gateway.DataSource.Entity.Product.html#562-569" title="Go to source code">getKey</a>( )</code>
+
+		<div class="description short">
+			
+<p>Unique key used in DataSource.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Unique key used in DataSource.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Gateway.DataSource.IEntity.html#_getKey">Gateway\DataSource\IEntity::getKey()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Gateway.DataSource.Entity.html#methods">Gateway\DataSource\Entity</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Gateway.DataSource.Entity.html#_addSpecialProperty">addSpecialProperty()</a>, 
+			<a href="class-Gateway.DataSource.Entity.html#_getSpecialProperties">getSpecialProperties()</a>, 
+			<a href="class-Gateway.DataSource.Entity.html#_getSpecialProperty">getSpecialProperty()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Nette.Object.html#methods">Nette\Object</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Nette.Object.html#___call">__call()</a>, 
+			<a href="class-Nette.Object.html#___callStatic">__callStatic()</a>, 
+			<a href="class-Nette.Object.html#___get">__get()</a>, 
+			<a href="class-Nette.Object.html#___isset">__isset()</a>, 
+			<a href="class-Nette.Object.html#___set">__set()</a>, 
+			<a href="class-Nette.Object.html#___unset">__unset()</a>, 
+			<a href="class-Nette.Object.html#_extensionMethod">extensionMethod()</a>, 
+			<a href="class-Nette.Object.html#_getReflection">getReflection()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+	<table class="summary inherited">
+	<caption>Constants inherited from <a href="class-Gateway.DataSource.Entity.IProduct.html#constants">Gateway\DataSource\Entity\IProduct</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Gateway.DataSource.Entity.IProduct.html#TYPE_BUNDLE"><b>TYPE_BUNDLE</b></a>, 
+			<a href="class-Gateway.DataSource.Entity.IProduct.html#TYPE_CONFIGURABLE"><b>TYPE_CONFIGURABLE</b></a>, 
+			<a href="class-Gateway.DataSource.Entity.IProduct.html#TYPE_SIMPLE"><b>TYPE_SIMPLE</b></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="id" id="$id">
+		<td class="attributes"><code>
+			protected  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Gateway.DataSource.Entity.Product.html#14-19" title="Go to source code"><var>$id</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$id" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>ID.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>ID.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="parent" id="$parent">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-Gateway.DataSource.Entity.Product.html">Gateway\DataSource\Entity\Product</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Gateway.DataSource.Entity.Product.html#21-26" title="Go to source code"><var>$parent</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">null</span></code></td>
+		<td class="description"><div>
+			<a href="#$parent" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Parent product.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Parent product.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="sku" id="$sku">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Gateway.DataSource.Entity.Product.html#28-33" title="Go to source code"><var>$sku</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$sku" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Product unique SKU.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Product unique SKU.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="type" id="$type">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Gateway.DataSource.Entity.Product.html#35-40" title="Go to source code"><var>$type</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">null</span></code></td>
+		<td class="description"><div>
+			<a href="#$type" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Type of product.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Type of product.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="price" id="$price">
+		<td class="attributes"><code>
+			protected  
+			float
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Gateway.DataSource.Entity.Product.html#42-47" title="Go to source code"><var>$price</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$price" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Price.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Price.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="isPriceInclTax" id="$isPriceInclTax">
+		<td class="attributes"><code>
+			protected  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Gateway.DataSource.Entity.Product.html#49-54" title="Go to source code"><var>$isPriceInclTax</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">true</span></code></td>
+		<td class="description"><div>
+			<a href="#$isPriceInclTax" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Does price include tax?</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Does price include tax?</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="tax" id="$tax">
+		<td class="attributes"><code>
+			protected  
+			float
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Gateway.DataSource.Entity.Product.html#56-61" title="Go to source code"><var>$tax</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$tax" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Tax.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Tax.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="discount" id="$discount">
+		<td class="attributes"><code>
+			protected  
+			float
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Gateway.DataSource.Entity.Product.html#63-68" title="Go to source code"><var>$discount</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$discount" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Discount.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Discount.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="quantity" id="$quantity">
+		<td class="attributes"><code>
+			protected  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Gateway.DataSource.Entity.Product.html#70-75" title="Go to source code"><var>$quantity</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$quantity" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Quantity.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Quantity.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="isVisible" id="$isVisible">
+		<td class="attributes"><code>
+			protected  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Gateway.DataSource.Entity.Product.html#77-82" title="Go to source code"><var>$isVisible</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$isVisible" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Visibility.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Visibility.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="weight" id="$weight">
+		<td class="attributes"><code>
+			protected  
+			float
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Gateway.DataSource.Entity.Product.html#84-89" title="Go to source code"><var>$weight</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$weight" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Weight.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Weight.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="isEnabled" id="$isEnabled">
+		<td class="attributes"><code>
+			protected  
+			true
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Gateway.DataSource.Entity.Product.html#91-96" title="Go to source code"><var>$isEnabled</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$isEnabled" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Is enabled?</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Is enabled?</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="manufacturer" id="$manufacturer">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Gateway.DataSource.Entity.Product.html#98-103" title="Go to source code"><var>$manufacturer</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$manufacturer" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Manufacturer.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Manufacturer.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="images" id="$images">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Gateway.DataSource.Entity.Product.html#105-110" title="Go to source code"><var>$images</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$images" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Product images.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Product images.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="descriptions" id="$descriptions">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Gateway.DataSource.Entity.Product.html#112-117" title="Go to source code"><var>$descriptions</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$descriptions" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Localized descriptions.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Localized descriptions.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="categories" id="$categories">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Gateway.DataSource.Entity.Product.html#119-124" title="Go to source code"><var>$categories</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$categories" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Localized categories.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Localized categories.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="attributes" id="$attributes">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Gateway.DataSource.Entity.Product.html#126-131" title="Go to source code"><var>$attributes</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$attributes" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Localized attributes.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Localized attributes.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="finalPrice" id="$finalPrice">
+		<td class="attributes"><code>
+			protected  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Gateway.DataSource.Entity.Product.html#139" title="Go to source code"><var>$finalPrice</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">null</span></code></td>
+		<td class="description"><div>
+			<a href="#$finalPrice" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-Gateway.DataSource.Entity.html#properties">Gateway\DataSource\Entity</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Gateway.DataSource.Entity.html#$specialProperties"><var>$specialProperties</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+	<table class="summary inherited">
+	<caption>Magic properties inherited from <a href="class-Nette.Object.html#properties">Nette\Object</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Nette.Object.html#m$reflection"><var>$reflection</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+{extends '../@layout_simple.latte'}
+
+{block #pageTitle}
+    <h2>Schedule report</h2>
+{/block}
+
+{block #textContent}
+    <div class="box" id="schedule-report">
+        <dl>
+            <dt>Schedule ID:</dt>
+            <dd>{$report->id}</dd>
+            <dt>Connection:</dt>
+            <dd>{$report->name}</dd>
+            <dt>Inserted at:</dt>
+            <dd>{$report->inserted_at}</dd>
+            <dt>Executed at:</dt>
+            <dd>{$report->executed_at}</dd>
+            <dt>Completed at:</dt>
+            <dd>{=$report->finished_at ? $report->finished_at : 'running'}</dd>
+            <dt>Processed in:</dt>
+            <dd>{=$report->finished_at ? $processLength : 0}</dd>
+            <dt>Input source:</dt>
+            <dd><a n:href="source, $report->gw_schedule_id">view source</a></dd>
+        </dl>
+        
+        <div class="clear"></div>
+    </div>
+
+    <div class="box">
+        <h3>Complete log</h3>
+        
+        {if !$logFile} 
+            <p class="error">Log file was not found in {$report->log}.</p>
+        {else}
+            <pre>{$logFile}</pre>
+        {/if}
+    </div>
+{/block}

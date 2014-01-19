@@ -1,0 +1,2443 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class Nette\Forms\Controls\BaseControl</title>
+
+	<script type="text/javascript" src="resources/combined.js?1479682893"></script>
+	<script type="text/javascript" src="elementlist.js?1567848024"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-AdminModule.html">AdminModule<span></span></a>
+						<ul>
+				<li><a href="namespace-AdminModule.Component.html">Component</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-ApiModule.html">ApiModule</a>
+						</li>
+				<li><a href="namespace-Gateway.html">Gateway<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.html">DataSource<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.Entity.html">Entity<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.Entity.Category.html">Category</a>
+						</li>
+				<li><a href="namespace-Gateway.DataSource.Entity.Customer.html">Customer</a>
+						</li>
+				<li><a href="namespace-Gateway.DataSource.Entity.Order.html">Order<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.Entity.Order.Payment.html">Payment</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.DataSource.Entity.Product.html">Product</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Gateway.Handler.html">Handler<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.html">Erp<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.html">Etron<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.XML.html">XML<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.XML.Reader.html">Reader<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.XML.Reader.Products.html">Products</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.Xml.Writer.html">Writer</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-Gateway.Handler.Shop.html">Shop<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.html">Magento<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.JSON.html">JSON<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.JSON.Reader.html">Reader</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.Magmi.html">Magmi<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.Magmi.Writer.html">Writer</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.SOAP.html">SOAP<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.SOAP.Writer.html">Writer<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.SOAP.Writer.Products.html">Products</a>
+						</li>
+							</ul></li></ul></li></ul></li></ul></li></ul></li>
+				<li><a href="namespace-Gateway.Mapping.html">Mapping<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Mapping.Rule.html">Rule</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Logger.html">Logger</a>
+						</li>
+				<li class="active"><a href="namespace-Nette.html">Nette<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Application.html">Application<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Application.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Application.Responses.html">Responses</a>
+						</li>
+				<li><a href="namespace-Nette.Application.Routers.html">Routers</a>
+						</li>
+				<li><a href="namespace-Nette.Application.UI.html">UI</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Caching.html">Caching<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Caching.Storages.html">Storages</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.ComponentModel.html">ComponentModel</a>
+						</li>
+				<li><a href="namespace-Nette.Config.html">Config<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Config.Adapters.html">Adapters</a>
+						</li>
+				<li><a href="namespace-Nette.Config.Extensions.html">Extensions</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Database.html">Database<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Database.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Drivers.html">Drivers</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Reflection.html">Reflection</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Table.html">Table</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.DI.html">DI<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.DI.Diagnostics.html">Diagnostics</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li class="active"><a href="namespace-Nette.Forms.html">Forms<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-Nette.Forms.Controls.html">Controls</a>
+						</li>
+				<li><a href="namespace-Nette.Forms.Rendering.html">Rendering</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Http.html">Http</a>
+						</li>
+				<li><a href="namespace-Nette.Iterators.html">Iterators</a>
+						</li>
+				<li><a href="namespace-Nette.Latte.html">Latte<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Latte.Macros.html">Macros</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Loaders.html">Loaders</a>
+						</li>
+				<li><a href="namespace-Nette.Localization.html">Localization</a>
+						</li>
+				<li><a href="namespace-Nette.Mail.html">Mail</a>
+						</li>
+				<li><a href="namespace-Nette.Reflection.html">Reflection</a>
+						</li>
+				<li><a href="namespace-Nette.Security.html">Security<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Security.Diagnostics.html">Diagnostics</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Templating.html">Templating</a>
+						</li>
+				<li><a href="namespace-Nette.Utils.html">Utils<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Utils.PhpGenerator.html">PhpGenerator</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-NetteModule.html">NetteModule</a>
+						</li>
+				<li><a href="namespace-NetteTranslator.html">NetteTranslator</a>
+						</li>
+				<li><a href="namespace-NiftyGrid.html">NiftyGrid</a>
+						</li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li><a href="namespace-Yourface.html">Yourface<span></span></a>
+						<ul>
+				<li><a href="namespace-Yourface.Application.html">Application<span></span></a>
+						<ul>
+				<li><a href="namespace-Yourface.Application.Responses.html">Responses</a>
+						</li>
+				<li><a href="namespace-Yourface.Application.Routers.html">Routers</a>
+						</li>
+				<li><a href="namespace-Yourface.Application.UI.html">UI</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Yourface.Iterators.html">Iterators</a>
+						</li>
+				<li><a href="namespace-Yourface.NiftyGrid.html">NiftyGrid</a>
+						</li>
+				<li><a href="namespace-Yourface.Utils.html">Utils</a>
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-Nette.Forms.Controls.BaseControl.html">BaseControl</a></li>
+				<li><a href="class-Nette.Forms.Controls.Button.html">Button</a></li>
+				<li><a href="class-Nette.Forms.Controls.Checkbox.html">Checkbox</a></li>
+				<li><a href="class-Nette.Forms.Controls.HiddenField.html">HiddenField</a></li>
+				<li><a href="class-Nette.Forms.Controls.ImageButton.html">ImageButton</a></li>
+				<li><a href="class-Nette.Forms.Controls.MultiSelectBox.html">MultiSelectBox</a></li>
+				<li><a href="class-Nette.Forms.Controls.RadioList.html">RadioList</a></li>
+				<li><a href="class-Nette.Forms.Controls.SelectBox.html">SelectBox</a></li>
+				<li><a href="class-Nette.Forms.Controls.SubmitButton.html">SubmitButton</a></li>
+				<li><a href="class-Nette.Forms.Controls.TextArea.html">TextArea</a></li>
+				<li><a href="class-Nette.Forms.Controls.TextBase.html">TextBase</a></li>
+				<li><a href="class-Nette.Forms.Controls.TextInput.html">TextInput</a></li>
+				<li><a href="class-Nette.Forms.Controls.UploadControl.html">UploadControl</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Nette.Forms.Controls.html" title="Summary of Nette\Forms\Controls"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class BaseControl</h1>
+
+
+	<div class="description">
+	
+<p>Base class that implements the basic functionality common to form
+controls.</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-Nette.Object.html"><span>Nette\Object</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+			<a href="class-Nette.ComponentModel.Component.html"><span>Nette\ComponentModel\Component</span></a>
+			
+			 implements 
+				<a href="class-Nette.ComponentModel.IComponent.html"><span>Nette\ComponentModel\IComponent</span></a>
+			
+			
+		</dd>
+		<dd style="padding-left:60px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>Nette\Forms\Controls\BaseControl</span></b>			
+			 implements 
+				<a href="class-Nette.Forms.IControl.html"><span>Nette\Forms\IControl</span></a>
+			
+			
+		</dd>
+	</dl>
+
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-Nette.Forms.Controls.Button.html">Nette\Forms\Controls\Button</a>, 
+			<a href="class-Nette.Forms.Controls.Checkbox.html">Nette\Forms\Controls\Checkbox</a>, 
+			<a href="class-Nette.Forms.Controls.HiddenField.html">Nette\Forms\Controls\HiddenField</a>, 
+			<a href="class-Nette.Forms.Controls.RadioList.html">Nette\Forms\Controls\RadioList</a>, 
+			<a href="class-Nette.Forms.Controls.SelectBox.html">Nette\Forms\Controls\SelectBox</a>, 
+			<a href="class-Nette.Forms.Controls.TextBase.html">Nette\Forms\Controls\TextBase</a>, 
+			<a href="class-Nette.Forms.Controls.UploadControl.html">Nette\Forms\Controls\UploadControl</a>
+	</div>
+
+	<div>
+		<h4>Indirect known subclasses</h4>
+			<a href="class-Nette.Forms.Controls.ImageButton.html">Nette\Forms\Controls\ImageButton</a>, 
+			<a href="class-Nette.Forms.Controls.MultiSelectBox.html">Nette\Forms\Controls\MultiSelectBox</a>, 
+			<a href="class-Nette.Forms.Controls.SubmitButton.html">Nette\Forms\Controls\SubmitButton</a>, 
+			<a href="class-Nette.Forms.Controls.TextArea.html">Nette\Forms\Controls\TextArea</a>, 
+			<a href="class-Nette.Forms.Controls.TextInput.html">Nette\Forms\Controls\TextInput</a>
+	</div>
+
+
+
+
+
+	<div class="info">
+		<b>Abstract</b><br />
+		
+		<b>Namespace:</b> <a href="namespace-Nette.html">Nette</a>\<a href="namespace-Nette.Forms.html">Forms</a>\<a href="namespace-Nette.Forms.Controls.html">Controls</a><br />
+		
+
+				<b>Author:</b>
+				David Grudl<br />
+		<b>Located at</b> <a href="source-class-Nette.Forms.Controls.BaseControl.html#22-666" title="Go to source code">libs/Nette/Forms/Controls/BaseControl.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Nette.Forms.Controls.BaseControl.html#84-95" title="Go to source code">__construct</a>( <span>string <var>$caption</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$caption</var></dt>
+					<dd><code>string</code><br>caption</dd>
+				</dl></div>
+
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-Nette.ComponentModel.Component.html#___construct">Nette\ComponentModel\Component::__construct()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="attached" id="_attached">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_attached">#</a>
+		<code><a href="source-class-Nette.Forms.Controls.BaseControl.html#99-110" title="Go to source code">attached</a>( <span>Nette\Forms\IComponent <var>$form</var></span> )</code>
+
+		<div class="description short">
+			
+<p>This method will be called when the component becomes attached to Form.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>This method will be called when the component becomes attached to Form.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$form</var></dt>
+					<dd><code>Nette\Forms\IComponent</code></dd>
+				</dl></div>
+
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-Nette.ComponentModel.Component.html#_attached">Nette\ComponentModel\Component::attached()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getForm" id="_getForm">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Nette.Forms.Form.html">Nette\Forms\Form</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getForm">#</a>
+		<code><a href="source-class-Nette.Forms.Controls.BaseControl.html#114-122" title="Go to source code">getForm</a>( <span>boolean <var>$need</var> = <span class="php-keyword1">TRUE</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Returns form.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns form.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$need</var></dt>
+					<dd><code>boolean</code><br>throw exception if form doesn't exist?</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Nette.Forms.Form.html">Nette\Forms\Form</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getHtmlName" id="_getHtmlName">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getHtmlName">#</a>
+		<code><a href="source-class-Nette.Forms.Controls.BaseControl.html#126-143" title="Go to source code">getHtmlName</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns HTML name of control.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns HTML name of control.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setHtmlId" id="_setHtmlId">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Nette.Forms.Controls.BaseControl.html">Nette\Forms\Controls\BaseControl</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setHtmlId">#</a>
+		<code><a href="source-class-Nette.Forms.Controls.BaseControl.html#147-156" title="Go to source code">setHtmlId</a>( <span>string <var>$id</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Changes control's HTML id.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Changes control's HTML id.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$id</var></dt>
+					<dd><code>string</code><br>new ID, or FALSE or NULL</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Nette.Forms.Controls.BaseControl.html">Nette\Forms\Controls\BaseControl</a></code></code><br>provides a fluent interface<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getHtmlId" id="_getHtmlId">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getHtmlId">#</a>
+		<code><a href="source-class-Nette.Forms.Controls.BaseControl.html#160-173" title="Go to source code">getHtmlId</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns control's HTML id.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns control's HTML id.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setAttribute" id="_setAttribute">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Nette.Forms.Controls.BaseControl.html">Nette\Forms\Controls\BaseControl</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setAttribute">#</a>
+		<code><a href="source-class-Nette.Forms.Controls.BaseControl.html#177-187" title="Go to source code">setAttribute</a>( <span>string <var>$name</var></span>, <span>mixed <var>$value</var> = <span class="php-keyword1">TRUE</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Changes control's HTML attribute.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Changes control's HTML attribute.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code><br>name</dd>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code><br>value</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Nette.Forms.Controls.BaseControl.html">Nette\Forms\Controls\BaseControl</a></code></code><br>provides a fluent interface<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setOption" id="_setOption">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Nette.Forms.Controls.BaseControl.html">Nette\Forms\Controls\BaseControl</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setOption">#</a>
+		<code><a href="source-class-Nette.Forms.Controls.BaseControl.html#191-209" title="Go to source code">setOption</a>( <span>string <var>$key</var></span>, <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets user-specific option. Options recognized by DefaultFormRenderer</p>
+
+<ul>
+	<li>'description' - textual or Html object description</li>
+</ul>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets user-specific option. Options recognized by DefaultFormRenderer</p>
+
+<ul>
+	<li>'description' - textual or Html object description</li>
+</ul>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd><code>string</code><br>key</dd>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code><br>value</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Nette.Forms.Controls.BaseControl.html">Nette\Forms\Controls\BaseControl</a></code></code><br>provides a fluent interface<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getOption" id="_getOption">
+
+		<td class="attributes"><code>
+			final public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getOption">#</a>
+		<code><a href="source-class-Nette.Forms.Controls.BaseControl.html#213-222" title="Go to source code">getOption</a>( <span>string <var>$key</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Returns user-specific option.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns user-specific option.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$key</var></dt>
+					<dd><code>string</code><br>key</dd>
+					<dt><var>$default</var></dt>
+					<dd><code>mixed</code><br>default value</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getOptions" id="_getOptions">
+
+		<td class="attributes"><code>
+			final public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getOptions">#</a>
+		<code><a href="source-class-Nette.Forms.Controls.BaseControl.html#226-233" title="Go to source code">getOptions</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns user-specific options.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns user-specific options.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setTranslator" id="_setTranslator">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Nette.Forms.Controls.BaseControl.html">Nette\Forms\Controls\BaseControl</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setTranslator">#</a>
+		<code><a href="source-class-Nette.Forms.Controls.BaseControl.html#241-250" title="Go to source code">setTranslator</a>( <span><code><a href="class-Nette.Localization.ITranslator.html">Nette\Localization\ITranslator</a></code> <var>$translator</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets translate adapter.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets translate adapter.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$translator</var></dt>
+					<dd><code><code><a href="class-Nette.Localization.ITranslator.html">Nette\Localization\ITranslator</a></code></code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Nette.Forms.Controls.BaseControl.html">Nette\Forms\Controls\BaseControl</a></code></code><br>provides a fluent interface<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTranslator" id="_getTranslator">
+
+		<td class="attributes"><code>
+			final public 
+			<code><a href="class-Nette.Localization.ITranslator.html">Nette\Localization\ITranslator</a></code>|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTranslator">#</a>
+		<code><a href="source-class-Nette.Forms.Controls.BaseControl.html#254-264" title="Go to source code">getTranslator</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns translate adapter.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns translate adapter.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Nette.Localization.ITranslator.html">Nette\Localization\ITranslator</a></code>|null</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="translate" id="_translate">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_translate">#</a>
+		<code><a href="source-class-Nette.Forms.Controls.BaseControl.html#268-278" title="Go to source code">translate</a>( <span>string <var>$s</var></span>, <span>integer <var>$count</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Returns translated string.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns translated string.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$s</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$count</var></dt>
+					<dd><code>integer</code><br>plural count</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Nette.Forms.IControl.html#_translate">Nette\Forms\IControl::translate()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setValue" id="_setValue">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Nette.Forms.Controls.BaseControl.html">Nette\Forms\Controls\BaseControl</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setValue">#</a>
+		<code><a href="source-class-Nette.Forms.Controls.BaseControl.html#286-295" title="Go to source code">setValue</a>( <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets control's value.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets control's value.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Nette.Forms.Controls.BaseControl.html">Nette\Forms\Controls\BaseControl</a></code></code><br>provides a fluent interface<br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Nette.Forms.IControl.html#_setValue">Nette\Forms\IControl::setValue()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getValue" id="_getValue">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getValue">#</a>
+		<code><a href="source-class-Nette.Forms.Controls.BaseControl.html#299-306" title="Go to source code">getValue</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns control's value.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns control's value.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Nette.Forms.IControl.html#_getValue">Nette\Forms\IControl::getValue()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isFilled" id="_isFilled">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isFilled">#</a>
+		<code><a href="source-class-Nette.Forms.Controls.BaseControl.html#310-317" title="Go to source code">isFilled</a>( )</code>
+
+		<div class="description short">
+			
+<p>Is control filled?</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Is control filled?</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDefaultValue" id="_setDefaultValue">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Nette.Forms.Controls.BaseControl.html">Nette\Forms\Controls\BaseControl</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDefaultValue">#</a>
+		<code><a href="source-class-Nette.Forms.Controls.BaseControl.html#321-333" title="Go to source code">setDefaultValue</a>( <span>mixed <var>$value</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets control's default value.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets control's default value.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Nette.Forms.Controls.BaseControl.html">Nette\Forms\Controls\BaseControl</a></code></code><br>provides a fluent interface<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="loadHttpData" id="_loadHttpData">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_loadHttpData">#</a>
+		<code><a href="source-class-Nette.Forms.Controls.BaseControl.html#337-345" title="Go to source code">loadHttpData</a>( )</code>
+
+		<div class="description short">
+			
+<p>Loads HTTP data.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Loads HTTP data.</p>
+
+
+
+
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Nette.Forms.IControl.html#_loadHttpData">Nette\Forms\IControl::loadHttpData()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDisabled" id="_setDisabled">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Nette.Forms.Controls.BaseControl.html">Nette\Forms\Controls\BaseControl</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDisabled">#</a>
+		<code><a href="source-class-Nette.Forms.Controls.BaseControl.html#349-358" title="Go to source code">setDisabled</a>( <span>boolean <var>$value</var> = <span class="php-keyword1">TRUE</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Disables or enables control.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Disables or enables control.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$value</var></dt>
+					<dd><code>boolean</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Nette.Forms.Controls.BaseControl.html">Nette\Forms\Controls\BaseControl</a></code></code><br>provides a fluent interface<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isDisabled" id="_isDisabled">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isDisabled">#</a>
+		<code><a href="source-class-Nette.Forms.Controls.BaseControl.html#362-369" title="Go to source code">isDisabled</a>( )</code>
+
+		<div class="description short">
+			
+<p>Is control disabled?</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Is control disabled?</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Nette.Forms.IControl.html#_isDisabled">Nette\Forms\IControl::isDisabled()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getControl" id="_getControl">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Nette.Utils.Html.html">Nette\Utils\Html</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getControl">#</a>
+		<code><a href="source-class-Nette.Forms.Controls.BaseControl.html#377-398" title="Go to source code">getControl</a>( )</code>
+
+		<div class="description short">
+			
+<p>Generates control's HTML element.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Generates control's HTML element.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Nette.Utils.Html.html">Nette\Utils\Html</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getLabel" id="_getLabel">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Nette.Utils.Html.html">Nette\Utils\Html</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getLabel">#</a>
+		<code><a href="source-class-Nette.Forms.Controls.BaseControl.html#402-421" title="Go to source code">getLabel</a>( <span>string <var>$caption</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Generates label's HTML element.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Generates label's HTML element.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$caption</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Nette.Utils.Html.html">Nette\Utils\Html</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getControlPrototype" id="_getControlPrototype">
+
+		<td class="attributes"><code>
+			final public 
+			<code><a href="class-Nette.Utils.Html.html">Nette\Utils\Html</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getControlPrototype">#</a>
+		<code><a href="source-class-Nette.Forms.Controls.BaseControl.html#425-432" title="Go to source code">getControlPrototype</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns control's HTML element template.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns control's HTML element template.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Nette.Utils.Html.html">Nette\Utils\Html</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getLabelPrototype" id="_getLabelPrototype">
+
+		<td class="attributes"><code>
+			final public 
+			<code><a href="class-Nette.Utils.Html.html">Nette\Utils\Html</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getLabelPrototype">#</a>
+		<code><a href="source-class-Nette.Forms.Controls.BaseControl.html#436-443" title="Go to source code">getLabelPrototype</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns label's HTML element template.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns label's HTML element template.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Nette.Utils.Html.html">Nette\Utils\Html</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addRule" id="_addRule">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Nette.Forms.Controls.BaseControl.html">Nette\Forms\Controls\BaseControl</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addRule">#</a>
+		<code><a href="source-class-Nette.Forms.Controls.BaseControl.html#451-462" title="Go to source code">addRule</a>( <span>mixed <var>$operation</var></span>, <span>string <var>$message</var> = <span class="php-keyword1">NULL</span></span>, <span>mixed <var>$arg</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Adds a validation rule.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Adds a validation rule.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$operation</var></dt>
+					<dd><code>mixed</code><br>rule type</dd>
+					<dt><var>$message</var></dt>
+					<dd><code>string</code><br>message to display for invalid data</dd>
+					<dt><var>$arg</var></dt>
+					<dd><code>mixed</code><br>optional rule arguments</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Nette.Forms.Controls.BaseControl.html">Nette\Forms\Controls\BaseControl</a></code></code><br>provides a fluent interface<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addCondition" id="_addCondition">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Nette.Forms.Rules.html">Nette\Forms\Rules</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addCondition">#</a>
+		<code><a href="source-class-Nette.Forms.Controls.BaseControl.html#466-475" title="Go to source code">addCondition</a>( <span>mixed <var>$operation</var></span>, <span>mixed <var>$value</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Adds a validation condition a returns new branch.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Adds a validation condition a returns new branch.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$operation</var></dt>
+					<dd><code>mixed</code><br>condition type</dd>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code><br>optional condition arguments</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Nette.Forms.Rules.html">Nette\Forms\Rules</a></code></code><br>new branch<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addConditionOn" id="_addConditionOn">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Nette.Forms.Rules.html">Nette\Forms\Rules</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addConditionOn">#</a>
+		<code><a href="source-class-Nette.Forms.Controls.BaseControl.html#479-489" title="Go to source code">addConditionOn</a>( <span><code><a href="class-Nette.Forms.IControl.html">Nette\Forms\IControl</a></code> <var>$control</var></span>, <span>mixed <var>$operation</var></span>, <span>mixed <var>$value</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Adds a validation condition based on another control a returns new
+branch.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Adds a validation condition based on another control a returns new
+branch.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$control</var></dt>
+					<dd><code><code><a href="class-Nette.Forms.IControl.html">Nette\Forms\IControl</a></code></code><br>form control</dd>
+					<dt><var>$operation</var></dt>
+					<dd><code>mixed</code><br>condition type</dd>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code><br>optional condition arguments</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Nette.Forms.Rules.html">Nette\Forms\Rules</a></code></code><br>new branch<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getRules" id="_getRules">
+
+		<td class="attributes"><code>
+			final public 
+			<code><a href="class-Nette.Forms.Rules.html">Nette\Forms\Rules</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getRules">#</a>
+		<code><a href="source-class-Nette.Forms.Controls.BaseControl.html#493-499" title="Go to source code">getRules</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Nette.Forms.Rules.html">Nette\Forms\Rules</a></code></code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Nette.Forms.IControl.html#_getRules">Nette\Forms\IControl::getRules()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setRequired" id="_setRequired">
+
+		<td class="attributes"><code>
+			final public 
+			<code><a href="class-Nette.Forms.Controls.BaseControl.html">Nette\Forms\Controls\BaseControl</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setRequired">#</a>
+		<code><a href="source-class-Nette.Forms.Controls.BaseControl.html#503-511" title="Go to source code">setRequired</a>( <span>string <var>$message</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Makes control mandatory.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Makes control mandatory.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$message</var></dt>
+					<dd><code>string</code><br>error message</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Nette.Forms.Controls.BaseControl.html">Nette\Forms\Controls\BaseControl</a></code></code><br>provides a fluent interface<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isRequired" id="_isRequired">
+
+		<td class="attributes"><code>
+			final public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isRequired">#</a>
+		<code><a href="source-class-Nette.Forms.Controls.BaseControl.html#515-527" title="Go to source code">isRequired</a>( )</code>
+
+		<div class="description short">
+			
+<p>Is control mandatory?</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Is control mandatory?</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="exportRules" id="_exportRules">
+
+		<td class="attributes"><code>
+			 protected static
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_exportRules">#</a>
+		<code><a href="source-class-Nette.Forms.Controls.BaseControl.html#531-569" title="Go to source code">exportRules</a>( <span>mixed <var>$rules</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="validateEqual" id="_validateEqual">
+
+		<td class="attributes"><code>
+			 public static
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_validateEqual">#</a>
+		<code><a href="source-class-Nette.Forms.Controls.BaseControl.html#577-594" title="Go to source code">validateEqual</a>( <span><code><a href="class-Nette.Forms.IControl.html">Nette\Forms\IControl</a></code> <var>$control</var></span>, <span>mixed <var>$arg</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Equal validator: are control's value and second parameter equal?</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Equal validator: are control's value and second parameter equal?</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$control</var></dt>
+					<dd><code><code><a href="class-Nette.Forms.IControl.html">Nette\Forms\IControl</a></code></code></dd>
+					<dt><var>$arg</var></dt>
+					<dd><code>mixed</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="validateFilled" id="_validateFilled">
+
+		<td class="attributes"><code>
+			 public static
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_validateFilled">#</a>
+		<code><a href="source-class-Nette.Forms.Controls.BaseControl.html#598-606" title="Go to source code">validateFilled</a>( <span><code><a href="class-Nette.Forms.IControl.html">Nette\Forms\IControl</a></code> <var>$control</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Filled validator: is control filled?</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Filled validator: is control filled?</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$control</var></dt>
+					<dd><code><code><a href="class-Nette.Forms.IControl.html">Nette\Forms\IControl</a></code></code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="validateValid" id="_validateValid">
+
+		<td class="attributes"><code>
+			 public static
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_validateValid">#</a>
+		<code><a href="source-class-Nette.Forms.Controls.BaseControl.html#610-618" title="Go to source code">validateValid</a>( <span><code><a href="class-Nette.Forms.IControl.html">Nette\Forms\IControl</a></code> <var>$control</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Valid validator: is control valid?</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Valid validator: is control valid?</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$control</var></dt>
+					<dd><code><code><a href="class-Nette.Forms.IControl.html">Nette\Forms\IControl</a></code></code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addError" id="_addError">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addError">#</a>
+		<code><a href="source-class-Nette.Forms.Controls.BaseControl.html#622-633" title="Go to source code">addError</a>( <span>string <var>$message</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Adds error message to the list.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Adds error message to the list.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$message</var></dt>
+					<dd><code>string</code><br>error message</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getErrors" id="_getErrors">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getErrors">#</a>
+		<code><a href="source-class-Nette.Forms.Controls.BaseControl.html#637-644" title="Go to source code">getErrors</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns errors corresponding to control.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns errors corresponding to control.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Nette.Forms.IControl.html#_getErrors">Nette\Forms\IControl::getErrors()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasErrors" id="_hasErrors">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasErrors">#</a>
+		<code><a href="source-class-Nette.Forms.Controls.BaseControl.html#648-654" title="Go to source code">hasErrors</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="cleanErrors" id="_cleanErrors">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_cleanErrors">#</a>
+		<code><a href="source-class-Nette.Forms.Controls.BaseControl.html#658-664" title="Go to source code">cleanErrors</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Nette.ComponentModel.Component.html#methods">Nette\ComponentModel\Component</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Nette.ComponentModel.Component.html#___clone">__clone()</a>, 
+			<a href="class-Nette.ComponentModel.Component.html#___sleep">__sleep()</a>, 
+			<a href="class-Nette.ComponentModel.Component.html#___wakeup">__wakeup()</a>, 
+			<a href="class-Nette.ComponentModel.Component.html#_detached">detached()</a>, 
+			<a href="class-Nette.ComponentModel.Component.html#_getName">getName()</a>, 
+			<a href="class-Nette.ComponentModel.Component.html#_getParent">getParent()</a>, 
+			<a href="class-Nette.ComponentModel.Component.html#_lookup">lookup()</a>, 
+			<a href="class-Nette.ComponentModel.Component.html#_lookupPath">lookupPath()</a>, 
+			<a href="class-Nette.ComponentModel.Component.html#_monitor">monitor()</a>, 
+			<a href="class-Nette.ComponentModel.Component.html#_unmonitor">unmonitor()</a>, 
+			<a href="class-Nette.ComponentModel.Component.html#_validateParent">validateParent()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Nette.Object.html#methods">Nette\Object</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Nette.Object.html#___call">__call()</a>, 
+			<a href="class-Nette.Object.html#___callStatic">__callStatic()</a>, 
+			<a href="class-Nette.Object.html#___get">__get()</a>, 
+			<a href="class-Nette.Object.html#___isset">__isset()</a>, 
+			<a href="class-Nette.Object.html#___set">__set()</a>, 
+			<a href="class-Nette.Object.html#___unset">__unset()</a>, 
+			<a href="class-Nette.Object.html#_extensionMethod">extensionMethod()</a>, 
+			<a href="class-Nette.Object.html#_getReflection">getReflection()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Nette.ComponentModel.IComponent.html#methods">Nette\ComponentModel\IComponent</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Nette.ComponentModel.IComponent.html#_setParent">setParent()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+	<table class="summary inherited">
+	<caption>Constants inherited from <a href="class-Nette.ComponentModel.IComponent.html#constants">Nette\ComponentModel\IComponent</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Nette.ComponentModel.IComponent.html#NAME_SEPARATOR"><b>NAME_SEPARATOR</b></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="idMask" id="$idMask">
+		<td class="attributes"><code>
+			public static 
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Nette.Forms.Controls.BaseControl.html#46-47" title="Go to source code"><var>$idMask</var></a>
+		</td>
+		<td class="value"><code><span class="php-quote">'frm%s-%s'</span></code></td>
+		<td class="description"><div>
+			<a href="#$idMask" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="caption" id="$caption">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Nette.Forms.Controls.BaseControl.html#49-50" title="Go to source code"><var>$caption</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$caption" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>textual caption or label</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>textual caption or label</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="value" id="$value">
+		<td class="attributes"><code>
+			protected  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Nette.Forms.Controls.BaseControl.html#52-53" title="Go to source code"><var>$value</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$value" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>unfiltered control value</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>unfiltered control value</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="control" id="$control">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-Nette.Utils.Html.html">Nette\Utils\Html</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Nette.Forms.Controls.BaseControl.html#55-56" title="Go to source code"><var>$control</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$control" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>control element template</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>control element template</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="label" id="$label">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-Nette.Utils.Html.html">Nette\Utils\Html</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Nette.Forms.Controls.BaseControl.html#58-59" title="Go to source code"><var>$label</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$label" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>label element template</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>label element template</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+	<table class="summary" id="magicProperties">
+	<caption>Magic properties summary</caption>
+	<tr data-order="htmlId" id="m$htmlId">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Nette.Forms.Controls.BaseControl.html#29" title="Go to source code"><var>$htmlId</var></a>
+		</td>
+		<td class="description"><div>
+			<a href="#m$htmlId" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="translator" id="m$translator">
+		<td class="attributes"><code>
+			public  
+			<code><a href="class-Nette.Localization.ITranslator.html">Nette\Localization\ITranslator</a></code>|null
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Nette.Forms.Controls.BaseControl.html#31" title="Go to source code"><var>$translator</var></a>
+		</td>
+		<td class="description"><div>
+			<a href="#m$translator" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="value" id="m$value">
+		<td class="attributes"><code>
+			public  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Nette.Forms.Controls.BaseControl.html#32" title="Go to source code"><var>$value</var></a>
+		</td>
+		<td class="description"><div>
+			<a href="#m$value" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="disabled" id="m$disabled">
+		<td class="attributes"><code>
+			public  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Nette.Forms.Controls.BaseControl.html#35" title="Go to source code"><var>$disabled</var></a>
+		</td>
+		<td class="description"><div>
+			<a href="#m$disabled" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="required" id="m$required">
+		<td class="attributes"><code>
+			public  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Nette.Forms.Controls.BaseControl.html#41" title="Go to source code"><var>$required</var></a>
+		</td>
+		<td class="description"><div>
+			<a href="#m$required" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="form" id="m$form">
+		<td class="attributes"><code>
+			public  read-only
+			<code><a href="class-Nette.Forms.Form.html">Nette\Forms\Form</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Nette.Forms.Controls.BaseControl.html#27" title="Go to source code"><var>$form</var></a>
+		</td>
+		<td class="description"><div>
+			<a href="#m$form" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="htmlName" id="m$htmlName">
+		<td class="attributes"><code>
+			public  read-only
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Nette.Forms.Controls.BaseControl.html#28" title="Go to source code"><var>$htmlName</var></a>
+		</td>
+		<td class="description"><div>
+			<a href="#m$htmlName" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="options" id="m$options">
+		<td class="attributes"><code>
+			public  read-only
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Nette.Forms.Controls.BaseControl.html#30" title="Go to source code"><var>$options</var></a>
+		</td>
+		<td class="description"><div>
+			<a href="#m$options" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="filled" id="m$filled">
+		<td class="attributes"><code>
+			public  read-only
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Nette.Forms.Controls.BaseControl.html#33" title="Go to source code"><var>$filled</var></a>
+		</td>
+		<td class="description"><div>
+			<a href="#m$filled" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="control" id="m$control">
+		<td class="attributes"><code>
+			public  read-only
+			<code><a href="class-Nette.Utils.Html.html">Nette\Utils\Html</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Nette.Forms.Controls.BaseControl.html#36" title="Go to source code"><var>$control</var></a>
+		</td>
+		<td class="description"><div>
+			<a href="#m$control" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="label" id="m$label">
+		<td class="attributes"><code>
+			public  read-only
+			<code><a href="class-Nette.Utils.Html.html">Nette\Utils\Html</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Nette.Forms.Controls.BaseControl.html#37" title="Go to source code"><var>$label</var></a>
+		</td>
+		<td class="description"><div>
+			<a href="#m$label" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="controlPrototype" id="m$controlPrototype">
+		<td class="attributes"><code>
+			public  read-only
+			<code><a href="class-Nette.Utils.Html.html">Nette\Utils\Html</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Nette.Forms.Controls.BaseControl.html#38" title="Go to source code"><var>$controlPrototype</var></a>
+		</td>
+		<td class="description"><div>
+			<a href="#m$controlPrototype" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="labelPrototype" id="m$labelPrototype">
+		<td class="attributes"><code>
+			public  read-only
+			<code><a href="class-Nette.Utils.Html.html">Nette\Utils\Html</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Nette.Forms.Controls.BaseControl.html#39" title="Go to source code"><var>$labelPrototype</var></a>
+		</td>
+		<td class="description"><div>
+			<a href="#m$labelPrototype" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="rules" id="m$rules">
+		<td class="attributes"><code>
+			public  read-only
+			<code><a href="class-Nette.Forms.Rules.html">Nette\Forms\Rules</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Nette.Forms.Controls.BaseControl.html#40" title="Go to source code"><var>$rules</var></a>
+		</td>
+		<td class="description"><div>
+			<a href="#m$rules" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="errors" id="m$errors">
+		<td class="attributes"><code>
+			public  read-only
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Nette.Forms.Controls.BaseControl.html#42" title="Go to source code"><var>$errors</var></a>
+		</td>
+		<td class="description"><div>
+			<a href="#m$errors" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="defaultValue" id="m$defaultValue">
+		<td class="attributes"><code>
+			public  write-only
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Nette.Forms.Controls.BaseControl.html#34" title="Go to source code"><var>$defaultValue</var></a>
+		</td>
+		<td class="description"><div>
+			<a href="#m$defaultValue" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Magic properties inherited from <a href="class-Nette.ComponentModel.Component.html#properties">Nette\ComponentModel\Component</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Nette.ComponentModel.Component.html#m$name"><var>$name</var></a>, 
+			<a href="class-Nette.ComponentModel.Component.html#m$parent"><var>$parent</var></a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Magic properties inherited from <a href="class-Nette.Object.html#properties">Nette\Object</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Nette.Object.html#m$reflection"><var>$reflection</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

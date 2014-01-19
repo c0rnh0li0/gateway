@@ -1,0 +1,33 @@
+{extends '../@layout_simple.latte'}
+
+{block #head_scripts}
+    {include #parent}
+
+    <script type="text/javascript" src="{$baseUri}/js/library/jquery-snippet/jquery.snippet.js"></script>
+{/block}
+    
+{block #head_links}
+    {include #parent}
+
+    <link rel="stylesheet" type="text/css" media="screen" href="{$basePath}/js/library/jquery-snippet/jquery.snippet.css">
+    
+{/block}
+            
+{block #pageTitle}
+    <h2>Schedule source</h2>
+{/block}
+
+{block #textContent}
+    <div class="box" id="schedule-source">
+        
+        {if $source->type == 'file' or $source->type == 'text'}
+            <pre>
+                {$source->content}
+            </pre>
+        {else}
+        <p class="notice">
+            File is too big to be visualized. Please, <a n:href="download, $source->gw_schedule_id" title="download file">download it</a>.
+        </p>
+        {/if}
+    </div>
+{/block}

@@ -1,0 +1,46 @@
+{extends 'default.latte'}
+
+{block #tabContent}
+    <div class="box" id="connection-map">
+        <h3>Localization settings</h3>
+        
+        {control mappingRulesGrid}
+    </div>
+
+    <div class="box form" id="connection-map-rule">
+        <h3>New localization rule</h3>
+
+        <div class="inner">
+            
+            {include #simpleMappingRuleForm}
+                
+            <div class="clear"></div>
+        </div>
+    </div>
+ {/block}
+
+{define #simpleMappingRuleForm}
+    {form mappingRuleForm}
+        <ul class="error" n:if="$form->hasErrors()">
+            <li n:foreach="$form->errors as $error">{$error}</li>
+        </ul>
+
+        <table>
+            {block #simpleMappingRuleFormExtension}{/block}
+            <tr>
+                <th>{label old_name /}</th>
+                <th>&nbsp;</th>
+                <th>{label new_name /}</th>
+            </tr>
+            <tr>
+                <td>{input old_name}</td>
+                <td class="arrow">&Leftrightarrow;</td>
+                <td>{input new_name}</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="checkbox">{input is_enabled}{label is_enabled /}</td>
+                <td>{input save}</td>
+            </tr>
+        </table>
+    {/form mappingRuleForm} 
+{/define}

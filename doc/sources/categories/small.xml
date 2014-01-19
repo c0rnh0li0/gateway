@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root date="11.09.2012, 10:41:05" version="10" delta="0" >
+    <categories
+        categories_id="1"
+        categories_status="1"
+        categories_image="979_1.jpg"
+        parent_id="0"
+        sort_order="0"
+        categories_visibility="1"
+        products_sorting="pd.products_name"
+        products_sorting2="ASC"
+ />
+    <categories_description
+        categories_id="1"
+        language_id="0"
+        categories_name="Mein kategorie"
+        categories_description=""
+ />
+    <categories_description
+        categories_id="1"
+        language_id="1"
+        categories_name="Main category test"
+        categories_description=""
+ />
+
+    <categories
+        categories_id="2"
+        categories_status="1"
+        categories_image=""
+        parent_id="1"
+        sort_order="0"
+        categories_visibility="1"                    
+        products_sorting="pd.products_name"
+        products_sorting2="ASC"
+ />
+    <categories_description
+        categories_id="2"
+        language_id="0"
+        categories_name="Mein subkategorie"
+        categories_description=""
+ />
+    <categories_description
+        categories_id="2"
+        language_id="1"
+        categories_name="Main subcategory"
+        categories_description=""
+ />
+ 
+    <categories
+        categories_id="3"
+        categories_status="1"
+        categories_image="979_1.jpg"
+        parent_id="2"
+        sort_order="0"
+        categories_visibility="1"        
+        products_sorting="pd.products_name"
+        products_sorting2="ASC"
+ />
+    <categories_description
+        categories_id="3"
+        language_id="0"
+        categories_name="Mein subsubkategorie"
+        categories_description=""
+ />
+    <categories_description
+        categories_id="3"
+        language_id="1"
+        categories_name="Main subsubcategory"
+        categories_description=""
+ />
+ 
+    <categories
+        categories_id="4"
+        categories_status="1"
+        categories_image=""
+        parent_id="1"
+        sort_order="100"
+        categories_visibility="1"        
+        products_sorting="pd.products_name"
+        products_sorting2="ASC"
+ />
+    <categories_description
+        categories_id="4"
+        language_id="0"
+        categories_name="Mein subkategorie 2"
+        categories_description=""
+ />
+    <categories_description
+        categories_id="4"
+        language_id="1"
+        categories_name="Main subcategory 2"
+        categories_description=""
+ />
+    
+    <categories
+        categories_id="5"
+        categories_status="1"
+        categories_image=""
+        parent_id="1"
+        sort_order="0"
+        categories_visibility="1"        
+        products_sorting="pd.products_name"
+        products_sorting2="ASC"
+ />
+    <categories_description
+        categories_id="5"
+        language_id="0"
+        categories_name="Mein subkategorie 3"
+        categories_description=""
+ />
+    <categories_description
+        categories_id="5"
+        language_id="1"
+        categories_name="Main subcategory 3"
+        categories_description=""
+ />    
+    
+ <products_to_categories
+    products_id="956"
+    categories_id="1"
+  />
+ 
+  <products_to_categories
+    products_id="957"
+    categories_id="1"
+  />
+  
+  <products_to_categories
+    products_id="958"
+    categories_id="1"
+  />    
+  
+  <products 
+      products_id="956"
+      products_model="2112020080103" />
+  
+  <products 
+      products_id="957"
+      products_model="2112020080202" />
+  
+  <products 
+      products_id="958"
+      products_model="2112020080608" />    
+</root>

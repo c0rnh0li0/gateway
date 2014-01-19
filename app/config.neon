@@ -1,0 +1,199 @@
+#
+# SECURITY WARNING: it is CRITICAL that this file & directory are NOT accessible directly via a web browser!
+# http://nette.org/security-warning
+#
+common:
+	php:
+		date.timezone: Europe/Prague
+		max_execution_time: 0
+	nette:
+		session:
+			expiration: '+ 14 days'
+			autoStart: yes
+		database:
+			default:
+				dsn: '%database.driver%:host=%database.host%;dbname=%database.dbname%'
+				user: %database.user%
+				password: %database.password%
+		application:
+			errorPresenter: Error
+	services:
+		translator:
+			factory: NetteTranslator\Gettext::getTranslator
+			setup:
+				- addFile(%appDir%/../lang, front)
+				- NetteTranslator\Panel::register
+		database: @\Nette\Database\Connection
+
+		connections:
+			factory: @database::table(gw_connection)
+
+		handlers:
+			factory: @database::table(gw_handler)
+
+		adapters:
+			factory: @database::table(gw_adapter)
+
+		scheduler:
+			factory: @database::table(gw_schedule)
+
+		mapping:
+			factory: @database::table(gw_mapping)
+
+		#authenticator: Authenticator( @database::table(users) )
+
+		GlobalLogger:
+			class: Logger\Stack
+			factory: Logger\StackFactory::factory
+			arguments: 
+				options:
+					loggers: [@OutputLogger, @FileLogger] # TODO set output logger only for console
+
+		OutputLogger:
+			class: Logger\OutputLogger
+			factory: Logger\OutputLoggerFactory::factory
+			arguments:
+				options:
+					minimumLogLevel: ALERT # what is the minimum to log
+					defaultLogLevel: INFO # default message type without specification
+		FileLogger:
+			class: Logger\FileLogger
+			factory: Logger\FileLoggerFactory::factory
+			arguments:
+				options:
+					filenameMask: '%%Y-%%m-%%d-%%H.log' # dvojitá procenta kvůli nahrazování env. var.
+					logDir: %appDir%/../log
+					minimumLogLevel: INFO
+					defaultLogLevel: INFO
+		GatewayLogger:
+			class: Logger\FileLogger
+			factory: Logger\FileLoggerFactory::factory
+			arguments:
+				options:
+					filenameMask: '%%H-%%M-%%S.log' # dvojitá procenta kvůli nahrazování env. var.
+					logDir: %appDir%/../log/gateway # this is root for logging all the connections log
+					minimumLogLevel: DEBUG
+					defaultLogLevel: INFO
+		authenticator:
+			class: Nette\Security\SimpleAuthenticator
+			arguments: [[
+				admin: gate123
+			]]
+	parameters:
+		lang: en
+		gateway:
+			reindex: true
+			api:
+				source:
+					file:
+						limit: 1000000 # file size limit in bytes to be put into DB - all above will be put to FS only
+			storage:
+				root: %tempDir%/gateway
+				etron:
+					inputFolderMask: /etron/%%s/put # input folder for Etron XMLs, eg. /etron/<CONNECTION_NAME>/put
+					outputFolderMask: /etron/%%s/get # output folder for Etron XMLs, eg. /etron/<CONNECTION_NAME>/get
+					archiveFolder: /archive
+					allowedFileMasks: '[0-9]*.xml'
+			magmi:
+				config: 
+					dir: %gateway.storage.root%/magmi # multiconfig directory, eg. /magmi/<CONNECTION_NAME>
+					sections:
+						database:
+							connectivity: 'net'
+							unix_socket: ''
+							table_prefix: ''
+							version: '1.7.x'
+						global:
+							step: 0.5
+							multiselect_sep: ','
+							dirmask: 755
+							filemask: 664
+		gateway_rakuten:
+			reindex: true
+			api:
+				source:
+					file:
+						limit: 1000000 # file size limit in bytes to be put into DB - all above will be put to FS only
+			storage:
+				root: %tempDir%/gateway
+				rakuten:
+					inputFolderMask: /rakuten/%%s/put # input folder for Rakuten XMLs, eg. /rakuten/<CONNECTION_NAME>/put
+					outputFolderMask: /rakuten/%%s/get # output folder for Rakuten XMLs, eg. /rakuten/<CONNECTION_NAME>/get
+					archiveFolder: /archive
+					allowedFileMasks: '[0-9]*.xml'
+			rakuten:
+				config: 
+					dir: %gateway.storage.root%/rakuten # multiconfig directory, eg. /rakuten/<CONNECTION_NAME>
+					sections:
+						api:
+							empty: 'net'
+						global:
+							step: 0.5
+							multiselect_sep: ','
+							dirmask: 755
+							filemask: 664
+							
+# server gw2.ec-quadrat.at
+production < common:
+	nette:
+		application:
+			catchExceptions: false
+	parameters:
+		database:
+			driver: mysql
+			host: localhost
+			dbname: gw2live
+			user: gw2root
+			password: root
+		gateway:
+			magmi:
+				config:
+					sections:
+						database:
+							dbname: 'gw2live'
+# localhost
+development < common:
+	nette:
+		application:
+			catchExceptions: false
+	parameters:
+		database:
+			driver: mysql
+			host: localhost
+			dbname: gateway_20
+			user: root
+			password: root
+		gateway:
+			magmi:
+				config:
+					sections:
+						database:
+							dbname: 'magento_1702'
+							host: %database.host%
+							user: %database.user%
+							password: %database.password%
+						magento:
+							basedir: '../../../../../../magento/1.7.0.2'
+		gateway_rakuten:
+			rakuten:
+				config:
+					sections:
+						api:
+							host: ''
+							user: ''
+							password: ''
+
+# server develop.gw2.ec-quadrat.at
+develop < development:
+	parameters:
+		database:
+			host: db3445.mydbserver.com
+			dbname: usr_p168418_2
+			user: p168418d1
+			password: gate123
+		gateway:
+			magmi:
+				config:
+					sections:
+						database:
+							dbname: 'usr_p168418_2'

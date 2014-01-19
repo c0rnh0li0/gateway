@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class Gateway\Handler\Erp\Etron\XML\Reader\Products</title>
+
+	<script type="text/javascript" src="resources/combined.js?1479682893"></script>
+	<script type="text/javascript" src="elementlist.js?1567848024"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-AdminModule.html">AdminModule<span></span></a>
+						<ul>
+				<li><a href="namespace-AdminModule.Component.html">Component</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-ApiModule.html">ApiModule</a>
+						</li>
+				<li class="active"><a href="namespace-Gateway.html">Gateway<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.html">DataSource<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.Entity.html">Entity<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.Entity.Category.html">Category</a>
+						</li>
+				<li><a href="namespace-Gateway.DataSource.Entity.Customer.html">Customer</a>
+						</li>
+				<li><a href="namespace-Gateway.DataSource.Entity.Order.html">Order<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.Entity.Order.Payment.html">Payment</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.DataSource.Entity.Product.html">Product</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="active"><a href="namespace-Gateway.Handler.html">Handler<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-Gateway.Handler.Erp.html">Erp<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-Gateway.Handler.Erp.Etron.html">Etron<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-Gateway.Handler.Erp.Etron.XML.html">XML<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-Gateway.Handler.Erp.Etron.XML.Reader.html">Reader<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.XML.Reader.Products.html">Products</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.Xml.Writer.html">Writer</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-Gateway.Handler.Shop.html">Shop<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.html">Magento<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.JSON.html">JSON<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.JSON.Reader.html">Reader</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.Magmi.html">Magmi<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.Magmi.Writer.html">Writer</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.SOAP.html">SOAP<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.SOAP.Writer.html">Writer<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.SOAP.Writer.Products.html">Products</a>
+						</li>
+							</ul></li></ul></li></ul></li></ul></li></ul></li>
+				<li><a href="namespace-Gateway.Mapping.html">Mapping<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Mapping.Rule.html">Rule</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Logger.html">Logger</a>
+						</li>
+				<li><a href="namespace-Nette.html">Nette<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Application.html">Application<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Application.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Application.Responses.html">Responses</a>
+						</li>
+				<li><a href="namespace-Nette.Application.Routers.html">Routers</a>
+						</li>
+				<li><a href="namespace-Nette.Application.UI.html">UI</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Caching.html">Caching<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Caching.Storages.html">Storages</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.ComponentModel.html">ComponentModel</a>
+						</li>
+				<li><a href="namespace-Nette.Config.html">Config<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Config.Adapters.html">Adapters</a>
+						</li>
+				<li><a href="namespace-Nette.Config.Extensions.html">Extensions</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Database.html">Database<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Database.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Drivers.html">Drivers</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Reflection.html">Reflection</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Table.html">Table</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.DI.html">DI<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.DI.Diagnostics.html">Diagnostics</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Forms.html">Forms<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Forms.Controls.html">Controls</a>
+						</li>
+				<li><a href="namespace-Nette.Forms.Rendering.html">Rendering</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Http.html">Http</a>
+						</li>
+				<li><a href="namespace-Nette.Iterators.html">Iterators</a>
+						</li>
+				<li><a href="namespace-Nette.Latte.html">Latte<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Latte.Macros.html">Macros</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Loaders.html">Loaders</a>
+						</li>
+				<li><a href="namespace-Nette.Localization.html">Localization</a>
+						</li>
+				<li><a href="namespace-Nette.Mail.html">Mail</a>
+						</li>
+				<li><a href="namespace-Nette.Reflection.html">Reflection</a>
+						</li>
+				<li><a href="namespace-Nette.Security.html">Security<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Security.Diagnostics.html">Diagnostics</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Templating.html">Templating</a>
+						</li>
+				<li><a href="namespace-Nette.Utils.html">Utils<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Utils.PhpGenerator.html">PhpGenerator</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-NetteModule.html">NetteModule</a>
+						</li>
+				<li><a href="namespace-NetteTranslator.html">NetteTranslator</a>
+						</li>
+				<li><a href="namespace-NiftyGrid.html">NiftyGrid</a>
+						</li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li><a href="namespace-Yourface.html">Yourface<span></span></a>
+						<ul>
+				<li><a href="namespace-Yourface.Application.html">Application<span></span></a>
+						<ul>
+				<li><a href="namespace-Yourface.Application.Responses.html">Responses</a>
+						</li>
+				<li><a href="namespace-Yourface.Application.Routers.html">Routers</a>
+						</li>
+				<li><a href="namespace-Yourface.Application.UI.html">UI</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Yourface.Iterators.html">Iterators</a>
+						</li>
+				<li><a href="namespace-Yourface.NiftyGrid.html">NiftyGrid</a>
+						</li>
+				<li><a href="namespace-Yourface.Utils.html">Utils</a>
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Gateway.Handler.Erp.Etron.XML.Reader.Categories.html">Categories</a></li>
+				<li><a href="class-Gateway.Handler.Erp.Etron.XML.Reader.Customers.html">Customers</a></li>
+				<li><a href="class-Gateway.Handler.Erp.Etron.XML.Reader.Orders.html">Orders</a></li>
+				<li class="active"><a href="class-Gateway.Handler.Erp.Etron.XML.Reader.Products.html">Products</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Gateway.Handler.Erp.Etron.XML.Reader.html" title="Summary of Gateway\Handler\Erp\Etron\XML\Reader"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Products</h1>
+
+
+	<div class="description">
+	
+<p>Products XML to DataSource handler.</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-Nette.Object.html"><span>Nette\Object</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+			<a href="class-Gateway.Handler.html"><span>Gateway\Handler</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:60px">
+			<img src="resources/inherit.png" alt="Extended by" />
+			<a href="class-Gateway.Handler.Reader.html"><span>Gateway\Handler\Reader</span></a>
+			
+			 implements 
+				<a href="class-Gateway.Handler.IReader.html"><span>Gateway\Handler\IReader</span></a>
+			
+			
+		</dd>
+		<dd style="padding-left:90px">
+			<img src="resources/inherit.png" alt="Extended by" />
+			<a href="class-Gateway.Handler.Erp.Etron.XML.Reader.html"><span>Gateway\Handler\Erp\Etron\XML\Reader</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:120px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>Gateway\Handler\Erp\Etron\XML\Reader\Products</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-Gateway.Handler.Erp.Etron.XML.Reader.Products.Images.html">Gateway\Handler\Erp\Etron\XML\Reader\Products\Images</a>
+	</div>
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Gateway.html">Gateway</a>\<a href="namespace-Gateway.Handler.html">Handler</a>\<a href="namespace-Gateway.Handler.Erp.html">Erp</a>\<a href="namespace-Gateway.Handler.Erp.Etron.html">Etron</a>\<a href="namespace-Gateway.Handler.Erp.Etron.XML.html">XML</a>\<a href="namespace-Gateway.Handler.Erp.Etron.XML.Reader.html">Reader</a><br />
+		
+
+				<b>Author:</b>
+				Lukas Bruha<br />
+		<b>Located at</b> <a href="source-class-Gateway.Handler.Erp.Etron.XML.Reader.Products.html#9-440" title="Go to source code">libs/Gateway/Handler/Erp/Etron/XML/Reader/Products.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="processXml" id="_processXml">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_processXml">#</a>
+		<code><a href="source-class-Gateway.Handler.Erp.Etron.XML.Reader.Products.html#46-328" title="Go to source code">processXml</a>( <span>SimpleXml_Element <var>$xml</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Parse given XML file and creates product structure.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Parse given XML file and creates product structure.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$xml</var></dt>
+					<dd><code>SimpleXml_Element</code><br>$xml</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createProduct" id="_createProduct">
+
+		<td class="attributes"><code>
+			 protected 
+			<code><a href="class-Gateway.DataSource.Entity.Product.Simple.html">Gateway\DataSource\Entity\Product\Simple</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createProduct">#</a>
+		<code><a href="source-class-Gateway.Handler.Erp.Etron.XML.Reader.Products.html#331-348" title="Go to source code">createProduct</a>( <span>integer <var>$typeKey</var> = <span class="php-num">0</span></span>, <span>mixed <var>$isBundle</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Product factory.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Product factory.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$typeKey</var></dt>
+					<dd><code>integer</code><br>$typeKey</dd>
+					<dt><var>$isBundle</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Gateway.DataSource.Entity.Product.Simple.html">Gateway\DataSource\Entity\Product\Simple</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="buildPath" id="_buildPath">
+
+		<td class="attributes"><code>
+			 protected 
+			<code><a href="class-Gateway.DataSource.Entity.Product.Category.html">Gateway\DataSource\Entity\Product\Category</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_buildPath">#</a>
+		<code><a href="source-class-Gateway.Handler.Erp.Etron.XML.Reader.Products.html#350-387" title="Go to source code">buildPath</a>( <span>integer <var>$productCategoryId</var></span>, <span>mixed <var>$xml</var></span>, <span>mixed <var>$langId</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Builds tree path of category.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Builds tree path of category.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$productCategoryId</var></dt>
+					<dd><code>integer</code><br>$productCategoryId $param \SimpleXmlElement $xml $param int $langId</dd>
+					<dt><var>$xml</var></dt>
+					<dd></dd>
+					<dt><var>$langId</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Gateway.DataSource.Entity.Product.Category.html">Gateway\DataSource\Entity\Product\Category</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="findCategory" id="_findCategory">
+
+		<td class="attributes"><code>
+			 protected 
+			<code><a href="class-Gateway.DataSource.Entity.Product.Category.html">Gateway\DataSource\Entity\Product\Category</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_findCategory">#</a>
+		<code><a href="source-class-Gateway.Handler.Erp.Etron.XML.Reader.Products.html#389-416" title="Go to source code">findCategory</a>( <span>integer <var>$categoryId</var></span>, <span>SimpleXml_Element <var>$xml</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Searches for product's category and creates the whole structure on the
+fly.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Searches for product's category and creates the whole structure on the
+fly.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$categoryId</var></dt>
+					<dd><code>integer</code><br>$categoryId</dd>
+					<dt><var>$xml</var></dt>
+					<dd><code>SimpleXml_Element</code><br>$xml</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Gateway.DataSource.Entity.Product.Category.html">Gateway\DataSource\Entity\Product\Category</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="validate" id="_validate">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_validate">#</a>
+		<code><a href="source-class-Gateway.Handler.Erp.Etron.XML.Reader.Products.html#418-439" title="Go to source code">validate</a>( <span>mixed <var>$input</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Validates input and tries to load XML from it.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Validates input and tries to load XML from it.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$input</var></dt>
+					<dd><code>mixed</code><br>$input</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-Nette.IOException.html">Nette\IOException</a></code></code><br />
+				</div>
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-Gateway.Handler.Erp.Etron.XML.Reader.html#_validate">Gateway\Handler\Erp\Etron\XML\Reader::validate()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Gateway.Handler.Erp.Etron.XML.Reader.html#methods">Gateway\Handler\Erp\Etron\XML\Reader</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Gateway.Handler.Erp.Etron.XML.Reader.html#___construct">__construct()</a>, 
+			<a href="class-Gateway.Handler.Erp.Etron.XML.Reader.html#_getDataSource">getDataSource()</a>, 
+			<a href="class-Gateway.Handler.Erp.Etron.XML.Reader.html#_getDirMask">getDirMask()</a>, 
+			<a href="class-Gateway.Handler.Erp.Etron.XML.Reader.html#_getFileMasks">getFileMasks()</a>, 
+			<a href="class-Gateway.Handler.Erp.Etron.XML.Reader.html#_getInput">getInput()</a>, 
+			<a href="class-Gateway.Handler.Erp.Etron.XML.Reader.html#_process">process()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Gateway.Handler.Reader.html#methods">Gateway\Handler\Reader</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Gateway.Handler.Reader.html#_setInput">setInput()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Gateway.Handler.html#methods">Gateway\Handler</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Gateway.Handler.html#_getAdapterType">getAdapterType()</a>, 
+			<a href="class-Gateway.Handler.html#_getConnection">getConnection()</a>, 
+			<a href="class-Gateway.Handler.html#_getNodeType">getNodeType()</a>, 
+			<a href="class-Gateway.Handler.html#_getType">getType()</a>, 
+			<a href="class-Gateway.Handler.html#_setConnection">setConnection()</a>, 
+			<a href="class-Gateway.Handler.html#_validateOptions">validateOptions()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Nette.Object.html#methods">Nette\Object</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Nette.Object.html#___call">__call()</a>, 
+			<a href="class-Nette.Object.html#___callStatic">__callStatic()</a>, 
+			<a href="class-Nette.Object.html#___get">__get()</a>, 
+			<a href="class-Nette.Object.html#___isset">__isset()</a>, 
+			<a href="class-Nette.Object.html#___set">__set()</a>, 
+			<a href="class-Nette.Object.html#___unset">__unset()</a>, 
+			<a href="class-Nette.Object.html#_extensionMethod">extensionMethod()</a>, 
+			<a href="class-Nette.Object.html#_getReflection">getReflection()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="type" id="$type">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Gateway.Handler.Erp.Etron.XML.Reader.Products.html#16" title="Go to source code"><var>$type</var></a>
+		</td>
+		<td class="value"><code>Gateway\Handler\Erp\Etron\XML\Reader\IHandler::TYPE_PRODUCTS</code></td>
+		<td class="description"><div>
+			<a href="#$type" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Products, customers, orders handler type.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Products, customers, orders handler type.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="debug" id="$debug">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Gateway.Handler.Erp.Etron.XML.Reader.Products.html#18-26" title="Go to source code"><var>$debug</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>(
+                    <span class="php-quote">'limit'</span> =&gt; <span class="php-keyword1">false</span>,
+                    <span class="php-quote">'oldCategory'</span> =&gt; <span class="php-keyword1">false</span>,
+)</code></td>
+		<td class="description"><div>
+			<a href="#$debug" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Debug helper.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Debug helper.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="validAttributes" id="$validAttributes">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Gateway.Handler.Erp.Etron.XML.Reader.Products.html#29-35" title="Go to source code"><var>$validAttributes</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$validAttributes" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Valid attributes for connection.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Valid attributes for connection.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="allowAttributeEmptyValues" id="$allowAttributeEmptyValues">
+		<td class="attributes"><code>
+			protected  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Gateway.Handler.Erp.Etron.XML.Reader.Products.html#38-44" title="Go to source code"><var>$allowAttributeEmptyValues</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">false</span></code></td>
+		<td class="description"><div>
+			<a href="#$allowAttributeEmptyValues" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>If true, null values of attribute does not allow associated products to be
+visible.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>If true, null values of attribute does not allow associated products to be
+visible.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-Gateway.Handler.Erp.Etron.XML.Reader.html#properties">Gateway\Handler\Erp\Etron\XML\Reader</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Gateway.Handler.Erp.Etron.XML.Reader.html#$dirMask"><var>$dirMask</var></a>, 
+			<a href="class-Gateway.Handler.Erp.Etron.XML.Reader.html#$fileMasks"><var>$fileMasks</var></a>, 
+			<a href="class-Gateway.Handler.Erp.Etron.XML.Reader.html#$isProcessed"><var>$isProcessed</var></a>, 
+			<a href="class-Gateway.Handler.Erp.Etron.XML.Reader.html#$nodeType"><var>$nodeType</var></a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-Gateway.Handler.Reader.html#properties">Gateway\Handler\Reader</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Gateway.Handler.Reader.html#$adapterType"><var>$adapterType</var></a>, 
+			<a href="class-Gateway.Handler.Reader.html#$dataSource"><var>$dataSource</var></a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-Gateway.Handler.html#properties">Gateway\Handler</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Gateway.Handler.html#$connection"><var>$connection</var></a>, 
+			<a href="class-Gateway.Handler.html#$expectedOptions"><var>$expectedOptions</var></a>, 
+			<a href="class-Gateway.Handler.html#$input"><var>$input</var></a>, 
+			<a href="class-Gateway.Handler.html#$options"><var>$options</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+	<table class="summary inherited">
+	<caption>Magic properties inherited from <a href="class-Nette.Object.html#properties">Nette\Object</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Nette.Object.html#m$reflection"><var>$reflection</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

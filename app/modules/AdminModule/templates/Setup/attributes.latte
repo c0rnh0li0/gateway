@@ -1,0 +1,64 @@
+{extends 'default.latte'}
+
+{block #tabContent}
+    <div class="box" id="connection-map">
+        <h3>Product attributes mapping</h3>
+        
+        {control mappingRulesGrid}
+    </div>
+
+    <div class="box form" id="connection-map-rule">
+        <h3>New rule definition</h3>
+
+        <div class="inner">
+
+            {include #advancedMappingRuleForm}
+
+            <div class="clear"></div>
+        </div>
+    </div>
+{/block}
+
+{define #advancedMappingRuleForm}
+    {form mappingRuleForm}
+        <ul class="error" n:if="$form->hasErrors()">
+            <li n:foreach="$form->errors as $error">{$error}</li>
+        </ul>
+
+        <table>
+            <tr>
+                <th>{label old_name /}</th>
+                <th colspan="2">&nbsp;</th>
+                <th>{label new_name /}</th>
+            </tr>
+            <tr>
+                <td>{input old_name}</td>
+                <td colspan="2" class="arrow">&Leftrightarrow;</td>
+                <td>{input new_name}</td>
+            </tr>
+            <tr>
+                <th>{label old_value /}</th>
+                <th colspan="2">&nbsp;</th>
+                <th>{label new_value /}</th>
+            </tr>
+            <tr>
+                <td>{input old_value}</td>
+                <td colspan="2" class="arrow">&Leftrightarrow;</td>
+                <td>{input new_value}</td>
+            </tr>            
+            <tr>
+                <td colspan="4">
+                    <small>(empty values = rule will be applied to all attributes having 'Old name')</small>
+                </td>
+            </tr>
+            <tr>
+                <td class="checkbox">{input is_enabled}{label is_enabled /}</td>
+                <td colspan="3" ></td>
+            </tr>
+            <tr>
+                <td>{input save}</td>
+                <td colspan="2"></td>
+            </tr>
+        </table>
+    {/form mappingRuleForm} 
+{/define}

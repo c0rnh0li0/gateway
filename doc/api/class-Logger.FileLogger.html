@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class Logger\FileLogger</title>
+
+	<script type="text/javascript" src="resources/combined.js?1479682893"></script>
+	<script type="text/javascript" src="elementlist.js?1567848024"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-AdminModule.html">AdminModule<span></span></a>
+						<ul>
+				<li><a href="namespace-AdminModule.Component.html">Component</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-ApiModule.html">ApiModule</a>
+						</li>
+				<li><a href="namespace-Gateway.html">Gateway<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.html">DataSource<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.Entity.html">Entity<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.Entity.Category.html">Category</a>
+						</li>
+				<li><a href="namespace-Gateway.DataSource.Entity.Customer.html">Customer</a>
+						</li>
+				<li><a href="namespace-Gateway.DataSource.Entity.Order.html">Order<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.Entity.Order.Payment.html">Payment</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.DataSource.Entity.Product.html">Product</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Gateway.Handler.html">Handler<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.html">Erp<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.html">Etron<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.XML.html">XML<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.XML.Reader.html">Reader<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.XML.Reader.Products.html">Products</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.Xml.Writer.html">Writer</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-Gateway.Handler.Shop.html">Shop<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.html">Magento<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.JSON.html">JSON<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.JSON.Reader.html">Reader</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.Magmi.html">Magmi<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.Magmi.Writer.html">Writer</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.SOAP.html">SOAP<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.SOAP.Writer.html">Writer<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.SOAP.Writer.Products.html">Products</a>
+						</li>
+							</ul></li></ul></li></ul></li></ul></li></ul></li>
+				<li><a href="namespace-Gateway.Mapping.html">Mapping<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Mapping.Rule.html">Rule</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="active"><a href="namespace-Logger.html">Logger</a>
+						</li>
+				<li><a href="namespace-Nette.html">Nette<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Application.html">Application<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Application.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Application.Responses.html">Responses</a>
+						</li>
+				<li><a href="namespace-Nette.Application.Routers.html">Routers</a>
+						</li>
+				<li><a href="namespace-Nette.Application.UI.html">UI</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Caching.html">Caching<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Caching.Storages.html">Storages</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.ComponentModel.html">ComponentModel</a>
+						</li>
+				<li><a href="namespace-Nette.Config.html">Config<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Config.Adapters.html">Adapters</a>
+						</li>
+				<li><a href="namespace-Nette.Config.Extensions.html">Extensions</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Database.html">Database<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Database.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Drivers.html">Drivers</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Reflection.html">Reflection</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Table.html">Table</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.DI.html">DI<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.DI.Diagnostics.html">Diagnostics</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Forms.html">Forms<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Forms.Controls.html">Controls</a>
+						</li>
+				<li><a href="namespace-Nette.Forms.Rendering.html">Rendering</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Http.html">Http</a>
+						</li>
+				<li><a href="namespace-Nette.Iterators.html">Iterators</a>
+						</li>
+				<li><a href="namespace-Nette.Latte.html">Latte<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Latte.Macros.html">Macros</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Loaders.html">Loaders</a>
+						</li>
+				<li><a href="namespace-Nette.Localization.html">Localization</a>
+						</li>
+				<li><a href="namespace-Nette.Mail.html">Mail</a>
+						</li>
+				<li><a href="namespace-Nette.Reflection.html">Reflection</a>
+						</li>
+				<li><a href="namespace-Nette.Security.html">Security<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Security.Diagnostics.html">Diagnostics</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Templating.html">Templating</a>
+						</li>
+				<li><a href="namespace-Nette.Utils.html">Utils<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Utils.PhpGenerator.html">PhpGenerator</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-NetteModule.html">NetteModule</a>
+						</li>
+				<li><a href="namespace-NetteTranslator.html">NetteTranslator</a>
+						</li>
+				<li><a href="namespace-NiftyGrid.html">NiftyGrid</a>
+						</li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li><a href="namespace-Yourface.html">Yourface<span></span></a>
+						<ul>
+				<li><a href="namespace-Yourface.Application.html">Application<span></span></a>
+						<ul>
+				<li><a href="namespace-Yourface.Application.Responses.html">Responses</a>
+						</li>
+				<li><a href="namespace-Yourface.Application.Routers.html">Routers</a>
+						</li>
+				<li><a href="namespace-Yourface.Application.UI.html">UI</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Yourface.Iterators.html">Iterators</a>
+						</li>
+				<li><a href="namespace-Yourface.NiftyGrid.html">NiftyGrid</a>
+						</li>
+				<li><a href="namespace-Yourface.Utils.html">Utils</a>
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Logger.AbstractLogger.html">AbstractLogger</a></li>
+				<li class="active"><a href="class-Logger.FileLogger.html">FileLogger</a></li>
+				<li><a href="class-Logger.FileLoggerFactory.html">FileLoggerFactory</a></li>
+				<li><a href="class-Logger.NullLogger.html">NullLogger</a></li>
+				<li><a href="class-Logger.NullLoggerFactory.html">NullLoggerFactory</a></li>
+				<li><a href="class-Logger.OutputLogger.html">OutputLogger</a></li>
+				<li><a href="class-Logger.OutputLoggerFactory.html">OutputLoggerFactory</a></li>
+				<li><a href="class-Logger.Stack.html">Stack</a></li>
+				<li><a href="class-Logger.StackFactory.html">StackFactory</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-Logger.ILogger.html">ILogger</a></li>
+				<li><a href="class-Logger.ILoggerFactory.html">ILoggerFactory</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Logger.html" title="Summary of Logger"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class FileLogger</h1>
+
+
+	<div class="description">
+	
+<p>Filesystem-based implementation of ILogger.</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-Logger.AbstractLogger.html"><span>Logger\AbstractLogger</span></a>
+			
+			 implements 
+				<a href="class-Logger.ILogger.html"><span>Logger\ILogger</span></a>
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>Logger\FileLogger</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Logger.html">Logger</a><br />
+		<b>Package:</b> Logger<br />
+
+				<b>Copyright:</b>
+				Copyright (c) 2009-2010 Jan Smitka<br />
+				<b>Copyright:</b>
+				Copyright (c) 2009-2010 Martin Pecka<br />
+				<b>Copyright:</b>
+				Copyright (c) 2011-2012 Matěj Humpál<br />
+				<b>Author:</b>
+				Jan Smitka &lt;<a
+href="mailto:jan&#64;smitka.org">jan&#64;<!---->smitka.org</a>&gt;<br />
+				<b>Author:</b>
+				Martin Pecka &lt;<a
+href="mailto:martin.pecka&#64;clevis.cz">martin.pecka&#64;<!---->clevis.cz</a>&gt;<br />
+				<b>Author:</b>
+				Matěj Humpál &lt;<a
+href="mailto:finwe&#64;finwe.info">finwe&#64;<!---->finwe.info</a>&gt;<br />
+				<b>Version:</b>
+				0.7<br />
+		<b>Located at</b> <a href="source-class-Logger.FileLogger.html#5-202" title="Go to source code">libs/Logger/Logger/FileLogger.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Logger.FileLogger.html#58-80" title="Go to source code">__construct</a>( <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+<p>Creates instance of Filelogger. Sets options from parameter</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Creates instance of Filelogger. Sets options from parameter</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$options</var></dt>
+					<dd><code>array</code><br>$options</dd>
+				</dl></div>
+
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-Logger.AbstractLogger.html#___construct">Logger\AbstractLogger::__construct()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getFilenameMask" id="_getFilenameMask">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFilenameMask">#</a>
+		<code><a href="source-class-Logger.FileLogger.html#82-89" title="Go to source code">getFilenameMask</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the filename mask of log file.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the filename mask of log file.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setFilenameMask" id="_setFilenameMask">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setFilenameMask">#</a>
+		<code><a href="source-class-Logger.FileLogger.html#92-103" title="Go to source code">setFilenameMask</a>( <span>string <var>$filenameMask</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the filename mask for log files. You can use the strftime
+specifiers.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the filename mask for log files. You can use the strftime
+specifiers.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$filenameMask</var></dt>
+					<dd><code>string</code><br>$filenameMask</dd>
+				</dl></div>
+
+
+
+				<h4>See</h4>
+				<div class="list">
+						strftime()<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getLogDir" id="_getLogDir">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getLogDir">#</a>
+		<code><a href="source-class-Logger.FileLogger.html#106-114" title="Go to source code">getLogDir</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the directory path where log files reside.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the directory path where log files reside.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setLogDir" id="_setLogDir">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setLogDir">#</a>
+		<code><a href="source-class-Logger.FileLogger.html#117-126" title="Go to source code">setLogDir</a>( <span>string <var>$logDir</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the directory path where log files reside.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the directory path where log files reside.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$logDir</var></dt>
+					<dd><code>string</code><br>$logDir</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getGranularity" id="_getGranularity">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getGranularity">#</a>
+		<code><a href="source-class-Logger.FileLogger.html#129-136" title="Go to source code">getGranularity</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns log files granularity.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns log files granularity.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>in seconds<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setGranularity" id="_setGranularity">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setGranularity">#</a>
+		<code><a href="source-class-Logger.FileLogger.html#139-159" title="Go to source code">setGranularity</a>( <span>integer <var>$granularity</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets log files granularity. Please note that real granularity is also
+determined by filename mask.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets log files granularity. Please note that real granularity is also
+determined by filename mask.</p>
+
+<p>When greater than 0, it defines a time span used for one log file. Eg. if you
+want to create two log files per day, you can define mask "%Y-%m-%d-%H" and set
+this to 43200 seconds (1/2 day), and the logs won't be created each hour, but
+each file will contain logs from 43200 seconds, resulting in a two files per
+day.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$granularity</var></dt>
+					<dd><code>integer</code><br>$granularity</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code></code><br>if the granularity is not a non-negative number<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getFile" id="_getFile">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFile">#</a>
+		<code><a href="source-class-Logger.FileLogger.html#161-181" title="Go to source code">getFile</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the full path to the current log file.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the full path to the current log file.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="writeMessage" id="_writeMessage">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_writeMessage">#</a>
+		<code><a href="source-class-Logger.FileLogger.html#183-200" title="Go to source code">writeMessage</a>( <span>integer <var>$level</var></span>, <span>string <var>$message</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$level</var></dt>
+					<dd><code>integer</code><br>$level</dd>
+					<dt><var>$message</var></dt>
+					<dd><code>string</code><br>$message</dd>
+				</dl></div>
+
+
+
+				<h4>See</h4>
+				<div class="list">
+						Logger\ILogger::writeMessage()<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Logger.AbstractLogger.html#methods">Logger\AbstractLogger</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Logger.AbstractLogger.html#_getDateFormat">getDateFormat()</a>, 
+			<a href="class-Logger.AbstractLogger.html#_getDefaultLogLevel">getDefaultLogLevel()</a>, 
+			<a href="class-Logger.AbstractLogger.html#_getMessageTemplate">getMessageTemplate()</a>, 
+			<a href="class-Logger.AbstractLogger.html#_getMinimumLogLevel">getMinimumLogLevel()</a>, 
+			<a href="class-Logger.AbstractLogger.html#_logLevelToString">logLevelToString()</a>, 
+			<a href="class-Logger.AbstractLogger.html#_logMessage">logMessage()</a>, 
+			<a href="class-Logger.AbstractLogger.html#_parseLevel">parseLevel()</a>, 
+			<a href="class-Logger.AbstractLogger.html#_prepareMessage">prepareMessage()</a>, 
+			<a href="class-Logger.AbstractLogger.html#_setDateFormat">setDateFormat()</a>, 
+			<a href="class-Logger.AbstractLogger.html#_setDefaultLogLevel">setDefaultLogLevel()</a>, 
+			<a href="class-Logger.AbstractLogger.html#_setMessageTemplate">setMessageTemplate()</a>, 
+			<a href="class-Logger.AbstractLogger.html#_setMinimumLogLevel">setMinimumLogLevel()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+	<table class="summary inherited">
+	<caption>Constants inherited from <a href="class-Logger.ILogger.html#constants">Logger\ILogger</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Logger.ILogger.html#ALERT"><b>ALERT</b></a>, 
+			<a href="class-Logger.ILogger.html#CRITICAL"><b>CRITICAL</b></a>, 
+			<a href="class-Logger.ILogger.html#DEBUG"><b>DEBUG</b></a>, 
+			<a href="class-Logger.ILogger.html#EMERGENCY"><b>EMERGENCY</b></a>, 
+			<a href="class-Logger.ILogger.html#ERROR"><b>ERROR</b></a>, 
+			<a href="class-Logger.ILogger.html#INFO"><b>INFO</b></a>, 
+			<a href="class-Logger.ILogger.html#NOTICE"><b>NOTICE</b></a>, 
+			<a href="class-Logger.ILogger.html#WARNING"><b>WARNING</b></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="onMessage" id="$onMessage">
+		<td class="attributes"><code>
+			public  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Logger.FileLogger.html#41-46" title="Go to source code"><var>$onMessage</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$onMessage" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Array of functions called after the message has been written</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Array of functions called after the message has been written</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="onLogFileCreated" id="$onLogFileCreated">
+		<td class="attributes"><code>
+			public  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Logger.FileLogger.html#48-51" title="Go to source code"><var>$onLogFileCreated</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$onLogFileCreated" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>of function(FileLogger $logger, string $fullName); Occurs before the new log
+file is created</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>of function(FileLogger $logger, string $fullName); Occurs before the new log
+file is created</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-Logger.AbstractLogger.html#properties">Logger\AbstractLogger</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Logger.AbstractLogger.html#$dateFormat"><var>$dateFormat</var></a>, 
+			<a href="class-Logger.AbstractLogger.html#$defaultLogLevel"><var>$defaultLogLevel</var></a>, 
+			<a href="class-Logger.AbstractLogger.html#$messagePlaceholders"><var>$messagePlaceholders</var></a>, 
+			<a href="class-Logger.AbstractLogger.html#$messageTemplate"><var>$messageTemplate</var></a>, 
+			<a href="class-Logger.AbstractLogger.html#$minimumLogLevel"><var>$minimumLogLevel</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

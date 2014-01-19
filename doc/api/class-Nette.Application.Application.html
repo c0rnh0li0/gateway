@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class Nette\Application\Application</title>
+
+	<script type="text/javascript" src="resources/combined.js?1479682893"></script>
+	<script type="text/javascript" src="elementlist.js?1567848024"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-AdminModule.html">AdminModule<span></span></a>
+						<ul>
+				<li><a href="namespace-AdminModule.Component.html">Component</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-ApiModule.html">ApiModule</a>
+						</li>
+				<li><a href="namespace-Gateway.html">Gateway<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.html">DataSource<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.Entity.html">Entity<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.Entity.Category.html">Category</a>
+						</li>
+				<li><a href="namespace-Gateway.DataSource.Entity.Customer.html">Customer</a>
+						</li>
+				<li><a href="namespace-Gateway.DataSource.Entity.Order.html">Order<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.Entity.Order.Payment.html">Payment</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.DataSource.Entity.Product.html">Product</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Gateway.Handler.html">Handler<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.html">Erp<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.html">Etron<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.XML.html">XML<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.XML.Reader.html">Reader<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.XML.Reader.Products.html">Products</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.Xml.Writer.html">Writer</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-Gateway.Handler.Shop.html">Shop<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.html">Magento<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.JSON.html">JSON<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.JSON.Reader.html">Reader</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.Magmi.html">Magmi<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.Magmi.Writer.html">Writer</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.SOAP.html">SOAP<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.SOAP.Writer.html">Writer<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.SOAP.Writer.Products.html">Products</a>
+						</li>
+							</ul></li></ul></li></ul></li></ul></li></ul></li>
+				<li><a href="namespace-Gateway.Mapping.html">Mapping<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Mapping.Rule.html">Rule</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Logger.html">Logger</a>
+						</li>
+				<li class="active"><a href="namespace-Nette.html">Nette<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-Nette.Application.html">Application<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Application.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Application.Responses.html">Responses</a>
+						</li>
+				<li><a href="namespace-Nette.Application.Routers.html">Routers</a>
+						</li>
+				<li><a href="namespace-Nette.Application.UI.html">UI</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Caching.html">Caching<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Caching.Storages.html">Storages</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.ComponentModel.html">ComponentModel</a>
+						</li>
+				<li><a href="namespace-Nette.Config.html">Config<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Config.Adapters.html">Adapters</a>
+						</li>
+				<li><a href="namespace-Nette.Config.Extensions.html">Extensions</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Database.html">Database<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Database.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Drivers.html">Drivers</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Reflection.html">Reflection</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Table.html">Table</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.DI.html">DI<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.DI.Diagnostics.html">Diagnostics</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Forms.html">Forms<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Forms.Controls.html">Controls</a>
+						</li>
+				<li><a href="namespace-Nette.Forms.Rendering.html">Rendering</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Http.html">Http</a>
+						</li>
+				<li><a href="namespace-Nette.Iterators.html">Iterators</a>
+						</li>
+				<li><a href="namespace-Nette.Latte.html">Latte<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Latte.Macros.html">Macros</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Loaders.html">Loaders</a>
+						</li>
+				<li><a href="namespace-Nette.Localization.html">Localization</a>
+						</li>
+				<li><a href="namespace-Nette.Mail.html">Mail</a>
+						</li>
+				<li><a href="namespace-Nette.Reflection.html">Reflection</a>
+						</li>
+				<li><a href="namespace-Nette.Security.html">Security<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Security.Diagnostics.html">Diagnostics</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Templating.html">Templating</a>
+						</li>
+				<li><a href="namespace-Nette.Utils.html">Utils<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Utils.PhpGenerator.html">PhpGenerator</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-NetteModule.html">NetteModule</a>
+						</li>
+				<li><a href="namespace-NetteTranslator.html">NetteTranslator</a>
+						</li>
+				<li><a href="namespace-NiftyGrid.html">NiftyGrid</a>
+						</li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li><a href="namespace-Yourface.html">Yourface<span></span></a>
+						<ul>
+				<li><a href="namespace-Yourface.Application.html">Application<span></span></a>
+						<ul>
+				<li><a href="namespace-Yourface.Application.Responses.html">Responses</a>
+						</li>
+				<li><a href="namespace-Yourface.Application.Routers.html">Routers</a>
+						</li>
+				<li><a href="namespace-Yourface.Application.UI.html">UI</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Yourface.Iterators.html">Iterators</a>
+						</li>
+				<li><a href="namespace-Yourface.NiftyGrid.html">NiftyGrid</a>
+						</li>
+				<li><a href="namespace-Yourface.Utils.html">Utils</a>
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-Nette.Application.Application.html">Application</a></li>
+				<li><a href="class-Nette.Application.PresenterFactory.html">PresenterFactory</a></li>
+				<li><a href="class-Nette.Application.Request.html">Request</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-Nette.Application.IPresenter.html">IPresenter</a></li>
+				<li><a href="class-Nette.Application.IPresenterFactory.html">IPresenterFactory</a></li>
+				<li><a href="class-Nette.Application.IResponse.html">IResponse</a></li>
+				<li><a href="class-Nette.Application.IRouter.html">IRouter</a></li>
+			</ul>
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-Nette.Application.AbortException.html">AbortException</a></li>
+				<li><a href="class-Nette.Application.ApplicationException.html">ApplicationException</a></li>
+				<li><a href="class-Nette.Application.BadRequestException.html">BadRequestException</a></li>
+				<li><a href="class-Nette.Application.ForbiddenRequestException.html">ForbiddenRequestException</a></li>
+				<li><a href="class-Nette.Application.InvalidPresenterException.html">InvalidPresenterException</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Nette.Application.html" title="Summary of Nette\Application"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Application</h1>
+
+
+	<div class="description">
+	
+<p>Front Controller.</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-Nette.Object.html"><span>Nette\Object</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>Nette\Application\Application</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Nette.html">Nette</a>\<a href="namespace-Nette.Application.html">Application</a><br />
+		
+
+				<b>Author:</b>
+				David Grudl<br />
+		<b>Located at</b> <a href="source-class-Nette.Application.Application.html#18-262" title="Go to source code">libs/Nette/Application/Application.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Nette.Application.Application.html#77-83" title="Go to source code">__construct</a>( <span><code><a href="class-Nette.Application.IPresenterFactory.html">Nette\Application\IPresenterFactory</a></code> <var>$presenterFactory</var></span>, <span><code><a href="class-Nette.Application.IRouter.html">Nette\Application\IRouter</a></code> <var>$router</var></span>, <span><code><a href="class-Nette.Http.IRequest.html">Nette\Http\IRequest</a></code> <var>$httpRequest</var></span>, <span><code><a href="class-Nette.Http.IResponse.html">Nette\Http\IResponse</a></code> <var>$httpResponse</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="run" id="_run">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_run">#</a>
+		<code><a href="source-class-Nette.Application.Application.html#87-194" title="Go to source code">run</a>( )</code>
+
+		<div class="description short">
+			
+<p>Dispatch a HTTP request to a front controller.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Dispatch a HTTP request to a front controller.</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getRequests" id="_getRequests">
+
+		<td class="attributes"><code>
+			final public 
+			<code><a href="class-Nette.Application.Request.html">Nette\Application\Request</a>[]</code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getRequests">#</a>
+		<code><a href="source-class-Nette.Application.Application.html#198-205" title="Go to source code">getRequests</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns all processed requests.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns all processed requests.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Nette.Application.Request.html">Nette\Application\Request</a>[]</code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getPresenter" id="_getPresenter">
+
+		<td class="attributes"><code>
+			final public 
+			<code><a href="class-Nette.Application.IPresenter.html">Nette\Application\IPresenter</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getPresenter">#</a>
+		<code><a href="source-class-Nette.Application.Application.html#209-216" title="Go to source code">getPresenter</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns current presenter.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns current presenter.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Nette.Application.IPresenter.html">Nette\Application\IPresenter</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getRouter" id="_getRouter">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Nette.Application.IRouter.html">Nette\Application\IRouter</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getRouter">#</a>
+		<code><a href="source-class-Nette.Application.Application.html#224-231" title="Go to source code">getRouter</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns router.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns router.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Nette.Application.IRouter.html">Nette\Application\IRouter</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getPresenterFactory" id="_getPresenterFactory">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Nette.Application.IPresenterFactory.html">Nette\Application\IPresenterFactory</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getPresenterFactory">#</a>
+		<code><a href="source-class-Nette.Application.Application.html#235-242" title="Go to source code">getPresenterFactory</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns presenter factory.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns presenter factory.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Nette.Application.IPresenterFactory.html">Nette\Application\IPresenterFactory</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Nette.Object.html#methods">Nette\Object</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Nette.Object.html#___call">__call()</a>, 
+			<a href="class-Nette.Object.html#___callStatic">__callStatic()</a>, 
+			<a href="class-Nette.Object.html#___get">__get()</a>, 
+			<a href="class-Nette.Object.html#___isset">__isset()</a>, 
+			<a href="class-Nette.Object.html#___set">__set()</a>, 
+			<a href="class-Nette.Object.html#___unset">__unset()</a>, 
+			<a href="class-Nette.Object.html#_extensionMethod">extensionMethod()</a>, 
+			<a href="class-Nette.Object.html#_getReflection">getReflection()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="maxLoop" id="$maxLoop">
+		<td class="attributes"><code>
+			public static 
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Nette.Application.Application.html#30-31" title="Go to source code"><var>$maxLoop</var></a>
+		</td>
+		<td class="value"><code><span class="php-num">20</span></code></td>
+		<td class="description"><div>
+			<a href="#$maxLoop" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="catchExceptions" id="$catchExceptions">
+		<td class="attributes"><code>
+			public  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Nette.Application.Application.html#33-34" title="Go to source code"><var>$catchExceptions</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$catchExceptions" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>enable fault barrier?</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>enable fault barrier?</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="errorPresenter" id="$errorPresenter">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Nette.Application.Application.html#36-37" title="Go to source code"><var>$errorPresenter</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$errorPresenter" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="onStartup" id="$onStartup">
+		<td class="attributes"><code>
+			public  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Nette.Application.Application.html#39-40" title="Go to source code"><var>$onStartup</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$onStartup" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>of function(Application $sender); Occurs before the application loads
+presenter</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>of function(Application $sender); Occurs before the application loads
+presenter</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="onShutdown" id="$onShutdown">
+		<td class="attributes"><code>
+			public  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Nette.Application.Application.html#42-43" title="Go to source code"><var>$onShutdown</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$onShutdown" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>of function(Application $sender, \Exception $e = NULL); Occurs before the
+application shuts down</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>of function(Application $sender, \Exception $e = NULL); Occurs before the
+application shuts down</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="onRequest" id="$onRequest">
+		<td class="attributes"><code>
+			public  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Nette.Application.Application.html#45-46" title="Go to source code"><var>$onRequest</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$onRequest" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>of function(Application $sender, Request $request); Occurs when a new request
+is ready for dispatch</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>of function(Application $sender, Request $request); Occurs when a new request
+is ready for dispatch</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="onResponse" id="$onResponse">
+		<td class="attributes"><code>
+			public  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Nette.Application.Application.html#48-49" title="Go to source code"><var>$onResponse</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$onResponse" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>of function(Application $sender, IResponse $response); Occurs when a new
+response is received</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>of function(Application $sender, IResponse $response); Occurs when a new
+response is received</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="onError" id="$onError">
+		<td class="attributes"><code>
+			public  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Nette.Application.Application.html#51-52" title="Go to source code"><var>$onError</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$onError" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>of function(Application $sender, \Exception $e); Occurs when an unhandled
+exception occurs in the application</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>of function(Application $sender, \Exception $e); Occurs when an unhandled
+exception occurs in the application</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+	<table class="summary" id="magicProperties">
+	<caption>Magic properties summary</caption>
+	<tr data-order="requests" id="m$requests">
+		<td class="attributes"><code>
+			public  read-only
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Nette.Application.Application.html#23" title="Go to source code"><var>$requests</var></a>
+		</td>
+		<td class="description"><div>
+			<a href="#m$requests" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="presenter" id="m$presenter">
+		<td class="attributes"><code>
+			public  read-only
+			<code><a href="class-Nette.Application.IPresenter.html">Nette\Application\IPresenter</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Nette.Application.Application.html#24" title="Go to source code"><var>$presenter</var></a>
+		</td>
+		<td class="description"><div>
+			<a href="#m$presenter" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="router" id="m$router">
+		<td class="attributes"><code>
+			public  read-only
+			<code><a href="class-Nette.Application.IRouter.html">Nette\Application\IRouter</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Nette.Application.Application.html#25" title="Go to source code"><var>$router</var></a>
+		</td>
+		<td class="description"><div>
+			<a href="#m$router" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="presenterFactory" id="m$presenterFactory">
+		<td class="attributes"><code>
+			public  read-only
+			<code><a href="class-Nette.Application.IPresenterFactory.html">Nette\Application\IPresenterFactory</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Nette.Application.Application.html#26" title="Go to source code"><var>$presenterFactory</var></a>
+		</td>
+		<td class="description"><div>
+			<a href="#m$presenterFactory" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Magic properties inherited from <a href="class-Nette.Object.html#properties">Nette\Object</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Nette.Object.html#m$reflection"><var>$reflection</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

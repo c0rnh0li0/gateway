@@ -1,0 +1,30 @@
+{extends '@layout.latte'}
+
+{block #content}
+    <div class="content two-columns {if isset($flip) && $flip > 0}flip{/if}">
+	{block #beforeTextContent}{/block}
+
+	<div class="sidebar">
+	    {block #sidebar}
+		<p class="warning">Block 'sidebar' in Two Columns Layout - must be overriden</p>
+	    {/block}
+	</div>
+
+	<div class="text-content">
+	    {block #layoutContent}                
+                {include #breadcrumbs}
+
+		{include #pageTitle}
+		{include #flashMessages}
+
+		{block #textContent}
+		    <p class="warning">Block 'textContent' in Two Columns Layout - must be overriden</p>
+		{/block}
+	    {/block}
+	</div>
+
+	<div class="clear"></div>
+    </div>
+
+    <div class="clear"></div>
+{/block}

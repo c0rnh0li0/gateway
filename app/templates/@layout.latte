@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <title>Gateway 2.0</title>
+                
+        {block #head_links}
+            <link rel="stylesheet" type="text/css" media="screen" href="{$basePath}/css/site.css">
+            <link rel="stylesheet" type="text/css" media="screen" href="{$basePath}/css/gateway.css">                
+        {/block}
+        
+        <script type="text/javascript" src="{$baseUri}/js/library/jquery-ui/js/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="{$baseUri}/js/library/jquery-ui/js/jquery-ui-1.8.18.custom.min.js"></script>
+        <script type="text/javascript" src="{$baseUri}/js/jquery.nette.js"></script>
+    </head>
+
+    <body>        
+        <div id="container">
+            {block #container}
+                <h1>Gateway 2.0 Interface crossroad</h1>
+                {include #flashMessages}
+
+                {include #content}
+            {/block}
+        </div>
+    </body>
+</html>
+
+{* BASIC FLASH MESSAGES *}
+{define #flashMessages}
+    {snippet flashMessages}
+	{if (count($flashes))}
+	    <div class="flash-messages">
+		{foreach $flashes as $flash}
+		    <p class="item {$flash->type}">{!$flash->message}</p>
+		{/foreach}
+	    </div>
+	{/if}
+    {/snippet}
+{/define}

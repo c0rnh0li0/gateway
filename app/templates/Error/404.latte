@@ -1,0 +1,28 @@
+{extends '@layout.latte'}
+
+{block #content}
+
+<h2>404: Page Not Found</h2>
+
+<p>Page you requested was not found on this server.</p>
+
+<h3>What does it mean?</h3>
+
+<ul>
+    <li>Page was deleted.</li>
+    <li>Page was renamed or moved.</li>
+    <li>There is a typo error in URL.</li>
+</ul>
+
+<h3>Possible reason</h3>
+
+<pre>
+    {$text}
+</pre>
+
+<h3>How to continue?</h3>
+<ul>
+    <li>If you set the URL manually, check if it is correct.</li>
+    <li>Go to home page.</li>
+    <li>Contact us if you think we should know about this error.</li>
+</ul>

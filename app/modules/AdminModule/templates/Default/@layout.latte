@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<title>Development GW v2.1 - Back-End</title>
+	
+        {block #head_meta}
+	    <meta name="author" content="www.yourface.cz" />
+	    <meta name="copyright" content="www.yourface.cz" />
+
+	    <meta http-equiv="content-language" content="en" />
+	    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	    <meta http-equiv="cache-Control" content="must-revalidate, post-check=0, pre-check=0" />
+	    <meta http-equiv="pragma" content="public" />
+
+	    <meta http-equiv="cache-control" content="no-cache" />
+	    <meta http-equiv="pragma" content="no-cache" />
+	    <meta http-equiv="expires" content="-1" />
+
+	    <meta name="robots" content="index,follow" />
+	    <meta name="googlebot" content="index,follow,snippet,archive" />
+	{/block}
+        
+        {* JAVASCRIPTS *}
+	{block #head_scripts}
+	    <script type="text/javascript" src="{$baseUri}/js/library/jquery-ui/js/jquery-1.7.1.min.js"></script>
+	    <script type="text/javascript" src="{$baseUri}/js/library/jquery-ui/js/jquery-ui-1.8.18.custom.min.js"></script>
+	    <script type="text/javascript" src="{$baseUri}/js/jquery.nette.js"></script>
+	    {*<script type="text/javascript" src="{$baseUri}/js/jquery.nette.ajaxform.js"></script> *}
+
+            {* NiftyDatagrid *}
+            <script type="text/javascript" src="{$baseUri}/js/library/nifty-grid/grid.js"></script>
+            <script type="text/javascript" src="{$baseUri}/js/library/nifty-grid/jquery-ui.js"></script>
+            
+	    {* nase akce musi byt posledni, az po nacteni knihoven *}
+	    <script type="text/javascript" src="{$baseUri}/js/yf.ajax.js"></script>
+	    <script type="text/javascript" src="{$baseUri}/js/yf.common.js"></script>
+		
+	    {* ajax used for maintenance button in Overview NB *}	
+		<script type="text/javascript" src="{$baseUri}/js/nette.ajax.js"></script>
+		<script type="text/javascript" src="{$baseUri}/js/main.js"></script>
+        {/block}
+        
+        {* CSS *}
+        {block #head_links}
+            <link rel="stylesheet" type="text/css" media="screen" href="{$basePath}/css/reset.css" />
+            <link rel="stylesheet" type="text/css" media="screen" href="{$basePath}/css/site.css" />
+            <link rel="stylesheet" type="text/css" media="screen" href="{$basePath}/css/gateway.css">
+
+            {*
+            <link rel="stylesheet" type="text/css" media="screen" href="{$basePath}/js/library/jquery-ui/css/cupertino/jquery-ui-1.8.18.custom.css" />
+            *}
+            
+	    {block #head_links_layout}{/block}
+        {/block}
+        
+    </head>
+
+    <body>
+	<div id="container">
+	    {block #layout}
+		<div class="outer-wrapper">
+
+		    <div id="header">
+
+			<div class="inner-wrapper">					
+			    {block #header}				
+				<h1 id="logo">
+				    <a href="{plink Default:}" title="{=_("return to home")}"><span>{=_("Development Gateway Interface v2.1 BE")}</span></a>
+				</h1>					
+				{block #menu}
+				    <div id="menu">
+					{control navigation}
+				    </div>
+				{/block}
+
+				<div class="clear"></div>
+			    {/block}
+			</div>
+                        
+                        <div class="clear"></div>
+		    </div>
+		</div>
+
+		<div class="outer-wrapper">
+		    {block #beforeLayout}{/block}
+
+		    <div id="layout">
+			<div class="inner-wrapper">
+			    {include #content}
+			</div>
+		    </div>
+
+		    {block #afterLayout}{/block}
+		</div>
+
+		<div class="outer-wrapper">
+		    <div id="footer">
+			<div class="inner-wrapper">
+			    {block #footer}
+				<div class="content">
+				    {include #footerContent}
+
+				    <div class="clear"></div>
+				</div>
+			    {/block}
+
+			    <div id="copyright">
+				<p>
+				    Copyright &copy; {='0'|date:'%Y'} <a href="http://www.yourface.cz" title="{=_("go to Yourface.cz")}">Yourface.cz</a>. All rights reserved.				    
+				</p>
+				<p class="version">
+				    Version 2.4.1 (last updated on 22.01.2013)
+				</p>
+
+				<div class="clear"></div>
+			    </div>
+			    
+			</div>
+		    </div>
+		</div>
+
+	    {/block}
+	</div>
+    
+    </body>
+</html>
+
+{* BASIC CONTENT BLOCK *}
+{define #content}
+   <div class="content simple">
+        <div class="text-content">
+            {block #layoutContent}
+		{include #pageTitle}
+		{include #flashMessages}
+
+		<div class="clear"></div>
+
+                {block #textContent}
+                    <p class="warning">Please, define #textContent block.</p>
+
+		    <p>
+			<b>Loaded templates</b><br/>
+			<small>layout: <code>{$template->getFile() |replace:$root}</code></small><br />
+			<small>view: <code>{$presenter->template->getFile() |replace:$root}</code></small>
+		    </p>
+
+                {/block}
+            {/block}
+        </div>
+    </div>
+
+    <div class="clear"></div>
+{/define}
+
+{define #pageTitle}
+    {* <h2>{$presenter->request->moduleName}{$presenterName}:{$viewName}</h2> *}
+    <h2>Not specified</h2>
+{/define}
+
+{* BASIC FLASH MESSAGES *}
+{define #flashMessages}
+    {snippet flashMessages}
+	{if (count($flashes))}
+	    <div class="flash-messages">
+		{foreach $flashes as $flash}
+		    <p class="item {$flash->type}">{!$flash->message}</p>
+		{/foreach}
+	    </div>
+	{/if}
+    {/snippet}
+{/define}
+
+{define #footerContent}
+
+{/define}
+			    
+{define #breadcrumbs}
+    {if $presenter->getName() != 'Admin:Default'}
+        <div id="breadcrumbs">            
+            {control navigation:breadcrumbs}
+        </div>
+    {/if}
+{/define}

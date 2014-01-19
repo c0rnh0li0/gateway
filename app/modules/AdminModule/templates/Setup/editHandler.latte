@@ -1,0 +1,41 @@
+{extends 'default.latte'}
+
+{block #tabContent}
+    <div class="box form" id="connection-handler">
+        <h3>Connection's handler settings update</h3>
+        
+        <div class="inner">
+            {form editHandlerForm}
+                <ul class="error" n:if="$form->hasErrors()">
+                    <li n:foreach="$form->errors as $error">{$error}</li>
+                </ul>
+            
+                <table>
+                    <tr>
+                        <th>{label reader  /}</th>
+                        <td>{input reader} <small>{$control['editHandlerForm-reader']->getOption('description')}</small></td>
+                    </tr>
+                    <tr n:class="$control['editHandlerForm-writer_settings']->getControl()->isRequired() ? 'required' : ''">
+                        <th>{label reader_settings  /}</th>
+                        <td>{input reader_settings} <small>{$control['editHandlerForm-reader_settings']->getOption('description')}</small></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th>{label writer  /}</th>
+                        <td>{input writer} <small>{$control['editHandlerForm-writer']->getOption('description')}</small></td>
+                    </tr>
+                    <tr n:class="$control['editHandlerForm-writer_settings']->getControl()->isRequired() ? 'required' : ''">
+                        <th>{label writer_settings  /}</th>
+                        <td>{input writer_settings}  <small>{$control['editHandlerForm-writer_settings']->getOption('description')}</small></td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td>{input reader_id}{input writer_id}{input save} {input cancel}</td>
+                    </tr>
+                </table>               
+            {/form}
+        </div>
+    </div>
+{/block}

@@ -1,0 +1,17 @@
+{extends 'default.latte'}
+
+{block #pageTitle}
+    <h2>Global log view</h2>
+{/block}
+
+{block #textContent}
+    <div class="box">
+        <h3>Complete log</h3>
+        
+        {if !$logFile} 
+            <p class="error">Log file was not found in {$logFile}.</p>
+        {else}
+            <pre>{$logFile}</pre>
+        {/if}
+    </div>
+{/block}

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Interface Nette\ComponentModel\IComponent</title>
+
+	<script type="text/javascript" src="resources/combined.js?1479682893"></script>
+	<script type="text/javascript" src="elementlist.js?1567848024"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-AdminModule.html">AdminModule<span></span></a>
+						<ul>
+				<li><a href="namespace-AdminModule.Component.html">Component</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-ApiModule.html">ApiModule</a>
+						</li>
+				<li><a href="namespace-Gateway.html">Gateway<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.html">DataSource<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.Entity.html">Entity<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.Entity.Category.html">Category</a>
+						</li>
+				<li><a href="namespace-Gateway.DataSource.Entity.Customer.html">Customer</a>
+						</li>
+				<li><a href="namespace-Gateway.DataSource.Entity.Order.html">Order<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.Entity.Order.Payment.html">Payment</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.DataSource.Entity.Product.html">Product</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Gateway.Handler.html">Handler<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.html">Erp<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.html">Etron<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.XML.html">XML<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.XML.Reader.html">Reader<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.XML.Reader.Products.html">Products</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.Xml.Writer.html">Writer</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-Gateway.Handler.Shop.html">Shop<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.html">Magento<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.JSON.html">JSON<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.JSON.Reader.html">Reader</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.Magmi.html">Magmi<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.Magmi.Writer.html">Writer</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.SOAP.html">SOAP<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.SOAP.Writer.html">Writer<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.SOAP.Writer.Products.html">Products</a>
+						</li>
+							</ul></li></ul></li></ul></li></ul></li></ul></li>
+				<li><a href="namespace-Gateway.Mapping.html">Mapping<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Mapping.Rule.html">Rule</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Logger.html">Logger</a>
+						</li>
+				<li class="active"><a href="namespace-Nette.html">Nette<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Application.html">Application<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Application.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Application.Responses.html">Responses</a>
+						</li>
+				<li><a href="namespace-Nette.Application.Routers.html">Routers</a>
+						</li>
+				<li><a href="namespace-Nette.Application.UI.html">UI</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Caching.html">Caching<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Caching.Storages.html">Storages</a>
+						</li>
+							</ul></li>
+				<li class="active"><a href="namespace-Nette.ComponentModel.html">ComponentModel</a>
+						</li>
+				<li><a href="namespace-Nette.Config.html">Config<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Config.Adapters.html">Adapters</a>
+						</li>
+				<li><a href="namespace-Nette.Config.Extensions.html">Extensions</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Database.html">Database<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Database.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Drivers.html">Drivers</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Reflection.html">Reflection</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Table.html">Table</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.DI.html">DI<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.DI.Diagnostics.html">Diagnostics</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Forms.html">Forms<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Forms.Controls.html">Controls</a>
+						</li>
+				<li><a href="namespace-Nette.Forms.Rendering.html">Rendering</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Http.html">Http</a>
+						</li>
+				<li><a href="namespace-Nette.Iterators.html">Iterators</a>
+						</li>
+				<li><a href="namespace-Nette.Latte.html">Latte<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Latte.Macros.html">Macros</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Loaders.html">Loaders</a>
+						</li>
+				<li><a href="namespace-Nette.Localization.html">Localization</a>
+						</li>
+				<li><a href="namespace-Nette.Mail.html">Mail</a>
+						</li>
+				<li><a href="namespace-Nette.Reflection.html">Reflection</a>
+						</li>
+				<li><a href="namespace-Nette.Security.html">Security<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Security.Diagnostics.html">Diagnostics</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Templating.html">Templating</a>
+						</li>
+				<li><a href="namespace-Nette.Utils.html">Utils<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Utils.PhpGenerator.html">PhpGenerator</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-NetteModule.html">NetteModule</a>
+						</li>
+				<li><a href="namespace-NetteTranslator.html">NetteTranslator</a>
+						</li>
+				<li><a href="namespace-NiftyGrid.html">NiftyGrid</a>
+						</li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li><a href="namespace-Yourface.html">Yourface<span></span></a>
+						<ul>
+				<li><a href="namespace-Yourface.Application.html">Application<span></span></a>
+						<ul>
+				<li><a href="namespace-Yourface.Application.Responses.html">Responses</a>
+						</li>
+				<li><a href="namespace-Yourface.Application.Routers.html">Routers</a>
+						</li>
+				<li><a href="namespace-Yourface.Application.UI.html">UI</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Yourface.Iterators.html">Iterators</a>
+						</li>
+				<li><a href="namespace-Yourface.NiftyGrid.html">NiftyGrid</a>
+						</li>
+				<li><a href="namespace-Yourface.Utils.html">Utils</a>
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Nette.ComponentModel.Component.html">Component</a></li>
+				<li><a href="class-Nette.ComponentModel.Container.html">Container</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li class="active"><a href="class-Nette.ComponentModel.IComponent.html">IComponent</a></li>
+				<li><a href="class-Nette.ComponentModel.IContainer.html">IContainer</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Nette.ComponentModel.html" title="Summary of Nette\ComponentModel"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Interface IComponent</h1>
+
+
+	<div class="description">
+	
+<p>Provides functionality required by all components.</p>
+
+	</div>
+
+
+
+
+
+	<div>
+		<h4>Direct known implementers</h4>
+			<a href="class-Nette.ComponentModel.Component.html">Nette\ComponentModel\Component</a>, 
+			<a href="class-Nette.ComponentModel.IContainer.html">Nette\ComponentModel\IContainer</a>
+	</div>
+
+	<div>
+		<h4>Indirect known implementers</h4>
+			<a href="class-AdminModule.BasePresenter.html">AdminModule\BasePresenter</a>, 
+			<a href="class-AdminModule.Component.ConnectionHandlersGrid.html">AdminModule\Component\ConnectionHandlersGrid</a>, 
+			<a href="class-AdminModule.SchedulePresenter.html">AdminModule\SchedulePresenter</a>, 
+			<a href="class-AdminModule.SetupPresenter.html">AdminModule\SetupPresenter</a>, 
+			<a href="class-ApiModule.BasePresenter.html">ApiModule\BasePresenter</a>, 
+			<a href="class-ApiModule.CategoriesPresenter.html">ApiModule\CategoriesPresenter</a>, 
+			<a href="class-ApiModule.CustomersPresenter.html">ApiModule\CustomersPresenter</a>, 
+			<a href="class-ApiModule.DefaultPresenter.html">ApiModule\DefaultPresenter</a>, 
+			<a href="class-ApiModule.FilesPresenter.html">ApiModule\FilesPresenter</a>, 
+			<a href="class-ApiModule.LogsPresenter.html">ApiModule\LogsPresenter</a>, 
+			<a href="class-ApiModule.OrdersPresenter.html">ApiModule\OrdersPresenter</a>, 
+			<a href="class-ApiModule.ProductsImagesPresenter.html">ApiModule\ProductsImagesPresenter</a>, 
+			<a href="class-AdminModule.Component.ConnectionsGrid.html">AdminModule\Component\ConnectionsGrid</a>, 
+			<a href="class-ApiModule.ProductsPresenter.html">ApiModule\ProductsPresenter</a>, 
+			<a href="class-ApiModule.SchedulesPresenter.html">ApiModule\SchedulesPresenter</a>, 
+			<a href="class-BasePresenter.html">BasePresenter</a>, 
+			<a href="class-DefaultPresenter.html">DefaultPresenter</a>, 
+			<a href="class-ErrorPresenter.html">ErrorPresenter</a>, 
+			<a href="class-Nette.Application.UI.Control.html">Nette\Application\UI\Control</a>, 
+			<a href="class-Nette.Application.UI.Form.html">Nette\Application\UI\Form</a>, 
+			<a href="class-Nette.Application.UI.Multiplier.html">Nette\Application\UI\Multiplier</a>, 
+			<a href="class-Nette.Application.UI.Presenter.html">Nette\Application\UI\Presenter</a>, 
+			<a href="class-Nette.Application.UI.PresenterComponent.html">Nette\Application\UI\PresenterComponent</a>, 
+			<a href="class-AdminModule.Component.EnumerationRulesGrid.html">AdminModule\Component\EnumerationRulesGrid</a>, 
+			<a href="class-Nette.ComponentModel.Container.html">Nette\ComponentModel\Container</a>, 
+			<a href="class-Nette.Forms.Container.html">Nette\Forms\Container</a>, 
+			<a href="class-Nette.Forms.Controls.BaseControl.html">Nette\Forms\Controls\BaseControl</a>, 
+			<a href="class-Nette.Forms.Controls.Button.html">Nette\Forms\Controls\Button</a>, 
+			<a href="class-Nette.Forms.Controls.Checkbox.html">Nette\Forms\Controls\Checkbox</a>, 
+			<a href="class-Nette.Forms.Controls.HiddenField.html">Nette\Forms\Controls\HiddenField</a>, 
+			<a href="class-Nette.Forms.Controls.ImageButton.html">Nette\Forms\Controls\ImageButton</a>, 
+			<a href="class-Nette.Forms.Controls.MultiSelectBox.html">Nette\Forms\Controls\MultiSelectBox</a>, 
+			<a href="class-Nette.Forms.Controls.RadioList.html">Nette\Forms\Controls\RadioList</a>, 
+			<a href="class-Nette.Forms.Controls.SelectBox.html">Nette\Forms\Controls\SelectBox</a>, 
+			<a href="class-AdminModule.Component.LocalizationRulesGrid.html">AdminModule\Component\LocalizationRulesGrid</a>, 
+			<a href="class-Nette.Forms.Controls.SubmitButton.html">Nette\Forms\Controls\SubmitButton</a>, 
+			<a href="class-Nette.Forms.Controls.TextArea.html">Nette\Forms\Controls\TextArea</a>, 
+			<a href="class-Nette.Forms.Controls.TextBase.html">Nette\Forms\Controls\TextBase</a>, 
+			<a href="class-Nette.Forms.Controls.TextInput.html">Nette\Forms\Controls\TextInput</a>, 
+			<a href="class-Nette.Forms.Controls.UploadControl.html">Nette\Forms\Controls\UploadControl</a>, 
+			<a href="class-Nette.Forms.Form.html">Nette\Forms\Form</a>, 
+			<a href="class-NiftyGrid.Action.html">NiftyGrid\Action</a>, 
+			<a href="class-NiftyGrid.Button.html">NiftyGrid\Button</a>, 
+			<a href="class-NiftyGrid.Column.html">NiftyGrid\Column</a>, 
+			<a href="class-NiftyGrid.GlobalButton.html">NiftyGrid\GlobalButton</a>, 
+			<a href="class-AdminModule.Component.LogsGrid.html">AdminModule\Component\LogsGrid</a>, 
+			<a href="class-NiftyGrid.Grid.html">NiftyGrid\Grid</a>, 
+			<a href="class-NiftyGrid.GridPaginator.html">NiftyGrid\GridPaginator</a>, 
+			<a href="class-NiftyGrid.SubGrid.html">NiftyGrid\SubGrid</a>, 
+			<a href="class-Yourface.Application.UI.Form.html">Yourface\Application\UI\Form</a>, 
+			<a href="class-Yourface.Application.UI.Navigation.html">Yourface\Application\UI\Navigation</a>, 
+			<a href="class-Yourface.Application.UI.NavigationNode.html">Yourface\Application\UI\NavigationNode</a>, 
+			<a href="class-Yourface.NiftyGrid.Grid.html">Yourface\NiftyGrid\Grid</a>, 
+			<a href="class-AdminModule.Component.MappingRulesGrid.html">AdminModule\Component\MappingRulesGrid</a>, 
+			<a href="class-AdminModule.Component.ScheduleGrid.html">AdminModule\Component\ScheduleGrid</a>, 
+			<a href="class-AdminModule.ConnectionPresenter.html">AdminModule\ConnectionPresenter</a>, 
+			<a href="class-AdminModule.DefaultPresenter.html">AdminModule\DefaultPresenter</a>
+	</div>
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Nette.html">Nette</a>\<a href="namespace-Nette.ComponentModel.html">ComponentModel</a><br />
+		
+
+				<b>Author:</b>
+				David Grudl<br />
+		<b>Located at</b> <a href="source-class-Nette.ComponentModel.IComponent.html#18-47" title="Go to source code">libs/Nette/ComponentModel/IComponent.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="getName" id="_getName">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getName">#</a>
+		<code><a href="source-class-Nette.ComponentModel.IComponent.html#28-31" title="Go to source code">getName</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getParent" id="_getParent">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Nette.ComponentModel.IContainer.html">Nette\ComponentModel\IContainer</a></code>|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getParent">#</a>
+		<code><a href="source-class-Nette.ComponentModel.IComponent.html#33-37" title="Go to source code">getParent</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the container if any.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the container if any.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Nette.ComponentModel.IContainer.html">Nette\ComponentModel\IContainer</a></code>|null</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setParent" id="_setParent">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setParent">#</a>
+		<code><a href="source-class-Nette.ComponentModel.IComponent.html#39-45" title="Go to source code">setParent</a>( <span><code><a href="class-Nette.ComponentModel.IContainer.html">Nette\ComponentModel\IContainer</a></code> <var>$parent</var> = <span class="php-keyword1">NULL</span></span>, <span>string <var>$name</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the parent of this component.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the parent of this component.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$parent</var></dt>
+					<dd><code><code><a href="class-Nette.ComponentModel.IContainer.html">Nette\ComponentModel\IContainer</a></code></code></dd>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+	<table class="summary" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="NAME_SEPARATOR" id="NAME_SEPARATOR">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-Nette.ComponentModel.IComponent.html#25-26" title="Go to source code"><b>NAME_SEPARATOR</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'-'</span></code></td>
+		<td class="description"><div>
+			<a href="#NAME_SEPARATOR" class="anchor">#</a>
+
+			<div class="description short">
+				
+<p>Separator for component names in path concatenation.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Separator for component names in path concatenation.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

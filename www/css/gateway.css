@@ -1,0 +1,345 @@
+#connection-info {
+    padding: .5em 0;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    width: 180px;
+    float: left;
+}
+
+#connection-info .icon  {
+    display: block;
+    width: 96%;
+    height: 100px;
+    border: 3px solid #eaeaea;
+    margin: 0 0 .5em 0;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+    background: url('images/network.png') no-repeat center center;
+    opacity: .5;
+}
+
+
+#connection-info .box {
+    font-size: 90%;
+    margin: 1em 0 .5em 0;
+}
+
+#connection-info .box H3 {
+    clear: both;
+    font-size: 75%;
+    font-weight: bold;
+    color: #999;
+    padding: .8em 0;
+    text-transform: uppercase;
+}
+
+#connection-info .box UL LI {
+    list-style: none;
+    font-size: 90%;
+    padding: 0;
+    margin: .2em 0;
+    border-bottom: 1px solid #f0f0f0;
+    -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6) );
+    background:-moz-linear-gradient( center top, #ffffff 5%, #f6f6f6 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6');
+    background-color:#ffffff;
+    border:1px solid #ececec;
+
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#connection-info .box UL LI A:hover {
+    color: #888;
+}
+
+#connection-info .box UL LI A {
+    padding: .8em 10px;
+    display: block;
+    text-decoration: none;
+    color: #999;
+}
+
+#connection-info .box UL LI.active {
+    background: #f58400;
+    border: 1px solid #f58400;
+}
+
+#connection-info .box UL LI.active  A {
+    color: #fff;
+}
+
+#connection-content {
+    margin-left: 200px;
+}
+
+#schedule-report DL DT,
+#schedule-report DL DD,
+#connection-info DL DT,
+#connection-info DL DD {
+    padding: .5em 8px;
+    font-size: 75%;
+}
+
+
+#schedule-report DL DT,
+#schedule-report DL DD,
+#connection-info DL DD {
+    background: #fafafa;
+    font-style: oblique;
+    font-family: "Trebuchet MS", sans-serif;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+}
+
+#schedule-report DL DT,
+#connection-info DL DT {
+    clear: both;
+    color: #bbb;
+    float: left;
+    padding: .6em 5px;
+    font-size: 75% !important;
+    text-transform: uppercase;
+    display: none;
+}
+
+#schedule-report DL {
+    float: left;
+    width: 300px;
+}
+
+#schedule-report DL DT,
+#schedule-report DL DD {
+    font-style: normal;
+    padding: .5em 10px;
+}
+
+#schedule-report DL DT {
+    display: inline-block;
+    width: 100px;
+    padding: .8em 10px;
+}
+
+#schedule-report DL DD {
+    font-size: 100%;
+}
+
+#connection-info DL DD.status {
+    display: none;
+}
+
+#connection-handler TABLE TR SMALL {
+    font-size: 75%;
+}
+
+#connection-handler TABLE TR TH,
+#connection-handler TABLE TR TD {
+    padding: .3em 5px;
+}
+
+#connection-handler TABLE TR TD SPAN.label,
+#connection-handler TABLE TR TH {
+    text-transform: uppercase;
+    padding: .5em 5px;
+    font-size: 70%;
+    font-weight: normal;
+}
+
+#connection-handler TABLE TR.required TH {
+    font-weight: bold;
+}
+
+#connection-handler TABLE TR TD SELECT,
+#connection-handler TABLE TR TD INPUT[type=text] {
+    width: 400px;
+}
+
+#connection-handlers SMALL {
+    font-size: 75%;
+    color: #999;
+}
+
+#connection-new INPUT[type=text] {
+    width: 90%;
+
+}
+/*
+#connection-map {
+    float: left;
+    width: 70%;
+}
+
+#connection-map-rule {
+    float: right;
+    width: 27%; 
+}
+*/
+
+#connection-map-rule .inner {
+    padding: .3em 10px;
+}
+
+#connection-map-rule {
+    max-width: 600px;
+}
+
+#connection-map-rule FIELDSET {
+    border: 1px solid #eaeaea;
+    padding: .5em 10px;
+    margin: .5em 0;
+}
+
+#connection-map-rule FIELDSET LEGEND {
+    font-size: 80%;
+}
+
+#connection-map-rule TABLE {
+    width: 100%;
+}
+
+#connection-map-rule TABLE TD {
+    padding: .5em 10px .5em 0;
+}
+
+#connection-map-rule TABLE TD.arrow {
+    text-align: center;
+    width: 10%;
+}
+
+#connection-map-rule TABLE TH {
+    font-size: 70%;
+    padding: .5em 0;
+    text-transform: uppercase;
+}
+
+#connection-map-rule TABLE TD INPUT[type=text] {
+    width: 93%;
+}
+
+#connection-map-rule TABLE TD.checkbox {
+    font-size: 80%;
+    display: table-cell;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+#connection-map-rule TABLE SMALL {
+    font-size: 75%;
+
+}
+
+TABLE SMALL.info {
+    color: #bbb;
+    padding: .7em 0;
+    display: inline-block;
+    font-size: 75%;
+}
+
+TABLE SMALL.info A {
+    color: #bbb;
+    
+}
+
+#schedule-source PRE {
+    white-space: pre-line;
+
+}
+
+TABLE.grid tbody TR TD A.delete,
+TABLE.grid tbody TR TD A.cancel {
+    -moz-box-shadow:inset 0px 1px 0px 0px #f7c5c0;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #f7c5c0;
+    box-shadow:inset 0px 1px 0px 0px #f7c5c0;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fc8d83), color-stop(1, #e4685d) );
+    background:-moz-linear-gradient( center top, #fc8d83 5%, #e4685d 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fc8d83', endColorstr='#e4685d');
+    background-color:#fc8d83;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:1px solid #d83526;
+    display:inline-block;
+    color:#ffffff;
+    text-decoration:none;
+    text-shadow:1px 1px 0px #b23e35;
+}
+
+TABLE.grid tbody TR TD A.delete:hover,
+TABLE.grid tbody TR TD A.cancel:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #e4685d), color-stop(1, #fc8d83) );
+    background:-moz-linear-gradient( center top, #e4685d 5%, #fc8d83 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e4685d', endColorstr='#fc8d83');
+    background-color:#e4685d;
+    color: #fff;
+}
+
+TABLE.grid tbody TR TD A.finish {
+    -moz-box-shadow:inset 0px 1px 0px 0px #fce2c1;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #fce2c1;
+    box-shadow:inset 0px 1px 0px 0px #fce2c1;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffc477), color-stop(1, #fb9e25) );
+    background:-moz-linear-gradient( center top, #ffc477 5%, #fb9e25 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc477', endColorstr='#fb9e25');
+    background-color:#ffc477;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:1px solid #eeb44f;
+    display:inline-block;
+    color:#ffffff;
+
+
+    text-decoration:none;
+    text-shadow:1px 1px 0px #cc9f52;
+}
+
+TABLE.grid tbody TR TD A.finish:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fb9e25), color-stop(1, #ffc477) );
+    background:-moz-linear-gradient( center top, #fb9e25 5%, #ffc477 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fb9e25', endColorstr='#ffc477');
+    background-color:#fb9e25;
+    color:#ffffff;
+}
+
+#connection-logs,
+#global-logs {
+    float: left;
+    width: 49%;
+}
+
+#connection-logs {
+    float: right;
+
+}
+
+#connection-handler {
+    margin-top: 2em;
+}
+ 
+#connection-base-info-form DL DT {
+    float: left;
+    clear: right;
+    width: 100px;
+    padding: .9em 5px;
+}
+
+#connection-base-info-form DL DD {
+    padding: .5em 5px;    
+}
+
+#frmgridForm-scheduleGrid-filter-id {
+ width: 30px;   
+}

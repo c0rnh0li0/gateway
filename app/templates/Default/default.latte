@@ -1,0 +1,55 @@
+{extends '../@layout.latte'}
+
+{block #content}
+
+<fieldset>
+    <legend>Connection's readers source testing</legend>
+    
+    {form sourceForm}
+        <ul class="error" n:if="$form->hasErrors()">
+            <li n:foreach="$form->errors as $error">{$error}</li>
+        </ul>
+
+        <table>
+            <tr>
+                <th>{label connection /}</th>
+                <td>{input connection}</td>
+            </tr>
+            <tr>
+                <th>{label handler /}</th>
+                <td>
+                    {snippet sourceFormHandler}
+                        {* macro 'input' does not work inside snippet *}
+                        {$control['sourceForm-handler']->getControl()}
+                    {/snippet}
+                </td>
+            </tr>          
+            {formContainer source}
+                <tr>
+                    <th>{label text /}</th>
+                    <td>
+                        {input text} 
+                    </td>
+                </tr>
+                <tr>
+                    <th>{label file /}</th>
+                    <td>
+                        {input file} 
+                    </td>
+                </tr>                
+            {/formContainer}
+            <tr>
+                <th></th>
+                <td>
+                    {input process}
+                </td>
+            </tr>                    
+        </table>
+    {/form sourceForm}
+</fieldset>
+
+<script type="text/javascript">
+    $("form").delegate({=('#' . $control["sourceForm-connection"]->htmlId)}, 'change', function() {
+        $.get({$control->link('sourceFormHandlers!')}, {"connName": $(this).val()});
+    });
+</script>

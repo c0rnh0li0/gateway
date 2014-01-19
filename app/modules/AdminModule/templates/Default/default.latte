@@ -1,0 +1,53 @@
+{extends '../@layout_two_cols.latte'}
+
+{block #pageTitle}
+    <h2>Overview</h2>
+{/block}
+
+{block #textContent}
+	<div id="content">
+		<a n:href="changeVariable!" class="ajax">{snippet ajaxChange}{$maintenanceFile}{/snippet}</a>
+	</div>
+
+    <div class="box">
+        <h3>Currently running schedules</h3>
+        
+        {control grid}
+    </div>
+    
+    <div class="box" id="global-logs">
+        <h3>Global logs <small>(application's logs, not older than 2 days)</small></h3>
+        
+        {control logsGrid}
+    </div>
+    
+    <div class="box" id="connection-logs">
+        <h3>Schedule logs <small>(currently running or cancelled, not older than 2 days)</small></h3>
+        
+        {control connectionLogsGrid}
+    </div>    
+    
+    
+    <div class="clear"></div>
+{/block}
+    
+{block #sidebar}
+    <div class="box form">
+        <h3>Server limits</h3>
+        
+        <div class="inner">
+            <dl>
+                <dt>upload_max_filesize</dt>
+                <dd>{=ini_get("upload_max_filesize")}</dd>
+                <dt>post_max_size</dt>
+                <dd>{=ini_get("post_max_size")}</dd>
+                <dt>max_execution_time</dt>
+                <dd>{=ini_get("max_execution_time")}</dd>
+                <dt>max_input_time</dt>
+                <dd>{=ini_get("max_input_time")}</dd>
+                <dt>memory_limit</dt>
+                <dd>{=ini_get("memory_limit")}</dd>
+            </dl>
+        </div>
+    </div>
+{/block}

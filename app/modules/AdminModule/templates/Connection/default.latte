@@ -1,0 +1,21 @@
+{extends '../@layout_two_cols.latte'}
+
+{block #pageTitle}
+    <h2>Connections list</h2>
+{/block}
+
+{block #textContent}
+    {control connectionsGrid}
+    
+{/block}
+
+{block #sidebar}
+
+    <div class="box form" id="connection-new">
+        <h3>New connection</h3>
+        
+        <div class="inner">
+        {control connectionForm}
+        </div>
+    </div>
+{/block}

@@ -1,0 +1,37 @@
+DIV#layout DIV.inner-wrapper {
+    width: 400px;
+    margin: 3em auto 1em auto;
+}
+
+DIV#layout DIV.inner-wrapper .text-content {
+    min-height: 14em;
+}
+
+#security-login.form {
+    border: none;
+}
+
+#security-login.form INPUT[type=password],
+#security-login.form INPUT[type=text] {
+    width: 93%;
+}
+
+#security-login.form .button {
+    float: right;
+    margin-top: -2.8em;
+    margin-right: 1em;
+    
+    width: 100px;
+}
+
+DIV.form DL DT {
+    float: none;
+}
+
+#copyright {
+    text-align: center;
+}
+
+DIV#layout DIV.inner-wrapper {
+    min-height: 10em;
+}

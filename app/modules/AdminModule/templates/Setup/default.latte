@@ -1,0 +1,141 @@
+{extends '../@layout_simple.latte'}
+
+{block #pageTitle}
+    <h2>Connection '{$connection->name}' setup</h2>
+{/block}
+
+{block #textContent}
+    <div class="box" id="connection-info">
+        <span class="icon connection {if $connection->is_enabled}enabled{/if}" title="{=($connection->is_enabled ? 'enabled' : 'disabled')}"></span>
+        
+        <dl>
+            <dt>Description</dt>
+            <dd>{$connection->description}</dd>
+            <dt>Status</dt>
+            <dd class="status">{if $connection->is_enabled}
+                    <span class="enabled"><span>enabled</span></span>
+                {else}
+                    <span class="disabled"><span>disabled</span></span>
+                {/if}
+            </dd>
+        </dl>
+
+        <div class="box">
+            <h3>Settings</h3>
+
+            <ul>
+                <li n:class="$presenter->action == 'edit' ? active"><a n:href="edit">Base info</a></li>
+                <li n:class="$presenter->action == 'default' ? active"><a n:href="default">Handlers</a></li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h3>Mapping</h3>
+
+            <ul>
+                <li n:class="$presenter->action == 'attributes' ? active"><a n:href="attributes">Product attributes</a></li>
+                <li n:class="$presenter->action == 'localization' ? active"><a n:href="localization">Localization</a></li>
+                <li n:class="$presenter->action == 'enumeration' ? active"><a n:href="enumeration">Properties</a></li>
+            </ul>
+        </div>
+    </div>
+
+    {*
+    <div class="clear"></div>
+
+    <div class="tabs">
+        <ul>
+            <li n:class="$presenter->action == 'default' ? active"><a n:href="default">Handlers</a></li>
+            <li n:class="$presenter->action == 'attributes' ? active"><a n:href="attributes">Product attributes</a></li>
+            <li n:class="$presenter->action == 'localization' ? active"><a n:href="localization">Localization</a></li>
+            <li n:class="$presenter->action == 'enumeration' ? active"><a n:href="enumeration">Properties</a></li>
+        </ul>
+        
+        <div class="clear"></div>
+    </div>
+    *}
+    
+    <div id="connection-content">
+        {block #tabContent}
+            <div class="box" id="connection-handlers">
+                <h3>Defined handlers list</h3>
+                
+                {control connectionHandlersGrid}
+            </div>
+
+            <div class="box form"  id="connection-handler">
+                <h3>Add new handler</h3>
+                
+                    <div class="inner">
+                        {form connectionHandlersForm}
+                            <ul class="error" n:if="$form->hasErrors()">
+                                <li n:foreach="$form->errors as $error">{$error}</li>
+                            </ul>
+                        
+                            <table>
+                                <tr  n:class="$control['connectionHandlersForm-type']->getControl()->isRequired() ? 'required'">
+                                    <th>
+                                        {label type  /}
+                                    </th>
+                                    <td>
+                                        {snippet connectionHandlersFormType}
+                                            {$control['connectionHandlersForm-type']->getControl()}
+                                        {/snippet}
+                                    </td>
+                                </tr>
+                                <tr  n:class="$control['connectionHandlersForm-reader']->getControl()->isRequired() ? 'required'">
+                                    <th>
+                                        {label reader  /}
+                                    </th>
+                                     <td>
+                                        {snippet connectionHandlersFormReader}
+                                            {$control['connectionHandlersForm-reader']->getControl()}
+
+                                            <span class="label">{$control['connectionHandlersForm-reader_settings']->getLabel()}</span>
+                                            {$control['connectionHandlersForm-reader_settings']->getControl()}
+                                        {/snippet}
+                                    </td>
+                                </tr>
+                                <tr  n:class="$control['connectionHandlersForm-writer']->getControl()->isRequired() ? 'required'">
+                                    <th>
+                                        {label writer  /}
+                                    </th>
+                                    <td>
+                                        {snippet connectionHandlersFormWriter}
+                                            {$control['connectionHandlersForm-writer']->getControl()}
+
+                                        <span class="label">{$control['connectionHandlersForm-writer_settings']->getLabel()}</span>
+                                            {$control['connectionHandlersForm-writer_settings']->getControl()}
+                                        {/snippet}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4">
+                                        {input save}
+                                    </td>
+                                </tr>
+                            </table>
+                        {/form connectionHandlersForm}
+                                        
+                    </div>            
+
+                    <script type="text/javascript">
+                        $("form").delegate({=('#' . $control["connectionHandlersForm-type"]->htmlId)}, 'change', function() {
+                            $.get({$control->link('connectionHandlersFormReaders!')}, {"type": $(this).val()});        
+                        });
+                        
+                        $("form").delegate({=('#' . $control["connectionHandlersForm-reader"]->htmlId)}, 'change', function() {
+                            $.get({$control->link('connectionHandlersFormWriters!')}, {"type": $('#frmconnectionHandlersForm-type').val(), "reader": $(this).val()});        
+                        });
+
+                    </script>
+            </div>                  
+        {/block}
+        
+        <div class="clear"></div>
+    </div>
+    
+    <div>
+    	we will be testing here
+    </div>
+{/block}

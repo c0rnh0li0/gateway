@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class Nette\ComponentModel\Component</title>
+
+	<script type="text/javascript" src="resources/combined.js?1479682893"></script>
+	<script type="text/javascript" src="elementlist.js?1567848024"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-AdminModule.html">AdminModule<span></span></a>
+						<ul>
+				<li><a href="namespace-AdminModule.Component.html">Component</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-ApiModule.html">ApiModule</a>
+						</li>
+				<li><a href="namespace-Gateway.html">Gateway<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.html">DataSource<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.Entity.html">Entity<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.Entity.Category.html">Category</a>
+						</li>
+				<li><a href="namespace-Gateway.DataSource.Entity.Customer.html">Customer</a>
+						</li>
+				<li><a href="namespace-Gateway.DataSource.Entity.Order.html">Order<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.Entity.Order.Payment.html">Payment</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.DataSource.Entity.Product.html">Product</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Gateway.Handler.html">Handler<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.html">Erp<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.html">Etron<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.XML.html">XML<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.XML.Reader.html">Reader<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.XML.Reader.Products.html">Products</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.Xml.Writer.html">Writer</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-Gateway.Handler.Shop.html">Shop<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.html">Magento<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.JSON.html">JSON<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.JSON.Reader.html">Reader</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.Magmi.html">Magmi<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.Magmi.Writer.html">Writer</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.SOAP.html">SOAP<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.SOAP.Writer.html">Writer<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.SOAP.Writer.Products.html">Products</a>
+						</li>
+							</ul></li></ul></li></ul></li></ul></li></ul></li>
+				<li><a href="namespace-Gateway.Mapping.html">Mapping<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Mapping.Rule.html">Rule</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Logger.html">Logger</a>
+						</li>
+				<li class="active"><a href="namespace-Nette.html">Nette<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Application.html">Application<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Application.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Application.Responses.html">Responses</a>
+						</li>
+				<li><a href="namespace-Nette.Application.Routers.html">Routers</a>
+						</li>
+				<li><a href="namespace-Nette.Application.UI.html">UI</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Caching.html">Caching<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Caching.Storages.html">Storages</a>
+						</li>
+							</ul></li>
+				<li class="active"><a href="namespace-Nette.ComponentModel.html">ComponentModel</a>
+						</li>
+				<li><a href="namespace-Nette.Config.html">Config<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Config.Adapters.html">Adapters</a>
+						</li>
+				<li><a href="namespace-Nette.Config.Extensions.html">Extensions</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Database.html">Database<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Database.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Drivers.html">Drivers</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Reflection.html">Reflection</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Table.html">Table</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.DI.html">DI<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.DI.Diagnostics.html">Diagnostics</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Forms.html">Forms<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Forms.Controls.html">Controls</a>
+						</li>
+				<li><a href="namespace-Nette.Forms.Rendering.html">Rendering</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Http.html">Http</a>
+						</li>
+				<li><a href="namespace-Nette.Iterators.html">Iterators</a>
+						</li>
+				<li><a href="namespace-Nette.Latte.html">Latte<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Latte.Macros.html">Macros</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Loaders.html">Loaders</a>
+						</li>
+				<li><a href="namespace-Nette.Localization.html">Localization</a>
+						</li>
+				<li><a href="namespace-Nette.Mail.html">Mail</a>
+						</li>
+				<li><a href="namespace-Nette.Reflection.html">Reflection</a>
+						</li>
+				<li><a href="namespace-Nette.Security.html">Security<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Security.Diagnostics.html">Diagnostics</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Templating.html">Templating</a>
+						</li>
+				<li><a href="namespace-Nette.Utils.html">Utils<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Utils.PhpGenerator.html">PhpGenerator</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-NetteModule.html">NetteModule</a>
+						</li>
+				<li><a href="namespace-NetteTranslator.html">NetteTranslator</a>
+						</li>
+				<li><a href="namespace-NiftyGrid.html">NiftyGrid</a>
+						</li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li><a href="namespace-Yourface.html">Yourface<span></span></a>
+						<ul>
+				<li><a href="namespace-Yourface.Application.html">Application<span></span></a>
+						<ul>
+				<li><a href="namespace-Yourface.Application.Responses.html">Responses</a>
+						</li>
+				<li><a href="namespace-Yourface.Application.Routers.html">Routers</a>
+						</li>
+				<li><a href="namespace-Yourface.Application.UI.html">UI</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Yourface.Iterators.html">Iterators</a>
+						</li>
+				<li><a href="namespace-Yourface.NiftyGrid.html">NiftyGrid</a>
+						</li>
+				<li><a href="namespace-Yourface.Utils.html">Utils</a>
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-Nette.ComponentModel.Component.html">Component</a></li>
+				<li><a href="class-Nette.ComponentModel.Container.html">Container</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-Nette.ComponentModel.IComponent.html">IComponent</a></li>
+				<li><a href="class-Nette.ComponentModel.IContainer.html">IContainer</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Nette.ComponentModel.html" title="Summary of Nette\ComponentModel"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Component</h1>
+
+
+	<div class="description">
+	
+<p>Component is the base class for all components.</p>
+
+<p>Components are objects implementing IComponent. They has parent component and
+own name.</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-Nette.Object.html"><span>Nette\Object</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>Nette\ComponentModel\Component</span></b>			
+			 implements 
+				<a href="class-Nette.ComponentModel.IComponent.html"><span>Nette\ComponentModel\IComponent</span></a>
+			
+			
+		</dd>
+	</dl>
+
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-Nette.ComponentModel.Container.html">Nette\ComponentModel\Container</a>, 
+			<a href="class-Nette.Forms.Controls.BaseControl.html">Nette\Forms\Controls\BaseControl</a>
+	</div>
+
+	<div>
+		<h4>Indirect known subclasses</h4>
+			<a href="class-AdminModule.BasePresenter.html">AdminModule\BasePresenter</a>, 
+			<a href="class-AdminModule.Component.ConnectionHandlersGrid.html">AdminModule\Component\ConnectionHandlersGrid</a>, 
+			<a href="class-AdminModule.SchedulePresenter.html">AdminModule\SchedulePresenter</a>, 
+			<a href="class-AdminModule.SetupPresenter.html">AdminModule\SetupPresenter</a>, 
+			<a href="class-ApiModule.BasePresenter.html">ApiModule\BasePresenter</a>, 
+			<a href="class-ApiModule.CategoriesPresenter.html">ApiModule\CategoriesPresenter</a>, 
+			<a href="class-ApiModule.CustomersPresenter.html">ApiModule\CustomersPresenter</a>, 
+			<a href="class-ApiModule.DefaultPresenter.html">ApiModule\DefaultPresenter</a>, 
+			<a href="class-ApiModule.FilesPresenter.html">ApiModule\FilesPresenter</a>, 
+			<a href="class-ApiModule.LogsPresenter.html">ApiModule\LogsPresenter</a>, 
+			<a href="class-ApiModule.OrdersPresenter.html">ApiModule\OrdersPresenter</a>, 
+			<a href="class-ApiModule.ProductsImagesPresenter.html">ApiModule\ProductsImagesPresenter</a>, 
+			<a href="class-AdminModule.Component.ConnectionsGrid.html">AdminModule\Component\ConnectionsGrid</a>, 
+			<a href="class-ApiModule.ProductsPresenter.html">ApiModule\ProductsPresenter</a>, 
+			<a href="class-ApiModule.SchedulesPresenter.html">ApiModule\SchedulesPresenter</a>, 
+			<a href="class-BasePresenter.html">BasePresenter</a>, 
+			<a href="class-DefaultPresenter.html">DefaultPresenter</a>, 
+			<a href="class-ErrorPresenter.html">ErrorPresenter</a>, 
+			<a href="class-Nette.Application.UI.Control.html">Nette\Application\UI\Control</a>, 
+			<a href="class-Nette.Application.UI.Form.html">Nette\Application\UI\Form</a>, 
+			<a href="class-Nette.Application.UI.Multiplier.html">Nette\Application\UI\Multiplier</a>, 
+			<a href="class-Nette.Application.UI.Presenter.html">Nette\Application\UI\Presenter</a>, 
+			<a href="class-Nette.Application.UI.PresenterComponent.html">Nette\Application\UI\PresenterComponent</a>, 
+			<a href="class-AdminModule.Component.EnumerationRulesGrid.html">AdminModule\Component\EnumerationRulesGrid</a>, 
+			<a href="class-Nette.Forms.Container.html">Nette\Forms\Container</a>, 
+			<a href="class-Nette.Forms.Controls.Button.html">Nette\Forms\Controls\Button</a>, 
+			<a href="class-Nette.Forms.Controls.Checkbox.html">Nette\Forms\Controls\Checkbox</a>, 
+			<a href="class-Nette.Forms.Controls.HiddenField.html">Nette\Forms\Controls\HiddenField</a>, 
+			<a href="class-Nette.Forms.Controls.ImageButton.html">Nette\Forms\Controls\ImageButton</a>, 
+			<a href="class-Nette.Forms.Controls.MultiSelectBox.html">Nette\Forms\Controls\MultiSelectBox</a>, 
+			<a href="class-Nette.Forms.Controls.RadioList.html">Nette\Forms\Controls\RadioList</a>, 
+			<a href="class-Nette.Forms.Controls.SelectBox.html">Nette\Forms\Controls\SelectBox</a>, 
+			<a href="class-Nette.Forms.Controls.SubmitButton.html">Nette\Forms\Controls\SubmitButton</a>, 
+			<a href="class-Nette.Forms.Controls.TextArea.html">Nette\Forms\Controls\TextArea</a>, 
+			<a href="class-AdminModule.Component.LocalizationRulesGrid.html">AdminModule\Component\LocalizationRulesGrid</a>, 
+			<a href="class-Nette.Forms.Controls.TextBase.html">Nette\Forms\Controls\TextBase</a>, 
+			<a href="class-Nette.Forms.Controls.TextInput.html">Nette\Forms\Controls\TextInput</a>, 
+			<a href="class-Nette.Forms.Controls.UploadControl.html">Nette\Forms\Controls\UploadControl</a>, 
+			<a href="class-Nette.Forms.Form.html">Nette\Forms\Form</a>, 
+			<a href="class-NiftyGrid.Action.html">NiftyGrid\Action</a>, 
+			<a href="class-NiftyGrid.Button.html">NiftyGrid\Button</a>, 
+			<a href="class-NiftyGrid.Column.html">NiftyGrid\Column</a>, 
+			<a href="class-NiftyGrid.GlobalButton.html">NiftyGrid\GlobalButton</a>, 
+			<a href="class-NiftyGrid.Grid.html">NiftyGrid\Grid</a>, 
+			<a href="class-NiftyGrid.GridPaginator.html">NiftyGrid\GridPaginator</a>, 
+			<a href="class-AdminModule.Component.LogsGrid.html">AdminModule\Component\LogsGrid</a>, 
+			<a href="class-NiftyGrid.SubGrid.html">NiftyGrid\SubGrid</a>, 
+			<a href="class-Yourface.Application.UI.Form.html">Yourface\Application\UI\Form</a>, 
+			<a href="class-Yourface.Application.UI.Navigation.html">Yourface\Application\UI\Navigation</a>, 
+			<a href="class-Yourface.Application.UI.NavigationNode.html">Yourface\Application\UI\NavigationNode</a>, 
+			<a href="class-Yourface.NiftyGrid.Grid.html">Yourface\NiftyGrid\Grid</a>, 
+			<a href="class-AdminModule.Component.MappingRulesGrid.html">AdminModule\Component\MappingRulesGrid</a>, 
+			<a href="class-AdminModule.Component.ScheduleGrid.html">AdminModule\Component\ScheduleGrid</a>, 
+			<a href="class-AdminModule.ConnectionPresenter.html">AdminModule\ConnectionPresenter</a>, 
+			<a href="class-AdminModule.DefaultPresenter.html">AdminModule\DefaultPresenter</a>
+	</div>
+
+
+
+
+
+	<div class="info">
+		<b>Abstract</b><br />
+		
+		<b>Namespace:</b> <a href="namespace-Nette.html">Nette</a>\<a href="namespace-Nette.ComponentModel.html">ComponentModel</a><br />
+		
+
+				<b>Author:</b>
+				David Grudl<br />
+		<b>Located at</b> <a href="source-class-Nette.ComponentModel.Component.html#18-352" title="Go to source code">libs/Nette/ComponentModel/Component.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Nette.ComponentModel.Component.html#41-51" title="Go to source code">__construct</a>( <span><code><a href="class-Nette.ComponentModel.IContainer.html">Nette\ComponentModel\IContainer</a></code> <var>$parent</var> = <span class="php-keyword1">NULL</span></span>, <span>mixed <var>$name</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="lookup" id="_lookup">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Nette.ComponentModel.IComponent.html">Nette\ComponentModel\IComponent</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_lookup">#</a>
+		<code><a href="source-class-Nette.ComponentModel.Component.html#55-92" title="Go to source code">lookup</a>( <span>string <var>$type</var></span>, <span>boolean <var>$need</var> = <span class="php-keyword1">TRUE</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Lookup hierarchy for component specified by class or interface name.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Lookup hierarchy for component specified by class or interface name.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$type</var></dt>
+					<dd><code>string</code><br>class/interface type</dd>
+					<dt><var>$need</var></dt>
+					<dd><code>boolean</code><br>throw exception if component doesn't exist?</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Nette.ComponentModel.IComponent.html">Nette\ComponentModel\IComponent</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="lookupPath" id="_lookupPath">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_lookupPath">#</a>
+		<code><a href="source-class-Nette.ComponentModel.Component.html#96-107" title="Go to source code">lookupPath</a>( <span>string <var>$type</var></span>, <span>boolean <var>$need</var> = <span class="php-keyword1">TRUE</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Lookup for component specified by class or interface name. Returns backtrace
+path. A path is the concatenation of component names separated by
+self::NAME_SEPARATOR.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Lookup for component specified by class or interface name. Returns backtrace
+path. A path is the concatenation of component names separated by
+self::NAME_SEPARATOR.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$type</var></dt>
+					<dd><code>string</code><br>class/interface type</dd>
+					<dt><var>$need</var></dt>
+					<dd><code>boolean</code><br>throw exception if component doesn't exist?</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="monitor" id="_monitor">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_monitor">#</a>
+		<code><a href="source-class-Nette.ComponentModel.Component.html#111-124" title="Go to source code">monitor</a>( <span>string <var>$type</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Starts monitoring.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Starts monitoring.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$type</var></dt>
+					<dd><code>string</code><br>class/interface type</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="unmonitor" id="_unmonitor">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_unmonitor">#</a>
+		<code><a href="source-class-Nette.ComponentModel.Component.html#128-136" title="Go to source code">unmonitor</a>( <span>string <var>$type</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Stops monitoring.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Stops monitoring.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$type</var></dt>
+					<dd><code>string</code><br>class/interface type</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="attached" id="_attached">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_attached">#</a>
+		<code><a href="source-class-Nette.ComponentModel.Component.html#140-148" title="Go to source code">attached</a>( <span><code><a href="class-Nette.ComponentModel.IComponent.html">Nette\ComponentModel\IComponent</a></code> <var>$obj</var></span> )</code>
+
+		<div class="description short">
+			
+<p>This method will be called when the component (or component's parent) becomes
+attached to a monitored object. Do not call this method yourself.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>This method will be called when the component (or component's parent) becomes
+attached to a monitored object. Do not call this method yourself.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$obj</var></dt>
+					<dd><code><code><a href="class-Nette.ComponentModel.IComponent.html">Nette\ComponentModel\IComponent</a></code></code></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="detached" id="_detached">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_detached">#</a>
+		<code><a href="source-class-Nette.ComponentModel.Component.html#152-160" title="Go to source code">detached</a>( <span><code><a href="class-Nette.ComponentModel.IComponent.html">Nette\ComponentModel\IComponent</a></code> <var>$obj</var></span> )</code>
+
+		<div class="description short">
+			
+<p>This method will be called before the component (or component's parent)
+becomes detached from a monitored object. Do not call this method yourself.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>This method will be called before the component (or component's parent)
+becomes detached from a monitored object. Do not call this method yourself.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$obj</var></dt>
+					<dd><code><code><a href="class-Nette.ComponentModel.IComponent.html">Nette\ComponentModel\IComponent</a></code></code></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getName" id="_getName">
+
+		<td class="attributes"><code>
+			final public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getName">#</a>
+		<code><a href="source-class-Nette.ComponentModel.Component.html#168-174" title="Go to source code">getName</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Nette.ComponentModel.IComponent.html#_getName">Nette\ComponentModel\IComponent::getName()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getParent" id="_getParent">
+
+		<td class="attributes"><code>
+			final public 
+			<code><a href="class-Nette.ComponentModel.IContainer.html">Nette\ComponentModel\IContainer</a></code>|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getParent">#</a>
+		<code><a href="source-class-Nette.ComponentModel.Component.html#178-185" title="Go to source code">getParent</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the container if any.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the container if any.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Nette.ComponentModel.IContainer.html">Nette\ComponentModel\IContainer</a></code>|null</code><br />
+				</div>
+
+
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Nette.ComponentModel.IComponent.html#_getParent">Nette\ComponentModel\IComponent::getParent()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="validateParent" id="_validateParent">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_validateParent">#</a>
+		<code><a href="source-class-Nette.ComponentModel.Component.html#233-242" title="Go to source code">validateParent</a>( <span><code><a href="class-Nette.ComponentModel.IContainer.html">Nette\ComponentModel\IContainer</a></code> <var>$parent</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Is called by a component when it is about to be set new parent. Descendant
+can override this method to disallow a parent change by throwing an
+Nette\InvalidStateException</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Is called by a component when it is about to be set new parent. Descendant
+can override this method to disallow a parent change by throwing an
+Nette\InvalidStateException</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$parent</var></dt>
+					<dd><code><code><a href="class-Nette.ComponentModel.IContainer.html">Nette\ComponentModel\IContainer</a></code></code></dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-Nette.InvalidStateException.html">Nette\InvalidStateException</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__clone" id="___clone">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___clone">#</a>
+		<code><a href="source-class-Nette.ComponentModel.Component.html#312-330" title="Go to source code">__clone</a>( )</code>
+
+		<div class="description short">
+			
+<p>Object cloning.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Object cloning.</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__sleep" id="___sleep">
+
+		<td class="attributes"><code>
+			final public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___sleep">#</a>
+		<code><a href="source-class-Nette.ComponentModel.Component.html#334-340" title="Go to source code">__sleep</a>( )</code>
+
+		<div class="description short">
+			
+<p>Prevents serialization.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Prevents serialization.</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__wakeup" id="___wakeup">
+
+		<td class="attributes"><code>
+			final public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___wakeup">#</a>
+		<code><a href="source-class-Nette.ComponentModel.Component.html#344-350" title="Go to source code">__wakeup</a>( )</code>
+
+		<div class="description short">
+			
+<p>Prevents unserialization.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Prevents unserialization.</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Nette.Object.html#methods">Nette\Object</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Nette.Object.html#___call">__call()</a>, 
+			<a href="class-Nette.Object.html#___callStatic">__callStatic()</a>, 
+			<a href="class-Nette.Object.html#___get">__get()</a>, 
+			<a href="class-Nette.Object.html#___isset">__isset()</a>, 
+			<a href="class-Nette.Object.html#___set">__set()</a>, 
+			<a href="class-Nette.Object.html#___unset">__unset()</a>, 
+			<a href="class-Nette.Object.html#_extensionMethod">extensionMethod()</a>, 
+			<a href="class-Nette.Object.html#_getReflection">getReflection()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Nette.ComponentModel.IComponent.html#methods">Nette\ComponentModel\IComponent</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Nette.ComponentModel.IComponent.html#_setParent">setParent()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+	<table class="summary inherited">
+	<caption>Constants inherited from <a href="class-Nette.ComponentModel.IComponent.html#constants">Nette\ComponentModel\IComponent</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Nette.ComponentModel.IComponent.html#NAME_SEPARATOR"><b>NAME_SEPARATOR</b></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+	<table class="summary" id="magicProperties">
+	<caption>Magic properties summary</caption>
+	<tr data-order="name" id="m$name">
+		<td class="attributes"><code>
+			public  read-only
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Nette.ComponentModel.Component.html#25" title="Go to source code"><var>$name</var></a>
+		</td>
+		<td class="description"><div>
+			<a href="#m$name" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="parent" id="m$parent">
+		<td class="attributes"><code>
+			public  read-only
+			<code><a href="class-Nette.ComponentModel.IContainer.html">Nette\ComponentModel\IContainer</a></code>|null
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Nette.ComponentModel.Component.html#26" title="Go to source code"><var>$parent</var></a>
+		</td>
+		<td class="description"><div>
+			<a href="#m$parent" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Magic properties inherited from <a href="class-Nette.Object.html#properties">Nette\Object</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Nette.Object.html#m$reflection"><var>$reflection</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

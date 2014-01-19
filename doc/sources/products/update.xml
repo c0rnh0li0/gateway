@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root date="12.07.2012, 10:22:49" version="8" delta="1" >
+  <products
+    products_id="536"
+    products_model="2112022120005"
+    products_ean=""
+    products_master_model=""
+    products_master_flag="1"
+    products_quantity="61.00"
+    products_shippingtime="1"
+    products_quantity_shops="WEBSHOP:0;SCS:7;GM:55"
+    products_image="536_1.jpg"
+    products_price="74.9167"
+    products_priceb="89.90"
+    products_regularprice="0.00"
+    products_status="1"
+    products_weight="0.0000"
+    manufacturers_id="4"
+    products_tax_class_id="1"
+    products_vpe="0"
+    products_vpe_status="0"
+    products_startpage="0"
+    products_startpage_sort="0"
+  />
+  <product_keys>
+    <attributes products_id="536" >
+      <attr name="color" value="Braun" label="Farbe" />
+      <attr name="color_group" value="2112022120005" label="Farbgruppe" />
+      <attr name="related_products" value="" label="Empfohlene Artikel" />
+    </attributes>
+  </product_keys>
+  <products_description
+    products_id="536"
+    language_id="0"
+    products_name="TEST SQUASHY KANGAROO BARMAH"
+    products_description="&lt;p&gt;Der &lt;strong&gt;Kangaroo-Leder Hut&lt;/strong&gt; in &lt;strong&gt;Australischer&lt;/strong&gt; Tradition - f&amp;uuml;r &lt;strong&gt;Outdoor&lt;/strong&gt;-Typen unerl&amp;auml;sslich! &lt;strong&gt;Barmah&lt;/strong&gt; fertigt die sch&amp;ouml;nsten &lt;strong&gt;Kangaroo-Leder H&amp;uuml;te&lt;/strong&gt; Australiens. Der Squashy ist&amp;nbsp;aufgrund des &lt;strong&gt;Kangaroo-Leders&lt;/strong&gt; extrem leicht und luftig. Der &lt;strong&gt;Squashy&lt;/strong&gt; ist &lt;strong&gt;zusammenlegbar&lt;/strong&gt; und im beigegebenen Leinensackerl verstaubar. Dieser &lt;strong&gt;Hut&lt;/strong&gt; ist nat&amp;uuml;rlich regen- und schneefest. Der Squashy ist ein Klimawunder. Die Krempe ist als Dropbrim angelegt (hinten und vorne heruntergeklappt). In der Krone befinden sich links und rechts je 2 Metall&amp;ouml;sen zur Ventilation. Das Umbind ist eine Kombination aus geflochtenem &lt;strong&gt;Kangaroo-Leder&lt;/strong&gt; und Rindsleder.&lt;/p&gt; &lt;p&gt;Qualit&amp;auml;t: 100 % Kangaroo Leder&lt;br /&gt;Krempe: 72mm&lt;br /&gt;H&amp;ouml;he: 95mm&lt;br /&gt;UV-Schutz: UPF 50+ (ultraviolet protection factor)&lt;/p&gt;"
+    products_short_description="&lt;p&gt;Der&amp;nbsp;Australische &lt;strong&gt;Kangaroo Lederhut&lt;/strong&gt; von &lt;strong&gt;Barmah&lt;/strong&gt;&lt;/p&gt;"
+    products_keywords="Barmah, Kangaroo, Kangaroo-Leder, Lederhut, Australischer Hut, Känguru, Känguruleder, Squashy, Känguru Hut, Outdoorhut"
+    products_url=""
+  />
+</root>

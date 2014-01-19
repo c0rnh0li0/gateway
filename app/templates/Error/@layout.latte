@@ -1,0 +1,14 @@
+{extends '../@layout.latte'}
+
+{block #head_links}
+    {include #parent}
+
+    <link rel="stylesheet" type="text/css" media="screen" href="{$basePath}/css/error.css">
+{/block}
+    
+{block #container}
+        <h1>Error, we are sorry...</h1>
+        {include #flashMessages}
+
+        {include #content}
+{/block}

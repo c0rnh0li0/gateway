@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class Logger\AbstractLogger</title>
+
+	<script type="text/javascript" src="resources/combined.js?1479682893"></script>
+	<script type="text/javascript" src="elementlist.js?1567848024"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-AdminModule.html">AdminModule<span></span></a>
+						<ul>
+				<li><a href="namespace-AdminModule.Component.html">Component</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-ApiModule.html">ApiModule</a>
+						</li>
+				<li><a href="namespace-Gateway.html">Gateway<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.html">DataSource<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.Entity.html">Entity<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.Entity.Category.html">Category</a>
+						</li>
+				<li><a href="namespace-Gateway.DataSource.Entity.Customer.html">Customer</a>
+						</li>
+				<li><a href="namespace-Gateway.DataSource.Entity.Order.html">Order<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.Entity.Order.Payment.html">Payment</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.DataSource.Entity.Product.html">Product</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Gateway.Handler.html">Handler<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.html">Erp<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.html">Etron<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.XML.html">XML<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.XML.Reader.html">Reader<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.XML.Reader.Products.html">Products</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.Xml.Writer.html">Writer</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-Gateway.Handler.Shop.html">Shop<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.html">Magento<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.JSON.html">JSON<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.JSON.Reader.html">Reader</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.Magmi.html">Magmi<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.Magmi.Writer.html">Writer</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.SOAP.html">SOAP<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.SOAP.Writer.html">Writer<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.SOAP.Writer.Products.html">Products</a>
+						</li>
+							</ul></li></ul></li></ul></li></ul></li></ul></li>
+				<li><a href="namespace-Gateway.Mapping.html">Mapping<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Mapping.Rule.html">Rule</a>
+						</li>
+							</ul></li></ul></li>
+				<li class="active"><a href="namespace-Logger.html">Logger</a>
+						</li>
+				<li><a href="namespace-Nette.html">Nette<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Application.html">Application<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Application.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Application.Responses.html">Responses</a>
+						</li>
+				<li><a href="namespace-Nette.Application.Routers.html">Routers</a>
+						</li>
+				<li><a href="namespace-Nette.Application.UI.html">UI</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Caching.html">Caching<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Caching.Storages.html">Storages</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.ComponentModel.html">ComponentModel</a>
+						</li>
+				<li><a href="namespace-Nette.Config.html">Config<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Config.Adapters.html">Adapters</a>
+						</li>
+				<li><a href="namespace-Nette.Config.Extensions.html">Extensions</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Database.html">Database<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Database.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Drivers.html">Drivers</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Reflection.html">Reflection</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Table.html">Table</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.DI.html">DI<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.DI.Diagnostics.html">Diagnostics</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Forms.html">Forms<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Forms.Controls.html">Controls</a>
+						</li>
+				<li><a href="namespace-Nette.Forms.Rendering.html">Rendering</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Http.html">Http</a>
+						</li>
+				<li><a href="namespace-Nette.Iterators.html">Iterators</a>
+						</li>
+				<li><a href="namespace-Nette.Latte.html">Latte<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Latte.Macros.html">Macros</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Loaders.html">Loaders</a>
+						</li>
+				<li><a href="namespace-Nette.Localization.html">Localization</a>
+						</li>
+				<li><a href="namespace-Nette.Mail.html">Mail</a>
+						</li>
+				<li><a href="namespace-Nette.Reflection.html">Reflection</a>
+						</li>
+				<li><a href="namespace-Nette.Security.html">Security<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Security.Diagnostics.html">Diagnostics</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Templating.html">Templating</a>
+						</li>
+				<li><a href="namespace-Nette.Utils.html">Utils<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Utils.PhpGenerator.html">PhpGenerator</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-NetteModule.html">NetteModule</a>
+						</li>
+				<li><a href="namespace-NetteTranslator.html">NetteTranslator</a>
+						</li>
+				<li><a href="namespace-NiftyGrid.html">NiftyGrid</a>
+						</li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li><a href="namespace-Yourface.html">Yourface<span></span></a>
+						<ul>
+				<li><a href="namespace-Yourface.Application.html">Application<span></span></a>
+						<ul>
+				<li><a href="namespace-Yourface.Application.Responses.html">Responses</a>
+						</li>
+				<li><a href="namespace-Yourface.Application.Routers.html">Routers</a>
+						</li>
+				<li><a href="namespace-Yourface.Application.UI.html">UI</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Yourface.Iterators.html">Iterators</a>
+						</li>
+				<li><a href="namespace-Yourface.NiftyGrid.html">NiftyGrid</a>
+						</li>
+				<li><a href="namespace-Yourface.Utils.html">Utils</a>
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-Logger.AbstractLogger.html">AbstractLogger</a></li>
+				<li><a href="class-Logger.FileLogger.html">FileLogger</a></li>
+				<li><a href="class-Logger.FileLoggerFactory.html">FileLoggerFactory</a></li>
+				<li><a href="class-Logger.NullLogger.html">NullLogger</a></li>
+				<li><a href="class-Logger.NullLoggerFactory.html">NullLoggerFactory</a></li>
+				<li><a href="class-Logger.OutputLogger.html">OutputLogger</a></li>
+				<li><a href="class-Logger.OutputLoggerFactory.html">OutputLoggerFactory</a></li>
+				<li><a href="class-Logger.Stack.html">Stack</a></li>
+				<li><a href="class-Logger.StackFactory.html">StackFactory</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-Logger.ILogger.html">ILogger</a></li>
+				<li><a href="class-Logger.ILoggerFactory.html">ILoggerFactory</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Logger.html" title="Summary of Logger"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class AbstractLogger</h1>
+
+
+	<div class="description">
+	
+<p>Abstract Logger class offering base logging functionality</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b><span>Logger\AbstractLogger</span></b>			
+			 implements 
+				<a href="class-Logger.ILogger.html"><span>Logger\ILogger</span></a>
+			
+			
+		</dd>
+	</dl>
+
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-Logger.FileLogger.html">Logger\FileLogger</a>, 
+			<a href="class-Logger.OutputLogger.html">Logger\OutputLogger</a>
+	</div>
+
+
+
+
+
+
+	<div class="info">
+		<b>Abstract</b><br />
+		
+		<b>Namespace:</b> <a href="namespace-Logger.html">Logger</a><br />
+		<b>Package:</b> Logger<br />
+
+				<b>Copyright:</b>
+				Copyright (c) 2009-2010 Jan Smitka<br />
+				<b>Copyright:</b>
+				Copyright (c) 2009-2010 Martin Pecka<br />
+				<b>Copyright:</b>
+				Copyright (c) 2011-2012 Matěj Humpál<br />
+				<b>Author:</b>
+				Jan Smitka &lt;<a
+href="mailto:jan&#64;smitka.org">jan&#64;<!---->smitka.org</a>&gt;<br />
+				<b>Author:</b>
+				Martin Pecka &lt;<a
+href="mailto:martin.pecka&#64;clevis.cz">martin.pecka&#64;<!---->clevis.cz</a>&gt;<br />
+				<b>Author:</b>
+				Matěj Humpál &lt;<a
+href="mailto:finwe&#64;finwe.info">finwe&#64;<!---->finwe.info</a>&gt;<br />
+				<b>Version:</b>
+				0.7<br />
+		<b>Located at</b> <a href="source-class-Logger.AbstractLogger.html#8-334" title="Go to source code">libs/Logger/Logger/AbstractLogger.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Logger.AbstractLogger.html#54-77" title="Go to source code">__construct</a>( <span>&lt;type&gt; <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$options</var></dt>
+					<dd><code>&lt;type&gt;</code><br>$options</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="logMessage" id="_logMessage">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_logMessage">#</a>
+		<code><a href="source-class-Logger.AbstractLogger.html#79-91" title="Go to source code">logMessage</a>( <span>integer|string <var>$level</var></span>, <span>string <var>$message</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$level</var></dt>
+					<dd><code>integer|string</code><br>$level priority of the message or the message itself (when no level is required)</dd>
+					<dt><var>$message</var></dt>
+					<dd><code>string</code><br>$message the message to log</dd>
+				</dl></div>
+
+
+
+				<h4>See</h4>
+				<div class="list">
+						<code><code><a href="class-Logger.ILogger.html#_logMessage">Logger\ILogger::logMessage()</a></code></code><br />
+				</div>
+
+
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Logger.ILogger.html#_logMessage">Logger\ILogger::logMessage()</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="prepareMessage" id="_prepareMessage">
+
+		<td class="attributes"><code>
+			 protected 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_prepareMessage">#</a>
+		<code><a href="source-class-Logger.AbstractLogger.html#93-130" title="Go to source code">prepareMessage</a>( <span>mixed <var>$level</var></span>, <span>string <var>$message</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Prepares message from parameters.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Prepares message from parameters.</p>
+
+<p>If first parameter is not an integer, it is used as a message. All following
+parameters are used as replacements of sprintf placeholders in the message.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$level</var></dt>
+					<dd><code>mixed</code><br>$level</dd>
+					<dt><var>$message</var></dt>
+					<dd><code>string</code><br>$message</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="writeMessage" id="_writeMessage">
+
+		<td class="attributes"><code>
+			abstract protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_writeMessage">#</a>
+		<code><a href="source-class-Logger.AbstractLogger.html#182-188" title="Go to source code">writeMessage</a>( <span>integer <var>$level</var></span>, <span>string <var>$message</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Abstract method for further implementation. Does actual outputing prepared
+log message</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Abstract method for further implementation. Does actual outputing prepared
+log message</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$level</var></dt>
+					<dd><code>integer</code><br>$level</dd>
+					<dt><var>$message</var></dt>
+					<dd><code>string</code><br>$message</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getMinimumLogLevel" id="_getMinimumLogLevel">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getMinimumLogLevel">#</a>
+		<code><a href="source-class-Logger.AbstractLogger.html#190-197" title="Go to source code">getMinimumLogLevel</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the logger verbosity.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the logger verbosity.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setMinimumLogLevel" id="_setMinimumLogLevel">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setMinimumLogLevel">#</a>
+		<code><a href="source-class-Logger.AbstractLogger.html#200-212" title="Go to source code">setMinimumLogLevel</a>( <span>integer <var>$level</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the logger verbosity. FALSE disables the logger.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the logger verbosity. FALSE disables the logger.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$level</var></dt>
+					<dd><code>integer</code><br>$level one of the priority constants</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code></code><br>if the given level is not one of the priority constants<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDefaultLogLevel" id="_getDefaultLogLevel">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDefaultLogLevel">#</a>
+		<code><a href="source-class-Logger.AbstractLogger.html#215-222" title="Go to source code">getDefaultLogLevel</a>( )</code>
+
+		<div class="description short">
+			
+<p>Gets the current default level of logged messages.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Gets the current default level of logged messages.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br>currently set default level<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDefaultLogLevel" id="_setDefaultLogLevel">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDefaultLogLevel">#</a>
+		<code><a href="source-class-Logger.AbstractLogger.html#225-235" title="Go to source code">setDefaultLogLevel</a>( <span>integer <var>$level</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the defalut level of logged messages.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the defalut level of logged messages.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$level</var></dt>
+					<dd><code>integer</code><br>$level one of the priority constants</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDateFormat" id="_getDateFormat">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDateFormat">#</a>
+		<code><a href="source-class-Logger.AbstractLogger.html#238-245" title="Go to source code">getDateFormat</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns the date format used inside log files.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns the date format used inside log files.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDateFormat" id="_setDateFormat">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDateFormat">#</a>
+		<code><a href="source-class-Logger.AbstractLogger.html#248-258" title="Go to source code">setDateFormat</a>( <span>string <var>$dateFormat</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets the date format used inside log files. Format is the same as used by
+date() function.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets the date format used inside log files. Format is the same as used by
+date() function.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$dateFormat</var></dt>
+					<dd><code>string</code><br>$dateFormat</dd>
+				</dl></div>
+
+
+
+				<h4>See</h4>
+				<div class="list">
+						date()<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getMessageTemplate" id="_getMessageTemplate">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getMessageTemplate">#</a>
+		<code><a href="source-class-Logger.AbstractLogger.html#260-267" title="Go to source code">getMessageTemplate</a>( )</code>
+
+		<div class="description short">
+			
+<p>Returns message template</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Returns message template</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setMessageTemplate" id="_setMessageTemplate">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setMessageTemplate">#</a>
+		<code><a href="source-class-Logger.AbstractLogger.html#269-277" title="Go to source code">setMessageTemplate</a>( <span>string <var>$messageTemplate</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Sets message template for logging</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets message template for logging</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$messageTemplate</var></dt>
+					<dd><code>string</code><br>$messageTemplate</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parseLevel" id="_parseLevel">
+
+		<td class="attributes"><code>
+			 protected 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parseLevel">#</a>
+		<code><a href="source-class-Logger.AbstractLogger.html#279-296" title="Go to source code">parseLevel</a>( <span>string|integer <var>$level</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$level</var></dt>
+					<dd><code>string|integer</code><br>$level</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="logLevelToString" id="_logLevelToString">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_logLevelToString">#</a>
+		<code><a href="source-class-Logger.AbstractLogger.html#298-333" title="Go to source code">logLevelToString</a>( <span>integer <var>$level</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Translate log severity level into a human-readable string.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Translate log severity level into a human-readable string.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$level</var></dt>
+					<dd><code>integer</code><br>$level one of priority constants</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code></code><br>if the level is unknown<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+	<table class="summary inherited">
+	<caption>Constants inherited from <a href="class-Logger.ILogger.html#constants">Logger\ILogger</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Logger.ILogger.html#ALERT"><b>ALERT</b></a>, 
+			<a href="class-Logger.ILogger.html#CRITICAL"><b>CRITICAL</b></a>, 
+			<a href="class-Logger.ILogger.html#DEBUG"><b>DEBUG</b></a>, 
+			<a href="class-Logger.ILogger.html#EMERGENCY"><b>EMERGENCY</b></a>, 
+			<a href="class-Logger.ILogger.html#ERROR"><b>ERROR</b></a>, 
+			<a href="class-Logger.ILogger.html#INFO"><b>INFO</b></a>, 
+			<a href="class-Logger.ILogger.html#NOTICE"><b>NOTICE</b></a>, 
+			<a href="class-Logger.ILogger.html#WARNING"><b>WARNING</b></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="minimumLogLevel" id="$minimumLogLevel">
+		<td class="attributes"><code>
+			protected  
+			integer|boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Logger.AbstractLogger.html#24-27" title="Go to source code"><var>$minimumLogLevel</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$minimumLogLevel" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="defaultLogLevel" id="$defaultLogLevel">
+		<td class="attributes"><code>
+			protected  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Logger.AbstractLogger.html#29-32" title="Go to source code"><var>$defaultLogLevel</var></a>
+		</td>
+		<td class="value"><code><code><a href="class-Logger.ILogger.html#INFO">Logger\ILogger::<b>INFO</b></a></code></code></td>
+		<td class="description"><div>
+			<a href="#$defaultLogLevel" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="dateFormat" id="$dateFormat">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Logger.AbstractLogger.html#34-37" title="Go to source code"><var>$dateFormat</var></a>
+		</td>
+		<td class="value"><code><span class="php-quote">'c'</span></code></td>
+		<td class="description"><div>
+			<a href="#$dateFormat" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="messageTemplate" id="$messageTemplate">
+		<td class="attributes"><code>
+			protected  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Logger.AbstractLogger.html#39-42" title="Go to source code"><var>$messageTemplate</var></a>
+		</td>
+		<td class="value"><code><span class="php-quote">&quot;%date% %level% %memory% ===&gt; %message%\n&quot;</span></code></td>
+		<td class="description"><div>
+			<a href="#$messageTemplate" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="messagePlaceholders" id="$messagePlaceholders">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Logger.AbstractLogger.html#44-52" title="Go to source code"><var>$messagePlaceholders</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>(
+	<span class="php-quote">'%date%'</span> =&gt; <span class="php-quote">'%s'</span>,
+	<span class="php-quote">'%level%'</span> =&gt; <span class="php-quote">'%s'</span>,
+	<span class="php-quote">'%memory%'</span> =&gt; <span class="php-quote">'mem(real/peak):%0.2fMB/%0.2fMB'</span>,
+	<span class="php-quote">'%message%'</span> =&gt; <span class="php-quote">'%s'</span>,
+)</code></td>
+		<td class="description"><div>
+			<a href="#$messagePlaceholders" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

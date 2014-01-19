@@ -1,0 +1,31 @@
+2014-01-18T17:37:46+01:00 INFO mem(real/peak):30.41MB/29.95MB ===> Reading XML from file of '/var/www/gateway/temp/gateway//etron/rakutenTEST/put/products/20140118173746.xml'
+2014-01-18T17:50:17+01:00 WARNING mem(real/peak):32.51MB/32.22MB ===> MANUAL EXECUTION: Process '838' was started manually, not by CRON job...
+2014-01-18T17:50:17+01:00 INFO mem(real/peak):32.51MB/32.23MB ===> ====================== BEGIN (schedule id = 838) ==================
+2014-01-18T17:50:17+01:00 INFO mem(real/peak):32.77MB/32.25MB ===> Schedule '838' has been executed.
+2014-01-18T17:50:17+01:00 INFO mem(real/peak):32.77MB/32.28MB ===> Report for schedule '838' was saved.
+2014-01-18T17:50:17+01:00 INFO mem(real/peak):34.87MB/34.40MB ===> Processing connection 'rakutenTEST'...
+2014-01-18T17:50:17+01:00 INFO mem(real/peak):34.87MB/34.40MB ===> Destination: shop
+2014-01-18T17:50:17+01:00 INFO mem(real/peak):34.87MB/34.40MB ===> SUCCESS: Connection 'rakutenTEST' processing completed!
+2014-01-18T17:50:17+01:00 INFO mem(real/peak):34.87MB/34.40MB ===> Execution finished successfully. Updating scheduler ...
+2014-01-18T17:50:17+01:00 INFO mem(real/peak):34.87MB/34.40MB ===> Schedule '838' was finished.
+2014-01-18T17:50:17+01:00 INFO mem(real/peak):34.87MB/34.41MB ===> Scheduler updated.
+2014-01-18T17:50:17+01:00 INFO mem(real/peak):35.13MB/34.59MB ===> Schedule ID = '838' completed.
+2014-01-18T17:50:17+01:00 INFO mem(real/peak):35.13MB/34.59MB ===> ===================== END  (schedule id = 838) =====================
+2014-01-18T17:50:18+01:00 WARNING mem(real/peak):32.51MB/32.23MB ===> MANUAL EXECUTION: Process '838' was started manually, not by CRON job...
+2014-01-18T17:50:18+01:00 INFO mem(real/peak):32.77MB/32.25MB ===> Schedule '838' has been already processed or does not exists.
+2014-01-18T17:50:24+01:00 WARNING mem(real/peak):32.51MB/32.23MB ===> MANUAL EXECUTION: Process '838' was started manually, not by CRON job...
+2014-01-18T17:50:24+01:00 INFO mem(real/peak):32.77MB/32.24MB ===> Schedule '838' has been already processed or does not exists.
+2014-01-18T17:56:45+01:00 WARNING mem(real/peak):32.77MB/32.24MB ===> MANUAL EXECUTION: Process '839' was started manually, not by CRON job...
+2014-01-18T17:56:45+01:00 INFO mem(real/peak):32.77MB/32.25MB ===> ====================== BEGIN (schedule id = 839) ==================
+2014-01-18T17:56:45+01:00 INFO mem(real/peak):32.77MB/32.27MB ===> Schedule '839' has been executed.
+2014-01-18T17:56:45+01:00 INFO mem(real/peak):32.77MB/32.30MB ===> Report for schedule '839' was saved.
+2014-01-18T17:56:45+01:00 INFO mem(real/peak):34.87MB/34.42MB ===> Processing connection 'rakutenTEST'...
+2014-01-18T17:56:45+01:00 INFO mem(real/peak):34.87MB/34.42MB ===> Destination: shop
+2014-01-18T17:56:45+01:00 INFO mem(real/peak):34.87MB/34.42MB ===> SUCCESS: Connection 'rakutenTEST' processing completed!
+2014-01-18T17:56:45+01:00 INFO mem(real/peak):34.87MB/34.42MB ===> Execution finished successfully. Updating scheduler ...
+2014-01-18T17:56:45+01:00 INFO mem(real/peak):34.87MB/34.42MB ===> Schedule '839' was finished.
+2014-01-18T17:56:45+01:00 INFO mem(real/peak):34.87MB/34.43MB ===> Scheduler updated.
+2014-01-18T17:56:45+01:00 INFO mem(real/peak):35.13MB/34.61MB ===> Schedule ID = '839' completed.
+2014-01-18T17:56:45+01:00 INFO mem(real/peak):35.13MB/34.61MB ===> ===================== END  (schedule id = 839) =====================
+2014-01-18T17:56:58+01:00 WARNING mem(real/peak):32.77MB/32.25MB ===> MANUAL EXECUTION: Process '839' was started manually, not by CRON job...
+2014-01-18T17:56:58+01:00 INFO mem(real/peak):32.77MB/32.26MB ===> Schedule '839' has been already processed or does not exists.

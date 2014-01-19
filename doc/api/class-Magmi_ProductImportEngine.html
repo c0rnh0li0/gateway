@@ -1,0 +1,2789 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class Magmi_ProductImportEngine</title>
+
+	<script type="text/javascript" src="resources/combined.js?1479682893"></script>
+	<script type="text/javascript" src="elementlist.js?1567848024"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-AdminModule.html">AdminModule<span></span></a>
+						<ul>
+				<li><a href="namespace-AdminModule.Component.html">Component</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-ApiModule.html">ApiModule</a>
+						</li>
+				<li><a href="namespace-Gateway.html">Gateway<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.html">DataSource<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.Entity.html">Entity<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.Entity.Category.html">Category</a>
+						</li>
+				<li><a href="namespace-Gateway.DataSource.Entity.Customer.html">Customer</a>
+						</li>
+				<li><a href="namespace-Gateway.DataSource.Entity.Order.html">Order<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.Entity.Order.Payment.html">Payment</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.DataSource.Entity.Product.html">Product</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Gateway.Handler.html">Handler<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.html">Erp<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.html">Etron<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.XML.html">XML<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.XML.Reader.html">Reader<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.XML.Reader.Products.html">Products</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.Xml.Writer.html">Writer</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-Gateway.Handler.Shop.html">Shop<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.html">Magento<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.JSON.html">JSON<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.JSON.Reader.html">Reader</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.Magmi.html">Magmi<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.Magmi.Writer.html">Writer</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.SOAP.html">SOAP<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.SOAP.Writer.html">Writer<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.SOAP.Writer.Products.html">Products</a>
+						</li>
+							</ul></li></ul></li></ul></li></ul></li></ul></li>
+				<li><a href="namespace-Gateway.Mapping.html">Mapping<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Mapping.Rule.html">Rule</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Logger.html">Logger</a>
+						</li>
+				<li><a href="namespace-Nette.html">Nette<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Application.html">Application<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Application.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Application.Responses.html">Responses</a>
+						</li>
+				<li><a href="namespace-Nette.Application.Routers.html">Routers</a>
+						</li>
+				<li><a href="namespace-Nette.Application.UI.html">UI</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Caching.html">Caching<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Caching.Storages.html">Storages</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.ComponentModel.html">ComponentModel</a>
+						</li>
+				<li><a href="namespace-Nette.Config.html">Config<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Config.Adapters.html">Adapters</a>
+						</li>
+				<li><a href="namespace-Nette.Config.Extensions.html">Extensions</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Database.html">Database<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Database.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Drivers.html">Drivers</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Reflection.html">Reflection</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Table.html">Table</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.DI.html">DI<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.DI.Diagnostics.html">Diagnostics</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Forms.html">Forms<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Forms.Controls.html">Controls</a>
+						</li>
+				<li><a href="namespace-Nette.Forms.Rendering.html">Rendering</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Http.html">Http</a>
+						</li>
+				<li><a href="namespace-Nette.Iterators.html">Iterators</a>
+						</li>
+				<li><a href="namespace-Nette.Latte.html">Latte<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Latte.Macros.html">Macros</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Loaders.html">Loaders</a>
+						</li>
+				<li><a href="namespace-Nette.Localization.html">Localization</a>
+						</li>
+				<li><a href="namespace-Nette.Mail.html">Mail</a>
+						</li>
+				<li><a href="namespace-Nette.Reflection.html">Reflection</a>
+						</li>
+				<li><a href="namespace-Nette.Security.html">Security<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Security.Diagnostics.html">Diagnostics</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Templating.html">Templating</a>
+						</li>
+				<li><a href="namespace-Nette.Utils.html">Utils<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Utils.PhpGenerator.html">PhpGenerator</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-NetteModule.html">NetteModule</a>
+						</li>
+				<li><a href="namespace-NetteTranslator.html">NetteTranslator</a>
+						</li>
+				<li><a href="namespace-NiftyGrid.html">NiftyGrid</a>
+						</li>
+				<li class="active"><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li><a href="namespace-Yourface.html">Yourface<span></span></a>
+						<ul>
+				<li><a href="namespace-Yourface.Application.html">Application<span></span></a>
+						<ul>
+				<li><a href="namespace-Yourface.Application.Responses.html">Responses</a>
+						</li>
+				<li><a href="namespace-Yourface.Application.Routers.html">Routers</a>
+						</li>
+				<li><a href="namespace-Yourface.Application.UI.html">UI</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Yourface.Iterators.html">Iterators</a>
+						</li>
+				<li><a href="namespace-Yourface.NiftyGrid.html">NiftyGrid</a>
+						</li>
+				<li><a href="namespace-Yourface.Utils.html">Utils</a>
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Alpine_GroupedItemProcessor.html">Alpine_GroupedItemProcessor</a></li>
+				<li><a href="class-BasePresenter.html">BasePresenter</a></li>
+				<li><a href="class-CategoryImporter.html">CategoryImporter</a></li>
+				<li><a href="class-CLILogger.html">CLILogger</a></li>
+				<li><a href="class-ColumnMappingItemProcessor.html">ColumnMappingItemProcessor</a></li>
+				<li><a href="class-CrossUpsellProducts.html">CrossUpsellProducts</a></li>
+				<li><a href="class-CustomOptionsItemProcessor.html">CustomOptionsItemProcessor</a></li>
+				<li><a href="class-DBHelper.html">DBHelper</a></li>
+				<li><a href="class-DefaultPresenter.html">DefaultPresenter</a></li>
+				<li><a href="class-DefaultProgressLineParser.html">DefaultProgressLineParser</a></li>
+				<li><a href="class-DefaultProgressParser.html">DefaultProgressParser</a></li>
+				<li><a href="class-DefaultValuesItemProcessor.html">DefaultValuesItemProcessor</a></li>
+				<li><a href="class-DirbasedConfig.html">DirbasedConfig</a></li>
+				<li><a href="class-EchoLogger.html">EchoLogger</a></li>
+				<li><a href="class-EmailReportPlugin.html">EmailReportPlugin</a></li>
+				<li><a href="class-EnabledPlugins_Config.html">EnabledPlugins_Config</a></li>
+				<li><a href="class-ErrorPresenter.html">ErrorPresenter</a></li>
+				<li><a href="class-ExtDBHelper.html">ExtDBHelper</a></li>
+				<li><a href="class-FileLogger.html">FileLogger</a></li>
+				<li><a href="class-FileLoggerTest.html">FileLoggerTest</a></li>
+				<li><a href="class-FSHelper.html">FSHelper</a></li>
+				<li><a href="class-GenericMapperProcessor.html">GenericMapperProcessor</a></li>
+				<li><a href="class-ImageAttributeItemProcessor.html">ImageAttributeItemProcessor</a></li>
+				<li><a href="class-ImportLimiter.html">ImportLimiter</a></li>
+				<li><a href="class-ItemIndexer.html">ItemIndexer</a></li>
+				<li><a href="class-Magmi_Config.html">Magmi_Config</a></li>
+				<li><a href="class-Magmi_ConfigurableItemProcessor.html">Magmi_ConfigurableItemProcessor</a></li>
+				<li><a href="class-Magmi_CSVDataSource.html">Magmi_CSVDataSource</a></li>
+				<li><a href="class-Magmi_CSVReader.html">Magmi_CSVReader</a></li>
+				<li><a href="class-Magmi_DatapumpDS.html">Magmi_DatapumpDS</a></li>
+				<li><a href="class-Magmi_DataPumpFactory.html">Magmi_DataPumpFactory</a></li>
+				<li><a href="class-Magmi_DataSource.html">Magmi_DataSource</a></li>
+				<li><a href="class-Magmi_DefaultAttributeItemProcessor.html">Magmi_DefaultAttributeItemProcessor</a></li>
+				<li><a href="class-Magmi_DSEngine.html">Magmi_DSEngine</a></li>
+				<li><a href="class-Magmi_Engine.html">Magmi_Engine</a></li>
+				<li><a href="class-Magmi_GeneralImportPlugin.html">Magmi_GeneralImportPlugin</a></li>
+				<li><a href="class-Magmi_ImportUrlPlugin.html">Magmi_ImportUrlPlugin</a></li>
+				<li><a href="class-Magmi_ItemProcessor.html">Magmi_ItemProcessor</a></li>
+				<li><a href="class-Magmi_MagentoDatasource.html">Magmi_MagentoDatasource</a></li>
+				<li><a href="class-Magmi_Mixin.html">Magmi_Mixin</a></li>
+				<li><a href="class-Magmi_OptimizerPlugin.html">Magmi_OptimizerPlugin</a></li>
+				<li><a href="class-Magmi_Plugin.html">Magmi_Plugin</a></li>
+				<li><a href="class-Magmi_PluginConfig.html">Magmi_PluginConfig</a></li>
+				<li><a href="class-Magmi_PluginHelper.html">Magmi_PluginHelper</a></li>
+				<li><a href="class-Magmi_PluginOptionsPanel.html">Magmi_PluginOptionsPanel</a></li>
+				<li><a href="class-Magmi_ProductImport_DataPump.html">Magmi_ProductImport_DataPump</a></li>
+				<li class="active"><a href="class-Magmi_ProductImportEngine.html">Magmi_ProductImportEngine</a></li>
+				<li><a href="class-Magmi_ReindexingPlugin.html">Magmi_ReindexingPlugin</a></li>
+				<li><a href="class-Magmi_StateManager.html">Magmi_StateManager</a></li>
+				<li><a href="class-Magmi_UtilityEngine.html">Magmi_UtilityEngine</a></li>
+				<li><a href="class-Magmi_UtilityPlugin.html">Magmi_UtilityPlugin</a></li>
+				<li><a href="class-Magmi_Version.html">Magmi_Version</a></li>
+				<li><a href="class-NullLoggerTest.html">NullLoggerTest</a></li>
+				<li><a href="class-OutputLoggerTest.html">OutputLoggerTest</a></li>
+				<li><a href="class-ProductDeleter.html">ProductDeleter</a></li>
+				<li><a href="class-ProfileBasedConfig.html">ProfileBasedConfig</a></li>
+				<li><a href="class-ProgressLineParser.html">ProgressLineParser</a></li>
+				<li><a href="class-ProgressParser.html">ProgressParser</a></li>
+				<li><a href="class-Properties.html">Properties</a></li>
+				<li><a href="class-RelatedProducts.html">RelatedProducts</a></li>
+				<li><a href="class-SkuFinderItemProcessor.html">SkuFinderItemProcessor</a></li>
+				<li><a href="class-Slugger.html">Slugger</a></li>
+				<li><a href="class-SQL_Datasource.html">SQL_Datasource</a></li>
+				<li><a href="class-StackTest.html">StackTest</a></li>
+				<li><a href="class-SystemContainer.html" class="invalid">SystemContainer</a></li>
+				<li><a href="class-SystemContainer_nette.html" class="invalid">SystemContainer_nette</a></li>
+				<li><a href="class-SystemContainer_nette_database.html" class="invalid">SystemContainer_nette_database</a></li>
+				<li><a href="class-TestLogger.html">TestLogger</a></li>
+				<li><a href="class-TestLogger2.html">TestLogger2</a></li>
+				<li><a href="class-TierpriceProcessor.html">TierpriceProcessor</a></li>
+				<li><a href="class-ValueReplacerItemProcessor.html">ValueReplacerItemProcessor</a></li>
+				<li><a href="class-ValueTrimItemProcessor.html">ValueTrimItemProcessor</a></li>
+			</ul>
+
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-FileNotFoundException.html">FileNotFoundException</a></li>
+				<li><a href="class-InvalidPropertiesException.html">InvalidPropertiesException</a></li>
+				<li><a href="class-Magmi_CSVException.html">Magmi_CSVException</a></li>
+			</ul>
+
+
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-__.html">__</a></li>
+				<li><a href="function-_lb02dcc6169c_pageTitle.html">_lb02dcc6169c_pageTitle</a></li>
+				<li><a href="function-_lb04763b85d6__flashMessages.html">_lb04763b85d6__flashMessages</a></li>
+				<li><a href="function-_lb07d138c5af_textContent.html">_lb07d138c5af_textContent</a></li>
+				<li><a href="function-_lb087a732bbb_container.html">_lb087a732bbb_container</a></li>
+				<li><a href="function-_lb0914172d81_layoutContent.html">_lb0914172d81_layoutContent</a></li>
+				<li><a href="function-_lb0ae48c7998_simpleMappingRuleFormExtension.html">_lb0ae48c7998_simpleMappingRuleFormExtension</a></li>
+				<li><a href="function-_lb0c2469ec69__connectionHandlersFormReader.html">_lb0c2469ec69__connectionHandlersFormReader</a></li>
+				<li><a href="function-_lb10395da7ef_head_links_layout.html">_lb10395da7ef_head_links_layout</a></li>
+				<li><a href="function-_lb10cffb999b_flashMessages.html">_lb10cffb999b_flashMessages</a></li>
+				<li><a href="function-_lb1119190125_pageTitle.html">_lb1119190125_pageTitle</a></li>
+				<li><a href="function-_lb115161fc6d_layout.html">_lb115161fc6d_layout</a></li>
+				<li><a href="function-_lb142183cd38_afterLayout.html">_lb142183cd38_afterLayout</a></li>
+				<li><a href="function-_lb1473c771e1_breadcrumbs.html">_lb1473c771e1_breadcrumbs</a></li>
+				<li><a href="function-_lb168df30a96_head_links.html">_lb168df30a96_head_links</a></li>
+				<li><a href="function-_lb17b941dc3a__flashMessages.html">_lb17b941dc3a__flashMessages</a></li>
+				<li><a href="function-_lb2124709fc6_pageTitle.html">_lb2124709fc6_pageTitle</a></li>
+				<li><a href="function-_lb225d5f4aa4_footer.html">_lb225d5f4aa4_footer</a></li>
+				<li><a href="function-_lb24c7216496_sidebar.html">_lb24c7216496_sidebar</a></li>
+				<li><a href="function-_lb27bcc545d3_sidebar.html">_lb27bcc545d3_sidebar</a></li>
+				<li><a href="function-_lb2863e3beb7_head_scripts.html">_lb2863e3beb7_head_scripts</a></li>
+				<li><a href="function-_lb2bac44c7a0_header.html">_lb2bac44c7a0_header</a></li>
+				<li><a href="function-_lb2c0dc5b7c6_content.html">_lb2c0dc5b7c6_content</a></li>
+				<li><a href="function-_lb2f09be6ec8_flashMessages.html">_lb2f09be6ec8_flashMessages</a></li>
+				<li><a href="function-_lb33cf37349d_sidebar.html">_lb33cf37349d_sidebar</a></li>
+				<li><a href="function-_lb373927f439_textContent.html">_lb373927f439_textContent</a></li>
+				<li><a href="function-_lb37f583a6cc_textContent.html">_lb37f583a6cc_textContent</a></li>
+				<li><a href="function-_lb38e5c259fe_content.html">_lb38e5c259fe_content</a></li>
+				<li><a href="function-_lb44387083d0_textContent.html">_lb44387083d0_textContent</a></li>
+				<li><a href="function-_lb4513e6bd8b_simpleMappingRuleForm.html">_lb4513e6bd8b_simpleMappingRuleForm</a></li>
+				<li><a href="function-_lb45e8a98801_textContent.html">_lb45e8a98801_textContent</a></li>
+				<li><a href="function-_lb4df7737ddd_textContent.html">_lb4df7737ddd_textContent</a></li>
+				<li><a href="function-_lb4f5553eb1a_layoutContent.html">_lb4f5553eb1a_layoutContent</a></li>
+				<li><a href="function-_lb51461fd089_textContent.html">_lb51461fd089_textContent</a></li>
+				<li><a href="function-_lb527a4f996d_pageTitle.html">_lb527a4f996d_pageTitle</a></li>
+				<li><a href="function-_lb536a5d937c_head_scripts.html">_lb536a5d937c_head_scripts</a></li>
+				<li><a href="function-_lb54bda42acb_tabContent.html">_lb54bda42acb_tabContent</a></li>
+				<li><a href="function-_lb589377cb45_pageTitle.html">_lb589377cb45_pageTitle</a></li>
+				<li><a href="function-_lb5bbf8f6d21_footer.html">_lb5bbf8f6d21_footer</a></li>
+				<li><a href="function-_lb636ef3d075_pageTitle.html">_lb636ef3d075_pageTitle</a></li>
+				<li><a href="function-_lb677a231e17_textContent.html">_lb677a231e17_textContent</a></li>
+				<li><a href="function-_lb67f80a02fe_breadcrumbs.html">_lb67f80a02fe_breadcrumbs</a></li>
+				<li><a href="function-_lb67fbfc41d0_content.html">_lb67fbfc41d0_content</a></li>
+				<li><a href="function-_lb6916763086__sourceFormHandler.html">_lb6916763086__sourceFormHandler</a></li>
+				<li><a href="function-_lb69926c308a_pageTitle.html">_lb69926c308a_pageTitle</a></li>
+				<li><a href="function-_lb6af6f8cbb7_advancedMappingRuleForm.html">_lb6af6f8cbb7_advancedMappingRuleForm</a></li>
+				<li><a href="function-_lb6b59017799_pageTitle.html">_lb6b59017799_pageTitle</a></li>
+				<li><a href="function-_lb6d2870c96b_tabContent.html">_lb6d2870c96b_tabContent</a></li>
+				<li><a href="function-_lb7185003ce3_pageTitle.html">_lb7185003ce3_pageTitle</a></li>
+				<li><a href="function-_lb74ac9e2727_sidebar.html">_lb74ac9e2727_sidebar</a></li>
+				<li><a href="function-_lb78c22e929b_tabContent.html">_lb78c22e929b_tabContent</a></li>
+				<li><a href="function-_lb7b02ae913d__sourceFormHandler.html">_lb7b02ae913d__sourceFormHandler</a></li>
+				<li><a href="function-_lb7bae35ff7e__sourceFormHandler.html">_lb7bae35ff7e__sourceFormHandler</a></li>
+				<li><a href="function-_lb7c7e6133f5_textContent.html">_lb7c7e6133f5_textContent</a></li>
+				<li><a href="function-_lb7e97730327__.html">_lb7e97730327__</a></li>
+				<li><a href="function-_lb81116dbd83_pageTitle.html">_lb81116dbd83_pageTitle</a></li>
+				<li><a href="function-_lb8290ec26be_head_meta.html">_lb8290ec26be_head_meta</a></li>
+				<li><a href="function-_lb85447e6532_afterLayout.html">_lb85447e6532_afterLayout</a></li>
+				<li><a href="function-_lb8815c24886_textContent.html">_lb8815c24886_textContent</a></li>
+				<li><a href="function-_lb8b05eb87c2_textContent.html">_lb8b05eb87c2_textContent</a></li>
+				<li><a href="function-_lb8b34b03e1b_layoutContent.html">_lb8b34b03e1b_layoutContent</a></li>
+				<li><a href="function-_lb8fd77246d8_textContent.html">_lb8fd77246d8_textContent</a></li>
+				<li><a href="function-_lb919e4a6ab8_head_links.html">_lb919e4a6ab8_head_links</a></li>
+				<li><a href="function-_lb91de2df83e_pageTitle.html">_lb91de2df83e_pageTitle</a></li>
+				<li><a href="function-_lb946643c770_footerContent.html">_lb946643c770_footerContent</a></li>
+				<li><a href="function-_lb94758d8d45_textContent.html">_lb94758d8d45_textContent</a></li>
+				<li><a href="function-_lb953b702ff9_textContent.html">_lb953b702ff9_textContent</a></li>
+				<li><a href="function-_lb95d63d4e70_menu.html">_lb95d63d4e70_menu</a></li>
+				<li><a href="function-_lb9665289bca_header.html">_lb9665289bca_header</a></li>
+				<li><a href="function-_lb983adc043a_pageTitle.html">_lb983adc043a_pageTitle</a></li>
+				<li><a href="function-_lb99ae72d175_layoutContent.html">_lb99ae72d175_layoutContent</a></li>
+				<li><a href="function-_lb9d515362d5_pageTitle.html">_lb9d515362d5_pageTitle</a></li>
+				<li><a href="function-_lb9f04e844e4_beforeLayout.html">_lb9f04e844e4_beforeLayout</a></li>
+				<li><a href="function-_lba08c6087d1__connectionHandlersFormWriter.html">_lba08c6087d1__connectionHandlersFormWriter</a></li>
+				<li><a href="function-_lba136c87bfa_layout.html">_lba136c87bfa_layout</a></li>
+				<li><a href="function-_lba4adb8fa12_textContent.html">_lba4adb8fa12_textContent</a></li>
+				<li><a href="function-_lba56642269d_menu.html">_lba56642269d_menu</a></li>
+				<li><a href="function-_lba86b672ac2_head_links.html">_lba86b672ac2_head_links</a></li>
+				<li><a href="function-_lba877997d61_content.html">_lba877997d61_content</a></li>
+				<li><a href="function-_lbaa9fab90af__flashMessages.html">_lbaa9fab90af__flashMessages</a></li>
+				<li><a href="function-_lbab5392e815_textContent.html">_lbab5392e815_textContent</a></li>
+				<li><a href="function-_lbab69efe1df_content.html">_lbab69efe1df_content</a></li>
+				<li><a href="function-_lbad61a9fd98_flashMessages.html">_lbad61a9fd98_flashMessages</a></li>
+				<li><a href="function-_lbaf43de0240_tabContent.html">_lbaf43de0240_tabContent</a></li>
+				<li><a href="function-_lbb189e411bb_flashMessages.html">_lbb189e411bb_flashMessages</a></li>
+				<li><a href="function-_lbb58c576af5_tabContent.html">_lbb58c576af5_tabContent</a></li>
+				<li><a href="function-_lbb5e4ed4dbd_pageTitle.html">_lbb5e4ed4dbd_pageTitle</a></li>
+				<li><a href="function-_lbb9a70dd8e4_tabContent.html">_lbb9a70dd8e4_tabContent</a></li>
+				<li><a href="function-_lbb9cfae6942_textContent.html">_lbb9cfae6942_textContent</a></li>
+				<li><a href="function-_lbbf85a134d9_beforeTextContent.html">_lbbf85a134d9_beforeTextContent</a></li>
+				<li><a href="function-_lbc00dc6ac33_layoutContent.html">_lbc00dc6ac33_layoutContent</a></li>
+				<li><a href="function-_lbc07bdfbda7_head_links.html">_lbc07bdfbda7_head_links</a></li>
+				<li><a href="function-_lbc2460bb5d5_pageTitle.html">_lbc2460bb5d5_pageTitle</a></li>
+				<li><a href="function-_lbc3e37f3bb5__flashMessages.html">_lbc3e37f3bb5__flashMessages</a></li>
+				<li><a href="function-_lbc7b1d2d568_pageTitle.html">_lbc7b1d2d568_pageTitle</a></li>
+				<li><a href="function-_lbc87403d9a5_content.html">_lbc87403d9a5_content</a></li>
+				<li><a href="function-_lbc8e71a9ea3_content.html">_lbc8e71a9ea3_content</a></li>
+				<li><a href="function-_lbc9e00b4a1f__.html">_lbc9e00b4a1f__</a></li>
+				<li><a href="function-_lbcdd2424fc6_tabContent.html">_lbcdd2424fc6_tabContent</a></li>
+				<li><a href="function-_lbce758a316f_textContent.html">_lbce758a316f_textContent</a></li>
+				<li><a href="function-_lbcee3750bce_head_scripts.html">_lbcee3750bce_head_scripts</a></li>
+				<li><a href="function-_lbd18b2ca613_textContent.html">_lbd18b2ca613_textContent</a></li>
+				<li><a href="function-_lbd5a0d3acc3_head_links_layout.html">_lbd5a0d3acc3_head_links_layout</a></li>
+				<li><a href="function-_lbd973a08108_textContent.html">_lbd973a08108_textContent</a></li>
+				<li><a href="function-_lbd993c6d193_simpleMappingRuleForm.html">_lbd993c6d193_simpleMappingRuleForm</a></li>
+				<li><a href="function-_lbd9feb34ae3_textContent.html">_lbd9feb34ae3_textContent</a></li>
+				<li><a href="function-_lbdcc7d48c70_content.html">_lbdcc7d48c70_content</a></li>
+				<li><a href="function-_lbddcf93d259_textContent.html">_lbddcf93d259_textContent</a></li>
+				<li><a href="function-_lbe1b863f06f_menu.html">_lbe1b863f06f_menu</a></li>
+				<li><a href="function-_lbe3d46f3b01_menu.html">_lbe3d46f3b01_menu</a></li>
+				<li><a href="function-_lbe47f3ebdf1_pageTitle.html">_lbe47f3ebdf1_pageTitle</a></li>
+				<li><a href="function-_lbe570731fe9_beforeLayout.html">_lbe570731fe9_beforeLayout</a></li>
+				<li><a href="function-_lbe670204a59_beforeTextContent.html">_lbe670204a59_beforeTextContent</a></li>
+				<li><a href="function-_lbecd5755037_sidebar.html">_lbecd5755037_sidebar</a></li>
+				<li><a href="function-_lbee53f10520_layoutContent.html">_lbee53f10520_layoutContent</a></li>
+				<li><a href="function-_lbf6dda0603a_content.html">_lbf6dda0603a_content</a></li>
+				<li><a href="function-_lbf7a2abdc84_head_links.html">_lbf7a2abdc84_head_links</a></li>
+				<li><a href="function-_lbf96ed5f5f6__connectionHandlersFormType.html">_lbf96ed5f5f6__connectionHandlersFormType</a></li>
+				<li><a href="function-_lbfac96c2537_head_meta.html">_lbfac96c2537_head_meta</a></li>
+				<li><a href="function-_lbfc5125162e_container.html">_lbfc5125162e_container</a></li>
+				<li><a href="function-_lbfe4e3d21db_footerContent.html">_lbfe4e3d21db_footerContent</a></li>
+				<li><a href="function-_lbfeb6097c46_textContent.html">_lbfeb6097c46_textContent</a></li>
+				<li><a href="function-_n.html">_n</a></li>
+				<li><a href="function-_nx.html">_nx</a></li>
+				<li><a href="function-_x.html">_x</a></li>
+				<li><a href="function-abspath.html">abspath</a></li>
+				<li><a href="function-array_to_json.html">array_to_json</a></li>
+				<li><a href="function-callback.html">callback</a></li>
+				<li><a href="function-csl2arr.html">csl2arr</a></li>
+				<li><a href="function-deleteifempty.html">deleteifempty</a></li>
+				<li><a href="function-dump.html">dump</a></li>
+				<li><a href="function-extractZipDir.html">extractZipDir</a></li>
+				<li><a href="function-falseifempty.html">falseifempty</a></li>
+				<li><a href="function-getEngineInstance.html">getEngineInstance</a></li>
+				<li><a href="function-getRelative.html">getRelative</a></li>
+				<li><a href="function-isabspath.html">isabspath</a></li>
+				<li><a href="function-nullifempty.html">nullifempty</a></li>
+				<li><a href="function-tdarray_to_js.html">tdarray_to_js</a></li>
+				<li><a href="function-testempty.html">testempty</a></li>
+				<li><a href="function-trimarray.html">trimarray</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-None.html" title="Summary of None"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Magmi_ProductImportEngine</h1>
+
+
+	<div class="description">
+	
+<p>Magmi Product Import engine class This class handle product import</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+DbHelper
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+			<a href="class-Magmi_Engine.html"><span>Magmi_Engine</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:60px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>Magmi_ProductImportEngine</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		
+
+				<b>Author:</b>
+				dweeves<br />
+		<b>Located at</b> <a href="source-class-Magmi_ProductImportEngine.html#15-1519" title="Go to source code">libs/Magmi/engines/magmi_productimportengine.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="addExtraAttribute" id="_addExtraAttribute">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addExtraAttribute">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#48-53" title="Go to source code">addExtraAttribute</a>( <span>mixed <var>$attr</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#54-61" title="Go to source code">__construct</a>( )</code>
+
+		<div class="description short">
+			
+<p>constructor</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>constructor</p>
+
+
+
+
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-Magmi_Engine.html#___construct">Magmi_Engine::__construct()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getSkuStats" id="_getSkuStats">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getSkuStats">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#64-67" title="Go to source code">getSkuStats</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getImportMode" id="_getImportMode">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getImportMode">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#69-72" title="Go to source code">getImportMode</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getEngineInfo" id="_getEngineInfo">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getEngineInfo">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#73-80" title="Go to source code">getEngineInfo</a>( )</code>
+
+		<div class="description short">
+			
+<p>(non-PHPdoc)</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>(non-PHPdoc)</p>
+
+
+
+
+
+
+				<h4>See</h4>
+				<div class="list">
+						<code><code><a href="class-Magmi_Engine.html#_getEngineInfo">Magmi_Engine::getEngineInfo()</a></code></code><br />
+				</div>
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-Magmi_Engine.html#_getEngineInfo">Magmi_Engine::getEngineInfo()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="initProdType" id="_initProdType">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_initProdType">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#86-94" title="Go to source code">initProdType</a>( )</code>
+
+		<div class="description short">
+			
+<p>load properties</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>load properties</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getPluginFamilies" id="_getPluginFamilies">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getPluginFamilies">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#98-101" title="Go to source code">getPluginFamilies</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+				<h4>Overrides</h4>
+				<div class="list"><code><a href="class-Magmi_Engine.html#_getPluginFamilies">Magmi_Engine::getPluginFamilies()</a></code></div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="registerAttributeHandler" id="_registerAttributeHandler">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_registerAttributeHandler">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#103-117" title="Go to source code">registerAttributeHandler</a>( <span>mixed <var>$ahinst</var></span>, <span>mixed <var>$attdeflist</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getStoreIdsForWebsiteScope" id="_getStoreIdsForWebsiteScope">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getStoreIdsForWebsiteScope">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#122-145" title="Go to source code">getStoreIdsForWebsiteScope</a>( <span>string <var>$scodes</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return list of store codes that share the same website than the stores passed
+as parameter</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$scodes</var></dt>
+					<dd><code>string</code><br>$scodes comma separated list of store view codes</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getStoreIdsForStoreScope" id="_getStoreIdsForStoreScope">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getStoreIdsForStoreScope">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#147-164" title="Go to source code">getStoreIdsForStoreScope</a>( <span>mixed <var>$scodes</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getMode" id="_getMode">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getMode">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#167-173" title="Go to source code">getMode</a>( )</code>
+
+		<div class="description short">
+			
+<p>returns mode</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>returns mode</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getProdCols" id="_getProdCols">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getProdCols">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#175-187" title="Go to source code">getProdCols</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getStockCols" id="_getStockCols">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getStockCols">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#189-201" title="Go to source code">getStockCols</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="checkRequired" id="_checkRequired">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_checkRequired">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#202-219" title="Go to source code">checkRequired</a>( <span>array <var>$cols</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Initialize attribute infos to be used during import</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Initialize attribute infos to be used during import</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$cols</var></dt>
+					<dd><code>array</code><br>$cols : array of attribute names</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="initAttrInfos" id="_initAttrInfos">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_initAttrInfos">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#221-310" title="Go to source code">initAttrInfos</a>( <span>array <var>$cols</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>gets attribute metadata from DB and put it in attribute metadata caches</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$cols</var></dt>
+					<dd><code>array</code><br>$cols list of attribute codes to get metadata from if in this list, some values
+are not attribute code, no metadata will be cached.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAttrInfo" id="_getAttrInfo">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAttrInfo">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#312-338" title="Go to source code">getAttrInfo</a>( <span>string <var>$attcode</var></span>, <span>boolean <var>$lookup</var> = <span class="php-keyword1">true</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>retrieves attribute metadata</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$attcode</var></dt>
+					<dd><code>string</code><br>$attcode attribute code</dd>
+					<dt><var>$lookup</var></dt>
+					<dd><code>boolean</code><br>$lookup if set, this will try to get info from DB otherwise will get from cache
+and may return null if not cached</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>attribute metadata info<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAttributeSetId" id="_getAttributeSetId">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAttributeSetId">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#340-358" title="Go to source code">getAttributeSetId</a>( <span>string <var>$asname</var></span> )</code>
+
+		<div class="description short">
+			
+<p>retrieves attribute set id for a given attribute set name</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>retrieves attribute set id for a given attribute set name</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$asname</var></dt>
+					<dd><code>string</code><br>$asname : attribute set name</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getProductIds" id="_getProductIds">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getProductIds">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#360-378" title="Go to source code">getProductIds</a>( <span>string <var>$sku</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Retrieves product id for a given sku</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Retrieves product id for a given sku</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sku</var></dt>
+					<dd><code>string</code><br>$sku : sku of product to get id for</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createProduct" id="_createProduct">
+
+		<td class="attributes"><code>
+			 public 
+			:
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createProduct">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#380-404" title="Go to source code">createProduct</a>( <span>array <var>$item</var></span>, <span>integer <var>$asid</var></span> )</code>
+
+		<div class="description short">
+			
+<p>creates a product in magento database</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>creates a product in magento database</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$item</var></dt>
+					<dd><code>array</code><br>$item: product attributes as array with key:attribute name,value:attribute value</dd>
+					<dt><var>$asid</var></dt>
+					<dd><code>integer</code><br>$asid : attribute set id for values</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>:</code><br>product id for newly created product<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="touchProduct" id="_touchProduct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_touchProduct">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#406-414" title="Go to source code">touchProduct</a>( <span>unknown_type <var>$pid</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Updateds product update time</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Updateds product update time</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$pid</var></dt>
+					<dd><code>unknown_type</code><br>$pid : entity_id of product</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getOptionsFromValues" id="_getOptionsFromValues">
+
+		<td class="attributes"><code>
+			 public 
+			:
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getOptionsFromValues">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#416-431" title="Go to source code">getOptionsFromValues</a>( <span>integer <var>$attid</var></span>, <span>mixed <var>$store_id</var></span>, <span>mixed <var>$optvals</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Get Option id for select attributes based on value</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get Option id for select attributes based on value</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$attid</var></dt>
+					<dd><code>integer</code><br>$attid : attribute id to find option id from value</dd>
+					<dt><var>$store_id</var></dt>
+					<dd><code>mixed</code><br>$optval : value to get option id for</dd>
+					<dt><var>$optvals</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>:</code><br>array of lines (should be as much as values found),"opvd"=&gt;option_id for
+value on store 0,"opvs" option id for value on current store<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createOption" id="_createOption">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createOption">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#435-440" title="Go to source code">createOption</a>( <span>mixed <var>$attid</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createOptionValue" id="_createOptionValue">
+
+		<td class="attributes"><code>
+			 public 
+			:
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createOptionValue">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#441-453" title="Go to source code">createOptionValue</a>( <span>integer <var>$optid</var></span>, <span>integer <var>$store_id</var></span>, <span>mixed <var>$optval</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Creates a new option value for an option entry for a store</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Creates a new option value for an option entry for a store</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$optid</var></dt>
+					<dd><code>integer</code><br>$optid : option entry id</dd>
+					<dt><var>$store_id</var></dt>
+					<dd><code>integer</code><br>$store_id : store id to add value for</dd>
+					<dt><var>$optval</var></dt>
+					<dd><code>mixed</code><br>$optval : new option value to add</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>:</code><br>option id for new created value<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getOptionIds" id="_getOptionIds">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getOptionIds">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#456-535" title="Go to source code">getOptionIds</a>( <span>mixed <var>$attid</var></span>, <span>mixed <var>$storeid</var></span>, <span>mixed <var>$values</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="cacheOptIds" id="_cacheOptIds">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_cacheOptIds">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#537-540" title="Go to source code">cacheOptIds</a>( <span>mixed <var>$attid</var></span>, <span>mixed <var>$row</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getCachedOptIds" id="_getCachedOptIds">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getCachedOptIds">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#542-552" title="Go to source code">getCachedOptIds</a>( <span>mixed <var>$attid</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTaxClassId" id="_getTaxClassId">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTaxClassId">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#555-569" title="Go to source code">getTaxClassId</a>( <span>mixed <var>$tcvalue</var></span> )</code>
+
+		<div class="description short">
+			
+<p>returns tax class id for a given tax class value</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>returns tax class id for a given tax class value</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$tcvalue</var></dt>
+					<dd><code>mixed</code><br>$tcvalue : tax class value</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getItemStoreIds" id="_getItemStoreIds">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getItemStoreIds">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#573-599" title="Go to source code">getItemStoreIds</a>( <span>array <var>$item</var></span>, <span>string <var>$scope</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Return affected store ids for a given item given an attribute scope</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$item</var></dt>
+					<dd><code>array</code><br>$item : item to get store for scope</dd>
+					<dt><var>$scope</var></dt>
+					<dd><code>string</code><br>$scope : scope to get stores from.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createAttributes" id="_createAttributes">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createAttributes">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#601-773" title="Go to source code">createAttributes</a>( <span>mixed <var>$pid</var></span>, <span>mixed <var>&amp; $item</var></span>, <span>mixed <var>$attmap</var></span>, <span>mixed <var>$isnew</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Create product attribute from values for a given product id</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Create product attribute from values for a given product id</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$pid</var></dt>
+					<dd><code>mixed</code><br>$pid : product id to create attribute values for</dd>
+					<dt><var>$item</var></dt>
+					<dd><code>mixed</code><br>$item : attribute values in an array indexed by attribute_code</dd>
+					<dt><var>$attmap</var></dt>
+					<dd></dd>
+					<dt><var>$isnew</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="updateStock" id="_updateStock">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_updateStock">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#777-867" title="Go to source code">updateStock</a>( <span>integer <var>$pid</var></span>, <span>array <var>$item</var></span>, <span>mixed <var>$isnew</var></span> )</code>
+
+		<div class="description short">
+			
+<p>update product stock</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>update product stock</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$pid</var></dt>
+					<dd><code>integer</code><br>$pid : product id</dd>
+					<dt><var>$item</var></dt>
+					<dd><code>array</code><br>$item : attribute values for product indexed by attribute_code</dd>
+					<dt><var>$isnew</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="assignCategories" id="_assignCategories">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_assignCategories">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#868-930" title="Go to source code">assignCategories</a>( <span>integer <var>$pid</var></span>, <span>array <var>$item</var></span> )</code>
+
+		<div class="description short">
+			
+<p>assign categories for a given product id from values categories should
+already be created &amp; csv values should be as the ones given in the magento
+export (ie: comma separated ids, minus 1,2)</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>assign categories for a given product id from values categories should
+already be created &amp; csv values should be as the ones given in the magento
+export (ie: comma separated ids, minus 1,2)</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$pid</var></dt>
+					<dd><code>integer</code><br>$pid : product id</dd>
+					<dt><var>$item</var></dt>
+					<dd><code>array</code><br>$item : attribute values for product indexed by attribute_code</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getItemWebsites" id="_getItemWebsites">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getItemWebsites">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#933-958" title="Go to source code">getItemWebsites</a>( <span>mixed <var>$item</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="updateWebSites" id="_updateWebSites">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_updateWebSites">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#960-974" title="Go to source code">updateWebSites</a>( <span>integer <var>$pid</var></span>, <span>array <var>$item</var></span> )</code>
+
+		<div class="description short">
+			
+<p>set website of product if not exists</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>set website of product if not exists</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$pid</var></dt>
+					<dd><code>integer</code><br>$pid : product id</dd>
+					<dt><var>$item</var></dt>
+					<dd><code>array</code><br>$item : attribute values for product indexed by attribute_code</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="clearOptCache" id="_clearOptCache">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_clearOptCache">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#978-982" title="Go to source code">clearOptCache</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="onNewSku" id="_onNewSku">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_onNewSku">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#984-998" title="Go to source code">onNewSku</a>( <span>mixed <var>$sku</var></span>, <span>mixed <var>$existing</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="onSameSku" id="_onSameSku">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_onSameSku">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#1000-1005" title="Go to source code">onSameSku</a>( <span>mixed <var>$sku</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getItemIds" id="_getItemIds">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getItemIds">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#1008-1034" title="Go to source code">getItemIds</a>( <span>mixed <var>$item</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="handleIgnore" id="_handleIgnore">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_handleIgnore">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#1036-1046" title="Go to source code">handleIgnore</a>( <span>mixed <var>&amp; $item</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="findItemStores" id="_findItemStores">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_findItemStores">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#1047-1059" title="Go to source code">findItemStores</a>( <span>mixed <var>$pid</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="checkItemStores" id="_checkItemStores">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_checkItemStores">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#1061-1094" title="Go to source code">checkItemStores</a>( <span>mixed <var>$scodes</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="checkstore" id="_checkstore">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_checkstore">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#1096-1113" title="Go to source code">checkstore</a>( <span>mixed <var>&amp; $item</var></span>, <span>mixed <var>$pid</var></span>, <span>mixed <var>$isnew</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="importItem" id="_importItem">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_importItem">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#1114-1235" title="Go to source code">importItem</a>( <span>array <var>$item</var></span> )</code>
+
+		<div class="description short">
+			
+<p>full import workflow for item</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>full import workflow for item</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$item</var></dt>
+					<dd><code>array</code><br>$item : attribute values for product indexed by attribute_code</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getProperties" id="_getProperties">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getProperties">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#1237-1240" title="Go to source code">getProperties</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="lookup" id="_lookup">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_lookup">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#1242-1258" title="Go to source code">lookup</a>( )</code>
+
+		<div class="description short">
+			
+<p>count lines of csv file</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>count lines of csv file</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="updateProduct" id="_updateProduct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_updateProduct">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#1262-1278" title="Go to source code">updateProduct</a>( <span>mixed <var>$item</var></span>, <span>mixed <var>$pid</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getProductEntityType" id="_getProductEntityType">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getProductEntityType">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#1280-1283" title="Go to source code">getProductEntityType</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getCurrentRow" id="_getCurrentRow">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getCurrentRow">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#1285-1288" title="Go to source code">getCurrentRow</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setCurrentRow" id="_setCurrentRow">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setCurrentRow">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#1290-1293" title="Go to source code">setCurrentRow</a>( <span>mixed <var>$cnum</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isLastItem" id="_isLastItem">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isLastItem">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#1295-1298" title="Go to source code">isLastItem</a>( <span>mixed <var>$item</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setLastItem" id="_setLastItem">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setLastItem">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#1300-1303" title="Go to source code">setLastItem</a>( <span>mixed <var>&amp; $item</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="engineInit" id="_engineInit">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_engineInit">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#1305-1311" title="Go to source code">engineInit</a>( <span>mixed <var>$params</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="reportStats" id="_reportStats">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_reportStats">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#1314-1322" title="Go to source code">reportStats</a>( <span>mixed <var>$nrow</var></span>, <span>mixed <var>&amp; $tstart</var></span>, <span>mixed <var>&amp; $tdiff</var></span>, <span>mixed <var>&amp; $lastdbtime</var></span>, <span>mixed <var>&amp; $lastrec</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="initImport" id="_initImport">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_initImport">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#1326-1345" title="Go to source code">initImport</a>( <span>mixed <var>$params</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="onPluginProcessedItemAfterId" id="_onPluginProcessedItemAfterId">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_onPluginProcessedItemAfterId">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#1347-1350" title="Go to source code">onPluginProcessedItemAfterId</a>( <span>mixed <var>$plinst</var></span>, <span>mixed <var>&amp; $item</var></span>, <span>mixed <var>$plresult</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="exitImport" id="_exitImport">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_exitImport">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#1352-1357" title="Go to source code">exitImport</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="updateSkuStats" id="_updateSkuStats">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_updateSkuStats">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#1359-1373" title="Go to source code">updateSkuStats</a>( <span>mixed <var>$res</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDataSource" id="_getDataSource">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDataSource">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#1374-1378" title="Go to source code">getDataSource</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="processDataSourceLine" id="_processDataSourceLine">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_processDataSourceLine">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#1380-1432" title="Go to source code">processDataSourceLine</a>( <span>mixed <var>$item</var></span>, <span>mixed <var>$rstep</var></span>, <span>mixed <var>&amp; $tstart</var></span>, <span>mixed <var>&amp; $tdiff</var></span>, <span>mixed <var>&amp; $lastdbtime</var></span>, <span>mixed <var>&amp; $lastrec</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="resetSkuStats" id="_resetSkuStats">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_resetSkuStats">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#1434-1437" title="Go to source code">resetSkuStats</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="engineRun" id="_engineRun">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_engineRun">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#1440-1506" title="Go to source code">engineRun</a>( <span>mixed <var>$params</var></span>, <span>mixed <var>$forcebuiltin</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="onEngineException" id="_onEngineException">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_onEngineException">#</a>
+		<code><a href="source-class-Magmi_ProductImportEngine.html#1508-1517" title="Go to source code">onEngineException</a>( <span>mixed <var>$e</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Magmi_Engine.html#methods">Magmi_Engine</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Magmi_Engine.html#__registerPluginLoopCallback">_registerPluginLoopCallback()</a>, 
+			<a href="class-Magmi_Engine.html#__unregisterPluginLoopCallback">_unregisterPluginLoopCallback()</a>, 
+			<a href="class-Magmi_Engine.html#_callPlugins">callPlugins()</a>, 
+			<a href="class-Magmi_Engine.html#_connectToMagento">connectToMagento()</a>, 
+			<a href="class-Magmi_Engine.html#_createPlugins">createPlugins()</a>, 
+			<a href="class-Magmi_Engine.html#_disconnectFromMagento">disconnectFromMagento()</a>, 
+			<a href="class-Magmi_Engine.html#_getBuiltinPluginClasses">getBuiltinPluginClasses()</a>, 
+			<a href="class-Magmi_Engine.html#_getEnabledPluginClasses">getEnabledPluginClasses()</a>, 
+			<a href="class-Magmi_Engine.html#_getExceptionTrace">getExceptionTrace()</a>, 
+			<a href="class-Magmi_Engine.html#_getMagentoDir">getMagentoDir()</a>, 
+			<a href="class-Magmi_Engine.html#_getMagentoVersion">getMagentoVersion()</a>, 
+			<a href="class-Magmi_Engine.html#_getParam">getParam()</a>, 
+			<a href="class-Magmi_Engine.html#_getPluginClasses">getPluginClasses()</a>, 
+			<a href="class-Magmi_Engine.html#_getPluginInstance">getPluginInstance()</a>, 
+			<a href="class-Magmi_Engine.html#_getPluginInstanceByClassName">getPluginInstanceByClassName()</a>, 
+			<a href="class-Magmi_Engine.html#_getPluginInstances">getPluginInstances()</a>, 
+			<a href="class-Magmi_Engine.html#_getProp">getProp()</a>, 
+			<a href="class-Magmi_Engine.html#_handleException">handleException()</a>, 
+			<a href="class-Magmi_Engine.html#_initPlugins">initPlugins()</a>, 
+			<a href="class-Magmi_Engine.html#_initialize">initialize()</a>, 
+			<a href="class-Magmi_Engine.html#_log">log()</a>, 
+			<a href="class-Magmi_Engine.html#_logException">logException()</a>, 
+			<a href="class-Magmi_Engine.html#_microDateTime">microDateTime()</a>, 
+			<a href="class-Magmi_Engine.html#_run">run()</a>, 
+			<a href="class-Magmi_Engine.html#_setBuiltinPluginClasses">setBuiltinPluginClasses()</a>, 
+			<a href="class-Magmi_Engine.html#_setLogger">setLogger()</a>, 
+			<a href="class-Magmi_Engine.html#_sortPlugins">sortPlugins()</a>, 
+			<a href="class-Magmi_Engine.html#_tablename">tablename()</a>, 
+			<a href="class-Magmi_Engine.html#_trace">trace()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="attrinfo" id="$attrinfo">
+		<td class="attributes"><code>
+			public  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Magmi_ProductImportEngine.html#25" title="Go to source code"><var>$attrinfo</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$attrinfo" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="attrbytype" id="$attrbytype">
+		<td class="attributes"><code>
+			public  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Magmi_ProductImportEngine.html#26" title="Go to source code"><var>$attrbytype</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$attrbytype" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="store_ids" id="$store_ids">
+		<td class="attributes"><code>
+			public  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Magmi_ProductImportEngine.html#27" title="Go to source code"><var>$store_ids</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$store_ids" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="status_id" id="$status_id">
+		<td class="attributes"><code>
+			public  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Magmi_ProductImportEngine.html#28" title="Go to source code"><var>$status_id</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$status_id" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="attribute_sets" id="$attribute_sets">
+		<td class="attributes"><code>
+			public  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Magmi_ProductImportEngine.html#29" title="Go to source code"><var>$attribute_sets</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$attribute_sets" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="prod_etype" id="$prod_etype">
+		<td class="attributes"><code>
+			public  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Magmi_ProductImportEngine.html#30" title="Go to source code"><var>$prod_etype</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$prod_etype" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="sidcache" id="$sidcache">
+		<td class="attributes"><code>
+			public  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Magmi_ProductImportEngine.html#31" title="Go to source code"><var>$sidcache</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$sidcache" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="mode" id="$mode">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-Magmi_ProductImportEngine.html#32" title="Go to source code"><var>$mode</var></a>
+		</td>
+		<td class="value"><code><span class="php-quote">&quot;update&quot;</span></code></td>
+		<td class="description"><div>
+			<a href="#$mode" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-Magmi_Engine.html#properties">Magmi_Engine</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Magmi_Engine.html#$_activeplugins"><var>$_activeplugins</var></a>, 
+			<a href="class-Magmi_Engine.html#$_builtinplugins"><var>$_builtinplugins</var></a>, 
+			<a href="class-Magmi_Engine.html#$_conf"><var>$_conf</var></a>, 
+			<a href="class-Magmi_Engine.html#$_connected"><var>$_connected</var></a>, 
+			<a href="class-Magmi_Engine.html#$_exceptions"><var>$_exceptions</var></a>, 
+			<a href="class-Magmi_Engine.html#$_initialized"><var>$_initialized</var></a>, 
+			<a href="class-Magmi_Engine.html#$_ploop_callbacks"><var>$_ploop_callbacks</var></a>, 
+			<a href="class-Magmi_Engine.html#$_pluginclasses"><var>$_pluginclasses</var></a>, 
+			<a href="class-Magmi_Engine.html#$logger"><var>$logger</var></a>, 
+			<a href="class-Magmi_Engine.html#$tprefix"><var>$tprefix</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

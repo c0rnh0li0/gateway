@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+	<meta name="robots" content="noindex" />
+
+	<title>File libs/Magmi/inc/magmi_utils.php</title>
+
+	<script type="text/javascript" src="resources/combined.js?1479682893"></script>
+	<script type="text/javascript" src="elementlist.js?1567848024"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-AdminModule.html">AdminModule<span></span></a>
+						<ul>
+				<li><a href="namespace-AdminModule.Component.html">Component</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-ApiModule.html">ApiModule</a>
+						</li>
+				<li><a href="namespace-Gateway.html">Gateway<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.html">DataSource<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.Entity.html">Entity<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.Entity.Category.html">Category</a>
+						</li>
+				<li><a href="namespace-Gateway.DataSource.Entity.Customer.html">Customer</a>
+						</li>
+				<li><a href="namespace-Gateway.DataSource.Entity.Order.html">Order<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.Entity.Order.Payment.html">Payment</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.DataSource.Entity.Product.html">Product</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Gateway.Handler.html">Handler<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.html">Erp<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.html">Etron<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.XML.html">XML<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.XML.Reader.html">Reader<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.XML.Reader.Products.html">Products</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.Xml.Writer.html">Writer</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-Gateway.Handler.Shop.html">Shop<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.html">Magento<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.JSON.html">JSON<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.JSON.Reader.html">Reader</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.Magmi.html">Magmi<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.Magmi.Writer.html">Writer</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.SOAP.html">SOAP<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.SOAP.Writer.html">Writer<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.SOAP.Writer.Products.html">Products</a>
+						</li>
+							</ul></li></ul></li></ul></li></ul></li></ul></li>
+				<li><a href="namespace-Gateway.Mapping.html">Mapping<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Mapping.Rule.html">Rule</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Logger.html">Logger</a>
+						</li>
+				<li><a href="namespace-Nette.html">Nette<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Application.html">Application<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Application.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Application.Responses.html">Responses</a>
+						</li>
+				<li><a href="namespace-Nette.Application.Routers.html">Routers</a>
+						</li>
+				<li><a href="namespace-Nette.Application.UI.html">UI</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Caching.html">Caching<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Caching.Storages.html">Storages</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.ComponentModel.html">ComponentModel</a>
+						</li>
+				<li><a href="namespace-Nette.Config.html">Config<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Config.Adapters.html">Adapters</a>
+						</li>
+				<li><a href="namespace-Nette.Config.Extensions.html">Extensions</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Database.html">Database<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Database.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Drivers.html">Drivers</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Reflection.html">Reflection</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Table.html">Table</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.DI.html">DI<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.DI.Diagnostics.html">Diagnostics</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Forms.html">Forms<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Forms.Controls.html">Controls</a>
+						</li>
+				<li><a href="namespace-Nette.Forms.Rendering.html">Rendering</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Http.html">Http</a>
+						</li>
+				<li><a href="namespace-Nette.Iterators.html">Iterators</a>
+						</li>
+				<li><a href="namespace-Nette.Latte.html">Latte<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Latte.Macros.html">Macros</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Loaders.html">Loaders</a>
+						</li>
+				<li><a href="namespace-Nette.Localization.html">Localization</a>
+						</li>
+				<li><a href="namespace-Nette.Mail.html">Mail</a>
+						</li>
+				<li><a href="namespace-Nette.Reflection.html">Reflection</a>
+						</li>
+				<li><a href="namespace-Nette.Security.html">Security<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Security.Diagnostics.html">Diagnostics</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Templating.html">Templating</a>
+						</li>
+				<li><a href="namespace-Nette.Utils.html">Utils<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Utils.PhpGenerator.html">PhpGenerator</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-NetteModule.html">NetteModule</a>
+						</li>
+				<li><a href="namespace-NetteTranslator.html">NetteTranslator</a>
+						</li>
+				<li><a href="namespace-NiftyGrid.html">NiftyGrid</a>
+						</li>
+				<li class="active"><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li><a href="namespace-Yourface.html">Yourface<span></span></a>
+						<ul>
+				<li><a href="namespace-Yourface.Application.html">Application<span></span></a>
+						<ul>
+				<li><a href="namespace-Yourface.Application.Responses.html">Responses</a>
+						</li>
+				<li><a href="namespace-Yourface.Application.Routers.html">Routers</a>
+						</li>
+				<li><a href="namespace-Yourface.Application.UI.html">UI</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Yourface.Iterators.html">Iterators</a>
+						</li>
+				<li><a href="namespace-Yourface.NiftyGrid.html">NiftyGrid</a>
+						</li>
+				<li><a href="namespace-Yourface.Utils.html">Utils</a>
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Alpine_GroupedItemProcessor.html">Alpine_GroupedItemProcessor</a></li>
+				<li><a href="class-BasePresenter.html">BasePresenter</a></li>
+				<li><a href="class-CategoryImporter.html">CategoryImporter</a></li>
+				<li><a href="class-CLILogger.html">CLILogger</a></li>
+				<li><a href="class-ColumnMappingItemProcessor.html">ColumnMappingItemProcessor</a></li>
+				<li><a href="class-CrossUpsellProducts.html">CrossUpsellProducts</a></li>
+				<li><a href="class-CustomOptionsItemProcessor.html">CustomOptionsItemProcessor</a></li>
+				<li><a href="class-DBHelper.html">DBHelper</a></li>
+				<li><a href="class-DefaultPresenter.html">DefaultPresenter</a></li>
+				<li><a href="class-DefaultProgressLineParser.html">DefaultProgressLineParser</a></li>
+				<li><a href="class-DefaultProgressParser.html">DefaultProgressParser</a></li>
+				<li><a href="class-DefaultValuesItemProcessor.html">DefaultValuesItemProcessor</a></li>
+				<li><a href="class-DirbasedConfig.html">DirbasedConfig</a></li>
+				<li><a href="class-EchoLogger.html">EchoLogger</a></li>
+				<li><a href="class-EmailReportPlugin.html">EmailReportPlugin</a></li>
+				<li><a href="class-EnabledPlugins_Config.html">EnabledPlugins_Config</a></li>
+				<li><a href="class-ErrorPresenter.html">ErrorPresenter</a></li>
+				<li><a href="class-ExtDBHelper.html">ExtDBHelper</a></li>
+				<li><a href="class-FileLogger.html">FileLogger</a></li>
+				<li><a href="class-FileLoggerTest.html">FileLoggerTest</a></li>
+				<li><a href="class-FSHelper.html">FSHelper</a></li>
+				<li><a href="class-GenericMapperProcessor.html">GenericMapperProcessor</a></li>
+				<li><a href="class-ImageAttributeItemProcessor.html">ImageAttributeItemProcessor</a></li>
+				<li><a href="class-ImportLimiter.html">ImportLimiter</a></li>
+				<li><a href="class-ItemIndexer.html">ItemIndexer</a></li>
+				<li><a href="class-Magmi_Config.html">Magmi_Config</a></li>
+				<li><a href="class-Magmi_ConfigurableItemProcessor.html">Magmi_ConfigurableItemProcessor</a></li>
+				<li><a href="class-Magmi_CSVDataSource.html">Magmi_CSVDataSource</a></li>
+				<li><a href="class-Magmi_CSVReader.html">Magmi_CSVReader</a></li>
+				<li><a href="class-Magmi_DatapumpDS.html">Magmi_DatapumpDS</a></li>
+				<li><a href="class-Magmi_DataPumpFactory.html">Magmi_DataPumpFactory</a></li>
+				<li><a href="class-Magmi_DataSource.html">Magmi_DataSource</a></li>
+				<li><a href="class-Magmi_DefaultAttributeItemProcessor.html">Magmi_DefaultAttributeItemProcessor</a></li>
+				<li><a href="class-Magmi_DSEngine.html">Magmi_DSEngine</a></li>
+				<li><a href="class-Magmi_Engine.html">Magmi_Engine</a></li>
+				<li><a href="class-Magmi_GeneralImportPlugin.html">Magmi_GeneralImportPlugin</a></li>
+				<li><a href="class-Magmi_ImportUrlPlugin.html">Magmi_ImportUrlPlugin</a></li>
+				<li><a href="class-Magmi_ItemProcessor.html">Magmi_ItemProcessor</a></li>
+				<li><a href="class-Magmi_MagentoDatasource.html">Magmi_MagentoDatasource</a></li>
+				<li><a href="class-Magmi_Mixin.html">Magmi_Mixin</a></li>
+				<li><a href="class-Magmi_OptimizerPlugin.html">Magmi_OptimizerPlugin</a></li>
+				<li><a href="class-Magmi_Plugin.html">Magmi_Plugin</a></li>
+				<li><a href="class-Magmi_PluginConfig.html">Magmi_PluginConfig</a></li>
+				<li><a href="class-Magmi_PluginHelper.html">Magmi_PluginHelper</a></li>
+				<li><a href="class-Magmi_PluginOptionsPanel.html">Magmi_PluginOptionsPanel</a></li>
+				<li><a href="class-Magmi_ProductImport_DataPump.html">Magmi_ProductImport_DataPump</a></li>
+				<li><a href="class-Magmi_ProductImportEngine.html">Magmi_ProductImportEngine</a></li>
+				<li><a href="class-Magmi_ReindexingPlugin.html">Magmi_ReindexingPlugin</a></li>
+				<li><a href="class-Magmi_StateManager.html">Magmi_StateManager</a></li>
+				<li><a href="class-Magmi_UtilityEngine.html">Magmi_UtilityEngine</a></li>
+				<li><a href="class-Magmi_UtilityPlugin.html">Magmi_UtilityPlugin</a></li>
+				<li><a href="class-Magmi_Version.html">Magmi_Version</a></li>
+				<li><a href="class-NullLoggerTest.html">NullLoggerTest</a></li>
+				<li><a href="class-OutputLoggerTest.html">OutputLoggerTest</a></li>
+				<li><a href="class-ProductDeleter.html">ProductDeleter</a></li>
+				<li><a href="class-ProfileBasedConfig.html">ProfileBasedConfig</a></li>
+				<li><a href="class-ProgressLineParser.html">ProgressLineParser</a></li>
+				<li><a href="class-ProgressParser.html">ProgressParser</a></li>
+				<li><a href="class-Properties.html">Properties</a></li>
+				<li><a href="class-RelatedProducts.html">RelatedProducts</a></li>
+				<li><a href="class-SkuFinderItemProcessor.html">SkuFinderItemProcessor</a></li>
+				<li><a href="class-Slugger.html">Slugger</a></li>
+				<li><a href="class-SQL_Datasource.html">SQL_Datasource</a></li>
+				<li><a href="class-StackTest.html">StackTest</a></li>
+				<li><a href="class-SystemContainer.html" class="invalid">SystemContainer</a></li>
+				<li><a href="class-SystemContainer_nette.html" class="invalid">SystemContainer_nette</a></li>
+				<li><a href="class-SystemContainer_nette_database.html" class="invalid">SystemContainer_nette_database</a></li>
+				<li><a href="class-TestLogger.html">TestLogger</a></li>
+				<li><a href="class-TestLogger2.html">TestLogger2</a></li>
+				<li><a href="class-TierpriceProcessor.html">TierpriceProcessor</a></li>
+				<li><a href="class-ValueReplacerItemProcessor.html">ValueReplacerItemProcessor</a></li>
+				<li><a href="class-ValueTrimItemProcessor.html">ValueTrimItemProcessor</a></li>
+			</ul>
+
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-FileNotFoundException.html">FileNotFoundException</a></li>
+				<li><a href="class-InvalidPropertiesException.html">InvalidPropertiesException</a></li>
+				<li><a href="class-Magmi_CSVException.html">Magmi_CSVException</a></li>
+			</ul>
+
+
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-__.html">__</a></li>
+				<li><a href="function-_lb02dcc6169c_pageTitle.html">_lb02dcc6169c_pageTitle</a></li>
+				<li><a href="function-_lb04763b85d6__flashMessages.html">_lb04763b85d6__flashMessages</a></li>
+				<li><a href="function-_lb07d138c5af_textContent.html">_lb07d138c5af_textContent</a></li>
+				<li><a href="function-_lb087a732bbb_container.html">_lb087a732bbb_container</a></li>
+				<li><a href="function-_lb0914172d81_layoutContent.html">_lb0914172d81_layoutContent</a></li>
+				<li><a href="function-_lb0ae48c7998_simpleMappingRuleFormExtension.html">_lb0ae48c7998_simpleMappingRuleFormExtension</a></li>
+				<li><a href="function-_lb0c2469ec69__connectionHandlersFormReader.html">_lb0c2469ec69__connectionHandlersFormReader</a></li>
+				<li><a href="function-_lb10395da7ef_head_links_layout.html">_lb10395da7ef_head_links_layout</a></li>
+				<li><a href="function-_lb10cffb999b_flashMessages.html">_lb10cffb999b_flashMessages</a></li>
+				<li><a href="function-_lb1119190125_pageTitle.html">_lb1119190125_pageTitle</a></li>
+				<li><a href="function-_lb115161fc6d_layout.html">_lb115161fc6d_layout</a></li>
+				<li><a href="function-_lb142183cd38_afterLayout.html">_lb142183cd38_afterLayout</a></li>
+				<li><a href="function-_lb1473c771e1_breadcrumbs.html">_lb1473c771e1_breadcrumbs</a></li>
+				<li><a href="function-_lb168df30a96_head_links.html">_lb168df30a96_head_links</a></li>
+				<li><a href="function-_lb17b941dc3a__flashMessages.html">_lb17b941dc3a__flashMessages</a></li>
+				<li><a href="function-_lb2124709fc6_pageTitle.html">_lb2124709fc6_pageTitle</a></li>
+				<li><a href="function-_lb225d5f4aa4_footer.html">_lb225d5f4aa4_footer</a></li>
+				<li><a href="function-_lb24c7216496_sidebar.html">_lb24c7216496_sidebar</a></li>
+				<li><a href="function-_lb27bcc545d3_sidebar.html">_lb27bcc545d3_sidebar</a></li>
+				<li><a href="function-_lb2863e3beb7_head_scripts.html">_lb2863e3beb7_head_scripts</a></li>
+				<li><a href="function-_lb2bac44c7a0_header.html">_lb2bac44c7a0_header</a></li>
+				<li><a href="function-_lb2c0dc5b7c6_content.html">_lb2c0dc5b7c6_content</a></li>
+				<li><a href="function-_lb2f09be6ec8_flashMessages.html">_lb2f09be6ec8_flashMessages</a></li>
+				<li><a href="function-_lb33cf37349d_sidebar.html">_lb33cf37349d_sidebar</a></li>
+				<li><a href="function-_lb373927f439_textContent.html">_lb373927f439_textContent</a></li>
+				<li><a href="function-_lb37f583a6cc_textContent.html">_lb37f583a6cc_textContent</a></li>
+				<li><a href="function-_lb38e5c259fe_content.html">_lb38e5c259fe_content</a></li>
+				<li><a href="function-_lb44387083d0_textContent.html">_lb44387083d0_textContent</a></li>
+				<li><a href="function-_lb4513e6bd8b_simpleMappingRuleForm.html">_lb4513e6bd8b_simpleMappingRuleForm</a></li>
+				<li><a href="function-_lb45e8a98801_textContent.html">_lb45e8a98801_textContent</a></li>
+				<li><a href="function-_lb4df7737ddd_textContent.html">_lb4df7737ddd_textContent</a></li>
+				<li><a href="function-_lb4f5553eb1a_layoutContent.html">_lb4f5553eb1a_layoutContent</a></li>
+				<li><a href="function-_lb51461fd089_textContent.html">_lb51461fd089_textContent</a></li>
+				<li><a href="function-_lb527a4f996d_pageTitle.html">_lb527a4f996d_pageTitle</a></li>
+				<li><a href="function-_lb536a5d937c_head_scripts.html">_lb536a5d937c_head_scripts</a></li>
+				<li><a href="function-_lb54bda42acb_tabContent.html">_lb54bda42acb_tabContent</a></li>
+				<li><a href="function-_lb589377cb45_pageTitle.html">_lb589377cb45_pageTitle</a></li>
+				<li><a href="function-_lb5bbf8f6d21_footer.html">_lb5bbf8f6d21_footer</a></li>
+				<li><a href="function-_lb636ef3d075_pageTitle.html">_lb636ef3d075_pageTitle</a></li>
+				<li><a href="function-_lb677a231e17_textContent.html">_lb677a231e17_textContent</a></li>
+				<li><a href="function-_lb67f80a02fe_breadcrumbs.html">_lb67f80a02fe_breadcrumbs</a></li>
+				<li><a href="function-_lb67fbfc41d0_content.html">_lb67fbfc41d0_content</a></li>
+				<li><a href="function-_lb6916763086__sourceFormHandler.html">_lb6916763086__sourceFormHandler</a></li>
+				<li><a href="function-_lb69926c308a_pageTitle.html">_lb69926c308a_pageTitle</a></li>
+				<li><a href="function-_lb6af6f8cbb7_advancedMappingRuleForm.html">_lb6af6f8cbb7_advancedMappingRuleForm</a></li>
+				<li><a href="function-_lb6b59017799_pageTitle.html">_lb6b59017799_pageTitle</a></li>
+				<li><a href="function-_lb6d2870c96b_tabContent.html">_lb6d2870c96b_tabContent</a></li>
+				<li><a href="function-_lb7185003ce3_pageTitle.html">_lb7185003ce3_pageTitle</a></li>
+				<li><a href="function-_lb74ac9e2727_sidebar.html">_lb74ac9e2727_sidebar</a></li>
+				<li><a href="function-_lb78c22e929b_tabContent.html">_lb78c22e929b_tabContent</a></li>
+				<li><a href="function-_lb7b02ae913d__sourceFormHandler.html">_lb7b02ae913d__sourceFormHandler</a></li>
+				<li><a href="function-_lb7bae35ff7e__sourceFormHandler.html">_lb7bae35ff7e__sourceFormHandler</a></li>
+				<li><a href="function-_lb7c7e6133f5_textContent.html">_lb7c7e6133f5_textContent</a></li>
+				<li><a href="function-_lb7e97730327__.html">_lb7e97730327__</a></li>
+				<li><a href="function-_lb81116dbd83_pageTitle.html">_lb81116dbd83_pageTitle</a></li>
+				<li><a href="function-_lb8290ec26be_head_meta.html">_lb8290ec26be_head_meta</a></li>
+				<li><a href="function-_lb85447e6532_afterLayout.html">_lb85447e6532_afterLayout</a></li>
+				<li><a href="function-_lb8815c24886_textContent.html">_lb8815c24886_textContent</a></li>
+				<li><a href="function-_lb8b05eb87c2_textContent.html">_lb8b05eb87c2_textContent</a></li>
+				<li><a href="function-_lb8b34b03e1b_layoutContent.html">_lb8b34b03e1b_layoutContent</a></li>
+				<li><a href="function-_lb8fd77246d8_textContent.html">_lb8fd77246d8_textContent</a></li>
+				<li><a href="function-_lb919e4a6ab8_head_links.html">_lb919e4a6ab8_head_links</a></li>
+				<li><a href="function-_lb91de2df83e_pageTitle.html">_lb91de2df83e_pageTitle</a></li>
+				<li><a href="function-_lb946643c770_footerContent.html">_lb946643c770_footerContent</a></li>
+				<li><a href="function-_lb94758d8d45_textContent.html">_lb94758d8d45_textContent</a></li>
+				<li><a href="function-_lb953b702ff9_textContent.html">_lb953b702ff9_textContent</a></li>
+				<li><a href="function-_lb95d63d4e70_menu.html">_lb95d63d4e70_menu</a></li>
+				<li><a href="function-_lb9665289bca_header.html">_lb9665289bca_header</a></li>
+				<li><a href="function-_lb983adc043a_pageTitle.html">_lb983adc043a_pageTitle</a></li>
+				<li><a href="function-_lb99ae72d175_layoutContent.html">_lb99ae72d175_layoutContent</a></li>
+				<li><a href="function-_lb9d515362d5_pageTitle.html">_lb9d515362d5_pageTitle</a></li>
+				<li><a href="function-_lb9f04e844e4_beforeLayout.html">_lb9f04e844e4_beforeLayout</a></li>
+				<li><a href="function-_lba08c6087d1__connectionHandlersFormWriter.html">_lba08c6087d1__connectionHandlersFormWriter</a></li>
+				<li><a href="function-_lba136c87bfa_layout.html">_lba136c87bfa_layout</a></li>
+				<li><a href="function-_lba4adb8fa12_textContent.html">_lba4adb8fa12_textContent</a></li>
+				<li><a href="function-_lba56642269d_menu.html">_lba56642269d_menu</a></li>
+				<li><a href="function-_lba86b672ac2_head_links.html">_lba86b672ac2_head_links</a></li>
+				<li><a href="function-_lba877997d61_content.html">_lba877997d61_content</a></li>
+				<li><a href="function-_lbaa9fab90af__flashMessages.html">_lbaa9fab90af__flashMessages</a></li>
+				<li><a href="function-_lbab5392e815_textContent.html">_lbab5392e815_textContent</a></li>
+				<li><a href="function-_lbab69efe1df_content.html">_lbab69efe1df_content</a></li>
+				<li><a href="function-_lbad61a9fd98_flashMessages.html">_lbad61a9fd98_flashMessages</a></li>
+				<li><a href="function-_lbaf43de0240_tabContent.html">_lbaf43de0240_tabContent</a></li>
+				<li><a href="function-_lbb189e411bb_flashMessages.html">_lbb189e411bb_flashMessages</a></li>
+				<li><a href="function-_lbb58c576af5_tabContent.html">_lbb58c576af5_tabContent</a></li>
+				<li><a href="function-_lbb5e4ed4dbd_pageTitle.html">_lbb5e4ed4dbd_pageTitle</a></li>
+				<li><a href="function-_lbb9a70dd8e4_tabContent.html">_lbb9a70dd8e4_tabContent</a></li>
+				<li><a href="function-_lbb9cfae6942_textContent.html">_lbb9cfae6942_textContent</a></li>
+				<li><a href="function-_lbbf85a134d9_beforeTextContent.html">_lbbf85a134d9_beforeTextContent</a></li>
+				<li><a href="function-_lbc00dc6ac33_layoutContent.html">_lbc00dc6ac33_layoutContent</a></li>
+				<li><a href="function-_lbc07bdfbda7_head_links.html">_lbc07bdfbda7_head_links</a></li>
+				<li><a href="function-_lbc2460bb5d5_pageTitle.html">_lbc2460bb5d5_pageTitle</a></li>
+				<li><a href="function-_lbc3e37f3bb5__flashMessages.html">_lbc3e37f3bb5__flashMessages</a></li>
+				<li><a href="function-_lbc7b1d2d568_pageTitle.html">_lbc7b1d2d568_pageTitle</a></li>
+				<li><a href="function-_lbc87403d9a5_content.html">_lbc87403d9a5_content</a></li>
+				<li><a href="function-_lbc8e71a9ea3_content.html">_lbc8e71a9ea3_content</a></li>
+				<li><a href="function-_lbc9e00b4a1f__.html">_lbc9e00b4a1f__</a></li>
+				<li><a href="function-_lbcdd2424fc6_tabContent.html">_lbcdd2424fc6_tabContent</a></li>
+				<li><a href="function-_lbce758a316f_textContent.html">_lbce758a316f_textContent</a></li>
+				<li><a href="function-_lbcee3750bce_head_scripts.html">_lbcee3750bce_head_scripts</a></li>
+				<li><a href="function-_lbd18b2ca613_textContent.html">_lbd18b2ca613_textContent</a></li>
+				<li><a href="function-_lbd5a0d3acc3_head_links_layout.html">_lbd5a0d3acc3_head_links_layout</a></li>
+				<li><a href="function-_lbd973a08108_textContent.html">_lbd973a08108_textContent</a></li>
+				<li><a href="function-_lbd993c6d193_simpleMappingRuleForm.html">_lbd993c6d193_simpleMappingRuleForm</a></li>
+				<li><a href="function-_lbd9feb34ae3_textContent.html">_lbd9feb34ae3_textContent</a></li>
+				<li><a href="function-_lbdcc7d48c70_content.html">_lbdcc7d48c70_content</a></li>
+				<li><a href="function-_lbddcf93d259_textContent.html">_lbddcf93d259_textContent</a></li>
+				<li><a href="function-_lbe1b863f06f_menu.html">_lbe1b863f06f_menu</a></li>
+				<li><a href="function-_lbe3d46f3b01_menu.html">_lbe3d46f3b01_menu</a></li>
+				<li><a href="function-_lbe47f3ebdf1_pageTitle.html">_lbe47f3ebdf1_pageTitle</a></li>
+				<li><a href="function-_lbe570731fe9_beforeLayout.html">_lbe570731fe9_beforeLayout</a></li>
+				<li><a href="function-_lbe670204a59_beforeTextContent.html">_lbe670204a59_beforeTextContent</a></li>
+				<li><a href="function-_lbecd5755037_sidebar.html">_lbecd5755037_sidebar</a></li>
+				<li><a href="function-_lbee53f10520_layoutContent.html">_lbee53f10520_layoutContent</a></li>
+				<li><a href="function-_lbf6dda0603a_content.html">_lbf6dda0603a_content</a></li>
+				<li><a href="function-_lbf7a2abdc84_head_links.html">_lbf7a2abdc84_head_links</a></li>
+				<li><a href="function-_lbf96ed5f5f6__connectionHandlersFormType.html">_lbf96ed5f5f6__connectionHandlersFormType</a></li>
+				<li><a href="function-_lbfac96c2537_head_meta.html">_lbfac96c2537_head_meta</a></li>
+				<li><a href="function-_lbfc5125162e_container.html">_lbfc5125162e_container</a></li>
+				<li><a href="function-_lbfe4e3d21db_footerContent.html">_lbfe4e3d21db_footerContent</a></li>
+				<li><a href="function-_lbfeb6097c46_textContent.html">_lbfeb6097c46_textContent</a></li>
+				<li><a href="function-_n.html">_n</a></li>
+				<li><a href="function-_nx.html">_nx</a></li>
+				<li><a href="function-_x.html">_x</a></li>
+				<li><a href="function-abspath.html">abspath</a></li>
+				<li><a href="function-array_to_json.html">array_to_json</a></li>
+				<li><a href="function-callback.html">callback</a></li>
+				<li><a href="function-csl2arr.html">csl2arr</a></li>
+				<li><a href="function-deleteifempty.html">deleteifempty</a></li>
+				<li><a href="function-dump.html">dump</a></li>
+				<li><a href="function-extractZipDir.html">extractZipDir</a></li>
+				<li class="active"><a href="function-falseifempty.html">falseifempty</a></li>
+				<li><a href="function-getEngineInstance.html">getEngineInstance</a></li>
+				<li><a href="function-getRelative.html">getRelative</a></li>
+				<li><a href="function-isabspath.html">isabspath</a></li>
+				<li><a href="function-nullifempty.html">nullifempty</a></li>
+				<li><a href="function-tdarray_to_js.html">tdarray_to_js</a></li>
+				<li><a href="function-testempty.html">testempty</a></li>
+				<li><a href="function-trimarray.html">trimarray</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-None.html" title="Summary of None"><span>Namespace</span></a>
+			</li>
+			<li>
+				<a href="function-falseifempty.html" title="Summary of falseifempty"><span>Function</span></a>
+			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<pre><code><span id="1" class="l"><a class="l" href="#1">  1: </a><span class="xlang">&lt;?php</span>
+</span><span id="2" class="l"><a class="l" href="#2">  2: </a><span class="php-comment">//utilities function</span>
+</span><span id="3" class="l"><a class="l" href="#3">  3: </a><span class="php-comment">// return null for empty string</span>
+</span><span id="4" class="l"><a class="l" href="#4">  4: </a><span class="php-keyword1">function</span> <a id="_nullifempty" href="#_nullifempty">nullifempty</a>(<span class="php-var">$val</span>)
+</span><span id="5" class="l"><a class="l" href="#5">  5: </a>{
+</span><span id="6" class="l"><a class="l" href="#6">  6: </a>    <span class="php-keyword1">return</span> (<span class="php-keyword1">isset</span>(<span class="php-var">$val</span>)?(<span class="php-keyword2">trim</span>(<span class="php-var">$val</span>)==<span class="php-quote">&quot;&quot;</span>?<span class="php-keyword1">null</span>:<span class="php-var">$val</span>):<span class="php-keyword1">null</span>);
+</span><span id="7" class="l"><a class="l" href="#7">  7: </a>}
+</span><span id="8" class="l"><a class="l" href="#8">  8: </a><span class="php-comment">// return false for empty string</span>
+</span><span id="9" class="l"><a class="l" href="#9">  9: </a><span class="php-keyword1">function</span> <a id="_falseifempty" href="#_falseifempty">falseifempty</a>(<span class="php-var">$val</span>)
+</span><span id="10" class="l"><a class="l" href="#10"> 10: </a>{
+</span><span id="11" class="l"><a class="l" href="#11"> 11: </a>    <span class="php-keyword1">return</span> (<span class="php-keyword1">isset</span>(<span class="php-var">$val</span>)?(<span class="php-keyword2">strlen</span>(<span class="php-var">$val</span>)==<span class="php-num">0</span>?<span class="php-keyword1">false</span>:<span class="php-var">$val</span>):<span class="php-keyword1">false</span>);
+</span><span id="12" class="l"><a class="l" href="#12"> 12: </a>}
+</span><span id="13" class="l"><a class="l" href="#13"> 13: </a><span class="php-comment">//test for empty string</span>
+</span><span id="14" class="l"><a class="l" href="#14"> 14: </a><span class="php-keyword1">function</span> <a id="_testempty" href="#_testempty">testempty</a>(<span class="php-var">$arr</span>,<span class="php-var">$val</span>)
+</span><span id="15" class="l"><a class="l" href="#15"> 15: </a>{
+</span><span id="16" class="l"><a class="l" href="#16"> 16: </a>    
+</span><span id="17" class="l"><a class="l" href="#17"> 17: </a>    <span class="php-keyword1">return</span> !<span class="php-keyword1">isset</span>(<span class="php-var">$arr</span>[<span class="php-var">$val</span>]) || <span class="php-keyword2">strlen</span>(<span class="php-keyword2">trim</span>(<span class="php-var">$arr</span>[<span class="php-var">$val</span>]))==<span class="php-num">0</span>;
+</span><span id="18" class="l"><a class="l" href="#18"> 18: </a>}
+</span><span id="19" class="l"><a class="l" href="#19"> 19: </a>
+</span><span id="20" class="l"><a class="l" href="#20"> 20: </a><span class="php-keyword1">function</span> <a id="_deleteifempty" href="#_deleteifempty">deleteifempty</a>(<span class="php-var">$val</span>)
+</span><span id="21" class="l"><a class="l" href="#21"> 21: </a>{
+</span><span id="22" class="l"><a class="l" href="#22"> 22: </a>    <span class="php-keyword1">return</span> (<span class="php-keyword1">isset</span>(<span class="php-var">$val</span>)?(<span class="php-keyword2">trim</span>(<span class="php-var">$val</span>)==<span class="php-quote">&quot;&quot;</span>?<span class="php-quote">&quot;__MAGMI_DELETE__&quot;</span>:<span class="php-var">$val</span>):<span class="php-quote">&quot;__MAGMI_DELETE__&quot;</span>);
+</span><span id="23" class="l"><a class="l" href="#23"> 23: </a>}
+</span><span id="24" class="l"><a class="l" href="#24"> 24: </a>
+</span><span id="25" class="l"><a class="l" href="#25"> 25: </a><span class="php-keyword1">function</span> <a id="_csl2arr" href="#_csl2arr">csl2arr</a>(<span class="php-var">$cslarr</span>,<span class="php-var">$sep</span>=<span class="php-quote">&quot;,&quot;</span>)
+</span><span id="26" class="l"><a class="l" href="#26"> 26: </a>{
+</span><span id="27" class="l"><a class="l" href="#27"> 27: </a>    <span class="php-var">$arr</span>=<span class="php-keyword2">explode</span>(<span class="php-var">$sep</span>,<span class="php-var">$cslarr</span>);
+</span><span id="28" class="l"><a class="l" href="#28"> 28: </a>    <span class="php-keyword1">for</span>(<span class="php-var">$i</span>=<span class="php-num">0</span>;<span class="php-var">$i</span>&lt;<span class="php-keyword2">count</span>(<span class="php-var">$arr</span>);<span class="php-var">$i</span>++)
+</span><span id="29" class="l"><a class="l" href="#29"> 29: </a>    {
+</span><span id="30" class="l"><a class="l" href="#30"> 30: </a>        <span class="php-var">$arr</span>[<span class="php-var">$i</span>]=<span class="php-keyword2">trim</span>(<span class="php-var">$arr</span>[<span class="php-var">$i</span>]);        
+</span><span id="31" class="l"><a class="l" href="#31"> 31: </a>    }
+</span><span id="32" class="l"><a class="l" href="#32"> 32: </a>    <span class="php-keyword1">return</span> <span class="php-var">$arr</span>;
+</span><span id="33" class="l"><a class="l" href="#33"> 33: </a>}
+</span><span id="34" class="l"><a class="l" href="#34"> 34: </a>
+</span><span id="35" class="l"><a class="l" href="#35"> 35: </a><span class="php-keyword1">function</span> <a id="_trimarray" href="#_trimarray">trimarray</a>(&amp;<span class="php-var">$arr</span>)
+</span><span id="36" class="l"><a class="l" href="#36"> 36: </a>{
+</span><span id="37" class="l"><a class="l" href="#37"> 37: </a>    <span class="php-keyword1">for</span>(<span class="php-var">$i</span>=<span class="php-num">0</span>;<span class="php-var">$i</span>&lt;<span class="php-keyword2">count</span>(<span class="php-var">$arr</span>);<span class="php-var">$i</span>++)
+</span><span id="38" class="l"><a class="l" href="#38"> 38: </a>    {
+</span><span id="39" class="l"><a class="l" href="#39"> 39: </a>        <span class="php-var">$arr</span>[<span class="php-var">$i</span>]=<span class="php-keyword2">trim</span>(<span class="php-var">$arr</span>[<span class="php-var">$i</span>]);        
+</span><span id="40" class="l"><a class="l" href="#40"> 40: </a>    }
+</span><span id="41" class="l"><a class="l" href="#41"> 41: </a>    
+</span><span id="42" class="l"><a class="l" href="#42"> 42: </a>}
+</span><span id="43" class="l"><a class="l" href="#43"> 43: </a>
+</span><span id="44" class="l"><a class="l" href="#44"> 44: </a><span class="php-keyword1">function</span> <a id="_getRelative" href="#_getRelative">getRelative</a>(&amp;<span class="php-var">$val</span>)
+</span><span id="45" class="l"><a class="l" href="#45"> 45: </a>{
+</span><span id="46" class="l"><a class="l" href="#46"> 46: </a>    <span class="php-var">$dir</span>=<span class="php-quote">&quot;+&quot;</span>;
+</span><span id="47" class="l"><a class="l" href="#47"> 47: </a>    <span class="php-keyword1">if</span>(<span class="php-var">$val</span>[<span class="php-num">0</span>]==<span class="php-quote">&quot;-&quot;</span>)
+</span><span id="48" class="l"><a class="l" href="#48"> 48: </a>    {
+</span><span id="49" class="l"><a class="l" href="#49"> 49: </a>        <span class="php-var">$val</span>=<span class="php-keyword2">substr</span>(<span class="php-var">$val</span>,<span class="php-num">1</span>);
+</span><span id="50" class="l"><a class="l" href="#50"> 50: </a>        <span class="php-var">$dir</span>=<span class="php-quote">&quot;-&quot;</span>;
+</span><span id="51" class="l"><a class="l" href="#51"> 51: </a>    }
+</span><span id="52" class="l"><a class="l" href="#52"> 52: </a>    <span class="php-keyword1">else</span> 
+</span><span id="53" class="l"><a class="l" href="#53"> 53: </a>    <span class="php-keyword1">if</span>(<span class="php-var">$val</span>[<span class="php-num">0</span>]==<span class="php-quote">&quot;+&quot;</span>)
+</span><span id="54" class="l"><a class="l" href="#54"> 54: </a>    {
+</span><span id="55" class="l"><a class="l" href="#55"> 55: </a>        <span class="php-var">$val</span>=<span class="php-keyword2">substr</span>(<span class="php-var">$val</span>,<span class="php-num">1</span>);
+</span><span id="56" class="l"><a class="l" href="#56"> 56: </a>    }
+</span><span id="57" class="l"><a class="l" href="#57"> 57: </a>    <span class="php-keyword1">return</span> <span class="php-var">$dir</span>;
+</span><span id="58" class="l"><a class="l" href="#58"> 58: </a>}
+</span><span id="59" class="l"><a class="l" href="#59"> 59: </a>
+</span><span id="60" class="l"><a class="l" href="#60"> 60: </a><span class="php-keyword1">function</span> <a id="_abspath" href="#_abspath">abspath</a>(<span class="php-var">$path</span>,<span class="php-var">$basepath</span>=<span class="php-quote">&quot;&quot;</span>,<span class="php-var">$resolve</span>=<span class="php-keyword1">true</span>)
+</span><span id="61" class="l"><a class="l" href="#61"> 61: </a>{
+</span><span id="62" class="l"><a class="l" href="#62"> 62: </a>    <span class="php-keyword1">if</span>(<span class="php-var">$basepath</span>==<span class="php-quote">&quot;&quot;</span>)
+</span><span id="63" class="l"><a class="l" href="#63"> 63: </a>    {
+</span><span id="64" class="l"><a class="l" href="#64"> 64: </a>        <span class="php-var">$basepath</span>=<span class="php-keyword2">dirname</span>(<span class="php-keyword2">dirname</span>(__FILE__));
+</span><span id="65" class="l"><a class="l" href="#65"> 65: </a>    }
+</span><span id="66" class="l"><a class="l" href="#66"> 66: </a>    <span class="php-var">$cpath</span>=<span class="php-var">$basepath</span>.<span class="php-quote">&quot;/&quot;</span>.<span class="php-var">$path</span>;
+</span><span id="67" class="l"><a class="l" href="#67"> 67: </a>    <span class="php-keyword1">if</span>(<span class="php-var">$resolve</span>)
+</span><span id="68" class="l"><a class="l" href="#68"> 68: </a>    {
+</span><span id="69" class="l"><a class="l" href="#69"> 69: </a>        <span class="php-var">$abs</span>=<span class="php-keyword2">realpath</span>(<span class="php-var">$cpath</span>);
+</span><span id="70" class="l"><a class="l" href="#70"> 70: </a>    }
+</span><span id="71" class="l"><a class="l" href="#71"> 71: </a>    <span class="php-keyword1">else</span>
+</span><span id="72" class="l"><a class="l" href="#72"> 72: </a>    {
+</span><span id="73" class="l"><a class="l" href="#73"> 73: </a>        <span class="php-var">$abs</span>=<span class="php-keyword2">preg_replace</span>(<span class="php-quote">'|\w+/\.\.\/|'</span>, <span class="php-quote">''</span>,<span class="php-var">$cpath</span> );
+</span><span id="74" class="l"><a class="l" href="#74"> 74: </a>        <span class="php-var">$abs</span>=<span class="php-keyword2">preg_replace</span>(<span class="php-quote">'|\./|'</span>,<span class="php-quote">''</span>,<span class="php-var">$abs</span>);
+</span><span id="75" class="l"><a class="l" href="#75"> 75: </a>    
+</span><span id="76" class="l"><a class="l" href="#76"> 76: </a>    }
+</span><span id="77" class="l"><a class="l" href="#77"> 77: </a>    <span class="php-keyword1">return</span> <span class="php-var">$abs</span>;
+</span><span id="78" class="l"><a class="l" href="#78"> 78: </a>}
+</span><span id="79" class="l"><a class="l" href="#79"> 79: </a>
+</span><span id="80" class="l"><a class="l" href="#80"> 80: </a><span class="php-keyword1">function</span> <a id="_isabspath" href="#_isabspath">isabspath</a>(<span class="php-var">$path</span>)
+</span><span id="81" class="l"><a class="l" href="#81"> 81: </a>{
+</span><span id="82" class="l"><a class="l" href="#82"> 82: </a>     <span class="php-keyword1">return</span> (<span class="php-var">$path</span>[<span class="php-num">0</span>]==<span class="php-quote">&quot;.&quot;</span> || (<span class="php-keyword2">substr</span>(PHP_OS,<span class="php-num">3</span>)==<span class="php-quote">&quot;WIN&quot;</span> &amp;&amp; <span class="php-keyword2">strlen</span>(<span class="php-var">$path</span>)&gt;<span class="php-num">1</span>)?<span class="php-var">$path</span>[<span class="php-num">1</span>]==<span class="php-quote">&quot;:&quot;</span>:<span class="php-var">$path</span>[<span class="php-num">0</span>]==<span class="php-quote">&quot;/&quot;</span>);
+</span><span id="83" class="l"><a class="l" href="#83"> 83: </a>}
+</span><span id="84" class="l"><a class="l" href="#84"> 84: </a>
+</span><span id="85" class="l"><a class="l" href="#85"> 85: </a>
+</span><span id="86" class="l"><a class="l" href="#86"> 86: </a><span class="php-keyword1">class</span> <a id="Slugger" href="#Slugger">Slugger</a>
+</span><span id="87" class="l"><a class="l" href="#87"> 87: </a>{
+</span><span id="88" class="l"><a class="l" href="#88"> 88: </a>    <span class="php-keyword1">static</span> <span class="php-keyword1">protected</span> <span class="php-var"><a id="$_translit" href="#$_translit">$_translit</a></span>=<span class="php-keyword1">array</span>(
+</span><span id="89" class="l"><a class="l" href="#89"> 89: </a>    <span class="php-quote">'Š'</span>=&gt;<span class="php-quote">'S'</span>, <span class="php-quote">'š'</span>=&gt;<span class="php-quote">'s'</span>, <span class="php-quote">'Ð'</span>=&gt;<span class="php-quote">'Dj'</span>,<span class="php-quote">'Ž'</span>=&gt;<span class="php-quote">'Z'</span>, <span class="php-quote">'ž'</span>=&gt;<span class="php-quote">'z'</span>, <span class="php-quote">'À'</span>=&gt;<span class="php-quote">'A'</span>, <span class="php-quote">'Á'</span>=&gt;<span class="php-quote">'A'</span>, <span class="php-quote">'Â'</span>=&gt;<span class="php-quote">'A'</span>, <span class="php-quote">'Ã'</span>=&gt;<span class="php-quote">'A'</span>, <span class="php-quote">'Ä'</span>=&gt;<span class="php-quote">'A'</span>,
+</span><span id="90" class="l"><a class="l" href="#90"> 90: </a>    <span class="php-quote">'Å'</span>=&gt;<span class="php-quote">'A'</span>, <span class="php-quote">'Æ'</span>=&gt;<span class="php-quote">'A'</span>, <span class="php-quote">'Ç'</span>=&gt;<span class="php-quote">'C'</span>, <span class="php-quote">'È'</span>=&gt;<span class="php-quote">'E'</span>, <span class="php-quote">'É'</span>=&gt;<span class="php-quote">'E'</span>, <span class="php-quote">'Ê'</span>=&gt;<span class="php-quote">'E'</span>, <span class="php-quote">'Ë'</span>=&gt;<span class="php-quote">'E'</span>, <span class="php-quote">'Ì'</span>=&gt;<span class="php-quote">'I'</span>, <span class="php-quote">'Í'</span>=&gt;<span class="php-quote">'I'</span>, <span class="php-quote">'Î'</span>=&gt;<span class="php-quote">'I'</span>,
+</span><span id="91" class="l"><a class="l" href="#91"> 91: </a>    <span class="php-quote">'Ï'</span>=&gt;<span class="php-quote">'I'</span>, <span class="php-quote">'Ñ'</span>=&gt;<span class="php-quote">'N'</span>, <span class="php-quote">'Ò'</span>=&gt;<span class="php-quote">'O'</span>, <span class="php-quote">'Ó'</span>=&gt;<span class="php-quote">'O'</span>, <span class="php-quote">'Ô'</span>=&gt;<span class="php-quote">'O'</span>, <span class="php-quote">'Õ'</span>=&gt;<span class="php-quote">'O'</span>, <span class="php-quote">'Ö'</span>=&gt;<span class="php-quote">'O'</span>, <span class="php-quote">'Ø'</span>=&gt;<span class="php-quote">'O'</span>, <span class="php-quote">'Ù'</span>=&gt;<span class="php-quote">'U'</span>, <span class="php-quote">'Ú'</span>=&gt;<span class="php-quote">'U'</span>,
+</span><span id="92" class="l"><a class="l" href="#92"> 92: </a>    <span class="php-quote">'Û'</span>=&gt;<span class="php-quote">'U'</span>, <span class="php-quote">'Ü'</span>=&gt;<span class="php-quote">'U'</span>, <span class="php-quote">'Ý'</span>=&gt;<span class="php-quote">'Y'</span>, <span class="php-quote">'Þ'</span>=&gt;<span class="php-quote">'B'</span>, <span class="php-quote">'ß'</span>=&gt;<span class="php-quote">'Ss'</span>,<span class="php-quote">'à'</span>=&gt;<span class="php-quote">'a'</span>, <span class="php-quote">'á'</span>=&gt;<span class="php-quote">'a'</span>, <span class="php-quote">'â'</span>=&gt;<span class="php-quote">'a'</span>, <span class="php-quote">'ã'</span>=&gt;<span class="php-quote">'a'</span>, <span class="php-quote">'ä'</span>=&gt;<span class="php-quote">'a'</span>,
+</span><span id="93" class="l"><a class="l" href="#93"> 93: </a>    <span class="php-quote">'å'</span>=&gt;<span class="php-quote">'a'</span>, <span class="php-quote">'æ'</span>=&gt;<span class="php-quote">'a'</span>, <span class="php-quote">'ç'</span>=&gt;<span class="php-quote">'c'</span>, <span class="php-quote">'è'</span>=&gt;<span class="php-quote">'e'</span>, <span class="php-quote">'é'</span>=&gt;<span class="php-quote">'e'</span>, <span class="php-quote">'ê'</span>=&gt;<span class="php-quote">'e'</span>, <span class="php-quote">'ë'</span>=&gt;<span class="php-quote">'e'</span>, <span class="php-quote">'ì'</span>=&gt;<span class="php-quote">'i'</span>, <span class="php-quote">'í'</span>=&gt;<span class="php-quote">'i'</span>, <span class="php-quote">'î'</span>=&gt;<span class="php-quote">'i'</span>,
+</span><span id="94" class="l"><a class="l" href="#94"> 94: </a>    <span class="php-quote">'ï'</span>=&gt;<span class="php-quote">'i'</span>, <span class="php-quote">'ð'</span>=&gt;<span class="php-quote">'o'</span>, <span class="php-quote">'ñ'</span>=&gt;<span class="php-quote">'n'</span>, <span class="php-quote">'ò'</span>=&gt;<span class="php-quote">'o'</span>, <span class="php-quote">'ó'</span>=&gt;<span class="php-quote">'o'</span>, <span class="php-quote">'ô'</span>=&gt;<span class="php-quote">'o'</span>, <span class="php-quote">'õ'</span>=&gt;<span class="php-quote">'o'</span>, <span class="php-quote">'ö'</span>=&gt;<span class="php-quote">'o'</span>, <span class="php-quote">'ø'</span>=&gt;<span class="php-quote">'o'</span>, <span class="php-quote">'ù'</span>=&gt;<span class="php-quote">'u'</span>,
+</span><span id="95" class="l"><a class="l" href="#95"> 95: </a>    <span class="php-quote">'ú'</span>=&gt;<span class="php-quote">'u'</span>, <span class="php-quote">'û'</span>=&gt;<span class="php-quote">'u'</span>, <span class="php-quote">'ý'</span>=&gt;<span class="php-quote">'y'</span>, <span class="php-quote">'ý'</span>=&gt;<span class="php-quote">'y'</span>, <span class="php-quote">'þ'</span>=&gt;<span class="php-quote">'b'</span>, <span class="php-quote">'ÿ'</span>=&gt;<span class="php-quote">'y'</span>, <span class="php-quote">'ƒ'</span>=&gt;<span class="php-quote">'f'</span>
+</span><span id="96" class="l"><a class="l" href="#96"> 96: </a>        );
+</span><span id="97" class="l"><a class="l" href="#97"> 97: </a>    
+</span><span id="98" class="l"><a class="l" href="#98"> 98: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> <a id="_stripAccents" href="#_stripAccents">stripAccents</a>(<span class="php-var">$text</span>){
+</span><span id="99" class="l"><a class="l" href="#99"> 99: </a>        
+</span><span id="100" class="l"><a class="l" href="#100">100: </a>        <span class="php-keyword1">return</span> <span class="php-keyword2">strtr</span>(<span class="php-var">$text</span>,self::<span class="php-var">$_translit</span>);
+</span><span id="101" class="l"><a class="l" href="#101">101: </a>    }
+</span><span id="102" class="l"><a class="l" href="#102">102: </a>
+</span><span id="103" class="l"><a class="l" href="#103">103: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> <a id="_slug" href="#_slug">slug</a>(<span class="php-var">$str</span>,<span class="php-var">$allowslash</span>=<span class="php-keyword1">false</span>)
+</span><span id="104" class="l"><a class="l" href="#104">104: </a>    {
+</span><span id="105" class="l"><a class="l" href="#105">105: </a>      <span class="php-var">$str</span> = <span class="php-keyword2">strtolower</span>(self::stripAccents(<span class="php-keyword2">trim</span>(<span class="php-var">$str</span>)));
+</span><span id="106" class="l"><a class="l" href="#106">106: </a>      <span class="php-var">$rerep</span>=<span class="php-var">$allowslash</span>?<span class="php-quote">'[^a-z0-9-/]'</span>:<span class="php-quote">'[^a-z0-9-]'</span>;
+</span><span id="107" class="l"><a class="l" href="#107">107: </a>      <span class="php-var">$str</span> = <span class="php-keyword2">preg_replace</span>(<span class="php-quote">&quot;|</span><span class="php-var">$rerep</span><span class="php-quote">|&quot;</span>, <span class="php-quote">'-'</span>, <span class="php-var">$str</span>);
+</span><span id="108" class="l"><a class="l" href="#108">108: </a>      <span class="php-var">$str</span> = <span class="php-keyword2">preg_replace</span>(<span class="php-quote">'|-+|'</span>, <span class="php-quote">&quot;-&quot;</span>, <span class="php-var">$str</span>);
+</span><span id="109" class="l"><a class="l" href="#109">109: </a>      <span class="php-var">$str</span> = <span class="php-keyword2">preg_replace</span>(<span class="php-quote">'|-$|'</span>, <span class="php-quote">&quot;&quot;</span>, <span class="php-var">$str</span>);
+</span><span id="110" class="l"><a class="l" href="#110">110: </a>      <span class="php-keyword1">return</span> <span class="php-var">$str</span>;
+</span><span id="111" class="l"><a class="l" href="#111">111: </a>    }
+</span><span id="112" class="l"><a class="l" href="#112">112: </a></span>}</code></pre>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

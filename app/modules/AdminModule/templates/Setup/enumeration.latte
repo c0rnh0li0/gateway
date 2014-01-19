@@ -1,0 +1,62 @@
+{extends 'localization.latte'}
+
+{block #tabContent}
+    <div class="box" id="connection-map">
+        <h3>Property mapping</h3>
+        
+        {control mappingRulesGrid}
+    </div>
+
+    <div class="box form" id="connection-map-rule">
+        <h3>New property rule</h3>
+
+        <div class="inner">
+            
+            {include #simpleMappingRuleForm}
+                
+            <div class="clear"></div>
+        </div>
+    </div>
+{/block}
+    
+{block #simpleMappingRuleForm}
+    {form mappingRuleForm}
+        <ul class="error" n:if="$form->hasErrors()">
+            <li n:foreach="$form->errors as $error">{$error}</li>
+        </ul>
+
+        <table>
+            <tr>
+                <th>{label old_name /}</th>
+                <th colspan="2">&nbsp;</th>
+                <th>{label new_name /}</th>
+            </tr>
+            <tr>
+                <td>{input old_name}</td>
+                <td colspan="2" class="arrow">&Leftrightarrow;</td>
+                <td>{input new_name}</td>
+            </tr>
+        </table>
+
+        <fieldset>
+            <legend>Mapping rule restriction</legend>
+                <table>
+                    {*
+                    <tr>
+                        <th>{label gw_handler_type_id /}</th>
+                        <td colspan="3">{input gw_handler_type_id }</td>
+                    </tr>                        
+                    *}
+                    <tr>
+                        <th>{label gw_mapping_scope_id /}</th>
+                        <td colspan="3">{input gw_mapping_scope_id }</td>
+                    </tr>
+                    <tr>
+                        <th>{label is_enabled /}</th>
+                        <td class="checkbox">{input is_enabled}</td>
+                        <td colspan="2" >{input save}</td>
+                    </tr>
+                </table>
+        </fieldset>
+    {/form mappingRuleForm} 
+{/block}

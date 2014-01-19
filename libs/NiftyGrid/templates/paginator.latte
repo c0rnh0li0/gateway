@@ -1,0 +1,37 @@
+{*
+/**
+* NiftyGrid - DataGrid for Nette
+*
+* @author	Jakub Holub
+* @copyright	Copyright (c) 2012 Jakub Holub
+* @license	New BSD Licence
+* @link		http://addons.nette.org/cs/niftygrid
+*/
+*}
+{if $paginator->pageCount > 1}
+<div class="grid-paginator">
+	{foreach range($paginator->getBase(), $paginator->getPageCount()) as $page}
+	{/foreach}
+	{if !$paginator->isFirst()}
+		<a href="{link this, 'page' => $paginator->getFirstPage()}" class="grid-ajax">&laquo;</a>
+	{else}
+                <span>&laquo;</span>
+	{/if}
+	{if $paginator->getPage() - 1 >= $paginator->getFirstPage()}
+		<a href="{link this, 'page' => $paginator->getPage() - 1}" class="grid-ajax">&lsaquo;</a>
+	{else}
+                <span>&lsaquo;</span>
+	{/if}
+	<span class="grid-current" data-lastpage="{$paginator->getLastPage()}">{$paginator->getPage()} / {$paginator->getLastPage()}</span>
+	{if $paginator->getPage() + 1 <= $paginator->getLastPage()}
+		<a href="{link this, 'page' => $paginator->getPage() + 1}" class="grid-ajax">&rsaquo;</a>
+	{else}
+                <span>&rsaquo;</span>
+	{/if}
+	{if !$paginator->isLast()}
+		<a href="{link this, 'page' => $paginator->getLastPage()}" class="grid-ajax">&raquo;</a>
+	{else}
+                <span>&raquo;</span>
+	{/if}
+</div>
+{/if}

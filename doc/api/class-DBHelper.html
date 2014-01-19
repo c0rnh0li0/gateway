@@ -1,0 +1,1899 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class DBHelper</title>
+
+	<script type="text/javascript" src="resources/combined.js?1479682893"></script>
+	<script type="text/javascript" src="elementlist.js?1567848024"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-AdminModule.html">AdminModule<span></span></a>
+						<ul>
+				<li><a href="namespace-AdminModule.Component.html">Component</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-ApiModule.html">ApiModule</a>
+						</li>
+				<li><a href="namespace-Gateway.html">Gateway<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.html">DataSource<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.Entity.html">Entity<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.Entity.Category.html">Category</a>
+						</li>
+				<li><a href="namespace-Gateway.DataSource.Entity.Customer.html">Customer</a>
+						</li>
+				<li><a href="namespace-Gateway.DataSource.Entity.Order.html">Order<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.Entity.Order.Payment.html">Payment</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.DataSource.Entity.Product.html">Product</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Gateway.Handler.html">Handler<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.html">Erp<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.html">Etron<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.XML.html">XML<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.XML.Reader.html">Reader<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.XML.Reader.Products.html">Products</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.Xml.Writer.html">Writer</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-Gateway.Handler.Shop.html">Shop<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.html">Magento<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.JSON.html">JSON<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.JSON.Reader.html">Reader</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.Magmi.html">Magmi<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.Magmi.Writer.html">Writer</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.SOAP.html">SOAP<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.SOAP.Writer.html">Writer<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.SOAP.Writer.Products.html">Products</a>
+						</li>
+							</ul></li></ul></li></ul></li></ul></li></ul></li>
+				<li><a href="namespace-Gateway.Mapping.html">Mapping<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Mapping.Rule.html">Rule</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Logger.html">Logger</a>
+						</li>
+				<li><a href="namespace-Nette.html">Nette<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Application.html">Application<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Application.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Application.Responses.html">Responses</a>
+						</li>
+				<li><a href="namespace-Nette.Application.Routers.html">Routers</a>
+						</li>
+				<li><a href="namespace-Nette.Application.UI.html">UI</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Caching.html">Caching<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Caching.Storages.html">Storages</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.ComponentModel.html">ComponentModel</a>
+						</li>
+				<li><a href="namespace-Nette.Config.html">Config<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Config.Adapters.html">Adapters</a>
+						</li>
+				<li><a href="namespace-Nette.Config.Extensions.html">Extensions</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Database.html">Database<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Database.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Drivers.html">Drivers</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Reflection.html">Reflection</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Table.html">Table</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.DI.html">DI<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.DI.Diagnostics.html">Diagnostics</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Forms.html">Forms<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Forms.Controls.html">Controls</a>
+						</li>
+				<li><a href="namespace-Nette.Forms.Rendering.html">Rendering</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Http.html">Http</a>
+						</li>
+				<li><a href="namespace-Nette.Iterators.html">Iterators</a>
+						</li>
+				<li><a href="namespace-Nette.Latte.html">Latte<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Latte.Macros.html">Macros</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Loaders.html">Loaders</a>
+						</li>
+				<li><a href="namespace-Nette.Localization.html">Localization</a>
+						</li>
+				<li><a href="namespace-Nette.Mail.html">Mail</a>
+						</li>
+				<li><a href="namespace-Nette.Reflection.html">Reflection</a>
+						</li>
+				<li><a href="namespace-Nette.Security.html">Security<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Security.Diagnostics.html">Diagnostics</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Templating.html">Templating</a>
+						</li>
+				<li><a href="namespace-Nette.Utils.html">Utils<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Utils.PhpGenerator.html">PhpGenerator</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-NetteModule.html">NetteModule</a>
+						</li>
+				<li><a href="namespace-NetteTranslator.html">NetteTranslator</a>
+						</li>
+				<li><a href="namespace-NiftyGrid.html">NiftyGrid</a>
+						</li>
+				<li class="active"><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li><a href="namespace-Yourface.html">Yourface<span></span></a>
+						<ul>
+				<li><a href="namespace-Yourface.Application.html">Application<span></span></a>
+						<ul>
+				<li><a href="namespace-Yourface.Application.Responses.html">Responses</a>
+						</li>
+				<li><a href="namespace-Yourface.Application.Routers.html">Routers</a>
+						</li>
+				<li><a href="namespace-Yourface.Application.UI.html">UI</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Yourface.Iterators.html">Iterators</a>
+						</li>
+				<li><a href="namespace-Yourface.NiftyGrid.html">NiftyGrid</a>
+						</li>
+				<li><a href="namespace-Yourface.Utils.html">Utils</a>
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Alpine_GroupedItemProcessor.html">Alpine_GroupedItemProcessor</a></li>
+				<li><a href="class-BasePresenter.html">BasePresenter</a></li>
+				<li><a href="class-CategoryImporter.html">CategoryImporter</a></li>
+				<li><a href="class-CLILogger.html">CLILogger</a></li>
+				<li><a href="class-ColumnMappingItemProcessor.html">ColumnMappingItemProcessor</a></li>
+				<li><a href="class-CrossUpsellProducts.html">CrossUpsellProducts</a></li>
+				<li><a href="class-CustomOptionsItemProcessor.html">CustomOptionsItemProcessor</a></li>
+				<li class="active"><a href="class-DBHelper.html">DBHelper</a></li>
+				<li><a href="class-DefaultPresenter.html">DefaultPresenter</a></li>
+				<li><a href="class-DefaultProgressLineParser.html">DefaultProgressLineParser</a></li>
+				<li><a href="class-DefaultProgressParser.html">DefaultProgressParser</a></li>
+				<li><a href="class-DefaultValuesItemProcessor.html">DefaultValuesItemProcessor</a></li>
+				<li><a href="class-DirbasedConfig.html">DirbasedConfig</a></li>
+				<li><a href="class-EchoLogger.html">EchoLogger</a></li>
+				<li><a href="class-EmailReportPlugin.html">EmailReportPlugin</a></li>
+				<li><a href="class-EnabledPlugins_Config.html">EnabledPlugins_Config</a></li>
+				<li><a href="class-ErrorPresenter.html">ErrorPresenter</a></li>
+				<li><a href="class-ExtDBHelper.html">ExtDBHelper</a></li>
+				<li><a href="class-FileLogger.html">FileLogger</a></li>
+				<li><a href="class-FileLoggerTest.html">FileLoggerTest</a></li>
+				<li><a href="class-FSHelper.html">FSHelper</a></li>
+				<li><a href="class-GenericMapperProcessor.html">GenericMapperProcessor</a></li>
+				<li><a href="class-ImageAttributeItemProcessor.html">ImageAttributeItemProcessor</a></li>
+				<li><a href="class-ImportLimiter.html">ImportLimiter</a></li>
+				<li><a href="class-ItemIndexer.html">ItemIndexer</a></li>
+				<li><a href="class-Magmi_Config.html">Magmi_Config</a></li>
+				<li><a href="class-Magmi_ConfigurableItemProcessor.html">Magmi_ConfigurableItemProcessor</a></li>
+				<li><a href="class-Magmi_CSVDataSource.html">Magmi_CSVDataSource</a></li>
+				<li><a href="class-Magmi_CSVReader.html">Magmi_CSVReader</a></li>
+				<li><a href="class-Magmi_DatapumpDS.html">Magmi_DatapumpDS</a></li>
+				<li><a href="class-Magmi_DataPumpFactory.html">Magmi_DataPumpFactory</a></li>
+				<li><a href="class-Magmi_DataSource.html">Magmi_DataSource</a></li>
+				<li><a href="class-Magmi_DefaultAttributeItemProcessor.html">Magmi_DefaultAttributeItemProcessor</a></li>
+				<li><a href="class-Magmi_DSEngine.html">Magmi_DSEngine</a></li>
+				<li><a href="class-Magmi_Engine.html">Magmi_Engine</a></li>
+				<li><a href="class-Magmi_GeneralImportPlugin.html">Magmi_GeneralImportPlugin</a></li>
+				<li><a href="class-Magmi_ImportUrlPlugin.html">Magmi_ImportUrlPlugin</a></li>
+				<li><a href="class-Magmi_ItemProcessor.html">Magmi_ItemProcessor</a></li>
+				<li><a href="class-Magmi_MagentoDatasource.html">Magmi_MagentoDatasource</a></li>
+				<li><a href="class-Magmi_Mixin.html">Magmi_Mixin</a></li>
+				<li><a href="class-Magmi_OptimizerPlugin.html">Magmi_OptimizerPlugin</a></li>
+				<li><a href="class-Magmi_Plugin.html">Magmi_Plugin</a></li>
+				<li><a href="class-Magmi_PluginConfig.html">Magmi_PluginConfig</a></li>
+				<li><a href="class-Magmi_PluginHelper.html">Magmi_PluginHelper</a></li>
+				<li><a href="class-Magmi_PluginOptionsPanel.html">Magmi_PluginOptionsPanel</a></li>
+				<li><a href="class-Magmi_ProductImport_DataPump.html">Magmi_ProductImport_DataPump</a></li>
+				<li><a href="class-Magmi_ProductImportEngine.html">Magmi_ProductImportEngine</a></li>
+				<li><a href="class-Magmi_ReindexingPlugin.html">Magmi_ReindexingPlugin</a></li>
+				<li><a href="class-Magmi_StateManager.html">Magmi_StateManager</a></li>
+				<li><a href="class-Magmi_UtilityEngine.html">Magmi_UtilityEngine</a></li>
+				<li><a href="class-Magmi_UtilityPlugin.html">Magmi_UtilityPlugin</a></li>
+				<li><a href="class-Magmi_Version.html">Magmi_Version</a></li>
+				<li><a href="class-NullLoggerTest.html">NullLoggerTest</a></li>
+				<li><a href="class-OutputLoggerTest.html">OutputLoggerTest</a></li>
+				<li><a href="class-ProductDeleter.html">ProductDeleter</a></li>
+				<li><a href="class-ProfileBasedConfig.html">ProfileBasedConfig</a></li>
+				<li><a href="class-ProgressLineParser.html">ProgressLineParser</a></li>
+				<li><a href="class-ProgressParser.html">ProgressParser</a></li>
+				<li><a href="class-Properties.html">Properties</a></li>
+				<li><a href="class-RelatedProducts.html">RelatedProducts</a></li>
+				<li><a href="class-SkuFinderItemProcessor.html">SkuFinderItemProcessor</a></li>
+				<li><a href="class-Slugger.html">Slugger</a></li>
+				<li><a href="class-SQL_Datasource.html">SQL_Datasource</a></li>
+				<li><a href="class-StackTest.html">StackTest</a></li>
+				<li><a href="class-SystemContainer.html" class="invalid">SystemContainer</a></li>
+				<li><a href="class-SystemContainer_nette.html" class="invalid">SystemContainer_nette</a></li>
+				<li><a href="class-SystemContainer_nette_database.html" class="invalid">SystemContainer_nette_database</a></li>
+				<li><a href="class-TestLogger.html">TestLogger</a></li>
+				<li><a href="class-TestLogger2.html">TestLogger2</a></li>
+				<li><a href="class-TierpriceProcessor.html">TierpriceProcessor</a></li>
+				<li><a href="class-ValueReplacerItemProcessor.html">ValueReplacerItemProcessor</a></li>
+				<li><a href="class-ValueTrimItemProcessor.html">ValueTrimItemProcessor</a></li>
+			</ul>
+
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-FileNotFoundException.html">FileNotFoundException</a></li>
+				<li><a href="class-InvalidPropertiesException.html">InvalidPropertiesException</a></li>
+				<li><a href="class-Magmi_CSVException.html">Magmi_CSVException</a></li>
+			</ul>
+
+
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-__.html">__</a></li>
+				<li><a href="function-_lb02dcc6169c_pageTitle.html">_lb02dcc6169c_pageTitle</a></li>
+				<li><a href="function-_lb04763b85d6__flashMessages.html">_lb04763b85d6__flashMessages</a></li>
+				<li><a href="function-_lb07d138c5af_textContent.html">_lb07d138c5af_textContent</a></li>
+				<li><a href="function-_lb087a732bbb_container.html">_lb087a732bbb_container</a></li>
+				<li><a href="function-_lb0914172d81_layoutContent.html">_lb0914172d81_layoutContent</a></li>
+				<li><a href="function-_lb0ae48c7998_simpleMappingRuleFormExtension.html">_lb0ae48c7998_simpleMappingRuleFormExtension</a></li>
+				<li><a href="function-_lb0c2469ec69__connectionHandlersFormReader.html">_lb0c2469ec69__connectionHandlersFormReader</a></li>
+				<li><a href="function-_lb10395da7ef_head_links_layout.html">_lb10395da7ef_head_links_layout</a></li>
+				<li><a href="function-_lb10cffb999b_flashMessages.html">_lb10cffb999b_flashMessages</a></li>
+				<li><a href="function-_lb1119190125_pageTitle.html">_lb1119190125_pageTitle</a></li>
+				<li><a href="function-_lb115161fc6d_layout.html">_lb115161fc6d_layout</a></li>
+				<li><a href="function-_lb142183cd38_afterLayout.html">_lb142183cd38_afterLayout</a></li>
+				<li><a href="function-_lb1473c771e1_breadcrumbs.html">_lb1473c771e1_breadcrumbs</a></li>
+				<li><a href="function-_lb168df30a96_head_links.html">_lb168df30a96_head_links</a></li>
+				<li><a href="function-_lb17b941dc3a__flashMessages.html">_lb17b941dc3a__flashMessages</a></li>
+				<li><a href="function-_lb2124709fc6_pageTitle.html">_lb2124709fc6_pageTitle</a></li>
+				<li><a href="function-_lb225d5f4aa4_footer.html">_lb225d5f4aa4_footer</a></li>
+				<li><a href="function-_lb24c7216496_sidebar.html">_lb24c7216496_sidebar</a></li>
+				<li><a href="function-_lb27bcc545d3_sidebar.html">_lb27bcc545d3_sidebar</a></li>
+				<li><a href="function-_lb2863e3beb7_head_scripts.html">_lb2863e3beb7_head_scripts</a></li>
+				<li><a href="function-_lb2bac44c7a0_header.html">_lb2bac44c7a0_header</a></li>
+				<li><a href="function-_lb2c0dc5b7c6_content.html">_lb2c0dc5b7c6_content</a></li>
+				<li><a href="function-_lb2f09be6ec8_flashMessages.html">_lb2f09be6ec8_flashMessages</a></li>
+				<li><a href="function-_lb33cf37349d_sidebar.html">_lb33cf37349d_sidebar</a></li>
+				<li><a href="function-_lb373927f439_textContent.html">_lb373927f439_textContent</a></li>
+				<li><a href="function-_lb37f583a6cc_textContent.html">_lb37f583a6cc_textContent</a></li>
+				<li><a href="function-_lb38e5c259fe_content.html">_lb38e5c259fe_content</a></li>
+				<li><a href="function-_lb44387083d0_textContent.html">_lb44387083d0_textContent</a></li>
+				<li><a href="function-_lb4513e6bd8b_simpleMappingRuleForm.html">_lb4513e6bd8b_simpleMappingRuleForm</a></li>
+				<li><a href="function-_lb45e8a98801_textContent.html">_lb45e8a98801_textContent</a></li>
+				<li><a href="function-_lb4df7737ddd_textContent.html">_lb4df7737ddd_textContent</a></li>
+				<li><a href="function-_lb4f5553eb1a_layoutContent.html">_lb4f5553eb1a_layoutContent</a></li>
+				<li><a href="function-_lb51461fd089_textContent.html">_lb51461fd089_textContent</a></li>
+				<li><a href="function-_lb527a4f996d_pageTitle.html">_lb527a4f996d_pageTitle</a></li>
+				<li><a href="function-_lb536a5d937c_head_scripts.html">_lb536a5d937c_head_scripts</a></li>
+				<li><a href="function-_lb54bda42acb_tabContent.html">_lb54bda42acb_tabContent</a></li>
+				<li><a href="function-_lb589377cb45_pageTitle.html">_lb589377cb45_pageTitle</a></li>
+				<li><a href="function-_lb5bbf8f6d21_footer.html">_lb5bbf8f6d21_footer</a></li>
+				<li><a href="function-_lb636ef3d075_pageTitle.html">_lb636ef3d075_pageTitle</a></li>
+				<li><a href="function-_lb677a231e17_textContent.html">_lb677a231e17_textContent</a></li>
+				<li><a href="function-_lb67f80a02fe_breadcrumbs.html">_lb67f80a02fe_breadcrumbs</a></li>
+				<li><a href="function-_lb67fbfc41d0_content.html">_lb67fbfc41d0_content</a></li>
+				<li><a href="function-_lb6916763086__sourceFormHandler.html">_lb6916763086__sourceFormHandler</a></li>
+				<li><a href="function-_lb69926c308a_pageTitle.html">_lb69926c308a_pageTitle</a></li>
+				<li><a href="function-_lb6af6f8cbb7_advancedMappingRuleForm.html">_lb6af6f8cbb7_advancedMappingRuleForm</a></li>
+				<li><a href="function-_lb6b59017799_pageTitle.html">_lb6b59017799_pageTitle</a></li>
+				<li><a href="function-_lb6d2870c96b_tabContent.html">_lb6d2870c96b_tabContent</a></li>
+				<li><a href="function-_lb7185003ce3_pageTitle.html">_lb7185003ce3_pageTitle</a></li>
+				<li><a href="function-_lb74ac9e2727_sidebar.html">_lb74ac9e2727_sidebar</a></li>
+				<li><a href="function-_lb78c22e929b_tabContent.html">_lb78c22e929b_tabContent</a></li>
+				<li><a href="function-_lb7b02ae913d__sourceFormHandler.html">_lb7b02ae913d__sourceFormHandler</a></li>
+				<li><a href="function-_lb7bae35ff7e__sourceFormHandler.html">_lb7bae35ff7e__sourceFormHandler</a></li>
+				<li><a href="function-_lb7c7e6133f5_textContent.html">_lb7c7e6133f5_textContent</a></li>
+				<li><a href="function-_lb7e97730327__.html">_lb7e97730327__</a></li>
+				<li><a href="function-_lb81116dbd83_pageTitle.html">_lb81116dbd83_pageTitle</a></li>
+				<li><a href="function-_lb8290ec26be_head_meta.html">_lb8290ec26be_head_meta</a></li>
+				<li><a href="function-_lb85447e6532_afterLayout.html">_lb85447e6532_afterLayout</a></li>
+				<li><a href="function-_lb8815c24886_textContent.html">_lb8815c24886_textContent</a></li>
+				<li><a href="function-_lb8b05eb87c2_textContent.html">_lb8b05eb87c2_textContent</a></li>
+				<li><a href="function-_lb8b34b03e1b_layoutContent.html">_lb8b34b03e1b_layoutContent</a></li>
+				<li><a href="function-_lb8fd77246d8_textContent.html">_lb8fd77246d8_textContent</a></li>
+				<li><a href="function-_lb919e4a6ab8_head_links.html">_lb919e4a6ab8_head_links</a></li>
+				<li><a href="function-_lb91de2df83e_pageTitle.html">_lb91de2df83e_pageTitle</a></li>
+				<li><a href="function-_lb946643c770_footerContent.html">_lb946643c770_footerContent</a></li>
+				<li><a href="function-_lb94758d8d45_textContent.html">_lb94758d8d45_textContent</a></li>
+				<li><a href="function-_lb953b702ff9_textContent.html">_lb953b702ff9_textContent</a></li>
+				<li><a href="function-_lb95d63d4e70_menu.html">_lb95d63d4e70_menu</a></li>
+				<li><a href="function-_lb9665289bca_header.html">_lb9665289bca_header</a></li>
+				<li><a href="function-_lb983adc043a_pageTitle.html">_lb983adc043a_pageTitle</a></li>
+				<li><a href="function-_lb99ae72d175_layoutContent.html">_lb99ae72d175_layoutContent</a></li>
+				<li><a href="function-_lb9d515362d5_pageTitle.html">_lb9d515362d5_pageTitle</a></li>
+				<li><a href="function-_lb9f04e844e4_beforeLayout.html">_lb9f04e844e4_beforeLayout</a></li>
+				<li><a href="function-_lba08c6087d1__connectionHandlersFormWriter.html">_lba08c6087d1__connectionHandlersFormWriter</a></li>
+				<li><a href="function-_lba136c87bfa_layout.html">_lba136c87bfa_layout</a></li>
+				<li><a href="function-_lba4adb8fa12_textContent.html">_lba4adb8fa12_textContent</a></li>
+				<li><a href="function-_lba56642269d_menu.html">_lba56642269d_menu</a></li>
+				<li><a href="function-_lba86b672ac2_head_links.html">_lba86b672ac2_head_links</a></li>
+				<li><a href="function-_lba877997d61_content.html">_lba877997d61_content</a></li>
+				<li><a href="function-_lbaa9fab90af__flashMessages.html">_lbaa9fab90af__flashMessages</a></li>
+				<li><a href="function-_lbab5392e815_textContent.html">_lbab5392e815_textContent</a></li>
+				<li><a href="function-_lbab69efe1df_content.html">_lbab69efe1df_content</a></li>
+				<li><a href="function-_lbad61a9fd98_flashMessages.html">_lbad61a9fd98_flashMessages</a></li>
+				<li><a href="function-_lbaf43de0240_tabContent.html">_lbaf43de0240_tabContent</a></li>
+				<li><a href="function-_lbb189e411bb_flashMessages.html">_lbb189e411bb_flashMessages</a></li>
+				<li><a href="function-_lbb58c576af5_tabContent.html">_lbb58c576af5_tabContent</a></li>
+				<li><a href="function-_lbb5e4ed4dbd_pageTitle.html">_lbb5e4ed4dbd_pageTitle</a></li>
+				<li><a href="function-_lbb9a70dd8e4_tabContent.html">_lbb9a70dd8e4_tabContent</a></li>
+				<li><a href="function-_lbb9cfae6942_textContent.html">_lbb9cfae6942_textContent</a></li>
+				<li><a href="function-_lbbf85a134d9_beforeTextContent.html">_lbbf85a134d9_beforeTextContent</a></li>
+				<li><a href="function-_lbc00dc6ac33_layoutContent.html">_lbc00dc6ac33_layoutContent</a></li>
+				<li><a href="function-_lbc07bdfbda7_head_links.html">_lbc07bdfbda7_head_links</a></li>
+				<li><a href="function-_lbc2460bb5d5_pageTitle.html">_lbc2460bb5d5_pageTitle</a></li>
+				<li><a href="function-_lbc3e37f3bb5__flashMessages.html">_lbc3e37f3bb5__flashMessages</a></li>
+				<li><a href="function-_lbc7b1d2d568_pageTitle.html">_lbc7b1d2d568_pageTitle</a></li>
+				<li><a href="function-_lbc87403d9a5_content.html">_lbc87403d9a5_content</a></li>
+				<li><a href="function-_lbc8e71a9ea3_content.html">_lbc8e71a9ea3_content</a></li>
+				<li><a href="function-_lbc9e00b4a1f__.html">_lbc9e00b4a1f__</a></li>
+				<li><a href="function-_lbcdd2424fc6_tabContent.html">_lbcdd2424fc6_tabContent</a></li>
+				<li><a href="function-_lbce758a316f_textContent.html">_lbce758a316f_textContent</a></li>
+				<li><a href="function-_lbcee3750bce_head_scripts.html">_lbcee3750bce_head_scripts</a></li>
+				<li><a href="function-_lbd18b2ca613_textContent.html">_lbd18b2ca613_textContent</a></li>
+				<li><a href="function-_lbd5a0d3acc3_head_links_layout.html">_lbd5a0d3acc3_head_links_layout</a></li>
+				<li><a href="function-_lbd973a08108_textContent.html">_lbd973a08108_textContent</a></li>
+				<li><a href="function-_lbd993c6d193_simpleMappingRuleForm.html">_lbd993c6d193_simpleMappingRuleForm</a></li>
+				<li><a href="function-_lbd9feb34ae3_textContent.html">_lbd9feb34ae3_textContent</a></li>
+				<li><a href="function-_lbdcc7d48c70_content.html">_lbdcc7d48c70_content</a></li>
+				<li><a href="function-_lbddcf93d259_textContent.html">_lbddcf93d259_textContent</a></li>
+				<li><a href="function-_lbe1b863f06f_menu.html">_lbe1b863f06f_menu</a></li>
+				<li><a href="function-_lbe3d46f3b01_menu.html">_lbe3d46f3b01_menu</a></li>
+				<li><a href="function-_lbe47f3ebdf1_pageTitle.html">_lbe47f3ebdf1_pageTitle</a></li>
+				<li><a href="function-_lbe570731fe9_beforeLayout.html">_lbe570731fe9_beforeLayout</a></li>
+				<li><a href="function-_lbe670204a59_beforeTextContent.html">_lbe670204a59_beforeTextContent</a></li>
+				<li><a href="function-_lbecd5755037_sidebar.html">_lbecd5755037_sidebar</a></li>
+				<li><a href="function-_lbee53f10520_layoutContent.html">_lbee53f10520_layoutContent</a></li>
+				<li><a href="function-_lbf6dda0603a_content.html">_lbf6dda0603a_content</a></li>
+				<li><a href="function-_lbf7a2abdc84_head_links.html">_lbf7a2abdc84_head_links</a></li>
+				<li><a href="function-_lbf96ed5f5f6__connectionHandlersFormType.html">_lbf96ed5f5f6__connectionHandlersFormType</a></li>
+				<li><a href="function-_lbfac96c2537_head_meta.html">_lbfac96c2537_head_meta</a></li>
+				<li><a href="function-_lbfc5125162e_container.html">_lbfc5125162e_container</a></li>
+				<li><a href="function-_lbfe4e3d21db_footerContent.html">_lbfe4e3d21db_footerContent</a></li>
+				<li><a href="function-_lbfeb6097c46_textContent.html">_lbfeb6097c46_textContent</a></li>
+				<li><a href="function-_n.html">_n</a></li>
+				<li><a href="function-_nx.html">_nx</a></li>
+				<li><a href="function-_x.html">_x</a></li>
+				<li><a href="function-abspath.html">abspath</a></li>
+				<li><a href="function-array_to_json.html">array_to_json</a></li>
+				<li><a href="function-callback.html">callback</a></li>
+				<li><a href="function-csl2arr.html">csl2arr</a></li>
+				<li><a href="function-deleteifempty.html">deleteifempty</a></li>
+				<li><a href="function-dump.html">dump</a></li>
+				<li><a href="function-extractZipDir.html">extractZipDir</a></li>
+				<li><a href="function-falseifempty.html">falseifempty</a></li>
+				<li><a href="function-getEngineInstance.html">getEngineInstance</a></li>
+				<li><a href="function-getRelative.html">getRelative</a></li>
+				<li><a href="function-isabspath.html">isabspath</a></li>
+				<li><a href="function-nullifempty.html">nullifempty</a></li>
+				<li><a href="function-tdarray_to_js.html">tdarray_to_js</a></li>
+				<li><a href="function-testempty.html">testempty</a></li>
+				<li><a href="function-trimarray.html">trimarray</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-None.html" title="Summary of None"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class DBHelper</h1>
+
+
+	<div class="description">
+	
+<p>This class is a Database Operation Helper based on PDO library It provides
+shortcuts for common DB CRUD operations and some advanced templated requests
+operations</p>
+
+	</div>
+
+
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-ExtDBHelper.html">ExtDBHelper</a>
+	</div>
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		
+
+				<b>Author:</b>
+				dweeves<br />
+		<b>Located at</b> <a href="source-class-DBHelper.html#2-589" title="Go to source code">libs/Magmi/inc/dbhelper.class.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="initDb" id="_initDb">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_initDb">#</a>
+		<code><a href="source-class-DBHelper.html#19-50" title="Go to source code">initDb</a>( <span>string <var>$host</var></span>, <span>string <var>$dbname</var></span>, <span>string <var>$user</var></span>, <span>string <var>$pass</var></span>, <span>boolean <var>$port</var> = <span class="php-num">3306</span></span>, <span>mixed <var>$socket</var> = <span class="php-quote">&quot;/tmp/mysql.sock&quot;</span></span>, <span>mixed <var>$conntype</var> = <span class="php-quote">&quot;net&quot;</span></span>, <span>mixed <var>$debug</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Intializes database connection</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Intializes database connection</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$host</var></dt>
+					<dd><code>string</code><br>$host : hostname</dd>
+					<dt><var>$dbname</var></dt>
+					<dd><code>string</code><br>$dbname : database name</dd>
+					<dt><var>$user</var></dt>
+					<dd><code>string</code><br>$user : username</dd>
+					<dt><var>$pass</var></dt>
+					<dd><code>string</code><br>$pass : password</dd>
+					<dt><var>$port</var></dt>
+					<dd><code>boolean</code><br>$debug : debug mode</dd>
+					<dt><var>$socket</var></dt>
+					<dd></dd>
+					<dt><var>$conntype</var></dt>
+					<dd></dd>
+					<dt><var>$debug</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="logdebug" id="_logdebug">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_logdebug">#</a>
+		<code><a href="source-class-DBHelper.html#51-66" title="Go to source code">logdebug</a>( <span>unknown_type <var>$data</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>store output in some debug file</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var></dt>
+					<dd><code>unknown_type</code><br>$data</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="usestmtcache" id="_usestmtcache">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_usestmtcache">#</a>
+		<code><a href="source-class-DBHelper.html#67-75" title="Go to source code">usestmtcache</a>( <span>boolean <var>$uc</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets or unsets the usage of internal prepared statement cache for reuse</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$uc</var></dt>
+					<dd><code>boolean</code><br>$uc true:use cache,false:do not use cache</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="exitDb" id="_exitDb">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_exitDb">#</a>
+		<code><a href="source-class-DBHelper.html#77-85" title="Go to source code">exitDb</a>( )</code>
+
+		<div class="description short">
+			
+<p>releases database connection</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>releases database connection</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getMysqlSocket" id="_getMysqlSocket">
+
+		<td class="attributes"><code>
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getMysqlSocket">#</a>
+		<code><a href="source-class-DBHelper.html#87-131" title="Go to source code">getMysqlSocket</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Helper method to try to guess mysql socket based on some tricky phpinfo
+analysis</p>
+
+
+
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-Exception.html">Exception</a></code></code><br>if something got wrong during detection<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="initDbqStats" id="_initDbqStats">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_initDbqStats">#</a>
+		<code><a href="source-class-DBHelper.html#133-141" title="Go to source code">initDbqStats</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Initializes database requests stats counters</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="collectDbqStats" id="_collectDbqStats">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_collectDbqStats">#</a>
+		<code><a href="source-class-DBHelper.html#143-151" title="Go to source code">collectDbqStats</a>( <span>unknown_type <var>&amp; $nbreq</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Enter description here ...</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$nbreq</var></dt>
+					<dd><code>unknown_type</code><br>$nbreq</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="cachesort" id="_cachesort">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_cachesort">#</a>
+		<code><a href="source-class-DBHelper.html#153-162" title="Go to source code">cachesort</a>( <span>unknown_type <var>$a</var></span>, <span>unknown_type <var>$b</var></span> )</code>
+
+		<div class="description short">
+			
+<p>cache sorting comparison method</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>cache sorting comparison method</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$a</var></dt>
+					<dd><code>unknown_type</code><br>$a</dd>
+					<dt><var>$b</var></dt>
+					<dd><code>unknown_type</code><br>$b</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="garbageStmtCache" id="_garbageStmtCache">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_garbageStmtCache">#</a>
+		<code><a href="source-class-DBHelper.html#164-175" title="Go to source code">garbageStmtCache</a>( )</code>
+
+		<div class="description short">
+			
+<p>Garbages statement cache if above 500 , removes less used statements Enter
+description here ...</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Garbages statement cache if above 500 , removes less used statements Enter
+description here ...</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="exec_stmt" id="_exec_stmt">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-PDOStatement.html">PDOStatement</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_exec_stmt">#</a>
+		<code><a href="source-class-DBHelper.html#176-246" title="Go to source code">exec_stmt</a>( <span>string <var>$sql</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$close</var> = <span class="php-keyword1">true</span></span> )</code>
+
+		<div class="description short">
+			
+<p>executes an sql statement</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>executes an sql statement</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sql</var></dt>
+					<dd><code>string</code><br>$sql : sql statement (may include ? placeholders or named variables)</dd>
+					<dt><var>$params</var></dt>
+					<dd><code>array</code><br>$params : parameters to replace placeholders (can be null)</dd>
+					<dt><var>$close</var></dt>
+					<dd><code>boolean</code><br>$close : auto close cursor after statement execution (defaults to true)</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-PDOStatement.html">PDOStatement</a></code></code><br>: statement for further processing if needed<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="delete" id="_delete">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_delete">#</a>
+		<code><a href="source-class-DBHelper.html#248-256" title="Go to source code">delete</a>( <span>string <var>$sql</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Perform a delete statement, sql should be "DELETE"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Perform a delete statement, sql should be "DELETE"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sql</var></dt>
+					<dd><code>string</code><br>$sql : DELETE statement sql (placeholders allowed)</dd>
+					<dt><var>$params</var></dt>
+					<dd><code>array</code><br>$params : placeholder replacements (can be null)</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="update" id="_update">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_update">#</a>
+		<code><a href="source-class-DBHelper.html#258-267" title="Go to source code">update</a>( <span>string <var>$sql</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Performs an update statement Enter description here ...</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Performs an update statement Enter description here ...</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sql</var></dt>
+					<dd><code>string</code><br>$sql UPDATE statement sql (placeholder allowed)</dd>
+					<dt><var>$params</var></dt>
+					<dd><code>array</code><br>$params parameter values if placeholders in SQL</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="insert" id="_insert">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_insert">#</a>
+		<code><a href="source-class-DBHelper.html#268-279" title="Go to source code">insert</a>( <span>string <var>$sql</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Perform an insert , sql should be "INSERT"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Perform an insert , sql should be "INSERT"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sql</var></dt>
+					<dd><code>string</code><br>$sql :INSERT statement SQL (placeholders allowed)</dd>
+					<dt><var>$params</var></dt>
+					<dd><code>array</code><br>$params : placeholder replacements (can be null)</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>: last inserted id<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="select" id="_select">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-PDOStatement.html">PDOStatement</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_select">#</a>
+		<code><a href="source-class-DBHelper.html#281-290" title="Go to source code">select</a>( <span>string <var>$sql</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Perform a select ,sql should be "SELECT"</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Perform a select ,sql should be "SELECT"</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sql</var></dt>
+					<dd><code>string</code><br>$sql :SELECT statement SQL (placeholders allowed)</dd>
+					<dt><var>$params</var></dt>
+					<dd><code>array</code><br>$params : placeholder replacements (can be null)</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-PDOStatement.html">PDOStatement</a></code></code><br>: statement instance for further processing<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="selectone" id="_selectone">
+
+		<td class="attributes"><code>
+			 public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_selectone">#</a>
+		<code><a href="source-class-DBHelper.html#292-311" title="Go to source code">selectone</a>( <span>mixed <var>$sql</var></span>, <span>mixed <var>$params</var></span>, <span>mixed <var>$col</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Selects one unique value from one single row</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Selects one unique value from one single row</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sql</var></dt>
+					<dd><code>mixed</code><br>$sql : SELECT statement SQL (placeholders allowed)</dd>
+					<dt><var>$params</var></dt>
+					<dd><code>mixed</code><br>$params :placeholder replacements (can be null)</dd>
+					<dt><var>$col</var></dt>
+					<dd><code>mixed</code><br>$col : column value to retrieve</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>mixed</code><br>: null if not result , wanted column value if match<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="selectAll" id="_selectAll">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_selectAll">#</a>
+		<code><a href="source-class-DBHelper.html#313-328" title="Go to source code">selectAll</a>( <span>unknown_type <var>$sql</var></span>, <span>unknown_type <var>$params</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Selects all values from a statement into a php array</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Selects all values from a statement into a php array</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sql</var></dt>
+					<dd><code>unknown_type</code><br>$sql sql select to execute</dd>
+					<dt><var>$params</var></dt>
+					<dd><code>unknown_type</code><br>$params placeholder replacements (can be null)</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testexists" id="_testexists">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testexists">#</a>
+		<code><a href="source-class-DBHelper.html#330-340" title="Go to source code">testexists</a>( <span>mixed <var>$sql</var></span>, <span>mixed <var>$params</var></span>, <span>mixed <var>$col</var></span> )</code>
+
+		<div class="description short">
+			
+<p>test if value exists (test should be compatible with unique select)</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>test if value exists (test should be compatible with unique select)</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sql</var></dt>
+					<dd><code>mixed</code><br>$sql : SELECT statement SQL (placeholders allowed)</dd>
+					<dt><var>$params</var></dt>
+					<dd><code>mixed</code><br>$params :placeholder replacements (can be null)</dd>
+					<dt><var>$col</var></dt>
+					<dd><code>mixed</code><br>$col : column value to retrieve</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br>: true if value found, false otherwise<br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="quotearr" id="_quotearr">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_quotearr">#</a>
+		<code><a href="source-class-DBHelper.html#342-355" title="Go to source code">quotearr</a>( <span>array <var>$arr</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Quote array values in order to be used as parameters (handy if array used
+directly in explode in a IN condition) Enter description here ...</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Quote array values in order to be used as parameters (handy if array used
+directly in explode in a IN condition) Enter description here ...</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$arr</var></dt>
+					<dd><code>array</code><br>$arr array of values to be quoted</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="arr2columns" id="_arr2columns">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_arr2columns">#</a>
+		<code><a href="source-class-DBHelper.html#357-372" title="Go to source code">arr2columns</a>( <span>array <var>$arr</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>transforms an array in a comma separated list of enclosed column names for
+request</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$arr</var></dt>
+					<dd><code>array</code><br>$arr list of names to enclose</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="arr2values" id="_arr2values">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_arr2values">#</a>
+		<code><a href="source-class-DBHelper.html#374-383" title="Go to source code">arr2values</a>( <span>array <var>$arr</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>transform an array of values into equivalent comma separated list of unnamed
+placeholders.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$arr</var></dt>
+					<dd><code>array</code><br>$arr</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="arr2select" id="_arr2select">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_arr2select">#</a>
+		<code><a href="source-class-DBHelper.html#385-396" title="Go to source code">arr2select</a>( <span>array <var>$arr</var></span>, <span>string <var>$cname</var> = <span class="php-quote">&quot;id&quot;</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>transform a list of values into static select to use it as SQL static
+resultset</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$arr</var></dt>
+					<dd><code>array</code><br>$arr list of values to use as SQL dataset</dd>
+					<dt><var>$cname</var></dt>
+					<dd><code>string</code><br>$cname sql column name to use to represent dataset</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="arr2update" id="_arr2update">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_arr2update">#</a>
+		<code><a href="source-class-DBHelper.html#398-413" title="Go to source code">arr2update</a>( <span>array <var>$arr</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>transform a associative array into a list of update prepared placeholders</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$arr</var></dt>
+					<dd><code>array</code><br>$arr associative array to prepare for update , array keys used as column to
+update</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="filterkvarr" id="_filterkvarr">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_filterkvarr">#</a>
+		<code><a href="source-class-DBHelper.html#415-429" title="Go to source code">filterkvarr</a>( <span>unknown_type <var>$kvarr</var></span>, <span>unknown_type <var>$keys</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Enter description here ...</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$kvarr</var></dt>
+					<dd><code>unknown_type</code><br>$kvarr</dd>
+					<dt><var>$keys</var></dt>
+					<dd><code>unknown_type</code><br>$keys</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="beginTransaction" id="_beginTransaction">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_beginTransaction">#</a>
+		<code><a href="source-class-DBHelper.html#431-440" title="Go to source code">beginTransaction</a>( )</code>
+
+		<div class="description short">
+			
+<p>begins a transaction</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>begins a transaction</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="commitTransaction" id="_commitTransaction">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_commitTransaction">#</a>
+		<code><a href="source-class-DBHelper.html#442-451" title="Go to source code">commitTransaction</a>( )</code>
+
+		<div class="description short">
+			
+<p>commits the current transaction</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>commits the current transaction</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="rollbackTransaction" id="_rollbackTransaction">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_rollbackTransaction">#</a>
+		<code><a href="source-class-DBHelper.html#453-466" title="Go to source code">rollbackTransaction</a>( )</code>
+
+		<div class="description short">
+			
+<p>rollback the current transaction</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>rollback the current transaction</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDebug" id="_setDebug">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDebug">#</a>
+		<code><a href="source-class-DBHelper.html#468-478" title="Go to source code">setDebug</a>( <span>boolean <var>$debug</var></span>, <span>string <var>$debugfname</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Sets debug management</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$debug</var></dt>
+					<dd><code>boolean</code><br>$debug debug flag</dd>
+					<dt><var>$debugfname</var></dt>
+					<dd><code>string</code><br>$debugfname debug file name to use</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="replaceParams" id="_replaceParams">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_replaceParams">#</a>
+		<code><a href="source-class-DBHelper.html#480-529" title="Go to source code">replaceParams</a>( <span>unknown_type <var>&amp; $stmt</var></span>, <span>unknown_type <var>&amp; $rparams</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Replaces named params in a descriptive parameterized request Descriptive
+parameterized request have parameters defined as [namespace:name/label/default
+value] , this parameters may represent table names or any request parameter
+namespace is optional, as label &amp; default value</p>
+
+<ul>
+	<li>NameSpaces:</li>
+</ul>
+
+<p>tn : tablename, this namespace ensures replacement of given name with defined
+DB prefix so, parameterized request can use generic names to define their
+ops</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$stmt</var></dt>
+					<dd><code>unknown_type</code><br>$stmt</dd>
+					<dt><var>$rparams</var></dt>
+					<dd><code>unknown_type</code><br>$rparams</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="is_assoc" id="_is_assoc">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_is_assoc">#</a>
+		<code><a href="source-class-DBHelper.html#531-538" title="Go to source code">is_assoc</a>( <span>mixed <var>$var</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Checks wether an array is associative</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$var</var></dt>
+					<dd><code>mixed</code><br>$var array or variable to test</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="multipleParamRequests" id="_multipleParamRequests">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_multipleParamRequests">#</a>
+		<code><a href="source-class-DBHelper.html#540-586" title="Go to source code">multipleParamRequests</a>( <span>string <var>$sql</var></span>, <span>array <var>$params</var></span>, <span>mixed <var>$return</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>This method handled mutiple statements in a single SQL (PDO cannot do it by
+itself) Statements have to be separed by ; &amp; line return.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sql</var></dt>
+					<dd><code>string</code><br>$sql multiple statements</dd>
+					<dt><var>$params</var></dt>
+					<dd><code>array</code><br>$params values to use for parameter placeholder, in case of named
+parameters,array has to have array keys aligned with parameter names</dd>
+					<dt><var>$return</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="_db" id="$_db">
+		<td class="attributes"><code>
+			protected  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DBHelper.html#11" title="Go to source code"><var>$_db</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$_db" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="_debug" id="$_debug">
+		<td class="attributes"><code>
+			protected  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DBHelper.html#12" title="Go to source code"><var>$_debug</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$_debug" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="_laststmt" id="$_laststmt">
+		<td class="attributes"><code>
+			protected  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DBHelper.html#13" title="Go to source code"><var>$_laststmt</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$_laststmt" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="_use_stmt_cache" id="$_use_stmt_cache">
+		<td class="attributes"><code>
+			protected  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DBHelper.html#14" title="Go to source code"><var>$_use_stmt_cache</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">true</span></code></td>
+		<td class="description"><div>
+			<a href="#$_use_stmt_cache" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="_nreq" id="$_nreq">
+		<td class="attributes"><code>
+			protected  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DBHelper.html#15" title="Go to source code"><var>$_nreq</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$_nreq" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="_indbtime" id="$_indbtime">
+		<td class="attributes"><code>
+			protected  
+			mixed
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DBHelper.html#16" title="Go to source code"><var>$_indbtime</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$_indbtime" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="_intrans" id="$_intrans">
+		<td class="attributes"><code>
+			protected  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DBHelper.html#17" title="Go to source code"><var>$_intrans</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">false</span></code></td>
+		<td class="description"><div>
+			<a href="#$_intrans" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="prepared" id="$prepared">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-DBHelper.html#18" title="Go to source code"><var>$prepared</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$prepared" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

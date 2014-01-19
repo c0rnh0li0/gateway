@@ -1,0 +1,1843 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class NiftyGrid\Column</title>
+
+	<script type="text/javascript" src="resources/combined.js?1479682893"></script>
+	<script type="text/javascript" src="elementlist.js?1567848024"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-AdminModule.html">AdminModule<span></span></a>
+						<ul>
+				<li><a href="namespace-AdminModule.Component.html">Component</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-ApiModule.html">ApiModule</a>
+						</li>
+				<li><a href="namespace-Gateway.html">Gateway<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.html">DataSource<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.Entity.html">Entity<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.Entity.Category.html">Category</a>
+						</li>
+				<li><a href="namespace-Gateway.DataSource.Entity.Customer.html">Customer</a>
+						</li>
+				<li><a href="namespace-Gateway.DataSource.Entity.Order.html">Order<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.DataSource.Entity.Order.Payment.html">Payment</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.DataSource.Entity.Product.html">Product</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Gateway.Handler.html">Handler<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.html">Erp<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.html">Etron<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.XML.html">XML<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.XML.Reader.html">Reader<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.XML.Reader.Products.html">Products</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.Handler.Erp.Etron.Xml.Writer.html">Writer</a>
+						</li>
+							</ul></li></ul></li></ul></li>
+				<li><a href="namespace-Gateway.Handler.Shop.html">Shop<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.html">Magento<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.JSON.html">JSON<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.JSON.Reader.html">Reader</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.Magmi.html">Magmi<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.Magmi.Writer.html">Writer</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.SOAP.html">SOAP<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.SOAP.Writer.html">Writer<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Handler.Shop.Magento.SOAP.Writer.Products.html">Products</a>
+						</li>
+							</ul></li></ul></li></ul></li></ul></li></ul></li>
+				<li><a href="namespace-Gateway.Mapping.html">Mapping<span></span></a>
+						<ul>
+				<li><a href="namespace-Gateway.Mapping.Rule.html">Rule</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-Logger.html">Logger</a>
+						</li>
+				<li><a href="namespace-Nette.html">Nette<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Application.html">Application<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Application.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Application.Responses.html">Responses</a>
+						</li>
+				<li><a href="namespace-Nette.Application.Routers.html">Routers</a>
+						</li>
+				<li><a href="namespace-Nette.Application.UI.html">UI</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Caching.html">Caching<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Caching.Storages.html">Storages</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.ComponentModel.html">ComponentModel</a>
+						</li>
+				<li><a href="namespace-Nette.Config.html">Config<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Config.Adapters.html">Adapters</a>
+						</li>
+				<li><a href="namespace-Nette.Config.Extensions.html">Extensions</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Database.html">Database<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Database.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Drivers.html">Drivers</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Reflection.html">Reflection</a>
+						</li>
+				<li><a href="namespace-Nette.Database.Table.html">Table</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.DI.html">DI<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.DI.Diagnostics.html">Diagnostics</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Diagnostics.html">Diagnostics</a>
+						</li>
+				<li><a href="namespace-Nette.Forms.html">Forms<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Forms.Controls.html">Controls</a>
+						</li>
+				<li><a href="namespace-Nette.Forms.Rendering.html">Rendering</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Http.html">Http</a>
+						</li>
+				<li><a href="namespace-Nette.Iterators.html">Iterators</a>
+						</li>
+				<li><a href="namespace-Nette.Latte.html">Latte<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Latte.Macros.html">Macros</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Loaders.html">Loaders</a>
+						</li>
+				<li><a href="namespace-Nette.Localization.html">Localization</a>
+						</li>
+				<li><a href="namespace-Nette.Mail.html">Mail</a>
+						</li>
+				<li><a href="namespace-Nette.Reflection.html">Reflection</a>
+						</li>
+				<li><a href="namespace-Nette.Security.html">Security<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Security.Diagnostics.html">Diagnostics</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Nette.Templating.html">Templating</a>
+						</li>
+				<li><a href="namespace-Nette.Utils.html">Utils<span></span></a>
+						<ul>
+				<li><a href="namespace-Nette.Utils.PhpGenerator.html">PhpGenerator</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="namespace-NetteModule.html">NetteModule</a>
+						</li>
+				<li><a href="namespace-NetteTranslator.html">NetteTranslator</a>
+						</li>
+				<li class="active"><a href="namespace-NiftyGrid.html">NiftyGrid</a>
+						</li>
+				<li><a href="namespace-None.html">None</a>
+						</li>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li><a href="namespace-Yourface.html">Yourface<span></span></a>
+						<ul>
+				<li><a href="namespace-Yourface.Application.html">Application<span></span></a>
+						<ul>
+				<li><a href="namespace-Yourface.Application.Responses.html">Responses</a>
+						</li>
+				<li><a href="namespace-Yourface.Application.Routers.html">Routers</a>
+						</li>
+				<li><a href="namespace-Yourface.Application.UI.html">UI</a>
+						</li>
+							</ul></li>
+				<li><a href="namespace-Yourface.Iterators.html">Iterators</a>
+						</li>
+				<li><a href="namespace-Yourface.NiftyGrid.html">NiftyGrid</a>
+						</li>
+				<li><a href="namespace-Yourface.Utils.html">Utils</a>
+						</li>
+							</ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-NiftyGrid.Action.html">Action</a></li>
+				<li><a href="class-NiftyGrid.Button.html">Button</a></li>
+				<li class="active"><a href="class-NiftyGrid.Column.html">Column</a></li>
+				<li><a href="class-NiftyGrid.DibiFluentDataSource.html">DibiFluentDataSource</a></li>
+				<li><a href="class-NiftyGrid.DoctrineDataSource.html">DoctrineDataSource</a></li>
+				<li><a href="class-NiftyGrid.FilterCondition.html">FilterCondition</a></li>
+				<li><a href="class-NiftyGrid.GlobalButton.html">GlobalButton</a></li>
+				<li><a href="class-NiftyGrid.Grid.html">Grid</a></li>
+				<li><a href="class-NiftyGrid.GridPaginator.html">GridPaginator</a></li>
+				<li><a href="class-NiftyGrid.NDataSource.html">NDataSource</a></li>
+				<li><a href="class-NiftyGrid.SubGrid.html">SubGrid</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-NiftyGrid.IDataSource.html">IDataSource</a></li>
+			</ul>
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-NiftyGrid.DuplicateActionException.html">DuplicateActionException</a></li>
+				<li><a href="class-NiftyGrid.DuplicateButtonException.html">DuplicateButtonException</a></li>
+				<li><a href="class-NiftyGrid.DuplicateColumnException.html">DuplicateColumnException</a></li>
+				<li><a href="class-NiftyGrid.DuplicateEditableColumnException.html">DuplicateEditableColumnException</a></li>
+				<li><a href="class-NiftyGrid.DuplicateGlobalButtonException.html">DuplicateGlobalButtonException</a></li>
+				<li><a href="class-NiftyGrid.DuplicateSubGridException.html">DuplicateSubGridException</a></li>
+				<li><a href="class-NiftyGrid.GridException.html">GridException</a></li>
+				<li><a href="class-NiftyGrid.InvalidFilterException.html">InvalidFilterException</a></li>
+				<li><a href="class-NiftyGrid.InvalidOrderException.html">InvalidOrderException</a></li>
+				<li><a href="class-NiftyGrid.NoRowSelectedException.html">NoRowSelectedException</a></li>
+				<li><a href="class-NiftyGrid.UnknownActionCallbackException.html">UnknownActionCallbackException</a></li>
+				<li><a href="class-NiftyGrid.UnknownColumnException.html">UnknownColumnException</a></li>
+				<li><a href="class-NiftyGrid.UnknownFilterException.html">UnknownFilterException</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-NiftyGrid.html" title="Summary of NiftyGrid"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Column</h1>
+
+
+	<div class="description">
+	
+<p>PresenterComponent is the base class for all Presenter components.</p>
+
+<p>Components are persistent objects located on a presenter. They have ability
+to own other child components, and interact with user. Components have
+properties for storing their status, and responds to user command.</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-Nette.Object.html"><span>Nette\Object</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by" />
+			<a href="class-Nette.ComponentModel.Component.html"><span>Nette\ComponentModel\Component</span></a>
+			
+			 implements 
+				<a href="class-Nette.ComponentModel.IComponent.html"><span>Nette\ComponentModel\IComponent</span></a>
+			
+			
+		</dd>
+		<dd style="padding-left:60px">
+			<img src="resources/inherit.png" alt="Extended by" />
+			<a href="class-Nette.ComponentModel.Container.html"><span>Nette\ComponentModel\Container</span></a>
+			
+			 implements 
+				<a href="class-Nette.ComponentModel.IContainer.html"><span>Nette\ComponentModel\IContainer</span></a>
+			
+			
+		</dd>
+		<dd style="padding-left:90px">
+			<img src="resources/inherit.png" alt="Extended by" />
+			<a href="class-Nette.Application.UI.PresenterComponent.html"><span>Nette\Application\UI\PresenterComponent</span></a>
+			
+			 implements 
+				<a href="class-Nette.Application.UI.ISignalReceiver.html"><span>Nette\Application\UI\ISignalReceiver</span></a>, 
+			
+				<a href="class-Nette.Application.UI.IStatePersistent.html"><span>Nette\Application\UI\IStatePersistent</span></a>, 
+			
+				<a href="class-ArrayAccess.html"><span>ArrayAccess</span></a>
+			
+			
+		</dd>
+		<dd style="padding-left:120px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b><span>NiftyGrid\Column</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-NiftyGrid.html">NiftyGrid</a><br />
+		
+
+				<b>Author:</b>
+				David Grudl<br />
+		<b>Located at</b> <a href="source-class-NiftyGrid.Column.html#13-390" title="Go to source code">libs/NiftyGrid/Components/Column.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="injectParent" id="_injectParent">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_injectParent">#</a>
+		<code><a href="source-class-NiftyGrid.Column.html#57-63" title="Go to source code">injectParent</a>( <span><code><a href="class-NiftyGrid.Grid.html">NiftyGrid\Grid</a></code> <var>$parent</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$parent</var></dt>
+					<dd><code><code><a href="class-NiftyGrid.Grid.html">NiftyGrid\Grid</a></code></code><br>$parent</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setName" id="_setName">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-NiftyGrid.Column.html">NiftyGrid\Column</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setName">#</a>
+		<code><a href="source-class-NiftyGrid.Column.html#65-74" title="Go to source code">setName</a>( <span>string <var>$name</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code><br>$name</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-NiftyGrid.Column.html">NiftyGrid\Column</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setTableName" id="_setTableName">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-NiftyGrid.Column.html">NiftyGrid\Column</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setTableName">#</a>
+		<code><a href="source-class-NiftyGrid.Column.html#76-85" title="Go to source code">setTableName</a>( <span>string <var>$tableName</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$tableName</var></dt>
+					<dd><code>string</code><br>$tableName</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-NiftyGrid.Column.html">NiftyGrid\Column</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setLabel" id="_setLabel">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-NiftyGrid.Column.html">NiftyGrid\Column</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setLabel">#</a>
+		<code><a href="source-class-NiftyGrid.Column.html#87-96" title="Go to source code">setLabel</a>( <span>callable|string <var>$label</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$label</var></dt>
+					<dd><code>callable|string</code><br>$label</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-NiftyGrid.Column.html">NiftyGrid\Column</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setWidth" id="_setWidth">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-NiftyGrid.Column.html">NiftyGrid\Column</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setWidth">#</a>
+		<code><a href="source-class-NiftyGrid.Column.html#98-107" title="Go to source code">setWidth</a>( <span>string <var>$width</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$width</var></dt>
+					<dd><code>string</code><br>$width</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-NiftyGrid.Column.html">NiftyGrid\Column</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setTruncate" id="_setTruncate">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-NiftyGrid.Column.html">NiftyGrid\Column</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setTruncate">#</a>
+		<code><a href="source-class-NiftyGrid.Column.html#109-118" title="Go to source code">setTruncate</a>( <span>integer <var>$truncate</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$truncate</var></dt>
+					<dd><code>integer</code><br>$truncate</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-NiftyGrid.Column.html">NiftyGrid\Column</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="prepareValue" id="_prepareValue">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_prepareValue">#</a>
+		<code><a href="source-class-NiftyGrid.Column.html#120-135" title="Go to source code">prepareValue</a>( <span>array <var>$row</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$row</var></dt>
+					<dd><code>array</code><br>$row</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setRenderer" id="_setRenderer">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-NiftyGrid.Column.html">NiftyGrid\Column</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setRenderer">#</a>
+		<code><a href="source-class-NiftyGrid.Column.html#137-146" title="Go to source code">setRenderer</a>( <span>callable <var>$renderer</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$renderer</var></dt>
+					<dd><code>callable</code><br>$renderer</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-NiftyGrid.Column.html">NiftyGrid\Column</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setFormRenderer" id="_setFormRenderer">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-NiftyGrid.Column.html">NiftyGrid\Column</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setFormRenderer">#</a>
+		<code><a href="source-class-NiftyGrid.Column.html#148-157" title="Go to source code">setFormRenderer</a>( <span>callable <var>$renderer</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$renderer</var></dt>
+					<dd><code>callable</code><br>$renderer</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-NiftyGrid.Column.html">NiftyGrid\Column</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setCellRenderer" id="_setCellRenderer">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-NiftyGrid.Column.html">NiftyGrid\Column</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setCellRenderer">#</a>
+		<code><a href="source-class-NiftyGrid.Column.html#159-168" title="Go to source code">setCellRenderer</a>( <span>callable|string <var>$renderer</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$renderer</var></dt>
+					<dd><code>callable|string</code><br>$renderer</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-NiftyGrid.Column.html">NiftyGrid\Column</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getCellRenderer" id="_getCellRenderer">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getCellRenderer">#</a>
+		<code><a href="source-class-NiftyGrid.Column.html#170-180" title="Go to source code">getCellRenderer</a>( <span>array <var>$row</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$row</var></dt>
+					<dd><code>array</code><br>$row</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasCellRenderer" id="_hasCellRenderer">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasCellRenderer">#</a>
+		<code><a href="source-class-NiftyGrid.Column.html#182-188" title="Go to source code">hasCellRenderer</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setAutocomplete" id="_setAutocomplete">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-NiftyGrid.Column.html">NiftyGrid\Column</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setAutocomplete">#</a>
+		<code><a href="source-class-NiftyGrid.Column.html#190-214" title="Go to source code">setAutocomplete</a>( <span>integer <var>$numOfResults</var> = <span class="php-num">10</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$numOfResults</var></dt>
+					<dd><code>integer</code><br>$numOfResults</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-NiftyGrid.Column.html">NiftyGrid\Column</a></code></code><br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-NiftyGrid.InvalidFilterException.html">NiftyGrid\InvalidFilterException</a></code></code><br />
+					<code><code><a href="class-NiftyGrid.UnknownFilterException.html">NiftyGrid\UnknownFilterException</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAutocompleteResults" id="_getAutocompleteResults">
+
+		<td class="attributes"><code>
+			 public 
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAutocompleteResults">#</a>
+		<code><a href="source-class-NiftyGrid.Column.html#216-222" title="Go to source code">getAutocompleteResults</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>integer</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setTextEditable" id="_setTextEditable">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-NiftyGrid.Column.html">NiftyGrid\Column</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setTextEditable">#</a>
+		<code><a href="source-class-NiftyGrid.Column.html#224-239" title="Go to source code">setTextEditable</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-NiftyGrid.Column.html">NiftyGrid\Column</a></code></code><br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-NiftyGrid.DuplicateEditableColumnException.html">NiftyGrid\DuplicateEditableColumnException</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setSelectEditable" id="_setSelectEditable">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-NiftyGrid.Column.html">NiftyGrid\Column</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setSelectEditable">#</a>
+		<code><a href="source-class-NiftyGrid.Column.html#241-260" title="Go to source code">setSelectEditable</a>( <span>array <var>$values</var></span>, <span>string|null <var>$prompt</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$values</var></dt>
+					<dd><code>array</code><br>$values</dd>
+					<dt><var>$prompt</var></dt>
+					<dd><code>string|null</code><br>$prompt</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-NiftyGrid.Column.html">NiftyGrid\Column</a></code></code><br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-NiftyGrid.DuplicateEditableColumnException.html">NiftyGrid\DuplicateEditableColumnException</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setBooleanEditable" id="_setBooleanEditable">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-NiftyGrid.Column.html">NiftyGrid\Column</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setBooleanEditable">#</a>
+		<code><a href="source-class-NiftyGrid.Column.html#262-276" title="Go to source code">setBooleanEditable</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-NiftyGrid.Column.html">NiftyGrid\Column</a></code></code><br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-NiftyGrid.DuplicateEditableColumnException.html">NiftyGrid\DuplicateEditableColumnException</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDateEditable" id="_setDateEditable">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-NiftyGrid.Column.html">NiftyGrid\Column</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDateEditable">#</a>
+		<code><a href="source-class-NiftyGrid.Column.html#278-292" title="Go to source code">setDateEditable</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-NiftyGrid.Column.html">NiftyGrid\Column</a></code></code><br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-NiftyGrid.DuplicateEditableColumnException.html">NiftyGrid\DuplicateEditableColumnException</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setSortable" id="_setSortable">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-NiftyGrid.Column.html">NiftyGrid\Column</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setSortable">#</a>
+		<code><a href="source-class-NiftyGrid.Column.html#294-303" title="Go to source code">setSortable</a>( <span>boolean <var>$sortable</var> = <span class="php-keyword1">TRUE</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$sortable</var></dt>
+					<dd><code>boolean</code><br>$sortable</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-NiftyGrid.Column.html">NiftyGrid\Column</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isSortable" id="_isSortable">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isSortable">#</a>
+		<code><a href="source-class-NiftyGrid.Column.html#305-311" title="Go to source code">isSortable</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasFilter" id="_hasFilter">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasFilter">#</a>
+		<code><a href="source-class-NiftyGrid.Column.html#313-319" title="Go to source code">hasFilter</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getFilterType" id="_getFilterType">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFilterType">#</a>
+		<code><a href="source-class-NiftyGrid.Column.html#321-327" title="Go to source code">getFilterType</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setTextFilter" id="_setTextFilter">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-NiftyGrid.Column.html">NiftyGrid\Column</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setTextFilter">#</a>
+		<code><a href="source-class-NiftyGrid.Column.html#329-338" title="Go to source code">setTextFilter</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-NiftyGrid.Column.html">NiftyGrid\Column</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setNumericFilter" id="_setNumericFilter">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-NiftyGrid.Column.html">NiftyGrid\Column</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setNumericFilter">#</a>
+		<code><a href="source-class-NiftyGrid.Column.html#340-349" title="Go to source code">setNumericFilter</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-NiftyGrid.Column.html">NiftyGrid\Column</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setSelectFilter" id="_setSelectFilter">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-NiftyGrid.Column.html">NiftyGrid\Column</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setSelectFilter">#</a>
+		<code><a href="source-class-NiftyGrid.Column.html#351-365" title="Go to source code">setSelectFilter</a>( <span>array <var>$values</var></span>, <span>string <var>$prompt</var> = <span class="php-quote">&quot;-----&quot;</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$values</var></dt>
+					<dd><code>array</code><br>$values</dd>
+					<dt><var>$prompt</var></dt>
+					<dd><code>string</code><br>$prompt</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-NiftyGrid.Column.html">NiftyGrid\Column</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDateFilter" id="_setDateFilter">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-NiftyGrid.Column.html">NiftyGrid\Column</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setDateFilter">#</a>
+		<code><a href="source-class-NiftyGrid.Column.html#367-376" title="Go to source code">setDateFilter</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-NiftyGrid.Column.html">NiftyGrid\Column</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setBooleanFilter" id="_setBooleanFilter">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-NiftyGrid.Column.html">NiftyGrid\Column</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setBooleanFilter">#</a>
+		<code><a href="source-class-NiftyGrid.Column.html#378-389" title="Go to source code">setBooleanFilter</a>( <span>array <var>$values</var> = <span class="php-keyword1">array</span>(<span class="php-num">0</span> =&gt; <span class="php-quote">&quot;Ne&quot;</span>, <span class="php-num">1</span> =&gt; <span class="php-quote">&quot;Ano&quot;</span>)</span>, <span>string <var>$prompt</var> = <span class="php-quote">&quot;-----&quot;</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$values</var></dt>
+					<dd><code>array</code><br>$values</dd>
+					<dt><var>$prompt</var></dt>
+					<dd><code>string</code><br>$prompt</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-NiftyGrid.Column.html">NiftyGrid\Column</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Nette.Application.UI.PresenterComponent.html#methods">Nette\Application\UI\PresenterComponent</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Nette.Application.UI.PresenterComponent.html#___construct">__construct()</a>, 
+			<a href="class-Nette.Application.UI.PresenterComponent.html#_attached">attached()</a>, 
+			<a href="class-Nette.Application.UI.PresenterComponent.html#_checkRequirements">checkRequirements()</a>, 
+			<a href="class-Nette.Application.UI.PresenterComponent.html#_formatSignalMethod">formatSignalMethod()</a>, 
+			<a href="class-Nette.Application.UI.PresenterComponent.html#_getParameter">getParameter()</a>, 
+			<a href="class-Nette.Application.UI.PresenterComponent.html#_getParameterId">getParameterId()</a>, 
+			<a href="class-Nette.Application.UI.PresenterComponent.html#_getPersistentParams">getPersistentParams()</a>, 
+			<a href="class-Nette.Application.UI.PresenterComponent.html#_getPresenter">getPresenter()</a>, 
+			<a href="class-Nette.Application.UI.PresenterComponent.html#_getReflection">getReflection()</a>, 
+			<a href="class-Nette.Application.UI.PresenterComponent.html#_getUniqueId">getUniqueId()</a>, 
+			<a href="class-Nette.Application.UI.PresenterComponent.html#_isLinkCurrent">isLinkCurrent()</a>, 
+			<a href="class-Nette.Application.UI.PresenterComponent.html#_lazyLink">lazyLink()</a>, 
+			<a href="class-Nette.Application.UI.PresenterComponent.html#_link">link()</a>, 
+			<a href="class-Nette.Application.UI.PresenterComponent.html#_loadState">loadState()</a>, 
+			<a href="class-Nette.Application.UI.PresenterComponent.html#_offsetExists">offsetExists()</a>, 
+			<a href="class-Nette.Application.UI.PresenterComponent.html#_offsetGet">offsetGet()</a>, 
+			<a href="class-Nette.Application.UI.PresenterComponent.html#_offsetSet">offsetSet()</a>, 
+			<a href="class-Nette.Application.UI.PresenterComponent.html#_offsetUnset">offsetUnset()</a>, 
+			<a href="class-Nette.Application.UI.PresenterComponent.html#_redirect">redirect()</a>, 
+			<a href="class-Nette.Application.UI.PresenterComponent.html#_saveState">saveState()</a>, 
+			<a href="class-Nette.Application.UI.PresenterComponent.html#_signalReceived">signalReceived()</a>, 
+			<a href="class-Nette.Application.UI.PresenterComponent.html#_tryCall">tryCall()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Nette.ComponentModel.Container.html#methods">Nette\ComponentModel\Container</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Nette.ComponentModel.Container.html#___clone">__clone()</a>, 
+			<a href="class-Nette.ComponentModel.Container.html#_addComponent">addComponent()</a>, 
+			<a href="class-Nette.ComponentModel.Container.html#_createComponent">createComponent()</a>, 
+			<a href="class-Nette.ComponentModel.Container.html#_getComponent">getComponent()</a>, 
+			<a href="class-Nette.ComponentModel.Container.html#_getComponents">getComponents()</a>, 
+			<a href="class-Nette.ComponentModel.Container.html#_removeComponent">removeComponent()</a>, 
+			<a href="class-Nette.ComponentModel.Container.html#_validateChildComponent">validateChildComponent()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Nette.ComponentModel.Component.html#methods">Nette\ComponentModel\Component</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Nette.ComponentModel.Component.html#___sleep">__sleep()</a>, 
+			<a href="class-Nette.ComponentModel.Component.html#___wakeup">__wakeup()</a>, 
+			<a href="class-Nette.ComponentModel.Component.html#_detached">detached()</a>, 
+			<a href="class-Nette.ComponentModel.Component.html#_getName">getName()</a>, 
+			<a href="class-Nette.ComponentModel.Component.html#_getParent">getParent()</a>, 
+			<a href="class-Nette.ComponentModel.Component.html#_lookup">lookup()</a>, 
+			<a href="class-Nette.ComponentModel.Component.html#_lookupPath">lookupPath()</a>, 
+			<a href="class-Nette.ComponentModel.Component.html#_monitor">monitor()</a>, 
+			<a href="class-Nette.ComponentModel.Component.html#_unmonitor">unmonitor()</a>, 
+			<a href="class-Nette.ComponentModel.Component.html#_validateParent">validateParent()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Nette.Object.html#methods">Nette\Object</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Nette.Object.html#___call">__call()</a>, 
+			<a href="class-Nette.Object.html#___callStatic">__callStatic()</a>, 
+			<a href="class-Nette.Object.html#___get">__get()</a>, 
+			<a href="class-Nette.Object.html#___isset">__isset()</a>, 
+			<a href="class-Nette.Object.html#___set">__set()</a>, 
+			<a href="class-Nette.Object.html#___unset">__unset()</a>, 
+			<a href="class-Nette.Object.html#_extensionMethod">extensionMethod()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-Nette.ComponentModel.IComponent.html#methods">Nette\ComponentModel\IComponent</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Nette.ComponentModel.IComponent.html#_setParent">setParent()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+	<table class="summary inherited">
+	<caption>Constants inherited from <a href="class-Nette.ComponentModel.IComponent.html#constants">Nette\ComponentModel\IComponent</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Nette.ComponentModel.IComponent.html#NAME_SEPARATOR"><b>NAME_SEPARATOR</b></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="name" id="$name">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-NiftyGrid.Column.html#15-16" title="Go to source code"><var>$name</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$name" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="tableName" id="$tableName">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-NiftyGrid.Column.html#18-19" title="Go to source code"><var>$tableName</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$tableName" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="label" id="$label">
+		<td class="attributes"><code>
+			public  
+			callable|string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-NiftyGrid.Column.html#21-22" title="Go to source code"><var>$label</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$label" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="width" id="$width">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-NiftyGrid.Column.html#24-25" title="Go to source code"><var>$width</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$width" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="truncate" id="$truncate">
+		<td class="attributes"><code>
+			public  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-NiftyGrid.Column.html#27-28" title="Go to source code"><var>$truncate</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$truncate" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="renderCallback" id="$renderCallback">
+		<td class="attributes"><code>
+			public  
+			callable
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-NiftyGrid.Column.html#30-31" title="Go to source code"><var>$renderCallback</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$renderCallback" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="formRenderer" id="$formRenderer">
+		<td class="attributes"><code>
+			public  
+			callable
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-NiftyGrid.Column.html#33-34" title="Go to source code"><var>$formRenderer</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$formRenderer" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="cellRenderer" id="$cellRenderer">
+		<td class="attributes"><code>
+			public  
+			callable|string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-NiftyGrid.Column.html#36-37" title="Go to source code"><var>$cellRenderer</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$cellRenderer" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="sortable" id="$sortable">
+		<td class="attributes"><code>
+			public  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-NiftyGrid.Column.html#39-40" title="Go to source code"><var>$sortable</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">TRUE</span></code></td>
+		<td class="description"><div>
+			<a href="#$sortable" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="filterType" id="$filterType">
+		<td class="attributes"><code>
+			public  
+			string
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-NiftyGrid.Column.html#42-43" title="Go to source code"><var>$filterType</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$filterType" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="autocomplete" id="$autocomplete">
+		<td class="attributes"><code>
+			public  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-NiftyGrid.Column.html#45-46" title="Go to source code"><var>$autocomplete</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">FALSE</span></code></td>
+		<td class="description"><div>
+			<a href="#$autocomplete" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="autocompleteResults" id="$autocompleteResults">
+		<td class="attributes"><code>
+			public  
+			integer
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-NiftyGrid.Column.html#48-49" title="Go to source code"><var>$autocompleteResults</var></a>
+		</td>
+		<td class="value"><code><span class="php-num">10</span></code></td>
+		<td class="description"><div>
+			<a href="#$autocompleteResults" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="editable" id="$editable">
+		<td class="attributes"><code>
+			public  
+			boolean
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-NiftyGrid.Column.html#51-52" title="Go to source code"><var>$editable</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">FALSE</span></code></td>
+		<td class="description"><div>
+			<a href="#$editable" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="parent" id="$parent">
+		<td class="attributes"><code>
+			public  
+			<code><a href="class-NiftyGrid.Grid.html">NiftyGrid\Grid</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-NiftyGrid.Column.html#54-55" title="Go to source code"><var>$parent</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$parent" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+	<table class="summary inherited">
+	<caption>Properties inherited from <a href="class-Nette.Application.UI.PresenterComponent.html#properties">Nette\Application\UI\PresenterComponent</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Nette.Application.UI.PresenterComponent.html#$params"><var>$params</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+	<table class="summary inherited">
+	<caption>Magic properties inherited from <a href="class-Nette.Application.UI.PresenterComponent.html#properties">Nette\Application\UI\PresenterComponent</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Nette.Application.UI.PresenterComponent.html#m$presenter"><var>$presenter</var></a>, 
+			<a href="class-Nette.Application.UI.PresenterComponent.html#m$uniqueId"><var>$uniqueId</var></a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Magic properties inherited from <a href="class-Nette.ComponentModel.Container.html#properties">Nette\ComponentModel\Container</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Nette.ComponentModel.Container.html#m$components"><var>$components</var></a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Magic properties inherited from <a href="class-Nette.ComponentModel.Component.html#properties">Nette\ComponentModel\Component</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Nette.ComponentModel.Component.html#m$name"><var>$name</var></a>, 
+			<a href="class-Nette.ComponentModel.Component.html#m$parent"><var>$parent</var></a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary inherited">
+	<caption>Magic properties inherited from <a href="class-Nette.Object.html#properties">Nette\Object</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Nette.Object.html#m$reflection"><var>$reflection</var></a>
+		</code></td>
+	</tr>
+	</table>
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
