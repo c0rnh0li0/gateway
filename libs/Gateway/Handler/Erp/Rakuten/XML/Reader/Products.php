@@ -4,12 +4,13 @@ namespace Gateway\Handler\Erp\Rakuten\XML\Reader;
 
 use Gateway\Handler\Erp\Rakuten\XML\Reader,
     Gateway\IHandler,
-    Gateway\Utils;
+    Gateway\Utils, 
+	Rakuten\Handlers;
 
 /**
  * Products XML to DataSource handler.
  *
- * @author Lukas Bruha
+ * @author Darko Krstev
  */
 class Products extends Reader {
 
@@ -67,21 +68,116 @@ class Products extends Reader {
         
         $logAttrList = count($this->validAttributes) ? implode(", ", $this->validAttributes) : 'none'; 
         Utils::log(sprintf("Allowed products attribute(s): %s", $logAttrList));
-        
+		
+		$all_products = array();
+		
         foreach ($xml->products as $xmlProduct) {
+        	// 0 = simple, 1 = configurable
+            $typeKey = (int) $xmlProduct['products_master_flag'];
+            $isBundle = (isset($xmlProduct['products_bundle_flag']) && ((int) $xmlProduct['products_bundle_flag'])) ? true : false;
+			
+        	
+			/* Deal with descriptions */
             // product description
             $xmlProductDescriptionPattern = '//products_description[@products_id=' . $xmlProduct['products_id'] . ']';
             $xmlProductDescription = $xml->xpath($xmlProductDescriptionPattern);
             $xmlProductDescription = current($xmlProductDescription);
+			
+			$descriptions = array(
+				'name' => (string) $xmlProductDescription['products_name'],
+				'description' => trim((string) $xmlProductDescription['products_description']),
+				'shortDescription' => trim((string) $xmlProductDescription['products_short_description']),
+				'metaTitle' => trim((string) $xmlProductDescription['products_name']),
+				'metaDescription' => trim(strip_tags((string) $xmlProductDescription['products_short_description'])),
+				'metaKeywords' => trim((string) $xmlProductDescription['products_keywords'])
+			);
 
-            // 0 = simple, 1 = configurable
-            $typeKey = (int) $xmlProduct['products_master_flag'];
-            $isBundle = (isset($xmlProduct['products_bundle_flag']) && ((int) $xmlProduct['products_bundle_flag'])) ? true : false;
-            
+			/* Deal with attributes */
+			$xmlProductAttributesPattern = '//product_keys/attributes[@products_id=' . $xmlProduct['products_id'] . ']';
+	        $productAttributes = current($xml->xpath($xmlProductAttributesPattern));
+	  		$available_attributes = array();
+	                
+	        // creating product attributes arrays and adding them to product
+	        if ($productAttributes !== false) {
+	            
+	            $logValid = array();
+	            $logInvalid = array();
+	            
+	            foreach ($productAttributes as $productAttribute) {
+	                $lang = \Gateway\DataSource\Entity\Product\Attribute::NOT_LOCALIZED;
+	      				if (isset($productAttribute['language_id']))
+	                    $lang = (string) $productAttribute['language_id'];
+					
+					$available_attributes[] = array(
+						'label' => isset($productAttribute['label']) ? (string) $productAttribute['label'] : false, 
+						'name' => (string) $productAttribute['name'], 
+						'value' => (string) $productAttribute['value'], 
+						'lang' => $lang
+					);
+	            }
+	        }
+
+			/* Deal with categories */
+			$xmlProductCategoriesPattern = '//products_to_categories[@products_id=' . $xmlProduct['products_id'] . ']';
+	        $productCategories = $xml->xpath($xmlProductCategoriesPattern);
+	  		$product_categories = array();
+	                
+	        // creating product attributes arrays and adding them to product
+	        if ($productCategories !== false) {
+	            foreach ($productCategories as $productCategory) {
+	                $product_categories[] = (string) $productCategory['categories_id'];
+	            }
+	        }
+			
+			
+			// IMAGES
+            // images names must be converted from IMAGE_01.jpg[;IMAGE_0n.jpg] to array
+            $xmlImagesNames = (string) $xmlProduct['products_image'];
+            $product_images = array();
+            // if images found, we pass them
+            if ($xmlImagesNames) {
+                $xmlImagesNames = explode(";", $xmlImagesNames);
+
+                foreach ($xmlImagesNames as $index => $image) {
+                	$product_images[] = $image;
+					
+					/*
+                    // always the first image is thumbnail, small etc. in XML
+                    if ($index == 0) {
+                    	$product->addImage($image, \Gateway\DataSource\Entity\Product\IImage::TYPE_PREVIEW);
+                        $product->addImage($image, \Gateway\DataSource\Entity\Product\IImage::TYPE_PREVIEW_MEDIUM);
+                        $product->addImage($image, \Gateway\DataSource\Entity\Product\IImage::TYPE_PREVIEW_SMALL);
+                    } else {
+                        // the rest is gallery type
+                        $product->addImage($image);
+                    }
+					*/ 
+                }
+            }
+
+
+			$product = $this->createProduct($typeKey, $isBundle);
+			
+			$attributes_array = array(
+				'products_description' => $descriptions, 
+				'attributes' => $available_attributes, 
+				'categories' => $product_categories, 
+				'images' => $product_images
+			);
+			
+			$product_array = $product->buildProduct($xmlProduct, $attributes_array);
+			
+			// $product->sku = (string) $xmlProduct['products_model'];
+			
+			$all_products[] = $product_array;
+			
+			/*
             //$isMaster = isset($xmlProduct['products_master_model']) && (int) $xmlProduct['products_master_model'] ? true : false;
             $attributeSet = "default"; // FIXME put this information into XML as eg. <attributes products_id="13352" set="tshirt">
 
-            $product = $this->createProduct($typeKey, $isBundle);
+            
+			
+			
             $product->id = (int) $xmlProduct['products_id'];
             $product->sku = (string) $xmlProduct['products_model'];
             $product->price = (string) $xmlProduct['products_regularprice'];
@@ -99,28 +195,9 @@ class Products extends Reader {
             $product->addSpecialProperty('shippingTime', (string) $xmlProduct['products_shippingtime']);
             $product->addSpecialProperty('ean', (string) $xmlProduct['products_ean']);
             
-            // localized description 
-            $xmlProductDescriptionPattern = '//products_description[@products_id=' . $product->id . ']';
-            $xmlProductDescription = $xml->xpath($xmlProductDescriptionPattern);
+            */
 
-            foreach ($xmlProductDescription as $xmlDesc) {
-                $lang = \Gateway\DataSource\Entity\Product\Attribute::NOT_LOCALIZED;
-                
-                // if lang isset, we pass it, else default one is left
-                if (isset($xmlDesc['language_id'])) {
-                    $lang = (string) $xmlDesc['language_id'];
-                }
-
-                $description = new \Gateway\DataSource\Entity\Product\Description($lang);
-                $description->name = (string) $xmlDesc['products_name'];
-                $description->description = trim((string) $xmlDesc['products_description']);
-                $description->shortDescription = trim((string) $xmlDesc['products_short_description']);
-                $description->metaTitle = trim((string) $xmlDesc['products_name']); // metaTitle not set in XML
-                $description->metaDescription = trim(strip_tags((string) $xmlDesc['products_short_description'])); // metaDescription not set in XML
-                $description->metaKeywords = trim((string) $xmlDesc['products_keywords']);
-
-                $product->addDescription($description);
-            }
+            
 
             $this->loadCategories($xml, $xmlProduct, $product);
             // searches all current product categories IDs
@@ -169,6 +246,7 @@ class Products extends Reader {
             dump($product->getCategories());
             exit;*/
 
+            /*
             if ($product->type == \Gateway\DataSource\Entity\IProduct::TYPE_BUNDLE) {
                 // FIXME currently bundle products are skipped
                 Utils::log(sprintf("Skipping bundle product '%s'.", $product->sku));
@@ -251,7 +329,9 @@ class Products extends Reader {
                     Utils::log(\Logger\ILogger::DEBUG, $msg);
                 //}
             }
-
+			*/
+			
+			/*
             // MANUFACTURER
             if (isset($xmlProduct['manufacturers_id']) && $xmlProduct['manufacturers_id']) {
                 $xmlManufacturerPattern = '//manufacturers[@manufacturers_id=' . $xmlProduct['manufacturers_id'] . ']';
@@ -282,14 +362,15 @@ class Products extends Reader {
                     }
                 }
             }
-
+			*/
+			
             // RELATED, UPSELL AND CROSS-SELL PRODUCT SKUS
-            $product->addSpecialProperty('reSkus', (string) $xmlProduct['products_relations_related']);
-            $product->addSpecialProperty('usSkus', (string) $xmlProduct['products_relations_up']);
-            $product->addSpecialProperty('csSkus', (string) $xmlProduct['products_relations_cross']);
+            //$product->addSpecialProperty('reSkus', (string) $xmlProduct['products_relations_related']);
+            //$product->addSpecialProperty('usSkus', (string) $xmlProduct['products_relations_up']);
+            //$product->addSpecialProperty('csSkus', (string) $xmlProduct['products_relations_cross']);
             
             // and adding to collection
-            $products->add($product);
+            //$products->add($product);
             
             /*dump($product);
             exit;*/
@@ -299,6 +380,9 @@ class Products extends Reader {
                 break;
             }
         }
+
+		print_r($all_products);
+		die;
         
         Utils::log("%s products has been parsed.", $products->count());
 
@@ -340,6 +424,10 @@ class Products extends Reader {
      * @return \Gateway\DataSource\Entity\Product\Simple
      */
     protected function createProduct($typeKey = 0, $isBundle = false) {
+    	require_once(WWW_DIR . "/../libs/Rakuten/Handlers/Products.php");
+    	return new \Rakuten\Handlers\Products();
+		
+		/*
         // FIXME use mapping for this
         if ($isBundle) {
             $product = new \Gateway\DataSource\Entity\Product\Bundle();
@@ -350,6 +438,7 @@ class Products extends Reader {
         }
 
         return $product;
+		*/ 
     }
     
     /**

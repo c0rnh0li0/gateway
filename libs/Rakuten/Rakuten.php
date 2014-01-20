@@ -1,7 +1,8 @@
 <?php
-	namespace Rakuten\Engine;
+	namespace Rakuten;
 	
-	use Rakuten\Configuration, \CURL;
+	use Rakuten\Configuration, 
+		\CURL;
 	
 	require_once(WWW_DIR . "/../libs/Rakuten/Configuration/config.inc");
 	

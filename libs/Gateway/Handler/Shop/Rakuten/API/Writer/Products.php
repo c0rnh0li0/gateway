@@ -29,7 +29,6 @@ class Products extends \Gateway\Handler\Shop\Rakuten\API\Writer {
     public function process() {
     	$client = $this->getClient();
     	
-		die("client created");
         Utils::log(">>> " . get_class($this) . " <<<");
 
         // FIXME check when setting datasource

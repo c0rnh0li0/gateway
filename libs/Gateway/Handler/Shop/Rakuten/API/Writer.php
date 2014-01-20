@@ -6,9 +6,7 @@ use Gateway\IConnection,
 	Rakuten\Engine\Rakuten, 
 	Rakuten\Configuration\Rakuten_Config;
 	
-require_once(WWW_DIR . "/../libs/Rakuten/Engine/Rakuten.php");
-//require_once(WWW_DIR . "/../libs/Magmi/integration/inc/magmi_datapump.php");
-//require_once(WWW_DIR . "/../libs/Magmi/inc/magmi_config.php");
+require_once(WWW_DIR . "/../libs/Rakuten/Rakuten.php");
 
 /**
  * An adapter for writing DS to be passed to Magento.
