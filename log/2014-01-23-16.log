@@ -1,0 +1,130 @@
+2014-01-23T16:24:11+01:00 WARNING mem(real/peak):33.55MB/33.06MB ===> MANUAL EXECUTION: Process '846' was started manually, not by CRON job...
+2014-01-23T16:24:11+01:00 INFO mem(real/peak):33.55MB/33.08MB ===> Schedule '846' has been already processed or does not exists.
+2014-01-23T16:24:22+01:00 WARNING mem(real/peak):33.55MB/33.06MB ===> MANUAL EXECUTION: Process '846' was started manually, not by CRON job...
+2014-01-23T16:24:22+01:00 INFO mem(real/peak):33.55MB/33.08MB ===> Schedule '846' has been already processed or does not exists.
+2014-01-23T16:24:59+01:00 WARNING mem(real/peak):33.55MB/33.06MB ===> MANUAL EXECUTION: Process '846' was started manually, not by CRON job...
+2014-01-23T16:24:59+01:00 INFO mem(real/peak):33.55MB/33.08MB ===> ====================== BEGIN (schedule id = 846) ==================
+2014-01-23T16:24:59+01:00 INFO mem(real/peak):33.55MB/33.09MB ===> Schedule '846' has been executed.
+2014-01-23T16:24:59+01:00 INFO mem(real/peak):33.55MB/33.12MB ===> Report for schedule '846' was saved.
+2014-01-23T16:24:59+01:00 INFO mem(real/peak):35.65MB/35.23MB ===> Processing connection 'rakutenTEST'...
+2014-01-23T16:24:59+01:00 INFO mem(real/peak):35.65MB/35.23MB ===> Destination: shop
+2014-01-23T16:24:59+01:00 INFO mem(real/peak):35.65MB/35.23MB ===> Source input passing to 'Gateway\Handler\Erp\Rakuten\XML\Reader\Categories' input.
+2014-01-23T16:25:01+01:00 INFO mem(real/peak):36.70MB/37.01MB ===> Passing processed datasource from 'Gateway\Handler\Erp\Rakuten\XML\Reader\Categories' to 'Gateway\Handler\Shop\Rakuten\API\Writer\Categories' writer.
+2014-01-23T16:28:08+01:00 WARNING mem(real/peak):33.55MB/33.06MB ===> MANUAL EXECUTION: Process '846' was started manually, not by CRON job...
+2014-01-23T16:28:08+01:00 INFO mem(real/peak):33.55MB/33.08MB ===> Schedule '846' has been already processed or does not exists.
+2014-01-23T16:28:13+01:00 WARNING mem(real/peak):33.55MB/33.06MB ===> MANUAL EXECUTION: Process '846' was started manually, not by CRON job...
+2014-01-23T16:28:13+01:00 INFO mem(real/peak):33.55MB/33.08MB ===> ====================== BEGIN (schedule id = 846) ==================
+2014-01-23T16:28:13+01:00 INFO mem(real/peak):33.55MB/33.09MB ===> Schedule '846' has been executed.
+2014-01-23T16:28:13+01:00 INFO mem(real/peak):33.55MB/33.12MB ===> Report for schedule '846' was saved.
+2014-01-23T16:28:13+01:00 INFO mem(real/peak):35.65MB/35.23MB ===> Processing connection 'rakutenTEST'...
+2014-01-23T16:28:13+01:00 INFO mem(real/peak):35.65MB/35.23MB ===> Destination: shop
+2014-01-23T16:28:13+01:00 INFO mem(real/peak):35.65MB/35.23MB ===> Source input passing to 'Gateway\Handler\Erp\Rakuten\XML\Reader\Categories' input.
+2014-01-23T16:28:15+01:00 INFO mem(real/peak):36.44MB/37.01MB ===> Passing processed datasource from 'Gateway\Handler\Erp\Rakuten\XML\Reader\Categories' to 'Gateway\Handler\Shop\Rakuten\API\Writer\Categories' writer.
+2014-01-23T16:28:15+01:00 INFO mem(real/peak):36.44MB/37.01MB ===> FAIL: Connection 'rakutenTEST' processing interrupted. Reason: Invalid input format. XML is expected.
+2014-01-23T16:28:15+01:00 INFO mem(real/peak):36.44MB/37.01MB ===> Error during processing execute action. Updating scheduler...
+2014-01-23T16:28:15+01:00 INFO mem(real/peak):36.44MB/37.01MB ===> Schedule '846' was finished.
+2014-01-23T16:28:15+01:00 INFO mem(real/peak):36.44MB/37.01MB ===> Scheduler updated.
+2014-01-23T16:28:15+01:00 INFO mem(real/peak):36.44MB/37.01MB ===> Cancelled with error.
+2014-01-23T16:28:15+01:00 INFO mem(real/peak):36.44MB/37.01MB ===> Schedule ID = '846' completed.
+2014-01-23T16:28:15+01:00 INFO mem(real/peak):36.44MB/37.01MB ===> ===================== END  (schedule id = 846) =====================
+2014-01-23T16:30:22+01:00 WARNING mem(real/peak):33.55MB/33.06MB ===> MANUAL EXECUTION: Process '846' was started manually, not by CRON job...
+2014-01-23T16:30:22+01:00 INFO mem(real/peak):33.55MB/33.08MB ===> ====================== BEGIN (schedule id = 846) ==================
+2014-01-23T16:30:22+01:00 INFO mem(real/peak):33.55MB/33.09MB ===> Schedule '846' has been executed.
+2014-01-23T16:30:22+01:00 INFO mem(real/peak):33.55MB/33.12MB ===> Report for schedule '846' was saved.
+2014-01-23T16:30:22+01:00 INFO mem(real/peak):35.65MB/35.24MB ===> Processing connection 'rakutenTEST'...
+2014-01-23T16:30:22+01:00 INFO mem(real/peak):35.65MB/35.24MB ===> Destination: shop
+2014-01-23T16:30:22+01:00 INFO mem(real/peak):35.65MB/35.24MB ===> Source input passing to 'Gateway\Handler\Erp\Rakuten\XML\Reader\Categories' input.
+2014-01-23T16:30:24+01:00 INFO mem(real/peak):36.18MB/37.01MB ===> Passing processed datasource from 'Gateway\Handler\Erp\Rakuten\XML\Reader\Categories' to 'Gateway\Handler\Shop\Rakuten\API\Writer\Categories' writer.
+2014-01-23T16:30:24+01:00 INFO mem(real/peak):36.18MB/37.01MB ===> FAIL: Connection 'rakutenTEST' processing interrupted. Reason: Invalid input format. XML is expected.
+2014-01-23T16:30:24+01:00 INFO mem(real/peak):36.18MB/37.01MB ===> Error during processing execute action. Updating scheduler...
+2014-01-23T16:30:24+01:00 INFO mem(real/peak):36.18MB/37.01MB ===> Schedule '846' was finished.
+2014-01-23T16:30:24+01:00 INFO mem(real/peak):36.18MB/37.01MB ===> Scheduler updated.
+2014-01-23T16:30:24+01:00 INFO mem(real/peak):36.18MB/37.01MB ===> Cancelled with error.
+2014-01-23T16:30:24+01:00 INFO mem(real/peak):36.18MB/37.01MB ===> Schedule ID = '846' completed.
+2014-01-23T16:30:24+01:00 INFO mem(real/peak):36.18MB/37.01MB ===> ===================== END  (schedule id = 846) =====================
+2014-01-23T16:35:58+01:00 WARNING mem(real/peak):33.55MB/33.07MB ===> MANUAL EXECUTION: Process '846' was started manually, not by CRON job...
+2014-01-23T16:35:58+01:00 INFO mem(real/peak):33.55MB/33.08MB ===> Schedule '846' has been already processed or does not exists.
+2014-01-23T16:47:42+01:00 WARNING mem(real/peak):33.55MB/33.07MB ===> MANUAL EXECUTION: Process '846' was started manually, not by CRON job...
+2014-01-23T16:47:42+01:00 INFO mem(real/peak):33.55MB/33.08MB ===> ====================== BEGIN (schedule id = 846) ==================
+2014-01-23T16:47:42+01:00 INFO mem(real/peak):33.55MB/33.09MB ===> Schedule '846' has been executed.
+2014-01-23T16:47:42+01:00 INFO mem(real/peak):33.55MB/33.12MB ===> Report for schedule '846' was saved.
+2014-01-23T16:47:43+01:00 INFO mem(real/peak):35.65MB/35.24MB ===> Processing connection 'rakutenTEST'...
+2014-01-23T16:47:43+01:00 INFO mem(real/peak):35.65MB/35.24MB ===> Destination: shop
+2014-01-23T16:47:43+01:00 INFO mem(real/peak):35.65MB/35.24MB ===> Source input passing to 'Gateway\Handler\Erp\Rakuten\XML\Reader\Categories' input.
+2014-01-23T16:47:44+01:00 INFO mem(real/peak):36.18MB/37.01MB ===> Passing processed datasource from 'Gateway\Handler\Erp\Rakuten\XML\Reader\Categories' to 'Gateway\Handler\Shop\Rakuten\API\Writer\Categories' writer.
+2014-01-23T16:48:00+01:00 WARNING mem(real/peak):33.55MB/33.07MB ===> MANUAL EXECUTION: Process '846' was started manually, not by CRON job...
+2014-01-23T16:48:00+01:00 INFO mem(real/peak):33.55MB/33.09MB ===> Schedule '846' has been already processed or does not exists.
+2014-01-23T16:48:09+01:00 WARNING mem(real/peak):33.55MB/33.07MB ===> MANUAL EXECUTION: Process '846' was started manually, not by CRON job...
+2014-01-23T16:48:09+01:00 INFO mem(real/peak):33.55MB/33.08MB ===> ====================== BEGIN (schedule id = 846) ==================
+2014-01-23T16:48:09+01:00 INFO mem(real/peak):33.55MB/33.09MB ===> Schedule '846' has been executed.
+2014-01-23T16:48:09+01:00 INFO mem(real/peak):33.55MB/33.12MB ===> Report for schedule '846' was saved.
+2014-01-23T16:48:09+01:00 INFO mem(real/peak):35.65MB/35.24MB ===> Processing connection 'rakutenTEST'...
+2014-01-23T16:48:09+01:00 INFO mem(real/peak):35.65MB/35.24MB ===> Destination: shop
+2014-01-23T16:48:09+01:00 INFO mem(real/peak):35.65MB/35.24MB ===> Source input passing to 'Gateway\Handler\Erp\Rakuten\XML\Reader\Categories' input.
+2014-01-23T16:48:11+01:00 INFO mem(real/peak):36.44MB/37.01MB ===> Passing processed datasource from 'Gateway\Handler\Erp\Rakuten\XML\Reader\Categories' to 'Gateway\Handler\Shop\Rakuten\API\Writer\Categories' writer.
+2014-01-23T16:50:11+01:00 WARNING mem(real/peak):33.55MB/33.07MB ===> MANUAL EXECUTION: Process '846' was started manually, not by CRON job...
+2014-01-23T16:50:11+01:00 INFO mem(real/peak):33.55MB/33.08MB ===> Schedule '846' has been already processed or does not exists.
+2014-01-23T16:50:16+01:00 WARNING mem(real/peak):33.55MB/33.07MB ===> MANUAL EXECUTION: Process '846' was started manually, not by CRON job...
+2014-01-23T16:50:16+01:00 INFO mem(real/peak):33.55MB/33.09MB ===> ====================== BEGIN (schedule id = 846) ==================
+2014-01-23T16:50:16+01:00 INFO mem(real/peak):33.55MB/33.10MB ===> Schedule '846' has been executed.
+2014-01-23T16:50:16+01:00 INFO mem(real/peak):33.55MB/33.13MB ===> Report for schedule '846' was saved.
+2014-01-23T16:50:16+01:00 INFO mem(real/peak):35.65MB/35.24MB ===> Processing connection 'rakutenTEST'...
+2014-01-23T16:50:16+01:00 INFO mem(real/peak):35.65MB/35.24MB ===> Destination: shop
+2014-01-23T16:50:16+01:00 INFO mem(real/peak):35.65MB/35.24MB ===> Source input passing to 'Gateway\Handler\Erp\Rakuten\XML\Reader\Categories' input.
+2014-01-23T16:50:18+01:00 INFO mem(real/peak):36.70MB/37.02MB ===> Passing processed datasource from 'Gateway\Handler\Erp\Rakuten\XML\Reader\Categories' to 'Gateway\Handler\Shop\Rakuten\API\Writer\Categories' writer.
+2014-01-23T16:50:18+01:00 INFO mem(real/peak):36.70MB/37.02MB ===> FAIL: Connection 'rakutenTEST' processing interrupted. Reason: Invalid input format. XML is expected.
+2014-01-23T16:50:18+01:00 INFO mem(real/peak):36.70MB/37.02MB ===> Error during processing execute action. Updating scheduler...
+2014-01-23T16:50:18+01:00 INFO mem(real/peak):36.70MB/37.02MB ===> Schedule '846' was finished.
+2014-01-23T16:50:18+01:00 INFO mem(real/peak):36.70MB/37.02MB ===> Scheduler updated.
+2014-01-23T16:50:18+01:00 INFO mem(real/peak):36.70MB/37.02MB ===> Cancelled with error.
+2014-01-23T16:50:18+01:00 INFO mem(real/peak):36.70MB/37.02MB ===> Schedule ID = '846' completed.
+2014-01-23T16:50:18+01:00 INFO mem(real/peak):36.70MB/37.02MB ===> ===================== END  (schedule id = 846) =====================
+2014-01-23T16:51:08+01:00 WARNING mem(real/peak):33.55MB/33.07MB ===> MANUAL EXECUTION: Process '846' was started manually, not by CRON job...
+2014-01-23T16:51:08+01:00 INFO mem(real/peak):33.55MB/33.09MB ===> ====================== BEGIN (schedule id = 846) ==================
+2014-01-23T16:51:08+01:00 INFO mem(real/peak):33.55MB/33.09MB ===> Schedule '846' has been executed.
+2014-01-23T16:51:08+01:00 INFO mem(real/peak):33.55MB/33.13MB ===> Report for schedule '846' was saved.
+2014-01-23T16:51:09+01:00 INFO mem(real/peak):35.65MB/35.24MB ===> Processing connection 'rakutenTEST'...
+2014-01-23T16:51:09+01:00 INFO mem(real/peak):35.65MB/35.24MB ===> Destination: shop
+2014-01-23T16:51:09+01:00 INFO mem(real/peak):35.65MB/35.24MB ===> Source input passing to 'Gateway\Handler\Erp\Rakuten\XML\Reader\Categories' input.
+2014-01-23T16:51:10+01:00 INFO mem(real/peak):36.70MB/37.01MB ===> Passing processed datasource from 'Gateway\Handler\Erp\Rakuten\XML\Reader\Categories' to 'Gateway\Handler\Shop\Rakuten\API\Writer\Categories' writer.
+2014-01-23T16:51:10+01:00 INFO mem(real/peak):36.70MB/37.01MB ===> FAIL: Connection 'rakutenTEST' processing interrupted. Reason: Invalid input format. XML is expected.
+2014-01-23T16:51:10+01:00 INFO mem(real/peak):36.70MB/37.01MB ===> Error during processing execute action. Updating scheduler...
+2014-01-23T16:51:10+01:00 INFO mem(real/peak):36.70MB/37.01MB ===> Schedule '846' was finished.
+2014-01-23T16:51:10+01:00 INFO mem(real/peak):36.70MB/37.01MB ===> Scheduler updated.
+2014-01-23T16:51:10+01:00 INFO mem(real/peak):36.70MB/37.01MB ===> Cancelled with error.
+2014-01-23T16:51:10+01:00 INFO mem(real/peak):36.70MB/37.01MB ===> Schedule ID = '846' completed.
+2014-01-23T16:51:10+01:00 INFO mem(real/peak):36.70MB/37.01MB ===> ===================== END  (schedule id = 846) =====================
+2014-01-23T16:54:09+01:00 WARNING mem(real/peak):33.55MB/33.07MB ===> MANUAL EXECUTION: Process '846' was started manually, not by CRON job...
+2014-01-23T16:54:09+01:00 INFO mem(real/peak):33.55MB/33.08MB ===> Schedule '846' has been already processed or does not exists.
+2014-01-23T16:54:37+01:00 WARNING mem(real/peak):33.55MB/33.07MB ===> MANUAL EXECUTION: Process '846' was started manually, not by CRON job...
+2014-01-23T16:54:37+01:00 INFO mem(real/peak):33.55MB/33.09MB ===> ====================== BEGIN (schedule id = 846) ==================
+2014-01-23T16:54:37+01:00 INFO mem(real/peak):33.55MB/33.10MB ===> Schedule '846' has been executed.
+2014-01-23T16:54:37+01:00 INFO mem(real/peak):33.55MB/33.13MB ===> Report for schedule '846' was saved.
+2014-01-23T16:54:37+01:00 INFO mem(real/peak):35.65MB/35.24MB ===> Processing connection 'rakutenTEST'...
+2014-01-23T16:54:37+01:00 INFO mem(real/peak):35.65MB/35.24MB ===> Destination: shop
+2014-01-23T16:54:37+01:00 INFO mem(real/peak):35.65MB/35.24MB ===> Source input passing to 'Gateway\Handler\Erp\Rakuten\XML\Reader\Categories' input.
+2014-01-23T16:54:39+01:00 INFO mem(real/peak):36.44MB/37.02MB ===> Passing processed datasource from 'Gateway\Handler\Erp\Rakuten\XML\Reader\Categories' to 'Gateway\Handler\Shop\Rakuten\API\Writer\Categories' writer.
+2014-01-23T16:54:39+01:00 INFO mem(real/peak):36.44MB/37.02MB ===> FAIL: Connection 'rakutenTEST' processing interrupted. Reason: Invalid input format. XML is expected.
+2014-01-23T16:54:39+01:00 INFO mem(real/peak):36.44MB/37.02MB ===> Error during processing execute action. Updating scheduler...
+2014-01-23T16:54:39+01:00 INFO mem(real/peak):36.44MB/37.02MB ===> Schedule '846' was finished.
+2014-01-23T16:54:39+01:00 INFO mem(real/peak):36.44MB/37.02MB ===> Scheduler updated.
+2014-01-23T16:54:39+01:00 INFO mem(real/peak):36.44MB/37.02MB ===> Cancelled with error.
+2014-01-23T16:54:39+01:00 INFO mem(real/peak):36.44MB/37.02MB ===> Schedule ID = '846' completed.
+2014-01-23T16:54:39+01:00 INFO mem(real/peak):36.44MB/37.02MB ===> ===================== END  (schedule id = 846) =====================
+2014-01-23T16:59:13+01:00 WARNING mem(real/peak):33.55MB/33.07MB ===> MANUAL EXECUTION: Process '846' was started manually, not by CRON job...
+2014-01-23T16:59:13+01:00 INFO mem(real/peak):33.55MB/33.09MB ===> Schedule '846' has been already processed or does not exists.
+2014-01-23T16:59:18+01:00 WARNING mem(real/peak):33.55MB/33.07MB ===> MANUAL EXECUTION: Process '846' was started manually, not by CRON job...
+2014-01-23T16:59:18+01:00 INFO mem(real/peak):33.55MB/33.09MB ===> ====================== BEGIN (schedule id = 846) ==================
+2014-01-23T16:59:18+01:00 INFO mem(real/peak):33.55MB/33.10MB ===> Schedule '846' has been executed.
+2014-01-23T16:59:18+01:00 INFO mem(real/peak):33.55MB/33.13MB ===> Report for schedule '846' was saved.
+2014-01-23T16:59:18+01:00 INFO mem(real/peak):35.65MB/35.24MB ===> Processing connection 'rakutenTEST'...
+2014-01-23T16:59:18+01:00 INFO mem(real/peak):35.65MB/35.24MB ===> Destination: shop
+2014-01-23T16:59:18+01:00 INFO mem(real/peak):35.65MB/35.24MB ===> Source input passing to 'Gateway\Handler\Erp\Rakuten\XML\Reader\Categories' input.
+2014-01-23T16:59:20+01:00 INFO mem(real/peak):36.18MB/37.02MB ===> Passing processed datasource from 'Gateway\Handler\Erp\Rakuten\XML\Reader\Categories' to 'Gateway\Handler\Shop\Rakuten\API\Writer\Categories' writer.
+2014-01-23T16:59:20+01:00 INFO mem(real/peak):36.18MB/37.02MB ===> FAIL: Connection 'rakutenTEST' processing interrupted. Reason: Invalid input format. XML is expected.
+2014-01-23T16:59:20+01:00 INFO mem(real/peak):36.18MB/37.02MB ===> Error during processing execute action. Updating scheduler...
+2014-01-23T16:59:20+01:00 INFO mem(real/peak):36.18MB/37.02MB ===> Schedule '846' was finished.
+2014-01-23T16:59:20+01:00 INFO mem(real/peak):36.18MB/37.02MB ===> Scheduler updated.
+2014-01-23T16:59:20+01:00 INFO mem(real/peak):36.18MB/37.02MB ===> Cancelled with error.
+2014-01-23T16:59:20+01:00 INFO mem(real/peak):36.18MB/37.02MB ===> Schedule ID = '846' completed.
+2014-01-23T16:59:20+01:00 INFO mem(real/peak):36.18MB/37.02MB ===> ===================== END  (schedule id = 846) =====================

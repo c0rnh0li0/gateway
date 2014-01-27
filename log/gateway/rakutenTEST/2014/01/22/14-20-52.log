@@ -1,0 +1,193 @@
+2014-01-22T14:20:52+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Reading XML from string...
+2014-01-22T14:20:52+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> >>> Gateway\Handler\Erp\Rakuten\XML\Reader\Categories <<<
+2014-01-22T14:20:52+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Starting XML to DataSource conversion...
+2014-01-22T14:20:52+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Processing categories XML input...
+2014-01-22T14:20:52+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Angebote' (ID = 248) under 'Angebote'.
+2014-01-22T14:20:52+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Brot und Backwaren' (ID = 2) under 'Lebensmittel/Brot und Backwaren'.
+2014-01-22T14:20:52+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Süße Aufstriche' (ID = 17) under 'Lebensmittel/Brotaufstriche/Süße Aufstriche'.
+2014-01-22T14:20:52+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Honig' (ID = 18) under 'Lebensmittel/Brotaufstriche/Honig'.
+2014-01-22T14:20:52+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Pikante Aufstriche' (ID = 19) under 'Lebensmittel/Brotaufstriche/Pikante Aufstriche'.
+2014-01-22T14:20:52+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Pasteten' (ID = 20) under 'Lebensmittel/Brotaufstriche/Pasteten'.
+2014-01-22T14:20:52+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Suppen' (ID = 21) under 'Lebensmittel/Convenience/Suppen'.
+2014-01-22T14:20:52+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Salate' (ID = 22) under 'Lebensmittel/Convenience/Salate'.
+2014-01-22T14:20:52+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Soßen und Dressing' (ID = 23) under 'Lebensmittel/Convenience/Soßen und Dressing'.
+2014-01-22T14:20:52+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Fertiggerichte' (ID = 24) under 'Lebensmittel/Convenience/Fertiggerichte'.
+2014-01-22T14:20:52+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Vegetarischer Fleischersatz' (ID = 25) under 'Lebensmittel/Convenience/Vegetarischer Fleischersatz'.
+2014-01-22T14:20:52+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Essig' (ID = 26) under 'Lebensmittel/Essig und Öle/Essig'.
+2014-01-22T14:20:52+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Öle' (ID = 27) under 'Lebensmittel/Essig und Öle/Öle'.
+2014-01-22T14:20:52+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Trockenfrüchte' (ID = 28) under 'Lebensmittel/Früchte und Nüsse/Trockenfrüchte'.
+2014-01-22T14:20:52+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Mischungen' (ID = 29) under 'Lebensmittel/Früchte und Nüsse/Mischungen'.
+2014-01-22T14:20:52+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Hülsenfrüchte' (ID = 30) under 'Lebensmittel/Früchte und Nüsse/Hülsenfrüchte'.
+2014-01-22T14:20:52+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Nüsse' (ID = 31) under 'Lebensmittel/Früchte und Nüsse/Nüsse'.
+2014-01-22T14:20:52+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Sonstiges' (ID = 32) under 'Lebensmittel/Früchte und Nüsse/Sonstiges'.
+2014-01-22T14:20:52+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Fruchtsäfte' (ID = 33) under 'Lebensmittel/Getränke/Fruchtsäfte'.
+2014-01-22T14:20:52+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Gemüsesäfte' (ID = 34) under 'Lebensmittel/Getränke/Gemüsesäfte'.
+2014-01-22T14:20:52+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Sirup' (ID = 35) under 'Lebensmittel/Getränke/Sirup'.
+2014-01-22T14:20:52+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Smoothies' (ID = 36) under 'Lebensmittel/Getränke/Smoothies'.
+2014-01-22T14:20:52+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Getreidedrinks' (ID = 37) under 'Lebensmittel/Getränke/Getreidedrinks'.
+2014-01-22T14:20:52+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Punsch' (ID = 246) under 'Lebensmittel/Getränke/Punsch'.
+2014-01-22T14:20:52+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Milch und Milchersatz' (ID = 38) under 'Lebensmittel/Getränke/Milch und Milchersatz'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Kaffee und Kakao' (ID = 39) under 'Lebensmittel/Getränke/Kaffee und Kakao'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Müsli' (ID = 40) under 'Lebensmittel/Getreide und Frühstück/Müsli'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Crunchy und Brei' (ID = 41) under 'Lebensmittel/Getreide und Frühstück/Crunchy und Brei'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Schrote/Flocken/Kleie' (ID = 42) under 'Lebensmittel/Getreide und Frühstück/Schrote/Flocken/Kleie'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Mehle und Backzutaten' (ID = 43) under 'Lebensmittel/Getreide und Frühstück/Mehle und Backzutaten'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Keime und Saaten' (ID = 44) under 'Lebensmittel/Getreide und Frühstück/Keime und Saaten'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Reis' (ID = 45) under 'Lebensmittel/Getreide und Frühstück/Reis'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Teigwaren' (ID = 46) under 'Lebensmittel/Getreide und Frühstück/Teigwaren'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Einzelgewürze' (ID = 47) under 'Lebensmittel/Gewürze und Süßungsmittel/Einzelgewürze'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Flüssigwürze und Sojasoßen' (ID = 48) under 'Lebensmittel/Gewürze und Süßungsmittel/Flüssigwürze und Sojasoßen'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Gewürzmischungen' (ID = 49) under 'Lebensmittel/Gewürze und Süßungsmittel/Gewürzmischungen'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Kräuter' (ID = 50) under 'Lebensmittel/Gewürze und Süßungsmittel/Kräuter'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Salz und Salzersatz' (ID = 51) under 'Lebensmittel/Gewürze und Süßungsmittel/Salz und Salzersatz'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Süßungsalternativen' (ID = 52) under 'Lebensmittel/Gewürze und Süßungsmittel/Süßungsalternativen'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Zucker und Zuckerersatz' (ID = 53) under 'Lebensmittel/Gewürze und Süßungsmittel/Zucker und Zuckerersatz'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Fruchtschnitten und Riegel' (ID = 54) under 'Lebensmittel/Süßes und Pikantes/Fruchtschnitten und Riegel'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Bonbon und Fruchtgummi' (ID = 55) under 'Lebensmittel/Süßes und Pikantes/Bonbon und Fruchtgummi'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Kuchen und Gebäck' (ID = 56) under 'Lebensmittel/Süßes und Pikantes/Kuchen und Gebäck'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Kekse' (ID = 57) under 'Lebensmittel/Süßes und Pikantes/Kekse'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Schokoladen' (ID = 58) under 'Lebensmittel/Süßes und Pikantes/Schokoladen'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Süßes Knabbergebäck' (ID = 59) under 'Lebensmittel/Süßes und Pikantes/Süßes Knabbergebäck'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Desserts und Schlagobersersatz' (ID = 60) under 'Lebensmittel/Süßes und Pikantes/Desserts und Schlagobersersatz'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Pikantes Knabbergebäck' (ID = 61) under 'Lebensmittel/Süßes und Pikantes/Pikantes Knabbergebäck'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Heilkräutertees' (ID = 62) under 'Lebensmittel/Tees/Heilkräutertees'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Kräutertees offen' (ID = 63) under 'Lebensmittel/Tees/Kräutertees offen'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Kräutertees Filterbeutel' (ID = 64) under 'Lebensmittel/Tees/Kräutertees Filterbeutel'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Früchtetees' (ID = 65) under 'Lebensmittel/Tees/Früchtetees'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Grün- und Schwarztees' (ID = 66) under 'Lebensmittel/Tees/Grün- und Schwarztees'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Spezialtees' (ID = 67) under 'Lebensmittel/Tees/Spezialtees'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Sonstiges' (ID = 12) under 'Lebensmittel/Sonstiges'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Startseite' (ID = 247) under 'Startseite'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Tees' (ID = 95) under 'Nahrungsergänzung/Augen-Nase-Ohren/Tees'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Elixiere/Säfte/Sirup' (ID = 96) under 'Nahrungsergänzung/Augen-Nase-Ohren/Elixiere/Säfte/Sirup'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Kapseln/Tabletten/Pulver/Granulat' (ID = 97) under 'Nahrungsergänzung/Augen-Nase-Ohren/Kapseln/Tabletten/Pulver/Granulat'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Äußere Anwendung' (ID = 98) under 'Nahrungsergänzung/Augen-Nase-Ohren/Äußere Anwendung'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Tees' (ID = 99) under 'Nahrungsergänzung/Blase-Niere-Prostata/Tees'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Elixiere/Säfte/Sirup' (ID = 100) under 'Nahrungsergänzung/Blase-Niere-Prostata/Elixiere/Säfte/Sirup'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Kapseln/Tabletten/Pulver/Granulat' (ID = 101) under 'Nahrungsergänzung/Blase-Niere-Prostata/Kapseln/Tabletten/Pulver/Granulat'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Äußere Anwendung' (ID = 102) under 'Nahrungsergänzung/Blase-Niere-Prostata/Äußere Anwendung'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Tees' (ID = 103) under 'Nahrungsergänzung/Bluthochdruck/Tees'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Elixiere/Säfte/Sirup' (ID = 104) under 'Nahrungsergänzung/Bluthochdruck/Elixiere/Säfte/Sirup'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Kapseln/Tabletten/Pulver/Granulat' (ID = 105) under 'Nahrungsergänzung/Bluthochdruck/Kapseln/Tabletten/Pulver/Granulat'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Äußere Anwendung' (ID = 106) under 'Nahrungsergänzung/Bluthochdruck/Äußere Anwendung'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Tees' (ID = 111) under 'Nahrungsergänzung/Cholesterin/Tees'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Elixiere/Säfte/Sirup' (ID = 112) under 'Nahrungsergänzung/Cholesterin/Elixiere/Säfte/Sirup'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Kapseln/Tabletten/Pulver/Granulat' (ID = 113) under 'Nahrungsergänzung/Cholesterin/Kapseln/Tabletten/Pulver/Granulat'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Äußere Anwendung' (ID = 114) under 'Nahrungsergänzung/Cholesterin/Äußere Anwendung'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Tees' (ID = 116) under 'Nahrungsergänzung/Entschlacken-Abnehmen/Tees'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Elixiere/Säfte/Sirup' (ID = 117) under 'Nahrungsergänzung/Entschlacken-Abnehmen/Elixiere/Säfte/Sirup'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Kapseln/Tabletten/Pulver/Granulat' (ID = 118) under 'Nahrungsergänzung/Entschlacken-Abnehmen/Kapseln/Tabletten/Pulver/Granulat'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Äußere Anwendung' (ID = 123) under 'Nahrungsergänzung/Entschlacken-Abnehmen/Äußere Anwendung'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Tees' (ID = 124) under 'Nahrungsergänzung/Erkältung-Abwehr/Tees'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Elixiere/Säfte/Sirup' (ID = 125) under 'Nahrungsergänzung/Erkältung-Abwehr/Elixiere/Säfte/Sirup'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Kapseln/Tabletten/Pulver/Granulat' (ID = 126) under 'Nahrungsergänzung/Erkältung-Abwehr/Kapseln/Tabletten/Pulver/Granulat'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Äußere Anwendung' (ID = 127) under 'Nahrungsergänzung/Erkältung-Abwehr/Äußere Anwendung'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Tees' (ID = 128) under 'Nahrungsergänzung/Gedächtnis-Konzentration/Tees'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Elixiere/Säfte/Sirup' (ID = 129) under 'Nahrungsergänzung/Gedächtnis-Konzentration/Elixiere/Säfte/Sirup'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Kapseln/Tabletten/Pulver/Granulat' (ID = 130) under 'Nahrungsergänzung/Gedächtnis-Konzentration/Kapseln/Tabletten/Pulver/Granulat'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Äußere Anwendung' (ID = 131) under 'Nahrungsergänzung/Gedächtnis-Konzentration/Äußere Anwendung'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Tees' (ID = 132) under 'Nahrungsergänzung/Gelenke-Knochen/Tees'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Elixiere/Säfte/Sirup' (ID = 133) under 'Nahrungsergänzung/Gelenke-Knochen/Elixiere/Säfte/Sirup'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Kapseln/Tabletten/Pulver/Granulat' (ID = 134) under 'Nahrungsergänzung/Gelenke-Knochen/Kapseln/Tabletten/Pulver/Granulat'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Äußere Anwendung' (ID = 135) under 'Nahrungsergänzung/Gelenke-Knochen/Äußere Anwendung'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Tees' (ID = 136) under 'Nahrungsergänzung/Hals-Mund-Rachen/Tees'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Elixiere/Säfte/Sirup' (ID = 137) under 'Nahrungsergänzung/Hals-Mund-Rachen/Elixiere/Säfte/Sirup'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Kapseln/Tabletten/Pulver/Granulat' (ID = 138) under 'Nahrungsergänzung/Hals-Mund-Rachen/Kapseln/Tabletten/Pulver/Granulat'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Äußere Anwendung' (ID = 139) under 'Nahrungsergänzung/Hals-Mund-Rachen/Äußere Anwendung'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Tees' (ID = 140) under 'Nahrungsergänzung/Haut-Haare-Nägel/Tees'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Elixiere/Säfte/Sirup' (ID = 141) under 'Nahrungsergänzung/Haut-Haare-Nägel/Elixiere/Säfte/Sirup'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Kapseln/Tabletten/Pulver/Granulat' (ID = 142) under 'Nahrungsergänzung/Haut-Haare-Nägel/Kapseln/Tabletten/Pulver/Granulat'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Äußere Anwendung' (ID = 143) under 'Nahrungsergänzung/Haut-Haare-Nägel/Äußere Anwendung'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Äußere Anwendung' (ID = 147) under 'Nahrungsergänzung/Herz-Kreislauf/Äußere Anwendung'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Elixiere/Säfte/Sirup' (ID = 145) under 'Nahrungsergänzung/Herz-Kreislauf/Elixiere/Säfte/Sirup'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Kapseln/Tabletten/Pulver/Granulat' (ID = 146) under 'Nahrungsergänzung/Herz-Kreislauf/Kapseln/Tabletten/Pulver/Granulat'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Tees' (ID = 144) under 'Nahrungsergänzung/Herz-Kreislauf/Tees'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Tees' (ID = 148) under 'Nahrungsergänzung/Leber-Galle/Tees'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Elixiere/Säfte/Sirup' (ID = 149) under 'Nahrungsergänzung/Leber-Galle/Elixiere/Säfte/Sirup'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Kapseln/Tabletten/Pulver/Granulat' (ID = 150) under 'Nahrungsergänzung/Leber-Galle/Kapseln/Tabletten/Pulver/Granulat'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Äußere Anwendung' (ID = 151) under 'Nahrungsergänzung/Leber-Galle/Äußere Anwendung'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Tees' (ID = 152) under 'Nahrungsergänzung/Magen-Darm/Tees'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'ELixiere/Säfte/Sirup' (ID = 153) under 'Nahrungsergänzung/Magen-Darm/ELixiere/Säfte/Sirup'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Kapseln/Tabletten/Pulver/Granulat' (ID = 154) under 'Nahrungsergänzung/Magen-Darm/Kapseln/Tabletten/Pulver/Granulat'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Äußere Anwendung' (ID = 155) under 'Nahrungsergänzung/Magen-Darm/Äußere Anwendung'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Tees' (ID = 156) under 'Nahrungsergänzung/Muskel/Tees'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Elixiere/Säfte/Sirup' (ID = 157) under 'Nahrungsergänzung/Muskel/Elixiere/Säfte/Sirup'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Kapseln/Tabletten/Pulver/Granulat' (ID = 158) under 'Nahrungsergänzung/Muskel/Kapseln/Tabletten/Pulver/Granulat'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Äußere Anwendung' (ID = 159) under 'Nahrungsergänzung/Muskel/Äußere Anwendung'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Tees' (ID = 160) under 'Nahrungsergänzung/Nerven/Tees'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Elixiere/Säfte/Sirup' (ID = 161) under 'Nahrungsergänzung/Nerven/Elixiere/Säfte/Sirup'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Kapseln/Tabletten/Pulver/Granulat' (ID = 162) under 'Nahrungsergänzung/Nerven/Kapseln/Tabletten/Pulver/Granulat'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Äußere Anwendung' (ID = 163) under 'Nahrungsergänzung/Nerven/Äußere Anwendung'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Tees' (ID = 164) under 'Nahrungsergänzung/Säure-Basen-Haushalt/Tees'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Elixiere/Säfte/Sirup' (ID = 165) under 'Nahrungsergänzung/Säure-Basen-Haushalt/Elixiere/Säfte/Sirup'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Kapseln/Tabletten/Pulver/Granulat' (ID = 166) under 'Nahrungsergänzung/Säure-Basen-Haushalt/Kapseln/Tabletten/Pulver/Granulat'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Äußere Anwendung' (ID = 167) under 'Nahrungsergänzung/Säure-Basen-Haushalt/Äußere Anwendung'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Tees' (ID = 168) under 'Nahrungsergänzung/Schwangerschaft-Stillen/Tees'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Elixiere/Säfte/Sirup' (ID = 169) under 'Nahrungsergänzung/Schwangerschaft-Stillen/Elixiere/Säfte/Sirup'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Kapseln/Tabletten/Pulver/Granulat' (ID = 170) under 'Nahrungsergänzung/Schwangerschaft-Stillen/Kapseln/Tabletten/Pulver/Granulat'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Äußere Anwendung' (ID = 171) under 'Nahrungsergänzung/Schwangerschaft-Stillen/Äußere Anwendung'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Tees' (ID = 172) under 'Nahrungsergänzung/Stärkung-Allergie/Tees'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Elixiere/Säfte/Sirup' (ID = 173) under 'Nahrungsergänzung/Stärkung-Allergie/Elixiere/Säfte/Sirup'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Kapseln/Tabletten/Pulver/Granulat' (ID = 174) under 'Nahrungsergänzung/Stärkung-Allergie/Kapseln/Tabletten/Pulver/Granulat'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Äußere Anwendung' (ID = 175) under 'Nahrungsergänzung/Stärkung-Allergie/Äußere Anwendung'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Tees' (ID = 176) under 'Nahrungsergänzung/Vitamine-Mineralien/Tees'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Elixiere/Säfte/Sirup' (ID = 177) under 'Nahrungsergänzung/Vitamine-Mineralien/Elixiere/Säfte/Sirup'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Kapseln/Tabletten/Pulver/Granulat' (ID = 178) under 'Nahrungsergänzung/Vitamine-Mineralien/Kapseln/Tabletten/Pulver/Granulat'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Äußere Anwendung' (ID = 179) under 'Nahrungsergänzung/Vitamine-Mineralien/Äußere Anwendung'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Tees' (ID = 180) under 'Nahrungsergänzung/Wechseljahre/Tees'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Elixiere/Säfte/Sirup' (ID = 181) under 'Nahrungsergänzung/Wechseljahre/Elixiere/Säfte/Sirup'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Kapseln/Tabletten/Pulver/Granulat' (ID = 182) under 'Nahrungsergänzung/Wechseljahre/Kapseln/Tabletten/Pulver/Granulat'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Äußere Anwendung' (ID = 183) under 'Nahrungsergänzung/Wechseljahre/Äußere Anwendung'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Tees' (ID = 185) under 'Nahrungsergänzung/Zellschutz/Tees'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Elixiere/Säfte/Sirup' (ID = 186) under 'Nahrungsergänzung/Zellschutz/Elixiere/Säfte/Sirup'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Kapseln/Tabletten/Pulver/Granulat' (ID = 187) under 'Nahrungsergänzung/Zellschutz/Kapseln/Tabletten/Pulver/Granulat'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Äußere Anwendung' (ID = 188) under 'Nahrungsergänzung/Zellschutz/Äußere Anwendung'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Reinigung' (ID = 189) under 'Gesichtspflege/Reinigung'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Maske und Peeling' (ID = 190) under 'Gesichtspflege/Maske und Peeling'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Pflegecremen' (ID = 191) under 'Gesichtspflege/Pflegecremen'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Augenpflege' (ID = 192) under 'Gesichtspflege/Augenpflege'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Serum und Pflegekuren' (ID = 193) under 'Gesichtspflege/Serum und Pflegekuren'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Lippenpflege' (ID = 194) under 'Gesichtspflege/Lippenpflege'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Für Ihn' (ID = 195) under 'Gesichtspflege/Für Ihn'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Make up flüssig' (ID = 201) under 'Make up/Make up/Make up flüssig'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Make up kompakt' (ID = 202) under 'Make up/Make up/Make up kompakt'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Abdeckstift' (ID = 203) under 'Make up/Make up/Abdeckstift'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Kajal und Augenbrauenstifte' (ID = 204) under 'Make up/Augen/Kajal und Augenbrauenstifte'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Lidschatten' (ID = 205) under 'Make up/Augen/Lidschatten'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Mascara' (ID = 206) under 'Make up/Augen/Mascara'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Lippenstifte' (ID = 207) under 'Make up/Lippen/Lippenstifte'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Lipgloss' (ID = 208) under 'Make up/Lippen/Lipgloss'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Nägel' (ID = 199) under 'Make up/Nägel'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Zubehör' (ID = 200) under 'Make up/Zubehör'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Seifen' (ID = 217) under 'Pflege und Düfte/Bad/Seifen'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Duschbäder' (ID = 218) under 'Pflege und Düfte/Bad/Duschbäder'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Badezusätze' (ID = 219) under 'Pflege und Düfte/Bad/Badezusätze'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Fuß und Bein' (ID = 210) under 'Pflege und Düfte/Fuß und Bein'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Shampoos' (ID = 220) under 'Pflege und Düfte/Haare/Shampoos'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Conditioner und Spülungen' (ID = 221) under 'Pflege und Düfte/Haare/Conditioner und Spülungen'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Haarmasken- und kuren' (ID = 222) under 'Pflege und Düfte/Haare/Haarmasken- und kuren'.
+2014-01-22T14:20:53+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Haarwasser' (ID = 223) under 'Pflege und Düfte/Haare/Haarwasser'.
+2014-01-22T14:20:54+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Haarspray und -gel' (ID = 224) under 'Pflege und Düfte/Haare/Haarspray und -gel'.
+2014-01-22T14:20:54+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Haarfarben und Tönungen' (ID = 225) under 'Pflege und Düfte/Haare/Haarfarben und Tönungen'.
+2014-01-22T14:20:54+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Lotionen' (ID = 226) under 'Pflege und Düfte/Körper/Lotionen'.
+2014-01-22T14:20:54+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Körpercremen' (ID = 227) under 'Pflege und Düfte/Körper/Körpercremen'.
+2014-01-22T14:20:54+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Handcremen' (ID = 228) under 'Pflege und Düfte/Körper/Handcremen'.
+2014-01-22T14:20:54+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Deos' (ID = 229) under 'Pflege und Düfte/Körper/Deos'.
+2014-01-22T14:20:54+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Körperöle' (ID = 230) under 'Pflege und Düfte/Körper/Körperöle'.
+2014-01-22T14:20:54+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Einreibungen' (ID = 231) under 'Pflege und Düfte/Körper/Einreibungen'.
+2014-01-22T14:20:54+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Mutter und Kind' (ID = 213) under 'Pflege und Düfte/Mutter und Kind'.
+2014-01-22T14:20:54+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Sonnenschutz' (ID = 232) under 'Pflege und Düfte/Sonne/Sonnenschutz'.
+2014-01-22T14:20:54+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Selbstbräuner' (ID = 233) under 'Pflege und Düfte/Sonne/Selbstbräuner'.
+2014-01-22T14:20:54+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'After Sun' (ID = 234) under 'Pflege und Düfte/Sonne/After Sun'.
+2014-01-22T14:20:54+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Zahncreme' (ID = 235) under 'Pflege und Düfte/Zähne/Zahncreme'.
+2014-01-22T14:20:54+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Mundspülung' (ID = 236) under 'Pflege und Düfte/Zähne/Mundspülung'.
+2014-01-22T14:20:54+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Naturdüfte' (ID = 216) under 'Pflege und Düfte/Naturdüfte'.
+2014-01-22T14:20:54+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Ätherische Öle' (ID = 237) under 'Aromatherapie/Ätherische Öle'.
+2014-01-22T14:20:54+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Ätherische Ölmischungen' (ID = 238) under 'Aromatherapie/Ätherische Ölmischungen'.
+2014-01-22T14:20:54+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Duftlampen/-steine/-brunnen' (ID = 239) under 'Aromatherapie/Duftlampen/-steine/-brunnen'.
+2014-01-22T14:20:54+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Raumdüfte/Essenzen' (ID = 240) under 'Aromatherapie/Raumdüfte/Essenzen'.
+2014-01-22T14:20:54+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Kräuter-/Wärmekissen' (ID = 241) under 'Aromatherapie/Kräuter-/Wärmekissen'.
+2014-01-22T14:20:54+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Saunaöle' (ID = 242) under 'Aromatherapie/Saunaöle'.
+2014-01-22T14:20:54+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Bücher' (ID = 243) under 'Sonstiges/Bücher'.
+2014-01-22T14:20:54+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Tierbedarf' (ID = 244) under 'Sonstiges/Tierbedarf'.
+2014-01-22T14:20:54+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Adding 'Sonstige Gewußt wie Markenprodukte' (ID = 245) under 'Sonstiges/Sonstige Gewußt wie Markenprodukte'.

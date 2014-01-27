@@ -1,0 +1,15 @@
+2014-01-22T14:05:07+01:00 INFO mem(real/peak):19.14MB/18.88MB ===> Missing required handler options 'loadProducts' for 'Gateway\Handler\Erp\Rakuten\XML\Reader\Categories'
+2014-01-22T14:05:09+01:00 INFO mem(real/peak):19.14MB/18.88MB ===> Missing required handler options 'loadProducts' for 'Gateway\Handler\Erp\Rakuten\XML\Reader\Categories'
+2014-01-22T14:10:15+01:00 INFO mem(real/peak):19.40MB/19.15MB ===> Missing required handler options 'assignProducts' for 'Gateway\Handler\Shop\Rakuten\API\Writer\Categories'
+2014-01-22T14:10:18+01:00 INFO mem(real/peak):19.14MB/18.97MB ===> Missing required handler options 'assignProducts' for 'Gateway\Handler\Shop\Rakuten\API\Writer\Categories'
+2014-01-22T14:10:39+01:00 INFO mem(real/peak):19.14MB/18.96MB ===> Missing required handler options 'assignProducts' for 'Gateway\Handler\Shop\Rakuten\API\Writer\Categories'
+2014-01-22T14:12:07+01:00 WARNING mem(real/peak):33.82MB/33.56MB ===> MANUAL EXECUTION: Process '844' was started manually, not by CRON job...
+2014-01-22T14:12:07+01:00 INFO mem(real/peak):33.82MB/33.56MB ===> Schedule '844' has been already processed or does not exists.
+2014-01-22T14:12:43+01:00 INFO mem(real/peak):31.20MB/30.25MB ===> Reading XML from file of '/var/www/gateway/temp/gateway//etron/rakutenTEST/put/categories/20140122141243.xml'
+2014-01-22T14:20:52+01:00 WARNING mem(real/peak):33.55MB/34.12MB ===> MANUAL EXECUTION: Process '846' was started manually, not by CRON job...
+2014-01-22T14:20:52+01:00 INFO mem(real/peak):33.55MB/34.12MB ===> ====================== BEGIN (schedule id = 846) ==================
+2014-01-22T14:20:52+01:00 INFO mem(real/peak):33.55MB/34.12MB ===> Schedule '846' has been executed.
+2014-01-22T14:20:52+01:00 INFO mem(real/peak):33.55MB/34.12MB ===> Report for schedule '846' was saved.
+2014-01-22T14:20:52+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Processing connection 'rakutenTEST'...
+2014-01-22T14:20:52+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Destination: shop
+2014-01-22T14:20:52+01:00 INFO mem(real/peak):35.65MB/34.12MB ===> Source input passing to 'Gateway\Handler\Erp\Rakuten\XML\Reader\Categories' input.

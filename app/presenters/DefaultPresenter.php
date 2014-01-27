@@ -245,17 +245,24 @@ class DefaultPresenter extends BasePresenter {
                         $this->logger->logMessage(\Logger\ILogger::DEBUG, sprintf("SKIPPING: No source given for '%s' reader.", get_class($reader)));
                         continue;
                     }
-
+					
                     // transforming source to general datasource 
                     $ds = $reader->getDataSource();
 
-
-					
                     // and passing general datasource to writer to transform it to the destination's node format
                     $this->logger->logMessage("Passing processed datasource from '%s' to '%s' writer.", get_class($reader), get_class($writer));
 
                     $writer->setDataSource($ds);
-                    
+					
+					$affectedAmount = $writer->process();
+                   
+					//echo "dump in " . $_SERVER['DOCUMENT_ROOT'] . '/dsdump.txt<br />';
+		
+					//file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/dsdump.txt', print_r($ds, true));
+		
+					//var_dump($ds);
+					die;
+					
                     // FIXME ugly!!! call this from Magento writers
                     // REINDEXER 1: init reindexer
                     // DISABLE REINDEXING if STOCK handler in use - NB 08.11.2013
@@ -295,7 +302,7 @@ class DefaultPresenter extends BasePresenter {
                     // main process
                     $this->logger->logMessage("Executing writer process...");
                     
-                    $affectedAmount = $writer->process();
+                    //$affectedAmount = $writer->process();
                     
 					die;
 					

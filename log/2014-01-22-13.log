@@ -1,0 +1,8 @@
+2014-01-22T13:36:42+01:00 INFO mem(real/peak):20.97MB/20.93MB ===> Missing required handler options 'loadProducts' for 'Gateway\Handler\Erp\Rakuten\XML\Reader\Categories'
+2014-01-22T13:39:46+01:00 INFO mem(real/peak):20.97MB/20.93MB ===> Missing required handler options 'loadProducts' for 'Gateway\Handler\Erp\Rakuten\XML\Reader\Categories'
+2014-01-22T13:43:44+01:00 INFO mem(real/peak):20.97MB/20.93MB ===> Missing required handler options 'loadProducts' for 'Gateway\Handler\Erp\Rakuten\XML\Reader\Categories'
+2014-01-22T13:43:46+01:00 INFO mem(real/peak):20.97MB/20.93MB ===> Missing required handler options 'loadProducts' for 'Gateway\Handler\Erp\Rakuten\XML\Reader\Categories'
+2014-01-22T13:54:41+01:00 INFO mem(real/peak):20.97MB/20.93MB ===> Missing required handler options 'loadProducts' for 'Gateway\Handler\Erp\Rakuten\XML\Reader\Categories'
+2014-01-22T13:54:43+01:00 INFO mem(real/peak):20.97MB/20.93MB ===> Missing required handler options 'loadProducts' for 'Gateway\Handler\Erp\Rakuten\XML\Reader\Categories'
+2014-01-22T13:54:48+01:00 INFO mem(real/peak):20.71MB/20.62MB ===> Missing required handler options 'loadProducts' for 'Gateway\Handler\Erp\Rakuten\XML\Reader\Categories'
+2014-01-22T13:57:25+01:00 INFO mem(real/peak):24.90MB/24.46MB ===> Missing required handler options 'loadProducts' for 'Gateway\Handler\Erp\Rakuten\XML\Reader\Categories'

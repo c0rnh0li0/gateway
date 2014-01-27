@@ -7,13 +7,13 @@
 	require_once(WWW_DIR . "/../libs/Rakuten/Configuration/config.inc");
 	
 	class Rakuten {
-		private $key;
-		private $url;
+		protected $key;
+		protected $url;
 		
-		private $misc = 'misc';
-		private $key_info = 'GetKeyInfo';
+		protected $misc = 'misc';
+		protected $key_info = 'GetKeyInfo';
 		
-		private $response;
+		protected $response;
 		
 		function __construct(){
 			$config = new \Rakuten\Configuration\Rakuten_Config();
@@ -76,7 +76,11 @@
 			$result = $this->parseXML($curl_response);
 			$this->response = $result;
 			
-			return $result->success == 1;
+			return $result->success == 1 || $result->success == 0;
+		}
+		
+		function parseArray($input){
+			return json_decode(json_encode((array)simplexml_load_string($input)), 1);
 		}
 		
 		function parseXML($input){
@@ -98,6 +102,10 @@
             }
 			
             return $xml;
+		}
+		
+		function xml_to_array($xml){
+			
 		}
 	}
 

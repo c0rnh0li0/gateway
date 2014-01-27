@@ -1,16 +1,16 @@
-<?php //netteCache[01]000386a:2:{s:4:"time";s:21:"0.30029300 1390222424";s:9:"callbacks";a:2:{i:0;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:9:"checkFile";}i:1;s:64:"/var/www/gateway/app/modules/AdminModule/templates/@layout.latte";i:2;i:1383647104;}i:1;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:10:"checkConst";}i:1;s:25:"Nette\Framework::REVISION";i:2;s:30:"2f3808e released on 2012-07-30";}}}?><?php
+<?php //netteCache[01]000386a:2:{s:4:"time";s:21:"0.65165700 1390396280";s:9:"callbacks";a:2:{i:0;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:9:"checkFile";}i:1;s:64:"/var/www/gateway/app/modules/AdminModule/templates/@layout.latte";i:2;i:1383647104;}i:1;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:10:"checkConst";}i:1;s:25:"Nette\Framework::REVISION";i:2;s:30:"2f3808e released on 2012-07-30";}}}?><?php
 
 // source file: /var/www/gateway/app/modules/AdminModule/templates/@layout.latte
 
 ?><?php
 // prolog Nette\Latte\Macros\CoreMacros
-list($_l, $_g) = Nette\Latte\Macros\CoreMacros::initRuntime($template, '1y2vrx7qly')
+list($_l, $_g) = Nette\Latte\Macros\CoreMacros::initRuntime($template, '3ramcycod5')
 ;
 // prolog Nette\Latte\Macros\UIMacros
 //
 // block head_meta
 //
-if (!function_exists($_l->blocks['head_meta'][] = '_lba9c028854f_head_meta')) { function _lba9c028854f_head_meta($_l, $_args) { extract($_args)
+if (!function_exists($_l->blocks['head_meta'][] = '_lb28f4d37083_head_meta')) { function _lb28f4d37083_head_meta($_l, $_args) { extract($_args)
 ?>	    <meta name="author" content="www.yourface.cz" />
 	    <meta name="copyright" content="www.yourface.cz" />
 
@@ -32,7 +32,7 @@ if (!function_exists($_l->blocks['head_meta'][] = '_lba9c028854f_head_meta')) { 
 //
 // block head_scripts
 //
-if (!function_exists($_l->blocks['head_scripts'][] = '_lbd0c7e57fbd_head_scripts')) { function _lbd0c7e57fbd_head_scripts($_l, $_args) { extract($_args)
+if (!function_exists($_l->blocks['head_scripts'][] = '_lba9e0a8b626_head_scripts')) { function _lba9e0a8b626_head_scripts($_l, $_args) { extract($_args)
 ?>	    <script type="text/javascript" src="<?php echo htmlSpecialChars($baseUri) ?>/js/library/jquery-ui/js/jquery-1.7.1.min.js"></script>
 	    <script type="text/javascript" src="<?php echo htmlSpecialChars($baseUri) ?>/js/library/jquery-ui/js/jquery-ui-1.8.18.custom.min.js"></script>
 	    <script type="text/javascript" src="<?php echo htmlSpecialChars($baseUri) ?>/js/jquery.nette.js"></script>
@@ -52,7 +52,7 @@ if (!function_exists($_l->blocks['head_scripts'][] = '_lbd0c7e57fbd_head_scripts
 //
 // block head_links
 //
-if (!function_exists($_l->blocks['head_links'][] = '_lbd6eb74a635_head_links')) { function _lbd6eb74a635_head_links($_l, $_args) { extract($_args)
+if (!function_exists($_l->blocks['head_links'][] = '_lb558b041355_head_links')) { function _lb558b041355_head_links($_l, $_args) { extract($_args)
 ?>            <link rel="stylesheet" type="text/css" media="screen" href="<?php echo htmlSpecialChars($basePath) ?>/css/reset.css" />
             <link rel="stylesheet" type="text/css" media="screen" href="<?php echo htmlSpecialChars($basePath) ?>/css/site.css" />
             <link rel="stylesheet" type="text/css" media="screen" href="<?php echo htmlSpecialChars($basePath) ?>/css/gateway.css" />
@@ -66,14 +66,14 @@ if (!function_exists($_l->blocks['head_links'][] = '_lbd6eb74a635_head_links')) 
 //
 // block head_links_layout
 //
-if (!function_exists($_l->blocks['head_links_layout'][] = '_lb04a89e4d59_head_links_layout')) { function _lb04a89e4d59_head_links_layout($_l, $_args) { extract($_args)
+if (!function_exists($_l->blocks['head_links_layout'][] = '_lb54ad043469_head_links_layout')) { function _lb54ad043469_head_links_layout($_l, $_args) { extract($_args)
 ;
 }}
 
 //
 // block layout
 //
-if (!function_exists($_l->blocks['layout'][] = '_lbd028515109_layout')) { function _lbd028515109_layout($_l, $_args) { extract($_args)
+if (!function_exists($_l->blocks['layout'][] = '_lbd15bd795fb_layout')) { function _lbd15bd795fb_layout($_l, $_args) { extract($_args)
 ?>		<div class="outer-wrapper">
 
 		    <div id="header">
@@ -127,7 +127,7 @@ if (!function_exists($_l->blocks['layout'][] = '_lbd028515109_layout')) { functi
 //
 // block header
 //
-if (!function_exists($_l->blocks['header'][] = '_lb076ea052fa_header')) { function _lb076ea052fa_header($_l, $_args) { extract($_args)
+if (!function_exists($_l->blocks['header'][] = '_lb7fe93dbbdc_header')) { function _lb7fe93dbbdc_header($_l, $_args) { extract($_args)
 ?>				<h1 id="logo">
 				    <a href="<?php echo htmlSpecialChars($_presenter->link("Default:")) ?>" title="<?php echo htmlSpecialChars(_("return to home")) ?>
 "><span><?php echo Nette\Templating\Helpers::escapeHtml(_("NEW Gateway Interface v2.1 BE"), ENT_NOQUOTES) ?></span></a>
@@ -141,7 +141,7 @@ if (!function_exists($_l->blocks['header'][] = '_lb076ea052fa_header')) { functi
 //
 // block menu
 //
-if (!function_exists($_l->blocks['menu'][] = '_lb316c09c747_menu')) { function _lb316c09c747_menu($_l, $_args) { extract($_args)
+if (!function_exists($_l->blocks['menu'][] = '_lbc7b529f31c_menu')) { function _lbc7b529f31c_menu($_l, $_args) { extract($_args)
 ?>				    <div id="menu">
 <?php $_ctrl = $_control->getComponent("navigation"); if ($_ctrl instanceof Nette\Application\UI\IRenderable) $_ctrl->validateControl(); $_ctrl->render() ?>
 				    </div>
@@ -151,21 +151,21 @@ if (!function_exists($_l->blocks['menu'][] = '_lb316c09c747_menu')) { function _
 //
 // block beforeLayout
 //
-if (!function_exists($_l->blocks['beforeLayout'][] = '_lb6d5b10a1b5_beforeLayout')) { function _lb6d5b10a1b5_beforeLayout($_l, $_args) { extract($_args)
+if (!function_exists($_l->blocks['beforeLayout'][] = '_lb5ddb30e1b9_beforeLayout')) { function _lb5ddb30e1b9_beforeLayout($_l, $_args) { extract($_args)
 ;
 }}
 
 //
 // block afterLayout
 //
-if (!function_exists($_l->blocks['afterLayout'][] = '_lb1330442441_afterLayout')) { function _lb1330442441_afterLayout($_l, $_args) { extract($_args)
+if (!function_exists($_l->blocks['afterLayout'][] = '_lbce24e89ecb_afterLayout')) { function _lbce24e89ecb_afterLayout($_l, $_args) { extract($_args)
 ;
 }}
 
 //
 // block footer
 //
-if (!function_exists($_l->blocks['footer'][] = '_lb051bb06f0d_footer')) { function _lb051bb06f0d_footer($_l, $_args) { extract($_args)
+if (!function_exists($_l->blocks['footer'][] = '_lb92a780e21f_footer')) { function _lb92a780e21f_footer($_l, $_args) { extract($_args)
 ?>				<div class="content">
 <?php Nette\Latte\Macros\UIMacros::callBlock($_l, 'footerContent', $template->getParameters()) ?>
 
@@ -177,7 +177,7 @@ if (!function_exists($_l->blocks['footer'][] = '_lb051bb06f0d_footer')) { functi
 //
 // block content
 //
-if (!function_exists($_l->blocks['content'][] = '_lb2e164f3111_content')) { function _lb2e164f3111_content($_l, $_args) { extract($_args)
+if (!function_exists($_l->blocks['content'][] = '_lb2bb3beecaa_content')) { function _lb2bb3beecaa_content($_l, $_args) { extract($_args)
 ?>   <div class="content simple">
         <div class="text-content">
 <?php call_user_func(reset($_l->blocks['layoutContent']), $_l, get_defined_vars())  ?>
@@ -191,7 +191,7 @@ if (!function_exists($_l->blocks['content'][] = '_lb2e164f3111_content')) { func
 //
 // block layoutContent
 //
-if (!function_exists($_l->blocks['layoutContent'][] = '_lbf11f56f307_layoutContent')) { function _lbf11f56f307_layoutContent($_l, $_args) { extract($_args)
+if (!function_exists($_l->blocks['layoutContent'][] = '_lb9450136d28_layoutContent')) { function _lb9450136d28_layoutContent($_l, $_args) { extract($_args)
 ;Nette\Latte\Macros\UIMacros::callBlock($_l, 'pageTitle', $template->getParameters()) ;Nette\Latte\Macros\UIMacros::callBlock($_l, 'flashMessages', $template->getParameters()) ?>
 
 		<div class="clear"></div>
@@ -202,7 +202,7 @@ if (!function_exists($_l->blocks['layoutContent'][] = '_lbf11f56f307_layoutConte
 //
 // block textContent
 //
-if (!function_exists($_l->blocks['textContent'][] = '_lb772710ea59_textContent')) { function _lb772710ea59_textContent($_l, $_args) { extract($_args)
+if (!function_exists($_l->blocks['textContent'][] = '_lb4061eedf0b_textContent')) { function _lb4061eedf0b_textContent($_l, $_args) { extract($_args)
 ?>                    <p class="warning">Please, define #textContent block.</p>
 
 		    <p>
@@ -217,7 +217,7 @@ if (!function_exists($_l->blocks['textContent'][] = '_lb772710ea59_textContent')
 //
 // block pageTitle
 //
-if (!function_exists($_l->blocks['pageTitle'][] = '_lb0365f23dfc_pageTitle')) { function _lb0365f23dfc_pageTitle($_l, $_args) { extract($_args)
+if (!function_exists($_l->blocks['pageTitle'][] = '_lbef3936be17_pageTitle')) { function _lbef3936be17_pageTitle($_l, $_args) { extract($_args)
 ?>        <h2>Not specified</h2>
 <?php
 }}
@@ -225,7 +225,7 @@ if (!function_exists($_l->blocks['pageTitle'][] = '_lb0365f23dfc_pageTitle')) { 
 //
 // block flashMessages
 //
-if (!function_exists($_l->blocks['flashMessages'][] = '_lb133e4d2582_flashMessages')) { function _lb133e4d2582_flashMessages($_l, $_args) { extract($_args)
+if (!function_exists($_l->blocks['flashMessages'][] = '_lba59d8ac05b_flashMessages')) { function _lba59d8ac05b_flashMessages($_l, $_args) { extract($_args)
  ?>
 <div id="<?php echo $_control->getSnippetId('flashMessages') ?>"><?php call_user_func(reset($_l->blocks['_flashMessages']), $_l, $template->getParameters()) ?>
 </div><?php
@@ -234,7 +234,7 @@ if (!function_exists($_l->blocks['flashMessages'][] = '_lb133e4d2582_flashMessag
 //
 // block _flashMessages
 //
-if (!function_exists($_l->blocks['_flashMessages'][] = '_lba0404c2682__flashMessages')) { function _lba0404c2682__flashMessages($_l, $_args) { extract($_args); $_control->validateControl('flashMessages')
+if (!function_exists($_l->blocks['_flashMessages'][] = '_lb1602d83a48__flashMessages')) { function _lb1602d83a48__flashMessages($_l, $_args) { extract($_args); $_control->validateControl('flashMessages')
 ;if ((count($flashes))): ?>
 	    <div class="flash-messages">
 <?php $iterations = 0; foreach ($flashes as $flash): ?>
@@ -247,14 +247,14 @@ if (!function_exists($_l->blocks['_flashMessages'][] = '_lba0404c2682__flashMess
 //
 // block footerContent
 //
-if (!function_exists($_l->blocks['footerContent'][] = '_lbb652d3d79a_footerContent')) { function _lbb652d3d79a_footerContent($_l, $_args) { extract($_args)
+if (!function_exists($_l->blocks['footerContent'][] = '_lb438f52094b_footerContent')) { function _lb438f52094b_footerContent($_l, $_args) { extract($_args)
 ;
 }}
 
 //
 // block breadcrumbs
 //
-if (!function_exists($_l->blocks['breadcrumbs'][] = '_lbd4c5fdba95_breadcrumbs')) { function _lbd4c5fdba95_breadcrumbs($_l, $_args) { extract($_args)
+if (!function_exists($_l->blocks['breadcrumbs'][] = '_lb1200531519_breadcrumbs')) { function _lb1200531519_breadcrumbs($_l, $_args) { extract($_args)
 ;if ($presenter->getName() != 'Admin:Default'): ?>
         <div id="breadcrumbs">            
 <?php $_ctrl = $_control->getComponent("navigation"); if ($_ctrl instanceof Nette\Application\UI\IRenderable) $_ctrl->validateControl(); $_ctrl->renderBreadcrumbs() ?>

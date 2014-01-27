@@ -11,6 +11,7 @@
 		var $product_errors;
 		var $product_from_xml;
 		var $from_attributes;
+		var $product_response;
 		
 		var $group = "products";
 		
@@ -168,7 +169,7 @@
 			// use array_flip
 			$this->product_from_xml = array(
 				'product_id' => 'products_id', 						// int: ID of the product
-				'product_art_no' => 'attributes~artnr',				// FROM ATTRIBUTES // string: Item number
+				'product_art_no' => 'products_model',				// FROM ATTRIBUTES // string: Item number
 				'name' => 'products_description~name', 	// PRODUCTS_DESCRIPTION - PRODUCTS_NAME // string: Name of product
 				'price' => 'products_price|products_regularprice', 	// Float: Price is not present in a product with variations!
 				'price_reduced' => 'products_priceb', 				// ????????			// Float: Reduced price is not present in a product with variations!
@@ -218,7 +219,7 @@
 																	// 0 = Will not be displayed on the home page in the shop
 																	// 1 = Will be displayed on the home page in the shop
 				'connect' => '', 									// bool: Disabled for paying Sign in! Modules
-				'ean' => 'products_ean', 							// string: EAN is not present in a product with variations!
+				'ean' => 'products_model', 							// string: EAN is not present in a product with variations!
 				'isbn' => '', 										// string: ISBN is not present in a product with variations!
 				'mpn' => '', 										// string: MPN (unique manufacturer's part number) is not present in a product with variations!
 				'inci' => 'attributes~besonderheit', 				// string: Synopses
@@ -234,8 +235,7 @@
 			$this->from_attributes = array(
 				'allgemeines', 
 				'besonderheit',
-				'attributes', 
-				'attributes'
+				'inh_einheit'
 			);
 		}	
 
@@ -283,15 +283,64 @@
 					return $attribute['value'];
 		}
 
-		function getProducts(){
+		function getProducts($product_model_id = null){
 			$method = 'getProducts';
 			
 			
 		}
 		
+		
+		/* Product main API methods */
 		function addProduct($product_xml){
 			$method = 'addProduct';
+		}
+
+		function editProduct(){
 			
+		}
+		
+		function deleteProduct(){
+			
+		}
+		
+		
+		
+		/* Product images API methods */
+		function addProductImage(){
+			
+		}
+		
+		function deleteProductImage(){
+			
+		}
+		
+		
+		
+		/* Product variants API methods */
+		function addProductVariant(){
+			
+		}
+		
+		function editProductVariant(){
+			
+		}
+		
+		function deleteProductVariant(){
+			
+		}
+		
+		
+		
+		/* Product attributes API methods */
+		function addProductAttribute(){
+			
+		}
+		
+		function getProductAttributes(){
+			
+		}
+		
+		function deleteProductAttribute(){
 			
 		}
 	} 

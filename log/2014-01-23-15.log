@@ -1,0 +1,8 @@
+2014-01-23T15:52:40+01:00 WARNING mem(real/peak):33.55MB/33.06MB ===> MANUAL EXECUTION: Process '846' was started manually, not by CRON job...
+2014-01-23T15:52:40+01:00 INFO mem(real/peak):33.55MB/33.08MB ===> ====================== BEGIN (schedule id = 846) ==================
+2014-01-23T15:52:40+01:00 INFO mem(real/peak):33.55MB/33.09MB ===> Schedule '846' has been executed.
+2014-01-23T15:52:40+01:00 INFO mem(real/peak):33.55MB/33.12MB ===> Report for schedule '846' was saved.
+2014-01-23T15:52:40+01:00 INFO mem(real/peak):35.65MB/35.23MB ===> Processing connection 'rakutenTEST'...
+2014-01-23T15:52:40+01:00 INFO mem(real/peak):35.65MB/35.23MB ===> Destination: shop
+2014-01-23T15:52:40+01:00 INFO mem(real/peak):35.65MB/35.23MB ===> Source input passing to 'Gateway\Handler\Erp\Rakuten\XML\Reader\Categories' input.
+2014-01-23T15:52:42+01:00 INFO mem(real/peak):36.44MB/37.01MB ===> Passing processed datasource from 'Gateway\Handler\Erp\Rakuten\XML\Reader\Categories' to 'Gateway\Handler\Shop\Rakuten\API\Writer\Categories' writer.
