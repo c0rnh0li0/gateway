@@ -19,6 +19,7 @@ class Categories extends \Gateway\Handler\Shop\Rakuten\API\Writer {
     protected $type = IHandler::TYPE_CATEGORIES;
 	
 	protected $Categories;
+	public $existing_categories;
 
     /**
      * Sets handler options (credentials, settings etc.) and validates them.
@@ -75,9 +76,12 @@ class Categories extends \Gateway\Handler\Shop\Rakuten\API\Writer {
      * 
      */
     protected function init() {
-        // CSV - get existing categories
-        $existing_categories = $this->Categories->getCategories();
+    	var_dump($this->Categories);
+        // API - get existing categories
+        $this->existing_categories = $this->Categories->getCategories();
         
+		var_dump($this->existing_categories);
+		
 		die;
         //readExistingCategories();
 

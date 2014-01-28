@@ -249,7 +249,7 @@ class DefaultPresenter extends BasePresenter {
                     // transforming source to general datasource 
                     $ds = $reader->getDataSource();
 
-                    // and passing general datasource to writer to transform it to the destination's node format
+					// and passing general datasource to writer to transform it to the destination's node format
                     $this->logger->logMessage("Passing processed datasource from '%s' to '%s' writer.", get_class($reader), get_class($writer));
 
                     $writer->setDataSource($ds);

@@ -162,7 +162,7 @@ development < common:
 			host: localhost
 			dbname: gateway_20
 			user: root
-			password: root
+			password: 
 		gateway:
 			magmi:
 				config:

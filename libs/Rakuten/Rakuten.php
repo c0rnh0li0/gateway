@@ -39,7 +39,7 @@
 			return $this->processResponse($response);
 		}
 		
-		function doRequest($url, $post = 1, $postfields = array()){
+		public function doRequest($url, $post = 1, $postfields = array()){
 			// Get cURL resource
 			$curl = curl_init();
 			
@@ -50,15 +50,12 @@
 			    CURLOPT_POST => $post
 			));
 			
-			//if (sizeof($postfields))
-				//curl_setopt($curl, CURLOPT_POSTFIELDS, http_build_query($postfields));
-			
 			// Send the request & save response to $resp
 			$resp = curl_exec($curl);
+			//var_dump($resp);
 			
-			if(!$resp){
+			if(!$resp)
 			    die('Error: "' . curl_error($curl) . '" - Code: ' . curl_errno($curl));
-			}
 			
 			// Close request to clear up some resources
 			curl_close($curl);

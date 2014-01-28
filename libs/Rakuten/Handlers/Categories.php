@@ -154,12 +154,15 @@
 					'page' => $page, 
 					'per_page' => $this->categories_page_limit
 				));
-				echo $response; 
 				
-				$tmp = $this->parseArray($response);
+				echo "after request: ";
+				var_dump($response); 
 				
-				print_r($tmp);
-				die;
+				echo 'getCategories';
+				return $this->parseArray($response);
+				
+				//print_r($tmp);
+				die('getCategories');
 			//}
 			//$response = $this->doRequest($url, $post = 1, $postfields = array());
 			
