@@ -19,12 +19,6 @@
 			$config = new \Rakuten\Configuration\Rakuten_Config();
 			$this->key = $config->getConfig('test_key');
 			$this->url = $config->getUrl();
-			
-			if (!$this->getKeyInfo()){
-				var_dump($this->response);
-				
-				die('<hr />Rakuten api problem with key, exiting...');
-			}
 		}
 		
 		function getKeyInfo(){
@@ -44,36 +38,43 @@
 			$curl = curl_init();
 			
 			// Set some options - we are passing in a useragent too here
-			curl_setopt_array($curl, array(
-				CURLOPT_URL => $url . '?' . http_build_query($postfields),
-			    CURLOPT_RETURNTRANSFER => true,
-			    CURLOPT_POST => $post
-			));
+			if ($post == 1){
+				curl_setopt_array($curl, array(
+					CURLOPT_URL => $url,
+				    CURLOPT_RETURNTRANSFER => true,
+				    CURLOPT_POST => $post, 
+				    CURLOPT_POSTFIELDS => http_build_query($postfields),
+				    CURLOPT_USERAGENT, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.0.3705; .NET CLR 1.1.4322)'
+				));
+			}
+			else{
+				curl_setopt_array($curl, array(
+					CURLOPT_URL => $url . '?' . http_build_query($postfields),
+				    CURLOPT_RETURNTRANSFER => true,
+				    CURLOPT_POST => $post, 
+				    CURLOPT_USERAGENT, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.0.3705; .NET CLR 1.1.4322)'
+				));	
+			}
 			
 			// Send the request & save response to $resp
 			$resp = curl_exec($curl);
-			//var_dump($resp);
+			
+			$http_status = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+			
+			if(curl_errno($curl))
+				Utils::log("CURL Error: %s.", curl_error($curl));
 			
 			if(!$resp)
-			    die('Error: "' . curl_error($curl) . '" - Code: ' . curl_errno($curl));
+				Utils::log("CURL Error: %s.", curl_error($curl));
 			
 			// Close request to clear up some resources
 			curl_close($curl);
 			
-			if (!$this->processResponse($resp)){
-				var_dump($this->response);
-				
-				die('<hr />Rakuten api error, exiting...<br />' . $this->response->errors->error->code . ' - ' . $this->response->errors->error->message);
-			}
-			
-			return $resp;
+			return $this->parseArray($resp);
 		}
 		
 		function processResponse($curl_response){
-			$result = $this->parseXML($curl_response);
-			$this->response = $result;
-			
-			return $result->success == 1 || $result->success == 0;
+			$this->response = $this->parseXML($curl_response);
 		}
 		
 		function parseArray($input){
@@ -83,6 +84,8 @@
 		function parseXML($input){
 			$xml = null;
 			
+			var_dump($input);
+			
             // allowed types checking
             if (is_file($input) || ($input instanceof SplFileInfo)) {
                 $xml = simplexml_load_file($input);
@@ -90,7 +93,7 @@
                 // XML already loaded
                 $xml = $input;
             } else {
-                $xml = @simplexml_load_string($input);
+                $xml = simplexml_load_string($input);
             }
 			
             // XML has not been loaded

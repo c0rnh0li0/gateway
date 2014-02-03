@@ -37,6 +37,7 @@ class Writer extends \Gateway\Handler\Writer {
      * 
      * @return \Gateway\Handler\Shop\Magento\SOAP
      */
+    /*
     public function getClient() {
         if (!$this->client) {
             //$domain = $this->options->get('domain');
@@ -50,6 +51,6 @@ class Writer extends \Gateway\Handler\Writer {
 
         return $this->client;
     }
-
+	*/
 }
 

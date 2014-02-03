@@ -46,7 +46,7 @@ class Categories extends Reader {
         // process deep search for children to build up the structure
         foreach ($rootCategories as $node) {
         	$tmp_category = $this->processCategoryLocalization($ds, $xml, $node);
-			$tmp_category['products'] = $this->loadAssignedProducts($xml, $tmp_category);
+			//$tmp_category['products'] = $this->loadAssignedProducts($xml, $tmp_category);
 			
             //$this->categories[] = $this->processCategoryLocalization($ds, $xml, $node);
 			
@@ -58,15 +58,14 @@ class Categories extends Reader {
 			$this->categories[] = $tmp_category;
         }
 		
-		//echo "dump in " . $_SERVER['DOCUMENT_ROOT'] . '/categories.txt<br />';
+		$parents = array();
+		foreach ($this->categories as $key => $row)
+		{
+		    $parents[$key] = $row['external_parent_shop_category_id'];
+		}
+		array_multisort($parents, SORT_ASC, $this->categories);
 		
-		//file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/categories.txt', print_r($this->categories, true));
-		
-		//print_r($this->categories);
-		//die;
-        
-        //Utils::log("%s categories has been parsed.", $ds->count());
-        Utils::log("%s categories has been parsed.", sizeof($this->categories));
+		Utils::log("%s categories has been parsed.", sizeof($this->categories));
         
         return $this->categories; //$ds;
     }

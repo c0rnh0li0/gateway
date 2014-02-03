@@ -10,7 +10,8 @@
 				'url' => 'webservice.rakuten.de',
 				'url_patern' => '{url}/{version}/merchants/{group}/{method}', 
 				'version' => 'v2.05', 
-				'test_key' => '123456789a123456789a123456789a12', 
+				'test_key' => 'b2c13098b167f878dfb9f903fd90ec6a',
+				//'test_key' => '123456789a123456789a123456789a12', 
 				'key' => '' 
 			);
 			

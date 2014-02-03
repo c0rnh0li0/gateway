@@ -1,8 +1,9 @@
 <?php
-
 	namespace Rakuten\Handlers;
 	
 	use Rakuten;
+	
+	require_once(WWW_DIR . "/../libs/Rakuten/Rakuten.php");
 	
 	class Products extends \Rakuten\Rakuten {
 		var $product;
@@ -13,8 +14,13 @@
 		var $from_attributes;
 		var $product_response;
 		
+		var $array_of_properties;
+		var $product_compare;
+		var $available_variant_labels;
+		
 		var $group = "products";
 		
+		var $products_page_limit = 100;
 		
 		function __construct(){
 			parent::__construct();
@@ -132,17 +138,43 @@
 				)
 			);
 			
-			$this->product_add_errors = array(
+			$this->product_variants_from_product = array(
+				'label' => '',
+				'variant' => array(
+					'variant_id' => 'product_id',
+					'variant_art_no' => 'product_art_no',
+					'name' => 'name',
+					'price' => 'price',
+					'price_reduced' => 'price_reduced',
+					'price_reduced_type' => 'price_reduced_type',
+					'baseprice_unit' => 'baseprice_unit',
+					'baseprice_volume' => 'baseprice_volume',
+					'stock' => 'stock',	
+					'delivery' => 'delivery',
+					'available' => 'available',
+					'isbn' => 'isbn',
+					'ean' => 'ean',	
+					'mpn' => 'mpn',
+				)
+			);
+			
+			$this->errors = array(
+				1105 => "The product ID or item number was not transferred",
+				1106 => "The URL or image parameter was not passed",
+				1110 => "The product could not be found",
+				1115 => "The replaced image could not be found",
+				1120 => "The maximum number of 5 images is achieved",
+				1123 => "The image could not be downloaded from the URL",
+				1124 => "The image has an invalid format. Permits are JPG, GIF and PNG",
+				1125 => "The image could not be saved",
+				1130 => "The image is already assigned to the product",
 				1005 => 'The article number is in the product inventory already exists',
 				1010 => 'The ISBN number is invalid',
 				1011 => 'The EAN number is invalid',
 				1015 => 'The shipping group could not be found',
 				1020 => 'The reduced price is not more favorable than the standard price',
 				1030 => 'The Rakuten category could not be found',
-				1031 => 'The Shop Category was not found'
-			);
-			
-			$this->product_edit_errors = array(
+				1031 => 'The Shop Category was not found', 
 				2205 => 'The product ID or item number was not transferred',
 				2210 => 'The product could not be found',
 				2212 => 'The parameter is not valid when a product with variants',
@@ -153,13 +185,20 @@
 				2232 => 'The Rakuten category was assigned by Rakuten and therefore can not be changed',
 				2240 => 'The ISBN number is invalid',
 				2241 => 'The EAN number is invalid',
-				2245 => 'The shipping group could not be found'
+				2245 => 'The shipping group could not be found', 
+				2505 => 'The product ID or item number was not transferred',
+				2510 => 'The product could not be found', 
+				1205 => 'The product ID or item number was not transferred',
+				1210 => 'The product could not be found',
+				1212 => 'The variant name is not passed',
+				1215 => 'The variant part number is in the product inventory already exists',
+				1220 => 'The reduced price is not more favorable than the standard price',
+				1225 => 'The ISBN number is invalid',
+				1230 => 'The EAN number is invalid', 
+				1505 => 'The product ID or item number was not transferred',
+				1510 => 'The product could not be found'
 			);
 			
-			$this->product_delete_errors = array(
-				2505 => 'The product ID or item number was not transferred',
-				2510 => 'The product could not be found'
-			);
 			
 			$this->product_response = array(
 				'success' => 1,
@@ -170,7 +209,7 @@
 			$this->product_from_xml = array(
 				'product_id' => 'products_id', 						// int: ID of the product
 				'product_art_no' => 'products_model',				// FROM ATTRIBUTES // string: Item number
-				'name' => 'products_description~name', 	// PRODUCTS_DESCRIPTION - PRODUCTS_NAME // string: Name of product
+				'name' => 'products_description~name', 				// PRODUCTS_DESCRIPTION - PRODUCTS_NAME // string: Name of product
 				'price' => 'products_price|products_regularprice', 	// Float: Price is not present in a product with variations!
 				'price_reduced' => 'products_priceb', 				// ????????			// Float: Reduced price is not present in a product with variations!
 				'price_reduced_type' => '', 						// Float: Terms of reduced price 
@@ -237,42 +276,101 @@
 				'besonderheit',
 				'inh_einheit'
 			);
+			
+			
+			$this->array_of_properties = array(
+				'categories', 
+				'images',
+				'attributes',
+				'variants'
+			);
+			
+			$this->product_compare = array(
+				'name' => '', 					// string: Name of product
+				'price' => '', 					// Float: Price is not present in a product with variations!
+				'price_reduced' => '', 			// Float: Reduced price is not present in a product with variations!
+				'price_reduced_type' => '', 	// Float: Terms of reduced price 
+				'shipping_group' => '1', 		// int: Shipping group
+				'available' => '', 				// bool: Availability
+				'producer' => '', 				// string: Manufacturer
+				'stock_policy' => '', 			// bool: Inventory management
+				'stock' => '', 					// int: Inventory is not present in a product with variations!
+				'delivery' => '', 				// int: Delivery time 
+				'min_order_qty' => '', 			// int: Minimum Quantity
+				'staggering' => '', 			// String: Graduation - The format of the staggering is 2,4,6,8.
+				'baseprice_unit' => '', 		// String: Unit of the reference amount 
+				'baseprice_volume' => '', 		// Float: Reference quantity is not present in a product with variations!
+				'tax' => '1', 					// int: VAT - 1 = 19%;
+				'homepage' => '', 				// bool: 
+				'connect' => '', 				// bool: Disabled for paying Sign in! Modules
+				'ean' => '', 					// string: EAN is not present in a product with variations!
+				'isbn' => '', 					// string: ISBN is not present in a product with variations!
+				'mpn' => '', 					// string: MPN (unique manufacturer's part number) is not present in a product with variations!
+				'inci' => '', 					// string: Synopses
+				'description' => '', 			// string: Product Description
+				'comment' => '', 				// string: Comment
+				'cross_selling_title' => '', 	// string: Title of cross-selling
+				'shop_category_id' => '',		// int: ID of a shop category
+				'rakuten_category_id' => '',	// int: Rakuten ID of a portal category
+			);
+			
+			$this->available_variant_labels = array(
+				'color'
+			);
 		}	
 
-		function buildProduct($product_xml, $attributes_array){
+		function buildProduct($product_xml, $attributes_array, $is_variant = false){
 			$product_data = array();
-			$xml_attrs = array_flip($this->product_from_xml);
+			$xml_attrs = $this->product_from_xml;
 			
 			foreach ($xml_attrs as $key => $value){
-				if (!empty($key)){
-					if (strstr($key, '~')){
-						$tmp = explode('~', $key);
+				//echo "$key => $value<br />";
+				
+				//$current_val = $value;
+				//$key = $value;
+				
+				if (!empty($value)){
+					if (strstr($value, '~')){
+						$tmp = explode('~', $value);
 						
 						if ($tmp[0] == 'attributes')
-							$product_data[$value] = $this->getAttributeValue($tmp[1], $attributes_array['attributes']);
+							$product_data[$key] = $this->getAttributeValue($tmp[1], $attributes_array['attributes']);
 						else 
-							$product_data[$value] = (string) $attributes_array[$tmp[0]][$tmp[1]];
+							$product_data[$key] = (string) $attributes_array[$tmp[0]][$tmp[1]];
 					}
-					else if (strstr($key, '|')){
-						$tmp = explode('|', $key);
+					else if (strstr($value, '|')){
+						$tmp = explode('|', $value);
 						$tmp_value = '';
 						if (!empty($product_xml[$tmp[0]]))
 							$tmp_value = (string) $product_xml[$tmp[0]];
 						else 
 							$tmp_value = (string) $product_xml[$tmp[1]];
 						
-						$product_data[$value] = $tmp_value;
+						$product_data[$key] = $tmp_value;
 					}
 					else 
-						$product_data[$value] = (string) $product_xml[$key];
+						$product_data[$key] = (string) $product_xml[$value];
 					
 				}
 				else
-					$product_data[$value] = '';
+					$product_data[$key] = '';
 			}
-
-			$product_data['categories'] = $attributes_array['categories'];
-			$product_data['images'] = $attributes_array['images'];
+			
+			if ($is_variant){
+				foreach ($this->product_variants_from_product['variant'] as $key => $value){
+					$product_data[$key] = $product_data[$value];
+				}
+				
+				unset($product_data['product_id']);
+				unset($product_data['product_art_no']);			
+				unset($product_data['categories']);
+				unset($product_data['images']);
+				
+			}
+			else {
+				$product_data['categories'] = $attributes_array['categories'];
+				$product_data['images'] = $attributes_array['images'];	
+			}
 			
 			return $product_data;
 		}
@@ -282,58 +380,411 @@
 				if ($attribute['name'] == $key)
 					return $attribute['value'];
 		}
+		
+		
+		function prepareProduct($product){
+			if ($product['price_reduced'] == '')
+				unset($product['price_reduced']);
+			
+			if ($product['baseprice_unit'] == '')
+				unset($product['baseprice_unit']);
+			
+			if ($product['staggering'] == '')
+				unset($product['staggering']);
+			
+			if ($product['stock_policy'] == '')
+				unset($product['stock_policy']);
+
+			if ($product['min_order_qty'] == '')
+				unset($product['min_order_qty']);						
+						
+			if ($product['price_reduced_type'] == '')
+				unset($product['price_reduced_type']);
+			
+			if ($product['shipping_group'] == '')
+				unset($product['shipping_group']);
+			
+			if ($product['baseprice_volume'] == '')			
+				unset($product['baseprice_volume']);
+			
+			if ($product['connect'] == '')			
+				unset($product['connect']);
+			
+			if ($product['delivery'] == '')			
+				unset($product['delivery']);
+			
+			if (isset($product['tradoria_category_id']) && $product['tradoria_category_id'] == '')
+				unset($product['tradoria_category_id']);
+			
+			$product['delivery'] = 0;
+			$product['tradoria_category_id'] = 0;
+			$product['shop_category_id'] = 0;
+			
+			
+			return $product;
+		}
 
 		function getProducts($product_model_id = null){
 			$method = 'getProducts';
+			$products_array = array();
 			
+			$url = str_replace('{group}', $this->group, $this->url);
+			$url = str_replace('{method}', $method, $url);
 			
+			$page = 1;
+			$post = 0;
+			
+			$response = parent::doRequest($url, $post, array(
+				'key' => $this->key, 
+				'page' => $page, 
+				'per_page' => $this->products_page_limit
+			));
+			
+			if ($response['success'] == 1){
+				foreach ($response['products']['product'] as $product)
+					$products_array[] = $product;
+				
+				if ($response['products']['paging']['pages'] > 1){
+					$page = 2;
+					
+					while ($page <= $response['products']['paging']['pages']){
+						$response_other = parent::doRequest($url, $post, array(
+							'key' => $this->key, 
+							'page' => $page, 
+							'per_page' => $this->products_page_limit
+						));
+						
+						$page++;
+						
+						foreach ($response_other['products']['product'] as $product)
+							$products_array[] = $product;
+					}
+				}
+			}
+			
+			for ($i = 0; $i < count($products_array); $i++){
+				foreach ($products_array[$i] as $key => $value){
+					if (is_array($products_array[$i][$key]) && !in_array($key, $this->array_of_properties))
+						$products_array[$i][$key] = '';
+				}
+			}
+			
+			return $products_array;			
 		}
 		
 		
 		/* Product main API methods */
-		function addProduct($product_xml){
+		function addProduct($product_data){
 			$method = 'addProduct';
+			$post = 1;
+			
+			$product = $this->prepareProduct($product_data);
+			
+			$request_params = $product;
+			$request_params['key'] = $this->key; 
+			
+			$url = str_replace('{group}', $this->group, $this->url);
+			$url = str_replace('{method}', $method, $url);
+			
+			$result = parent::doRequest($url, $post, $request_params);
+			
+			if ($result['success'] == 1){
+				$has_error = false;
+				
+				// DONE
+				if (isset($product['images']) && is_array($product['images']) && sizeof($product['images'])){
+					foreach ($product['images'] as $image){
+						if (!$this->addProductImage($product['product_art_no'], $image))
+							$has_error = true;
+					}
+				}
+				
+				if (isset($product['attributes']) && is_array($product['attributes']) && sizeof($product['attributes'])){
+					foreach ($product['attributes'] as $attribute){
+						if (!$this->addProductAttribute($product['product_art_no'], $attribute))
+							$has_error = true;
+					}
+				}
+				
+				if (isset($product['categories']) && is_array($product['categories']) && sizeof($product['categories'])){
+					foreach ($product['categories'] as $category){
+						if (!$this->addProductToShopCategory($product['product_art_no'], $category))
+							$has_error = true;
+					}
+				}
+				
+				if (isset($product['variants']) && is_array($product['variants']) && sizeof($product['variants'])){
+					foreach ($product['variants'] as $variant){
+						if (!$this->addProductVariant($product['product_art_no'], $variant))
+							$has_error = true;
+					}
+				}
+				
+				if ($has_error){
+					echo "some error occured";
+				}
+				
+				return true;
+			}
+				
+			
+			$this->error = $this->getErrorMessage($result);
+			
+			return false;
 		}
 
-		function editProduct(){
+		function editProduct($product_data){
+			$method = 'editProduct';
 			
+			$post = 1;
+			
+			$url = str_replace('{group}', $this->group, $this->url);
+			$url = str_replace('{method}', $method, $url);
+			
+			$request_array = array(
+				'key' => $this->key
+			);
+			
+			$product_data['key'] = $this->key;
+			
+			$result = parent::doRequest($url, $post, $request_array);
+			
+			// TODO solve updating variants, images, attributes
+			if ($result['success'] == 1)
+				return true;
+			
+			$this->error = $this->getErrorMessage($result);
+			
+			return false;			
 		}
 		
-		function deleteProduct(){
+		function deleteProduct($product){
+			if ($product['has_variants'] == 1){
+				if (!$this->deleteProductVariants($product['variants']))
+					return false;
+			}
+
+			if (isset($product['images']) && is_array($product['images'])){
+				if (!$this->deleteProductImages($product['images']))
+					return false;
+			}
+
+			$method = 'deleteProduct';
 			
+			$post = 1;
+			
+			$url = str_replace('{group}', $this->group, $this->url);
+			$url = str_replace('{method}', $method, $url);
+			
+			$request_array = array(
+				'key' => $this->key
+			);
+			
+			if (!empty($product['product_art_no']))
+				$request_array['product_art_no'] = $product['product_art_no'];
+			else 
+				$request_array['product_id'] = $product['product_id'];
+			
+			
+			$result = parent::doRequest($url, $post, $request_array);
+			
+			if ($result['success'] == 1)
+				return true;
+			
+			$this->error = $this->getErrorMessage($result);
+			
+			return false;
 		}
 		
 		
 		
 		/* Product images API methods */
-		function addProductImage(){
+		function deleteProductImages($images){
+			$has_errors = false;
 			
+			if (sizeof($images)){
+				if (isset($images['image']['image_id']))
+					return $this->deleteProductImage($images['image']['image_id']);
+				else {
+					foreach ($images['image'] as $image){
+						if (!$this->deleteProductImage($image['image_id']))
+							$has_errors = true;
+					}
+				}
+			}
+			
+			return !$has_errors;
 		}
 		
-		function deleteProductImage(){
+		function addProductImage($product_art_no, $image){
+			$method = 'addProductImage';
 			
+			$post = 1;
+			
+			$url = str_replace('{group}', $this->group, $this->url);
+			$url = str_replace('{method}', $method, $url);
+			
+			$result = parent::doRequest($url, $post, array(
+				'key' => $this->key, 
+				'product_art_no' => $product_art_no, 
+				'url' => $image				
+			));
+			
+			if ($result['success'] == 1)
+				return true;
+			
+			$this->error = $this->getErrorMessage($result);
+			
+			return false; 
+		}
+		
+		function deleteProductImage($image_id){
+			$method = 'deleteProductImage';
+			
+			$post = 1;
+			
+			$url = str_replace('{group}', $this->group, $this->url);
+			$url = str_replace('{method}', $method, $url);
+			
+			$result = parent::doRequest($url, $post, array(
+				'key' => $this->key, 
+				'image_id' => $image_id, 
+				//'product_id ' => ''
+			));
+			
+			if ($result['success'] == 1)
+				return true;
+			
+			$this->error = $this->getErrorMessage($result);
+			
+			return false; 
 		}
 		
 		
 		
 		/* Product variants API methods */
-		function addProductVariant(){
+		function deleteProductVariants($variants){
+			foreach ($variants as $variant){
+				if (isset($variant['variant_id']) && !empty($variant['variant_id']))
+					return $this->deleteProductVariantByID($variant['variant_id']);
+				
+				if (isset($variant['variant_art_no']) && !empty($variant['variant_art_no']))
+					return $this->deleteProductVariantByArtID($variant['variant_art_no']);
+			}
+		}
+		
+		function addProductVariant($product_art_no, $variant){
+			unset($variant['variant_id']);
+			$method = 'addProductVariant';
 			
+			$variant = $this->prepareProduct($variant);
+			
+			$url = str_replace('{group}', $this->group, $this->url);
+			$url = str_replace('{method}', $method, $url);
+			
+			$post = 1;
+			
+			if (isset($variant['attributes']) && is_array($variant['attributes']) && sizeof($variant['attributes'])){
+				foreach ($variant['attributes'] as $attribute){
+					if (in_array($variant['name'], $this->available_variant_labels) || in_array($variant['label'], $this->available_variant_labels)){
+						$variant['name'] = ($attribute['label'] != '') ? $attribute['label'] : $attribute['name'];
+						$variant['value'] = $attribute['value'];
+					}
+				}
+			}
+			unset($variant['attributes']);
+			
+			$variant['key'] = $this->key;
+			
+			
+			print_r($variant);
+			
+			$response = parent::doRequest($url, $post, $variant);
+			
+			if ($result['success'] == 1)
+				return true;
+			
+			$this->error = $this->getErrorMessage($result);
+			
+			return false;			
 		}
 		
 		function editProductVariant(){
 			
 		}
 		
-		function deleteProductVariant(){
+		function deleteProductVariantByID($variant_id){
+			$method = 'deleteProductVariant';
 			
+			$url = str_replace('{group}', $this->group, $this->url);
+			$url = str_replace('{method}', $method, $url);
+			
+			$post = 1;
+			
+			$response = parent::doRequest($url, $post, array(
+				'key' => $this->key, 
+				'variant_id' => $variant_id
+			));
+			
+			if ($result['success'] == 1)
+				return true;
+			
+			$this->error = $this->getErrorMessage($result);
+			
+			return false;
+		}
+		
+		function deleteProductVariantByArtID($variant_art_id){
+			$method = 'deleteProductVariant';
+			
+			$url = str_replace('{group}', $this->group, $this->url);
+			$url = str_replace('{method}', $method, $url);
+			
+			$post = 1;
+			
+			$response = parent::doRequest($url, $post, array(
+				'key' => $this->key, 
+				'variant_art_id' => $variant_art_id
+			));
+			
+			if ($result['success'] == 1)
+				return true;
+			
+			$this->error = $this->getErrorMessage($result);
+			
+			return false;
 		}
 		
 		
 		
+		
 		/* Product attributes API methods */
-		function addProductAttribute(){
+		function addProductAttribute($product_art_no, $attribute){
+			if ($attribute['name'] == '' || $attribute['value'] == ''){
+				$this->error = "No 'name' or 'value' for this attribute";
+				return false;
+			}
 			
+			$method = 'addProductAttribute';
+			
+			$post = 1;
+			
+			$url = str_replace('{group}', $this->group, $this->url);
+			$url = str_replace('{method}', $method, $url);
+			
+			$result = parent::doRequest($url, $post, array(
+				'key' => $this->key, 
+				'product_art_no' => $product_art_no, 
+				'title ' => $attribute['name'],
+				'value' => $attribute['value']
+			));
+			
+			if ($result['success'] == 1)
+				return true;
+			
+			$this->error = $this->getErrorMessage($result);
+			
+			return false; 
 		}
 		
 		function getProductAttributes(){
@@ -342,6 +793,77 @@
 		
 		function deleteProductAttribute(){
 			
+		}
+		
+		/* Product to Categories API methods */
+		function addProductToShopCategory($product_art_id, $external_category_id){
+			// possible post params for association (going with fresh product_art_no  and external_shop_category_id)
+			// ..............................				
+			// shop_category_id 
+			// external_shop_category_id 
+			// product_id
+			// product_art_no
+			
+			$method = 'addProductToShopCategory';
+			
+			$url = str_replace('{group}', $this->group, $this->url);
+			$url = str_replace('{method}', $method, $url);
+			
+			$post = 1;
+			
+			$response = parent::doRequest($url, $post, array(
+				'key' => $this->key, 
+				'external_shop_category_id' => $external_category_id, 
+				'product_art_no ' => $product_art_id
+			));
+			
+			if ($result['success'] == 1)
+				return true;
+			
+			$this->error = $this->getErrorMessage($result);
+			
+			return false; 
+		}
+		
+		function deleteProductFromShopCategory($product_art_id, $external_category_id){
+			// possible post params for association (going with fresh product_art_no  and external_shop_category_id)
+			// ..............................				
+			// shop_category_id 
+			// external_shop_category_id 
+			// product_id
+			// product_art_no
+			
+			$method = 'deleteProductFromShopCategory';
+			
+			$url = str_replace('{group}', $this->group, $this->url);
+			$url = str_replace('{method}', $method, $url);
+			
+			$post = 1;
+			
+			$response = parent::doRequest($url, $post, array(
+				'key' => $this->key, 
+				'external_shop_category_id' => $external_category_id, 
+				'product_art_no ' => $product_art_id
+			));
+			
+			if ($result['success'] == 1)
+				return true;
+			
+			$this->error = $this->getErrorMessage($result);
+			
+			return false; 
+		}
+				
+		
+		function getErrorMessage($response){
+			print_r($response);
+			
+			//return "an error occured";
+			return (isset($this->errors[$response['errors']['error']['code']]) ? $this->errors[$response['errors']['error']['code']] : $response['errors']['error']['message']);
+		}
+		
+		function getError(){
+			return $this->error;
 		}
 	} 
 	

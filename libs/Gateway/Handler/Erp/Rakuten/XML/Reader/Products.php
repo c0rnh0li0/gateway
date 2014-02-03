@@ -95,7 +95,7 @@ class Products extends Reader {
 		        if ($productVariants !== false) {
 		            foreach ($productVariants as $productVariant) {
 		            	$variant_data_array = $this->buildProduct($xml, $productVariant);
-		                $temp_variant = $product->buildProduct($productVariant, $variant_data_array);
+		                $temp_variant = $product->buildProduct($productVariant, $variant_data_array, true);
 						$temp_variant['attributes'] = $variant_data_array['attributes'];
 						$temp_variant['categories'] = $variant_data_array['categories'];
 						$temp_variant['images'] = $variant_data_array['images'];
@@ -107,6 +107,8 @@ class Products extends Reader {
 			}
 			
 			$product_data = $product->buildProduct($xmlProduct, $product_data_array);
+			//$product_data = array_merge($product_data, $product_data_array);
+			 
 			//$product_data['products_description'] = $product_data_array['descriptions'];
 			$product_data['attributes'] = $product_data_array['attributes'];
 			$product_data['categories'] = $product_data_array['categories'];
@@ -119,62 +121,10 @@ class Products extends Reader {
 			// $product->sku = (string) $xmlProduct['products_model'];
 			
 			$all_products[] = $product_data;
-			
-			/*
-            //$isMaster = isset($xmlProduct['products_master_model']) && (int) $xmlProduct['products_master_model'] ? true : false;
-            $attributeSet = "default"; // FIXME put this information into XML as eg. <attributes products_id="13352" set="tshirt">
-			*/
-            
 
             $this->loadCategories($xml, $xmlProduct, $product);
-            // searches all current product categories IDs
-            /*$xmlProductCategoriesPattern = '//products_to_categories[@products_id=' . $xmlProduct['products_id'] . ']/@categories_id';
-            $productCategoriesIds = $xml->xpath($xmlProductCategoriesPattern);
-
-            // FIXME what if no categories were found? Skip this product?
-            if ($productCategoriesIds) {
-                foreach ($productCategoriesIds as $productCategoryId) {
-                    
-                    if ($this->debug['oldCategory']) {
-                        // old not localized
-                        $category = $this->findCategory($productCategoryId, $xml);
-                        $product->addCategory($category);
-                    } else {
-                        $childNode = current($xml->xpath('//categories[@categories_id=' . $productCategoryId . ']'));
-                        $childNodeDescriptions = $xml->xpath('//categories_description[@categories_id=' . $productCategoryId . ']');
-
-                        // common attributes for all localized
-                        $category = new \Gateway\DataSource\Entity\Product\Category();
-                        $category->id = (int) $productCategoryId;
-                        $category->isActive = ((int) $childNode['categories_status']) > 0 ? true : false;
-                        $category->isVisible = ((int) $childNode['categories_visibility']) > 0 ? true : false; 
-                        $category->addSpecialProperty('isAnchor', false);
-
-                        // localized values
-                        foreach ($childNodeDescriptions as $childNodeDescription) {
-                            $category->name = (string) $childNodeDescription['categories_name'];
-                            $category->lang = (string) $childNodeDescription['language_id'];
-
-                            // build localized parent path
-                            $parentId = (int) $childNode['parent_id'];
-
-                            if ($parentId > 0) {
-                                $category->parent = $this->buildPath($parentId, $xml, (string )$childNodeDescription['language_id']);
-                            }
-
-                            $product->addCategory(clone $category);
-                        }
-                    }
-                }
-                    
-            }*/
-            
-            /*
-            dump($product->getCategories());
-            exit;*/
-
-           
-            // debug limit
+          
+			  // debug limit
             if ($this->debug['limit'] && ($step++ == $this->debug['limit'])) {
                 break;
             }
@@ -192,18 +142,11 @@ class Products extends Reader {
         }
 		*/
 
-		echo "dump in " . $_SERVER['DOCUMENT_ROOT'] . '/products.txt<br />';
-		
-		file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/print.txt', print_r($all_products, true));
-
-		print_r($all_products);
-		die;
-        
-        Utils::log("%s products has been parsed.", $products->count());
+		Utils::log("%s products has been parsed.", count($all_products));
 
         // FIXME when subproducts does not exists, skip? 
         // now it is time to put parents and children into this structure        
-        foreach ($parentProducts as $parent) {
+        /*foreach ($parentProducts as $parent) {
             // if parent has children, we go through
             if (isset($parent['skus']) && count($parent['skus'])) {
                 Utils::log("Updating '%s': adding subproducts of '%s'.", $parent['product']->sku, implode(", ", $parent['skus']));
@@ -221,11 +164,12 @@ class Products extends Reader {
                     }
                 }
             }
-        }
+        }*/
 
         Utils::log("Products DataSource is prepared.");
 
-        return $products;
+        //return $products;
+        return $all_products;
     }
 
 	protected function buildProduct($xml, $xmlProduct){

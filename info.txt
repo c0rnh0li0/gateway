@@ -1,0 +1,33 @@
+Najmil Darko moj!
+
+Vo gateway.zip se site fajlovi za Gateway-ot, on asto zborevme deka ima poveke handler-i za Products, Categories, ProductToCategory, ProductImages, Orders itn..
+Vo DB_gw2test.rar i napraviv export na TEST databazata a konfiguracijata za nea se pravi vo gateway\app\config.neon. (setinzite momentalno vo ovoj fajl se za live, a ti imas export od test-ot taka da moze ke treba da se smenat)
+
+Vo 20131212051612.xml mozes da vidis kako izgleda XML-ot a vo more samples XML_GWV2 turiv uste nekoj primer i plus ima i za ORDER xml-ot kako izgleda od SHOP sto se vraka nazad u ERP preku Gateway-ot.
+
+Momentalno imame 3 instanci od Gateway-ot: LIVE, TEST i DEV
+
+test.lvps91-250-96-10.dedicated.hosteurope.de - test
+dev.lvps91-250-96-10.dedicated.hosteurope.de - development
+
+user: admin
+pass: gate123
+
+Vo slucaj da sakas da vidis neso vo DB - slobodno dzirkaj i eksperimentiraj so TEST i DEV, samo nemoj so LIVE :)
+Plesk: https://91-250-96-10.kundenadmin.hosteurope.de:8443/
+user: admin
+pass: Qe79b6dR
+
+gateway\libs\Gateway\DataSource\Stock.php
+gateway\libs\Gateway\Handler\Erp\Etron\CSV\Reader.php
+gateway\libs\Gateway\Handler\IHandler.php
+gateway\libs\Gateway\Handler\Erp\Etron\CSV\Reader\Stock.php - ovde se cita CSV-to 
+gateway\libs\Gateway\Handler\Shop\Magento\SOAP\Writer\Stock.php - tuka mozes da go vidis povikot so koj array-ot go puni SHOP-ot
+
+RAKUTEN test Shop:
+https://merchants.rakuten.de/login?sid=627235a66e2c38eb9b04d07e410b2df6
+user: 323964
+pass: WUsp9s
+
+
+Ako ti tekne use neso ili sakas da mi kazes deka me sakas i u 4 sabajle da me baras tuka sum uvek za tebe!!
