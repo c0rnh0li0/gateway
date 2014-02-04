@@ -129,8 +129,8 @@
 				'position' => '', 								// Integer: Position of the category in the category-level
 				'url' => '', 									// String: URL to the category in the shop
 				'meta_title' => '', 							// String: Page Title (SEO) of the Shop Category
-				'meta_description' => '', 						// String: Meta-Description (SEO) of the Shop Category
-				'meta_keywords' => ''							// String: Keywords (SEO) of the category page
+				//'meta_description' => '', 						// String: Meta-Description (SEO) of the Shop Category
+				//'meta_keywords' => ''							// String: Keywords (SEO) of the category page
 			);
 		}
 

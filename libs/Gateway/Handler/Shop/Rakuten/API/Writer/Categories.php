@@ -172,11 +172,14 @@ class Categories extends \Gateway\Handler\Shop\Rakuten\API\Writer {
 	
 	
 	function deleteMissingCategories(){
+		// delete all missing categories from the rakuten categories
+		
 		// $this->dataSource -> new ones from XML
 		// $this->existing_categories -> old ones fetched from the API
 		
 		foreach ($this->dataSource as $new){
-			if ($this->isInStore($existing_category['external_shop_category_id']) && (int)$new['category_id'] < 0)			
+			//if ($this->isOldInStore($new['external_shop_category_id']) && (int)$new['category_id'] < 0)
+			if ($this->isOldInStore($new['external_shop_category_id']))			
 				$this->categories_to_delete[] = $new;	
 		}
 		
@@ -198,7 +201,14 @@ class Categories extends \Gateway\Handler\Shop\Rakuten\API\Writer {
 	}
 	
 	
-	
+	function isOldInStore($category_id){
+		foreach ($this->existing_categories as $old_category)
+			if ($old_category['external_shop_category_id'] == $category_id) 
+				return $old_category;
+				
+		return false;
+	}
+
 	function isInStore($category_id){
 		foreach ($this->dataSource as $new_category)
 			if ($new_category['external_shop_category_id'] == $category_id) 

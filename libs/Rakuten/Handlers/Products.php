@@ -210,8 +210,11 @@
 				'product_id' => 'products_id', 						// int: ID of the product
 				'product_art_no' => 'products_model',				// FROM ATTRIBUTES // string: Item number
 				'name' => 'products_description~name', 				// PRODUCTS_DESCRIPTION - PRODUCTS_NAME // string: Name of product
-				'price' => 'products_price|products_regularprice', 	// Float: Price is not present in a product with variations!
-				'price_reduced' => 'products_priceb', 				// ????????			// Float: Reduced price is not present in a product with variations!
+				//'price' => 'products_price|products_regularprice', 	// Float: Price is not present in a product with variations!
+				//'price_reduced' => 'products_priceb', 				// ????????			// Float: Reduced price is not present in a product with variations!
+				'price' => 'products_regularprice', 				// Float: Price is not present in a product with variations!
+				'price_reduced' => 'products_price', 				// ????????			// Float: Reduced price is not present in a product with variations!
+				
 				'price_reduced_type' => '', 						// Float: Terms of reduced price 
 																	// RRP = Original price is retail price; 
 																	// VK = Original price is old selling price; 
@@ -314,9 +317,11 @@
 				'rakuten_category_id' => '',	// int: Rakuten ID of a portal category
 			);
 			
+			/*
 			$this->available_variant_labels = array(
 				'color'
 			);
+			*/ 
 		}	
 
 		function buildProduct($product_xml, $attributes_array, $is_variant = false){
@@ -413,13 +418,21 @@
 			if ($product['delivery'] == '')			
 				unset($product['delivery']);
 			
+			if (isset($product['shop_category_id']) && $product['shop_category_id'] == '')			
+				unset($product['shop_category_id']);
+				
+			if (isset($product['rakuten_category_id']) && $product['rakuten_category_id'] == '')			
+				unset($product['rakuten_category_id']);
+			
 			if (isset($product['tradoria_category_id']) && $product['tradoria_category_id'] == '')
 				unset($product['tradoria_category_id']);
 			
 			$product['delivery'] = 0;
-			$product['tradoria_category_id'] = 0;
-			$product['shop_category_id'] = 0;
+			//$product['tradoria_category_id'] = 0;
+			//$product['shop_category_id'] = 0;
+			//$product['rakuten_category_id'] = 0;
 			
+			//$product['title'] = $product['name'];
 			
 			return $product;
 		}
@@ -434,47 +447,68 @@
 			$page = 1;
 			$post = 0;
 			
-			$response = parent::doRequest($url, $post, array(
+			$params_array = array(
 				'key' => $this->key, 
 				'page' => $page, 
 				'per_page' => $this->products_page_limit
-			));
+			);
+			
+			$response = parent::doRequest($url, $post, $params_array);
 			
 			if ($response['success'] == 1){
-				foreach ($response['products']['product'] as $product)
-					$products_array[] = $product;
-				
-				if ($response['products']['paging']['pages'] > 1){
-					$page = 2;
-					
-					while ($page <= $response['products']['paging']['pages']){
-						$response_other = parent::doRequest($url, $post, array(
-							'key' => $this->key, 
-							'page' => $page, 
-							'per_page' => $this->products_page_limit
-						));
-						
-						$page++;
-						
-						foreach ($response_other['products']['product'] as $product)
+				if (isset($response['products']['product']) && is_array($response['products']['product']) && sizeof($response['products']['product'])){
+					if ($response['products']['paging']['total'] == 1)
+						$products_array[] = $response['products']['product'];
+					else {
+						foreach ($response['products']['product'] as $product)
 							$products_array[] = $product;
+						
+						if ($response['products']['paging']['pages'] > 1){
+							$page = 2;
+							
+							while ($page <= $response['products']['paging']['pages']){
+								$response_other = parent::doRequest($url, $post, array(
+									'key' => $this->key, 
+									'page' => $page, 
+									'per_page' => $this->products_page_limit
+								));
+								
+								$page++;
+								
+								foreach ($response_other['products']['product'] as $product)
+									$products_array[] = $product;
+							}
+						}	
+					}					
+				}
+				
+			}
+			
+			if (sizeof($products_array)){
+				for ($i = 0; $i < count($products_array); $i++){
+					if (isset($products_array[$i]) && is_array($products_array[$i])){
+						foreach ($products_array[$i] as $key => $value){
+							if (is_array($products_array[$i][$key]) && !in_array($key, $this->array_of_properties))
+								$products_array[$i][$key] = '';
+						}
+					} 
+					else {
+						foreach ($products_array as $key => $value){
+							if (is_array($products_array[$key]) && !in_array($key, $this->array_of_properties))
+								$products_array[$key] = '';
+						}
 					}
 				}
 			}
 			
-			for ($i = 0; $i < count($products_array); $i++){
-				foreach ($products_array[$i] as $key => $value){
-					if (is_array($products_array[$i][$key]) && !in_array($key, $this->array_of_properties))
-						$products_array[$i][$key] = '';
-				}
-			}
-			
-			return $products_array;			
+			return $products_array;
 		}
 		
 		
 		/* Product main API methods */
 		function addProduct($product_data){
+			echo "ADDING PRODUCT: ". $product_data['product_art_no'] . "<br />";
+			
 			$method = 'addProduct';
 			$post = 1;
 			
@@ -482,6 +516,11 @@
 			
 			$request_params = $product;
 			$request_params['key'] = $this->key; 
+			unset($request_params['images']);
+			unset($request_params['categories']);
+			unset($request_params['attributes']);
+			unset($request_params['variants']);
+			unset($request_params['product_id']);
 			
 			$url = str_replace('{group}', $this->group, $this->url);
 			$url = str_replace('{method}', $method, $url);
@@ -493,6 +532,8 @@
 				
 				// DONE
 				if (isset($product['images']) && is_array($product['images']) && sizeof($product['images'])){
+					echo "adding images<br /><br />";
+					
 					foreach ($product['images'] as $image){
 						if (!$this->addProductImage($product['product_art_no'], $image))
 							$has_error = true;
@@ -500,6 +541,7 @@
 				}
 				
 				if (isset($product['attributes']) && is_array($product['attributes']) && sizeof($product['attributes'])){
+					echo "adding attributes<br /><br />";
 					foreach ($product['attributes'] as $attribute){
 						if (!$this->addProductAttribute($product['product_art_no'], $attribute))
 							$has_error = true;
@@ -507,6 +549,7 @@
 				}
 				
 				if (isset($product['categories']) && is_array($product['categories']) && sizeof($product['categories'])){
+					echo "adding categories<br /><br />";
 					foreach ($product['categories'] as $category){
 						if (!$this->addProductToShopCategory($product['product_art_no'], $category))
 							$has_error = true;
@@ -514,6 +557,7 @@
 				}
 				
 				if (isset($product['variants']) && is_array($product['variants']) && sizeof($product['variants'])){
+					echo "adding variants<br /><br />";
 					foreach ($product['variants'] as $variant){
 						if (!$this->addProductVariant($product['product_art_no'], $variant))
 							$has_error = true;
@@ -534,6 +578,7 @@
 		}
 
 		function editProduct($product_data){
+			echo "EDITING PRODUCT: ". $product_data['product_art_no'] . "<br />";
 			$method = 'editProduct';
 			
 			$post = 1;
@@ -541,13 +586,13 @@
 			$url = str_replace('{group}', $this->group, $this->url);
 			$url = str_replace('{method}', $method, $url);
 			
-			$request_array = array(
-				'key' => $this->key
-			);
+			$product = $this->prepareProduct($product_data);
+			$product['key'] = $this->key;
+			unset($product['product_id']);
 			
-			$product_data['key'] = $this->key;
+			echo "EDIT URL: " . $url . '?' . http_build_query($product) . "<br /><br /><br />";
 			
-			$result = parent::doRequest($url, $post, $request_array);
+			$result = parent::doRequest($url, $post, $product);
 			
 			// TODO solve updating variants, images, attributes
 			if ($result['success'] == 1)
@@ -559,6 +604,7 @@
 		}
 		
 		function deleteProduct($product){
+			/*
 			if ($product['has_variants'] == 1){
 				if (!$this->deleteProductVariants($product['variants']))
 					return false;
@@ -568,13 +614,18 @@
 				if (!$this->deleteProductImages($product['images']))
 					return false;
 			}
-
+			*/
+			
+			// edit product
 			$method = 'deleteProduct';
 			
 			$post = 1;
 			
 			$url = str_replace('{group}', $this->group, $this->url);
 			$url = str_replace('{method}', $method, $url);
+			
+			
+			// available = 0
 			
 			$request_array = array(
 				'key' => $this->key
@@ -624,11 +675,20 @@
 			$url = str_replace('{group}', $this->group, $this->url);
 			$url = str_replace('{method}', $method, $url);
 			
-			$result = parent::doRequest($url, $post, array(
+			$request_params = array(
 				'key' => $this->key, 
 				'product_art_no' => $product_art_no, 
 				'url' => $image				
-			));
+			);
+			
+			$result = parent::doRequest($url, $post, $request_params);
+			
+			print_r($request_params);
+			echo "<hr />";
+			echo $url . '?' . http_build_query($request_params);
+			echo "<hr />";
+			echo "Result: ". print_r($result);
+			die;
 			
 			if ($result['success'] == 1)
 				return true;
@@ -674,6 +734,8 @@
 		}
 		
 		function addProductVariant($product_art_no, $variant){
+			echo "ADDING PRODUCT VARIANT: ". $variant['variant_art_no'] . "<br />";
+			
 			unset($variant['variant_id']);
 			$method = 'addProductVariant';
 			
@@ -686,31 +748,38 @@
 			
 			if (isset($variant['attributes']) && is_array($variant['attributes']) && sizeof($variant['attributes'])){
 				foreach ($variant['attributes'] as $attribute){
-					if (in_array($variant['name'], $this->available_variant_labels) || in_array($variant['label'], $this->available_variant_labels)){
-						$variant['name'] = ($attribute['label'] != '') ? $attribute['label'] : $attribute['name'];
+					if (in_array($attribute['name'], $this->available_variant_labels) || in_array($attribute['label'], $this->available_variant_labels)){
+						//$variant['label'] = ($attribute['label'] != '') ? $attribute['label'] : $attribute['name'];
+						$variant['label'] = $attribute['name'];
 						$variant['value'] = $attribute['value'];
+						
+						$variant[$attribute['name']] = $attribute['value'];
 					}
 				}
 			}
 			unset($variant['attributes']);
 			
+			$variant['product_art_no'] = $product_art_no;
 			$variant['key'] = $this->key;
-			
-			
-			print_r($variant);
 			
 			$response = parent::doRequest($url, $post, $variant);
 			
-			if ($result['success'] == 1)
+			if ($response['success'] == 1)
 				return true;
 			
-			$this->error = $this->getErrorMessage($result);
+			$this->error = $this->getErrorMessage($response);
 			
 			return false;			
 		}
 		
 		function editProductVariant(){
 			
+			print_r($variant);
+			echo "<hr />";
+			echo $url . '?' . http_build_query($variant);
+			echo "<hr />";
+			echo "Result: ". print_r($response);
+			die;
 		}
 		
 		function deleteProductVariantByID($variant_id){
@@ -726,10 +795,10 @@
 				'variant_id' => $variant_id
 			));
 			
-			if ($result['success'] == 1)
+			if ($response['success'] == 1)
 				return true;
 			
-			$this->error = $this->getErrorMessage($result);
+			$this->error = $this->getErrorMessage($response);
 			
 			return false;
 		}
@@ -747,10 +816,10 @@
 				'variant_art_id' => $variant_art_id
 			));
 			
-			if ($result['success'] == 1)
+			if ($response['success'] == 1)
 				return true;
 			
-			$this->error = $this->getErrorMessage($result);
+			$this->error = $this->getErrorMessage($response);
 			
 			return false;
 		}
@@ -762,6 +831,8 @@
 		function addProductAttribute($product_art_no, $attribute){
 			if ($attribute['name'] == '' || $attribute['value'] == ''){
 				$this->error = "No 'name' or 'value' for this attribute";
+				echo "Attribute error: " . $this->error . "<hr />";
+				
 				return false;
 			}
 			
@@ -772,12 +843,14 @@
 			$url = str_replace('{group}', $this->group, $this->url);
 			$url = str_replace('{method}', $method, $url);
 			
-			$result = parent::doRequest($url, $post, array(
+			$request_params = array(
 				'key' => $this->key, 
 				'product_art_no' => $product_art_no, 
-				'title ' => $attribute['name'],
+				'title' => $attribute['name'],
 				'value' => $attribute['value']
-			));
+			);
+			
+			$result = parent::doRequest($url, $post, $request_params);
 			
 			if ($result['success'] == 1)
 				return true;
@@ -811,16 +884,18 @@
 			
 			$post = 1;
 			
-			$response = parent::doRequest($url, $post, array(
+			$request_params = array(
 				'key' => $this->key, 
 				'external_shop_category_id' => $external_category_id, 
-				'product_art_no ' => $product_art_id
-			));
+				'product_art_no' => $product_art_id
+			);
 			
-			if ($result['success'] == 1)
+			$response = parent::doRequest($url, $post, $request_params);
+			
+			if ($response['success'] == 1)
 				return true;
 			
-			$this->error = $this->getErrorMessage($result);
+			$this->error = $this->getErrorMessage($response);
 			
 			return false; 
 		}
@@ -846,17 +921,17 @@
 				'product_art_no ' => $product_art_id
 			));
 			
-			if ($result['success'] == 1)
+			if ($response['success'] == 1)
 				return true;
 			
-			$this->error = $this->getErrorMessage($result);
+			$this->error = $this->getErrorMessage($response);
 			
 			return false; 
 		}
 				
 		
 		function getErrorMessage($response){
-			print_r($response);
+			echo "Response: " . print_r($response) . "<hr />";
 			
 			//return "an error occured";
 			return (isset($this->errors[$response['errors']['error']['code']]) ? $this->errors[$response['errors']['error']['code']] : $response['errors']['error']['message']);

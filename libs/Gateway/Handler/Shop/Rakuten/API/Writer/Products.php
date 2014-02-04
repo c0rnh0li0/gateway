@@ -56,7 +56,7 @@ class Products extends \Gateway\Handler\Shop\Rakuten\API\Writer {
 		$this->init();
 		
 		
-
+		// $attrs = $product->getAttributes($lang);
 		
 
 

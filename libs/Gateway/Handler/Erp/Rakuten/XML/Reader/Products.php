@@ -7,6 +7,16 @@ use Gateway\Handler\Erp\Rakuten\XML\Reader,
     Gateway\Utils, 
 	Rakuten\Handlers;
 
+/*
+ * 
+ * 
+ * manufacutrer_name instead of manufacturer id 
+ * 
+ * 'producer' => 'manufacturers_id'
+ * 
+ */
+
+
 /**
  * Products XML to DataSource handler.
  *
