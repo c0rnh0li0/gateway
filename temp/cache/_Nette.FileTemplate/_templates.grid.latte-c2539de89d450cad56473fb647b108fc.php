@@ -1,16 +1,16 @@
-<?php //netteCache[01]000377a:2:{s:4:"time";s:21:"0.54064500 1390862378";s:9:"callbacks";a:2:{i:0;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:9:"checkFile";}i:1;s:55:"D:\wamp\www\gateway\libs\NiftyGrid\templates\grid.latte";i:2;i:1390862109;}i:1;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:10:"checkConst";}i:1;s:25:"Nette\Framework::REVISION";i:2;s:30:"2f3808e released on 2012-07-30";}}}?><?php
+<?php //netteCache[01]000377a:2:{s:4:"time";s:21:"0.39267600 1391873662";s:9:"callbacks";a:2:{i:0;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:9:"checkFile";}i:1;s:55:"D:\wamp\www\gateway\libs\NiftyGrid\templates\grid.latte";i:2;i:1390862109;}i:1;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:10:"checkConst";}i:1;s:25:"Nette\Framework::REVISION";i:2;s:30:"2f3808e released on 2012-07-30";}}}?><?php
 
 // source file: D:\wamp\www\gateway\libs\NiftyGrid\templates\grid.latte
 
 ?><?php
 // prolog Nette\Latte\Macros\CoreMacros
-list($_l, $_g) = Nette\Latte\Macros\CoreMacros::initRuntime($template, 'h1zuqe359v')
+list($_l, $_g) = Nette\Latte\Macros\CoreMacros::initRuntime($template, 'dk1f46kdbr')
 ;
 // prolog Nette\Latte\Macros\UIMacros
 //
 // block _
 //
-if (!function_exists($_l->blocks['_'][] = '_lb53ac2dc399__')) { function _lb53ac2dc399__($_l, $_args) { extract($_args); $_control->validateControl(false)
+if (!function_exists($_l->blocks['_'][] = '_lb000441505a__')) { function _lb000441505a__($_l, $_args) { extract($_args); $_control->validateControl(false)
 ;if (!$control->isSubGrid): echo Nette\Templating\Helpers::escapeHtml($control['gridForm']->render('begin'), ENT_NOQUOTES) ?>
 
 <?php endif ?>

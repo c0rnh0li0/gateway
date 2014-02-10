@@ -1,16 +1,16 @@
-<?php //netteCache[01]000397a:2:{s:4:"time";s:21:"0.09384000 1390862381";s:9:"callbacks";a:2:{i:0;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:9:"checkFile";}i:1;s:75:"D:\wamp\www\gateway\app\modules\AdminModule\templates\Default\default.latte";i:2;i:1390862098;}i:1;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:10:"checkConst";}i:1;s:25:"Nette\Framework::REVISION";i:2;s:30:"2f3808e released on 2012-07-30";}}}?><?php
+<?php //netteCache[01]000397a:2:{s:4:"time";s:21:"0.28848400 1391985721";s:9:"callbacks";a:2:{i:0;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:9:"checkFile";}i:1;s:75:"D:\wamp\www\gateway\app\modules\AdminModule\templates\Default\default.latte";i:2;i:1390862098;}i:1;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:10:"checkConst";}i:1;s:25:"Nette\Framework::REVISION";i:2;s:30:"2f3808e released on 2012-07-30";}}}?><?php
 
 // source file: D:\wamp\www\gateway\app\modules\AdminModule\templates\Default\default.latte
 
 ?><?php
 // prolog Nette\Latte\Macros\CoreMacros
-list($_l, $_g) = Nette\Latte\Macros\CoreMacros::initRuntime($template, 'kgx4uoqexd')
+list($_l, $_g) = Nette\Latte\Macros\CoreMacros::initRuntime($template, '30ny04j92a')
 ;
 // prolog Nette\Latte\Macros\UIMacros
 //
 // block pageTitle
 //
-if (!function_exists($_l->blocks['pageTitle'][] = '_lbdcad490be7_pageTitle')) { function _lbdcad490be7_pageTitle($_l, $_args) { extract($_args)
+if (!function_exists($_l->blocks['pageTitle'][] = '_lb3437fda9b1_pageTitle')) { function _lb3437fda9b1_pageTitle($_l, $_args) { extract($_args)
 ?>    <h2>Overview</h2>
 <?php
 }}
@@ -18,7 +18,7 @@ if (!function_exists($_l->blocks['pageTitle'][] = '_lbdcad490be7_pageTitle')) { 
 //
 // block textContent
 //
-if (!function_exists($_l->blocks['textContent'][] = '_lbf5d14fe596_textContent')) { function _lbf5d14fe596_textContent($_l, $_args) { extract($_args)
+if (!function_exists($_l->blocks['textContent'][] = '_lb737099668e_textContent')) { function _lb737099668e_textContent($_l, $_args) { extract($_args)
 ?>	<div id="content">
 		<a class="ajax" href="<?php echo htmlSpecialChars($_control->link("changeVariable!")) ?>
 "><div id="<?php echo $_control->getSnippetId('ajaxChange') ?>"><?php call_user_func(reset($_l->blocks['_ajaxChange']), $_l, $template->getParameters()) ?>
@@ -51,14 +51,14 @@ if (!function_exists($_l->blocks['textContent'][] = '_lbf5d14fe596_textContent')
 //
 // block _ajaxChange
 //
-if (!function_exists($_l->blocks['_ajaxChange'][] = '_lbe29eaca0b3__ajaxChange')) { function _lbe29eaca0b3__ajaxChange($_l, $_args) { extract($_args); $_control->validateControl('ajaxChange')
+if (!function_exists($_l->blocks['_ajaxChange'][] = '_lb92b1a6a0ae__ajaxChange')) { function _lb92b1a6a0ae__ajaxChange($_l, $_args) { extract($_args); $_control->validateControl('ajaxChange')
 ;echo Nette\Templating\Helpers::escapeHtml($maintenanceFile, ENT_NOQUOTES) ;
 }}
 
 //
 // block sidebar
 //
-if (!function_exists($_l->blocks['sidebar'][] = '_lbf1074e51d4_sidebar')) { function _lbf1074e51d4_sidebar($_l, $_args) { extract($_args)
+if (!function_exists($_l->blocks['sidebar'][] = '_lb99a2238ab2_sidebar')) { function _lb99a2238ab2_sidebar($_l, $_args) { extract($_args)
 ?>    <div class="box form">
         <h3>Server limits</h3>
         

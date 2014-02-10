@@ -132,6 +132,10 @@
 				//'meta_description' => '', 						// String: Meta-Description (SEO) of the Shop Category
 				//'meta_keywords' => ''							// String: Keywords (SEO) of the category page
 			);
+			
+			$missing_from_api = array(
+				'position'
+			);
 		}
 
 		function prepareCategory($new_category){
@@ -149,6 +153,9 @@
 			if ($prepared_data['product_order'] == '')
 				$prepared_data['product_order'] = 'manual';
 			
+			if ($prepared_data['external_parent_shop_category_id'] == '')
+				unset($prepared_data['external_parent_shop_category_id']);
+				
 			return $prepared_data;
 		}
 		
@@ -191,7 +198,7 @@
 			if ($result['success'] == 1)
 				return true;
 			
-			$this->error = $this->getErrorMessage($response);
+			$this->error = $this->getErrorMessage($result);
 			
 			return false;
 		}
@@ -260,6 +267,9 @@
 					$categories_array[$i]['external_parent_shop_category_id'] = $categories_array[$i]['external_parent_shop_category_id'][0];
 				else
 					$categories_array[$i]['external_parent_shop_category_id'] = '';
+				
+				if (!isset($categories_array[$i]['position']))
+					$categories_array[$i]['position'] = 0;
 				
 				foreach ($categories_array[$i]['seo'] as $key => $val)
 					$categories_array[$i][$key] = $val;

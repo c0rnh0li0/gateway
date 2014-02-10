@@ -124,6 +124,13 @@ class Products extends Reader {
 			$product_data['categories'] = $product_data_array['categories'];
 			$product_data['images'] = $product_data_array['images'];
 			
+			/*
+			for ($i = 0; $i < sizeof($product_data['attributes']); $i++){
+				if ($product_data['attributes'][$i]['value'] == '')
+					unset($product_data['attributes'][$i]);
+			}
+			*/
+			
 			if (sizeof($product_variants))
 				$product_data['variants'] = $product_variants;
 			

@@ -1,16 +1,16 @@
-<?php //netteCache[01]000395a:2:{s:4:"time";s:21:"0.02059100 1390862395";s:9:"callbacks";a:2:{i:0;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:9:"checkFile";}i:1;s:73:"D:\wamp\www\gateway\app\modules\AdminModule\templates\Setup\default.latte";i:2;i:1390862098;}i:1;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:10:"checkConst";}i:1;s:25:"Nette\Framework::REVISION";i:2;s:30:"2f3808e released on 2012-07-30";}}}?><?php
+<?php //netteCache[01]000395a:2:{s:4:"time";s:21:"0.24313300 1391876427";s:9:"callbacks";a:2:{i:0;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:9:"checkFile";}i:1;s:73:"D:\wamp\www\gateway\app\modules\AdminModule\templates\Setup\default.latte";i:2;i:1390862098;}i:1;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:10:"checkConst";}i:1;s:25:"Nette\Framework::REVISION";i:2;s:30:"2f3808e released on 2012-07-30";}}}?><?php
 
 // source file: D:\wamp\www\gateway\app\modules\AdminModule\templates\Setup\default.latte
 
 ?><?php
 // prolog Nette\Latte\Macros\CoreMacros
-list($_l, $_g) = Nette\Latte\Macros\CoreMacros::initRuntime($template, 'hem0oklnsp')
+list($_l, $_g) = Nette\Latte\Macros\CoreMacros::initRuntime($template, 'ylox9bt2qe')
 ;
 // prolog Nette\Latte\Macros\UIMacros
 //
 // block pageTitle
 //
-if (!function_exists($_l->blocks['pageTitle'][] = '_lb99e6862caa_pageTitle')) { function _lb99e6862caa_pageTitle($_l, $_args) { extract($_args)
+if (!function_exists($_l->blocks['pageTitle'][] = '_lbbccf0c1b68_pageTitle')) { function _lbbccf0c1b68_pageTitle($_l, $_args) { extract($_args)
 ?>    <h2>Connection '<?php echo Nette\Templating\Helpers::escapeHtml($connection->name, ENT_NOQUOTES) ?>' setup</h2>
 <?php
 }}
@@ -18,7 +18,7 @@ if (!function_exists($_l->blocks['pageTitle'][] = '_lb99e6862caa_pageTitle')) { 
 //
 // block textContent
 //
-if (!function_exists($_l->blocks['textContent'][] = '_lb5090457d8f_textContent')) { function _lb5090457d8f_textContent($_l, $_args) { extract($_args)
+if (!function_exists($_l->blocks['textContent'][] = '_lb727e1dbbaf_textContent')) { function _lb727e1dbbaf_textContent($_l, $_args) { extract($_args)
 ?>    <div class="box" id="connection-info">
         <span class="icon connection <?php if ($connection->is_enabled): ?>enabled<?php endif ?>
 " title="<?php echo htmlSpecialChars(($connection->is_enabled ? 'enabled' : 'disabled')) ?>"></span>
@@ -77,7 +77,7 @@ if (!function_exists($_l->blocks['textContent'][] = '_lb5090457d8f_textContent')
 //
 // block tabContent
 //
-if (!function_exists($_l->blocks['tabContent'][] = '_lb79f0508f63_tabContent')) { function _lb79f0508f63_tabContent($_l, $_args) { extract($_args)
+if (!function_exists($_l->blocks['tabContent'][] = '_lba9eae5589a_tabContent')) { function _lba9eae5589a_tabContent($_l, $_args) { extract($_args)
 ?>            <div class="box" id="connection-handlers">
                 <h3>Defined handlers list</h3>
                 
@@ -147,7 +147,7 @@ if (!function_exists($_l->blocks['tabContent'][] = '_lb79f0508f63_tabContent')) 
 //
 // block _connectionHandlersFormType
 //
-if (!function_exists($_l->blocks['_connectionHandlersFormType'][] = '_lb4c681a68ac__connectionHandlersFormType')) { function _lb4c681a68ac__connectionHandlersFormType($_l, $_args) { extract($_args); $_control->validateControl('connectionHandlersFormType')
+if (!function_exists($_l->blocks['_connectionHandlersFormType'][] = '_lb54e9a1aa77__connectionHandlersFormType')) { function _lb54e9a1aa77__connectionHandlersFormType($_l, $_args) { extract($_args); $_control->validateControl('connectionHandlersFormType')
 ?>                                            <?php echo Nette\Templating\Helpers::escapeHtml($control['connectionHandlersForm-type']->getControl(), ENT_NOQUOTES) ?>
 
 <?php
@@ -156,7 +156,7 @@ if (!function_exists($_l->blocks['_connectionHandlersFormType'][] = '_lb4c681a68
 //
 // block _connectionHandlersFormReader
 //
-if (!function_exists($_l->blocks['_connectionHandlersFormReader'][] = '_lbd9bea1db1f__connectionHandlersFormReader')) { function _lbd9bea1db1f__connectionHandlersFormReader($_l, $_args) { extract($_args); $_control->validateControl('connectionHandlersFormReader')
+if (!function_exists($_l->blocks['_connectionHandlersFormReader'][] = '_lb5a74ffef71__connectionHandlersFormReader')) { function _lb5a74ffef71__connectionHandlersFormReader($_l, $_args) { extract($_args); $_control->validateControl('connectionHandlersFormReader')
 ?>                                            <?php echo Nette\Templating\Helpers::escapeHtml($control['connectionHandlersForm-reader']->getControl(), ENT_NOQUOTES) ?>
 
 
@@ -169,7 +169,7 @@ if (!function_exists($_l->blocks['_connectionHandlersFormReader'][] = '_lbd9bea1
 //
 // block _connectionHandlersFormWriter
 //
-if (!function_exists($_l->blocks['_connectionHandlersFormWriter'][] = '_lbb31c535426__connectionHandlersFormWriter')) { function _lbb31c535426__connectionHandlersFormWriter($_l, $_args) { extract($_args); $_control->validateControl('connectionHandlersFormWriter')
+if (!function_exists($_l->blocks['_connectionHandlersFormWriter'][] = '_lba6e79e3bf6__connectionHandlersFormWriter')) { function _lba6e79e3bf6__connectionHandlersFormWriter($_l, $_args) { extract($_args); $_control->validateControl('connectionHandlersFormWriter')
 ?>                                            <?php echo Nette\Templating\Helpers::escapeHtml($control['connectionHandlersForm-writer']->getControl(), ENT_NOQUOTES) ?>
 
 

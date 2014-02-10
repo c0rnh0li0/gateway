@@ -61,6 +61,9 @@ class Categories extends \Gateway\Handler\Shop\Rakuten\API\Writer {
     protected function init() {
         // API - get existing categories
         $this->existing_categories = $this->Categories->getExistingCategories();
+		
+		echo "dump in " . $_SERVER['DOCUMENT_ROOT'] . '/existing_categories.txt<br />';
+		file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/existing_categories.txt', print_r($this->existing_categories, true));
     }
 
     /**
@@ -77,19 +80,16 @@ class Categories extends \Gateway\Handler\Shop\Rakuten\API\Writer {
             return;
         }
 
-
+		echo "dump in " . $_SERVER['DOCUMENT_ROOT'] . '/etron_categories.txt<br />';
+		file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/etron_categories.txt', print_r($this->dataSource, true));
+		
         Utils::log("Processing DataSource to Rakuten via Api...");
-
-        // SCENARIO
-        // 1) extract ids from tree
-        // 2) get all categories info
-        // 3) make comparsion (according to erpId) and merge
-        // 4) delete not existing
-        // 5) process synchro for updated or new only     
                
         try {
         	// init current magento state
             $this->init();
+			
+			$this->prepareCategories();
 			
 			$this->deleteMissingCategories();
 			
@@ -106,21 +106,27 @@ class Categories extends \Gateway\Handler\Shop\Rakuten\API\Writer {
 
         return (count($this->categories_to_add) + count($this->categories_to_update) + count($this->categories_to_delete));
     }
-    
-	
-	function addNewCategories(){
-		$new_categories = array();
-		
-		$old_categories = array();
-		foreach ($this->existing_categories as $old)
-			$old_categories[] = $old['external_shop_category_id'];
-		
-		
-		foreach ($this->dataSource as $new){
-			if (!in_array($new['external_shop_category_id'], $old_categories))			
-				$this->categories_to_add[] = $new;	
+
+	function prepareCategories(){
+		// check if anything is there to be deleted
+		foreach ($this->existing_categories as $shop_category){
+			if (!isset($shop_category['external_shop_category_id']) || $shop_category['external_shop_category_id'] == '')
+				continue;
+			
+			if (!$this->isInNewCategories($shop_category['external_shop_category_id']))
+				$this->categories_to_delete[] = $shop_category;
 		}
 		
+		// check which categories to edit and which to add as new
+		foreach ($this->dataSource as $etron_category){
+			if ($this->isInStoreCategories($etron_category['external_shop_category_id']))
+				$this->categories_to_update[] = $etron_category;
+			else 
+				$this->categories_to_add[] = $etron_category;
+		}
+	}
+	
+	function addNewCategories(){
 		if (sizeof($this->categories_to_add)){
 			foreach ($this->categories_to_add as $category_to_add){				
 				if (!$this->Categories->addCategory($category_to_add))
@@ -133,12 +139,19 @@ class Categories extends \Gateway\Handler\Shop\Rakuten\API\Writer {
 		return true;
 	}
 	
+	
 	function updateExistingCategories(){
-		foreach ($this->existing_categories as $existing_category){
-			$updated_category = $this->isInStore($existing_category['external_shop_category_id']);
+		for ($i = 0; $i < count($this->categories_to_update); $i++){
+			$existing_category = $this->getExistingCategory($this->categories_to_update[$i]['external_shop_category_id']);
 			
-			if ($updated_category !== false)
-				$this->isCategoryChanged($existing_category, $updated_category);
+			if ($this->isCategoryChanged($existing_category, $this->categories_to_update[$i])){
+				foreach ($existing_category as $key => $value){
+					if (isset($this->categories_to_update[$i][$key]) && $this->categories_to_update[$i][$key] != '')
+						$existing_category[$key] = $this->categories_to_update[$i][$key];						
+				}
+				
+				$this->categories_to_update[$i] = $existing_category;
+			}
 		}
 		
 		if (sizeof($this->categories_to_update)){
@@ -153,43 +166,7 @@ class Categories extends \Gateway\Handler\Shop\Rakuten\API\Writer {
 		return true;
 	}
 	
-	
-	function isCategoryChanged($existing_category, $updated_category){
-		$compare_columns = array_keys($this->Categories->category_compare);
-		
-		foreach ($compare_columns as $column){
-			if ($existing_category[$column] !== $updated_category[$column]) {
-				foreach ($existing_category as $key => $value){
-					if (isset($updated_category[$key]) && $updated_category[$key] !== '')
-						$existing_category[$key] = $updated_category[$key];
-				}
-				
-				$this->categories_to_update[] = $existing_category;
-				break;
-			}				
-		} 
-	}
-	
-	
 	function deleteMissingCategories(){
-		// delete all missing categories from the rakuten categories
-		
-		// $this->dataSource -> new ones from XML
-		// $this->existing_categories -> old ones fetched from the API
-		
-		foreach ($this->dataSource as $new){
-			//if ($this->isOldInStore($new['external_shop_category_id']) && (int)$new['category_id'] < 0)
-			if ($this->isOldInStore($new['external_shop_category_id']))			
-				$this->categories_to_delete[] = $new;	
-		}
-		
-		/*
-		foreach ($this->existing_categories as $existing_category){
-			if (!$this->isInStore($existing_category['external_shop_category_id']) && !empty($existing_category['external_shop_category_id']))
-				$this->categories_to_delete[] = $existing_category;
-		}	
-		*/
-		
 		if (sizeof($this->categories_to_delete)){
 			foreach ($this->categories_to_delete as $category_to_delete)
 				if (!$this->Categories->deleteCategory($category_to_delete['external_shop_category_id']))
@@ -201,27 +178,50 @@ class Categories extends \Gateway\Handler\Shop\Rakuten\API\Writer {
 	}
 	
 	
-	function isOldInStore($category_id){
-		foreach ($this->existing_categories as $old_category)
-			if ($old_category['external_shop_category_id'] == $category_id) 
-				return $old_category;
-				
-		return false;
-	}
-
-	function isInStore($category_id){
-		foreach ($this->dataSource as $new_category)
-			if ($new_category['external_shop_category_id'] == $category_id) 
-				return $new_category;
-				
+	
+	// Helper methods from here on
+	function isInNewCategories($external_shop_category_id){
+		foreach ($this->dataSource as $etron_category){
+			if ($etron_category['external_shop_category_id'] == $external_shop_category_id)
+				return true;	
+		}
+		
 		return false;
 	}
 	
-	function isNew($category_id){
-		foreach ($this->dataSource as $new_category)
-			if ($new_category['external_shop_category_id'] != $category_id) 
-				return $new_category;
-				
+	function isInStoreCategories($external_shop_category_id){
+		foreach ($this->existing_categories as $shop_category){
+			if ($shop_category['external_shop_category_id'] == $external_shop_category_id)
+				return true;
+		}
+		
 		return false;
+	}
+
+	function getExistingCategory($external_shop_category_id){
+		foreach ($this->existing_categories as $existing_category)
+			if ($existing_category['external_shop_category_id'] == $external_shop_category_id)
+				return $existing_category;
+		
+		return false;
+	}
+	
+	function isCategoryChanged($existing_category, $potential_update_category){
+		$compare_columns = array_keys($this->Categories->category_compare);
+		
+		$is_category_changed = false;
+		foreach ($compare_columns as $column){
+			if (!isset($existing_category[$column])){
+				$is_category_changed = true;
+				break;
+			}
+			
+			if (isset($potential_update_category[$column]) && $potential_update_category[$column] != '' && $existing_category[$column] != $potential_update_category[$column]) {
+				$is_category_changed = true;
+				break;	
+			}				
+		} 
+	
+		return $is_category_changed;
 	}
 }

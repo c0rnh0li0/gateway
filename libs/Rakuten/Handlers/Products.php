@@ -289,39 +289,70 @@
 			);
 			
 			$this->product_compare = array(
-				'name' => '', 					// string: Name of product
-				'price' => '', 					// Float: Price is not present in a product with variations!
-				'price_reduced' => '', 			// Float: Reduced price is not present in a product with variations!
-				'price_reduced_type' => '', 	// Float: Terms of reduced price 
-				'shipping_group' => '1', 		// int: Shipping group
-				'available' => '', 				// bool: Availability
-				'producer' => '', 				// string: Manufacturer
-				'stock_policy' => '', 			// bool: Inventory management
-				'stock' => '', 					// int: Inventory is not present in a product with variations!
-				'delivery' => '', 				// int: Delivery time 
-				'min_order_qty' => '', 			// int: Minimum Quantity
-				'staggering' => '', 			// String: Graduation - The format of the staggering is 2,4,6,8.
-				'baseprice_unit' => '', 		// String: Unit of the reference amount 
-				'baseprice_volume' => '', 		// Float: Reference quantity is not present in a product with variations!
-				'tax' => '1', 					// int: VAT - 1 = 19%;
-				'homepage' => '', 				// bool: 
-				'connect' => '', 				// bool: Disabled for paying Sign in! Modules
-				'ean' => '', 					// string: EAN is not present in a product with variations!
-				'isbn' => '', 					// string: ISBN is not present in a product with variations!
-				'mpn' => '', 					// string: MPN (unique manufacturer's part number) is not present in a product with variations!
-				'inci' => '', 					// string: Synopses
-				'description' => '', 			// string: Product Description
-				'comment' => '', 				// string: Comment
-				'cross_selling_title' => '', 	// string: Title of cross-selling
-				'shop_category_id' => '',		// int: ID of a shop category
-				'rakuten_category_id' => '',	// int: Rakuten ID of a portal category
+				'name',
+				'price',
+				'price_reduced',
+				'price_reduced_type', 
+				'shipping_group',
+				'available',
+				'producer',
+				'stock_policy',
+				'stock',
+				'delivery', 
+				'min_order_qty',
+				'staggering',
+				'baseprice_unit', 
+				'baseprice_volume',
+				'tax',
+				'homepage', 
+				'connect',
+				'ean',
+				'isbn',
+				'mpn',
+				'inci',
+				'description',
+				'comment',
+				'cross_selling_title',
+				'shop_category_id',
+				'rakuten_category_id',
+				'categories' => array(
+					
+				),
+				'images' => array( 
+					//'image_id',
+					'src',
+					//'default',
+					//'comment'
+				), 
+				'attributes' => array(
+					'title', 
+					'value'
+				),
+				'variants' => array(
+					//'variant_id' => 'product_id',
+					//'variant_art_no' => 'product_art_no',
+					//'label' => '',
+					'name' => 'name',
+					'price' => 'price',
+					'price_reduced' => 'price_reduced',
+					'price_reduced_type' => 'price_reduced_type',
+					'baseprice_unit' => 'baseprice_unit',
+					'baseprice_volume' => 'baseprice_volume',
+					'stock' => 'stock',	
+					'delivery' => 'delivery',
+					'available' => 'available',
+					'isbn' => 'isbn',
+					'ean' => 'ean',	
+					'mpn' => 'mpn',
+				)
 			);
 			
-			/*
+			
+			// 
 			$this->available_variant_labels = array(
-				'color'
-			);
-			*/ 
+				'products_model_info' => 'size', 
+				'color' => 'color'
+			);			 
 		}	
 
 		function buildProduct($product_xml, $attributes_array, $is_variant = false){
@@ -366,6 +397,8 @@
 					$product_data[$key] = $product_data[$value];
 				}
 				
+				//$product_data['attributes'] = $this->getProductAttributes($product_data['product_art_no']);
+				
 				unset($product_data['product_id']);
 				unset($product_data['product_art_no']);			
 				unset($product_data['categories']);
@@ -376,6 +409,8 @@
 				$product_data['categories'] = $attributes_array['categories'];
 				$product_data['images'] = $attributes_array['images'];	
 			}
+			
+			
 			
 			return $product_data;
 		}
@@ -434,9 +469,34 @@
 			
 			//$product['title'] = $product['name'];
 			
+			/*
+			$product_obj = new \Gateway\DataSource\Entity\Product\Configurable();
+			$valid_attributes = $product_obj->getAttributes(0);
+			echo "valid attributes: ";
+			var_dump($valid_attributes);
+			die;
+			*/
+			
 			return $product;
 		}
 
+		function prepareProductForUpdate($product){
+			$product = $this->prepareProduct($product);
+			
+			if (isset($product['variants']) && is_array($product['variants']) && sizeof($product['variants'])){
+				unset($product['price']);
+				unset($product['product_id']);
+				unset($product['stock']);
+				unset($product['delivery']);
+				unset($product['available']);
+				unset($product['isbn']);
+				unset($product['ean']);
+				unset($product['mpn']);	
+			}
+						
+			return $product;
+		}
+		
 		function getProducts($product_model_id = null){
 			$method = 'getProducts';
 			$products_array = array();
@@ -457,11 +517,38 @@
 			
 			if ($response['success'] == 1){
 				if (isset($response['products']['product']) && is_array($response['products']['product']) && sizeof($response['products']['product'])){
-					if ($response['products']['paging']['total'] == 1)
-						$products_array[] = $response['products']['product'];
+					if ($response['products']['paging']['total'] == 1){
+						$tmp_product = $response['products']['product'];
+						$product_attributes = $this->getProductAttributes($tmp_product['product_art_no']); 
+						$product_categories = $this->getProductCategories($tmp_product['product_art_no']); 
+					
+						if ($product_attributes)
+							$tmp_product['attributes'] = $product_attributes;
+						
+						if ($product_categories)
+							$tmp_product['categories'] = $product_categories;
+										
+						$products_array[] = $tmp_product;
+						
+						unset($tmp_product);
+					}
 					else {
-						foreach ($response['products']['product'] as $product)
-							$products_array[] = $product;
+						foreach ($response['products']['product'] as $product){
+							$tmp_product = $product;
+							$product_attributes = $this->getProductAttributes($tmp_product['product_art_no']); 
+							$product_categories = $this->getProductCategories($tmp_product['product_art_no']); 
+							
+							if ($product_attributes)
+								$tmp_product['attributes'] = $product_attributes;
+							
+							if ($product_categories)
+								$tmp_product['categories'] = $product_categories;
+										
+							$products_array[] = $tmp_product;
+							
+							unset($tmp_product);
+						}
+							
 						
 						if ($response['products']['paging']['pages'] > 1){
 							$page = 2;
@@ -475,8 +562,21 @@
 								
 								$page++;
 								
-								foreach ($response_other['products']['product'] as $product)
-									$products_array[] = $product;
+								foreach ($response_other['products']['product'] as $product){
+									$tmp_product = $product;
+									$product_attributes = $this->getProductAttributes($tmp_product['product_art_no']); 
+									$product_categories = $this->getProductCategories($tmp_product['product_art_no']); 
+									
+									if ($product_attributes)
+										$tmp_product['attributes'] = $product_attributes;
+									
+									if ($product_categories)
+										$tmp_product['categories'] = $product_categories;
+									
+									$products_array[] = $tmp_product;
+									
+									unset($tmp_product);
+								}
 							}
 						}	
 					}					
@@ -534,7 +634,7 @@
 				if (isset($product['images']) && is_array($product['images']) && sizeof($product['images'])){
 					echo "adding images<br /><br />";
 					
-					foreach ($product['images'] as $image){
+					foreach ($product['images'] as $image){						
 						if (!$this->addProductImage($product['product_art_no'], $image))
 							$has_error = true;
 					}
@@ -558,8 +658,12 @@
 				
 				if (isset($product['variants']) && is_array($product['variants']) && sizeof($product['variants'])){
 					echo "adding variants<br /><br />";
+					
+					$variant_definitions = $this->getVariantDefinitions($product['variants']);
+					$this->addProductVariantDefinition($variant_definitions, $product['product_art_no']);
+					
 					foreach ($product['variants'] as $variant){
-						if (!$this->addProductVariant($product['product_art_no'], $variant))
+						if (!$this->addProductVariant($product['product_art_no'], $variant, $variant_definitions))
 							$has_error = true;
 					}
 				}
@@ -586,46 +690,91 @@
 			$url = str_replace('{group}', $this->group, $this->url);
 			$url = str_replace('{method}', $method, $url);
 			
-			$product = $this->prepareProduct($product_data);
+			$product = $this->prepareProductForUpdate($product_data);
 			$product['key'] = $this->key;
-			unset($product['product_id']);
+			
+			unset($product['attributes']);
+			unset($product['categories']);
+			unset($product['images']);
+			unset($product['variants']);
+			unset($product['existing_variants']);
+			unset($product['existing_images']);
 			
 			echo "EDIT URL: " . $url . '?' . http_build_query($product) . "<br /><br /><br />";
 			
 			$result = parent::doRequest($url, $post, $product);
 			
 			// TODO solve updating variants, images, attributes
-			if ($result['success'] == 1)
+			if ($result['success'] == 1){
+				if (isset($product_data['images']) && is_array($product_data['images']) && sizeof($product_data['images']))
+					$this->updateProductImages($product_data, $product['product_art_no']);
+				
+				if (isset($product_data['categories']) && is_array($product_data['categories']) && sizeof($product_data['categories']))
+					$this->updateProductCategories($product_data, $product['product_art_no']);
+				
+				echo "<hr /><pre>update images, variants, attributes, categories<pre>";
+				// TODO update images, variants, attributes, categories
+				
+				
 				return true;
+			}
+				
 			
 			$this->error = $this->getErrorMessage($result);
 			
 			return false;			
 		}
+
+
+		function updateProductCategories($product_data, $product_art_no){
+			/*
+			foreach ($product_data['images'] as $image){
+				if (substr($image, 0, 1) == '+')
+					$this->addProductImage($product_art_no, $image);
+				else if (substr($image, 0, 1) == '-'){
+					$image_id = null;
+					if (isset($product_data['existing_images']) && sizeof($product_data['existing_images'])){
+						$image_to_delete = substr($image, 1);
+						foreach ($product_data['existing_images'] as $existing_image){
+							if ($existing_image['src'] == $image_to_delete)
+								$image_id = $existing_image['image_id'];	
+						}
+					}
+					
+					$this->deleteProductImage($image_id);
+				}
+			}
+			*/ 
+		}
+		
+
+		function updateProductImages($product_data, $product_art_no){
+			foreach ($product_data['images'] as $image){
+				if (substr($image, 0, 1) == '+')
+					$this->addProductImage($product_art_no, $image);
+				else if (substr($image, 0, 1) == '-'){
+					$image_id = null;
+					if (isset($product_data['existing_images']) && sizeof($product_data['existing_images'])){
+						$image_to_delete = substr($image, 1);
+						foreach ($product_data['existing_images'] as $existing_image){
+							if ($existing_image['src'] == $image_to_delete)
+								$image_id = $existing_image['image_id'];	
+						}
+					}
+					
+					$this->deleteProductImage($image_id);
+				}
+			}
+		}
 		
 		function deleteProduct($product){
-			/*
-			if ($product['has_variants'] == 1){
-				if (!$this->deleteProductVariants($product['variants']))
-					return false;
-			}
-
-			if (isset($product['images']) && is_array($product['images'])){
-				if (!$this->deleteProductImages($product['images']))
-					return false;
-			}
-			*/
-			
-			// edit product
-			$method = 'deleteProduct';
-			
+			/********* instead of deleting it, just make it unavailable ******/
+			//$method = 'deleteProduct';
+			$method = 'editProduct';
 			$post = 1;
 			
 			$url = str_replace('{group}', $this->group, $this->url);
 			$url = str_replace('{method}', $method, $url);
-			
-			
-			// available = 0
 			
 			$request_array = array(
 				'key' => $this->key
@@ -636,6 +785,8 @@
 			else 
 				$request_array['product_id'] = $product['product_id'];
 			
+			// instead of deleting it, just make it unavailable
+			$request_array['available'] = 0;
 			
 			$result = parent::doRequest($url, $post, $request_array);
 			
@@ -683,13 +834,6 @@
 			
 			$result = parent::doRequest($url, $post, $request_params);
 			
-			print_r($request_params);
-			echo "<hr />";
-			echo $url . '?' . http_build_query($request_params);
-			echo "<hr />";
-			echo "Result: ". print_r($result);
-			die;
-			
 			if ($result['success'] == 1)
 				return true;
 			
@@ -733,11 +877,48 @@
 			}
 		}
 		
-		function addProductVariant($product_art_no, $variant){
+		
+		function getVariantDefinitions($variants){
+			$count = 1;
+			$variant_definitions = array();
+			
+			foreach ($variants as $variant){
+				if (isset($variant['attributes']) && is_array($variant['attributes']) && sizeof($variant['attributes'])){
+					foreach ($variant['attributes'] as $attribute){
+						if ($count == 5)
+							break;
+						
+						if ($attribute['value'] !== '' && $attribute['name'] != ''){
+							if (strlen($attribute['name']) <= 20){
+								if (!isset($variant_definitions['variant_' . $count]) || $variant_definitions['variant_' . $count] != $attribute['name'] && 
+									!in_array($attribute['name'], $variant_definitions)){
+									$variant_definitions['variant_' . $count] = $attribute['name'];
+									$count++;
+								}
+							}
+						}
+					}
+				}
+			}
+			
+			$definitions = array_unique($variant_definitions);
+			
+			
+			foreach ($definitions as $key => $value){
+				if (isset($this->available_variant_labels[$value]) && $this->available_variant_labels[$value] != ''){
+					$definitions[$key] = $this->available_variant_labels[$value];
+				}			
+			}
+			
+			return $definitions;			
+		}
+		
+		function addProductVariant($product_art_no, $variant, $definitions = array()){
 			echo "ADDING PRODUCT VARIANT: ". $variant['variant_art_no'] . "<br />";
 			
 			unset($variant['variant_id']);
-			$method = 'addProductVariant';
+			//$method = 'addProductVariant';
+			$method = 'addProductMultiVariant';
 			
 			$variant = $this->prepareProduct($variant);
 			
@@ -745,19 +926,42 @@
 			$url = str_replace('{method}', $method, $url);
 			
 			$post = 1;
+			/*
+			$validAttributes = NULL;
+			if (isset($this->connection->mapping['attribute'])) {
+	            $validAttributes = array_keys($this->connection->mapping['attribute']);
+	        }
+			*/
+			
+			$count = 1;
+			$variant_definitions = array();
+			
 			
 			if (isset($variant['attributes']) && is_array($variant['attributes']) && sizeof($variant['attributes'])){
 				foreach ($variant['attributes'] as $attribute){
-					if (in_array($attribute['name'], $this->available_variant_labels) || in_array($attribute['label'], $this->available_variant_labels)){
-						//$variant['label'] = ($attribute['label'] != '') ? $attribute['label'] : $attribute['name'];
+					if ($attribute['value'] !== '' && $attribute['name'] != ''){
 						$variant['label'] = $attribute['name'];
 						$variant['value'] = $attribute['value'];
 						
+						if (isset($this->available_variant_labels[$attribute['name']]) && $this->available_variant_labels[$attribute['name']] != ''){
+							$variant['label'] = $this->available_variant_labels[$attribute['name']];
+							$attribute['name'] = $this->available_variant_labels[$attribute['name']];
+						}
+						
 						$variant[$attribute['name']] = $attribute['value'];
+						
+						if ($definitions['variant_' . $count] == $attribute['name']){
+							$variant["variation" . $count . "_type"] = $attribute['name'];
+							$variant["variation" . $count . "_value"] = $attribute['value'];
+							
+							$count++;
+						}
 					}
 				}
 			}
 			unset($variant['attributes']);
+			
+			echo "adding variant " . print_r($variant, true) . "<br /><br />";
 			
 			$variant['product_art_no'] = $product_art_no;
 			$variant['key'] = $this->key;
@@ -771,6 +975,30 @@
 			
 			return false;			
 		}
+
+		function addProductVariantDefinition($definitions, $product_art_no){
+			$method = 'addProductVariantDefinition';
+			
+			$url = str_replace('{group}', $this->group, $this->url);
+			$url = str_replace('{method}', $method, $url);
+			
+			$post = 1;
+			
+			$definitions['product_art_no'] = $product_art_no;
+			$definitions['key'] = $this->key;
+			
+			echo "<h3>Definitions</h3>";
+			print_r($definitions);
+			
+			$response = parent::doRequest($url, $post, $definitions);
+			
+			if ($response['success'] == 1)
+				return true;
+			
+			$this->error = $this->getErrorMessage($response);
+			
+			return false;
+		}	
 		
 		function editProductVariant(){
 			
@@ -843,6 +1071,9 @@
 			$url = str_replace('{group}', $this->group, $this->url);
 			$url = str_replace('{method}', $method, $url);
 			
+			if (isset($this->available_variant_labels[$attribute['name']]) && $this->available_variant_labels[$attribute['name']] != '')
+				$attribute['name'] = $this->available_variant_labels[$attribute['name']];
+			
 			$request_params = array(
 				'key' => $this->key, 
 				'product_art_no' => $product_art_no, 
@@ -860,8 +1091,39 @@
 			return false; 
 		}
 		
-		function getProductAttributes(){
+		function getProductAttributes($product_art_no){
+			$method = 'getProductAttributes';
 			
+			$post = 0;
+			
+			$url = str_replace('{group}', $this->group, $this->url);
+			$url = str_replace('{method}', $method, $url);
+			
+			$request_params = array(
+				'key' => $this->key, 
+				'product_art_no' => $product_art_no
+			);
+			
+			$result = parent::doRequest($url, $post, $request_params);
+			$attributes = false;
+			
+			if ($result['success'] == 1){
+				if (count($result['attributes']) > 0)
+					$attributes = array();
+				
+				foreach ($result['attributes']['attribute'] as $attribute){
+					$tmp_attribute = array(
+						'attribute_id' => $attribute['attribute_id'],
+						'title' => $attribute['title'], 
+						'name' => $attribute['title'],
+						'value' => $attribute['value'],
+					);
+					
+					$attributes[] = $tmp_attribute;  
+				}
+			}
+			
+			return $attributes;			
 		}
 		
 		function deleteProductAttribute(){
@@ -927,6 +1189,44 @@
 			$this->error = $this->getErrorMessage($response);
 			
 			return false; 
+		}
+		
+		function getProductCategories($product_art_id){
+			$method = 'getProductCategories';
+			
+			$post = 0;
+			
+			$url = str_replace('{group}', $this->group, $this->url);
+			$url = str_replace('{method}', $method, $url);
+			
+			$request_params = array(
+				'key' => $this->key, 
+				'product_art_no' => $product_art_id
+			);
+			
+			$result = parent::doRequest($url, $post, $request_params);
+			$categories = false;
+			
+			if ($result['success'] == 1){
+				if (count($result['categories']['shop']['category']) > 0)
+					$categories = $result['categories']['shop']['category'];
+			}
+			
+			$etron_categories_ids = false;
+			
+			if ($categories){
+				$CategoryObj = new \Rakuten\Handlers\Categories();
+				$existing_categories = $CategoryObj->getExistingCategories();
+				
+				foreach ($categories as $product_category){
+					foreach ($existing_categories as $etron_category){
+						if ($product_category['category_id'] == $etron_category['shop_category_id'])
+							$etron_categories_ids[] = $etron_category['external_shop_category_id'];
+					}
+				}
+			}
+			
+			return $etron_categories_ids;
 		}
 				
 		

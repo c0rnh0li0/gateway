@@ -2,7 +2,8 @@
 	namespace Rakuten;
 	
 	use Rakuten\Configuration, 
-		\CURL;
+		\CURL, 
+		Gateway\Utils;
 	
 	require_once(WWW_DIR . "/../libs/Rakuten/Configuration/config.inc");
 	
