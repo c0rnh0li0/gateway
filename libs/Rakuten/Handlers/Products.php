@@ -1,7 +1,8 @@
 <?php
 	namespace Rakuten\Handlers;
 	
-	use Rakuten;
+	use Rakuten, 
+		Gateway\Utils;
 	
 	require_once(WWW_DIR . "/../libs/Rakuten/Rakuten.php");
 	
@@ -14,13 +15,18 @@
 		var $from_attributes;
 		var $product_response;
 		
+		var $delivery_rules;
+		
 		var $array_of_properties;
 		var $product_compare;
 		var $available_variant_labels;
+		var $tax_percentage;
 		
 		var $group = "products";
 		
 		var $products_page_limit = 100;
+		
+		var $existing_products;
 		
 		function __construct(){
 			parent::__construct();
@@ -200,6 +206,8 @@
 			);
 			
 			
+			
+			
 			$this->product_response = array(
 				'success' => 1,
 				'product_id' => ''
@@ -285,7 +293,8 @@
 				'categories', 
 				'images',
 				'attributes',
-				'variants'
+				'variants', 
+				'cross_sellings'
 			);
 			
 			$this->product_compare = array(
@@ -353,9 +362,52 @@
 				'products_model_info' => 'size', 
 				'color' => 'color'
 			);			 
+			
+			$this->delivery_rules = array(
+				0,		//=	Immediate dispatch (delivery time 1-4 business days)
+				3,		//=	Ready for dispatch within 3 working days (delivery time 4-6 business days)
+				5,		//=	dispatched within 5 business days (delivery time 6-8 business days)
+				7,		//=	ships in 7 business days (delivery time 8-10 business days)
+				10,		//=	ships in 10 working days (Delivery time 10-15 business days)
+				15,		//=	ships in 15 business days (delivery time 15-20 business days)
+				20,		//=	ships in 20 business days (delivery time 20-30 business days)
+				30,		//=	ships in 30 business days (delivery time 30-40 business days)
+				40,		//=	ships in 40 business days (delivery time 40-50 business days)
+				50,		//=	ships in 50 business days (delivery time 50-60 business days)
+				60,		//=	ships in 60 working days (Delivery times longer than 3 months)
+			);
+			
+			$this->delivery_mappings = array(
+				1 	=> 0,
+				2 	=> 3,
+				3 	=> 3,
+				4 	=> 5,
+				5 	=> 5,
+				6 	=> 7,
+				7 	=> 10,
+				8 	=> 15,
+				9 	=> 20,
+				10 	=> 30,
+				11 	=> 40,
+				12 	=> 50,
+				13 	=> 60, 
+				14 	=> 60,
+				15 	=> null,
+				16 	=> null
+			);
+			
+			$this->tax_mappings = array(
+				2 => 10,
+				1 => 12
+			);
+			
+			$this->tax_percentage = array(
+				10 => 10,
+				12 => 20
+			);
 		}	
 
-		function buildProduct($product_xml, $attributes_array, $is_variant = false){
+		function buildProduct($product_xml, $attributes_array, $is_variant = false, $tax = null){
 			$product_data = array();
 			$xml_attrs = $this->product_from_xml;
 			
@@ -393,9 +445,16 @@
 			}
 			
 			if ($is_variant){
-				foreach ($this->product_variants_from_product['variant'] as $key => $value){
-					$product_data[$key] = $product_data[$value];
-				}
+				if (isset($tax) && isset($this->tax_percentage[$tax]))
+					$product_data['price'] = (float)$product_data['price'] + (((float)$product_data['price'] * (int)$this->tax_percentage[$tax]) / 100); 
+				$product_data['price'] = number_format((float)$product_data['price'], 2, '.', '');
+				
+				$temp_variant = array();
+				foreach ($this->product_variants_from_product['variant'] as $key => $value)
+					$temp_variant[$key] = $product_data[$value];
+				
+				$product_data = $temp_variant;
+				unset($temp_variant);
 				
 				//$product_data['attributes'] = $this->getProductAttributes($product_data['product_art_no']);
 				
@@ -411,6 +470,23 @@
 			}
 			
 			
+			//$product_data['price'] = number_format((float)$product_data['price'], 2, '.', '');
+			if (isset($product_data['price_reduced']) && $product_data['price_reduced'] != '')
+				$product_data['price_reduced'] = number_format((float)$product_data['price_reduced'], 2, '.', '');
+			
+			// deal with taxes from mappings
+			if (isset($product_data['tax']) && isset($this->tax_mappings[$product_data['tax']]))
+				$product_data['tax'] = $this->tax_mappings[$product_data['tax']];
+			
+			// deal with delivery from mappings	
+			if (isset($product_data['delivery']) && isset($this->delivery_mappings[$product_data['delivery']]))
+				$product_data['delivery'] = $this->delivery_mappings[$product_data['delivery']];
+			if (!$product_data['delivery'] || $product_data['delivery'] === null)
+			 	unset($product_data['delivery']);
+				
+			if (isset($product_data['tax']) && isset($this->tax_percentage[$product_data['tax']]))
+				$product_data['price'] = (float)$product_data['price'] + (((float)$product_data['price'] * (int)$this->tax_percentage[$product_data['tax']]) / 100); 
+			$product_data['price'] = number_format((float)$product_data['price'], 2, '.', '');
 			
 			return $product_data;
 		}
@@ -423,34 +499,34 @@
 		
 		
 		function prepareProduct($product){
-			if ($product['price_reduced'] == '')
+			if (isset($product['price_reduced']) && $product['price_reduced'] == '')
 				unset($product['price_reduced']);
 			
-			if ($product['baseprice_unit'] == '')
+			if (isset($product['baseprice_unit']) && $product['baseprice_unit'] == '')
 				unset($product['baseprice_unit']);
 			
-			if ($product['staggering'] == '')
+			if (isset($product['staggering']) && $product['staggering'] == '')
 				unset($product['staggering']);
 			
-			if ($product['stock_policy'] == '')
+			if (isset($product['stock_policy']) && $product['stock_policy'] == '')
 				unset($product['stock_policy']);
 
-			if ($product['min_order_qty'] == '')
+			if (isset($product['min_order_qty']) && $product['min_order_qty'] == '')
 				unset($product['min_order_qty']);						
 						
-			if ($product['price_reduced_type'] == '')
+			if (isset($product['price_reduced_type']) && $product['price_reduced_type'] == '')
 				unset($product['price_reduced_type']);
 			
-			if ($product['shipping_group'] == '')
+			if (isset($product['shipping_group']) && $product['shipping_group'] == '')
 				unset($product['shipping_group']);
 			
-			if ($product['baseprice_volume'] == '')			
+			if (isset($product['baseprice_volume']) && $product['baseprice_volume'] == '')			
 				unset($product['baseprice_volume']);
 			
-			if ($product['connect'] == '')			
+			if (isset($product['connect']) && $product['connect'] == '')			
 				unset($product['connect']);
 			
-			if ($product['delivery'] == '')			
+			if (isset($product['delivery']) && $product['delivery'] == '')			
 				unset($product['delivery']);
 			
 			if (isset($product['shop_category_id']) && $product['shop_category_id'] == '')			
@@ -462,22 +538,34 @@
 			if (isset($product['tradoria_category_id']) && $product['tradoria_category_id'] == '')
 				unset($product['tradoria_category_id']);
 			
-			$product['delivery'] = 0;
+			
+			
+			if (isset($product['delivery']) && $product['delivery'] == '')			
+				unset($product['delivery']);
+			
+			//$product['delivery'] = $this->closestDelivery($product['delivery']);
+			
+			if (isset($product['description']) && $product['description'] == '')
+				$product['description'] = ' ';			
+				//unset($product['description']);
+			
+			if (isset($product['tax']) && ($product['tax'] == '' || $product['tax'] == 0))			
+				unset($product['tax']);
 			//$product['tradoria_category_id'] = 0;
 			//$product['shop_category_id'] = 0;
 			//$product['rakuten_category_id'] = 0;
 			
 			//$product['title'] = $product['name'];
 			
-			/*
-			$product_obj = new \Gateway\DataSource\Entity\Product\Configurable();
-			$valid_attributes = $product_obj->getAttributes(0);
-			echo "valid attributes: ";
-			var_dump($valid_attributes);
-			die;
-			*/
-			
 			return $product;
+		}
+
+		function closestDelivery($delivery) {
+			sort($this->delivery_rules);
+		    foreach ($this->delivery_rules as $a) {
+		        if ($a >= $delivery) return $a;
+		    }
+		    return first($this->delivery_rules); // or return NULL;
 		}
 
 		function prepareProductForUpdate($product){
@@ -513,20 +601,40 @@
 				'per_page' => $this->products_page_limit
 			);
 			
+			//echo $url . '?' . http_build_query($params_array);
+			
 			$response = parent::doRequest($url, $post, $params_array);
 			
 			if ($response['success'] == 1){
 				if (isset($response['products']['product']) && is_array($response['products']['product']) && sizeof($response['products']['product'])){
 					if ($response['products']['paging']['total'] == 1){
 						$tmp_product = $response['products']['product'];
+						
+						if (isset($tmp_product['variants'])){
+							$tmp_variants = $tmp_product['variants']['variant'];						
+							unset($tmp_product['variants']['variant']);
+													
+							if (!isset($tmp_variants[0]))
+								$tmp_product['variants'][] = $tmp_variants;
+							else 
+								$tmp_product['variants'] = $tmp_variants;
+							
+							unset($tmp_variants);
+						}
+						
 						$product_attributes = $this->getProductAttributes($tmp_product['product_art_no']); 
 						$product_categories = $this->getProductCategories($tmp_product['product_art_no']); 
-					
+						
 						if ($product_attributes)
 							$tmp_product['attributes'] = $product_attributes;
 						
 						if ($product_categories)
 							$tmp_product['categories'] = $product_categories;
+						
+						$product_cross_selling = $this->getProductCrossSellings($tmp_product['product_art_no']);				
+						if ($product_cross_selling)
+							$tmp_product['cross_sellings'] = $product_cross_selling;
+						
 										
 						$products_array[] = $tmp_product;
 						
@@ -535,6 +643,19 @@
 					else {
 						foreach ($response['products']['product'] as $product){
 							$tmp_product = $product;
+							
+							if (isset($tmp_product['variants'])){
+								$tmp_variants = $tmp_product['variants']['variant'];						
+								unset($tmp_product['variants']['variant']);
+														
+								if (!isset($tmp_variants[0]))
+									$tmp_product['variants'][] = $tmp_variants;
+								else 
+									$tmp_product['variants'] = $tmp_variants;
+								
+								unset($tmp_variants);
+							}
+							
 							$product_attributes = $this->getProductAttributes($tmp_product['product_art_no']); 
 							$product_categories = $this->getProductCategories($tmp_product['product_art_no']); 
 							
@@ -544,6 +665,10 @@
 							if ($product_categories)
 								$tmp_product['categories'] = $product_categories;
 										
+							$product_cross_selling = $this->getProductCrossSellings($tmp_product['product_art_no']);
+							if ($product_cross_selling)
+								$tmp_product['cross_sellings'] = $product_cross_selling;
+						
 							$products_array[] = $tmp_product;
 							
 							unset($tmp_product);
@@ -564,6 +689,19 @@
 								
 								foreach ($response_other['products']['product'] as $product){
 									$tmp_product = $product;
+									
+									if (isset($tmp_product['variants'])){
+										$tmp_variants = $tmp_product['variants']['variant'];						
+										unset($tmp_product['variants']['variant']);
+																
+										if (!isset($tmp_variants[0]))
+											$tmp_product['variants'][] = $tmp_variants;
+										else 
+											$tmp_product['variants'] = $tmp_variants;
+										
+										unset($tmp_variants);
+									}
+							
 									$product_attributes = $this->getProductAttributes($tmp_product['product_art_no']); 
 									$product_categories = $this->getProductCategories($tmp_product['product_art_no']); 
 									
@@ -572,6 +710,10 @@
 									
 									if ($product_categories)
 										$tmp_product['categories'] = $product_categories;
+									
+									$product_cross_selling = $this->getProductCrossSellings($tmp_product['product_art_no']);				
+									if ($product_cross_selling)
+										$tmp_product['cross_sellings'] = $product_cross_selling;
 									
 									$products_array[] = $tmp_product;
 									
@@ -601,13 +743,23 @@
 				}
 			}
 			
+			$this->existing_products = $products_array;
 			return $products_array;
+		}
+
+		function getProductByID($product_id){
+			foreach ($this->existing_products as $product){
+				if ($product['product_id'] == $product_id)
+					return $product;
+			}
+			
+			return false;
 		}
 		
 		
 		/* Product main API methods */
 		function addProduct($product_data){
-			echo "ADDING PRODUCT: ". $product_data['product_art_no'] . "<br />";
+			//echo "ADDING PRODUCT: ". $product_data['product_art_no'] . "<br />";
 			
 			$method = 'addProduct';
 			$post = 1;
@@ -632,7 +784,7 @@
 				
 				// DONE
 				if (isset($product['images']) && is_array($product['images']) && sizeof($product['images'])){
-					echo "adding images<br /><br />";
+					//echo "adding images<br /><br />";
 					
 					foreach ($product['images'] as $image){						
 						if (!$this->addProductImage($product['product_art_no'], $image))
@@ -641,7 +793,7 @@
 				}
 				
 				if (isset($product['attributes']) && is_array($product['attributes']) && sizeof($product['attributes'])){
-					echo "adding attributes<br /><br />";
+					//echo "adding attributes<br /><br />";
 					foreach ($product['attributes'] as $attribute){
 						if (!$this->addProductAttribute($product['product_art_no'], $attribute))
 							$has_error = true;
@@ -649,7 +801,7 @@
 				}
 				
 				if (isset($product['categories']) && is_array($product['categories']) && sizeof($product['categories'])){
-					echo "adding categories<br /><br />";
+					//echo "adding categories<br /><br />";
 					foreach ($product['categories'] as $category){
 						if (!$this->addProductToShopCategory($product['product_art_no'], $category))
 							$has_error = true;
@@ -657,7 +809,7 @@
 				}
 				
 				if (isset($product['variants']) && is_array($product['variants']) && sizeof($product['variants'])){
-					echo "adding variants<br /><br />";
+					//echo "adding variants<br /><br />";
 					
 					$variant_definitions = $this->getVariantDefinitions($product['variants']);
 					$this->addProductVariantDefinition($variant_definitions, $product['product_art_no']);
@@ -669,7 +821,7 @@
 				}
 				
 				if ($has_error){
-					echo "some error occured";
+					//echo "some error occured";
 				}
 				
 				return true;
@@ -682,7 +834,7 @@
 		}
 
 		function editProduct($product_data){
-			echo "EDITING PRODUCT: ". $product_data['product_art_no'] . "<br />";
+			//echo "EDITING PRODUCT: ". $product_data['product_art_no'] . "<br />";
 			$method = 'editProduct';
 			
 			$post = 1;
@@ -699,12 +851,12 @@
 			unset($product['variants']);
 			unset($product['existing_variants']);
 			unset($product['existing_images']);
+			unset($product['existing_categories']);
 			
-			echo "EDIT URL: " . $url . '?' . http_build_query($product) . "<br /><br /><br />";
+			//echo "EDIT URL: " . $url . '?' . http_build_query($product) . "<br /><br /><br />";
 			
 			$result = parent::doRequest($url, $post, $product);
 			
-			// TODO solve updating variants, images, attributes
 			if ($result['success'] == 1){
 				if (isset($product_data['images']) && is_array($product_data['images']) && sizeof($product_data['images']))
 					$this->updateProductImages($product_data, $product['product_art_no']);
@@ -712,9 +864,11 @@
 				if (isset($product_data['categories']) && is_array($product_data['categories']) && sizeof($product_data['categories']))
 					$this->updateProductCategories($product_data, $product['product_art_no']);
 				
-				echo "<hr /><pre>update images, variants, attributes, categories<pre>";
-				// TODO update images, variants, attributes, categories
-				
+				if (isset($product_data['attributes']) && is_array($product_data['attributes']) && sizeof($product_data['attributes']))
+					$this->updateProductAttributes($product_data, $product['product_art_no']);
+					
+				if (isset($product_data['variants']) && is_array($product_data['variants']) && sizeof($product_data['variants']))
+					$this->updateProductVariants($product_data, $product['product_art_no']);
 				
 				return true;
 			}
@@ -725,52 +879,186 @@
 			return false;			
 		}
 
+		function updateProductVariants($product_data, $product_art_no){
+			$has_existing_variants = false;
+			if (isset($product_data['existing_variants']) && is_array($product_data['existing_variants']) && sizeof($product_data['existing_variants']))
+				$has_existing_variants = true;
+				
+			if ($has_existing_variants){
+				if (isset($product_data['existing_variants']['label']))
+					unset($product_data['existing_variants']['label']);
+				
+				foreach ($product_data['existing_variants'] as $old_variant){
+					$variant_found = true;
+					foreach ($product_data['variants'] as $variant){
+						if ($old_variant['variant_art_no'] == $variant['variant_art_no']){
+							$variant_found = true;
+							break;
+						}
+					}
+					
+					if (!$variant_found)
+						$this->deleteProductVariantByArtID($old_variant['variant_art_no']);
+				}
+
+				$has_existing_variants = true;
+			}
+			
+			
+			$variant_defs = $this->getVariantDefinitions($product_data['variants']);
+			$variant_defs_str = implode(',', $variant_defs);
+			
+			foreach ($product_data['variants'] as $variant){
+				$variant_found = false;
+				
+				if ($has_existing_variants){
+					foreach ($product_data['existing_variants'] as $old_variant){
+						if ($old_variant['variant_art_no'] == $variant['variant_art_no']){
+							$variant_found = true;
+							
+							$variant_name_arr = array();
+							
+							$count = 1;
+							if (isset($variant['attributes']) && is_array($variant['attributes']) && sizeof($variant['attributes'])){
+								foreach ($variant['attributes'] as $attribute){
+									if ($attribute['value'] !== '' && $attribute['name'] != ''){
+										if (isset($this->available_variant_labels[$attribute['name']]) && $this->available_variant_labels[$attribute['name']] != '')
+											$attribute['name'] = $this->available_variant_labels[$attribute['name']];
+										
+										if ($variant_defs['variant_' . $count] == $attribute['name']){
+											$variant_name_arr[$count] = $attribute['value'];
+											$count++;
+										}
+									}
+								}
+							}
+	
+							$variant['name'] = implode(',', $variant_name_arr);
+							
+							$is_changed = false;
+							//$variant['delivery'] = $this->closestDelivery($variant['delivery']);
+							foreach ($this->product_compare['variants'] as $key => $value){
+								if (isset($variant[$key]) && $variant[$key] != '' && $old_variant[$key] != $variant[$key]){
+									//echo "the variant difference: key = $key -> {$old_variant[$key]} != {$variant[$key]}<br />";
+									$is_changed = true;
+									//break;
+								}
+							}
+							
+							if ($is_changed){
+								foreach ($this->product_compare['variants'] as $key => $value){
+									if (isset($variant[$key]) && $variant[$key] == '')
+										$variant[$key] = $old_variant[$key];
+								}
+								
+								$this->editProductVariant($product_art_no, $variant, $variant_defs);
+							}
+							
+							break;
+						}
+					}
+				}				
+				
+				if (!$variant_found)
+					$this->addProductVariant($product_art_no, $variant, $variant_defs);
+			}
+		}
+
+		function updateProductAttributes($product_data, $product_art_no){
+			$has_existing_attributes = false;
+			if (isset($product_data['existing_variants']) && is_array($product_data['existing_variants']) && sizeof($product_data['existing_variants']))
+				$has_existing_attributes = true;
+				
+			if ($has_existing_attributes){
+				foreach ($product_data['existing_attributes'] as $old_attribute){
+					$attribute_found = true;
+					foreach ($product_data['attributes'] as $attribute){
+						if ($old_attribute['title'] == $attribute['name']){
+							$attribute_found = true;
+							break;
+						}
+					}
+					
+					if (!$attribute_found)
+						$this->deleteProductAttribute($product_art_no, $attribute);
+				}	
+			}			
+			
+			foreach ($product_data['attributes'] as $attribute){
+				$attribute_found = false;
+				
+				if ($has_existing_attributes){					
+					foreach ($product_data['existing_attributes'] as $old_attribute){
+						if ($old_attribute['title'] == $attribute['name']){
+							$attribute_found = true;
+							
+							if ($old_attribute['value'] != $attribute['value'])
+								$this->editProductAttribute($product_art_no, $attribute);
+						}
+					}
+				}
+
+				if (!$attribute_found)
+					$this->addProductAttribute($product_art_no, $attribute);
+			}
+		}
+
 
 		function updateProductCategories($product_data, $product_art_no){
-			/*
-			foreach ($product_data['images'] as $image){
-				if (substr($image, 0, 1) == '+')
-					$this->addProductImage($product_art_no, $image);
-				else if (substr($image, 0, 1) == '-'){
-					$image_id = null;
-					if (isset($product_data['existing_images']) && sizeof($product_data['existing_images'])){
-						$image_to_delete = substr($image, 1);
-						foreach ($product_data['existing_images'] as $existing_image){
-							if ($existing_image['src'] == $image_to_delete)
-								$image_id = $existing_image['image_id'];	
-						}
-					}
-					
-					$this->deleteProductImage($image_id);
+			$has_existing_categories = false;
+			if (isset($product_data['existing_categories']) && is_array($product_data['existing_categories']) && sizeof($product_data['existing_categories']))
+				$has_existing_categories = true;
+			
+			if ($has_existing_categories){
+				foreach($product_data['existing_categories'] as $old_category){
+					if (!in_array($old_category, $product_data['categories']))
+						$this->deleteProductFromShopCategory($product_art_no, $old_category['external_category_id']);
 				}
 			}
-			*/ 
+			
+			foreach($product_data['categories'] as $new_category){
+				if	($has_existing_categories){
+					if (!in_array($new_category, $product_data['existing_categories']))
+						$this->addProductToShopCategory($product_art_no, $new_category);	
+				}
+				else 
+					$this->addProductToShopCategory($product_art_no, $new_category);
+			}			
 		}
 		
-
 		function updateProductImages($product_data, $product_art_no){
+			$has_existing_images = false;
+			if (isset($product_data['existing_images']) && is_array($product_data['existing_images']) && sizeof($product_data['existing_images']))
+				$has_existing_images = true;
+			
 			foreach ($product_data['images'] as $image){
-				if (substr($image, 0, 1) == '+')
-					$this->addProductImage($product_art_no, $image);
-				else if (substr($image, 0, 1) == '-'){
+				$image_prefix = substr($image, 0, 1);
+				
+				if ($image_prefix == '+')
+					$this->addProductImage($product_art_no, substr($image, 1));
+				else if ($image_prefix == '-'){
 					$image_id = null;
-					if (isset($product_data['existing_images']) && sizeof($product_data['existing_images'])){
-						$image_to_delete = substr($image, 1);
-						foreach ($product_data['existing_images'] as $existing_image){
-							if ($existing_image['src'] == $image_to_delete)
-								$image_id = $existing_image['image_id'];	
+					if ($has_existing_images){
+						if (isset($product_data['existing_images']['image']) && sizeof($product_data['existing_images']['image'])){
+							$image_to_delete = substr($image, 1);
+							
+							//print_r($product_data['existing_images']);
+							foreach ($product_data['existing_images']['image'] as $existing_image){
+								if ($existing_image['comment'] == $image_to_delete)
+									$image_id = $existing_image['image_id'];	
+							}
 						}
-					}
-					
-					$this->deleteProductImage($image_id);
+						
+						$this->deleteProductImage($image_id);	
+					}					
 				}
 			}
 		}
 		
 		function deleteProduct($product){
 			/********* instead of deleting it, just make it unavailable ******/
-			//$method = 'deleteProduct';
-			$method = 'editProduct';
+			$method = 'deleteProduct';
+			//$method = 'editProduct';
 			$post = 1;
 			
 			$url = str_replace('{group}', $this->group, $this->url);
@@ -826,11 +1114,18 @@
 			$url = str_replace('{group}', $this->group, $this->url);
 			$url = str_replace('{method}', $method, $url);
 			
+			$image = preg_replace("/^[+|-]*/", "", $image);
+			$image_name = $image;
+			$image = $this->buildImageURL($image);
+			
 			$request_params = array(
 				'key' => $this->key, 
 				'product_art_no' => $product_art_no, 
-				'url' => $image				
+				'url' => $image, 
+				'comment' => $image_name		
 			);
+			
+			//echo "image add url: " . print_r($request_params, true) . "<br />";
 			
 			$result = parent::doRequest($url, $post, $request_params);
 			
@@ -914,7 +1209,7 @@
 		}
 		
 		function addProductVariant($product_art_no, $variant, $definitions = array()){
-			echo "ADDING PRODUCT VARIANT: ". $variant['variant_art_no'] . "<br />";
+			//echo "ADDING PRODUCT VARIANT: ". $variant['variant_art_no'] . "<br />";
 			
 			unset($variant['variant_id']);
 			//$method = 'addProductVariant';
@@ -961,7 +1256,7 @@
 			}
 			unset($variant['attributes']);
 			
-			echo "adding variant " . print_r($variant, true) . "<br /><br />";
+			//echo "adding variant " . print_r($variant, true) . "<br /><br />";
 			
 			$variant['product_art_no'] = $product_art_no;
 			$variant['key'] = $this->key;
@@ -987,9 +1282,6 @@
 			$definitions['product_art_no'] = $product_art_no;
 			$definitions['key'] = $this->key;
 			
-			echo "<h3>Definitions</h3>";
-			print_r($definitions);
-			
 			$response = parent::doRequest($url, $post, $definitions);
 			
 			if ($response['success'] == 1)
@@ -1000,14 +1292,67 @@
 			return false;
 		}	
 		
-		function editProductVariant(){
+		function editProductVariant($product_art_no, $variant, $definitions = array()){			
+			//echo "EDITING PRODUCT VARIANT: ". $variant['variant_art_no'] . "<br />";
 			
-			print_r($variant);
-			echo "<hr />";
-			echo $url . '?' . http_build_query($variant);
-			echo "<hr />";
-			echo "Result: ". print_r($response);
-			die;
+			unset($variant['variant_id']);
+			//$method = 'editProductVariant';
+			$method = 'editProductMultiVariant';
+			
+			$variant = $this->prepareProduct($variant);
+			
+			$url = str_replace('{group}', $this->group, $this->url);
+			$url = str_replace('{method}', $method, $url);
+			
+			$post = 1;
+			/*
+			$validAttributes = NULL;
+			if (isset($this->connection->mapping['attribute'])) {
+	            $validAttributes = array_keys($this->connection->mapping['attribute']);
+	        }
+			*/
+			
+			$count = 1;
+			$variant_definitions = array();
+			
+			
+			if (isset($variant['attributes']) && is_array($variant['attributes']) && sizeof($variant['attributes'])){
+				foreach ($variant['attributes'] as $attribute){
+					if ($attribute['value'] !== '' && $attribute['name'] != ''){
+						$variant['label'] = $attribute['name'];
+						$variant['value'] = $attribute['value'];
+						
+						if (isset($this->available_variant_labels[$attribute['name']]) && $this->available_variant_labels[$attribute['name']] != ''){
+							$variant['label'] = $this->available_variant_labels[$attribute['name']];
+							$attribute['name'] = $this->available_variant_labels[$attribute['name']];
+						}
+						
+						$variant[$attribute['name']] = $attribute['value'];
+						
+						if ($definitions['variant_' . $count] == $attribute['name']){
+							$variant["variation" . $count . "_type"] = $attribute['name'];
+							$variant["variation" . $count . "_value"] = $attribute['value'];
+							
+							$count++;
+						}
+					}
+				}
+			}
+			unset($variant['attributes']);
+			unset($variant['images']);
+			unset($variant['categories']);
+			
+			$variant['product_art_no'] = $product_art_no;
+			$variant['key'] = $this->key;
+			
+			$response = parent::doRequest($url, $post, $variant);
+			
+			if ($response['success'] == 1)
+				return true;
+			
+			$this->error = $this->getErrorMessage($response);
+			
+			return false;
 		}
 		
 		function deleteProductVariantByID($variant_id){
@@ -1059,12 +1404,40 @@
 		function addProductAttribute($product_art_no, $attribute){
 			if ($attribute['name'] == '' || $attribute['value'] == ''){
 				$this->error = "No 'name' or 'value' for this attribute";
-				echo "Attribute error: " . $this->error . "<hr />";
+				//echo "Attribute error: " . $this->error . "<hr />";
 				
 				return false;
 			}
 			
 			$method = 'addProductAttribute';
+			
+			$post = 1;
+			
+			$url = str_replace('{group}', $this->group, $this->url);
+			$url = str_replace('{method}', $method, $url);
+			
+			if (isset($this->available_variant_labels[$attribute['name']]) && $this->available_variant_labels[$attribute['name']] != '')
+				$attribute['name'] = $this->available_variant_labels[$attribute['name']];
+			
+			$request_params = array(
+				'key' => $this->key, 
+				'product_art_no' => $product_art_no, 
+				'title' => $attribute['name'],
+				'value' => $attribute['value']
+			);
+			
+			$result = parent::doRequest($url, $post, $request_params);
+			
+			if ($result['success'] == 1)
+				return true;
+			
+			$this->error = $this->getErrorMessage($result);
+			
+			return false; 
+		}
+
+		function editProductAttribute($product_art_no, $attribute){
+			$method = 'editProductAttribute';
 			
 			$post = 1;
 			
@@ -1104,30 +1477,62 @@
 				'product_art_no' => $product_art_no
 			);
 			
+			//echo $url . '?' . http_build_query($request_params);
+			
 			$result = parent::doRequest($url, $post, $request_params);
 			$attributes = false;
 			
 			if ($result['success'] == 1){
-				if (count($result['attributes']) > 0)
+				if (count($result['attributes']) > 0){
 					$attributes = array();
-				
-				foreach ($result['attributes']['attribute'] as $attribute){
-					$tmp_attribute = array(
-						'attribute_id' => $attribute['attribute_id'],
-						'title' => $attribute['title'], 
-						'name' => $attribute['title'],
-						'value' => $attribute['value'],
-					);
-					
-					$attributes[] = $tmp_attribute;  
-				}
+						
+					if (!isset($result['attributes']['attribute'][0])){
+						$attributes[] = $result['attributes']['attribute'];
+					}
+					else {
+						foreach ($result['attributes']['attribute'] as $attribute){
+							$tmp_attribute = array(
+								'attribute_id' => $attribute['attribute_id'],
+								'title' => $attribute['title'], 
+								'name' => $attribute['title'],
+								'value' => $attribute['value'],
+							);
+							
+							array_push($attributes, $tmp_attribute);							
+						}						
+					}
+				}				
 			}
 			
 			return $attributes;			
 		}
 		
-		function deleteProductAttribute(){
+		function deleteProductAttribute($product_art_no, $attribute){
+			$method = 'deleteProductAttribute';
 			
+			$post = 1;
+			
+			$url = str_replace('{group}', $this->group, $this->url);
+			$url = str_replace('{method}', $method, $url);
+			
+			if (isset($this->available_variant_labels[$attribute['name']]) && $this->available_variant_labels[$attribute['name']] != '')
+				$attribute['name'] = $this->available_variant_labels[$attribute['name']];
+			
+			$request_params = array(
+				'key' => $this->key, 
+				'product_art_no' => $product_art_no, 
+				'title' => $attribute['name'],
+				'attribute_id' => $attribute['attribute_id']
+			);
+			
+			$result = parent::doRequest($url, $post, $request_params);
+			
+			if ($result['success'] == 1)
+				return true;
+			
+			$this->error = $this->getErrorMessage($result);
+			
+			return false; 
 		}
 		
 		/* Product to Categories API methods */
@@ -1208,7 +1613,7 @@
 			$categories = false;
 			
 			if ($result['success'] == 1){
-				if (count($result['categories']['shop']['category']) > 0)
+				if (isset($result['categories']['shop']['category']) && count($result['categories']['shop']['category']) > 0)
 					$categories = $result['categories']['shop']['category'];
 			}
 			
@@ -1220,21 +1625,163 @@
 				
 				foreach ($categories as $product_category){
 					foreach ($existing_categories as $etron_category){
-						if ($product_category['category_id'] == $etron_category['shop_category_id'])
-							$etron_categories_ids[] = $etron_category['external_shop_category_id'];
+						if (isset($product_category['category_id'])){
+							if ($product_category['category_id'] == $etron_category['shop_category_id'])
+								$etron_categories_ids[] = $etron_category['external_shop_category_id'];
+						}
+						else {
+							if ($product_category == $etron_category['shop_category_id'])
+								$etron_categories_ids[] = $etron_category['external_shop_category_id'];
+						}
 					}
 				}
 			}
 			
 			return $etron_categories_ids;
 		}
+
+		function getProductCrossSellings($product_art_no){
+			$method = 'getProductCrossSellings';
+			
+			$post = 0;
+			
+			$url = str_replace('{group}', $this->group, $this->url);
+			$url = str_replace('{method}', $method, $url);
+			
+			$request_params = array(
+				'key' => $this->key, 
+				'product_art_no' => $product_art_no 	
+			);
+			
+			$result = parent::doRequest($url, $post, $request_params);
+			$cross_sellings = false;
+						
+			if ($result['success'] == 1){
+				$cross_sellings = array();
 				
+				foreach ($result['cross_sellings'] as $product){
+					if (!is_array($product))
+						$cross_sellings[] = $product;
+					else {
+						foreach ($product as $pr)
+							$cross_sellings[] = $pr;
+					}
+				}
+				return $cross_sellings;
+			}
+			
+			$this->error = $this->getErrorMessage($result);
+			
+			return false; 
+		}
+		
+		
+		function deleteProductCrossSelling($product_art_no, $cross_selling_product_art_no){
+			$method = 'deleteProductCrossSelling';
+			
+			$post = 1;
+			
+			$url = str_replace('{group}', $this->group, $this->url);
+			$url = str_replace('{method}', $method, $url);
+			
+			$request_params = array(
+				'key' => $this->key, 
+				'product_art_no' => $product_art_no, 
+				'cross_selling_product_art_no' => $cross_selling_product_art_no,				
+			);
+			
+			$result = parent::doRequest($url, $post, $request_params);
+			
+			if ($result['success'] == 1)
+				return true;
+			
+			$this->error = $this->getErrorMessage($result);
+			
+			return false; 
+		}
+		
+		function addProductCrossSelling($product_art_no, $cross_selling_product_art_no){
+			if (trim($cross_selling_product_art_no) == '')
+				return true;
+			
+			$method = 'addProductCrossSelling';
+			
+			$post = 1;
+			
+			$url = str_replace('{group}', $this->group, $this->url);
+			$url = str_replace('{method}', $method, $url);
+			
+			$request_params = array(
+				'key' => $this->key, 
+				'product_art_no' => $product_art_no, 
+				'cross_selling_product_art_no' => $cross_selling_product_art_no, 
+				
+			);
+			
+			$result = parent::doRequest($url, $post, $request_params);
+			
+			if ($result['success'] == 1)
+				return true;
+			
+			$this->error = $this->getErrorMessage($result);
+			
+			return false; 
+		}
+		
+		function updateProductCrossSellings($product_data, $product_art_no){
+			$has_existing_cross_sellings = false;
+			if (isset($product_data['existing_cross_sellings']) && is_array($product_data['existing_cross_sellings']) && sizeof($product_data['existing_cross_sellings']))
+				$has_existing_cross_sellings = true;
+			
+			
+			if ($has_existing_cross_sellings){
+				foreach($product_data['existing_cross_sellings'] as $old_cross_selling){
+					$cs_product = $this->getProductByID($old_cross_selling);
+					$old_cross_selling = $cs_product['product_art_no'];
+			
+					if (!in_array($old_cross_selling, $product_data['cross_sellings']))
+						$this->deleteProductCrossSelling($product_art_no, $old_cross_selling);
+				}
+			}
+			
+			foreach($product_data['cross_sellings'] as $new_cross_selling){
+				if	($has_existing_cross_sellings){
+					if (!in_array($new_cross_selling, $product_data['cross_sellings']))
+						$this->addProductCrossSelling($product_art_no, $new_cross_selling);	
+				}
+				else 
+					$this->addProductCrossSelling($product_art_no, $new_cross_selling);
+			}			
+		}
+		
+		
 		
 		function getErrorMessage($response){
-			echo "Response: " . print_r($response) . "<hr />";
+			if ($response['success'] == 0)
+				return 'No error, just no results';
+			//echo "Response: " . print_r($response) . "<hr />";
 			
+			$error_message = 'An error occured...';
 			//return "an error occured";
-			return (isset($this->errors[$response['errors']['error']['code']]) ? $this->errors[$response['errors']['error']['code']] : $response['errors']['error']['message']);
+			try {
+				//print_r($response['errors']['error']);
+				$errors_array = array();
+				if (!isset($response['errors']['error']['code'])){
+					foreach ($response['errors']['error'] as $error)
+						$errors_array[] = $error['message'];
+					
+					$error_message = implode(', ', $errors_array);
+				}
+				else {
+					$error_message = (isset($this->errors[$response['errors']['error']['code']]) ? (isset($this->errors[$response['errors']['error']['code']]) ? $this->errors[$response['errors']['error']['code']] : "Some error occured") : $response['errors']['error']['message']);	
+				}				
+			}
+			catch (exception $ex){
+				
+			}
+			
+			Utils::log("Api call error: ". $error_message);
+			return $error_message;
 		}
 		
 		function getError(){

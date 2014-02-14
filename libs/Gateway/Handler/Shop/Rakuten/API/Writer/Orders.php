@@ -7,23 +7,19 @@ use Gateway\IHandler,
 	Gateway\DataSource\Entity\Product, 
 	Rakuten\Handlers;
 
-require_once('../libs/Rakuten/Handlers/Products.php');
+require_once('../libs/Rakuten/Handlers/Orders.php');
 
 /**
  * Orders DataSource to API interface handler.
  * 
  * @author Darko Krstev
  */
-class Products extends \Gateway\Handler\Shop\Rakuten\API\Writer {
+class Orders extends \Gateway\Handler\Shop\Rakuten\API\Writer {
 
-    protected $type = IHandler::TYPE_PRODUCTS;
+    protected $type = IHandler::TYPE_ORDERS;
     
-	protected $Products;
-	public $existing_products;
-	
-	public $products_to_update;
-	public $products_to_add;
-	public $products_to_delete;
+	protected $Orders;
+	public $existing_orders;
 	
     /**
      * Number of processed skus.
@@ -40,8 +36,12 @@ class Products extends \Gateway\Handler\Shop\Rakuten\API\Writer {
     public function process() {
     	Utils::log(">>> " . get_class($this) . " <<<");
 
-		$this->Products = new \Rakuten\Handlers\Products();
-    	$this->Products->connection = $this->connection;
+		$this->Orders = new \Rakuten\Handlers\Orders();
+    	$this->Orders->connection = $this->connection;
+		
+		$this->init();	
+		
+		die;
 		
         // FIXME check when setting datasource
         if (!$this->dataSource) {
@@ -58,11 +58,11 @@ class Products extends \Gateway\Handler\Shop\Rakuten\API\Writer {
     }
 	
 	function init(){
-		$this->existing_products = $this->Products->getProducts();
+		$this->existing_orders = $this->Orders->getOrders();
 		
 		//echo "dump in " . $_SERVER['DOCUMENT_ROOT'] . '/existing_products.txt<br />';
-		file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/gateway/existing_products.txt', print_r($this->existing_products, true));
-		
+		file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/gateway/existing_orders.txt', print_r($this->existing_orders, true));
+		die;
 		$this->prepareProducts();
 		
 		

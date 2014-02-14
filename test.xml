@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root date="10.01.2014, 13:54:07" version="10" delta="1">
-    <products products_id="87" products_model="2112017580005" products_ean="" products_master_model="" products_master_flag="1" products_bundle_flag="0" products_quantity="17.00" products_shippingtime="2" products_image="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-ash3/t1/1896788_10151911385709149_31392980_n.jpg" products_price="" products_priceb="" products_regularprice="163.3333" products_status="1" products_visibility="4" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+	<products products_id="87" products_model="2112017580005" products_ean="" products_master_model="" products_master_flag="1" products_bundle_flag="0" products_quantity="2222.00" products_shippingtime="2" products_image="+863_1_sinamayglocke_klein.jpg;+863_2_sinamayglocke_klein.jpg" products_price="" products_priceb="" products_regularprice="163.3333" products_status="1" products_visibility="4" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
     <product_keys>
         <attributes products_id="87">
             <attr name="products_quantity_shops" value="ZENTRALE:0" />
@@ -11,7 +11,7 @@
             <attr name="bestellnummer" value="block-bootie-mid-violet" />
         </attributes>
     </product_keys>
-    <products_description products_id="87" language_id="0" products_name="Block Bootie Mid 111111111111" products_description="UNITED NUDE" products_short_description="UNITED NUDE" products_keywords="" />
+    <products_description products_id="87" language_id="0" products_name="Block Bootie Mid" products_description="UNITED NUDE" products_short_description="UNITED NUDE" products_keywords="" />
     <products_to_categories products_id="87" categories_id="7" />
     <products_to_categories products_id="87" categories_id="1" />
     <products products_id="83" products_master_flag="0" products_master_model="2112017580005" products_model="2112017570105" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="ZENTRALE:0" products_image="" products_price="" products_priceb="" products_regularprice="163.3333" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
@@ -299,7 +299,7 @@
     <products_description products_id="3829" language_id="0" products_name="Block Bootie Mid " products_description="UNITED NUDE" products_short_description="UNITED NUDE" products_keywords="" />
     <products_to_categories products_id="3829" categories_id="7" />
     <products_to_categories products_id="3829" categories_id="1" />
-    <products products_id="3482" products_model="2112023780000" products_ean="" products_master_model="" products_master_flag="1" products_bundle_flag="0" products_quantity="23.00" products_shippingtime="2" products_image="" products_price="" products_priceb="" products_regularprice="110.0000" products_status="1" products_visibility="4" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <products products_id="3482" products_model="2112023780000" products_ean="" products_master_model="" products_master_flag="1" products_bundle_flag="0" products_quantity="23.00" products_shippingtime="2" products_image="+1178_1_ballonmuetze_lack_seeberger.jpg;+1178_2_ballonmuetze_lack_seeberger.jpg;+1178_3_ballonmuetze_lack_seeberger.jpg" products_price="" products_priceb="" products_regularprice="110.0000" products_status="1" products_visibility="4" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
     <product_keys>
         <attributes products_id="3482">
             <attr name="products_quantity_shops" value="ZENTRALE:0" />
@@ -568,18 +568,6 @@
     <products_description products_id="3489" language_id="0" products_name="Swan Mid 39 " products_description="UNITED NUDE" products_short_description="UNITED NUDE" products_keywords="" />
     <products_to_categories products_id="3489" categories_id="7" />
     <products_to_categories products_id="3489" categories_id="1" />
-    <products products_id="3490" products_master_flag="0" products_master_model="2112023780000" products_model="2112023790504" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="ZENTRALE:0" products_image="" products_price="" products_priceb="" products_regularprice="110.0000" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
-    <product_keys>
-        <attributes products_id="3490">
-            <attr name="products_quantity_shops" value="ZENTRALE:0" />
-            <attr name="ean_list" value="" />
-            <attr name="color" language_id="0" value="Taupe + Lake" />
-            <attr name="cost" value="" />
-            <attr name="products_model_info" language_id="0" value="40" />
-            <attr name="products_manuf_homepage" value="" />
-            <attr name="bestellnummer" value="swan-mid-brown" />
-        </attributes>
-    </product_keys>
     <products_description products_id="3490" language_id="0" products_name="Swan Mid 40 " products_description="UNITED NUDE" products_short_description="UNITED NUDE" products_keywords="" />
     <products_to_categories products_id="3490" categories_id="7" />
     <products_to_categories products_id="3490" categories_id="1" />

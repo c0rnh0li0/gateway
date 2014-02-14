@@ -93,6 +93,8 @@ class Products extends Reader {
         	$product = $this->createProduct($typeKey, $isBundle);
 			
 			$product_data_array = $this->buildProduct($xml, $xmlProduct);
+			$product_data = $product->buildProduct($xmlProduct, $product_data_array);
+			
 			
 			/* Deal with variants */
 			$product_variants = array();
@@ -105,7 +107,8 @@ class Products extends Reader {
 		        if ($productVariants !== false) {
 		            foreach ($productVariants as $productVariant) {
 		            	$variant_data_array = $this->buildProduct($xml, $productVariant);
-		                $temp_variant = $product->buildProduct($productVariant, $variant_data_array, true);
+		                $temp_variant = $product->buildProduct($productVariant, $variant_data_array, true, $product_data['tax']);
+						
 						$temp_variant['attributes'] = $variant_data_array['attributes'];
 						$temp_variant['categories'] = $variant_data_array['categories'];
 						$temp_variant['images'] = $variant_data_array['images'];
@@ -116,13 +119,26 @@ class Products extends Reader {
 		        }
 			}
 			
-			$product_data = $product->buildProduct($xmlProduct, $product_data_array);
+			
+			
+			$product_data['producer'] = $product_data_array['producer'];
+			
+			
+			// ="2112023780000" ; delimited
+			$product_data['cross_sellings'] = (string) $xmlProduct['products_relations_cross'];
+			if (strlen($product_data['cross_sellings']) > 0 && $product_data['cross_sellings'] != '');
+				$product_data['cross_sellings'] = explode(';', $product_data['cross_sellings']);
+			
 			//$product_data = array_merge($product_data, $product_data_array);
 			 
 			//$product_data['products_description'] = $product_data_array['descriptions'];
 			$product_data['attributes'] = $product_data_array['attributes'];
 			$product_data['categories'] = $product_data_array['categories'];
-			$product_data['images'] = $product_data_array['images'];
+			
+			if (is_array($product_data_array['images']) && sizeof($product_data_array['images']) > 0 && strstr(';', $product_data_array['images'][0]))				
+				$product_data['images'] = explode(';', $product_data_array['images'][0]);
+			else 
+				$product_data['images'] = $product_data_array['images'];
 			
 			/*
 			for ($i = 0; $i < sizeof($product_data['attributes']); $i++){
@@ -138,6 +154,7 @@ class Products extends Reader {
 			// $product->sku = (string) $xmlProduct['products_model'];
 			
 			$all_products[] = $product_data;
+			
 
             $this->loadCategories($xml, $xmlProduct, $product);
           
@@ -147,41 +164,8 @@ class Products extends Reader {
             }
         }
 
-		/*
-        // MANUFACTURER
-        if (isset($xmlProduct['manufacturers_id']) && $xmlProduct['manufacturers_id']) {
-            $xmlManufacturerPattern = '//manufacturers[@manufacturers_id=' . $xmlProduct['manufacturers_id'] . ']';
-            $xmlManufacturer = current($xml->xpath($xmlManufacturerPattern));
-
-            if ($xmlManufacturer) {
-                $product->manufacturer = (string) $xmlManufacturer['manufacturers_name'];
-            }
-        }
-		*/
-
+		
 		Utils::log("%s products has been parsed.", count($all_products));
-
-        // FIXME when subproducts does not exists, skip? 
-        // now it is time to put parents and children into this structure        
-        /*foreach ($parentProducts as $parent) {
-            // if parent has children, we go through
-            if (isset($parent['skus']) && count($parent['skus'])) {
-                Utils::log("Updating '%s': adding subproducts of '%s'.", $parent['product']->sku, implode(", ", $parent['skus']));
-
-                foreach ($parent['skus'] as $childSku) {
-                    // if child found in products...
-                    $child = $products->get($childSku);
-
-                    // ...lets add child its parent and parent its child
-                    if ($child) {
-                        $parent['product']->addAssociated($child);
-                        $child->setParent($parent['product']);
-
-                        Utils::log("'%s': subproduct of '%s' added.", $parent['product']->sku, $child->sku);
-                    }
-                }
-            }
-        }*/
 
         Utils::log("Products DataSource is prepared.");
 
@@ -205,6 +189,17 @@ class Products extends Reader {
 			'metaKeywords' => trim((string) $xmlProductDescription['products_keywords'])
 		);
 
+		$manufacturer = '';
+		// Manufacturer
+		if (isset($xmlProduct['manufacturers_id']) && $xmlProduct['manufacturers_id']) {
+            $xmlManufacturerPattern = '//manufacturers[@manufacturers_id=' . $xmlProduct['manufacturers_id'] . ']';
+            $xmlManufacturer = current($xml->xpath($xmlManufacturerPattern));
+
+            if ($xmlManufacturer) {
+                $manufacturer = (string) $xmlManufacturer['manufacturers_name'];
+            }
+        }
+		
 		/* Deal with attributes */
 		$xmlProductAttributesPattern = '//product_keys/attributes[@products_id=' . $xmlProduct['products_id'] . ']';
         $productAttributes = current($xml->xpath($xmlProductAttributesPattern));
@@ -220,12 +215,13 @@ class Products extends Reader {
       				if (isset($productAttribute['language_id']))
                     $lang = (string) $productAttribute['language_id'];
 				
-				$available_attributes[] = array(
-					'label' => isset($productAttribute['label']) ? (string) $productAttribute['label'] : false, 
-					'name' => (string) $productAttribute['name'], 
-					'value' => (string) $productAttribute['value'], 
-					'lang' => $lang
-				);
+				if ((string) $productAttribute['name'] != '' && (string) $productAttribute['value'] !== '')
+					$available_attributes[] = array(
+						'label' => isset($productAttribute['label']) ? (string) $productAttribute['label'] : false, 
+						'name' => (string) $productAttribute['name'], 
+						'value' => (string) $productAttribute['value'], 
+						'lang' => $lang
+					);
             }
         }
 
@@ -259,7 +255,8 @@ class Products extends Reader {
 				'products_description' => $descriptions, 
 				'attributes' => $available_attributes, 
 				'categories' => $product_categories, 
-				'images' => $product_images
+				'images' => $product_images, 
+				'producer' => $manufacturer
 			);
 	}
 
@@ -380,5 +377,31 @@ class Products extends Reader {
         } 
         
         return $xml;  
+    }
+	
+	/**
+     * Returns input path.
+     * 
+     * FIXME put to parent handler
+     * 
+     * @return type
+     * @throws \Nette\InvalidArgumentException
+     */
+    protected function getPath($type = false) {
+        // configuration loading
+        $params = \Nette\Environment::getContext()->params['gateway_rakuten'];
+        $root = realpath($params['storage']['root']);
+
+        if (!isset($params['storage']['rakuten'])) {
+            throw new \Nette\InvalidArgumentException('Etron configuration not found in config.neon[params/gateway/storage/etron]');
+        }
+
+        $path = sprintf($root . $params['storage']['rakuten']['inputFolderMask'], $this->connection->name);
+        
+        if ($type) {
+            $path .= DIRECTORY_SEPARATOR . $type;
+        }
+        
+        return $path;
     }
 }

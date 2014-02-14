@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root date="11.02.2014, 17:55:49" version="10" delta="1">
+    <products products_id="209" products_model="2110000006037" products_ean="" products_master_model="" products_master_flag="0" products_bundle_flag="0" products_quantity="21.00" products_shippingtime="2" products_image="" products_price="" products_priceb="" products_regularprice="6.6964" products_status="1" products_visibility="4" products_weight="1.0000" manufacturers_id="18" products_tax_class_id="0" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="209">
+            <attr name="products_quantity_shops" value="ZENTRALE:21" />
+            <attr name="ean_list" value="" />
+            <attr name="color" value="" />
+            <attr name="products_manuf_homepage" value="veltlinerhof.com" />
+            <attr name="bestellnummer" value="" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="209" language_id="0" products_name="RIEDER WEINV. DAC GV 2012, 12,5/TR." products_description="&lt;p&gt;fruchtig-w&amp;uuml;rziger&amp;nbsp; GV, mit typischen Pfefferl,&amp;nbsp;reife Steinobstnoten&amp;nbsp; und Brotrinde in der Nase,&amp;nbsp;idealer Begleiter f&amp;uuml;r traditionelle K&amp;uuml;che&lt;/p&gt;" products_short_description="&lt;p&gt;Weinviertel DAC - 2012&lt;br /&gt;12,5 % Vol. - Trocken&lt;/p&gt;" products_keywords="Rieder - Weinviertel DAC" />
+    <products_to_categories products_id="209" categories_id="2" />
+    <products_to_categories products_id="209" categories_id="1" />
+    <products products_id="114" products_model="2110000008017" products_ean="9120037790482" products_master_model="" products_master_flag="0" products_bundle_flag="0" products_quantity="5.00" products_shippingtime="2" products_image="" products_price="" products_priceb="" products_regularprice="7.5893" products_status="1" products_visibility="4" products_weight="1.0000" manufacturers_id="9" products_tax_class_id="0" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="2110000008086" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="114">
+            <attr name="products_quantity_shops" value="ZENTRALE:5" />
+            <attr name="ean_list" value="" />
+            <attr name="color" value="" />
+            <attr name="products_manuf_homepage" value="haimer.at" />
+            <attr name="bestellnummer" value="" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="114" language_id="0" products_name="HAIMER RIESLING EXKLUSIV 2011, 13,5/TR." products_description="&lt;p&gt;- Sch&amp;ouml;ne Steinobstnuancen wie Marille und Weingartenpfirsich, feine Struktur und feine zarte S&amp;auml;ure,&lt;br /&gt;- Idealer Begleiter zu Fisch, warmen Vorspeisen, klassischer &amp;ouml;sterreichischen K&amp;uuml;che sowie zur&lt;br /&gt;indischen K&amp;uuml;che und asiatischen Gerichten.&lt;/p&gt;" products_short_description="&lt;p&gt;Riesling Exklusiv - 2011&lt;br /&gt;13,5 % Vol. - Trocken&lt;/p&gt;" products_keywords="Haimer - Riesling Exklusiv" />
+    <products_to_categories products_id="114" categories_id="2" />
+    <products_to_categories products_id="114" categories_id="1" />
+    <products products_id="117" products_model="2110000008086" products_ean="9120037790604" products_master_model="" products_master_flag="0" products_bundle_flag="0" products_quantity="24.00" products_shippingtime="2" products_image="" products_price="" products_priceb="" products_regularprice="6.8750" products_status="1" products_visibility="4" products_weight="1.0000" manufacturers_id="9" products_tax_class_id="0" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="117">
+            <attr name="products_quantity_shops" value="ZENTRALE:24" />
+            <attr name="ean_list" value="" />
+            <attr name="color" value="" />
+            <attr name="products_manuf_homepage" value="haimer.at" />
+            <attr name="bestellnummer" value="" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="117" language_id="0" products_name="HAIMER WEINV. DAC KIRCHBERG 2012, 13,0/TR." products_description="&lt;p&gt;- Der moderne vollmundige Veltliner aus dem Weinviertel, m&amp;uuml;rber Apfel, reife Mangos sowie Ananas, feine Struktur am Gaumen.&lt;br /&gt;- Ideal zur asiatischen sowie mediterranen K&amp;uuml;che, Begleiter zum Wild, warmen Vorspeisen und Frischk&amp;auml;se.&lt;/p&gt;" products_short_description="&lt;p&gt;Weinviertel DAC Kirchberg - 2012&lt;br /&gt;13,0 % Vol. - Trocken&lt;/p&gt;" products_keywords="Haimer - Weinviertel DAC Kirchberg" />
+    <products_to_categories products_id="117" categories_id="2" />
+    <products_to_categories products_id="117" categories_id="1" />
+    <products products_id="61" products_model="2110000022082" products_ean="9120039550657" products_master_model="" products_master_flag="0" products_bundle_flag="0" products_quantity="3.00" products_shippingtime="2" products_image="" products_price="" products_priceb="" products_regularprice="6.2500" products_status="1" products_visibility="4" products_weight="1.0000" manufacturers_id="6" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="61">
+            <attr name="products_quantity_shops" value="ZENTRALE:3" />
+            <attr name="ean_list" value="" />
+            <attr name="color" value="" />
+            <attr name="products_manuf_homepage" value="weingut-gmeinboeck.at/" />
+            <attr name="bestellnummer" value="" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="61" language_id="0" products_name="GMEINBÖCK RIESLING 2012, 13,5/TR." products_description="&lt;p&gt;Feinste Noten nach wei&amp;szlig;en Weingartenpfirsichen und Wiesenkr&amp;auml;utern, mit frischen Zitrusankl&amp;auml;ngen unterlegt, knackige Frucht und sch&amp;ouml;ne Frische, endet mit herrlicher Finesse.&lt;/p&gt;" products_short_description="&lt;p&gt;Riesling - 2012&lt;br /&gt;13,5 % Vol. - Trocken&lt;/p&gt;" products_keywords="Gmeinböck - Riesling" />
+    <products_to_categories products_id="61" categories_id="2" />
+    <products_to_categories products_id="61" categories_id="1" />
+    <products products_id="95" products_model="2110000022099" products_ean="9120039550367;9120039550640" products_master_model="" products_master_flag="0" products_bundle_flag="0" products_quantity="20.00" products_shippingtime="2" products_image="" products_price="" products_priceb="" products_regularprice="6.3333" products_status="1" products_visibility="4" products_weight="1.0000" manufacturers_id="6" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="2110000008017" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="95">
+            <attr name="products_quantity_shops" value="ZENTRALE:20" />
+            <attr name="ean_list" value="" />
+            <attr name="color" value="" />
+            <attr name="products_manuf_homepage" value="weingut-gmeinboeck.at" />
+            <attr name="bestellnummer" value="" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="95" language_id="0" products_name="GMEINBÖCK WELSCHRIESLING 2013, 12,5/TR." products_description="&lt;p&gt;Mittleres Gr&amp;uuml;ngelb animierender Apfelduft, lebhaft,klar und frisch.dezente Fruchts&amp;uuml;&amp;szlig;e, Kerniges S&amp;auml;ureger&amp;uuml;st! Enth&amp;auml;lt Sulfite.&lt;/p&gt;" products_short_description="&lt;p&gt;Welschriesling - 2013&lt;br /&gt;12,5 % Vol. - Trocken&lt;/p&gt;" products_keywords="Gmeinböck - Welschriesling" />
+    <products_to_categories products_id="95" categories_id="2" />
+    <products_to_categories products_id="95" categories_id="1" />
+    <products products_id="26" products_model="2110000023201" products_ean="" products_master_model="" products_master_flag="0" products_bundle_flag="0" products_quantity="16.00" products_shippingtime="2" products_image="" products_price="" products_priceb="" products_regularprice="8.0357" products_status="1" products_visibility="4" products_weight="1.0000" manufacturers_id="4" products_tax_class_id="0" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="26">
+            <attr name="products_quantity_shops" value="ZENTRALE:16" />
+            <attr name="ean_list" value="" />
+            <attr name="color" value="" />
+            <attr name="products_manuf_homepage" value="weingut-ebinger.at" />
+            <attr name="bestellnummer" value="" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="26" language_id="0" products_name="EBINGER - Grüner Veltliner &quot;Reserve&quot; 2012, 13,5/Tr." products_description="&lt;p&gt;Der Gr&amp;uuml;ne Veltliner &quot;Reserve&quot; ist ein reifer, fruchtiger Veltliner der Eleganz und Kraft ausdr&amp;uuml;ckt.&lt;/p&gt; &lt;p&gt;&lt;strong&gt;Auszeichnung: Kreis der Besten, GOLD &lt;/strong&gt;(Weinparade Poysdorf)&lt;/p&gt;" products_short_description="&lt;p&gt;Gr&amp;uuml;ner Veltliner &quot;Reserve&quot;&amp;nbsp; - 2012&lt;br /&gt;13,5 % Vol. - trocken&lt;/p&gt;" products_keywords="Ebinger - Grüner Veltliner &quot;Reserve&quot;" />
+    <products_to_categories products_id="26" categories_id="2" />
+    <products_to_categories products_id="26" categories_id="1" />
+    <products products_id="12" products_model="2110000025076" products_ean="" products_master_model="" products_master_flag="0" products_bundle_flag="0" products_quantity="26.00" products_shippingtime="2" products_image="" products_price="" products_priceb="" products_regularprice="7.5893" products_status="1" products_visibility="4" products_weight="1.0000" manufacturers_id="3" products_tax_class_id="0" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="12">
+            <attr name="products_quantity_shops" value="ZENTRALE:26" />
+            <attr name="ean_list" value="" />
+            <attr name="color" value="" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="12" language_id="0" products_name="DETZ - Chardonnay 2012 12,5/Tr." products_description="&lt;p&gt;Neben dem feinduftigen Bukett besticht dieser Wein mit viel Extrakt und tollem Abgang. Gro&amp;szlig;es Lagerpotential. Harmoniert ausgezeichnet mit Schalen- und Krustentieren, ger&amp;auml;uchertem Fisch und schwerer zubereiteten Gefl&amp;uuml;gelgerichten sowie mit vielen Schnittk&amp;auml;searten.&lt;/p&gt;" products_short_description="&lt;p&gt;Chardonnay 2012&lt;br /&gt;12,5 Vol. %, trocken&lt;/p&gt;" products_keywords="Detz - Chardonnay" />
+    <products_to_categories products_id="12" categories_id="2" />
+    <products_to_categories products_id="12" categories_id="1" />
+    <products products_id="7" products_model="2110000026042" products_ean="9120016633120;9120016633137" products_master_model="" products_master_flag="0" products_bundle_flag="0" products_quantity="20.00" products_shippingtime="2" products_image="" products_price="" products_priceb="" products_regularprice="6.6071" products_status="1" products_visibility="4" products_weight="1.0000" manufacturers_id="2" products_tax_class_id="0" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="7">
+            <attr name="products_quantity_shops" value="ZENTRALE:20" />
+            <attr name="ean_list" value="" />
+            <attr name="color" value="" />
+            <attr name="products_manuf_homepage" value="ai-amon.at" />
+            <attr name="bestellnummer" value="" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="7" language_id="0" products_name="AMON - Riesling Classic 2013, 12,0/Tr." products_description="&lt;p&gt;Feinfruchtiger Ankl&amp;auml;nge nach Pfirsich und Holunderbl&amp;uuml;ten. Die kernig, feine Struktur am Gaumen sorgt f&amp;uuml;r einen lebendigen Abgang mit klarer Frische.&lt;/p&gt;" products_short_description="&lt;p&gt;Riesling Classic - 2013&lt;br /&gt;12,0 % Vol. - trocken&lt;/p&gt;" products_keywords="Amon - Riesling Classic" />
+    <products_to_categories products_id="7" categories_id="2" />
+    <products_to_categories products_id="7" categories_id="1" />
+    <products products_id="381" products_model="2110000028060" products_ean="0700153227728" products_master_model="" products_master_flag="0" products_bundle_flag="0" products_quantity="21.00" products_shippingtime="6" products_image="" products_price="" products_priceb="" products_regularprice="6.1607" products_status="1" products_visibility="4" products_weight="1.0000" manufacturers_id="24" products_tax_class_id="0" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="381">
+            <attr name="products_quantity_shops" value="ZENTRALE:21" />
+            <attr name="ean_list" value="" />
+            <attr name="color" value="" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="381" language_id="0" products_name="STROBL L- GRÜNER VELTLINER 2013, 12,5/Tr." products_description="&lt;p&gt;&lt;span&gt;Duft nach gr&amp;uuml;nem Apfel mit zarter Zitrusnote, fruchtig und sortentypisch, gute S&amp;auml;urebalance. &lt;/span&gt;&lt;/p&gt;" products_short_description="&lt;p&gt;Strobl L. u. K. - Gr&amp;uuml;ner Veltliner 2013&lt;/p&gt; &lt;p&gt;12,5 trocken&lt;/p&gt;" products_keywords="Strobl L.-Grüner Veltliner" />
+    <products_to_categories products_id="381" categories_id="2" />
+    <products_to_categories products_id="381" categories_id="1" />
+    <products products_id="275" products_model="2110000028121" products_ean="" products_master_model="" products_master_flag="0" products_bundle_flag="0" products_quantity="12.00" products_shippingtime="2" products_image="" products_price="" products_priceb="" products_regularprice="6.3393" products_status="1" products_visibility="4" products_weight="1.0000" manufacturers_id="24" products_tax_class_id="0" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="275">
+            <attr name="products_quantity_shops" value="ZENTRALE:12" />
+            <attr name="ean_list" value="" />
+            <attr name="color" value="" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="275" language_id="0" products_name="STROBL L.U.K. WEIßBURGUNDER 2012, 13,0/Tr." products_description="&lt;p&gt;Unser Wei&amp;szlig;burgunder hat ein sehr zartes, leicht nussiges Bukett mit fruchtigen Aromen nach Birnen, &amp;Auml;pfeln aber auch Zitrusfr&amp;uuml;chten.&lt;br /&gt;&lt;br /&gt;Wir kochen damit unser Coq au vin blanc, f&amp;uuml;r das er nat&amp;uuml;rlich auch ein exzellenter Begleiter ist.&lt;/p&gt;" products_short_description="&lt;p&gt;Strobl L. u. K. - Wei&amp;szlig;burgunder - 2012&lt;br /&gt;13,0 % Vol. - Trocken&lt;/p&gt;" products_keywords="Strobl - Weißburgunder" />
+    <products_to_categories products_id="275" categories_id="2" />
+    <products_to_categories products_id="275" categories_id="1" />
+    <products products_id="331" products_model="2110000030117" products_ean="" products_master_model="" products_master_flag="0" products_bundle_flag="0" products_quantity="14.00" products_shippingtime="2" products_image="" products_price="" products_priceb="" products_regularprice="6.6964" products_status="1" products_visibility="4" products_weight="1.0000" manufacturers_id="17" products_tax_class_id="0" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="331">
+            <attr name="products_quantity_shops" value="ZENTRALE:14" />
+            <attr name="ean_list" value="" />
+            <attr name="color" value="" />
+            <attr name="products_manuf_homepage" value="riederwein.at" />
+            <attr name="bestellnummer" value="" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="331" language_id="0" products_name="RIEDER CH. - NEUBURGER 2012 - 13,0/TR." products_description="&lt;p&gt;Die seltene Sorte Neuburger wirkt nussig mit floralen und fruchtigen Ankl&amp;auml;ngen in der Nase. Am Gaumen roter Apfel, lebendig und animierend mit guter S&amp;auml;urestruktur. Toller Essensbegleiter&lt;/p&gt;" products_short_description="&lt;p&gt;Neuburger - 2012&lt;br /&gt;13,0 % Vol. - Trocken&lt;/p&gt;" products_keywords="Rieder - Neuburger" />
+    <products_to_categories products_id="331" categories_id="2" />
+    <products_to_categories products_id="331" categories_id="1" />
+    <categories categories_id="4" categories_status="1" categories_visibility="1" categories_image="" parent_id="1" sort_order="1" />
+    <categories_description categories_id="4" language_id="0" categories_name="Roséweine" categories_description="" />
+    <categories categories_id="3" categories_status="1" categories_visibility="1" categories_image="" parent_id="1" sort_order="2" />
+    <categories_description categories_id="3" language_id="0" categories_name="Rotweine" categories_description="" />
+    <categories categories_id="5" categories_status="1" categories_visibility="1" categories_image="" parent_id="0" sort_order="3" />
+    <categories_description categories_id="5" language_id="0" categories_name="Schaumweine" categories_description="" />
+    <categories categories_id="6" categories_status="1" categories_visibility="1" categories_image="" parent_id="0" sort_order="4" />
+    <categories_description categories_id="6" language_id="0" categories_name="Süßweine" categories_description="" />
+    <categories categories_id="1" categories_status="1" categories_visibility="1" categories_image="" parent_id="0" sort_order="5" />
+    <categories_description categories_id="1" language_id="0" categories_name="Wein" categories_description="" />
+    <categories categories_id="2" categories_status="1" categories_visibility="1" categories_image="" parent_id="1" sort_order="6" />
+    <categories_description categories_id="2" language_id="0" categories_name="Weißweine" categories_description="" />
+    <manufacturers manufacturers_id="1" manufacturers_name="" manufacturers_status="1" />
+    <manufacturers manufacturers_id="29" manufacturers_name="Bioweingut Oppenauer" manufacturers_status="1" />
+    <manufacturers manufacturers_id="8" manufacturers_name="Gut Kellerstöckl" manufacturers_status="1" />
+    <manufacturers manufacturers_id="2" manufacturers_name="Weingut Amon" manufacturers_status="1" />
+    <manufacturers manufacturers_id="3" manufacturers_name="Weingut Detz" manufacturers_status="1" />
+    <manufacturers manufacturers_id="4" manufacturers_name="Weingut Ebinger" manufacturers_status="1" />
+    <manufacturers manufacturers_id="5" manufacturers_name="Weingut Ebner-Ebenauer" manufacturers_status="1" />
+    <manufacturers manufacturers_id="6" manufacturers_name="Weingut Gmeinböck" manufacturers_status="1" />
+    <manufacturers manufacturers_id="9" manufacturers_name="Weingut Haimer" manufacturers_status="1" />
+    <manufacturers manufacturers_id="10" manufacturers_name="Weingut Hauser" manufacturers_status="1" />
+    <manufacturers manufacturers_id="12" manufacturers_name="Weingut Heger A.u.L." manufacturers_status="1" />
+    <manufacturers manufacturers_id="11" manufacturers_name="Weingut Heger H." manufacturers_status="1" />
+    <manufacturers manufacturers_id="7" manufacturers_name="Weingut Hirtl" manufacturers_status="1" />
+    <manufacturers manufacturers_id="13" manufacturers_name="Weingut Hugl" manufacturers_status="1" />
+    <manufacturers manufacturers_id="28" manufacturers_name="Weingut Hugl-Wimmer Sylvia" manufacturers_status="1" />
+    <manufacturers manufacturers_id="14" manufacturers_name="Weingut Kalser" manufacturers_status="1" />
+    <manufacturers manufacturers_id="15" manufacturers_name="Weingut Kletzer" manufacturers_status="1" />
+    <manufacturers manufacturers_id="16" manufacturers_name="Weingut Latschka" manufacturers_status="1" />
+    <manufacturers manufacturers_id="30" manufacturers_name="Weingut Neustifter" manufacturers_status="1" />
+    <manufacturers manufacturers_id="17" manufacturers_name="Weingut Rieder Ch." manufacturers_status="1" />
+    <manufacturers manufacturers_id="18" manufacturers_name="Weingut Rieder W." manufacturers_status="1" />
+    <manufacturers manufacturers_id="19" manufacturers_name="Weingut Riegelhofer" manufacturers_status="1" />
+    <manufacturers manufacturers_id="20" manufacturers_name="Weingut Schodl" manufacturers_status="1" />
+    <manufacturers manufacturers_id="33" manufacturers_name="Weingut Schodl R." manufacturers_status="1" />
+    <manufacturers manufacturers_id="21" manufacturers_name="Weingut Schuckert R." manufacturers_status="1" />
+    <manufacturers manufacturers_id="22" manufacturers_name="Weingut Spatzierer" manufacturers_status="1" />
+    <manufacturers manufacturers_id="23" manufacturers_name="Weingut Strobl Josef" manufacturers_status="1" />
+    <manufacturers manufacturers_id="24" manufacturers_name="Weingut Strobl L.u.K." manufacturers_status="1" />
+    <manufacturers manufacturers_id="25" manufacturers_name="Weingut Taubenschuß" manufacturers_status="1" />
+    <manufacturers manufacturers_id="26" manufacturers_name="Weingut Walek" manufacturers_status="1" />
+    <manufacturers manufacturers_id="32" manufacturers_name="Weingut Weinrieder" manufacturers_status="1" />
+    <manufacturers manufacturers_id="31" manufacturers_name="Weingut Wimmer" manufacturers_status="1" />
+    <manufacturers manufacturers_id="27" manufacturers_name="Weingut Wimmer Erwin" manufacturers_status="1" />
+</root>

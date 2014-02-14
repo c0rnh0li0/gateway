@@ -1,0 +1,702 @@
+Array
+(
+    [0] => Array
+        (
+            [product_id] => 1140392571
+            [product_art_no] => 2110000006037
+            [name] => RIEDER WEINV. DAC GV 2012, 12,5/TR.
+            [producer] => Weingut Rieder W.
+            [shipping_group] => 1
+            [tax] => 12
+            [min_order_qty] => 0
+            [staggering] => 
+            [stock_policy] => 0
+            [visible] => 0
+            [homepage] => 0
+            [connect] => 0
+            [description] => <p>fruchtig-würziger  GV, mit typischen Pfefferl, reife Steinobstnoten  und Brotrinde in der Nase, idealer Begleiter für traditionelle Küche</p>
+            [inci] => 
+            [comment] => 
+            [cross_selling_title] => RIEDER WEINV. DAC GV 2012, 12,5/TR.
+            [created] => 2014-02-12 11:36:31
+            [price] => 6.70
+            [price_reduced] => 0.00
+            [price_reduced_type] => VK
+            [baseprice_unit] => ml
+            [baseprice_volume] => 0.000
+            [stock] => 21
+            [delivery] => 3
+            [available] => 1
+            [isbn] => 
+            [ean] => 2110000006037
+            [mpn] => 
+            [url_portal] => 
+            [url_shop] => 
+            [url_marketing] => 
+            [has_variants] => 0
+            [attributes] => Array
+                (
+                    [0] => Array
+                        (
+                            [attribute_id] => 78857741
+                            [title] => products_quantity_shops
+                            [name] => products_quantity_shops
+                            [value] => ZENTRALE:21
+                        )
+
+                    [1] => Array
+                        (
+                            [attribute_id] => 78857746
+                            [title] => products_manuf_homepage
+                            [name] => products_manuf_homepage
+                            [value] => veltlinerhof.com
+                        )
+
+                )
+
+            [categories] => Array
+                (
+                    [0] => 1
+                )
+
+        )
+
+    [1] => Array
+        (
+            [product_id] => 1140392581
+            [product_art_no] => 2110000008017
+            [name] => HAIMER RIESLING EXKLUSIV 2011, 13,5/TR.
+            [producer] => Weingut Haimer
+            [shipping_group] => 1
+            [tax] => 12
+            [min_order_qty] => 0
+            [staggering] => 
+            [stock_policy] => 0
+            [visible] => 0
+            [homepage] => 0
+            [connect] => 0
+            [description] => <p>- Schöne Steinobstnuancen wie Marille und Weingartenpfirsich, feine Struktur und feine zarte Säure,<br />- Idealer Begleiter zu Fisch, warmen Vorspeisen, klassischer österreichischen Küche sowie zur<br />indischen Küche und asiatischen Gerichten.</p>
+            [inci] => 
+            [comment] => 
+            [cross_selling_title] => HAIMER RIESLING EXKLUSIV 2011, 13,5/TR.
+            [created] => 2014-02-12 11:36:34
+            [price] => 7.59
+            [price_reduced] => 0.00
+            [price_reduced_type] => VK
+            [baseprice_unit] => ml
+            [baseprice_volume] => 0.000
+            [stock] => 5
+            [delivery] => 3
+            [available] => 1
+            [isbn] => 
+            [ean] => 2110000008017
+            [mpn] => 
+            [url_portal] => 
+            [url_shop] => 
+            [url_marketing] => 
+            [has_variants] => 0
+            [attributes] => Array
+                (
+                    [0] => Array
+                        (
+                            [attribute_id] => 78857751
+                            [title] => products_quantity_shops
+                            [name] => products_quantity_shops
+                            [value] => ZENTRALE:5
+                        )
+
+                    [1] => Array
+                        (
+                            [attribute_id] => 78857756
+                            [title] => products_manuf_homepage
+                            [name] => products_manuf_homepage
+                            [value] => haimer.at
+                        )
+
+                )
+
+            [categories] => Array
+                (
+                    [0] => 1
+                )
+
+            [cross_sellings] => Array
+                (
+                    [0] => 1140392571
+                )
+
+        )
+
+    [2] => Array
+        (
+            [product_id] => 1140392586
+            [product_art_no] => 2110000008086
+            [name] => HAIMER WEINV. DAC KIRCHBERG 2012, 13,0/TR.
+            [producer] => Weingut Haimer
+            [shipping_group] => 1
+            [tax] => 12
+            [min_order_qty] => 0
+            [staggering] => 
+            [stock_policy] => 0
+            [visible] => 0
+            [homepage] => 0
+            [connect] => 0
+            [description] => <p>- Der moderne vollmundige Veltliner aus dem Weinviertel, mürber Apfel, reife Mangos sowie Ananas, feine Struktur am Gaumen.<br />- Ideal zur asiatischen sowie mediterranen Küche, Begleiter zum Wild, warmen Vorspeisen und Frischkäse.</p>
+            [inci] => 
+            [comment] => 
+            [cross_selling_title] => HAIMER WEINV. DAC KIRCHBERG 2012, 13,0/TR.
+            [created] => 2014-02-12 11:36:36
+            [price] => 6.88
+            [price_reduced] => 0.00
+            [price_reduced_type] => VK
+            [baseprice_unit] => ml
+            [baseprice_volume] => 0.000
+            [stock] => 24
+            [delivery] => 3
+            [available] => 1
+            [isbn] => 
+            [ean] => 2110000008086
+            [mpn] => 
+            [url_portal] => 
+            [url_shop] => 
+            [url_marketing] => 
+            [has_variants] => 0
+            [attributes] => Array
+                (
+                    [0] => Array
+                        (
+                            [attribute_id] => 78857761
+                            [title] => products_quantity_shops
+                            [name] => products_quantity_shops
+                            [value] => ZENTRALE:24
+                        )
+
+                    [1] => Array
+                        (
+                            [attribute_id] => 78857766
+                            [title] => products_manuf_homepage
+                            [name] => products_manuf_homepage
+                            [value] => haimer.at
+                        )
+
+                )
+
+            [categories] => Array
+                (
+                    [0] => 1
+                )
+
+        )
+
+    [3] => Array
+        (
+            [product_id] => 1140392596
+            [product_art_no] => 2110000022082
+            [name] => GMEINBÖCK RIESLING 2012, 13,5/TR.
+            [producer] => Weingut Gmeinböck
+            [shipping_group] => 1
+            [tax] => 10
+            [min_order_qty] => 0
+            [staggering] => 
+            [stock_policy] => 0
+            [visible] => 0
+            [homepage] => 0
+            [connect] => 0
+            [description] => <p>Feinste Noten nach weißen Weingartenpfirsichen und Wiesenkräutern, mit frischen Zitrusanklängen unterlegt, knackige Frucht und schöne Frische, endet mit herrlicher Finesse.</p>
+            [inci] => 
+            [comment] => 
+            [cross_selling_title] => GMEINBÖCK RIESLING 2012, 13,5/TR.
+            [created] => 2014-02-12 11:36:39
+            [price] => 6.88
+            [price_reduced] => 0.00
+            [price_reduced_type] => VK
+            [baseprice_unit] => ml
+            [baseprice_volume] => 0.000
+            [stock] => 3
+            [delivery] => 3
+            [available] => 1
+            [isbn] => 
+            [ean] => 2110000022082
+            [mpn] => 
+            [url_portal] => 
+            [url_shop] => 
+            [url_marketing] => 
+            [has_variants] => 0
+            [attributes] => Array
+                (
+                    [0] => Array
+                        (
+                            [attribute_id] => 78857771
+                            [title] => products_quantity_shops
+                            [name] => products_quantity_shops
+                            [value] => ZENTRALE:3
+                        )
+
+                    [1] => Array
+                        (
+                            [attribute_id] => 78857776
+                            [title] => products_manuf_homepage
+                            [name] => products_manuf_homepage
+                            [value] => weingut-gmeinboeck.at/
+                        )
+
+                )
+
+            [categories] => Array
+                (
+                    [0] => 1
+                )
+
+        )
+
+    [4] => Array
+        (
+            [product_id] => 1140392606
+            [product_art_no] => 2110000022099
+            [name] => GMEINBÖCK WELSCHRIESLING 2013, 12,5/TR.
+            [producer] => Weingut Gmeinböck
+            [shipping_group] => 1
+            [tax] => 10
+            [min_order_qty] => 0
+            [staggering] => 
+            [stock_policy] => 0
+            [visible] => 0
+            [homepage] => 0
+            [connect] => 0
+            [description] => <p>Mittleres Grüngelb animierender Apfelduft, lebhaft,klar und frisch.dezente Fruchtsüße, Kerniges Säuregerüst! Enthält Sulfite.</p>
+            [inci] => 
+            [comment] => 
+            [cross_selling_title] => GMEINBÖCK WELSCHRIESLING 2013, 12,5/TR.
+            [created] => 2014-02-12 11:36:41
+            [price] => 6.97
+            [price_reduced] => 0.00
+            [price_reduced_type] => VK
+            [baseprice_unit] => ml
+            [baseprice_volume] => 0.000
+            [stock] => 20
+            [delivery] => 3
+            [available] => 1
+            [isbn] => 
+            [ean] => 2110000022099
+            [mpn] => 
+            [url_portal] => 
+            [url_shop] => 
+            [url_marketing] => 
+            [has_variants] => 0
+            [attributes] => Array
+                (
+                    [0] => Array
+                        (
+                            [attribute_id] => 78857781
+                            [title] => products_quantity_shops
+                            [name] => products_quantity_shops
+                            [value] => ZENTRALE:20
+                        )
+
+                    [1] => Array
+                        (
+                            [attribute_id] => 78857786
+                            [title] => products_manuf_homepage
+                            [name] => products_manuf_homepage
+                            [value] => weingut-gmeinboeck.at
+                        )
+
+                )
+
+            [categories] => Array
+                (
+                    [0] => 1
+                )
+
+            [cross_sellings] => Array
+                (
+                    [0] => 1140392581
+                )
+
+        )
+
+    [5] => Array
+        (
+            [product_id] => 1140392616
+            [product_art_no] => 2110000023201
+            [name] => EBINGER - Grüner Veltliner "Reserve" 2012, 13,5/Tr.
+            [producer] => Weingut Ebinger
+            [shipping_group] => 1
+            [tax] => 12
+            [min_order_qty] => 0
+            [staggering] => 
+            [stock_policy] => 0
+            [visible] => 1
+            [homepage] => 0
+            [connect] => 0
+            [description] => <p>Der Gr&uuml;ne Veltliner &quot;Reserve&quot; ist ein reifer, fruchtiger Veltliner der Eleganz und Kraft ausdr&uuml;ckt.</p><p><strong>Auszeichnung: Kreis der Besten, GOLD </strong>(Weinparade Poysdorf)</p>
+            [inci] => 
+            [comment] => 
+            [cross_selling_title] => EBINGER - Grüner Veltliner "Reserve" 2012, 13,5/Tr.
+            [created] => 2014-02-12 11:36:44
+            [price] => 0.04
+            [price_reduced] => 0.00
+            [price_reduced_type] => VK
+            [baseprice_unit] => ml
+            [baseprice_volume] => 0.000
+            [stock] => 16
+            [delivery] => 3
+            [available] => 1
+            [isbn] => 
+            [ean] => 2110000023201
+            [mpn] => 
+            [url_portal] => 
+            [url_shop] => http://www.rakuten.de/produkt/weingut-ebinger-ebinger-gruener-veltliner-reserve-2012-13-5tr-1140392616.html
+            [url_marketing] => http://demo-ec-quadrat.rakuten-shop.at/sp/weingut-ebinger-ebinger-gruener-veltliner-reserve-2012-135tr-1140392616.html
+            [has_variants] => 0
+            [images] => Array
+                (
+                    [image] => Array
+                        (
+                            [image_id] => 17627921001
+                            [src] => http://images.rakuten.de/431c8f8b2e8ac29b6147b52aef38a102/images/1140392616_709936.jpg
+                            [default] => 1
+                            [comment] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [attributes] => Array
+                (
+                    [0] => Array
+                        (
+                            [attribute_id] => 78857791
+                            [title] => products_quantity_shops
+                            [name] => products_quantity_shops
+                            [value] => ZENTRALE:16
+                        )
+
+                    [1] => Array
+                        (
+                            [attribute_id] => 78857796
+                            [title] => products_manuf_homepage
+                            [name] => products_manuf_homepage
+                            [value] => weingut-ebinger.at
+                        )
+
+                )
+
+            [categories] => Array
+                (
+                    [0] => 1
+                )
+
+        )
+
+    [6] => Array
+        (
+            [product_id] => 1140392626
+            [product_art_no] => 2110000025076
+            [name] => DETZ - Chardonnay 2012 12,5/Tr.
+            [producer] => Weingut Detz
+            [shipping_group] => 1
+            [tax] => 12
+            [min_order_qty] => 0
+            [staggering] => 
+            [stock_policy] => 0
+            [visible] => 1
+            [homepage] => 0
+            [connect] => 0
+            [description] => <p>Neben dem feinduftigen Bukett besticht dieser Wein mit viel Extrakt und tollem Abgang. Gro&szlig;es Lagerpotential. Harmoniert ausgezeichnet mit Schalen- und Krustentieren, ger&auml;uchertem Fisch und schwerer zubereiteten Gefl&uuml;gelgerichten sowie mit vielen Schnittk&auml;searten.</p>
+            [inci] => 
+            [comment] => 
+            [cross_selling_title] => DETZ - Chardonnay 2012 12,5/Tr.
+            [created] => 2014-02-12 11:36:46
+            [price] => 1.12
+            [price_reduced] => 0.00
+            [price_reduced_type] => VK
+            [baseprice_unit] => ml
+            [baseprice_volume] => 0.000
+            [stock] => 26
+            [delivery] => 3
+            [available] => 1
+            [isbn] => 
+            [ean] => 2110000025076
+            [mpn] => 
+            [url_portal] => 
+            [url_shop] => http://www.rakuten.de/produkt/weingut-detz-detz-chardonnay-2012-12-5tr-1140392626.html
+            [url_marketing] => http://demo-ec-quadrat.rakuten-shop.at/sp/weingut-detz-detz-chardonnay-2012-125tr-1140392626.html
+            [has_variants] => 0
+            [images] => Array
+                (
+                    [image] => Array
+                        (
+                            [image_id] => 17627920976
+                            [src] => http://images.rakuten.de/431c8f8b2e8ac29b6147b52aef38a102/images/1140392626_949653.jpg
+                            [default] => 1
+                            [comment] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [attributes] => Array
+                (
+                    [0] => Array
+                        (
+                            [attribute_id] => 78857801
+                            [title] => products_quantity_shops
+                            [value] => ZENTRALE:26
+                        )
+
+                )
+
+            [categories] => Array
+                (
+                    [0] => 1
+                )
+
+        )
+
+    [7] => Array
+        (
+            [product_id] => 1140392636
+            [product_art_no] => 2110000026042
+            [name] => AMON - Riesling Classic 2013, 12,0/Tr.
+            [producer] => Weingut Amon
+            [shipping_group] => 1
+            [tax] => 12
+            [min_order_qty] => 0
+            [staggering] => 
+            [stock_policy] => 0
+            [visible] => 1
+            [homepage] => 0
+            [connect] => 0
+            [description] => <p>Feinfruchtiger Ankl&auml;nge nach Pfirsich und Holunderbl&uuml;ten. Die kernig, feine Struktur am Gaumen sorgt f&uuml;r einen lebendigen Abgang mit klarer Frische.</p>
+            [inci] => 
+            [comment] => 
+            [cross_selling_title] => AMON - Riesling Classic 2013, 12,0/Tr.
+            [created] => 2014-02-12 11:36:48
+            [price] => 0.15
+            [price_reduced] => 0.00
+            [price_reduced_type] => VK
+            [baseprice_unit] => ml
+            [baseprice_volume] => 0.000
+            [stock] => 20
+            [delivery] => 3
+            [available] => 1
+            [isbn] => 
+            [ean] => 2110000026042
+            [mpn] => 
+            [url_portal] => 
+            [url_shop] => http://www.rakuten.de/produkt/weingut-amon-amon-riesling-classic-2013-12-0tr-1140392636.html
+            [url_marketing] => http://demo-ec-quadrat.rakuten-shop.at/sp/weingut-amon-amon-riesling-classic-2013-120tr-1140392636.html
+            [has_variants] => 0
+            [images] => Array
+                (
+                    [image] => Array
+                        (
+                            [image_id] => 17627797466
+                            [src] => http://images.rakuten.de/431c8f8b2e8ac29b6147b52aef38a102/images/1140392636_890112.jpg
+                            [default] => 1
+                            [comment] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [attributes] => Array
+                (
+                    [0] => Array
+                        (
+                            [attribute_id] => 78857806
+                            [title] => products_quantity_shops
+                            [name] => products_quantity_shops
+                            [value] => ZENTRALE:20
+                        )
+
+                    [1] => Array
+                        (
+                            [attribute_id] => 78857811
+                            [title] => products_manuf_homepage
+                            [name] => products_manuf_homepage
+                            [value] => ai-amon.at
+                        )
+
+                )
+
+            [categories] => Array
+                (
+                    [0] => 1
+                )
+
+        )
+
+    [8] => Array
+        (
+            [product_id] => 1140392646
+            [product_art_no] => 2110000028060
+            [name] => STROBL L- GRÜNER VELTLINER 2013, 12,5/Tr.
+            [producer] => Weingut Strobl L.u.K.
+            [shipping_group] => 1
+            [tax] => 12
+            [min_order_qty] => 0
+            [staggering] => 
+            [stock_policy] => 0
+            [visible] => 0
+            [homepage] => 0
+            [connect] => 0
+            [description] => <p><span>Duft nach grünem Apfel mit zarter Zitrusnote, fruchtig und sortentypisch, gute Säurebalance. </span></p>
+            [inci] => 
+            [comment] => 
+            [cross_selling_title] => STROBL L- GRÜNER VELTLINER 2013, 12,5/Tr.
+            [created] => 2014-02-12 11:36:51
+            [price] => 6.16
+            [price_reduced] => 0.00
+            [price_reduced_type] => VK
+            [baseprice_unit] => ml
+            [baseprice_volume] => 0.000
+            [stock] => 21
+            [delivery] => 7
+            [available] => 1
+            [isbn] => 
+            [ean] => 2110000028060
+            [mpn] => 
+            [url_portal] => 
+            [url_shop] => 
+            [url_marketing] => 
+            [has_variants] => 0
+            [attributes] => Array
+                (
+                    [0] => Array
+                        (
+                            [attribute_id] => 78857816
+                            [title] => products_quantity_shops
+                            [value] => ZENTRALE:21
+                        )
+
+                )
+
+            [categories] => Array
+                (
+                    [0] => 1
+                )
+
+        )
+
+    [9] => Array
+        (
+            [product_id] => 1140392656
+            [product_art_no] => 2110000028121
+            [name] => STROBL L.U.K. WEIßBURGUNDER 2012, 13,0/Tr.
+            [producer] => Weingut Strobl L.u.K.
+            [shipping_group] => 1
+            [tax] => 12
+            [min_order_qty] => 0
+            [staggering] => 
+            [stock_policy] => 0
+            [visible] => 0
+            [homepage] => 0
+            [connect] => 0
+            [description] => <p>Unser Weißburgunder hat ein sehr zartes, leicht nussiges Bukett mit fruchtigen Aromen nach Birnen, Äpfeln aber auch Zitrusfrüchten.<br /><br />Wir kochen damit unser Coq au vin blanc, für das er natürlich auch ein exzellenter Begleiter ist.</p>
+            [inci] => 
+            [comment] => 
+            [cross_selling_title] => STROBL L.U.K. WEIßBURGUNDER 2012, 13,0/Tr.
+            [created] => 2014-02-12 11:36:53
+            [price] => 6.34
+            [price_reduced] => 0.00
+            [price_reduced_type] => VK
+            [baseprice_unit] => ml
+            [baseprice_volume] => 0.000
+            [stock] => 12
+            [delivery] => 3
+            [available] => 1
+            [isbn] => 
+            [ean] => 2110000028121
+            [mpn] => 
+            [url_portal] => 
+            [url_shop] => 
+            [url_marketing] => 
+            [has_variants] => 0
+            [attributes] => Array
+                (
+                    [0] => Array
+                        (
+                            [attribute_id] => 78857821
+                            [title] => products_quantity_shops
+                            [value] => ZENTRALE:12
+                        )
+
+                )
+
+            [categories] => Array
+                (
+                    [0] => 1
+                )
+
+        )
+
+    [10] => Array
+        (
+            [product_id] => 1140392666
+            [product_art_no] => 2110000030117
+            [name] => RIEDER CH. - NEUBURGER 2012 - 13,0/TR.
+            [producer] => Weingut Rieder Ch.
+            [shipping_group] => 1
+            [tax] => 12
+            [min_order_qty] => 0
+            [staggering] => 
+            [stock_policy] => 0
+            [visible] => 0
+            [homepage] => 0
+            [connect] => 0
+            [description] => <p>Die seltene Sorte Neuburger wirkt nussig mit floralen und fruchtigen Anklängen in der Nase. Am Gaumen roter Apfel, lebendig und animierend mit guter Säurestruktur. Toller Essensbegleiter</p>
+            [inci] => 
+            [comment] => 
+            [cross_selling_title] => RIEDER CH. - NEUBURGER 2012 - 13,0/TR.
+            [created] => 2014-02-12 11:36:55
+            [price] => 6.70
+            [price_reduced] => 0.00
+            [price_reduced_type] => VK
+            [baseprice_unit] => ml
+            [baseprice_volume] => 0.000
+            [stock] => 14
+            [delivery] => 3
+            [available] => 1
+            [isbn] => 
+            [ean] => 2110000030117
+            [mpn] => 
+            [url_portal] => 
+            [url_shop] => 
+            [url_marketing] => 
+            [has_variants] => 0
+            [attributes] => Array
+                (
+                    [0] => Array
+                        (
+                            [attribute_id] => 78857826
+                            [title] => products_quantity_shops
+                            [name] => products_quantity_shops
+                            [value] => ZENTRALE:14
+                        )
+
+                    [1] => Array
+                        (
+                            [attribute_id] => 78857831
+                            [title] => products_manuf_homepage
+                            [name] => products_manuf_homepage
+                            [value] => riederwein.at
+                        )
+
+                )
+
+            [categories] => Array
+                (
+                    [0] => 1
+                )
+
+        )
+
+)

@@ -69,5 +69,4 @@ class Orders extends Reader {
         
         return $xml;  
     }
-    
 }

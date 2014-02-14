@@ -109,13 +109,13 @@ common:
 							dirmask: 755
 							filemask: 664
 		gateway_rakuten:
-			reindex: true
+			reindex: false
 			api:
 				source:
 					file:
 						limit: 1000000 # file size limit in bytes to be put into DB - all above will be put to FS only
 			storage:
-				root: %tempDir%/gateway
+				root: %tempDir%/rakuten_api/
 				rakuten:
 					inputFolderMask: /rakuten/%%s/put # input folder for Rakuten XMLs, eg. /rakuten/<CONNECTION_NAME>/put
 					outputFolderMask: /rakuten/%%s/get # output folder for Rakuten XMLs, eg. /rakuten/<CONNECTION_NAME>/get

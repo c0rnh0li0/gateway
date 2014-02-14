@@ -16,6 +16,8 @@
 		
 		protected $response;
 		
+		public $connection; 
+		
 		function __construct(){
 			$config = new \Rakuten\Configuration\Rakuten_Config();
 			$this->key = $config->getConfig('test_key');
@@ -107,6 +109,38 @@
 		
 		function xml_to_array($xml){
 			
+		}
+		
+		protected function getPath($type = false) {
+	        // configuration loading
+	        $params = \Nette\Environment::getContext()->params['gateway'];
+	        $root = realpath($params['storage']['root']);
+	
+	        if (!isset($params['storage']['etron'])) {
+	            throw new \Nette\InvalidArgumentException('Etron configuration not found in config.neon[params/gateway/storage/etron]');
+	        }
+	
+	        $path = sprintf($root . $params['storage']['etron']['inputFolderMask'], $this->connection->name);
+	        
+	        if ($type) {
+	            $path .= DIRECTORY_SEPARATOR . $type;
+	        }
+	        
+	        return $path;
+	    }
+		
+		function buildImageURL($image){
+			$server = $_SERVER['SERVER_NAME']; 
+			if ($server == 'localhost')
+				$server = "cornholio.dyndns.biz";
+			
+			$image_path = $this->getPath('files') . DIRECTORY_SEPARATOR . $image;
+			$image_path = str_replace('\\', '/', $image_path);
+			$image_path = str_replace($_SERVER['DOCUMENT_ROOT'], '', $image_path);
+			
+			
+			$image_url = 'http://' . $server . $image_path;
+			return $image_url;
 		}
 	}
 

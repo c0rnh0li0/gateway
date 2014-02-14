@@ -1,0 +1,31 @@
+Gateway\DataSource\Orders Object
+(
+    [data:protected] => Array
+        (
+            [100000024] => Gateway\DataSource\Entity\Order Object
+                (
+                    [id:protected] => 100000024
+                    [createdAt:protected] => 2014-02-05 18:03:04
+                    [updatedAt:protected] => 
+                    [isActive:protected] => 1
+                    [customer:protected] => 
+                    [cart:protected] => 
+                    [shipping:protected] => 
+                    [billing:protected] => 
+                    [payment:protected] => 
+                    [status:protected] => Gateway\DataSource\Entity\Order\Status Object
+                        (
+                            [value:protected] => 0
+                            [specialProperties:protected] => Array
+                                (
+                                )
+
+                        )
+
+                    [price:protected] => 
+                    [comment:protected] => 
+                )
+
+        )
+
+)
