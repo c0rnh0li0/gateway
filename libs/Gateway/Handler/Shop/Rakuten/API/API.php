@@ -2,7 +2,7 @@
 
 namespace Gateway\Handler\Shop\Rakuten\API;
 
-use Rakuten\Engine\Rakuten;
+use Rakuten\Rakuten;
 
 
 /**
@@ -35,8 +35,11 @@ class API {
      */
     public function __construct() {
         $options = array();
+		
+		$domain = $this->options->get('domain');
+        $key = $this->options->get('key');
 
-        $this->client = new \Rakuten\Engine\Rakuten();
+        $this->client = new \Rakuten\Rakuten($key, $domain);
     }
 	
     /**

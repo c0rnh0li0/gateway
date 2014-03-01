@@ -23,26 +23,19 @@ class Orders extends Reader {
         $ds = new \Gateway\DataSource\Orders();
         
         Utils::log("Processing orders XML input...");
- 
+		$orders = array(); 
+ 		 
         foreach ($xml->orders as $xmlOrder) {
-            $order = new Order();
+            $order = array();
             
-            // base
-            $order->id = (int) $xmlOrder['orders_id'];
-            $order->createdAt = (string) $xmlOrder['date_purchased'];
-            $order->updatedAt = null;
-            $order->status = (int) $xmlOrder['orders_id'];
-            $order->isActive = true;
-            $order->status = (int) $xmlOrder['orders_status'];
-            
-            /*dump($order);
-            exit;*/
-            
-            $ds->add($order);
+			$order['order_no'] = (int) $xmlOrder['orders_id'];
+			$order['status'] = (int) $xmlOrder['orders_status'];
+			$orders[] = $order;
         }
         
-        Utils::log("%s orders has been parsed.", $ds->count());
-        
+		Utils::log("%s orders has been parsed.", count($orders));
+		
+        $ds = $orders;		
         return $ds;
     }
 

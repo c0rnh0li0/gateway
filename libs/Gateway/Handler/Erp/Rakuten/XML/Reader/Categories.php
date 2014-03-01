@@ -15,10 +15,7 @@ use Gateway\Handler\Erp\Rakuten\XML\Reader,
 class Categories extends Reader {
     
     protected $type = IHandler::TYPE_CATEGORIES;
-
-    //protected $expectedOptions = array('loadProducts');
     protected $expectedOptions = array();
-	
 	protected $categories = array();
     
      /**
@@ -46,15 +43,6 @@ class Categories extends Reader {
         // process deep search for children to build up the structure
         foreach ($rootCategories as $node) {
         	$tmp_category = $this->processCategoryLocalization($ds, $xml, $node);
-			//$tmp_category['products'] = $this->loadAssignedProducts($xml, $tmp_category);
-			
-            //$this->categories[] = $this->processCategoryLocalization($ds, $xml, $node);
-			
-			//$temp_category['children'] = $this->processChildren($ds, $xml, $temp_category);
-            //$category = $this->createCategoryBase($node);
-            //$this->categories[] = $this->processCategoryLocalization($ds, $xml, $node);
-			
-			
 			$this->categories[] = $tmp_category;
         }
 		
@@ -77,9 +65,7 @@ class Categories extends Reader {
      * @return \Gateway\DataSource\Entity\Category
      */
     protected function createCategoryBase($xml, $node) {
-        //$category = new Category();
-		
-		$category = array(
+        $category = array(
 			'shop_category_id' => '',						
 			'external_shop_category_id' => (int) $node['categories_id'],
 			'parent_shop_category_id' => '', 
@@ -99,21 +85,6 @@ class Categories extends Reader {
 			'meta_keywords' => ''
 		);
         
-        //$category->id = (int) $node['categories_id'];
-        //$category->isActive = ((int) $node['categories_status']) > 0 ? true : false;
-        
-        // ???????????/
-        //$category->addSpecialProperty('isAnchor', false);
-
-        // if loadProducts specified, we parse also products to categories assignments
-        /*
-        if ($this->options->getData('loadProducts')) {
-            // load assigned products
-            $products = $this->loadAssignedProducts($xml, $category);
-            
-            $category->addSpecialProperty('products', implode(',', $products));          
-        }
-        */
         return $category;
     }
     
@@ -129,34 +100,13 @@ class Categories extends Reader {
     protected function processCategoryLocalization($ds, $xml, $node, $parent = false) {
         $category = $this->createCategoryBase($xml, $node);
         
-        //if ($parent) {
-            //$category['external_parent_shop_category_id'] = $parent['external_shop_category_id'];
-        //}
-        
         $xmlCategoriesDescriptionPattern = '//categories_description[@categories_id=' . $category['external_shop_category_id'] . ']';       
         $xmlCategoriesDescription = current($xml->xpath($xmlCategoriesDescriptionPattern));
 		
        	$category['name'] = (string) $xmlCategoriesDescription['categories_name'];
 		$category['description'] = (string) $xmlCategoriesDescription['categories_description'];
 		$category['meta_title'] = (string) $xmlCategoriesDescription['categories_name'];
-		
-        // localized values
-        /*
-        foreach ($xmlCategoriesDescription as $xmlCategoryDescription) {
-            $localized = new \Gateway\DataSource\Entity\Category\LocalizedInfo();
-            
-            $localized->lang = isset($xmlCategoryDescription['language_id']) ? (string) $xmlCategoryDescription['language_id'] : Localized::NOT_LOCALIZED;
-            $localized->name = (string) $xmlCategoryDescription['categories_name'];
-            $localized->description = (string) $xmlCategoryDescription['categories_description'];
-            
-            $category->addLocalizedInfo($localized);
-        }
-        */
-		
 		return $category;
-		
-        // continue deeper
-        //$this->processChildren($ds, $xml, $category);
     }
     
     /**
@@ -176,16 +126,9 @@ class Categories extends Reader {
         // add only when leaf because leaf holds all parents path
         if (!count($childrenCategories)) {
         	return null;
-            //Utils::log(sprintf("Adding '%s' (ID = %s) under '%s'.", $category->name, $category->id, $category->path));
-            
-            //$ds->add($category);
         } else { // go deeper in structure until leaf is found
             foreach ($childrenCategories as $childNode) {
-                //$child = $this->createCategoryBase($childNode);
-                //$child->parent = $category;
-                
                 $children[] = $this->processCategoryLocalization($ds, $xml, $childNode, $category);
-                //$this->processChildren($ds, $xml, $child);
             }
         }
 		
@@ -208,58 +151,14 @@ class Categories extends Reader {
         $products = array();
         
         if (is_array($productsCategories) && count($productsCategories)) {
-        	/*
-            array_walk($productsCategories, function(&$item) { 
-                    $item = (string) $item;
-            });
-			*/
-			
-            // build multiple values for contains
-            // $containsArr = array();
-            
             foreach ($productsCategories as $productCategory) {
             	$products[] = (int) $productCategory['products_id'];
-                //$containsArr[] = "@products_id=" . $productCategory;
             }
-            
-			/*
-            if (count($containsArr)) {
-                $productsPattern = "//products[" . implode(' or ', $containsArr) . "]/@products_model";
-                $products = $xml->xpath($productsPattern);
-            }
-			*/ 
         }
         
         return $products;
     }
 	 
-	 /*
-    protected function loadAssignedProducts($xml, $category) {
-        $productsCategoriesPattern = '//products_to_categories[@categories_id= ' . $category->id .  ']/@products_id'; 
-        $productsCategories = $xml->xpath($productsCategoriesPattern);
-        $products = array();
-        
-        if (is_array($productsCategories) && count($productsCategories)) {
-            array_walk($productsCategories, function(&$item) { 
-                    $item = (string) $item;
-            });
-
-            // build multiple values for contains
-            $containsArr = array();
-            
-            foreach ($productsCategories as $productCategory) { 
-                $containsArr[] = "@products_id=" . $productCategory;
-            }
-            
-            if (count($containsArr)) {
-                $productsPattern = "//products[" . implode(' or ', $containsArr) . "]/@products_model";
-                $products = $xml->xpath($productsPattern);
-            }
-        }
-        
-        return $products;
-    }
-    */
     
     /**
      * Validates input and tries to load XML from it.

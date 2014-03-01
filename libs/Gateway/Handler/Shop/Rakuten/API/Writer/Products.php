@@ -40,7 +40,10 @@ class Products extends \Gateway\Handler\Shop\Rakuten\API\Writer {
     public function process() {
     	Utils::log(">>> " . get_class($this) . " <<<");
 
-		$this->Products = new \Rakuten\Handlers\Products();
+		$domain = $this->options->get('domain');
+        $key = $this->options->get('key');
+		
+		$this->Products = new \Rakuten\Handlers\Products($key, $domain);
     	$this->Products->connection = $this->connection;
 		
         // FIXME check when setting datasource
@@ -50,7 +53,7 @@ class Products extends \Gateway\Handler\Shop\Rakuten\API\Writer {
         }
 		
 		//echo "dump in " . $_SERVER['DOCUMENT_ROOT'] . '/products.txt<br />';
-		file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/gateway/products.txt', print_r($this->dataSource, true));
+		//file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/gateway/products.txt', print_r($this->dataSource, true));
 		
 		$this->init();		
 
@@ -61,7 +64,7 @@ class Products extends \Gateway\Handler\Shop\Rakuten\API\Writer {
 		$this->existing_products = $this->Products->getProducts();
 		
 		//echo "dump in " . $_SERVER['DOCUMENT_ROOT'] . '/existing_products.txt<br />';
-		file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/gateway/existing_products.txt', print_r($this->existing_products, true));
+		//file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/gateway/existing_products.txt', print_r($this->existing_products, true));
 		
 		$this->prepareProducts();
 		

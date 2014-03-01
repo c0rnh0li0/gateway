@@ -2,196 +2,116 @@ Array
 (
     [0] => Array
         (
-            [order_no] => 402-941-646
-            [total] => 0.19
-            [shipping] => 0.00
-            [max_shipping_date] => 2014-02-15
-            [payment] => CC
-            [status] => editable
-            [invoice_no] => Array
+            [orders_id] => 402-941-646
+            [payment_class] => CC
+            [payment_method] => CC
+            [paymentType] => CC
+            [orders_status] => editable
+            [comments] => 
+            [date_purchased] => 2014-02-12 15:59:14
+            [customers_id] => 16524446
+            [customers_gender] => f
+            [customers_firstname] => Test NB
+            [customers_lastname] => Test BN
+            [customers_company] => 
+            [customers_street_address] => Testadressa 25
+            [customers_postcode] => 1090
+            [customers_city] => Wien
+            [customers_country] => AT
+            [customers_email_address] => nikola.badev@ec-quadrat.at
+            [customers_telephone] => +43666444777888555
+            [delivery_gender] => f
+            [delivery_firstname] => Test NB
+            [delivery_lastname] => Test BN
+            [delivery_company] => 
+            [delivery_street_address] => Testadressa 25
+            [delivery_postcode] => 1090
+            [delivery_city] => Wien
+            [delivery_country] => AT
+            [orders_products] => Array
                 (
-                )
-
-            [comment_client] => Array
-                (
-                )
-
-            [comment_merchant] => Array
-                (
-                )
-
-            [created] => 2014-02-12 15:59:14
-            [client] => Array
-                (
-                    [client_id] => 16524446
-                    [gender] => Frau
-                    [first_name] => Test NB
-                    [last_name] => Test BN
-                    [company] => Array
+                    [0] => Array
                         (
+                            [orders_products_id] => 25990606
+                            [products_id] => 1140392636
+                            [products_model] => 2110000026042
+                            [products_name] => AMON - Riesling Classic 2013, 12,0/Tr. 
+                            [products_quantity] => 1
+                            [products_price] => 0.15
+                            [final_price] => 0.15
+                            [products_tax] => 12
                         )
 
-                    [street] => Testadressa
-                    [street_no] => 25
-                    [address_add] => Array
+                    [1] => Array
                         (
-                        )
-
-                    [zip_code] => 1090
-                    [city] => Wien
-                    [country] => AT
-                    [email] => nikola.badev@ec-quadrat.at
-                    [phone] => +43666444777888555
-                )
-
-            [delivery_address] => Array
-                (
-                    [gender] => Frau
-                    [first_name] => Test NB
-                    [last_name] => Test BN
-                    [company] => Array
-                        (
-                        )
-
-                    [street] => Testadressa
-                    [street_no] => 25
-                    [address_add] => Array
-                        (
-                        )
-
-                    [zip_code] => 1090
-                    [city] => Wien
-                    [country] => AT
-                )
-
-            [items] => Array
-                (
-                    [item] => Array
-                        (
-                            [0] => Array
-                                (
-                                    [item_id] => 25990606
-                                    [product_id] => 1140392636
-                                    [variant_id] => 0
-                                    [product_art_no] => 2110000026042
-                                    [name] => AMON - Riesling Classic 2013, 12,0/Tr.
-                                    [name_add] => Array
-                                        (
-                                        )
-
-                                    [qty] => 1
-                                    [price] => 0.15
-                                    [price_sum] => 0.15
-                                    [tax] => 12
-                                )
-
-                            [1] => Array
-                                (
-                                    [item_id] => 25990611
-                                    [product_id] => 1140392616
-                                    [variant_id] => 0
-                                    [product_art_no] => 2110000023201
-                                    [name] => EBINGER - Grüner Veltliner "Reserve" 2012, 13,5/Tr.
-                                    [name_add] => Array
-                                        (
-                                        )
-
-                                    [qty] => 1
-                                    [price] => 0.04
-                                    [price_sum] => 0.04
-                                    [tax] => 12
-                                )
-
+                            [orders_products_id] => 25990611
+                            [products_id] => 1140392616
+                            [products_model] => 2110000023201
+                            [products_name] => EBINGER - Grüner Veltliner "Reserve" 2012, 13,5/Tr. 
+                            [products_quantity] => 1
+                            [products_price] => 0.04
+                            [final_price] => 0.04
+                            [products_tax] => 12
                         )
 
                 )
 
-            [coupon] => Array
-                (
-                )
-
+            [currency] => EUR
+            [cc_type] => 
+            [shipping_class] => 
+            [shipping_method] => 
+            [financialInstitution] => 
         )
 
     [1] => Array
         (
-            [order_no] => 167-390-002
-            [total] => 9.45
-            [shipping] => 0.00
-            [max_shipping_date] => -
-            [payment] => PP
-            [status] => cancelled
-            [invoice_no] => Array
+            [orders_id] => 167-390-002
+            [payment_class] => PP
+            [payment_method] => PP
+            [paymentType] => PP
+            [orders_status] => cancelled
+            [comments] => Dies ist eine Testbestellung
+            [date_purchased] => 2014-01-23 15:12:46
+            [customers_id] => 16291051
+            [customers_gender] => m
+            [customers_firstname] => Michael
+            [customers_lastname] => Eichert
+            [customers_company] => Ec-Quadrat GmbH
+            [customers_street_address] => Europaring F15
+            [customers_postcode] => 2345
+            [customers_city] => Brunn am Gebirge
+            [customers_country] => AT
+            [customers_email_address] => michael.eichert@ec-quadrat.com
+            [customers_telephone] => 069911764035
+            [delivery_gender] => m
+            [delivery_firstname] => Michael
+            [delivery_lastname] => Eichert
+            [delivery_company] => Ec-Quadrat GmbH
+            [delivery_street_address] => Europaring F15
+            [delivery_postcode] => 2345
+            [delivery_city] => Brunn am Gebirge
+            [delivery_country] => AT
+            [orders_products] => Array
                 (
-                )
-
-            [comment_client] => Dies ist eine Testbestellung
-            [comment_merchant] => Array
-                (
-                )
-
-            [created] => 2014-01-23 15:12:46
-            [client] => Array
-                (
-                    [client_id] => 16291051
-                    [gender] => Herr
-                    [first_name] => Michael
-                    [last_name] => Eichert
-                    [company] => Ec-Quadrat GmbH
-                    [street] => Europaring
-                    [street_no] => F15
-                    [address_add] => Array
+                    [0] => Array
                         (
-                        )
-
-                    [zip_code] => 2345
-                    [city] => Brunn am Gebirge
-                    [country] => AT
-                    [email] => michael.eichert@ec-quadrat.com
-                    [phone] => 069911764035
-                )
-
-            [delivery_address] => Array
-                (
-                    [gender] => Herr
-                    [first_name] => Michael
-                    [last_name] => Eichert
-                    [company] => Ec-Quadrat GmbH
-                    [street] => Europaring
-                    [street_no] => F15
-                    [address_add] => Array
-                        (
-                        )
-
-                    [zip_code] => 2345
-                    [city] => Brunn am Gebirge
-                    [country] => AT
-                )
-
-            [items] => Array
-                (
-                    [item] => Array
-                        (
-                            [item_id] => 25589131
-                            [product_id] => 1126979996
-                            [variant_id] => 0
-                            [product_art_no] => 2110000010010
-                            [name] => ART 1 Delta Test DE
-                            [name_add] => Array
-                                (
-                                )
-
-                            [qty] => 1
-                            [price] => 9.45
-                            [price_sum] => 9.45
-                            [tax] => 12
+                            [orders_products_id] => 25589131
+                            [products_id] => 1126979996
+                            [products_model] => 2110000010010
+                            [products_name] => ART 1 Delta Test DE 
+                            [products_quantity] => 1
+                            [products_price] => 9.45
+                            [final_price] => 9.45
+                            [products_tax] => 12
                         )
 
                 )
 
-            [coupon] => Array
-                (
-                )
-
+            [currency] => EUR
+            [cc_type] => 
+            [shipping_class] => 
+            [shipping_method] => 
+            [financialInstitution] => 
         )
 
 )

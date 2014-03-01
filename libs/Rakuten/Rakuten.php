@@ -18,9 +18,9 @@
 		
 		public $connection; 
 		
-		function __construct(){
-			$config = new \Rakuten\Configuration\Rakuten_Config();
-			$this->key = $config->getConfig('test_key');
+		function __construct($key, $domain){
+			$config = new \Rakuten\Configuration\Rakuten_Config($key, $domain);
+			$this->key = $config->getConfig('key');
 			$this->url = $config->getUrl();
 		}
 		

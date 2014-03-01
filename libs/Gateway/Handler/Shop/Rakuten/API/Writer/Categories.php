@@ -36,7 +36,10 @@ class Categories extends \Gateway\Handler\Shop\Rakuten\API\Writer {
 
         parent::__construct($options);
 		
-		$this->Categories = new \Rakuten\Handlers\Categories();
+		$domain = $this->options->get('domain');
+        $key = $this->options->get('key');
+		
+		$this->Categories = new \Rakuten\Handlers\Categories($key, $domain);
     }
 	
     /**
@@ -62,8 +65,8 @@ class Categories extends \Gateway\Handler\Shop\Rakuten\API\Writer {
         // API - get existing categories
         $this->existing_categories = $this->Categories->getExistingCategories();
 		
-		echo "dump in " . $_SERVER['DOCUMENT_ROOT'] . '/existing_categories.txt<br />';
-		file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/existing_categories.txt', print_r($this->existing_categories, true));
+		//echo "dump in " . $_SERVER['DOCUMENT_ROOT'] . '/existing_categories.txt<br />';
+		//file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/existing_categories.txt', print_r($this->existing_categories, true));
     }
 
     /**
@@ -80,8 +83,8 @@ class Categories extends \Gateway\Handler\Shop\Rakuten\API\Writer {
             return;
         }
 
-		echo "dump in " . $_SERVER['DOCUMENT_ROOT'] . '/etron_categories.txt<br />';
-		file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/etron_categories.txt', print_r($this->dataSource, true));
+		//echo "dump in " . $_SERVER['DOCUMENT_ROOT'] . '/etron_categories.txt<br />';
+		//file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/etron_categories.txt', print_r($this->dataSource, true));
 		
         Utils::log("Processing DataSource to Rakuten via Api...");
                
@@ -102,9 +105,10 @@ class Categories extends \Gateway\Handler\Shop\Rakuten\API\Writer {
             throw $e;
         }
 
-        Utils::log(sprintf("Finished with total of %s categories, %s created/updated.", count($this->dataSourceList), $this->categories['processedCount']));
+		$processed_categories = count($this->categories_to_add) + count($this->categories_to_update) + count($this->categories_to_delete);
+        Utils::log(sprintf("Finished with total of %s categories, %s created/updated.", count($this->dataSource), $processed_categories));
 
-        return (count($this->categories_to_add) + count($this->categories_to_update) + count($this->categories_to_delete));
+        return ($processed_categories);
     }
 
 	function prepareCategories(){

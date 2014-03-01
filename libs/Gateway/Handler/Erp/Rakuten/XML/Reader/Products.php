@@ -272,7 +272,11 @@ class Products extends Reader {
      */
     protected function createProduct($typeKey = 0, $isBundle = false) {
     	require_once(WWW_DIR . "/../libs/Rakuten/Handlers/Products.php");
-    	return new \Rakuten\Handlers\Products();
+		
+		$domain = $this->options->get('domain');
+        $key = $this->options->get('key');
+		
+    	return new \Rakuten\Handlers\Products($key, $domain);
 		
 		/*
         // FIXME use mapping for this

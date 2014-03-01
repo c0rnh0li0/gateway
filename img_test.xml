@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root date="19.02.2014, 16:25:16" version="10" delta="1">
+    <products products_id="16573" products_model="2112079520001" products_ean="" products_master_model="" products_master_flag="1" products_bundle_flag="0" products_quantity="39.00" products_shippingtime="2" products_image="+16573_1_agres_parasisol_mayser.jpg;-16573_2_testnewpicture1.jpg;-16573_3_agres_parasisol_mayser.jpg" products_price="" products_priceb="" products_regularprice="99.1667" products_status="1" products_visibility="4" products_weight="0.0000" manufacturers_id="5" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="16573">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0;MESSE:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Sand" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="129141182057004" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="16573" language_id="0" products_name="AGRES PARASISOL MAYSER" products_description="&lt;p&gt;Dieser&amp;nbsp;klassische Stroh &lt;strong&gt;Traveller&lt;/strong&gt; von &lt;strong&gt;Mayser&lt;/strong&gt; gewinnt durch das hier verwendete extrem leichte, luftdurchl&amp;auml;ssige und elegant gl&amp;auml;nzende &lt;strong&gt;Parasisol Stroh&lt;/strong&gt;! Die &lt;strong&gt;Krempenbreite&lt;/strong&gt; ist dem vollen Kopf angepasst - ein zeitloser sch&amp;ouml;ner &lt;strong&gt;Strohhut&lt;/strong&gt; - eher f&amp;uuml;r die sommerliche Dinnerparty als f&amp;uuml;r den Strand. Dort werden Sie allerdings auch nicht vertrieben, wenn Sie mit diesem &lt;strong&gt;stylishen Hut&lt;/strong&gt; auftauchen! Sicher sind Sie damit immer noch &quot;better than the rest&quot;, auch wenn Sie sonst nur noch die Badehose anhaben!&lt;/p&gt; &lt;p&gt;Qualit&amp;auml;t: 100 % Parasisol Stroh&lt;br /&gt;H&amp;ouml;he: 110mm&lt;br /&gt;Krempenbreite: 60mm&lt;br /&gt;Umbind: Rips 39mm&lt;br /&gt;Kopfweiten: 55 bis 60cm&lt;/p&gt;" products_short_description="&lt;p&gt;Eleganter &lt;strong&gt;Stroh-Traveller&lt;/strong&gt; von &lt;strong&gt;Mayser&lt;/strong&gt;&lt;/p&gt;" products_keywords="Agres Mayser, Strohtrilby, Strohtraveller, Herrenstrohhut, Panamahut, eleganter Strohhut Herren" />
+    <products_to_categories products_id="16573" categories_id="15" />
+    <products_to_categories products_id="16573" categories_id="23" />
+    <products_to_categories products_id="16573" categories_id="61" />
+    <products_to_categories products_id="16573" categories_id="62" />
+    <products_to_categories products_id="16573" categories_id="27" />
+    <products_to_categories products_id="16573" categories_id="33" />
+    <products products_id="16198" products_master_flag="0" products_master_model="2112079520001" products_model="2112078370300" products_ean="" products_quantity="1000.00" products_shippingtime="1" products_quantity_shops="WEBSHOP:0;SCS:0;GM:2;MESSE:0" products_image="" products_price="" products_priceb="" products_regularprice="99.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="5" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="16198">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0;MESSE:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Marineblau" />
+            <attr name="products_model_info" language_id="0" value="55" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="129141182057004" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="16198" language_id="0" products_name="AGRES PARASISOL MAYSER 55 " products_description="" products_short_description="" products_keywords="Agres Mayser, Strohtrilby, Strohtraveller, Herrenstrohhut, Panamahut, eleganter Strohhut Herren" />
+    <products_to_categories products_id="16198" categories_id="15" />
+    <products_to_categories products_id="16198" categories_id="23" />
+    <products_to_categories products_id="16198" categories_id="61" />
+    <products_to_categories products_id="16198" categories_id="62" />
+    <products_to_categories products_id="16198" categories_id="27" />
+    <products_to_categories products_id="16198" categories_id="33" />
+    <products products_id="16199" products_master_flag="0" products_master_model="2112079520001" products_model="2112078370409" products_ean="" products_quantity="1000.00" products_shippingtime="1" products_quantity_shops="WEBSHOP:0;SCS:0;GM:3;MESSE:0" products_image="" products_price="" products_priceb="" products_regularprice="99.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="5" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="16199">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0;MESSE:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Marineblau" />
+            <attr name="products_model_info" language_id="0" value="56" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="129141182057004" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="16199" language_id="0" products_name="AGRES PARASISOL MAYSER 56 " products_description="" products_short_description="" products_keywords="Agres Mayser, Strohtrilby, Strohtraveller, Herrenstrohhut, Panamahut, eleganter Strohhut Herren" />
+    <products_to_categories products_id="16199" categories_id="15" />
+    <products_to_categories products_id="16199" categories_id="23" />
+    <products_to_categories products_id="16199" categories_id="61" />
+    <products_to_categories products_id="16199" categories_id="62" />
+    <products_to_categories products_id="16199" categories_id="27" />
+    <products_to_categories products_id="16199" categories_id="33" />
+    <products products_id="16200" products_master_flag="0" products_master_model="2112079520001" products_model="2112078370508" products_ean="" products_quantity="1000.00" products_shippingtime="1" products_quantity_shops="WEBSHOP:0;SCS:0;GM:3;MESSE:0" products_image="" products_price="" products_priceb="" products_regularprice="99.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="5" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="16200">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0;MESSE:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Marineblau" />
+            <attr name="products_model_info" language_id="0" value="57" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="129141182057004" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="16200" language_id="0" products_name="AGRES PARASISOL MAYSER 57 " products_description="" products_short_description="" products_keywords="Agres Mayser, Strohtrilby, Strohtraveller, Herrenstrohhut, Panamahut, eleganter Strohhut Herren" />
+    <products_to_categories products_id="16200" categories_id="15" />
+    <products_to_categories products_id="16200" categories_id="23" />
+    <products_to_categories products_id="16200" categories_id="61" />
+    <products_to_categories products_id="16200" categories_id="62" />
+    <products_to_categories products_id="16200" categories_id="27" />
+    <products_to_categories products_id="16200" categories_id="33" />
+    <products products_id="16201" products_master_flag="0" products_master_model="2112079520001" products_model="2112078370607" products_ean="" products_quantity="1000.00" products_shippingtime="1" products_quantity_shops="WEBSHOP:0;SCS:0;GM:3;MESSE:0" products_image="" products_price="" products_priceb="" products_regularprice="99.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="5" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="16201">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0;MESSE:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Marineblau" />
+            <attr name="products_model_info" language_id="0" value="58" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="129141182057004" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="16201" language_id="0" products_name="AGRES PARASISOL MAYSER 58 " products_description="" products_short_description="" products_keywords="Agres Mayser, Strohtrilby, Strohtraveller, Herrenstrohhut, Panamahut, eleganter Strohhut Herren" />
+    <products_to_categories products_id="16201" categories_id="15" />
+    <products_to_categories products_id="16201" categories_id="23" />
+    <products_to_categories products_id="16201" categories_id="61" />
+    <products_to_categories products_id="16201" categories_id="62" />
+    <products_to_categories products_id="16201" categories_id="27" />
+    <products_to_categories products_id="16201" categories_id="33" />
+    <products products_id="16202" products_master_flag="0" products_master_model="2112079520001" products_model="2112078370706" products_ean="" products_quantity="1000.00" products_shippingtime="1" products_quantity_shops="WEBSHOP:0;SCS:0;GM:2;MESSE:0" products_image="" products_price="" products_priceb="" products_regularprice="99.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="5" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="16202">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0;MESSE:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Marineblau" />
+            <attr name="products_model_info" language_id="0" value="59" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="129141182057004" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="16202" language_id="0" products_name="AGRES PARASISOL MAYSER 59 " products_description="" products_short_description="" products_keywords="Agres Mayser, Strohtrilby, Strohtraveller, Herrenstrohhut, Panamahut, eleganter Strohhut Herren" />
+    <products_to_categories products_id="16202" categories_id="15" />
+    <products_to_categories products_id="16202" categories_id="23" />
+    <products_to_categories products_id="16202" categories_id="61" />
+    <products_to_categories products_id="16202" categories_id="62" />
+    <products_to_categories products_id="16202" categories_id="27" />
+    <products_to_categories products_id="16202" categories_id="33" />
+    <products products_id="16203" products_master_flag="0" products_master_model="2112079520001" products_model="2112078370805" products_ean="" products_quantity="1000.00" products_shippingtime="1" products_quantity_shops="WEBSHOP:0;SCS:0;GM:2;MESSE:0" products_image="" products_price="" products_priceb="" products_regularprice="99.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="5" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="16203">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0;MESSE:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Marineblau" />
+            <attr name="products_model_info" language_id="0" value="60" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="129141182057004" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="16203" language_id="0" products_name="AGRES PARASISOL MAYSER 60 " products_description="" products_short_description="" products_keywords="Agres Mayser, Strohtrilby, Strohtraveller, Herrenstrohhut, Panamahut, eleganter Strohhut Herren" />
+    <products_to_categories products_id="16203" categories_id="15" />
+    <products_to_categories products_id="16203" categories_id="23" />
+    <products_to_categories products_id="16203" categories_id="61" />
+    <products_to_categories products_id="16203" categories_id="62" />
+    <products_to_categories products_id="16203" categories_id="27" />
+    <products_to_categories products_id="16203" categories_id="33" />
+    <products products_id="16204" products_master_flag="0" products_master_model="2112079520001" products_model="2112078370904" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0;MESSE:0" products_image="" products_price="" products_priceb="" products_regularprice="99.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="5" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="16204">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0;MESSE:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Marineblau" />
+            <attr name="products_model_info" language_id="0" value="61" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="129141182057004" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="16204" language_id="0" products_name="AGRES PARASISOL MAYSER 61 " products_description="" products_short_description="" products_keywords="Agres Mayser, Strohtrilby, Strohtraveller, Herrenstrohhut, Panamahut, eleganter Strohhut Herren" />
+    <products_to_categories products_id="16204" categories_id="15" />
+    <products_to_categories products_id="16204" categories_id="23" />
+    <products_to_categories products_id="16204" categories_id="61" />
+    <products_to_categories products_id="16204" categories_id="62" />
+    <products_to_categories products_id="16204" categories_id="27" />
+    <products_to_categories products_id="16204" categories_id="33" />
+    <products products_id="16205" products_master_flag="0" products_master_model="2112079520001" products_model="2112078371000" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0;MESSE:0" products_image="" products_price="" products_priceb="" products_regularprice="99.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="5" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="16205">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0;MESSE:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Marineblau" />
+            <attr name="products_model_info" language_id="0" value="62" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="129141182057004" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="16205" language_id="0" products_name="AGRES PARASISOL MAYSER 62 " products_description="" products_short_description="" products_keywords="Agres Mayser, Strohtrilby, Strohtraveller, Herrenstrohhut, Panamahut, eleganter Strohhut Herren" />
+    <products_to_categories products_id="16205" categories_id="15" />
+    <products_to_categories products_id="16205" categories_id="23" />
+    <products_to_categories products_id="16205" categories_id="61" />
+    <products_to_categories products_id="16205" categories_id="62" />
+    <products_to_categories products_id="16205" categories_id="27" />
+    <products_to_categories products_id="16205" categories_id="33" />
+    <products products_id="16206" products_master_flag="0" products_master_model="2112079520001" products_model="2112078371109" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0;MESSE:0" products_image="" products_price="" products_priceb="" products_regularprice="99.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="5" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="16206">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0;MESSE:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Marineblau" />
+            <attr name="products_model_info" language_id="0" value="63" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="129141182057004" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="16206" language_id="0" products_name="AGRES PARASISOL MAYSER 63 " products_description="" products_short_description="" products_keywords="Agres Mayser, Strohtrilby, Strohtraveller, Herrenstrohhut, Panamahut, eleganter Strohhut Herren" />
+    <products_to_categories products_id="16206" categories_id="15" />
+    <products_to_categories products_id="16206" categories_id="23" />
+    <products_to_categories products_id="16206" categories_id="61" />
+    <products_to_categories products_id="16206" categories_id="62" />
+    <products_to_categories products_id="16206" categories_id="27" />
+    <products_to_categories products_id="16206" categories_id="33" />
+    <products products_id="16207" products_master_flag="0" products_master_model="2112079520001" products_model="2112078371208" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0;MESSE:0" products_image="" products_price="" products_priceb="" products_regularprice="99.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="5" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="16207">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0;MESSE:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Marineblau" />
+            <attr name="products_model_info" language_id="0" value="64" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="129141182057004" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="16207" language_id="0" products_name="AGRES PARASISOL MAYSER 64 " products_description="" products_short_description="" products_keywords="Agres Mayser, Strohtrilby, Strohtraveller, Herrenstrohhut, Panamahut, eleganter Strohhut Herren" />
+    <products_to_categories products_id="16207" categories_id="15" />
+    <products_to_categories products_id="16207" categories_id="23" />
+    <products_to_categories products_id="16207" categories_id="61" />
+    <products_to_categories products_id="16207" categories_id="62" />
+    <products_to_categories products_id="16207" categories_id="27" />
+    <products_to_categories products_id="16207" categories_id="33" />
+    <products products_id="16209" products_master_flag="0" products_master_model="2112079520001" products_model="2112078380309" products_ean="" products_quantity="1000.00" products_shippingtime="1" products_quantity_shops="WEBSHOP:0;SCS:0;GM:2;MESSE:0" products_image="" products_price="" products_priceb="" products_regularprice="99.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="5" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="16209">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0;MESSE:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Schwarz" />
+            <attr name="products_model_info" language_id="0" value="55" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="129141182057004" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="16209" language_id="0" products_name="AGRES PARASISOL MAYSER 55 " products_description="" products_short_description="" products_keywords="Agres Mayser, Strohtrilby, Strohtraveller, Herrenstrohhut, Panamahut, eleganter Strohhut Herren" />
+    <products_to_categories products_id="16209" categories_id="15" />
+    <products_to_categories products_id="16209" categories_id="23" />
+    <products_to_categories products_id="16209" categories_id="61" />
+    <products_to_categories products_id="16209" categories_id="62" />
+    <products_to_categories products_id="16209" categories_id="27" />
+    <products_to_categories products_id="16209" categories_id="33" />
+    <products products_id="16210" products_master_flag="0" products_master_model="2112079520001" products_model="2112078380408" products_ean="" products_quantity="1000.00" products_shippingtime="1" products_quantity_shops="WEBSHOP:0;SCS:0;GM:3;MESSE:0" products_image="" products_price="" products_priceb="" products_regularprice="99.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="5" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="16210">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0;MESSE:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Schwarz" />
+            <attr name="products_model_info" language_id="0" value="56" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="129141182057004" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="16210" language_id="0" products_name="AGRES PARASISOL MAYSER 56 " products_description="" products_short_description="" products_keywords="Agres Mayser, Strohtrilby, Strohtraveller, Herrenstrohhut, Panamahut, eleganter Strohhut Herren" />
+    <products_to_categories products_id="16210" categories_id="15" />
+    <products_to_categories products_id="16210" categories_id="23" />
+    <products_to_categories products_id="16210" categories_id="61" />
+    <products_to_categories products_id="16210" categories_id="62" />
+    <products_to_categories products_id="16210" categories_id="27" />
+    <products_to_categories products_id="16210" categories_id="33" />
+    <products products_id="16211" products_master_flag="0" products_master_model="2112079520001" products_model="2112078380507" products_ean="" products_quantity="1000.00" products_shippingtime="1" products_quantity_shops="WEBSHOP:0;SCS:0;GM:3;MESSE:0" products_image="" products_price="" products_priceb="" products_regularprice="99.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="5" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="16211">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0;MESSE:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Schwarz" />
+            <attr name="products_model_info" language_id="0" value="57" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="129141182057004" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="16211" language_id="0" products_name="AGRES PARASISOL MAYSER 57 " products_description="" products_short_description="" products_keywords="Agres Mayser, Strohtrilby, Strohtraveller, Herrenstrohhut, Panamahut, eleganter Strohhut Herren" />
+    <products_to_categories products_id="16211" categories_id="15" />
+    <products_to_categories products_id="16211" categories_id="23" />
+    <products_to_categories products_id="16211" categories_id="61" />
+    <products_to_categories products_id="16211" categories_id="62" />
+    <products_to_categories products_id="16211" categories_id="27" />
+    <products_to_categories products_id="16211" categories_id="33" />
+    <products products_id="16212" products_master_flag="0" products_master_model="2112079520001" products_model="2112078380606" products_ean="" products_quantity="1000.00" products_shippingtime="1" products_quantity_shops="WEBSHOP:0;SCS:0;GM:3;MESSE:0" products_image="" products_price="" products_priceb="" products_regularprice="99.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="5" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="16212">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0;MESSE:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Schwarz" />
+            <attr name="products_model_info" language_id="0" value="58" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="129141182057004" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="16212" language_id="0" products_name="AGRES PARASISOL MAYSER 58 " products_description="" products_short_description="" products_keywords="Agres Mayser, Strohtrilby, Strohtraveller, Herrenstrohhut, Panamahut, eleganter Strohhut Herren" />
+    <products_to_categories products_id="16212" categories_id="15" />
+    <products_to_categories products_id="16212" categories_id="23" />
+    <products_to_categories products_id="16212" categories_id="61" />
+    <products_to_categories products_id="16212" categories_id="62" />
+    <products_to_categories products_id="16212" categories_id="27" />
+    <products_to_categories products_id="16212" categories_id="33" />
+    <products products_id="16213" products_master_flag="0" products_master_model="2112079520001" products_model="2112078380705" products_ean="" products_quantity="1000.00" products_shippingtime="1" products_quantity_shops="WEBSHOP:0;SCS:0;GM:3;MESSE:0" products_image="" products_price="" products_priceb="" products_regularprice="99.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="5" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="16213">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0;MESSE:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Schwarz" />
+            <attr name="products_model_info" language_id="0" value="59" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="129141182057004" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="16213" language_id="0" products_name="AGRES PARASISOL MAYSER 59 " products_description="" products_short_description="" products_keywords="Agres Mayser, Strohtrilby, Strohtraveller, Herrenstrohhut, Panamahut, eleganter Strohhut Herren" />
+    <products_to_categories products_id="16213" categories_id="15" />
+    <products_to_categories products_id="16213" categories_id="23" />
+    <products_to_categories products_id="16213" categories_id="61" />
+    <products_to_categories products_id="16213" categories_id="62" />
+    <products_to_categories products_id="16213" categories_id="27" />
+    <products_to_categories products_id="16213" categories_id="33" />
+    <products products_id="16214" products_master_flag="0" products_master_model="2112079520001" products_model="2112078380804" products_ean="" products_quantity="1000.00" products_shippingtime="1" products_quantity_shops="WEBSHOP:0;SCS:0;GM:2;MESSE:0" products_image="" products_price="" products_priceb="" products_regularprice="99.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="5" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="16214">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0;MESSE:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Schwarz" />
+            <attr name="products_model_info" language_id="0" value="60" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="129141182057004" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="16214" language_id="0" products_name="AGRES PARASISOL MAYSER 60 " products_description="" products_short_description="" products_keywords="Agres Mayser, Strohtrilby, Strohtraveller, Herrenstrohhut, Panamahut, eleganter Strohhut Herren" />
+    <products_to_categories products_id="16214" categories_id="15" />
+    <products_to_categories products_id="16214" categories_id="23" />
+    <products_to_categories products_id="16214" categories_id="61" />
+    <products_to_categories products_id="16214" categories_id="62" />
+    <products_to_categories products_id="16214" categories_id="27" />
+    <products_to_categories products_id="16214" categories_id="33" />
+    <products products_id="16215" products_master_flag="0" products_master_model="2112079520001" products_model="2112078380903" products_ean="" products_quantity="1000.00" products_shippingtime="1" products_quantity_shops="WEBSHOP:0;SCS:0;GM:2;MESSE:0" products_image="" products_price="" products_priceb="" products_regularprice="99.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="5" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="16215">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0;MESSE:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Schwarz" />
+            <attr name="products_model_info" language_id="0" value="61" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="129141182057004" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="16215" language_id="0" products_name="AGRES PARASISOL MAYSER 61 " products_description="" products_short_description="" products_keywords="Agres Mayser, Strohtrilby, Strohtraveller, Herrenstrohhut, Panamahut, eleganter Strohhut Herren" />
+    <products_to_categories products_id="16215" categories_id="15" />
+    <products_to_categories products_id="16215" categories_id="23" />
+    <products_to_categories products_id="16215" categories_id="61" />
+    <products_to_categories products_id="16215" categories_id="62" />
+    <products_to_categories products_id="16215" categories_id="27" />
+    <products_to_categories products_id="16215" categories_id="33" />
+    <products products_id="16216" products_master_flag="0" products_master_model="2112079520001" products_model="2112078381009" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0;MESSE:0" products_image="" products_price="" products_priceb="" products_regularprice="99.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="5" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="16216">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0;MESSE:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Schwarz" />
+            <attr name="products_model_info" language_id="0" value="62" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="129141182057004" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="16216" language_id="0" products_name="AGRES PARASISOL MAYSER 62 " products_description="" products_short_description="" products_keywords="Agres Mayser, Strohtrilby, Strohtraveller, Herrenstrohhut, Panamahut, eleganter Strohhut Herren" />
+    <products_to_categories products_id="16216" categories_id="15" />
+    <products_to_categories products_id="16216" categories_id="23" />
+    <products_to_categories products_id="16216" categories_id="61" />
+    <products_to_categories products_id="16216" categories_id="62" />
+    <products_to_categories products_id="16216" categories_id="27" />
+    <products_to_categories products_id="16216" categories_id="33" />
+    <products products_id="16217" products_master_flag="0" products_master_model="2112079520001" products_model="2112078381108" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0;MESSE:0" products_image="" products_price="" products_priceb="" products_regularprice="99.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="5" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="16217">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0;MESSE:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Schwarz" />
+            <attr name="products_model_info" language_id="0" value="63" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="129141182057004" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="16217" language_id="0" products_name="AGRES PARASISOL MAYSER 63 " products_description="" products_short_description="" products_keywords="Agres Mayser, Strohtrilby, Strohtraveller, Herrenstrohhut, Panamahut, eleganter Strohhut Herren" />
+    <products_to_categories products_id="16217" categories_id="15" />
+    <products_to_categories products_id="16217" categories_id="23" />
+    <products_to_categories products_id="16217" categories_id="61" />
+    <products_to_categories products_id="16217" categories_id="62" />
+    <products_to_categories products_id="16217" categories_id="27" />
+    <products_to_categories products_id="16217" categories_id="33" />
+    <products products_id="16218" products_master_flag="0" products_master_model="2112079520001" products_model="2112078381207" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0;MESSE:0" products_image="" products_price="" products_priceb="" products_regularprice="99.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="5" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="16218">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0;MESSE:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Schwarz" />
+            <attr name="products_model_info" language_id="0" value="64" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="129141182057004" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="16218" language_id="0" products_name="AGRES PARASISOL MAYSER 64 " products_description="" products_short_description="" products_keywords="Agres Mayser, Strohtrilby, Strohtraveller, Herrenstrohhut, Panamahut, eleganter Strohhut Herren" />
+    <products_to_categories products_id="16218" categories_id="15" />
+    <products_to_categories products_id="16218" categories_id="23" />
+    <products_to_categories products_id="16218" categories_id="61" />
+    <products_to_categories products_id="16218" categories_id="62" />
+    <products_to_categories products_id="16218" categories_id="27" />
+    <products_to_categories products_id="16218" categories_id="33" />
+    <products products_id="16574" products_master_flag="0" products_master_model="2112079520001" products_model="2112079520100" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0;MESSE:0" products_image="" products_price="" products_priceb="" products_regularprice="99.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="5" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="16574">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0;MESSE:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Sand" />
+            <attr name="products_model_info" language_id="0" value="53" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="129141182057004" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="16574" language_id="0" products_name="AGRES PARASISOL MAYSER 53 " products_description="&lt;p&gt;Dieser&amp;nbsp;klassische Stroh &lt;strong&gt;Traveller&lt;/strong&gt; von &lt;strong&gt;Mayser&lt;/strong&gt; gewinnt durch das hier verwendete extrem leichte, luftdurchl&amp;auml;ssige und elegant gl&amp;auml;nzende &lt;strong&gt;Parasisol Stroh&lt;/strong&gt;! Die &lt;strong&gt;Krempenbreite&lt;/strong&gt; ist dem vollen Kopf angepasst - ein zeitloser sch&amp;ouml;ner &lt;strong&gt;Strohhut&lt;/strong&gt; - eher f&amp;uuml;r die sommerliche Dinnerparty als f&amp;uuml;r den Strand. Dort werden Sie allerdings auch nicht vertrieben, wenn Sie mit diesem &lt;strong&gt;stylishen Hut&lt;/strong&gt; auftauchen! Sicher sind Sie damit immer noch &quot;better than the rest&quot;, auch wenn Sie sonst nur noch die Badehose anhaben!&lt;/p&gt; &lt;p&gt;Qualit&amp;auml;t: 100 % Parasisol Stroh&lt;br /&gt;H&amp;ouml;he: 110mm&lt;br /&gt;Krempenbreite: 60mm&lt;br /&gt;Umbind: Rips 39mm&lt;br /&gt;Kopfweiten: 55 bis 60cm&lt;/p&gt;" products_short_description="&lt;p&gt;Eleganter &lt;strong&gt;Stroh-Traveller&lt;/strong&gt; von &lt;strong&gt;Mayser&lt;/strong&gt;&lt;/p&gt;" products_keywords="Agres Mayser, Strohtrilby, Strohtraveller, Herrenstrohhut, Panamahut, eleganter Strohhut Herren" />
+    <products_to_categories products_id="16574" categories_id="15" />
+    <products_to_categories products_id="16574" categories_id="23" />
+    <products_to_categories products_id="16574" categories_id="61" />
+    <products_to_categories products_id="16574" categories_id="62" />
+    <products_to_categories products_id="16574" categories_id="27" />
+    <products_to_categories products_id="16574" categories_id="33" />
+    <products products_id="16575" products_master_flag="0" products_master_model="2112079520001" products_model="2112079520209" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0;MESSE:0" products_image="" products_price="" products_priceb="" products_regularprice="99.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="5" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="16575">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0;MESSE:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Sand" />
+            <attr name="products_model_info" language_id="0" value="54" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="129141182057004" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="16575" language_id="0" products_name="AGRES PARASISOL MAYSER 54 " products_description="&lt;p&gt;Dieser&amp;nbsp;klassische Stroh &lt;strong&gt;Traveller&lt;/strong&gt; von &lt;strong&gt;Mayser&lt;/strong&gt; gewinnt durch das hier verwendete extrem leichte, luftdurchl&amp;auml;ssige und elegant gl&amp;auml;nzende &lt;strong&gt;Parasisol Stroh&lt;/strong&gt;! Die &lt;strong&gt;Krempenbreite&lt;/strong&gt; ist dem vollen Kopf angepasst - ein zeitloser sch&amp;ouml;ner &lt;strong&gt;Strohhut&lt;/strong&gt; - eher f&amp;uuml;r die sommerliche Dinnerparty als f&amp;uuml;r den Strand. Dort werden Sie allerdings auch nicht vertrieben, wenn Sie mit diesem &lt;strong&gt;stylishen Hut&lt;/strong&gt; auftauchen! Sicher sind Sie damit immer noch &quot;better than the rest&quot;, auch wenn Sie sonst nur noch die Badehose anhaben!&lt;/p&gt; &lt;p&gt;Qualit&amp;auml;t: 100 % Parasisol Stroh&lt;br /&gt;H&amp;ouml;he: 110mm&lt;br /&gt;Krempenbreite: 60mm&lt;br /&gt;Umbind: Rips 39mm&lt;br /&gt;Kopfweiten: 55 bis 60cm&lt;/p&gt;" products_short_description="&lt;p&gt;Eleganter &lt;strong&gt;Stroh-Traveller&lt;/strong&gt; von &lt;strong&gt;Mayser&lt;/strong&gt;&lt;/p&gt;" products_keywords="Agres Mayser, Strohtrilby, Strohtraveller, Herrenstrohhut, Panamahut, eleganter Strohhut Herren" />
+    <products_to_categories products_id="16575" categories_id="15" />
+    <products_to_categories products_id="16575" categories_id="23" />
+    <products_to_categories products_id="16575" categories_id="61" />
+    <products_to_categories products_id="16575" categories_id="62" />
+    <products_to_categories products_id="16575" categories_id="27" />
+    <products_to_categories products_id="16575" categories_id="33" />
+    <products products_id="16576" products_master_flag="0" products_master_model="2112079520001" products_model="2112079520308" products_ean="" products_quantity="1000.00" products_shippingtime="1" products_quantity_shops="WEBSHOP:0;SCS:0;GM:2;MESSE:0" products_image="" products_price="" products_priceb="" products_regularprice="99.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="5" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="16576">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0;MESSE:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Sand" />
+            <attr name="products_model_info" language_id="0" value="55" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="129141182057004" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="16576" language_id="0" products_name="AGRES PARASISOL MAYSER 55 " products_description="&lt;p&gt;Dieser&amp;nbsp;klassische Stroh &lt;strong&gt;Traveller&lt;/strong&gt; von &lt;strong&gt;Mayser&lt;/strong&gt; gewinnt durch das hier verwendete extrem leichte, luftdurchl&amp;auml;ssige und elegant gl&amp;auml;nzende &lt;strong&gt;Parasisol Stroh&lt;/strong&gt;! Die &lt;strong&gt;Krempenbreite&lt;/strong&gt; ist dem vollen Kopf angepasst - ein zeitloser sch&amp;ouml;ner &lt;strong&gt;Strohhut&lt;/strong&gt; - eher f&amp;uuml;r die sommerliche Dinnerparty als f&amp;uuml;r den Strand. Dort werden Sie allerdings auch nicht vertrieben, wenn Sie mit diesem &lt;strong&gt;stylishen Hut&lt;/strong&gt; auftauchen! Sicher sind Sie damit immer noch &quot;better than the rest&quot;, auch wenn Sie sonst nur noch die Badehose anhaben!&lt;/p&gt; &lt;p&gt;Qualit&amp;auml;t: 100 % Parasisol Stroh&lt;br /&gt;H&amp;ouml;he: 110mm&lt;br /&gt;Krempenbreite: 60mm&lt;br /&gt;Umbind: Rips 39mm&lt;br /&gt;Kopfweiten: 55 bis 60cm&lt;/p&gt;" products_short_description="&lt;p&gt;Eleganter &lt;strong&gt;Stroh-Traveller&lt;/strong&gt; von &lt;strong&gt;Mayser&lt;/strong&gt;&lt;/p&gt;" products_keywords="Agres Mayser, Strohtrilby, Strohtraveller, Herrenstrohhut, Panamahut, eleganter Strohhut Herren" />
+    <products_to_categories products_id="16576" categories_id="15" />
+    <products_to_categories products_id="16576" categories_id="23" />
+    <products_to_categories products_id="16576" categories_id="61" />
+    <products_to_categories products_id="16576" categories_id="62" />
+    <products_to_categories products_id="16576" categories_id="27" />
+    <products_to_categories products_id="16576" categories_id="33" />
+    <products products_id="16577" products_master_flag="0" products_master_model="2112079520001" products_model="2112079520407" products_ean="" products_quantity="1000.00" products_shippingtime="1" products_quantity_shops="WEBSHOP:0;SCS:0;GM:3;MESSE:0" products_image="" products_price="" products_priceb="" products_regularprice="99.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="5" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="16577">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0;MESSE:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Sand" />
+            <attr name="products_model_info" language_id="0" value="56" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="129141182057004" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="16577" language_id="0" products_name="AGRES PARASISOL MAYSER 56 " products_description="&lt;p&gt;Dieser&amp;nbsp;klassische Stroh &lt;strong&gt;Traveller&lt;/strong&gt; von &lt;strong&gt;Mayser&lt;/strong&gt; gewinnt durch das hier verwendete extrem leichte, luftdurchl&amp;auml;ssige und elegant gl&amp;auml;nzende &lt;strong&gt;Parasisol Stroh&lt;/strong&gt;! Die &lt;strong&gt;Krempenbreite&lt;/strong&gt; ist dem vollen Kopf angepasst - ein zeitloser sch&amp;ouml;ner &lt;strong&gt;Strohhut&lt;/strong&gt; - eher f&amp;uuml;r die sommerliche Dinnerparty als f&amp;uuml;r den Strand. Dort werden Sie allerdings auch nicht vertrieben, wenn Sie mit diesem &lt;strong&gt;stylishen Hut&lt;/strong&gt; auftauchen! Sicher sind Sie damit immer noch &quot;better than the rest&quot;, auch wenn Sie sonst nur noch die Badehose anhaben!&lt;/p&gt; &lt;p&gt;Qualit&amp;auml;t: 100 % Parasisol Stroh&lt;br /&gt;H&amp;ouml;he: 110mm&lt;br /&gt;Krempenbreite: 60mm&lt;br /&gt;Umbind: Rips 39mm&lt;br /&gt;Kopfweiten: 55 bis 60cm&lt;/p&gt;" products_short_description="&lt;p&gt;Eleganter &lt;strong&gt;Stroh-Traveller&lt;/strong&gt; von &lt;strong&gt;Mayser&lt;/strong&gt;&lt;/p&gt;" products_keywords="Agres Mayser, Strohtrilby, Strohtraveller, Herrenstrohhut, Panamahut, eleganter Strohhut Herren" />
+    <products_to_categories products_id="16577" categories_id="15" />
+    <products_to_categories products_id="16577" categories_id="23" />
+    <products_to_categories products_id="16577" categories_id="61" />
+    <products_to_categories products_id="16577" categories_id="62" />
+    <products_to_categories products_id="16577" categories_id="27" />
+    <products_to_categories products_id="16577" categories_id="33" />
+    <products products_id="16578" products_master_flag="0" products_master_model="2112079520001" products_model="2112079520506" products_ean="" products_quantity="1000.00" products_shippingtime="1" products_quantity_shops="WEBSHOP:0;SCS:0;GM:3;MESSE:0" products_image="" products_price="" products_priceb="" products_regularprice="99.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="5" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="16578">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0;MESSE:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Sand" />
+            <attr name="products_model_info" language_id="0" value="57" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="129141182057004" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="16578" language_id="0" products_name="AGRES PARASISOL MAYSER 57 " products_description="&lt;p&gt;Dieser&amp;nbsp;klassische Stroh &lt;strong&gt;Traveller&lt;/strong&gt; von &lt;strong&gt;Mayser&lt;/strong&gt; gewinnt durch das hier verwendete extrem leichte, luftdurchl&amp;auml;ssige und elegant gl&amp;auml;nzende &lt;strong&gt;Parasisol Stroh&lt;/strong&gt;! Die &lt;strong&gt;Krempenbreite&lt;/strong&gt; ist dem vollen Kopf angepasst - ein zeitloser sch&amp;ouml;ner &lt;strong&gt;Strohhut&lt;/strong&gt; - eher f&amp;uuml;r die sommerliche Dinnerparty als f&amp;uuml;r den Strand. Dort werden Sie allerdings auch nicht vertrieben, wenn Sie mit diesem &lt;strong&gt;stylishen Hut&lt;/strong&gt; auftauchen! Sicher sind Sie damit immer noch &quot;better than the rest&quot;, auch wenn Sie sonst nur noch die Badehose anhaben!&lt;/p&gt; &lt;p&gt;Qualit&amp;auml;t: 100 % Parasisol Stroh&lt;br /&gt;H&amp;ouml;he: 110mm&lt;br /&gt;Krempenbreite: 60mm&lt;br /&gt;Umbind: Rips 39mm&lt;br /&gt;Kopfweiten: 55 bis 60cm&lt;/p&gt;" products_short_description="&lt;p&gt;Eleganter &lt;strong&gt;Stroh-Traveller&lt;/strong&gt; von &lt;strong&gt;Mayser&lt;/strong&gt;&lt;/p&gt;" products_keywords="Agres Mayser, Strohtrilby, Strohtraveller, Herrenstrohhut, Panamahut, eleganter Strohhut Herren" />
+    <products_to_categories products_id="16578" categories_id="15" />
+    <products_to_categories products_id="16578" categories_id="23" />
+    <products_to_categories products_id="16578" categories_id="61" />
+    <products_to_categories products_id="16578" categories_id="62" />
+    <products_to_categories products_id="16578" categories_id="27" />
+    <products_to_categories products_id="16578" categories_id="33" />
+    <products products_id="16579" products_master_flag="0" products_master_model="2112079520001" products_model="2112079520605" products_ean="" products_quantity="1000.00" products_shippingtime="1" products_quantity_shops="WEBSHOP:0;SCS:0;GM:3;MESSE:0" products_image="" products_price="" products_priceb="" products_regularprice="99.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="5" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="16579">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0;MESSE:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Sand" />
+            <attr name="products_model_info" language_id="0" value="58" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="129141182057004" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="16579" language_id="0" products_name="AGRES PARASISOL MAYSER 58 " products_description="&lt;p&gt;Dieser&amp;nbsp;klassische Stroh &lt;strong&gt;Traveller&lt;/strong&gt; von &lt;strong&gt;Mayser&lt;/strong&gt; gewinnt durch das hier verwendete extrem leichte, luftdurchl&amp;auml;ssige und elegant gl&amp;auml;nzende &lt;strong&gt;Parasisol Stroh&lt;/strong&gt;! Die &lt;strong&gt;Krempenbreite&lt;/strong&gt; ist dem vollen Kopf angepasst - ein zeitloser sch&amp;ouml;ner &lt;strong&gt;Strohhut&lt;/strong&gt; - eher f&amp;uuml;r die sommerliche Dinnerparty als f&amp;uuml;r den Strand. Dort werden Sie allerdings auch nicht vertrieben, wenn Sie mit diesem &lt;strong&gt;stylishen Hut&lt;/strong&gt; auftauchen! Sicher sind Sie damit immer noch &quot;better than the rest&quot;, auch wenn Sie sonst nur noch die Badehose anhaben!&lt;/p&gt; &lt;p&gt;Qualit&amp;auml;t: 100 % Parasisol Stroh&lt;br /&gt;H&amp;ouml;he: 110mm&lt;br /&gt;Krempenbreite: 60mm&lt;br /&gt;Umbind: Rips 39mm&lt;br /&gt;Kopfweiten: 55 bis 60cm&lt;/p&gt;" products_short_description="&lt;p&gt;Eleganter &lt;strong&gt;Stroh-Traveller&lt;/strong&gt; von &lt;strong&gt;Mayser&lt;/strong&gt;&lt;/p&gt;" products_keywords="Agres Mayser, Strohtrilby, Strohtraveller, Herrenstrohhut, Panamahut, eleganter Strohhut Herren" />
+    <products_to_categories products_id="16579" categories_id="15" />
+    <products_to_categories products_id="16579" categories_id="23" />
+    <products_to_categories products_id="16579" categories_id="61" />
+    <products_to_categories products_id="16579" categories_id="62" />
+    <products_to_categories products_id="16579" categories_id="27" />
+    <products_to_categories products_id="16579" categories_id="33" />
+    <products products_id="16580" products_master_flag="0" products_master_model="2112079520001" products_model="2112079520704" products_ean="" products_quantity="1000.00" products_shippingtime="1" products_quantity_shops="WEBSHOP:0;SCS:0;GM:2;MESSE:0" products_image="" products_price="" products_priceb="" products_regularprice="99.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="5" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="16580">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0;MESSE:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Sand" />
+            <attr name="products_model_info" language_id="0" value="59" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="129141182057004" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="16580" language_id="0" products_name="AGRES PARASISOL MAYSER 59 " products_description="&lt;p&gt;Dieser&amp;nbsp;klassische Stroh &lt;strong&gt;Traveller&lt;/strong&gt; von &lt;strong&gt;Mayser&lt;/strong&gt; gewinnt durch das hier verwendete extrem leichte, luftdurchl&amp;auml;ssige und elegant gl&amp;auml;nzende &lt;strong&gt;Parasisol Stroh&lt;/strong&gt;! Die &lt;strong&gt;Krempenbreite&lt;/strong&gt; ist dem vollen Kopf angepasst - ein zeitloser sch&amp;ouml;ner &lt;strong&gt;Strohhut&lt;/strong&gt; - eher f&amp;uuml;r die sommerliche Dinnerparty als f&amp;uuml;r den Strand. Dort werden Sie allerdings auch nicht vertrieben, wenn Sie mit diesem &lt;strong&gt;stylishen Hut&lt;/strong&gt; auftauchen! Sicher sind Sie damit immer noch &quot;better than the rest&quot;, auch wenn Sie sonst nur noch die Badehose anhaben!&lt;/p&gt; &lt;p&gt;Qualit&amp;auml;t: 100 % Parasisol Stroh&lt;br /&gt;H&amp;ouml;he: 110mm&lt;br /&gt;Krempenbreite: 60mm&lt;br /&gt;Umbind: Rips 39mm&lt;br /&gt;Kopfweiten: 55 bis 60cm&lt;/p&gt;" products_short_description="&lt;p&gt;Eleganter &lt;strong&gt;Stroh-Traveller&lt;/strong&gt; von &lt;strong&gt;Mayser&lt;/strong&gt;&lt;/p&gt;" products_keywords="Agres Mayser, Strohtrilby, Strohtraveller, Herrenstrohhut, Panamahut, eleganter Strohhut Herren" />
+    <products_to_categories products_id="16580" categories_id="15" />
+    <products_to_categories products_id="16580" categories_id="23" />
+    <products_to_categories products_id="16580" categories_id="61" />
+    <products_to_categories products_id="16580" categories_id="62" />
+    <products_to_categories products_id="16580" categories_id="27" />
+    <products_to_categories products_id="16580" categories_id="33" />
+    <products products_id="16581" products_master_flag="0" products_master_model="2112079520001" products_model="2112079520803" products_ean="" products_quantity="1000.00" products_shippingtime="1" products_quantity_shops="WEBSHOP:0;SCS:0;GM:2;MESSE:0" products_image="" products_price="" products_priceb="" products_regularprice="99.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="5" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="16581">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0;MESSE:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Sand" />
+            <attr name="products_model_info" language_id="0" value="60" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="129141182057004" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="16581" language_id="0" products_name="AGRES PARASISOL MAYSER 60 " products_description="&lt;p&gt;Dieser&amp;nbsp;klassische Stroh &lt;strong&gt;Traveller&lt;/strong&gt; von &lt;strong&gt;Mayser&lt;/strong&gt; gewinnt durch das hier verwendete extrem leichte, luftdurchl&amp;auml;ssige und elegant gl&amp;auml;nzende &lt;strong&gt;Parasisol Stroh&lt;/strong&gt;! Die &lt;strong&gt;Krempenbreite&lt;/strong&gt; ist dem vollen Kopf angepasst - ein zeitloser sch&amp;ouml;ner &lt;strong&gt;Strohhut&lt;/strong&gt; - eher f&amp;uuml;r die sommerliche Dinnerparty als f&amp;uuml;r den Strand. Dort werden Sie allerdings auch nicht vertrieben, wenn Sie mit diesem &lt;strong&gt;stylishen Hut&lt;/strong&gt; auftauchen! Sicher sind Sie damit immer noch &quot;better than the rest&quot;, auch wenn Sie sonst nur noch die Badehose anhaben!&lt;/p&gt; &lt;p&gt;Qualit&amp;auml;t: 100 % Parasisol Stroh&lt;br /&gt;H&amp;ouml;he: 110mm&lt;br /&gt;Krempenbreite: 60mm&lt;br /&gt;Umbind: Rips 39mm&lt;br /&gt;Kopfweiten: 55 bis 60cm&lt;/p&gt;" products_short_description="&lt;p&gt;Eleganter &lt;strong&gt;Stroh-Traveller&lt;/strong&gt; von &lt;strong&gt;Mayser&lt;/strong&gt;&lt;/p&gt;" products_keywords="Agres Mayser, Strohtrilby, Strohtraveller, Herrenstrohhut, Panamahut, eleganter Strohhut Herren" />
+    <products_to_categories products_id="16581" categories_id="15" />
+    <products_to_categories products_id="16581" categories_id="23" />
+    <products_to_categories products_id="16581" categories_id="61" />
+    <products_to_categories products_id="16581" categories_id="62" />
+    <products_to_categories products_id="16581" categories_id="27" />
+    <products_to_categories products_id="16581" categories_id="33" />
+    <products products_id="16582" products_master_flag="0" products_master_model="2112079520001" products_model="2112079520902" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0;MESSE:0" products_image="" products_price="" products_priceb="" products_regularprice="99.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="5" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="16582">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0;MESSE:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Sand" />
+            <attr name="products_model_info" language_id="0" value="61" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="129141182057004" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="16582" language_id="0" products_name="AGRES PARASISOL MAYSER 61 " products_description="&lt;p&gt;Dieser&amp;nbsp;klassische Stroh &lt;strong&gt;Traveller&lt;/strong&gt; von &lt;strong&gt;Mayser&lt;/strong&gt; gewinnt durch das hier verwendete extrem leichte, luftdurchl&amp;auml;ssige und elegant gl&amp;auml;nzende &lt;strong&gt;Parasisol Stroh&lt;/strong&gt;! Die &lt;strong&gt;Krempenbreite&lt;/strong&gt; ist dem vollen Kopf angepasst - ein zeitloser sch&amp;ouml;ner &lt;strong&gt;Strohhut&lt;/strong&gt; - eher f&amp;uuml;r die sommerliche Dinnerparty als f&amp;uuml;r den Strand. Dort werden Sie allerdings auch nicht vertrieben, wenn Sie mit diesem &lt;strong&gt;stylishen Hut&lt;/strong&gt; auftauchen! Sicher sind Sie damit immer noch &quot;better than the rest&quot;, auch wenn Sie sonst nur noch die Badehose anhaben!&lt;/p&gt; &lt;p&gt;Qualit&amp;auml;t: 100 % Parasisol Stroh&lt;br /&gt;H&amp;ouml;he: 110mm&lt;br /&gt;Krempenbreite: 60mm&lt;br /&gt;Umbind: Rips 39mm&lt;br /&gt;Kopfweiten: 55 bis 60cm&lt;/p&gt;" products_short_description="&lt;p&gt;Eleganter &lt;strong&gt;Stroh-Traveller&lt;/strong&gt; von &lt;strong&gt;Mayser&lt;/strong&gt;&lt;/p&gt;" products_keywords="Agres Mayser, Strohtrilby, Strohtraveller, Herrenstrohhut, Panamahut, eleganter Strohhut Herren" />
+    <products_to_categories products_id="16582" categories_id="15" />
+    <products_to_categories products_id="16582" categories_id="23" />
+    <products_to_categories products_id="16582" categories_id="61" />
+    <products_to_categories products_id="16582" categories_id="62" />
+    <products_to_categories products_id="16582" categories_id="27" />
+    <products_to_categories products_id="16582" categories_id="33" />
+    <categories categories_id="30" categories_status="1" categories_visibility="1" categories_image="" parent_id="27" sort_order="1" />
+    <categories_description categories_id="30" language_id="0" categories_name="Cowboy und Lederhute" categories_description="" />
+    <categories categories_id="15" categories_status="1" categories_visibility="1" categories_image="" parent_id="0" sort_order="2" />
+    <categories_description categories_id="15" language_id="0" categories_name="Hutmarken" categories_description="" />
+    <categories categories_id="100" categories_status="1" categories_visibility="1" categories_image="" parent_id="99" sort_order="3" />
+    <categories_description categories_id="100" language_id="0" categories_name="Schals" categories_description="" />
+    <categories categories_id="16" categories_status="1" categories_visibility="1" categories_image="" parent_id="15" sort_order="4" />
+    <categories_description categories_id="16" language_id="0" categories_name="Akubra" categories_description="" />
+    <categories categories_id="41" categories_status="1" categories_visibility="1" categories_image="" parent_id="36" sort_order="5" />
+    <categories_description categories_id="41" language_id="0" categories_name="Anlasshute" categories_description="" />
+    <categories categories_id="85" categories_status="1" categories_visibility="1" categories_image="" parent_id="15" sort_order="6" />
+    <categories_description categories_id="85" language_id="0" categories_name="Balke" categories_description="" />
+    <categories categories_id="89" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="7" />
+    <categories_description categories_id="89" language_id="0" categories_name="Ballonmutzen" categories_description="" />
+    <categories categories_id="17" categories_status="1" categories_visibility="1" categories_image="" parent_id="15" sort_order="8" />
+    <categories_description categories_id="17" language_id="0" categories_name="Barmah" categories_description="" />
+    <categories categories_id="55" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="9" />
+    <categories_description categories_id="55" language_id="0" categories_name="Basecaps" categories_description="" />
+    <categories categories_id="68" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="10" />
+    <categories_description categories_id="68" language_id="0" categories_name="Baskenmutze" categories_description="" />
+    <categories categories_id="51" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="11" />
+    <categories_description categories_id="51" language_id="0" categories_name="Beanies" categories_description="" />
+    <categories categories_id="54" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="12" />
+    <categories_description categories_id="54" language_id="0" categories_name="Berets und Pullmankappen" categories_description="" />
+    <categories categories_id="74" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="13" />
+    <categories_description categories_id="74" language_id="0" categories_name="Blendschirme, Visore" categories_description="" />
+    <categories categories_id="18" categories_status="1" categories_visibility="1" categories_image="" parent_id="15" sort_order="14" />
+    <categories_description categories_id="18" language_id="0" categories_name="Borsalino" categories_description="" />
+    <categories categories_id="77" categories_status="1" categories_visibility="1" categories_image="" parent_id="36" sort_order="15" />
+    <categories_description categories_id="77" language_id="0" categories_name="Bortenstrohhut" categories_description="" />
+    <categories categories_id="112" categories_status="1" categories_visibility="1" categories_image="" parent_id="99" sort_order="16" />
+    <categories_description categories_id="112" language_id="0" categories_name="Brillen" categories_description="" />
+    <categories categories_id="67" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="17" />
+    <categories_description categories_id="67" language_id="0" categories_name="Cabrio Haube" categories_description="" />
+    <categories categories_id="19" categories_status="1" categories_visibility="1" categories_image="" parent_id="15" sort_order="18" />
+    <categories_description categories_id="19" language_id="0" categories_name="City Sport" categories_description="" />
+    <categories categories_id="38" categories_status="1" categories_visibility="1" categories_image="" parent_id="36" sort_order="19" />
+    <categories_description categories_id="38" language_id="0" categories_name="Cloche" categories_description="" />
+    <categories categories_id="88" categories_status="1" categories_visibility="1" categories_image="" parent_id="15" sort_order="20" />
+    <categories_description categories_id="88" language_id="0" categories_name="Coal" categories_description="" />
+    <categories categories_id="9" categories_status="1" categories_visibility="1" categories_image="" parent_id="0" sort_order="21" />
+    <categories_description categories_id="9" language_id="0" categories_name="Damen" categories_description="" />
+    <categories categories_id="37" categories_status="1" categories_visibility="1" categories_image="" parent_id="36" sort_order="22" />
+    <categories_description categories_id="37" language_id="0" categories_name="Damentrilby" categories_description="" />
+    <categories categories_id="113" categories_status="1" categories_visibility="1" categories_image="" parent_id="27" sort_order="23" />
+    <categories_description categories_id="113" language_id="0" categories_name="Doktorhut" categories_description="" />
+    <categories categories_id="59" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="24" />
+    <categories_description categories_id="59" language_id="0" categories_name="Drill Sergeant Cap" categories_description="" />
+    <categories categories_id="46" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="25" />
+    <categories_description categories_id="46" language_id="0" categories_name="Duck Caps" categories_description="" />
+    <categories categories_id="79" categories_status="1" categories_visibility="1" categories_image="" parent_id="36" sort_order="26" />
+    <categories_description categories_id="79" language_id="0" categories_name="Festtagshute" categories_description="" />
+    <categories categories_id="10" categories_status="1" categories_visibility="1" categories_image="" parent_id="9" sort_order="27" />
+    <categories_description categories_id="10" language_id="0" categories_name="Filzhute" categories_description="" />
+    <categories categories_id="49" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="28" />
+    <categories_description categories_id="49" language_id="0" categories_name="Filzkappen" categories_description="" />
+    <categories categories_id="65" categories_status="1" categories_visibility="1" categories_image="" parent_id="27" sort_order="29" />
+    <categories_description categories_id="65" language_id="0" categories_name="Fischerhut" categories_description="" />
+    <categories categories_id="45" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="30" />
+    <categories_description categories_id="45" language_id="0" categories_name="Flatcaps" categories_description="" />
+    <categories categories_id="20" categories_status="1" categories_visibility="1" categories_image="" parent_id="15" sort_order="31" />
+    <categories_description categories_id="20" language_id="0" categories_name="Fleur de Lis" categories_description="" />
+    <categories categories_id="71" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="32" />
+    <categories_description categories_id="71" language_id="0" categories_name="Flexcap" categories_description="" />
+    <categories categories_id="50" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="33" />
+    <categories_description categories_id="50" language_id="0" categories_name="Fliegerhauben" categories_description="" />
+    <categories categories_id="47" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="34" />
+    <categories_description categories_id="47" language_id="0" categories_name="Gatsby Kappen" categories_description="" />
+    <categories categories_id="86" categories_status="1" categories_visibility="1" categories_image="" parent_id="15" sort_order="35" />
+    <categories_description categories_id="86" language_id="0" categories_name="Goorin Bros" categories_description="" />
+    <categories categories_id="107" categories_status="1" categories_visibility="1" categories_image="" parent_id="27" sort_order="36" />
+    <categories_description categories_id="107" language_id="0" categories_name="Haarfilzhute" categories_description="" />
+    <categories categories_id="64" categories_status="1" categories_visibility="1" categories_image="" parent_id="61" sort_order="37" />
+    <categories_description categories_id="64" language_id="0" categories_name="Hauben" categories_description="" />
+    <categories categories_id="73" categories_status="1" categories_visibility="1" categories_image="" parent_id="27" sort_order="38" />
+    <categories_description categories_id="73" language_id="0" categories_name="Helme" categories_description="" />
+    <categories categories_id="62" categories_status="1" categories_visibility="1" categories_image="" parent_id="61" sort_order="39" />
+    <categories_description categories_id="62" language_id="0" categories_name="Hute" categories_description="" />
+    <categories categories_id="21" categories_status="1" categories_visibility="1" categories_image="" parent_id="15" sort_order="40" />
+    <categories_description categories_id="21" language_id="0" categories_name="Indiana Jones" categories_description="" />
+    <categories categories_id="22" categories_status="1" categories_visibility="1" categories_image="" parent_id="15" sort_order="41" />
+    <categories_description categories_id="22" language_id="0" categories_name="Kangol" categories_description="" />
+    <categories categories_id="57" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="42" />
+    <categories_description categories_id="57" language_id="0" categories_name="Kapitanskappe" categories_description="" />
+    <categories categories_id="87" categories_status="1" categories_visibility="1" categories_image="" parent_id="9" sort_order="43" />
+    <categories_description categories_id="87" language_id="0" categories_name="Kappen Mutzen" categories_description="" />
+    <categories categories_id="48" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="44" />
+    <categories_description categories_id="48" language_id="0" categories_name="Kappen mit Ohrenschutz" categories_description="" />
+    <categories categories_id="58" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="45" />
+    <categories_description categories_id="58" language_id="0" categories_name="Kuba Cap" categories_description="" />
+    <categories categories_id="70" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="46" />
+    <categories_description categories_id="70" language_id="0" categories_name="Lederkappen" categories_description="" />
+    <categories categories_id="111" categories_status="1" categories_visibility="1" categories_image="" parent_id="15" sort_order="47" />
+    <categories_description categories_id="111" language_id="0" categories_name="Mauerer" categories_description="" />
+    <categories categories_id="23" categories_status="1" categories_visibility="1" categories_image="" parent_id="15" sort_order="48" />
+    <categories_description categories_id="23" language_id="0" categories_name="Mayser" categories_description="" />
+    <categories categories_id="108" categories_status="1" categories_visibility="1" categories_image="" parent_id="15" sort_order="49" />
+    <categories_description categories_id="108" language_id="0" categories_name="Muller Schweiz" categories_description="" />
+    <categories categories_id="63" categories_status="1" categories_visibility="1" categories_image="" parent_id="61" sort_order="50" />
+    <categories_description categories_id="63" language_id="0" categories_name="Mutzen und Kappen" categories_description="" />
+    <categories categories_id="32" categories_status="1" categories_visibility="1" categories_image="" parent_id="27" sort_order="51" />
+    <categories_description categories_id="32" language_id="0" categories_name="Outdoorhute" categories_description="" />
+    <categories categories_id="34" categories_status="1" categories_visibility="1" categories_image="" parent_id="27" sort_order="52" />
+    <categories_description categories_id="34" language_id="0" categories_name="Panamahute" categories_description="" />
+    <categories categories_id="84" categories_status="1" categories_visibility="1" categories_image="" parent_id="36" sort_order="53" />
+    <categories_description categories_id="84" language_id="0" categories_name="Panamahute" categories_description="" />
+    <categories categories_id="12" categories_status="1" categories_visibility="1" categories_image="" parent_id="9" sort_order="54" />
+    <categories_description categories_id="12" language_id="0" categories_name="Pelzhauben" categories_description="" />
+    <categories categories_id="116" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="55" />
+    <categories_description categories_id="116" language_id="0" categories_name="Pommelhauben" categories_description="" />
+    <categories categories_id="101" categories_status="1" categories_visibility="1" categories_image="" parent_id="99" sort_order="56" />
+    <categories_description categories_id="101" language_id="0" categories_name="Ponchos" categories_description="" />
+    <categories categories_id="29" categories_status="1" categories_visibility="1" categories_image="" parent_id="27" sort_order="57" />
+    <categories_description categories_id="29" language_id="0" categories_name="Pork Pie Hute" categories_description="" />
+    <categories categories_id="81" categories_status="1" categories_visibility="1" categories_image="" parent_id="36" sort_order="58" />
+    <categories_description categories_id="81" language_id="0" categories_name="Regenhute" categories_description="" />
+    <categories categories_id="76" categories_status="1" categories_visibility="1" categories_image="" parent_id="36" sort_order="59" />
+    <categories_description categories_id="76" language_id="0" categories_name="Schlapphut" categories_description="" />
+    <categories categories_id="80" categories_status="1" categories_visibility="1" categories_image="" parent_id="15" sort_order="60" />
+    <categories_description categories_id="80" language_id="0" categories_name="Scippis" categories_description="" />
+    <categories categories_id="24" categories_status="1" categories_visibility="1" categories_image="" parent_id="15" sort_order="61" />
+    <categories_description categories_id="24" language_id="0" categories_name="Seeberger" categories_description="" />
+    <categories categories_id="56" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="62" />
+    <categories_description categories_id="56" language_id="0" categories_name="Skull Cap" categories_description="" />
+    <categories categories_id="25" categories_status="1" categories_visibility="1" categories_image="" parent_id="15" sort_order="63" />
+    <categories_description categories_id="25" language_id="0" categories_name="Stetson" categories_description="" />
+    <categories categories_id="11" categories_status="1" categories_visibility="1" categories_image="" parent_id="9" sort_order="64" />
+    <categories_description categories_id="11" language_id="0" categories_name="Stoffhute" categories_description="" />
+    <categories categories_id="60" categories_status="1" categories_visibility="1" categories_image="" parent_id="27" sort_order="65" />
+    <categories_description categories_id="60" language_id="0" categories_name="Stoffhute" categories_description="" />
+    <categories categories_id="78" categories_status="1" categories_visibility="1" categories_image="" parent_id="36" sort_order="66" />
+    <categories_description categories_id="78" language_id="0" categories_name="Strand und Badehut" categories_description="" />
+    <categories categories_id="52" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="67" />
+    <categories_description categories_id="52" language_id="0" categories_name="Strickhauben" categories_description="" />
+    <categories categories_id="39" categories_status="1" categories_visibility="1" categories_image="" parent_id="36" sort_order="68" />
+    <categories_description categories_id="39" language_id="0" categories_name="Strickhute" categories_description="" />
+    <categories categories_id="13" categories_status="1" categories_visibility="1" categories_image="" parent_id="9" sort_order="69" />
+    <categories_description categories_id="13" language_id="0" categories_name="Strickware" categories_description="" />
+    <categories categories_id="33" categories_status="1" categories_visibility="1" categories_image="" parent_id="27" sort_order="70" />
+    <categories_description categories_id="33" language_id="0" categories_name="Strohhute" categories_description="" />
+    <categories categories_id="14" categories_status="1" categories_visibility="1" categories_image="" parent_id="9" sort_order="71" />
+    <categories_description categories_id="14" language_id="0" categories_name="Strohhute" categories_description="" />
+    <categories categories_id="75" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="72" />
+    <categories_description categories_id="75" language_id="0" categories_name="Strohkappen" categories_description="" />
+    <categories categories_id="109" categories_status="1" categories_visibility="1" categories_image="" parent_id="36" sort_order="73" />
+    <categories_description categories_id="109" language_id="0" categories_name="Toque" categories_description="" />
+    <categories categories_id="117" categories_status="1" categories_visibility="1" categories_image="" parent_id="27" sort_order="74" />
+    <categories_description categories_id="117" language_id="0" categories_name="Trachtenhut" categories_description="" />
+    <categories categories_id="31" categories_status="1" categories_visibility="1" categories_image="" parent_id="27" sort_order="75" />
+    <categories_description categories_id="31" language_id="0" categories_name="Traveller und Stoffhute" categories_description="" />
+    <categories categories_id="28" categories_status="1" categories_visibility="1" categories_image="" parent_id="27" sort_order="76" />
+    <categories_description categories_id="28" language_id="0" categories_name="Trilby und Fedora Hute" categories_description="" />
+    <categories categories_id="110" categories_status="1" categories_visibility="1" categories_image="" parent_id="36" sort_order="77" />
+    <categories_description categories_id="110" language_id="0" categories_name="Trotteurhut" categories_description="" />
+    <categories categories_id="69" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="78" />
+    <categories_description categories_id="69" language_id="0" categories_name="Tweedkappe" categories_description="" />
+    <categories categories_id="82" categories_status="1" categories_visibility="1" categories_image="" parent_id="15" sort_order="79" />
+    <categories_description categories_id="82" language_id="0" categories_name="Vintimilla" categories_description="" />
+    <categories categories_id="72" categories_status="1" categories_visibility="1" categories_image="" parent_id="36" sort_order="80" />
+    <categories_description categories_id="72" language_id="0" categories_name="Walkhauben" categories_description="" />
+    <categories categories_id="40" categories_status="1" categories_visibility="1" categories_image="" parent_id="36" sort_order="81" />
+    <categories_description categories_id="40" language_id="0" categories_name="Walkhute" categories_description="" />
+    <categories categories_id="26" categories_status="1" categories_visibility="1" categories_image="" parent_id="15" sort_order="82" />
+    <categories_description categories_id="26" language_id="0" categories_name="Wigens" categories_description="" />
+    <categories categories_id="105" categories_status="1" categories_visibility="1" categories_image="" parent_id="27" sort_order="83" />
+    <categories_description categories_id="105" language_id="0" categories_name="Wollfilzhute" categories_description="" />
+    <categories categories_id="35" categories_status="1" categories_visibility="1" categories_image="" parent_id="27" sort_order="84" />
+    <categories_description categories_id="35" language_id="0" categories_name="Zylinder Melonen Bowler" categories_description="" />
+    <categories categories_id="102" categories_status="1" categories_visibility="1" categories_image="" parent_id="99" sort_order="85" />
+    <categories_description categories_id="102" language_id="0" categories_name="Damenhandtaschen" categories_description="" />
+    <categories categories_id="36" categories_status="1" categories_visibility="1" categories_image="" parent_id="0" sort_order="86" />
+    <categories_description categories_id="36" language_id="0" categories_name="Hutarten Damen" categories_description="" />
+    <categories categories_id="61" categories_status="1" categories_visibility="1" categories_image="" parent_id="0" sort_order="87" />
+    <categories_description categories_id="61" language_id="0" categories_name="Herren" categories_description="" />
+    <categories categories_id="103" categories_status="1" categories_visibility="1" categories_image="" parent_id="99" sort_order="88" />
+    <categories_description categories_id="103" language_id="0" categories_name="Reisegepack" categories_description="" />
+    <categories categories_id="104" categories_status="1" categories_visibility="1" categories_image="" parent_id="99" sort_order="89" />
+    <categories_description categories_id="104" language_id="0" categories_name="Handschuhe" categories_description="" />
+    <categories categories_id="27" categories_status="1" categories_visibility="1" categories_image="" parent_id="0" sort_order="90" />
+    <categories_description categories_id="27" language_id="0" categories_name="Hutarten Herren" categories_description="" />
+    <categories categories_id="44" categories_status="1" categories_visibility="1" categories_image="" parent_id="0" sort_order="91" />
+    <categories_description categories_id="44" language_id="0" categories_name="Hauben, Mutzen und Kappen" categories_description="" />
+    <categories categories_id="99" categories_status="1" categories_visibility="1" categories_image="" parent_id="0" sort_order="92" />
+    <categories_description categories_id="99" language_id="0" categories_name="Accessoires" categories_description="" />
+    <categories categories_id="90" categories_status="1" categories_visibility="0" categories_image="" parent_id="0" sort_order="93" />
+    <categories_description categories_id="90" language_id="0" categories_name="Startseite" categories_description="" />
+    <manufacturers manufacturers_id="2" manufacturers_name="Akubra" manufacturers_status="1" />
+    <manufacturers manufacturers_id="9" manufacturers_name="Balke" manufacturers_status="1" />
+    <manufacturers manufacturers_id="4" manufacturers_name="Barmah" manufacturers_status="1" />
+    <manufacturers manufacturers_id="15" manufacturers_name="Borsalino" manufacturers_status="1" />
+    <manufacturers manufacturers_id="16" manufacturers_name="Charles Muller" manufacturers_status="1" />
+    <manufacturers manufacturers_id="14" manufacturers_name="City Sport" manufacturers_status="1" />
+    <manufacturers manufacturers_id="11" manufacturers_name="Coal" manufacturers_status="1" />
+    <manufacturers manufacturers_id="3" manufacturers_name="FLEUR DE LIS" manufacturers_status="1" />
+    <manufacturers manufacturers_id="10" manufacturers_name="Goorin Bros" manufacturers_status="1" />
+    <manufacturers manufacturers_id="13" manufacturers_name="Kangol" manufacturers_status="1" />
+    <manufacturers manufacturers_id="17" manufacturers_name="Mauerer" manufacturers_status="1" />
+    <manufacturers manufacturers_id="5" manufacturers_name="Mayser" manufacturers_status="1" />
+    <manufacturers manufacturers_id="7" manufacturers_name="Scippis" manufacturers_status="1" />
+    <manufacturers manufacturers_id="6" manufacturers_name="Seeberger" manufacturers_status="1" />
+    <manufacturers manufacturers_id="1" manufacturers_name="Stetson" manufacturers_status="1" />
+    <manufacturers manufacturers_id="8" manufacturers_name="Vintimilla" manufacturers_status="1" />
+    <manufacturers manufacturers_id="12" manufacturers_name="Wigens" manufacturers_status="1" />
+</root>

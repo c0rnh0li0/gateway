@@ -1,29 +1,2440 @@
-Gateway\DataSource\Orders Object
+Array
 (
-    [data:protected] => Array
+    [0] => Array
         (
-            [100000024] => Gateway\DataSource\Entity\Order Object
+            [product_id] => 87
+            [product_art_no] => 2112017580005
+            [name] => Block Bootie Mid
+            [price] => 196.00
+            [price_reduced] => 
+            [price_reduced_type] => 
+            [shipping_group] => 
+            [available] => 1
+            [producer] => United Nude
+            [stock_policy] => 
+            [stock] => 2222.00
+            [delivery] => 3
+            [min_order_qty] => 
+            [staggering] => 
+            [baseprice_unit] => 
+            [baseprice_volume] => 
+            [tax] => 12
+            [homepage] => 0
+            [connect] => 
+            [ean] => 2112017580005
+            [isbn] => 
+            [mpn] => 
+            [inci] => 
+            [description] => UNITED NUDE
+            [comment] => 
+            [cross_selling_title] => Block Bootie Mid
+            [shop_category_id] => 
+            [rakuten_category_id] => 
+            [categories] => Array
                 (
-                    [id:protected] => 100000024
-                    [createdAt:protected] => 2014-02-05 18:03:04
-                    [updatedAt:protected] => 
-                    [isActive:protected] => 1
-                    [customer:protected] => 
-                    [cart:protected] => 
-                    [shipping:protected] => 
-                    [billing:protected] => 
-                    [payment:protected] => 
-                    [status:protected] => Gateway\DataSource\Entity\Order\Status Object
+                    [0] => 7
+                    [1] => 1
+                )
+
+            [images] => Array
+                (
+                    [0] => +863_1_sinamayglocke_klein.jpg
+                    [1] => +863_2_sinamayglocke_klein.jpg
+                )
+
+            [cross_sellings] => Array
+                (
+                    [0] => 
+                )
+
+            [attributes] => Array
+                (
+                    [0] => Array
                         (
-                            [value:protected] => 0
-                            [specialProperties:protected] => Array
+                            [label] => 
+                            [name] => products_quantity_shops
+                            [value] => ZENTRALE:0
+                            [lang] => default
+                        )
+
+                    [1] => Array
+                        (
+                            [label] => 
+                            [name] => color
+                            [value] => Violet
+                            [lang] => 0
+                        )
+
+                    [2] => Array
+                        (
+                            [label] => 
+                            [name] => bestellnummer
+                            [value] => block-bootie-mid-violet
+                            [lang] => default
+                        )
+
+                )
+
+            [variants] => Array
+                (
+                    [0] => Array
+                        (
+                            [variant_id] => 83
+                            [variant_art_no] => 2112017570105
+                            [name] => Block Bootie Mid 36 
+                            [price] => 196.00
+                            [price_reduced] => 
+                            [price_reduced_type] => 
+                            [baseprice_unit] => 
+                            [baseprice_volume] => 
+                            [stock] => 0.00
+                            [delivery] => 3
+                            [available] => 1
+                            [isbn] => 
+                            [ean] => 2112017570105
+                            [mpn] => 
+                            [attributes] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_quantity_shops
+                                            [value] => ZENTRALE:0
+                                            [lang] => default
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [label] => 
+                                            [name] => color
+                                            [value] => Black
+                                            [lang] => 0
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_model_info
+                                            [value] => 36
+                                            [lang] => 0
+                                        )
+
+                                    [3] => Array
+                                        (
+                                            [label] => 
+                                            [name] => bestellnummer
+                                            [value] => block-bootie-mid-violet
+                                            [lang] => default
+                                        )
+
+                                )
+
+                            [categories] => Array
+                                (
+                                    [0] => 7
+                                    [1] => 1
+                                )
+
+                            [images] => Array
                                 (
                                 )
 
                         )
 
-                    [price:protected] => 
-                    [comment:protected] => 
+                    [1] => Array
+                        (
+                            [variant_id] => 84
+                            [variant_art_no] => 2112017570204
+                            [name] => Block Bootie Mid 38 
+                            [price] => 196.00
+                            [price_reduced] => 
+                            [price_reduced_type] => 
+                            [baseprice_unit] => 
+                            [baseprice_volume] => 
+                            [stock] => 0.00
+                            [delivery] => 3
+                            [available] => 1
+                            [isbn] => 
+                            [ean] => 2112017570204
+                            [mpn] => 
+                            [attributes] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_quantity_shops
+                                            [value] => ZENTRALE:0
+                                            [lang] => default
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [label] => 
+                                            [name] => color
+                                            [value] => Black
+                                            [lang] => 0
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_model_info
+                                            [value] => 38
+                                            [lang] => 0
+                                        )
+
+                                    [3] => Array
+                                        (
+                                            [label] => 
+                                            [name] => bestellnummer
+                                            [value] => block-bootie-mid-violet
+                                            [lang] => default
+                                        )
+
+                                )
+
+                            [categories] => Array
+                                (
+                                    [0] => 7
+                                    [1] => 1
+                                )
+
+                            [images] => Array
+                                (
+                                )
+
+                        )
+
+                    [2] => Array
+                        (
+                            [variant_id] => 85
+                            [variant_art_no] => 2112017570303
+                            [name] => Block Bootie Mid 39 
+                            [price] => 196.00
+                            [price_reduced] => 
+                            [price_reduced_type] => 
+                            [baseprice_unit] => 
+                            [baseprice_volume] => 
+                            [stock] => 0.00
+                            [delivery] => 3
+                            [available] => 1
+                            [isbn] => 
+                            [ean] => 2112017570303
+                            [mpn] => 
+                            [attributes] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_quantity_shops
+                                            [value] => ZENTRALE:0
+                                            [lang] => default
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [label] => 
+                                            [name] => color
+                                            [value] => Black
+                                            [lang] => 0
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_model_info
+                                            [value] => 39
+                                            [lang] => 0
+                                        )
+
+                                    [3] => Array
+                                        (
+                                            [label] => 
+                                            [name] => bestellnummer
+                                            [value] => block-bootie-mid-violet
+                                            [lang] => default
+                                        )
+
+                                )
+
+                            [categories] => Array
+                                (
+                                    [0] => 7
+                                    [1] => 1
+                                )
+
+                            [images] => Array
+                                (
+                                )
+
+                        )
+
+                    [3] => Array
+                        (
+                            [variant_id] => 86
+                            [variant_art_no] => 2112017570402
+                            [name] => Block Bootie Mid 40 
+                            [price] => 196.00
+                            [price_reduced] => 
+                            [price_reduced_type] => 
+                            [baseprice_unit] => 
+                            [baseprice_volume] => 
+                            [stock] => 0.00
+                            [delivery] => 3
+                            [available] => 1
+                            [isbn] => 
+                            [ean] => 2112017570402
+                            [mpn] => 
+                            [attributes] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_quantity_shops
+                                            [value] => ZENTRALE:0
+                                            [lang] => default
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [label] => 
+                                            [name] => color
+                                            [value] => Black
+                                            [lang] => 0
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_model_info
+                                            [value] => 40
+                                            [lang] => 0
+                                        )
+
+                                    [3] => Array
+                                        (
+                                            [label] => 
+                                            [name] => bestellnummer
+                                            [value] => block-bootie-mid-violet
+                                            [lang] => default
+                                        )
+
+                                )
+
+                            [categories] => Array
+                                (
+                                    [0] => 7
+                                    [1] => 1
+                                )
+
+                            [images] => Array
+                                (
+                                )
+
+                        )
+
+                    [4] => Array
+                        (
+                            [variant_id] => 88
+                            [variant_art_no] => 2112017580104
+                            [name] => Block Bootie Mid 36 
+                            [price] => 196.00
+                            [price_reduced] => 
+                            [price_reduced_type] => 
+                            [baseprice_unit] => 
+                            [baseprice_volume] => 
+                            [stock] => 1000.00
+                            [available] => 1
+                            [isbn] => 
+                            [ean] => 2112017580104
+                            [mpn] => 
+                            [attributes] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_quantity_shops
+                                            [value] => ZENTRALE:0
+                                            [lang] => default
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [label] => 
+                                            [name] => color
+                                            [value] => Violet
+                                            [lang] => 0
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_model_info
+                                            [value] => 36
+                                            [lang] => 0
+                                        )
+
+                                    [3] => Array
+                                        (
+                                            [label] => 
+                                            [name] => bestellnummer
+                                            [value] => block-bootie-mid-violet
+                                            [lang] => default
+                                        )
+
+                                )
+
+                            [categories] => Array
+                                (
+                                    [0] => 7
+                                    [1] => 1
+                                )
+
+                            [images] => Array
+                                (
+                                )
+
+                        )
+
+                    [5] => Array
+                        (
+                            [variant_id] => 89
+                            [variant_art_no] => 2112017580203
+                            [name] => Block Bootie Mid 37 
+                            [price] => 196.00
+                            [price_reduced] => 
+                            [price_reduced_type] => 
+                            [baseprice_unit] => 
+                            [baseprice_volume] => 
+                            [stock] => 0.00
+                            [delivery] => 3
+                            [available] => 1
+                            [isbn] => 
+                            [ean] => 2112017580203
+                            [mpn] => 
+                            [attributes] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_quantity_shops
+                                            [value] => ZENTRALE:0
+                                            [lang] => default
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [label] => 
+                                            [name] => color
+                                            [value] => Violet
+                                            [lang] => 0
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_model_info
+                                            [value] => 37
+                                            [lang] => 0
+                                        )
+
+                                    [3] => Array
+                                        (
+                                            [label] => 
+                                            [name] => bestellnummer
+                                            [value] => block-bootie-mid-violet
+                                            [lang] => default
+                                        )
+
+                                )
+
+                            [categories] => Array
+                                (
+                                    [0] => 7
+                                    [1] => 1
+                                )
+
+                            [images] => Array
+                                (
+                                )
+
+                        )
+
+                    [6] => Array
+                        (
+                            [variant_id] => 90
+                            [variant_art_no] => 2112017580302
+                            [name] => Block Bootie Mid 38 
+                            [price] => 196.00
+                            [price_reduced] => 
+                            [price_reduced_type] => 
+                            [baseprice_unit] => 
+                            [baseprice_volume] => 
+                            [stock] => 1000.00
+                            [available] => 1
+                            [isbn] => 
+                            [ean] => 2112017580302
+                            [mpn] => 
+                            [attributes] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_quantity_shops
+                                            [value] => ZENTRALE:0
+                                            [lang] => default
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [label] => 
+                                            [name] => color
+                                            [value] => Violet
+                                            [lang] => 0
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_model_info
+                                            [value] => 38
+                                            [lang] => 0
+                                        )
+
+                                    [3] => Array
+                                        (
+                                            [label] => 
+                                            [name] => bestellnummer
+                                            [value] => block-bootie-mid-violet
+                                            [lang] => default
+                                        )
+
+                                )
+
+                            [categories] => Array
+                                (
+                                    [0] => 7
+                                    [1] => 1
+                                )
+
+                            [images] => Array
+                                (
+                                )
+
+                        )
+
+                    [7] => Array
+                        (
+                            [variant_id] => 91
+                            [variant_art_no] => 2112017580401
+                            [name] => Block Bootie Mid 39 
+                            [price] => 196.00
+                            [price_reduced] => 
+                            [price_reduced_type] => 
+                            [baseprice_unit] => 
+                            [baseprice_volume] => 
+                            [stock] => 1000.00
+                            [available] => 1
+                            [isbn] => 
+                            [ean] => 2112017580401
+                            [mpn] => 
+                            [attributes] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_quantity_shops
+                                            [value] => ZENTRALE:0
+                                            [lang] => default
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [label] => 
+                                            [name] => color
+                                            [value] => Violet
+                                            [lang] => 0
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_model_info
+                                            [value] => 39
+                                            [lang] => 0
+                                        )
+
+                                    [3] => Array
+                                        (
+                                            [label] => 
+                                            [name] => bestellnummer
+                                            [value] => block-bootie-mid-violet
+                                            [lang] => default
+                                        )
+
+                                )
+
+                            [categories] => Array
+                                (
+                                    [0] => 7
+                                    [1] => 1
+                                )
+
+                            [images] => Array
+                                (
+                                )
+
+                        )
+
+                    [8] => Array
+                        (
+                            [variant_id] => 92
+                            [variant_art_no] => 2112017580500
+                            [name] => Block Bootie Mid 40 
+                            [price] => 196.00
+                            [price_reduced] => 
+                            [price_reduced_type] => 
+                            [baseprice_unit] => 
+                            [baseprice_volume] => 
+                            [stock] => 1000.00
+                            [available] => 1
+                            [isbn] => 
+                            [ean] => 2112017580500
+                            [mpn] => 
+                            [attributes] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_quantity_shops
+                                            [value] => ZENTRALE:0
+                                            [lang] => default
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [label] => 
+                                            [name] => color
+                                            [value] => Violet
+                                            [lang] => 0
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_model_info
+                                            [value] => 40
+                                            [lang] => 0
+                                        )
+
+                                    [3] => Array
+                                        (
+                                            [label] => 
+                                            [name] => bestellnummer
+                                            [value] => block-bootie-mid-violet
+                                            [lang] => default
+                                        )
+
+                                )
+
+                            [categories] => Array
+                                (
+                                    [0] => 7
+                                    [1] => 1
+                                )
+
+                            [images] => Array
+                                (
+                                )
+
+                        )
+
+                    [9] => Array
+                        (
+                            [variant_id] => 93
+                            [variant_art_no] => 2112017580609
+                            [name] => Block Bootie Mid 41 
+                            [price] => 196.00
+                            [price_reduced] => 
+                            [price_reduced_type] => 
+                            [baseprice_unit] => 
+                            [baseprice_volume] => 
+                            [stock] => 0.00
+                            [delivery] => 3
+                            [available] => 1
+                            [isbn] => 
+                            [ean] => 2112017580609
+                            [mpn] => 
+                            [attributes] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_quantity_shops
+                                            [value] => ZENTRALE:0
+                                            [lang] => default
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [label] => 
+                                            [name] => color
+                                            [value] => Violet
+                                            [lang] => 0
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_model_info
+                                            [value] => 41
+                                            [lang] => 0
+                                        )
+
+                                    [3] => Array
+                                        (
+                                            [label] => 
+                                            [name] => bestellnummer
+                                            [value] => block-bootie-mid-violet
+                                            [lang] => default
+                                        )
+
+                                )
+
+                            [categories] => Array
+                                (
+                                    [0] => 7
+                                    [1] => 1
+                                )
+
+                            [images] => Array
+                                (
+                                )
+
+                        )
+
+                    [10] => Array
+                        (
+                            [variant_id] => 3821
+                            [variant_art_no] => 2112024330105
+                            [name] => Block Bootie Mid 35 
+                            [price] => 245.00
+                            [price_reduced] => 
+                            [price_reduced_type] => 
+                            [baseprice_unit] => 
+                            [baseprice_volume] => 
+                            [stock] => 0.00
+                            [delivery] => 3
+                            [available] => 1
+                            [isbn] => 
+                            [ean] => 2112024330105
+                            [mpn] => 
+                            [attributes] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_quantity_shops
+                                            [value] => ZENTRALE:0
+                                            [lang] => default
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [label] => 
+                                            [name] => color
+                                            [value] => DARK BROWN
+                                            [lang] => 0
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_model_info
+                                            [value] => 35
+                                            [lang] => 0
+                                        )
+
+                                    [3] => Array
+                                        (
+                                            [label] => 
+                                            [name] => bestellnummer
+                                            [value] => block-bootie-mid-violet
+                                            [lang] => default
+                                        )
+
+                                )
+
+                            [categories] => Array
+                                (
+                                    [0] => 7
+                                    [1] => 1
+                                )
+
+                            [images] => Array
+                                (
+                                )
+
+                        )
+
+                    [11] => Array
+                        (
+                            [variant_id] => 3822
+                            [variant_art_no] => 2112024330204
+                            [name] => Block Bootie Mid 36 
+                            [price] => 245.00
+                            [price_reduced] => 
+                            [price_reduced_type] => 
+                            [baseprice_unit] => 
+                            [baseprice_volume] => 
+                            [stock] => 0.00
+                            [delivery] => 3
+                            [available] => 1
+                            [isbn] => 
+                            [ean] => 2112024330204
+                            [mpn] => 
+                            [attributes] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_quantity_shops
+                                            [value] => ZENTRALE:0
+                                            [lang] => default
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [label] => 
+                                            [name] => color
+                                            [value] => DARK BROWN
+                                            [lang] => 0
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_model_info
+                                            [value] => 36
+                                            [lang] => 0
+                                        )
+
+                                    [3] => Array
+                                        (
+                                            [label] => 
+                                            [name] => bestellnummer
+                                            [value] => block-bootie-mid-violet
+                                            [lang] => default
+                                        )
+
+                                )
+
+                            [categories] => Array
+                                (
+                                    [0] => 7
+                                    [1] => 1
+                                )
+
+                            [images] => Array
+                                (
+                                )
+
+                        )
+
+                    [12] => Array
+                        (
+                            [variant_id] => 3823
+                            [variant_art_no] => 2112024330303
+                            [name] => Block Bootie Mid 37 
+                            [price] => 245.00
+                            [price_reduced] => 
+                            [price_reduced_type] => 
+                            [baseprice_unit] => 
+                            [baseprice_volume] => 
+                            [stock] => 1000.00
+                            [available] => 1
+                            [isbn] => 
+                            [ean] => 2112024330303
+                            [mpn] => 
+                            [attributes] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_quantity_shops
+                                            [value] => ZENTRALE:0
+                                            [lang] => default
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [label] => 
+                                            [name] => color
+                                            [value] => DARK BROWN
+                                            [lang] => 0
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_model_info
+                                            [value] => 37
+                                            [lang] => 0
+                                        )
+
+                                    [3] => Array
+                                        (
+                                            [label] => 
+                                            [name] => bestellnummer
+                                            [value] => block-bootie-mid-violet
+                                            [lang] => default
+                                        )
+
+                                )
+
+                            [categories] => Array
+                                (
+                                    [0] => 7
+                                    [1] => 1
+                                )
+
+                            [images] => Array
+                                (
+                                )
+
+                        )
+
+                    [13] => Array
+                        (
+                            [variant_id] => 3824
+                            [variant_art_no] => 2112024330402
+                            [name] => Block Bootie Mid 38 
+                            [price] => 245.00
+                            [price_reduced] => 
+                            [price_reduced_type] => 
+                            [baseprice_unit] => 
+                            [baseprice_volume] => 
+                            [stock] => 1000.00
+                            [available] => 1
+                            [isbn] => 
+                            [ean] => 2112024330402
+                            [mpn] => 
+                            [attributes] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_quantity_shops
+                                            [value] => ZENTRALE:0
+                                            [lang] => default
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [label] => 
+                                            [name] => color
+                                            [value] => DARK BROWN
+                                            [lang] => 0
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_model_info
+                                            [value] => 38
+                                            [lang] => 0
+                                        )
+
+                                    [3] => Array
+                                        (
+                                            [label] => 
+                                            [name] => bestellnummer
+                                            [value] => block-bootie-mid-violet
+                                            [lang] => default
+                                        )
+
+                                )
+
+                            [categories] => Array
+                                (
+                                    [0] => 7
+                                    [1] => 1
+                                )
+
+                            [images] => Array
+                                (
+                                )
+
+                        )
+
+                    [14] => Array
+                        (
+                            [variant_id] => 3825
+                            [variant_art_no] => 2112024330501
+                            [name] => Block Bootie Mid 39 
+                            [price] => 245.00
+                            [price_reduced] => 
+                            [price_reduced_type] => 
+                            [baseprice_unit] => 
+                            [baseprice_volume] => 
+                            [stock] => 0.00
+                            [delivery] => 3
+                            [available] => 1
+                            [isbn] => 
+                            [ean] => 2112024330501
+                            [mpn] => 
+                            [attributes] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_quantity_shops
+                                            [value] => ZENTRALE:0
+                                            [lang] => default
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [label] => 
+                                            [name] => color
+                                            [value] => DARK BROWN
+                                            [lang] => 0
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_model_info
+                                            [value] => 39
+                                            [lang] => 0
+                                        )
+
+                                    [3] => Array
+                                        (
+                                            [label] => 
+                                            [name] => bestellnummer
+                                            [value] => block-bootie-mid-violet
+                                            [lang] => default
+                                        )
+
+                                )
+
+                            [categories] => Array
+                                (
+                                    [0] => 7
+                                    [1] => 1
+                                )
+
+                            [images] => Array
+                                (
+                                )
+
+                        )
+
+                    [15] => Array
+                        (
+                            [variant_id] => 3826
+                            [variant_art_no] => 2112024330600
+                            [name] => Block Bootie Mid 40 
+                            [price] => 245.00
+                            [price_reduced] => 
+                            [price_reduced_type] => 
+                            [baseprice_unit] => 
+                            [baseprice_volume] => 
+                            [stock] => 1000.00
+                            [available] => 1
+                            [isbn] => 
+                            [ean] => 2112024330600
+                            [mpn] => 
+                            [attributes] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_quantity_shops
+                                            [value] => ZENTRALE:0
+                                            [lang] => default
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [label] => 
+                                            [name] => color
+                                            [value] => DARK BROWN
+                                            [lang] => 0
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_model_info
+                                            [value] => 40
+                                            [lang] => 0
+                                        )
+
+                                    [3] => Array
+                                        (
+                                            [label] => 
+                                            [name] => bestellnummer
+                                            [value] => block-bootie-mid-violet
+                                            [lang] => default
+                                        )
+
+                                )
+
+                            [categories] => Array
+                                (
+                                    [0] => 7
+                                    [1] => 1
+                                )
+
+                            [images] => Array
+                                (
+                                )
+
+                        )
+
+                    [16] => Array
+                        (
+                            [variant_id] => 3827
+                            [variant_art_no] => 2112024330709
+                            [name] => Block Bootie Mid 41 
+                            [price] => 245.00
+                            [price_reduced] => 
+                            [price_reduced_type] => 
+                            [baseprice_unit] => 
+                            [baseprice_volume] => 
+                            [stock] => 1000.00
+                            [available] => 1
+                            [isbn] => 
+                            [ean] => 2112024330709
+                            [mpn] => 
+                            [attributes] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_quantity_shops
+                                            [value] => ZENTRALE:0
+                                            [lang] => default
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [label] => 
+                                            [name] => color
+                                            [value] => DARK BROWN
+                                            [lang] => 0
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_model_info
+                                            [value] => 41
+                                            [lang] => 0
+                                        )
+
+                                    [3] => Array
+                                        (
+                                            [label] => 
+                                            [name] => bestellnummer
+                                            [value] => block-bootie-mid-violet
+                                            [lang] => default
+                                        )
+
+                                )
+
+                            [categories] => Array
+                                (
+                                    [0] => 7
+                                    [1] => 1
+                                )
+
+                            [images] => Array
+                                (
+                                )
+
+                        )
+
+                    [17] => Array
+                        (
+                            [variant_id] => 3828
+                            [variant_art_no] => 2112024330808
+                            [name] => Block Bootie Mid 42 
+                            [price] => 245.00
+                            [price_reduced] => 
+                            [price_reduced_type] => 
+                            [baseprice_unit] => 
+                            [baseprice_volume] => 
+                            [stock] => 0.00
+                            [delivery] => 3
+                            [available] => 1
+                            [isbn] => 
+                            [ean] => 2112024330808
+                            [mpn] => 
+                            [attributes] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_quantity_shops
+                                            [value] => ZENTRALE:0
+                                            [lang] => default
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [label] => 
+                                            [name] => color
+                                            [value] => DARK BROWN
+                                            [lang] => 0
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_model_info
+                                            [value] => 42
+                                            [lang] => 0
+                                        )
+
+                                    [3] => Array
+                                        (
+                                            [label] => 
+                                            [name] => bestellnummer
+                                            [value] => block-bootie-mid-violet
+                                            [lang] => default
+                                        )
+
+                                )
+
+                            [categories] => Array
+                                (
+                                    [0] => 7
+                                    [1] => 1
+                                )
+
+                            [images] => Array
+                                (
+                                )
+
+                        )
+
+                    [18] => Array
+                        (
+                            [variant_id] => 3829
+                            [variant_art_no] => 2110000024345
+                            [name] => Block Bootie Mid 
+                            [price] => 245.00
+                            [price_reduced] => 
+                            [price_reduced_type] => 
+                            [baseprice_unit] => 
+                            [baseprice_volume] => 
+                            [stock] => 0.00
+                            [delivery] => 3
+                            [available] => 1
+                            [isbn] => 
+                            [ean] => 2110000024345
+                            [mpn] => 
+                            [attributes] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_quantity_shops
+                                            [value] => ZENTRALE:0
+                                            [lang] => default
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [label] => 
+                                            [name] => color
+                                            [value] => DARK BROWN
+                                            [lang] => 0
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [label] => 
+                                            [name] => bestellnummer
+                                            [value] => block-bootie-mid-violet
+                                            [lang] => default
+                                        )
+
+                                )
+
+                            [categories] => Array
+                                (
+                                    [0] => 7
+                                    [1] => 1
+                                )
+
+                            [images] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [1] => Array
+        (
+            [product_id] => 3482
+            [product_art_no] => 2112023780000
+            [name] => Swan Mid
+            [price] => 132.00
+            [price_reduced] => 
+            [price_reduced_type] => 
+            [shipping_group] => 
+            [available] => 1
+            [producer] => United Nude
+            [stock_policy] => 
+            [stock] => 23.00
+            [delivery] => 3
+            [min_order_qty] => 
+            [staggering] => 
+            [baseprice_unit] => 
+            [baseprice_volume] => 
+            [tax] => 12
+            [homepage] => 0
+            [connect] => 
+            [ean] => 2112023780000
+            [isbn] => 
+            [mpn] => 
+            [inci] => 
+            [description] => UNITED NUDE
+            [comment] => 
+            [cross_selling_title] => Swan Mid
+            [shop_category_id] => 
+            [rakuten_category_id] => 
+            [categories] => Array
+                (
+                    [0] => 7
+                    [1] => 1
+                )
+
+            [images] => Array
+                (
+                    [0] => +1178_1_ballonmuetze_lack_seeberger.jpg
+                    [1] => +1178_2_ballonmuetze_lack_seeberger.jpg
+                    [2] => +1178_3_ballonmuetze_lack_seeberger.jpg
+                )
+
+            [cross_sellings] => Array
+                (
+                    [0] => 
+                )
+
+            [attributes] => Array
+                (
+                    [0] => Array
+                        (
+                            [label] => 
+                            [name] => products_quantity_shops
+                            [value] => ZENTRALE:0
+                            [lang] => default
+                        )
+
+                    [1] => Array
+                        (
+                            [label] => 
+                            [name] => color
+                            [value] => Dark Brown
+                            [lang] => 0
+                        )
+
+                    [2] => Array
+                        (
+                            [label] => 
+                            [name] => bestellnummer
+                            [value] => swan-mid-brown
+                            [lang] => default
+                        )
+
+                )
+
+            [variants] => Array
+                (
+                    [0] => Array
+                        (
+                            [variant_id] => 3470
+                            [variant_art_no] => 2112023760101
+                            [name] => Swan Mid 35 
+                            [price] => 132.00
+                            [price_reduced] => 
+                            [price_reduced_type] => 
+                            [baseprice_unit] => 
+                            [baseprice_volume] => 
+                            [stock] => 1000.00
+                            [available] => 1
+                            [isbn] => 
+                            [ean] => 2112023760101
+                            [mpn] => 
+                            [attributes] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_quantity_shops
+                                            [value] => ZENTRALE:0
+                                            [lang] => default
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [label] => 
+                                            [name] => color
+                                            [value] => Black + Bright Mix
+                                            [lang] => 0
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_model_info
+                                            [value] => 35
+                                            [lang] => 0
+                                        )
+
+                                    [3] => Array
+                                        (
+                                            [label] => 
+                                            [name] => bestellnummer
+                                            [value] => swan-mid-brown
+                                            [lang] => default
+                                        )
+
+                                )
+
+                            [categories] => Array
+                                (
+                                    [0] => 7
+                                    [1] => 1
+                                )
+
+                            [images] => Array
+                                (
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [variant_id] => 3471
+                            [variant_art_no] => 2112023760200
+                            [name] => Swan Mid 36 
+                            [price] => 132.00
+                            [price_reduced] => 
+                            [price_reduced_type] => 
+                            [baseprice_unit] => 
+                            [baseprice_volume] => 
+                            [stock] => 1000.00
+                            [available] => 1
+                            [isbn] => 
+                            [ean] => 2112023760200
+                            [mpn] => 
+                            [attributes] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_quantity_shops
+                                            [value] => ZENTRALE:0
+                                            [lang] => default
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [label] => 
+                                            [name] => color
+                                            [value] => Black + Bright Mix
+                                            [lang] => 0
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_model_info
+                                            [value] => 36
+                                            [lang] => 0
+                                        )
+
+                                    [3] => Array
+                                        (
+                                            [label] => 
+                                            [name] => bestellnummer
+                                            [value] => swan-mid-brown
+                                            [lang] => default
+                                        )
+
+                                )
+
+                            [categories] => Array
+                                (
+                                    [0] => 7
+                                    [1] => 1
+                                )
+
+                            [images] => Array
+                                (
+                                )
+
+                        )
+
+                    [2] => Array
+                        (
+                            [variant_id] => 3472
+                            [variant_art_no] => 2112023760309
+                            [name] => Swan Mid 37 
+                            [price] => 132.00
+                            [price_reduced] => 
+                            [price_reduced_type] => 
+                            [baseprice_unit] => 
+                            [baseprice_volume] => 
+                            [stock] => 1000.00
+                            [available] => 1
+                            [isbn] => 
+                            [ean] => 2112023760309
+                            [mpn] => 
+                            [attributes] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_quantity_shops
+                                            [value] => ZENTRALE:0
+                                            [lang] => default
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [label] => 
+                                            [name] => color
+                                            [value] => Black + Bright Mix
+                                            [lang] => 0
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_model_info
+                                            [value] => 37
+                                            [lang] => 0
+                                        )
+
+                                    [3] => Array
+                                        (
+                                            [label] => 
+                                            [name] => bestellnummer
+                                            [value] => swan-mid-brown
+                                            [lang] => default
+                                        )
+
+                                )
+
+                            [categories] => Array
+                                (
+                                    [0] => 7
+                                    [1] => 1
+                                )
+
+                            [images] => Array
+                                (
+                                )
+
+                        )
+
+                    [3] => Array
+                        (
+                            [variant_id] => 3473
+                            [variant_art_no] => 2112023760408
+                            [name] => Swan Mid 38 
+                            [price] => 132.00
+                            [price_reduced] => 
+                            [price_reduced_type] => 
+                            [baseprice_unit] => 
+                            [baseprice_volume] => 
+                            [stock] => 1000.00
+                            [available] => 1
+                            [isbn] => 
+                            [ean] => 2112023760408
+                            [mpn] => 
+                            [attributes] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_quantity_shops
+                                            [value] => ZENTRALE:0
+                                            [lang] => default
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [label] => 
+                                            [name] => color
+                                            [value] => Black + Bright Mix
+                                            [lang] => 0
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_model_info
+                                            [value] => 38
+                                            [lang] => 0
+                                        )
+
+                                    [3] => Array
+                                        (
+                                            [label] => 
+                                            [name] => bestellnummer
+                                            [value] => swan-mid-brown
+                                            [lang] => default
+                                        )
+
+                                )
+
+                            [categories] => Array
+                                (
+                                    [0] => 7
+                                    [1] => 1
+                                )
+
+                            [images] => Array
+                                (
+                                )
+
+                        )
+
+                    [4] => Array
+                        (
+                            [variant_id] => 3474
+                            [variant_art_no] => 2112023760507
+                            [name] => Swan Mid 39 
+                            [price] => 132.00
+                            [price_reduced] => 
+                            [price_reduced_type] => 
+                            [baseprice_unit] => 
+                            [baseprice_volume] => 
+                            [stock] => 0.00
+                            [delivery] => 3
+                            [available] => 1
+                            [isbn] => 
+                            [ean] => 2112023760507
+                            [mpn] => 
+                            [attributes] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_quantity_shops
+                                            [value] => ZENTRALE:0
+                                            [lang] => default
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [label] => 
+                                            [name] => color
+                                            [value] => Black + Bright Mix
+                                            [lang] => 0
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_model_info
+                                            [value] => 39
+                                            [lang] => 0
+                                        )
+
+                                    [3] => Array
+                                        (
+                                            [label] => 
+                                            [name] => bestellnummer
+                                            [value] => swan-mid-brown
+                                            [lang] => default
+                                        )
+
+                                )
+
+                            [categories] => Array
+                                (
+                                    [0] => 7
+                                    [1] => 1
+                                )
+
+                            [images] => Array
+                                (
+                                )
+
+                        )
+
+                    [5] => Array
+                        (
+                            [variant_id] => 3475
+                            [variant_art_no] => 2112023760606
+                            [name] => Swan Mid 40 
+                            [price] => 132.00
+                            [price_reduced] => 
+                            [price_reduced_type] => 
+                            [baseprice_unit] => 
+                            [baseprice_volume] => 
+                            [stock] => 1000.00
+                            [available] => 1
+                            [isbn] => 
+                            [ean] => 2112023760606
+                            [mpn] => 
+                            [attributes] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_quantity_shops
+                                            [value] => ZENTRALE:0
+                                            [lang] => default
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [label] => 
+                                            [name] => color
+                                            [value] => Black + Bright Mix
+                                            [lang] => 0
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_model_info
+                                            [value] => 40
+                                            [lang] => 0
+                                        )
+
+                                    [3] => Array
+                                        (
+                                            [label] => 
+                                            [name] => bestellnummer
+                                            [value] => swan-mid-brown
+                                            [lang] => default
+                                        )
+
+                                )
+
+                            [categories] => Array
+                                (
+                                    [0] => 7
+                                    [1] => 1
+                                )
+
+                            [images] => Array
+                                (
+                                )
+
+                        )
+
+                    [6] => Array
+                        (
+                            [variant_id] => 3477
+                            [variant_art_no] => 2112023770100
+                            [name] => Swan Mid 37 
+                            [price] => 132.00
+                            [price_reduced] => 
+                            [price_reduced_type] => 
+                            [baseprice_unit] => 
+                            [baseprice_volume] => 
+                            [stock] => 1000.00
+                            [available] => 1
+                            [isbn] => 
+                            [ean] => 2112023770100
+                            [mpn] => 
+                            [attributes] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_quantity_shops
+                                            [value] => ZENTRALE:0
+                                            [lang] => default
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [label] => 
+                                            [name] => color
+                                            [value] => Black + Dark Fog
+                                            [lang] => 0
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_model_info
+                                            [value] => 37
+                                            [lang] => 0
+                                        )
+
+                                    [3] => Array
+                                        (
+                                            [label] => 
+                                            [name] => bestellnummer
+                                            [value] => swan-mid-brown
+                                            [lang] => default
+                                        )
+
+                                )
+
+                            [categories] => Array
+                                (
+                                    [0] => 7
+                                    [1] => 1
+                                )
+
+                            [images] => Array
+                                (
+                                )
+
+                        )
+
+                    [7] => Array
+                        (
+                            [variant_id] => 3478
+                            [variant_art_no] => 2112023770209
+                            [name] => Swan Mid 38 
+                            [price] => 132.00
+                            [price_reduced] => 
+                            [price_reduced_type] => 
+                            [baseprice_unit] => 
+                            [baseprice_volume] => 
+                            [stock] => 1000.00
+                            [available] => 1
+                            [isbn] => 
+                            [ean] => 2112023770209
+                            [mpn] => 
+                            [attributes] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_quantity_shops
+                                            [value] => ZENTRALE:0
+                                            [lang] => default
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [label] => 
+                                            [name] => color
+                                            [value] => Black + Dark Fog
+                                            [lang] => 0
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_model_info
+                                            [value] => 38
+                                            [lang] => 0
+                                        )
+
+                                    [3] => Array
+                                        (
+                                            [label] => 
+                                            [name] => bestellnummer
+                                            [value] => swan-mid-brown
+                                            [lang] => default
+                                        )
+
+                                )
+
+                            [categories] => Array
+                                (
+                                    [0] => 7
+                                    [1] => 1
+                                )
+
+                            [images] => Array
+                                (
+                                )
+
+                        )
+
+                    [8] => Array
+                        (
+                            [variant_id] => 3479
+                            [variant_art_no] => 2112023770308
+                            [name] => Swan Mid 39 
+                            [price] => 132.00
+                            [price_reduced] => 
+                            [price_reduced_type] => 
+                            [baseprice_unit] => 
+                            [baseprice_volume] => 
+                            [stock] => 0.00
+                            [delivery] => 3
+                            [available] => 1
+                            [isbn] => 
+                            [ean] => 2112023770308
+                            [mpn] => 
+                            [attributes] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_quantity_shops
+                                            [value] => ZENTRALE:0
+                                            [lang] => default
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [label] => 
+                                            [name] => color
+                                            [value] => Black + Dark Fog
+                                            [lang] => 0
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_model_info
+                                            [value] => 39
+                                            [lang] => 0
+                                        )
+
+                                    [3] => Array
+                                        (
+                                            [label] => 
+                                            [name] => bestellnummer
+                                            [value] => swan-mid-brown
+                                            [lang] => default
+                                        )
+
+                                )
+
+                            [categories] => Array
+                                (
+                                    [0] => 7
+                                    [1] => 1
+                                )
+
+                            [images] => Array
+                                (
+                                )
+
+                        )
+
+                    [9] => Array
+                        (
+                            [variant_id] => 3480
+                            [variant_art_no] => 2112023770407
+                            [name] => Swan Mid 40 
+                            [price] => 132.00
+                            [price_reduced] => 
+                            [price_reduced_type] => 
+                            [baseprice_unit] => 
+                            [baseprice_volume] => 
+                            [stock] => 1000.00
+                            [available] => 1
+                            [isbn] => 
+                            [ean] => 2112023770407
+                            [mpn] => 
+                            [attributes] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_quantity_shops
+                                            [value] => ZENTRALE:0
+                                            [lang] => default
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [label] => 
+                                            [name] => color
+                                            [value] => Black + Dark Fog
+                                            [lang] => 0
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_model_info
+                                            [value] => 40
+                                            [lang] => 0
+                                        )
+
+                                    [3] => Array
+                                        (
+                                            [label] => 
+                                            [name] => bestellnummer
+                                            [value] => swan-mid-brown
+                                            [lang] => default
+                                        )
+
+                                )
+
+                            [categories] => Array
+                                (
+                                    [0] => 7
+                                    [1] => 1
+                                )
+
+                            [images] => Array
+                                (
+                                )
+
+                        )
+
+                    [10] => Array
+                        (
+                            [variant_id] => 3481
+                            [variant_art_no] => 2112023770506
+                            [name] => Swan Mid 41 
+                            [price] => 132.00
+                            [price_reduced] => 
+                            [price_reduced_type] => 
+                            [baseprice_unit] => 
+                            [baseprice_volume] => 
+                            [stock] => 0.00
+                            [delivery] => 3
+                            [available] => 1
+                            [isbn] => 
+                            [ean] => 2112023770506
+                            [mpn] => 
+                            [attributes] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_quantity_shops
+                                            [value] => ZENTRALE:0
+                                            [lang] => default
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [label] => 
+                                            [name] => color
+                                            [value] => Black + Dark Fog
+                                            [lang] => 0
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_model_info
+                                            [value] => 41
+                                            [lang] => 0
+                                        )
+
+                                    [3] => Array
+                                        (
+                                            [label] => 
+                                            [name] => bestellnummer
+                                            [value] => swan-mid-brown
+                                            [lang] => default
+                                        )
+
+                                )
+
+                            [categories] => Array
+                                (
+                                    [0] => 7
+                                    [1] => 1
+                                )
+
+                            [images] => Array
+                                (
+                                )
+
+                        )
+
+                    [11] => Array
+                        (
+                            [variant_id] => 3483
+                            [variant_art_no] => 2112023780109
+                            [name] => Swan Mid 37 
+                            [price] => 132.00
+                            [price_reduced] => 
+                            [price_reduced_type] => 
+                            [baseprice_unit] => 
+                            [baseprice_volume] => 
+                            [stock] => 1000.00
+                            [available] => 1
+                            [isbn] => 
+                            [ean] => 2112023780109
+                            [mpn] => 
+                            [attributes] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_quantity_shops
+                                            [value] => ZENTRALE:0
+                                            [lang] => default
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [label] => 
+                                            [name] => color
+                                            [value] => Dark Brown
+                                            [lang] => 0
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_model_info
+                                            [value] => 37
+                                            [lang] => 0
+                                        )
+
+                                    [3] => Array
+                                        (
+                                            [label] => 
+                                            [name] => bestellnummer
+                                            [value] => swan-mid-brown
+                                            [lang] => default
+                                        )
+
+                                )
+
+                            [categories] => Array
+                                (
+                                    [0] => 7
+                                    [1] => 1
+                                )
+
+                            [images] => Array
+                                (
+                                )
+
+                        )
+
+                    [12] => Array
+                        (
+                            [variant_id] => 3484
+                            [variant_art_no] => 2112023780208
+                            [name] => Swan Mid 39 
+                            [price] => 132.00
+                            [price_reduced] => 
+                            [price_reduced_type] => 
+                            [baseprice_unit] => 
+                            [baseprice_volume] => 
+                            [stock] => 0.00
+                            [delivery] => 3
+                            [available] => 1
+                            [isbn] => 
+                            [ean] => 2112023780208
+                            [mpn] => 
+                            [attributes] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_quantity_shops
+                                            [value] => ZENTRALE:0
+                                            [lang] => default
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [label] => 
+                                            [name] => color
+                                            [value] => Dark Brown
+                                            [lang] => 0
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_model_info
+                                            [value] => 39
+                                            [lang] => 0
+                                        )
+
+                                    [3] => Array
+                                        (
+                                            [label] => 
+                                            [name] => bestellnummer
+                                            [value] => swan-mid-brown
+                                            [lang] => default
+                                        )
+
+                                )
+
+                            [categories] => Array
+                                (
+                                    [0] => 7
+                                    [1] => 1
+                                )
+
+                            [images] => Array
+                                (
+                                )
+
+                        )
+
+                    [13] => Array
+                        (
+                            [variant_id] => 3486
+                            [variant_art_no] => 2112023790108
+                            [name] => Swan Mid 36 
+                            [price] => 132.00
+                            [price_reduced] => 
+                            [price_reduced_type] => 
+                            [baseprice_unit] => 
+                            [baseprice_volume] => 
+                            [stock] => 1000.00
+                            [available] => 1
+                            [isbn] => 
+                            [ean] => 2112023790108
+                            [mpn] => 
+                            [attributes] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_quantity_shops
+                                            [value] => ZENTRALE:0
+                                            [lang] => default
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [label] => 
+                                            [name] => color
+                                            [value] => Taupe + Lake
+                                            [lang] => 0
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_model_info
+                                            [value] => 36
+                                            [lang] => 0
+                                        )
+
+                                    [3] => Array
+                                        (
+                                            [label] => 
+                                            [name] => bestellnummer
+                                            [value] => swan-mid-brown
+                                            [lang] => default
+                                        )
+
+                                )
+
+                            [categories] => Array
+                                (
+                                    [0] => 7
+                                    [1] => 1
+                                )
+
+                            [images] => Array
+                                (
+                                )
+
+                        )
+
+                    [14] => Array
+                        (
+                            [variant_id] => 3487
+                            [variant_art_no] => 2112023790207
+                            [name] => Swan Mid 37 
+                            [price] => 132.00
+                            [price_reduced] => 
+                            [price_reduced_type] => 
+                            [baseprice_unit] => 
+                            [baseprice_volume] => 
+                            [stock] => 1000.00
+                            [available] => 1
+                            [isbn] => 
+                            [ean] => 2112023790207
+                            [mpn] => 
+                            [attributes] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_quantity_shops
+                                            [value] => ZENTRALE:0
+                                            [lang] => default
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [label] => 
+                                            [name] => color
+                                            [value] => Taupe + Lake
+                                            [lang] => 0
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_model_info
+                                            [value] => 37
+                                            [lang] => 0
+                                        )
+
+                                    [3] => Array
+                                        (
+                                            [label] => 
+                                            [name] => bestellnummer
+                                            [value] => swan-mid-brown
+                                            [lang] => default
+                                        )
+
+                                )
+
+                            [categories] => Array
+                                (
+                                    [0] => 7
+                                    [1] => 1
+                                )
+
+                            [images] => Array
+                                (
+                                )
+
+                        )
+
+                    [15] => Array
+                        (
+                            [variant_id] => 3488
+                            [variant_art_no] => 2112023790306
+                            [name] => Swan Mid 38 
+                            [price] => 132.00
+                            [price_reduced] => 
+                            [price_reduced_type] => 
+                            [baseprice_unit] => 
+                            [baseprice_volume] => 
+                            [stock] => 1000.00
+                            [available] => 1
+                            [isbn] => 
+                            [ean] => 2112023790306
+                            [mpn] => 
+                            [attributes] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_quantity_shops
+                                            [value] => ZENTRALE:0
+                                            [lang] => default
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [label] => 
+                                            [name] => color
+                                            [value] => Taupe + Lake
+                                            [lang] => 0
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_model_info
+                                            [value] => 38
+                                            [lang] => 0
+                                        )
+
+                                    [3] => Array
+                                        (
+                                            [label] => 
+                                            [name] => bestellnummer
+                                            [value] => swan-mid-brown
+                                            [lang] => default
+                                        )
+
+                                )
+
+                            [categories] => Array
+                                (
+                                    [0] => 7
+                                    [1] => 1
+                                )
+
+                            [images] => Array
+                                (
+                                )
+
+                        )
+
+                    [16] => Array
+                        (
+                            [variant_id] => 3489
+                            [variant_art_no] => 2112023790405
+                            [name] => Swan Mid 39 
+                            [price] => 132.00
+                            [price_reduced] => 
+                            [price_reduced_type] => 
+                            [baseprice_unit] => 
+                            [baseprice_volume] => 
+                            [stock] => 0.00
+                            [delivery] => 3
+                            [available] => 1
+                            [isbn] => 
+                            [ean] => 2112023790405
+                            [mpn] => 
+                            [attributes] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_quantity_shops
+                                            [value] => ZENTRALE:0
+                                            [lang] => default
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [label] => 
+                                            [name] => color
+                                            [value] => Taupe + Lake
+                                            [lang] => 0
+                                        )
+
+                                    [2] => Array
+                                        (
+                                            [label] => 
+                                            [name] => products_model_info
+                                            [value] => 39
+                                            [lang] => 0
+                                        )
+
+                                    [3] => Array
+                                        (
+                                            [label] => 
+                                            [name] => bestellnummer
+                                            [value] => swan-mid-brown
+                                            [lang] => default
+                                        )
+
+                                )
+
+                            [categories] => Array
+                                (
+                                    [0] => 7
+                                    [1] => 1
+                                )
+
+                            [images] => Array
+                                (
+                                )
+
+                        )
+
                 )
 
         )

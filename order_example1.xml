@@ -1,0 +1,1317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root date="15.02.2014, 10:40:07" version="10" delta="1">
+    <products products_id="2113" products_model="2112029390005" products_ean="" products_master_model="" products_master_flag="1" products_bundle_flag="0" products_quantity="25.00" products_shippingtime="2" products_image="" products_price="" products_priceb="" products_regularprice="49.1667" products_status="1" products_visibility="4" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="2113">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Schwarz Natur" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="2113" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON" products_description="&lt;p&gt;Die &lt;strong&gt;Sussex&lt;/strong&gt; von &lt;strong&gt;Stetson&lt;/strong&gt; bietet eine &lt;strong&gt;Kappenform&lt;/strong&gt;, die sich aus der englischen Tradition der &lt;strong&gt;Jagd- oder Reiterkappen&lt;/strong&gt; entwickelt hat. Thermisch geformt wie ein klassischer &lt;strong&gt;Haarfilzhut&lt;/strong&gt;, erhalten Sie eine &lt;strong&gt;Kappe&lt;/strong&gt; wie aus einem Guss! Das Ganze ist dann mit &lt;strong&gt;Fischgr&amp;auml;t Tweed&lt;/strong&gt; &amp;uuml;berzogen. Angenehm ist bei dieser &lt;strong&gt;Kappenform&lt;/strong&gt;, dass Sie viel Freiraum haben, d.h. diese &lt;strong&gt;Kappe&lt;/strong&gt; liegt nicht so sehr am Kopf an. Sie ist sehr leicht und angenehm zu tragen.&lt;/p&gt; &lt;p&gt;Qualit&amp;auml;t: 70 % junge Schafwolle&lt;br /&gt;H&amp;ouml;he: an tiefster Stelle 110mm&lt;br /&gt;Logo: seitlich &lt;strong&gt;STETSON&lt;/strong&gt; Messing&lt;/p&gt;" products_short_description="&lt;p&gt;&lt;strong&gt;Folda Cap&lt;/strong&gt; von &lt;strong&gt;Stetson&lt;/strong&gt; in Fischgr&amp;auml;t Tweed&lt;/p&gt;" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="2113" categories_id="15" />
+    <products_to_categories products_id="2113" categories_id="25" />
+    <products_to_categories products_id="2113" categories_id="61" />
+    <products_to_categories products_id="2113" categories_id="63" />
+    <products_to_categories products_id="2113" categories_id="44" />
+    <products_to_categories products_id="2113" categories_id="49" />
+    <products_to_categories products_id="2113" categories_id="45" />
+    <products_to_categories products_id="2113" categories_id="69" />
+    <products_to_categories products_id="2113" categories_id="90" />
+    <products products_id="2125" products_master_flag="0" products_master_model="2112029390005" products_model="2112029380105" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0" products_image="" products_price="" products_priceb="" products_regularprice="65.8333" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="2125">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value=" Fischgrat Oliv" />
+            <attr name="products_model_info" language_id="0" value="54" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="2125" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON 54 " products_description="" products_short_description="" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="2125" categories_id="15" />
+    <products_to_categories products_id="2125" categories_id="25" />
+    <products_to_categories products_id="2125" categories_id="61" />
+    <products_to_categories products_id="2125" categories_id="63" />
+    <products_to_categories products_id="2125" categories_id="44" />
+    <products_to_categories products_id="2125" categories_id="49" />
+    <products_to_categories products_id="2125" categories_id="45" />
+    <products_to_categories products_id="2125" categories_id="69" />
+    <products_to_categories products_id="2125" categories_id="90" />
+    <products products_id="2126" products_master_flag="0" products_master_model="2112029390005" products_model="2112029380204" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0" products_image="" products_price="" products_priceb="" products_regularprice="65.8333" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="2126">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value=" Fischgrat Oliv" />
+            <attr name="products_model_info" language_id="0" value="55" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="2126" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON 55 " products_description="" products_short_description="" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="2126" categories_id="15" />
+    <products_to_categories products_id="2126" categories_id="25" />
+    <products_to_categories products_id="2126" categories_id="61" />
+    <products_to_categories products_id="2126" categories_id="63" />
+    <products_to_categories products_id="2126" categories_id="44" />
+    <products_to_categories products_id="2126" categories_id="49" />
+    <products_to_categories products_id="2126" categories_id="45" />
+    <products_to_categories products_id="2126" categories_id="69" />
+    <products_to_categories products_id="2126" categories_id="90" />
+    <products products_id="2127" products_master_flag="0" products_master_model="2112029390005" products_model="2112029380303" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0" products_image="" products_price="" products_priceb="" products_regularprice="65.8333" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="2127">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value=" Fischgrat Oliv" />
+            <attr name="products_model_info" language_id="0" value="56" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="2127" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON 56 " products_description="" products_short_description="" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="2127" categories_id="15" />
+    <products_to_categories products_id="2127" categories_id="25" />
+    <products_to_categories products_id="2127" categories_id="61" />
+    <products_to_categories products_id="2127" categories_id="63" />
+    <products_to_categories products_id="2127" categories_id="44" />
+    <products_to_categories products_id="2127" categories_id="49" />
+    <products_to_categories products_id="2127" categories_id="45" />
+    <products_to_categories products_id="2127" categories_id="69" />
+    <products_to_categories products_id="2127" categories_id="90" />
+    <products products_id="2128" products_master_flag="0" products_master_model="2112029390005" products_model="2112029380402" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0" products_image="" products_price="" products_priceb="" products_regularprice="65.8333" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="2128">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value=" Fischgrat Oliv" />
+            <attr name="products_model_info" language_id="0" value="57" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="2128" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON 57 " products_description="" products_short_description="" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="2128" categories_id="15" />
+    <products_to_categories products_id="2128" categories_id="25" />
+    <products_to_categories products_id="2128" categories_id="61" />
+    <products_to_categories products_id="2128" categories_id="63" />
+    <products_to_categories products_id="2128" categories_id="44" />
+    <products_to_categories products_id="2128" categories_id="49" />
+    <products_to_categories products_id="2128" categories_id="45" />
+    <products_to_categories products_id="2128" categories_id="69" />
+    <products_to_categories products_id="2128" categories_id="90" />
+    <products products_id="2129" products_master_flag="0" products_master_model="2112029390005" products_model="2112029380501" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0" products_image="" products_price="" products_priceb="" products_regularprice="65.8333" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="2129">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value=" Fischgrat Oliv" />
+            <attr name="products_model_info" language_id="0" value="58" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="2129" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON 58 " products_description="" products_short_description="" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="2129" categories_id="15" />
+    <products_to_categories products_id="2129" categories_id="25" />
+    <products_to_categories products_id="2129" categories_id="61" />
+    <products_to_categories products_id="2129" categories_id="63" />
+    <products_to_categories products_id="2129" categories_id="44" />
+    <products_to_categories products_id="2129" categories_id="49" />
+    <products_to_categories products_id="2129" categories_id="45" />
+    <products_to_categories products_id="2129" categories_id="69" />
+    <products_to_categories products_id="2129" categories_id="90" />
+    <products products_id="2130" products_master_flag="0" products_master_model="2112029390005" products_model="2112029380600" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0" products_image="" products_price="" products_priceb="" products_regularprice="65.8333" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="2130">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value=" Fischgrat Oliv" />
+            <attr name="products_model_info" language_id="0" value="59" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="2130" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON 59 " products_description="" products_short_description="" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="2130" categories_id="15" />
+    <products_to_categories products_id="2130" categories_id="25" />
+    <products_to_categories products_id="2130" categories_id="61" />
+    <products_to_categories products_id="2130" categories_id="63" />
+    <products_to_categories products_id="2130" categories_id="44" />
+    <products_to_categories products_id="2130" categories_id="49" />
+    <products_to_categories products_id="2130" categories_id="45" />
+    <products_to_categories products_id="2130" categories_id="69" />
+    <products_to_categories products_id="2130" categories_id="90" />
+    <products products_id="2131" products_master_flag="0" products_master_model="2112029390005" products_model="2112029380709" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0" products_image="" products_price="" products_priceb="" products_regularprice="65.8333" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="2131">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value=" Fischgrat Oliv" />
+            <attr name="products_model_info" language_id="0" value="60" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="2131" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON 60 " products_description="" products_short_description="" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="2131" categories_id="15" />
+    <products_to_categories products_id="2131" categories_id="25" />
+    <products_to_categories products_id="2131" categories_id="61" />
+    <products_to_categories products_id="2131" categories_id="63" />
+    <products_to_categories products_id="2131" categories_id="44" />
+    <products_to_categories products_id="2131" categories_id="49" />
+    <products_to_categories products_id="2131" categories_id="45" />
+    <products_to_categories products_id="2131" categories_id="69" />
+    <products_to_categories products_id="2131" categories_id="90" />
+    <products products_id="2132" products_master_flag="0" products_master_model="2112029390005" products_model="2112029380808" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0" products_image="" products_price="" products_priceb="" products_regularprice="65.8333" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="2132">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value=" Fischgrat Oliv" />
+            <attr name="products_model_info" language_id="0" value="61" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="2132" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON 61 " products_description="" products_short_description="" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="2132" categories_id="15" />
+    <products_to_categories products_id="2132" categories_id="25" />
+    <products_to_categories products_id="2132" categories_id="61" />
+    <products_to_categories products_id="2132" categories_id="63" />
+    <products_to_categories products_id="2132" categories_id="44" />
+    <products_to_categories products_id="2132" categories_id="49" />
+    <products_to_categories products_id="2132" categories_id="45" />
+    <products_to_categories products_id="2132" categories_id="69" />
+    <products_to_categories products_id="2132" categories_id="90" />
+    <products products_id="2133" products_master_flag="0" products_master_model="2112029390005" products_model="2112029380907" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0" products_image="" products_price="" products_priceb="" products_regularprice="65.8333" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="2133">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value=" Fischgrat Oliv" />
+            <attr name="products_model_info" language_id="0" value="62" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="2133" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON 62 " products_description="" products_short_description="" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="2133" categories_id="15" />
+    <products_to_categories products_id="2133" categories_id="25" />
+    <products_to_categories products_id="2133" categories_id="61" />
+    <products_to_categories products_id="2133" categories_id="63" />
+    <products_to_categories products_id="2133" categories_id="44" />
+    <products_to_categories products_id="2133" categories_id="49" />
+    <products_to_categories products_id="2133" categories_id="45" />
+    <products_to_categories products_id="2133" categories_id="69" />
+    <products_to_categories products_id="2133" categories_id="90" />
+    <products products_id="2134" products_master_flag="0" products_master_model="2112029390005" products_model="2112029381003" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0" products_image="" products_price="" products_priceb="" products_regularprice="65.8333" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="2134">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value=" Fischgrat Oliv" />
+            <attr name="products_model_info" language_id="0" value="63" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="2134" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON 63 " products_description="" products_short_description="" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="2134" categories_id="15" />
+    <products_to_categories products_id="2134" categories_id="25" />
+    <products_to_categories products_id="2134" categories_id="61" />
+    <products_to_categories products_id="2134" categories_id="63" />
+    <products_to_categories products_id="2134" categories_id="44" />
+    <products_to_categories products_id="2134" categories_id="49" />
+    <products_to_categories products_id="2134" categories_id="45" />
+    <products_to_categories products_id="2134" categories_id="69" />
+    <products_to_categories products_id="2134" categories_id="90" />
+    <products products_id="2114" products_master_flag="0" products_master_model="2112029390005" products_model="2112029390104" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0" products_image="" products_price="" products_priceb="" products_regularprice="49.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="2114">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Schwarz Natur" />
+            <attr name="products_model_info" language_id="0" value="54" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="2114" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON 54 " products_description="&lt;p&gt;Die &lt;strong&gt;Sussex&lt;/strong&gt; von &lt;strong&gt;Stetson&lt;/strong&gt; bietet eine &lt;strong&gt;Kappenform&lt;/strong&gt;, die sich aus der englischen Tradition der &lt;strong&gt;Jagd- oder Reiterkappen&lt;/strong&gt; entwickelt hat. Thermisch geformt wie ein klassischer &lt;strong&gt;Haarfilzhut&lt;/strong&gt;, erhalten Sie eine &lt;strong&gt;Kappe&lt;/strong&gt; wie aus einem Guss! Das Ganze ist dann mit &lt;strong&gt;Fischgr&amp;auml;t Tweed&lt;/strong&gt; &amp;uuml;berzogen. Angenehm ist bei dieser &lt;strong&gt;Kappenform&lt;/strong&gt;, dass Sie viel Freiraum haben, d.h. diese &lt;strong&gt;Kappe&lt;/strong&gt; liegt nicht so sehr am Kopf an. Sie ist sehr leicht und angenehm zu tragen.&lt;/p&gt; &lt;p&gt;Qualit&amp;auml;t: 70 % junge Schafwolle&lt;br /&gt;H&amp;ouml;he: an tiefster Stelle 110mm&lt;br /&gt;Logo: seitlich &lt;strong&gt;STETSON&lt;/strong&gt; Messing&lt;/p&gt;" products_short_description="&lt;p&gt;&lt;strong&gt;Folda Cap&lt;/strong&gt; von &lt;strong&gt;Stetson&lt;/strong&gt; in Fischgr&amp;auml;t Tweed&lt;/p&gt;" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="2114" categories_id="15" />
+    <products_to_categories products_id="2114" categories_id="25" />
+    <products_to_categories products_id="2114" categories_id="61" />
+    <products_to_categories products_id="2114" categories_id="63" />
+    <products_to_categories products_id="2114" categories_id="44" />
+    <products_to_categories products_id="2114" categories_id="49" />
+    <products_to_categories products_id="2114" categories_id="45" />
+    <products_to_categories products_id="2114" categories_id="69" />
+    <products_to_categories products_id="2114" categories_id="90" />
+    <products products_id="2115" products_master_flag="0" products_master_model="2112029390005" products_model="2112029390203" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0" products_image="" products_price="" products_priceb="" products_regularprice="49.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="2115">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Schwarz Natur" />
+            <attr name="products_model_info" language_id="0" value="55" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="2115" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON 55 " products_description="&lt;p&gt;Die &lt;strong&gt;Sussex&lt;/strong&gt; von &lt;strong&gt;Stetson&lt;/strong&gt; bietet eine &lt;strong&gt;Kappenform&lt;/strong&gt;, die sich aus der englischen Tradition der &lt;strong&gt;Jagd- oder Reiterkappen&lt;/strong&gt; entwickelt hat. Thermisch geformt wie ein klassischer &lt;strong&gt;Haarfilzhut&lt;/strong&gt;, erhalten Sie eine &lt;strong&gt;Kappe&lt;/strong&gt; wie aus einem Guss! Das Ganze ist dann mit &lt;strong&gt;Fischgr&amp;auml;t Tweed&lt;/strong&gt; &amp;uuml;berzogen. Angenehm ist bei dieser &lt;strong&gt;Kappenform&lt;/strong&gt;, dass Sie viel Freiraum haben, d.h. diese &lt;strong&gt;Kappe&lt;/strong&gt; liegt nicht so sehr am Kopf an. Sie ist sehr leicht und angenehm zu tragen.&lt;/p&gt; &lt;p&gt;Qualit&amp;auml;t: 70 % junge Schafwolle&lt;br /&gt;H&amp;ouml;he: an tiefster Stelle 110mm&lt;br /&gt;Logo: seitlich &lt;strong&gt;STETSON&lt;/strong&gt; Messing&lt;/p&gt;" products_short_description="&lt;p&gt;&lt;strong&gt;Folda Cap&lt;/strong&gt; von &lt;strong&gt;Stetson&lt;/strong&gt; in Fischgr&amp;auml;t Tweed&lt;/p&gt;" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="2115" categories_id="15" />
+    <products_to_categories products_id="2115" categories_id="25" />
+    <products_to_categories products_id="2115" categories_id="61" />
+    <products_to_categories products_id="2115" categories_id="63" />
+    <products_to_categories products_id="2115" categories_id="44" />
+    <products_to_categories products_id="2115" categories_id="49" />
+    <products_to_categories products_id="2115" categories_id="45" />
+    <products_to_categories products_id="2115" categories_id="69" />
+    <products_to_categories products_id="2115" categories_id="90" />
+    <products products_id="2116" products_master_flag="0" products_master_model="2112029390005" products_model="2112029390302" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0" products_image="" products_price="" products_priceb="" products_regularprice="49.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="2116">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Schwarz Natur" />
+            <attr name="products_model_info" language_id="0" value="56" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="2116" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON 56 " products_description="&lt;p&gt;Die &lt;strong&gt;Sussex&lt;/strong&gt; von &lt;strong&gt;Stetson&lt;/strong&gt; bietet eine &lt;strong&gt;Kappenform&lt;/strong&gt;, die sich aus der englischen Tradition der &lt;strong&gt;Jagd- oder Reiterkappen&lt;/strong&gt; entwickelt hat. Thermisch geformt wie ein klassischer &lt;strong&gt;Haarfilzhut&lt;/strong&gt;, erhalten Sie eine &lt;strong&gt;Kappe&lt;/strong&gt; wie aus einem Guss! Das Ganze ist dann mit &lt;strong&gt;Fischgr&amp;auml;t Tweed&lt;/strong&gt; &amp;uuml;berzogen. Angenehm ist bei dieser &lt;strong&gt;Kappenform&lt;/strong&gt;, dass Sie viel Freiraum haben, d.h. diese &lt;strong&gt;Kappe&lt;/strong&gt; liegt nicht so sehr am Kopf an. Sie ist sehr leicht und angenehm zu tragen.&lt;/p&gt; &lt;p&gt;Qualit&amp;auml;t: 70 % junge Schafwolle&lt;br /&gt;H&amp;ouml;he: an tiefster Stelle 110mm&lt;br /&gt;Logo: seitlich &lt;strong&gt;STETSON&lt;/strong&gt; Messing&lt;/p&gt;" products_short_description="&lt;p&gt;&lt;strong&gt;Folda Cap&lt;/strong&gt; von &lt;strong&gt;Stetson&lt;/strong&gt; in Fischgr&amp;auml;t Tweed&lt;/p&gt;" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="2116" categories_id="15" />
+    <products_to_categories products_id="2116" categories_id="25" />
+    <products_to_categories products_id="2116" categories_id="61" />
+    <products_to_categories products_id="2116" categories_id="63" />
+    <products_to_categories products_id="2116" categories_id="44" />
+    <products_to_categories products_id="2116" categories_id="49" />
+    <products_to_categories products_id="2116" categories_id="45" />
+    <products_to_categories products_id="2116" categories_id="69" />
+    <products_to_categories products_id="2116" categories_id="90" />
+    <products products_id="2117" products_master_flag="0" products_master_model="2112029390005" products_model="2112029390401" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0" products_image="" products_price="" products_priceb="" products_regularprice="49.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="2117">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Schwarz Natur" />
+            <attr name="products_model_info" language_id="0" value="57" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="2117" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON 57 " products_description="&lt;p&gt;Die &lt;strong&gt;Sussex&lt;/strong&gt; von &lt;strong&gt;Stetson&lt;/strong&gt; bietet eine &lt;strong&gt;Kappenform&lt;/strong&gt;, die sich aus der englischen Tradition der &lt;strong&gt;Jagd- oder Reiterkappen&lt;/strong&gt; entwickelt hat. Thermisch geformt wie ein klassischer &lt;strong&gt;Haarfilzhut&lt;/strong&gt;, erhalten Sie eine &lt;strong&gt;Kappe&lt;/strong&gt; wie aus einem Guss! Das Ganze ist dann mit &lt;strong&gt;Fischgr&amp;auml;t Tweed&lt;/strong&gt; &amp;uuml;berzogen. Angenehm ist bei dieser &lt;strong&gt;Kappenform&lt;/strong&gt;, dass Sie viel Freiraum haben, d.h. diese &lt;strong&gt;Kappe&lt;/strong&gt; liegt nicht so sehr am Kopf an. Sie ist sehr leicht und angenehm zu tragen.&lt;/p&gt; &lt;p&gt;Qualit&amp;auml;t: 70 % junge Schafwolle&lt;br /&gt;H&amp;ouml;he: an tiefster Stelle 110mm&lt;br /&gt;Logo: seitlich &lt;strong&gt;STETSON&lt;/strong&gt; Messing&lt;/p&gt;" products_short_description="&lt;p&gt;&lt;strong&gt;Folda Cap&lt;/strong&gt; von &lt;strong&gt;Stetson&lt;/strong&gt; in Fischgr&amp;auml;t Tweed&lt;/p&gt;" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="2117" categories_id="15" />
+    <products_to_categories products_id="2117" categories_id="25" />
+    <products_to_categories products_id="2117" categories_id="61" />
+    <products_to_categories products_id="2117" categories_id="63" />
+    <products_to_categories products_id="2117" categories_id="44" />
+    <products_to_categories products_id="2117" categories_id="49" />
+    <products_to_categories products_id="2117" categories_id="45" />
+    <products_to_categories products_id="2117" categories_id="69" />
+    <products_to_categories products_id="2117" categories_id="90" />
+    <products products_id="2118" products_master_flag="0" products_master_model="2112029390005" products_model="2112029390500" products_ean="" products_quantity="1000.00" products_shippingtime="1" products_quantity_shops="WEBSHOP:0;SCS:1;GM:1" products_image="" products_price="" products_priceb="" products_regularprice="49.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="2118">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Schwarz Natur" />
+            <attr name="products_model_info" language_id="0" value="58" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="2118" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON 58 " products_description="&lt;p&gt;Die &lt;strong&gt;Sussex&lt;/strong&gt; von &lt;strong&gt;Stetson&lt;/strong&gt; bietet eine &lt;strong&gt;Kappenform&lt;/strong&gt;, die sich aus der englischen Tradition der &lt;strong&gt;Jagd- oder Reiterkappen&lt;/strong&gt; entwickelt hat. Thermisch geformt wie ein klassischer &lt;strong&gt;Haarfilzhut&lt;/strong&gt;, erhalten Sie eine &lt;strong&gt;Kappe&lt;/strong&gt; wie aus einem Guss! Das Ganze ist dann mit &lt;strong&gt;Fischgr&amp;auml;t Tweed&lt;/strong&gt; &amp;uuml;berzogen. Angenehm ist bei dieser &lt;strong&gt;Kappenform&lt;/strong&gt;, dass Sie viel Freiraum haben, d.h. diese &lt;strong&gt;Kappe&lt;/strong&gt; liegt nicht so sehr am Kopf an. Sie ist sehr leicht und angenehm zu tragen.&lt;/p&gt; &lt;p&gt;Qualit&amp;auml;t: 70 % junge Schafwolle&lt;br /&gt;H&amp;ouml;he: an tiefster Stelle 110mm&lt;br /&gt;Logo: seitlich &lt;strong&gt;STETSON&lt;/strong&gt; Messing&lt;/p&gt;" products_short_description="&lt;p&gt;&lt;strong&gt;Folda Cap&lt;/strong&gt; von &lt;strong&gt;Stetson&lt;/strong&gt; in Fischgr&amp;auml;t Tweed&lt;/p&gt;" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="2118" categories_id="15" />
+    <products_to_categories products_id="2118" categories_id="25" />
+    <products_to_categories products_id="2118" categories_id="61" />
+    <products_to_categories products_id="2118" categories_id="63" />
+    <products_to_categories products_id="2118" categories_id="44" />
+    <products_to_categories products_id="2118" categories_id="49" />
+    <products_to_categories products_id="2118" categories_id="45" />
+    <products_to_categories products_id="2118" categories_id="69" />
+    <products_to_categories products_id="2118" categories_id="90" />
+    <products products_id="2119" products_master_flag="0" products_master_model="2112029390005" products_model="2112029390609" products_ean="" products_quantity="1000.00" products_shippingtime="1" products_quantity_shops="WEBSHOP:0;SCS:1;GM:1" products_image="" products_price="" products_priceb="" products_regularprice="49.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="2119">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Schwarz Natur" />
+            <attr name="products_model_info" language_id="0" value="59" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="2119" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON 59 " products_description="&lt;p&gt;Die &lt;strong&gt;Sussex&lt;/strong&gt; von &lt;strong&gt;Stetson&lt;/strong&gt; bietet eine &lt;strong&gt;Kappenform&lt;/strong&gt;, die sich aus der englischen Tradition der &lt;strong&gt;Jagd- oder Reiterkappen&lt;/strong&gt; entwickelt hat. Thermisch geformt wie ein klassischer &lt;strong&gt;Haarfilzhut&lt;/strong&gt;, erhalten Sie eine &lt;strong&gt;Kappe&lt;/strong&gt; wie aus einem Guss! Das Ganze ist dann mit &lt;strong&gt;Fischgr&amp;auml;t Tweed&lt;/strong&gt; &amp;uuml;berzogen. Angenehm ist bei dieser &lt;strong&gt;Kappenform&lt;/strong&gt;, dass Sie viel Freiraum haben, d.h. diese &lt;strong&gt;Kappe&lt;/strong&gt; liegt nicht so sehr am Kopf an. Sie ist sehr leicht und angenehm zu tragen.&lt;/p&gt; &lt;p&gt;Qualit&amp;auml;t: 70 % junge Schafwolle&lt;br /&gt;H&amp;ouml;he: an tiefster Stelle 110mm&lt;br /&gt;Logo: seitlich &lt;strong&gt;STETSON&lt;/strong&gt; Messing&lt;/p&gt;" products_short_description="&lt;p&gt;&lt;strong&gt;Folda Cap&lt;/strong&gt; von &lt;strong&gt;Stetson&lt;/strong&gt; in Fischgr&amp;auml;t Tweed&lt;/p&gt;" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="2119" categories_id="15" />
+    <products_to_categories products_id="2119" categories_id="25" />
+    <products_to_categories products_id="2119" categories_id="61" />
+    <products_to_categories products_id="2119" categories_id="63" />
+    <products_to_categories products_id="2119" categories_id="44" />
+    <products_to_categories products_id="2119" categories_id="49" />
+    <products_to_categories products_id="2119" categories_id="45" />
+    <products_to_categories products_id="2119" categories_id="69" />
+    <products_to_categories products_id="2119" categories_id="90" />
+    <products products_id="2120" products_master_flag="0" products_master_model="2112029390005" products_model="2112029390708" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0" products_image="" products_price="" products_priceb="" products_regularprice="49.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="2120">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Schwarz Natur" />
+            <attr name="products_model_info" language_id="0" value="60" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="2120" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON 60 " products_description="&lt;p&gt;Die &lt;strong&gt;Sussex&lt;/strong&gt; von &lt;strong&gt;Stetson&lt;/strong&gt; bietet eine &lt;strong&gt;Kappenform&lt;/strong&gt;, die sich aus der englischen Tradition der &lt;strong&gt;Jagd- oder Reiterkappen&lt;/strong&gt; entwickelt hat. Thermisch geformt wie ein klassischer &lt;strong&gt;Haarfilzhut&lt;/strong&gt;, erhalten Sie eine &lt;strong&gt;Kappe&lt;/strong&gt; wie aus einem Guss! Das Ganze ist dann mit &lt;strong&gt;Fischgr&amp;auml;t Tweed&lt;/strong&gt; &amp;uuml;berzogen. Angenehm ist bei dieser &lt;strong&gt;Kappenform&lt;/strong&gt;, dass Sie viel Freiraum haben, d.h. diese &lt;strong&gt;Kappe&lt;/strong&gt; liegt nicht so sehr am Kopf an. Sie ist sehr leicht und angenehm zu tragen.&lt;/p&gt; &lt;p&gt;Qualit&amp;auml;t: 70 % junge Schafwolle&lt;br /&gt;H&amp;ouml;he: an tiefster Stelle 110mm&lt;br /&gt;Logo: seitlich &lt;strong&gt;STETSON&lt;/strong&gt; Messing&lt;/p&gt;" products_short_description="&lt;p&gt;&lt;strong&gt;Folda Cap&lt;/strong&gt; von &lt;strong&gt;Stetson&lt;/strong&gt; in Fischgr&amp;auml;t Tweed&lt;/p&gt;" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="2120" categories_id="15" />
+    <products_to_categories products_id="2120" categories_id="25" />
+    <products_to_categories products_id="2120" categories_id="61" />
+    <products_to_categories products_id="2120" categories_id="63" />
+    <products_to_categories products_id="2120" categories_id="44" />
+    <products_to_categories products_id="2120" categories_id="49" />
+    <products_to_categories products_id="2120" categories_id="45" />
+    <products_to_categories products_id="2120" categories_id="69" />
+    <products_to_categories products_id="2120" categories_id="90" />
+    <products products_id="2121" products_master_flag="0" products_master_model="2112029390005" products_model="2112029390807" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0" products_image="" products_price="" products_priceb="" products_regularprice="49.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="2121">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Schwarz Natur" />
+            <attr name="products_model_info" language_id="0" value="61" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="2121" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON 61 " products_description="&lt;p&gt;Die &lt;strong&gt;Sussex&lt;/strong&gt; von &lt;strong&gt;Stetson&lt;/strong&gt; bietet eine &lt;strong&gt;Kappenform&lt;/strong&gt;, die sich aus der englischen Tradition der &lt;strong&gt;Jagd- oder Reiterkappen&lt;/strong&gt; entwickelt hat. Thermisch geformt wie ein klassischer &lt;strong&gt;Haarfilzhut&lt;/strong&gt;, erhalten Sie eine &lt;strong&gt;Kappe&lt;/strong&gt; wie aus einem Guss! Das Ganze ist dann mit &lt;strong&gt;Fischgr&amp;auml;t Tweed&lt;/strong&gt; &amp;uuml;berzogen. Angenehm ist bei dieser &lt;strong&gt;Kappenform&lt;/strong&gt;, dass Sie viel Freiraum haben, d.h. diese &lt;strong&gt;Kappe&lt;/strong&gt; liegt nicht so sehr am Kopf an. Sie ist sehr leicht und angenehm zu tragen.&lt;/p&gt; &lt;p&gt;Qualit&amp;auml;t: 70 % junge Schafwolle&lt;br /&gt;H&amp;ouml;he: an tiefster Stelle 110mm&lt;br /&gt;Logo: seitlich &lt;strong&gt;STETSON&lt;/strong&gt; Messing&lt;/p&gt;" products_short_description="&lt;p&gt;&lt;strong&gt;Folda Cap&lt;/strong&gt; von &lt;strong&gt;Stetson&lt;/strong&gt; in Fischgr&amp;auml;t Tweed&lt;/p&gt;" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="2121" categories_id="15" />
+    <products_to_categories products_id="2121" categories_id="25" />
+    <products_to_categories products_id="2121" categories_id="61" />
+    <products_to_categories products_id="2121" categories_id="63" />
+    <products_to_categories products_id="2121" categories_id="44" />
+    <products_to_categories products_id="2121" categories_id="49" />
+    <products_to_categories products_id="2121" categories_id="45" />
+    <products_to_categories products_id="2121" categories_id="69" />
+    <products_to_categories products_id="2121" categories_id="90" />
+    <products products_id="2122" products_master_flag="0" products_master_model="2112029390005" products_model="2112029390906" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0" products_image="" products_price="" products_priceb="" products_regularprice="49.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="2122">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Schwarz Natur" />
+            <attr name="products_model_info" language_id="0" value="62" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="2122" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON 62 " products_description="&lt;p&gt;Die &lt;strong&gt;Sussex&lt;/strong&gt; von &lt;strong&gt;Stetson&lt;/strong&gt; bietet eine &lt;strong&gt;Kappenform&lt;/strong&gt;, die sich aus der englischen Tradition der &lt;strong&gt;Jagd- oder Reiterkappen&lt;/strong&gt; entwickelt hat. Thermisch geformt wie ein klassischer &lt;strong&gt;Haarfilzhut&lt;/strong&gt;, erhalten Sie eine &lt;strong&gt;Kappe&lt;/strong&gt; wie aus einem Guss! Das Ganze ist dann mit &lt;strong&gt;Fischgr&amp;auml;t Tweed&lt;/strong&gt; &amp;uuml;berzogen. Angenehm ist bei dieser &lt;strong&gt;Kappenform&lt;/strong&gt;, dass Sie viel Freiraum haben, d.h. diese &lt;strong&gt;Kappe&lt;/strong&gt; liegt nicht so sehr am Kopf an. Sie ist sehr leicht und angenehm zu tragen.&lt;/p&gt; &lt;p&gt;Qualit&amp;auml;t: 70 % junge Schafwolle&lt;br /&gt;H&amp;ouml;he: an tiefster Stelle 110mm&lt;br /&gt;Logo: seitlich &lt;strong&gt;STETSON&lt;/strong&gt; Messing&lt;/p&gt;" products_short_description="&lt;p&gt;&lt;strong&gt;Folda Cap&lt;/strong&gt; von &lt;strong&gt;Stetson&lt;/strong&gt; in Fischgr&amp;auml;t Tweed&lt;/p&gt;" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="2122" categories_id="15" />
+    <products_to_categories products_id="2122" categories_id="25" />
+    <products_to_categories products_id="2122" categories_id="61" />
+    <products_to_categories products_id="2122" categories_id="63" />
+    <products_to_categories products_id="2122" categories_id="44" />
+    <products_to_categories products_id="2122" categories_id="49" />
+    <products_to_categories products_id="2122" categories_id="45" />
+    <products_to_categories products_id="2122" categories_id="69" />
+    <products_to_categories products_id="2122" categories_id="90" />
+    <products products_id="2123" products_master_flag="0" products_master_model="2112029390005" products_model="2112029391002" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0" products_image="" products_price="" products_priceb="" products_regularprice="49.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="2123">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Schwarz Natur" />
+            <attr name="products_model_info" language_id="0" value="63" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="2123" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON 63 " products_description="&lt;p&gt;Die &lt;strong&gt;Sussex&lt;/strong&gt; von &lt;strong&gt;Stetson&lt;/strong&gt; bietet eine &lt;strong&gt;Kappenform&lt;/strong&gt;, die sich aus der englischen Tradition der &lt;strong&gt;Jagd- oder Reiterkappen&lt;/strong&gt; entwickelt hat. Thermisch geformt wie ein klassischer &lt;strong&gt;Haarfilzhut&lt;/strong&gt;, erhalten Sie eine &lt;strong&gt;Kappe&lt;/strong&gt; wie aus einem Guss! Das Ganze ist dann mit &lt;strong&gt;Fischgr&amp;auml;t Tweed&lt;/strong&gt; &amp;uuml;berzogen. Angenehm ist bei dieser &lt;strong&gt;Kappenform&lt;/strong&gt;, dass Sie viel Freiraum haben, d.h. diese &lt;strong&gt;Kappe&lt;/strong&gt; liegt nicht so sehr am Kopf an. Sie ist sehr leicht und angenehm zu tragen.&lt;/p&gt; &lt;p&gt;Qualit&amp;auml;t: 70 % junge Schafwolle&lt;br /&gt;H&amp;ouml;he: an tiefster Stelle 110mm&lt;br /&gt;Logo: seitlich &lt;strong&gt;STETSON&lt;/strong&gt; Messing&lt;/p&gt;" products_short_description="&lt;p&gt;&lt;strong&gt;Folda Cap&lt;/strong&gt; von &lt;strong&gt;Stetson&lt;/strong&gt; in Fischgr&amp;auml;t Tweed&lt;/p&gt;" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="2123" categories_id="15" />
+    <products_to_categories products_id="2123" categories_id="25" />
+    <products_to_categories products_id="2123" categories_id="61" />
+    <products_to_categories products_id="2123" categories_id="63" />
+    <products_to_categories products_id="2123" categories_id="44" />
+    <products_to_categories products_id="2123" categories_id="49" />
+    <products_to_categories products_id="2123" categories_id="45" />
+    <products_to_categories products_id="2123" categories_id="69" />
+    <products_to_categories products_id="2123" categories_id="90" />
+    <products products_id="17185" products_master_flag="0" products_master_model="2112029390005" products_model="2112089690305" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0" products_image="" products_price="" products_priceb="" products_regularprice="49.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="17185">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Khaki" />
+            <attr name="products_model_info" language_id="0" value="55" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="17185" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON 55 " products_description="" products_short_description="" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="17185" categories_id="15" />
+    <products_to_categories products_id="17185" categories_id="25" />
+    <products_to_categories products_id="17185" categories_id="61" />
+    <products_to_categories products_id="17185" categories_id="63" />
+    <products_to_categories products_id="17185" categories_id="44" />
+    <products_to_categories products_id="17185" categories_id="49" />
+    <products_to_categories products_id="17185" categories_id="45" />
+    <products_to_categories products_id="17185" categories_id="69" />
+    <products_to_categories products_id="17185" categories_id="90" />
+    <products products_id="17186" products_master_flag="0" products_master_model="2112029390005" products_model="2112089690404" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0" products_image="" products_price="" products_priceb="" products_regularprice="49.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="17186">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Khaki" />
+            <attr name="products_model_info" language_id="0" value="56" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="17186" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON 56 " products_description="" products_short_description="" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="17186" categories_id="15" />
+    <products_to_categories products_id="17186" categories_id="25" />
+    <products_to_categories products_id="17186" categories_id="61" />
+    <products_to_categories products_id="17186" categories_id="63" />
+    <products_to_categories products_id="17186" categories_id="44" />
+    <products_to_categories products_id="17186" categories_id="49" />
+    <products_to_categories products_id="17186" categories_id="45" />
+    <products_to_categories products_id="17186" categories_id="69" />
+    <products_to_categories products_id="17186" categories_id="90" />
+    <products products_id="17187" products_master_flag="0" products_master_model="2112029390005" products_model="2112089690503" products_ean="" products_quantity="1000.00" products_shippingtime="1" products_quantity_shops="WEBSHOP:0;SCS:1;GM:2" products_image="" products_price="" products_priceb="" products_regularprice="49.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="17187">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Khaki" />
+            <attr name="products_model_info" language_id="0" value="57" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="17187" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON 57 " products_description="" products_short_description="" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="17187" categories_id="15" />
+    <products_to_categories products_id="17187" categories_id="25" />
+    <products_to_categories products_id="17187" categories_id="61" />
+    <products_to_categories products_id="17187" categories_id="63" />
+    <products_to_categories products_id="17187" categories_id="44" />
+    <products_to_categories products_id="17187" categories_id="49" />
+    <products_to_categories products_id="17187" categories_id="45" />
+    <products_to_categories products_id="17187" categories_id="69" />
+    <products_to_categories products_id="17187" categories_id="90" />
+    <products products_id="17188" products_master_flag="0" products_master_model="2112029390005" products_model="2112089690602" products_ean="" products_quantity="1000.00" products_shippingtime="1" products_quantity_shops="WEBSHOP:0;SCS:1;GM:1" products_image="" products_price="" products_priceb="" products_regularprice="49.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="17188">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Khaki" />
+            <attr name="products_model_info" language_id="0" value="58" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="17188" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON 58 " products_description="" products_short_description="" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="17188" categories_id="15" />
+    <products_to_categories products_id="17188" categories_id="25" />
+    <products_to_categories products_id="17188" categories_id="61" />
+    <products_to_categories products_id="17188" categories_id="63" />
+    <products_to_categories products_id="17188" categories_id="44" />
+    <products_to_categories products_id="17188" categories_id="49" />
+    <products_to_categories products_id="17188" categories_id="45" />
+    <products_to_categories products_id="17188" categories_id="69" />
+    <products_to_categories products_id="17188" categories_id="90" />
+    <products products_id="17189" products_master_flag="0" products_master_model="2112029390005" products_model="2112089690701" products_ean="" products_quantity="1000.00" products_shippingtime="1" products_quantity_shops="WEBSHOP:0;SCS:1;GM:2" products_image="" products_price="" products_priceb="" products_regularprice="49.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="17189">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Khaki" />
+            <attr name="products_model_info" language_id="0" value="59" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="17189" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON 59 " products_description="" products_short_description="" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="17189" categories_id="15" />
+    <products_to_categories products_id="17189" categories_id="25" />
+    <products_to_categories products_id="17189" categories_id="61" />
+    <products_to_categories products_id="17189" categories_id="63" />
+    <products_to_categories products_id="17189" categories_id="44" />
+    <products_to_categories products_id="17189" categories_id="49" />
+    <products_to_categories products_id="17189" categories_id="45" />
+    <products_to_categories products_id="17189" categories_id="69" />
+    <products_to_categories products_id="17189" categories_id="90" />
+    <products products_id="17190" products_master_flag="0" products_master_model="2112029390005" products_model="2112089690800" products_ean="" products_quantity="1000.00" products_shippingtime="1" products_quantity_shops="WEBSHOP:0;SCS:1;GM:0" products_image="" products_price="" products_priceb="" products_regularprice="49.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="17190">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Khaki" />
+            <attr name="products_model_info" language_id="0" value="60" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="17190" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON 60 " products_description="" products_short_description="" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="17190" categories_id="15" />
+    <products_to_categories products_id="17190" categories_id="25" />
+    <products_to_categories products_id="17190" categories_id="61" />
+    <products_to_categories products_id="17190" categories_id="63" />
+    <products_to_categories products_id="17190" categories_id="44" />
+    <products_to_categories products_id="17190" categories_id="49" />
+    <products_to_categories products_id="17190" categories_id="45" />
+    <products_to_categories products_id="17190" categories_id="69" />
+    <products_to_categories products_id="17190" categories_id="90" />
+    <products products_id="17191" products_master_flag="0" products_master_model="2112029390005" products_model="2112089690909" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0" products_image="" products_price="" products_priceb="" products_regularprice="49.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="17191">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Khaki" />
+            <attr name="products_model_info" language_id="0" value="61" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="17191" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON 61 " products_description="" products_short_description="" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="17191" categories_id="15" />
+    <products_to_categories products_id="17191" categories_id="25" />
+    <products_to_categories products_id="17191" categories_id="61" />
+    <products_to_categories products_id="17191" categories_id="63" />
+    <products_to_categories products_id="17191" categories_id="44" />
+    <products_to_categories products_id="17191" categories_id="49" />
+    <products_to_categories products_id="17191" categories_id="45" />
+    <products_to_categories products_id="17191" categories_id="69" />
+    <products_to_categories products_id="17191" categories_id="90" />
+    <products products_id="17192" products_master_flag="0" products_master_model="2112029390005" products_model="2112089691005" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0" products_image="" products_price="" products_priceb="" products_regularprice="49.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="17192">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Khaki" />
+            <attr name="products_model_info" language_id="0" value="62" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="17192" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON 62 " products_description="" products_short_description="" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="17192" categories_id="15" />
+    <products_to_categories products_id="17192" categories_id="25" />
+    <products_to_categories products_id="17192" categories_id="61" />
+    <products_to_categories products_id="17192" categories_id="63" />
+    <products_to_categories products_id="17192" categories_id="44" />
+    <products_to_categories products_id="17192" categories_id="49" />
+    <products_to_categories products_id="17192" categories_id="45" />
+    <products_to_categories products_id="17192" categories_id="69" />
+    <products_to_categories products_id="17192" categories_id="90" />
+    <products products_id="17193" products_master_flag="0" products_master_model="2112029390005" products_model="2112089691104" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0" products_image="" products_price="" products_priceb="" products_regularprice="49.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="17193">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Khaki" />
+            <attr name="products_model_info" language_id="0" value="63" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="17193" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON 63 " products_description="" products_short_description="" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="17193" categories_id="15" />
+    <products_to_categories products_id="17193" categories_id="25" />
+    <products_to_categories products_id="17193" categories_id="61" />
+    <products_to_categories products_id="17193" categories_id="63" />
+    <products_to_categories products_id="17193" categories_id="44" />
+    <products_to_categories products_id="17193" categories_id="49" />
+    <products_to_categories products_id="17193" categories_id="45" />
+    <products_to_categories products_id="17193" categories_id="69" />
+    <products_to_categories products_id="17193" categories_id="90" />
+    <products products_id="17194" products_master_flag="0" products_master_model="2112029390005" products_model="2112089691203" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0" products_image="" products_price="" products_priceb="" products_regularprice="49.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="17194">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Khaki" />
+            <attr name="products_model_info" language_id="0" value="64" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="17194" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON 64 " products_description="" products_short_description="" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="17194" categories_id="15" />
+    <products_to_categories products_id="17194" categories_id="25" />
+    <products_to_categories products_id="17194" categories_id="61" />
+    <products_to_categories products_id="17194" categories_id="63" />
+    <products_to_categories products_id="17194" categories_id="44" />
+    <products_to_categories products_id="17194" categories_id="49" />
+    <products_to_categories products_id="17194" categories_id="45" />
+    <products_to_categories products_id="17194" categories_id="69" />
+    <products_to_categories products_id="17194" categories_id="90" />
+    <products products_id="17195" products_master_flag="0" products_master_model="2112029390005" products_model="2112089691302" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0" products_image="" products_price="" products_priceb="" products_regularprice="49.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="17195">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Khaki" />
+            <attr name="products_model_info" language_id="0" value="65" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="17195" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON 65 " products_description="" products_short_description="" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="17195" categories_id="15" />
+    <products_to_categories products_id="17195" categories_id="25" />
+    <products_to_categories products_id="17195" categories_id="61" />
+    <products_to_categories products_id="17195" categories_id="63" />
+    <products_to_categories products_id="17195" categories_id="44" />
+    <products_to_categories products_id="17195" categories_id="49" />
+    <products_to_categories products_id="17195" categories_id="45" />
+    <products_to_categories products_id="17195" categories_id="69" />
+    <products_to_categories products_id="17195" categories_id="90" />
+    <products products_id="17075" products_master_flag="0" products_master_model="2112029390005" products_model="2112089710300" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0" products_image="" products_price="" products_priceb="" products_regularprice="49.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="17075">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Beige-Grau" />
+            <attr name="products_model_info" language_id="0" value="55" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="17075" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON 55 " products_description="" products_short_description="" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="17075" categories_id="15" />
+    <products_to_categories products_id="17075" categories_id="25" />
+    <products_to_categories products_id="17075" categories_id="61" />
+    <products_to_categories products_id="17075" categories_id="63" />
+    <products_to_categories products_id="17075" categories_id="44" />
+    <products_to_categories products_id="17075" categories_id="49" />
+    <products_to_categories products_id="17075" categories_id="45" />
+    <products_to_categories products_id="17075" categories_id="69" />
+    <products_to_categories products_id="17075" categories_id="90" />
+    <products products_id="17076" products_master_flag="0" products_master_model="2112029390005" products_model="2112089710409" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0" products_image="" products_price="" products_priceb="" products_regularprice="49.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="17076">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Beige-Grau" />
+            <attr name="products_model_info" language_id="0" value="56" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="17076" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON 56 " products_description="" products_short_description="" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="17076" categories_id="15" />
+    <products_to_categories products_id="17076" categories_id="25" />
+    <products_to_categories products_id="17076" categories_id="61" />
+    <products_to_categories products_id="17076" categories_id="63" />
+    <products_to_categories products_id="17076" categories_id="44" />
+    <products_to_categories products_id="17076" categories_id="49" />
+    <products_to_categories products_id="17076" categories_id="45" />
+    <products_to_categories products_id="17076" categories_id="69" />
+    <products_to_categories products_id="17076" categories_id="90" />
+    <products products_id="17077" products_master_flag="0" products_master_model="2112029390005" products_model="2112089710508" products_ean="" products_quantity="1000.00" products_shippingtime="1" products_quantity_shops="WEBSHOP:0;SCS:0;GM:1" products_image="" products_price="" products_priceb="" products_regularprice="49.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="17077">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Beige-Grau" />
+            <attr name="products_model_info" language_id="0" value="57" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="17077" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON 57 " products_description="" products_short_description="" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="17077" categories_id="15" />
+    <products_to_categories products_id="17077" categories_id="25" />
+    <products_to_categories products_id="17077" categories_id="61" />
+    <products_to_categories products_id="17077" categories_id="63" />
+    <products_to_categories products_id="17077" categories_id="44" />
+    <products_to_categories products_id="17077" categories_id="49" />
+    <products_to_categories products_id="17077" categories_id="45" />
+    <products_to_categories products_id="17077" categories_id="69" />
+    <products_to_categories products_id="17077" categories_id="90" />
+    <products products_id="17078" products_master_flag="0" products_master_model="2112029390005" products_model="2112089710607" products_ean="" products_quantity="1000.00" products_shippingtime="1" products_quantity_shops="WEBSHOP:0;SCS:1;GM:2" products_image="" products_price="" products_priceb="" products_regularprice="49.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="17078">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Beige-Grau" />
+            <attr name="products_model_info" language_id="0" value="58" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="17078" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON 58 " products_description="" products_short_description="" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="17078" categories_id="15" />
+    <products_to_categories products_id="17078" categories_id="25" />
+    <products_to_categories products_id="17078" categories_id="61" />
+    <products_to_categories products_id="17078" categories_id="63" />
+    <products_to_categories products_id="17078" categories_id="44" />
+    <products_to_categories products_id="17078" categories_id="49" />
+    <products_to_categories products_id="17078" categories_id="45" />
+    <products_to_categories products_id="17078" categories_id="69" />
+    <products_to_categories products_id="17078" categories_id="90" />
+    <products products_id="17079" products_master_flag="0" products_master_model="2112029390005" products_model="2112089710706" products_ean="" products_quantity="1000.00" products_shippingtime="1" products_quantity_shops="WEBSHOP:0;SCS:1;GM:1" products_image="" products_price="" products_priceb="" products_regularprice="49.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="17079">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Beige-Grau" />
+            <attr name="products_model_info" language_id="0" value="59" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="17079" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON 59 " products_description="" products_short_description="" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="17079" categories_id="15" />
+    <products_to_categories products_id="17079" categories_id="25" />
+    <products_to_categories products_id="17079" categories_id="61" />
+    <products_to_categories products_id="17079" categories_id="63" />
+    <products_to_categories products_id="17079" categories_id="44" />
+    <products_to_categories products_id="17079" categories_id="49" />
+    <products_to_categories products_id="17079" categories_id="45" />
+    <products_to_categories products_id="17079" categories_id="69" />
+    <products_to_categories products_id="17079" categories_id="90" />
+    <products products_id="17080" products_master_flag="0" products_master_model="2112029390005" products_model="2112089710805" products_ean="" products_quantity="1000.00" products_shippingtime="1" products_quantity_shops="WEBSHOP:0;SCS:1;GM:1" products_image="" products_price="" products_priceb="" products_regularprice="49.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="17080">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Beige-Grau" />
+            <attr name="products_model_info" language_id="0" value="60" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="17080" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON 60 " products_description="" products_short_description="" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="17080" categories_id="15" />
+    <products_to_categories products_id="17080" categories_id="25" />
+    <products_to_categories products_id="17080" categories_id="61" />
+    <products_to_categories products_id="17080" categories_id="63" />
+    <products_to_categories products_id="17080" categories_id="44" />
+    <products_to_categories products_id="17080" categories_id="49" />
+    <products_to_categories products_id="17080" categories_id="45" />
+    <products_to_categories products_id="17080" categories_id="69" />
+    <products_to_categories products_id="17080" categories_id="90" />
+    <products products_id="17081" products_master_flag="0" products_master_model="2112029390005" products_model="2112089710904" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0" products_image="" products_price="" products_priceb="" products_regularprice="49.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="17081">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Beige-Grau" />
+            <attr name="products_model_info" language_id="0" value="61" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="17081" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON 61 " products_description="" products_short_description="" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="17081" categories_id="15" />
+    <products_to_categories products_id="17081" categories_id="25" />
+    <products_to_categories products_id="17081" categories_id="61" />
+    <products_to_categories products_id="17081" categories_id="63" />
+    <products_to_categories products_id="17081" categories_id="44" />
+    <products_to_categories products_id="17081" categories_id="49" />
+    <products_to_categories products_id="17081" categories_id="45" />
+    <products_to_categories products_id="17081" categories_id="69" />
+    <products_to_categories products_id="17081" categories_id="90" />
+    <products products_id="17082" products_master_flag="0" products_master_model="2112029390005" products_model="2112089711000" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0" products_image="" products_price="" products_priceb="" products_regularprice="49.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="17082">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Beige-Grau" />
+            <attr name="products_model_info" language_id="0" value="62" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="17082" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON 62 " products_description="" products_short_description="" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="17082" categories_id="15" />
+    <products_to_categories products_id="17082" categories_id="25" />
+    <products_to_categories products_id="17082" categories_id="61" />
+    <products_to_categories products_id="17082" categories_id="63" />
+    <products_to_categories products_id="17082" categories_id="44" />
+    <products_to_categories products_id="17082" categories_id="49" />
+    <products_to_categories products_id="17082" categories_id="45" />
+    <products_to_categories products_id="17082" categories_id="69" />
+    <products_to_categories products_id="17082" categories_id="90" />
+    <products products_id="17083" products_master_flag="0" products_master_model="2112029390005" products_model="2112089711109" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0" products_image="" products_price="" products_priceb="" products_regularprice="49.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="17083">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Beige-Grau" />
+            <attr name="products_model_info" language_id="0" value="63" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="17083" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON 63 " products_description="" products_short_description="" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="17083" categories_id="15" />
+    <products_to_categories products_id="17083" categories_id="25" />
+    <products_to_categories products_id="17083" categories_id="61" />
+    <products_to_categories products_id="17083" categories_id="63" />
+    <products_to_categories products_id="17083" categories_id="44" />
+    <products_to_categories products_id="17083" categories_id="49" />
+    <products_to_categories products_id="17083" categories_id="45" />
+    <products_to_categories products_id="17083" categories_id="69" />
+    <products_to_categories products_id="17083" categories_id="90" />
+    <products products_id="17084" products_master_flag="0" products_master_model="2112029390005" products_model="2112089711208" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0" products_image="" products_price="" products_priceb="" products_regularprice="49.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="17084">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Beige-Grau" />
+            <attr name="products_model_info" language_id="0" value="64" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="17084" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON 64 " products_description="" products_short_description="" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="17084" categories_id="15" />
+    <products_to_categories products_id="17084" categories_id="25" />
+    <products_to_categories products_id="17084" categories_id="61" />
+    <products_to_categories products_id="17084" categories_id="63" />
+    <products_to_categories products_id="17084" categories_id="44" />
+    <products_to_categories products_id="17084" categories_id="49" />
+    <products_to_categories products_id="17084" categories_id="45" />
+    <products_to_categories products_id="17084" categories_id="69" />
+    <products_to_categories products_id="17084" categories_id="90" />
+    <products products_id="17085" products_master_flag="0" products_master_model="2112029390005" products_model="2112089711307" products_ean="" products_quantity="0.00" products_shippingtime="2" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0" products_image="" products_price="" products_priceb="" products_regularprice="49.1667" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="1" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="17085">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Beige-Grau" />
+            <attr name="products_model_info" language_id="0" value="65" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="6270501331" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="17085" language_id="0" products_name="SUSSEX STOFFFOLDA STETSON 65 " products_description="" products_short_description="" products_keywords="DSussex von Stetson, Folda Cap, Duck Cap, Herrenmutze, Mutze, Flatcap, Schirmmutze, Schirmkappe, Kappe, Herrenkappe" />
+    <products_to_categories products_id="17085" categories_id="15" />
+    <products_to_categories products_id="17085" categories_id="25" />
+    <products_to_categories products_id="17085" categories_id="61" />
+    <products_to_categories products_id="17085" categories_id="63" />
+    <products_to_categories products_id="17085" categories_id="44" />
+    <products_to_categories products_id="17085" categories_id="49" />
+    <products_to_categories products_id="17085" categories_id="45" />
+    <products_to_categories products_id="17085" categories_id="69" />
+    <products_to_categories products_id="17085" categories_id="90" />
+    <products products_id="14864" products_model="2112056750001" products_ean="" products_master_model="" products_master_flag="1" products_bundle_flag="0" products_quantity="138.00" products_shippingtime="6" products_image="" products_price="" products_priceb="" products_regularprice="41.5833" products_status="1" products_visibility="4" products_weight="0.0000" manufacturers_id="17" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="14864">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Anthra" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="1013405658bbrill" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="14864" language_id="0" products_name="GLETSCHERHUT MIT BRILLE" products_description="&lt;p&gt;Heutzutage&amp;nbsp;sind auch die Bergfexn gestylt. &quot;Luis Trenker und Seppi Innerkofler schauts obi, mit dem &lt;strong&gt;Huat&lt;/strong&gt; h&amp;auml;ttets am Berg miassn!&quot; Unser &lt;strong&gt;Gletscherhut&lt;/strong&gt; ist ein rustikaler &lt;strong&gt;Traveller&lt;/strong&gt; aus meliertem Wollfilz mit einem ebenso urigen Spagatumbind. Mit dabei ist die klassische Gletscherbrille von Schmerler. Die sieht nicht nur so aus als ob sie schon mit Ihnen am Nanga Parbat gewesen w&amp;auml;r, die ist auch tats&amp;auml;chlich die Brille f&amp;uuml;r den &quot;Alpin-Junkie&quot;!&lt;/p&gt; &lt;p&gt;Qualit&amp;auml;t: 100 % Wollfilz&lt;br /&gt;H&amp;ouml;he: 100mm&lt;br /&gt;Krempenbreite: 60mm&lt;br /&gt;Umbind: 4-faches Spagatumbind, hinten mittiger Abschluss&lt;br /&gt;Kopfweite: 55 bis 61cm&lt;/p&gt;" products_short_description="&lt;p&gt;Stylish-rustikaler&amp;nbsp;Berghut mit praktischer Gletscherbrille.&lt;/p&gt;" products_keywords="Gletscherhut, Berghut, Bergsteigerhut, Wanderhut, Alpinhut, Jagahut, Jaga Huat, Huat, Jagerhut, Gletscherbrille" />
+    <products_to_categories products_id="14864" categories_id="15" />
+    <products_to_categories products_id="14864" categories_id="111" />
+    <products_to_categories products_id="14864" categories_id="61" />
+    <products_to_categories products_id="14864" categories_id="62" />
+    <products_to_categories products_id="14864" categories_id="27" />
+    <products_to_categories products_id="14864" categories_id="32" />
+    <products_to_categories products_id="14864" categories_id="31" />
+    <products_to_categories products_id="14864" categories_id="105" />
+    <products_to_categories products_id="14864" categories_id="90" />
+    <products_to_categories products_id="14864" categories_id="117" />
+    <products products_id="14865" products_master_flag="0" products_master_model="2112056750001" products_model="2112056750308" products_ean="" products_quantity="1000.00" products_shippingtime="1" products_quantity_shops="WEBSHOP:0;SCS:1;GM:6" products_image="" products_price="" products_priceb="" products_regularprice="41.5833" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="17" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="14865">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Anthra" />
+            <attr name="products_model_info" language_id="0" value="55" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="1013405658bbrill" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="14865" language_id="0" products_name="GLETSCHERHUT MIT BRILLE 55 " products_description="&lt;p&gt;Heutzutage&amp;nbsp;sind auch die Bergfexn gestylt. &quot;Luis Trenker und Seppi Innerkofler schauts obi, mit dem &lt;strong&gt;Huat&lt;/strong&gt; h&amp;auml;ttets am Berg miassn!&quot; Unser &lt;strong&gt;Gletscherhut&lt;/strong&gt; ist ein rustikaler &lt;strong&gt;Traveller&lt;/strong&gt; aus meliertem Wollfilz mit einem ebenso urigen Spagatumbind. Mit dabei ist die klassische Gletscherbrille von Schmerler. Die sieht nicht nur so aus als ob sie schon mit Ihnen am Nanga Parbat gewesen w&amp;auml;r, die ist auch tats&amp;auml;chlich die Brille f&amp;uuml;r den &quot;Alpin-Junkie&quot;!&lt;/p&gt; &lt;p&gt;Qualit&amp;auml;t: 100 % Wollfilz&lt;br /&gt;H&amp;ouml;he: 100mm&lt;br /&gt;Krempenbreite: 60mm&lt;br /&gt;Umbind: 4-faches Spagatumbind, hinten mittiger Abschluss&lt;br /&gt;Kopfweite: 55 bis 61cm&lt;/p&gt;" products_short_description="&lt;p&gt;Stylish-rustikaler&amp;nbsp;Berghut mit praktischer Gletscherbrille.&lt;/p&gt;" products_keywords="Gletscherhut, Berghut, Bergsteigerhut, Wanderhut, Alpinhut, Jagahut, Jaga Huat, Huat, Jagerhut, Gletscherbrille" />
+    <products_to_categories products_id="14865" categories_id="15" />
+    <products_to_categories products_id="14865" categories_id="111" />
+    <products_to_categories products_id="14865" categories_id="61" />
+    <products_to_categories products_id="14865" categories_id="62" />
+    <products_to_categories products_id="14865" categories_id="27" />
+    <products_to_categories products_id="14865" categories_id="32" />
+    <products_to_categories products_id="14865" categories_id="31" />
+    <products_to_categories products_id="14865" categories_id="105" />
+    <products_to_categories products_id="14865" categories_id="90" />
+    <products_to_categories products_id="14865" categories_id="117" />
+    <products products_id="14866" products_master_flag="0" products_master_model="2112056750001" products_model="2112056750407" products_ean="" products_quantity="1000.00" products_shippingtime="1" products_quantity_shops="WEBSHOP:0;SCS:1;GM:9" products_image="" products_price="" products_priceb="" products_regularprice="41.5833" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="17" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="14866">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Anthra" />
+            <attr name="products_model_info" language_id="0" value="56" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="1013405658bbrill" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="14866" language_id="0" products_name="GLETSCHERHUT MIT BRILLE 56 " products_description="&lt;p&gt;Heutzutage&amp;nbsp;sind auch die Bergfexn gestylt. &quot;Luis Trenker und Seppi Innerkofler schauts obi, mit dem &lt;strong&gt;Huat&lt;/strong&gt; h&amp;auml;ttets am Berg miassn!&quot; Unser &lt;strong&gt;Gletscherhut&lt;/strong&gt; ist ein rustikaler &lt;strong&gt;Traveller&lt;/strong&gt; aus meliertem Wollfilz mit einem ebenso urigen Spagatumbind. Mit dabei ist die klassische Gletscherbrille von Schmerler. Die sieht nicht nur so aus als ob sie schon mit Ihnen am Nanga Parbat gewesen w&amp;auml;r, die ist auch tats&amp;auml;chlich die Brille f&amp;uuml;r den &quot;Alpin-Junkie&quot;!&lt;/p&gt; &lt;p&gt;Qualit&amp;auml;t: 100 % Wollfilz&lt;br /&gt;H&amp;ouml;he: 100mm&lt;br /&gt;Krempenbreite: 60mm&lt;br /&gt;Umbind: 4-faches Spagatumbind, hinten mittiger Abschluss&lt;br /&gt;Kopfweite: 55 bis 61cm&lt;/p&gt;" products_short_description="&lt;p&gt;Stylish-rustikaler&amp;nbsp;Berghut mit praktischer Gletscherbrille.&lt;/p&gt;" products_keywords="Gletscherhut, Berghut, Bergsteigerhut, Wanderhut, Alpinhut, Jagahut, Jaga Huat, Huat, Jagerhut, Gletscherbrille" />
+    <products_to_categories products_id="14866" categories_id="15" />
+    <products_to_categories products_id="14866" categories_id="111" />
+    <products_to_categories products_id="14866" categories_id="61" />
+    <products_to_categories products_id="14866" categories_id="62" />
+    <products_to_categories products_id="14866" categories_id="27" />
+    <products_to_categories products_id="14866" categories_id="32" />
+    <products_to_categories products_id="14866" categories_id="31" />
+    <products_to_categories products_id="14866" categories_id="105" />
+    <products_to_categories products_id="14866" categories_id="90" />
+    <products_to_categories products_id="14866" categories_id="117" />
+    <products products_id="14867" products_master_flag="0" products_master_model="2112056750001" products_model="2112056750506" products_ean="" products_quantity="1000.00" products_shippingtime="1" products_quantity_shops="WEBSHOP:0;SCS:1;GM:15" products_image="" products_price="" products_priceb="" products_regularprice="41.5833" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="17" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="14867">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Anthra" />
+            <attr name="products_model_info" language_id="0" value="57" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="1013405658bbrill" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="14867" language_id="0" products_name="GLETSCHERHUT MIT BRILLE 57 " products_description="&lt;p&gt;Heutzutage&amp;nbsp;sind auch die Bergfexn gestylt. &quot;Luis Trenker und Seppi Innerkofler schauts obi, mit dem &lt;strong&gt;Huat&lt;/strong&gt; h&amp;auml;ttets am Berg miassn!&quot; Unser &lt;strong&gt;Gletscherhut&lt;/strong&gt; ist ein rustikaler &lt;strong&gt;Traveller&lt;/strong&gt; aus meliertem Wollfilz mit einem ebenso urigen Spagatumbind. Mit dabei ist die klassische Gletscherbrille von Schmerler. Die sieht nicht nur so aus als ob sie schon mit Ihnen am Nanga Parbat gewesen w&amp;auml;r, die ist auch tats&amp;auml;chlich die Brille f&amp;uuml;r den &quot;Alpin-Junkie&quot;!&lt;/p&gt; &lt;p&gt;Qualit&amp;auml;t: 100 % Wollfilz&lt;br /&gt;H&amp;ouml;he: 100mm&lt;br /&gt;Krempenbreite: 60mm&lt;br /&gt;Umbind: 4-faches Spagatumbind, hinten mittiger Abschluss&lt;br /&gt;Kopfweite: 55 bis 61cm&lt;/p&gt;" products_short_description="&lt;p&gt;Stylish-rustikaler&amp;nbsp;Berghut mit praktischer Gletscherbrille.&lt;/p&gt;" products_keywords="Gletscherhut, Berghut, Bergsteigerhut, Wanderhut, Alpinhut, Jagahut, Jaga Huat, Huat, Jagerhut, Gletscherbrille" />
+    <products_to_categories products_id="14867" categories_id="15" />
+    <products_to_categories products_id="14867" categories_id="111" />
+    <products_to_categories products_id="14867" categories_id="61" />
+    <products_to_categories products_id="14867" categories_id="62" />
+    <products_to_categories products_id="14867" categories_id="27" />
+    <products_to_categories products_id="14867" categories_id="32" />
+    <products_to_categories products_id="14867" categories_id="31" />
+    <products_to_categories products_id="14867" categories_id="105" />
+    <products_to_categories products_id="14867" categories_id="90" />
+    <products_to_categories products_id="14867" categories_id="117" />
+    <products products_id="14868" products_master_flag="0" products_master_model="2112056750001" products_model="2112056750605" products_ean="" products_quantity="1000.00" products_shippingtime="1" products_quantity_shops="WEBSHOP:0;SCS:1;GM:13" products_image="" products_price="" products_priceb="" products_regularprice="41.5833" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="17" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="14868">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Anthra" />
+            <attr name="products_model_info" language_id="0" value="58" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="1013405658bbrill" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="14868" language_id="0" products_name="GLETSCHERHUT MIT BRILLE 58 " products_description="&lt;p&gt;Heutzutage&amp;nbsp;sind auch die Bergfexn gestylt. &quot;Luis Trenker und Seppi Innerkofler schauts obi, mit dem &lt;strong&gt;Huat&lt;/strong&gt; h&amp;auml;ttets am Berg miassn!&quot; Unser &lt;strong&gt;Gletscherhut&lt;/strong&gt; ist ein rustikaler &lt;strong&gt;Traveller&lt;/strong&gt; aus meliertem Wollfilz mit einem ebenso urigen Spagatumbind. Mit dabei ist die klassische Gletscherbrille von Schmerler. Die sieht nicht nur so aus als ob sie schon mit Ihnen am Nanga Parbat gewesen w&amp;auml;r, die ist auch tats&amp;auml;chlich die Brille f&amp;uuml;r den &quot;Alpin-Junkie&quot;!&lt;/p&gt; &lt;p&gt;Qualit&amp;auml;t: 100 % Wollfilz&lt;br /&gt;H&amp;ouml;he: 100mm&lt;br /&gt;Krempenbreite: 60mm&lt;br /&gt;Umbind: 4-faches Spagatumbind, hinten mittiger Abschluss&lt;br /&gt;Kopfweite: 55 bis 61cm&lt;/p&gt;" products_short_description="&lt;p&gt;Stylish-rustikaler&amp;nbsp;Berghut mit praktischer Gletscherbrille.&lt;/p&gt;" products_keywords="Gletscherhut, Berghut, Bergsteigerhut, Wanderhut, Alpinhut, Jagahut, Jaga Huat, Huat, Jagerhut, Gletscherbrille" />
+    <products_to_categories products_id="14868" categories_id="15" />
+    <products_to_categories products_id="14868" categories_id="111" />
+    <products_to_categories products_id="14868" categories_id="61" />
+    <products_to_categories products_id="14868" categories_id="62" />
+    <products_to_categories products_id="14868" categories_id="27" />
+    <products_to_categories products_id="14868" categories_id="32" />
+    <products_to_categories products_id="14868" categories_id="31" />
+    <products_to_categories products_id="14868" categories_id="105" />
+    <products_to_categories products_id="14868" categories_id="90" />
+    <products_to_categories products_id="14868" categories_id="117" />
+    <products products_id="14869" products_master_flag="0" products_master_model="2112056750001" products_model="2112056750704" products_ean="" products_quantity="1000.00" products_shippingtime="1" products_quantity_shops="WEBSHOP:-1;SCS:1;GM:11" products_image="" products_price="" products_priceb="" products_regularprice="41.5833" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="17" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="14869">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Anthra" />
+            <attr name="products_model_info" language_id="0" value="59" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="1013405658bbrill" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="14869" language_id="0" products_name="GLETSCHERHUT MIT BRILLE 59 " products_description="&lt;p&gt;Heutzutage&amp;nbsp;sind auch die Bergfexn gestylt. &quot;Luis Trenker und Seppi Innerkofler schauts obi, mit dem &lt;strong&gt;Huat&lt;/strong&gt; h&amp;auml;ttets am Berg miassn!&quot; Unser &lt;strong&gt;Gletscherhut&lt;/strong&gt; ist ein rustikaler &lt;strong&gt;Traveller&lt;/strong&gt; aus meliertem Wollfilz mit einem ebenso urigen Spagatumbind. Mit dabei ist die klassische Gletscherbrille von Schmerler. Die sieht nicht nur so aus als ob sie schon mit Ihnen am Nanga Parbat gewesen w&amp;auml;r, die ist auch tats&amp;auml;chlich die Brille f&amp;uuml;r den &quot;Alpin-Junkie&quot;!&lt;/p&gt; &lt;p&gt;Qualit&amp;auml;t: 100 % Wollfilz&lt;br /&gt;H&amp;ouml;he: 100mm&lt;br /&gt;Krempenbreite: 60mm&lt;br /&gt;Umbind: 4-faches Spagatumbind, hinten mittiger Abschluss&lt;br /&gt;Kopfweite: 55 bis 61cm&lt;/p&gt;" products_short_description="&lt;p&gt;Stylish-rustikaler&amp;nbsp;Berghut mit praktischer Gletscherbrille.&lt;/p&gt;" products_keywords="Gletscherhut, Berghut, Bergsteigerhut, Wanderhut, Alpinhut, Jagahut, Jaga Huat, Huat, Jagerhut, Gletscherbrille" />
+    <products_to_categories products_id="14869" categories_id="15" />
+    <products_to_categories products_id="14869" categories_id="111" />
+    <products_to_categories products_id="14869" categories_id="61" />
+    <products_to_categories products_id="14869" categories_id="62" />
+    <products_to_categories products_id="14869" categories_id="27" />
+    <products_to_categories products_id="14869" categories_id="32" />
+    <products_to_categories products_id="14869" categories_id="31" />
+    <products_to_categories products_id="14869" categories_id="105" />
+    <products_to_categories products_id="14869" categories_id="90" />
+    <products_to_categories products_id="14869" categories_id="117" />
+    <products products_id="14870" products_master_flag="0" products_master_model="2112056750001" products_model="2112056750803" products_ean="" products_quantity="1000.00" products_shippingtime="1" products_quantity_shops="WEBSHOP:0;SCS:1;GM:6" products_image="" products_price="" products_priceb="" products_regularprice="41.5833" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="17" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="14870">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Anthra" />
+            <attr name="products_model_info" language_id="0" value="60" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="1013405658bbrill" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="14870" language_id="0" products_name="GLETSCHERHUT MIT BRILLE 60 " products_description="&lt;p&gt;Heutzutage&amp;nbsp;sind auch die Bergfexn gestylt. &quot;Luis Trenker und Seppi Innerkofler schauts obi, mit dem &lt;strong&gt;Huat&lt;/strong&gt; h&amp;auml;ttets am Berg miassn!&quot; Unser &lt;strong&gt;Gletscherhut&lt;/strong&gt; ist ein rustikaler &lt;strong&gt;Traveller&lt;/strong&gt; aus meliertem Wollfilz mit einem ebenso urigen Spagatumbind. Mit dabei ist die klassische Gletscherbrille von Schmerler. Die sieht nicht nur so aus als ob sie schon mit Ihnen am Nanga Parbat gewesen w&amp;auml;r, die ist auch tats&amp;auml;chlich die Brille f&amp;uuml;r den &quot;Alpin-Junkie&quot;!&lt;/p&gt; &lt;p&gt;Qualit&amp;auml;t: 100 % Wollfilz&lt;br /&gt;H&amp;ouml;he: 100mm&lt;br /&gt;Krempenbreite: 60mm&lt;br /&gt;Umbind: 4-faches Spagatumbind, hinten mittiger Abschluss&lt;br /&gt;Kopfweite: 55 bis 61cm&lt;/p&gt;" products_short_description="&lt;p&gt;Stylish-rustikaler&amp;nbsp;Berghut mit praktischer Gletscherbrille.&lt;/p&gt;" products_keywords="Gletscherhut, Berghut, Bergsteigerhut, Wanderhut, Alpinhut, Jagahut, Jaga Huat, Huat, Jagerhut, Gletscherbrille" />
+    <products_to_categories products_id="14870" categories_id="15" />
+    <products_to_categories products_id="14870" categories_id="111" />
+    <products_to_categories products_id="14870" categories_id="61" />
+    <products_to_categories products_id="14870" categories_id="62" />
+    <products_to_categories products_id="14870" categories_id="27" />
+    <products_to_categories products_id="14870" categories_id="32" />
+    <products_to_categories products_id="14870" categories_id="31" />
+    <products_to_categories products_id="14870" categories_id="105" />
+    <products_to_categories products_id="14870" categories_id="90" />
+    <products_to_categories products_id="14870" categories_id="117" />
+    <products products_id="14871" products_master_flag="0" products_master_model="2112056750001" products_model="2112056750902" products_ean="" products_quantity="1000.00" products_shippingtime="1" products_quantity_shops="WEBSHOP:0;SCS:1;GM:3" products_image="" products_price="" products_priceb="" products_regularprice="41.5833" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="17" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="14871">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Anthra" />
+            <attr name="products_model_info" language_id="0" value="61" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="1013405658bbrill" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="14871" language_id="0" products_name="GLETSCHERHUT MIT BRILLE 61 " products_description="&lt;p&gt;Heutzutage&amp;nbsp;sind auch die Bergfexn gestylt. &quot;Luis Trenker und Seppi Innerkofler schauts obi, mit dem &lt;strong&gt;Huat&lt;/strong&gt; h&amp;auml;ttets am Berg miassn!&quot; Unser &lt;strong&gt;Gletscherhut&lt;/strong&gt; ist ein rustikaler &lt;strong&gt;Traveller&lt;/strong&gt; aus meliertem Wollfilz mit einem ebenso urigen Spagatumbind. Mit dabei ist die klassische Gletscherbrille von Schmerler. Die sieht nicht nur so aus als ob sie schon mit Ihnen am Nanga Parbat gewesen w&amp;auml;r, die ist auch tats&amp;auml;chlich die Brille f&amp;uuml;r den &quot;Alpin-Junkie&quot;!&lt;/p&gt; &lt;p&gt;Qualit&amp;auml;t: 100 % Wollfilz&lt;br /&gt;H&amp;ouml;he: 100mm&lt;br /&gt;Krempenbreite: 60mm&lt;br /&gt;Umbind: 4-faches Spagatumbind, hinten mittiger Abschluss&lt;br /&gt;Kopfweite: 55 bis 61cm&lt;/p&gt;" products_short_description="&lt;p&gt;Stylish-rustikaler&amp;nbsp;Berghut mit praktischer Gletscherbrille.&lt;/p&gt;" products_keywords="Gletscherhut, Berghut, Bergsteigerhut, Wanderhut, Alpinhut, Jagahut, Jaga Huat, Huat, Jagerhut, Gletscherbrille" />
+    <products_to_categories products_id="14871" categories_id="15" />
+    <products_to_categories products_id="14871" categories_id="111" />
+    <products_to_categories products_id="14871" categories_id="61" />
+    <products_to_categories products_id="14871" categories_id="62" />
+    <products_to_categories products_id="14871" categories_id="27" />
+    <products_to_categories products_id="14871" categories_id="32" />
+    <products_to_categories products_id="14871" categories_id="31" />
+    <products_to_categories products_id="14871" categories_id="105" />
+    <products_to_categories products_id="14871" categories_id="90" />
+    <products_to_categories products_id="14871" categories_id="117" />
+    <products products_id="14872" products_master_flag="0" products_master_model="2112056750001" products_model="2112056751008" products_ean="" products_quantity="0.00" products_shippingtime="6" products_quantity_shops="WEBSHOP:0;SCS:0;GM:0" products_image="" products_price="" products_priceb="" products_regularprice="41.5833" products_status="1" products_visibility="1" products_weight="0.0000" manufacturers_id="17" products_tax_class_id="1" products_vpe="0" products_vpe_status="0" products_startpage="0" products_startpage_sort="0" products_relations_cross="" products_relations_up="" products_relations_related="" />
+    <product_keys>
+        <attributes products_id="14872">
+            <attr name="products_quantity_shops" value="WEBSHOP:0;SCS:0;GM:0" />
+            <attr name="ean_list" value="" />
+            <attr name="color" language_id="0" value="Anthra" />
+            <attr name="products_model_info" language_id="0" value="62" />
+            <attr name="products_manuf_homepage" value="" />
+            <attr name="bestellnummer" value="1013405658bbrill" />
+        </attributes>
+    </product_keys>
+    <products_description products_id="14872" language_id="0" products_name="GLETSCHERHUT MIT BRILLE 62 " products_description="&lt;p&gt;Heutzutage&amp;nbsp;sind auch die Bergfexn gestylt. &quot;Luis Trenker und Seppi Innerkofler schauts obi, mit dem &lt;strong&gt;Huat&lt;/strong&gt; h&amp;auml;ttets am Berg miassn!&quot; Unser &lt;strong&gt;Gletscherhut&lt;/strong&gt; ist ein rustikaler &lt;strong&gt;Traveller&lt;/strong&gt; aus meliertem Wollfilz mit einem ebenso urigen Spagatumbind. Mit dabei ist die klassische Gletscherbrille von Schmerler. Die sieht nicht nur so aus als ob sie schon mit Ihnen am Nanga Parbat gewesen w&amp;auml;r, die ist auch tats&amp;auml;chlich die Brille f&amp;uuml;r den &quot;Alpin-Junkie&quot;!&lt;/p&gt; &lt;p&gt;Qualit&amp;auml;t: 100 % Wollfilz&lt;br /&gt;H&amp;ouml;he: 100mm&lt;br /&gt;Krempenbreite: 60mm&lt;br /&gt;Umbind: 4-faches Spagatumbind, hinten mittiger Abschluss&lt;br /&gt;Kopfweite: 55 bis 61cm&lt;/p&gt;" products_short_description="&lt;p&gt;Stylish-rustikaler&amp;nbsp;Berghut mit praktischer Gletscherbrille.&lt;/p&gt;" products_keywords="Gletscherhut, Berghut, Bergsteigerhut, Wanderhut, Alpinhut, Jagahut, Jaga Huat, Huat, Jagerhut, Gletscherbrille" />
+    <products_to_categories products_id="14872" categories_id="15" />
+    <products_to_categories products_id="14872" categories_id="111" />
+    <products_to_categories products_id="14872" categories_id="61" />
+    <products_to_categories products_id="14872" categories_id="62" />
+    <products_to_categories products_id="14872" categories_id="27" />
+    <products_to_categories products_id="14872" categories_id="32" />
+    <products_to_categories products_id="14872" categories_id="31" />
+    <products_to_categories products_id="14872" categories_id="105" />
+    <products_to_categories products_id="14872" categories_id="90" />
+    <products_to_categories products_id="14872" categories_id="117" />
+    <categories categories_id="30" categories_status="1" categories_visibility="1" categories_image="" parent_id="27" sort_order="1" />
+    <categories_description categories_id="30" language_id="0" categories_name="Cowboy und Lederhute" categories_description="" />
+    <categories categories_id="15" categories_status="1" categories_visibility="1" categories_image="" parent_id="0" sort_order="2" />
+    <categories_description categories_id="15" language_id="0" categories_name="Hutmarken" categories_description="" />
+    <categories categories_id="100" categories_status="1" categories_visibility="1" categories_image="" parent_id="99" sort_order="3" />
+    <categories_description categories_id="100" language_id="0" categories_name="Schals" categories_description="" />
+    <categories categories_id="16" categories_status="1" categories_visibility="1" categories_image="" parent_id="15" sort_order="4" />
+    <categories_description categories_id="16" language_id="0" categories_name="Akubra" categories_description="" />
+    <categories categories_id="41" categories_status="1" categories_visibility="1" categories_image="" parent_id="36" sort_order="5" />
+    <categories_description categories_id="41" language_id="0" categories_name="Anlasshute" categories_description="" />
+    <categories categories_id="85" categories_status="1" categories_visibility="1" categories_image="" parent_id="15" sort_order="6" />
+    <categories_description categories_id="85" language_id="0" categories_name="Balke" categories_description="" />
+    <categories categories_id="89" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="7" />
+    <categories_description categories_id="89" language_id="0" categories_name="Ballonmutzen" categories_description="" />
+    <categories categories_id="17" categories_status="1" categories_visibility="1" categories_image="" parent_id="15" sort_order="8" />
+    <categories_description categories_id="17" language_id="0" categories_name="Barmah" categories_description="" />
+    <categories categories_id="55" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="9" />
+    <categories_description categories_id="55" language_id="0" categories_name="Basecaps" categories_description="" />
+    <categories categories_id="68" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="10" />
+    <categories_description categories_id="68" language_id="0" categories_name="Baskenmutze" categories_description="" />
+    <categories categories_id="51" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="11" />
+    <categories_description categories_id="51" language_id="0" categories_name="Beanies" categories_description="" />
+    <categories categories_id="54" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="12" />
+    <categories_description categories_id="54" language_id="0" categories_name="Berets und Pullmankappen" categories_description="" />
+    <categories categories_id="74" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="13" />
+    <categories_description categories_id="74" language_id="0" categories_name="Blendschirme, Visore" categories_description="" />
+    <categories categories_id="18" categories_status="1" categories_visibility="1" categories_image="" parent_id="15" sort_order="14" />
+    <categories_description categories_id="18" language_id="0" categories_name="Borsalino" categories_description="" />
+    <categories categories_id="77" categories_status="1" categories_visibility="1" categories_image="" parent_id="36" sort_order="15" />
+    <categories_description categories_id="77" language_id="0" categories_name="Bortenstrohhut" categories_description="" />
+    <categories categories_id="112" categories_status="1" categories_visibility="1" categories_image="" parent_id="99" sort_order="16" />
+    <categories_description categories_id="112" language_id="0" categories_name="Brillen" categories_description="" />
+    <categories categories_id="67" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="17" />
+    <categories_description categories_id="67" language_id="0" categories_name="Cabrio Haube" categories_description="" />
+    <categories categories_id="19" categories_status="1" categories_visibility="1" categories_image="" parent_id="15" sort_order="18" />
+    <categories_description categories_id="19" language_id="0" categories_name="City Sport" categories_description="" />
+    <categories categories_id="38" categories_status="1" categories_visibility="1" categories_image="" parent_id="36" sort_order="19" />
+    <categories_description categories_id="38" language_id="0" categories_name="Cloche" categories_description="" />
+    <categories categories_id="88" categories_status="1" categories_visibility="1" categories_image="" parent_id="15" sort_order="20" />
+    <categories_description categories_id="88" language_id="0" categories_name="Coal" categories_description="" />
+    <categories categories_id="9" categories_status="1" categories_visibility="1" categories_image="" parent_id="0" sort_order="21" />
+    <categories_description categories_id="9" language_id="0" categories_name="Damen" categories_description="" />
+    <categories categories_id="37" categories_status="1" categories_visibility="1" categories_image="" parent_id="36" sort_order="22" />
+    <categories_description categories_id="37" language_id="0" categories_name="Damentrilby" categories_description="" />
+    <categories categories_id="113" categories_status="1" categories_visibility="1" categories_image="" parent_id="27" sort_order="23" />
+    <categories_description categories_id="113" language_id="0" categories_name="Doktorhut" categories_description="" />
+    <categories categories_id="59" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="24" />
+    <categories_description categories_id="59" language_id="0" categories_name="Drill Sergeant Cap" categories_description="" />
+    <categories categories_id="46" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="25" />
+    <categories_description categories_id="46" language_id="0" categories_name="Duck Caps" categories_description="" />
+    <categories categories_id="79" categories_status="1" categories_visibility="1" categories_image="" parent_id="36" sort_order="26" />
+    <categories_description categories_id="79" language_id="0" categories_name="Festtagshute" categories_description="" />
+    <categories categories_id="10" categories_status="1" categories_visibility="1" categories_image="" parent_id="9" sort_order="27" />
+    <categories_description categories_id="10" language_id="0" categories_name="Filzhute" categories_description="" />
+    <categories categories_id="49" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="28" />
+    <categories_description categories_id="49" language_id="0" categories_name="Filzkappen" categories_description="" />
+    <categories categories_id="65" categories_status="1" categories_visibility="1" categories_image="" parent_id="27" sort_order="29" />
+    <categories_description categories_id="65" language_id="0" categories_name="Fischerhut" categories_description="" />
+    <categories categories_id="45" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="30" />
+    <categories_description categories_id="45" language_id="0" categories_name="Flatcaps" categories_description="" />
+    <categories categories_id="20" categories_status="1" categories_visibility="1" categories_image="" parent_id="15" sort_order="31" />
+    <categories_description categories_id="20" language_id="0" categories_name="Fleur de Lis" categories_description="" />
+    <categories categories_id="71" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="32" />
+    <categories_description categories_id="71" language_id="0" categories_name="Flexcap" categories_description="" />
+    <categories categories_id="50" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="33" />
+    <categories_description categories_id="50" language_id="0" categories_name="Fliegerhauben" categories_description="" />
+    <categories categories_id="47" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="34" />
+    <categories_description categories_id="47" language_id="0" categories_name="Gatsby Kappen" categories_description="" />
+    <categories categories_id="86" categories_status="1" categories_visibility="1" categories_image="" parent_id="15" sort_order="35" />
+    <categories_description categories_id="86" language_id="0" categories_name="Goorin Bros" categories_description="" />
+    <categories categories_id="107" categories_status="1" categories_visibility="1" categories_image="" parent_id="27" sort_order="36" />
+    <categories_description categories_id="107" language_id="0" categories_name="Haarfilzhute" categories_description="" />
+    <categories categories_id="64" categories_status="1" categories_visibility="1" categories_image="" parent_id="61" sort_order="37" />
+    <categories_description categories_id="64" language_id="0" categories_name="Hauben" categories_description="" />
+    <categories categories_id="73" categories_status="1" categories_visibility="1" categories_image="" parent_id="27" sort_order="38" />
+    <categories_description categories_id="73" language_id="0" categories_name="Helme" categories_description="" />
+    <categories categories_id="62" categories_status="1" categories_visibility="1" categories_image="" parent_id="61" sort_order="39" />
+    <categories_description categories_id="62" language_id="0" categories_name="Hute" categories_description="" />
+    <categories categories_id="21" categories_status="1" categories_visibility="1" categories_image="" parent_id="15" sort_order="40" />
+    <categories_description categories_id="21" language_id="0" categories_name="Indiana Jones" categories_description="" />
+    <categories categories_id="22" categories_status="1" categories_visibility="1" categories_image="" parent_id="15" sort_order="41" />
+    <categories_description categories_id="22" language_id="0" categories_name="Kangol" categories_description="" />
+    <categories categories_id="57" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="42" />
+    <categories_description categories_id="57" language_id="0" categories_name="Kapitanskappe" categories_description="" />
+    <categories categories_id="87" categories_status="1" categories_visibility="1" categories_image="" parent_id="9" sort_order="43" />
+    <categories_description categories_id="87" language_id="0" categories_name="Kappen Mutzen" categories_description="" />
+    <categories categories_id="48" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="44" />
+    <categories_description categories_id="48" language_id="0" categories_name="Kappen mit Ohrenschutz" categories_description="" />
+    <categories categories_id="58" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="45" />
+    <categories_description categories_id="58" language_id="0" categories_name="Kuba Cap" categories_description="" />
+    <categories categories_id="70" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="46" />
+    <categories_description categories_id="70" language_id="0" categories_name="Lederkappen" categories_description="" />
+    <categories categories_id="111" categories_status="1" categories_visibility="1" categories_image="" parent_id="15" sort_order="47" />
+    <categories_description categories_id="111" language_id="0" categories_name="Mauerer" categories_description="" />
+    <categories categories_id="23" categories_status="1" categories_visibility="1" categories_image="" parent_id="15" sort_order="48" />
+    <categories_description categories_id="23" language_id="0" categories_name="Mayser" categories_description="" />
+    <categories categories_id="108" categories_status="1" categories_visibility="1" categories_image="" parent_id="15" sort_order="49" />
+    <categories_description categories_id="108" language_id="0" categories_name="Muller Schweiz" categories_description="" />
+    <categories categories_id="63" categories_status="1" categories_visibility="1" categories_image="" parent_id="61" sort_order="50" />
+    <categories_description categories_id="63" language_id="0" categories_name="Mutzen und Kappen" categories_description="" />
+    <categories categories_id="32" categories_status="1" categories_visibility="1" categories_image="" parent_id="27" sort_order="51" />
+    <categories_description categories_id="32" language_id="0" categories_name="Outdoorhute" categories_description="" />
+    <categories categories_id="34" categories_status="1" categories_visibility="1" categories_image="" parent_id="27" sort_order="52" />
+    <categories_description categories_id="34" language_id="0" categories_name="Panamahute" categories_description="" />
+    <categories categories_id="84" categories_status="1" categories_visibility="1" categories_image="" parent_id="36" sort_order="53" />
+    <categories_description categories_id="84" language_id="0" categories_name="Panamahute" categories_description="" />
+    <categories categories_id="12" categories_status="1" categories_visibility="1" categories_image="" parent_id="9" sort_order="54" />
+    <categories_description categories_id="12" language_id="0" categories_name="Pelzhauben" categories_description="" />
+    <categories categories_id="116" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="55" />
+    <categories_description categories_id="116" language_id="0" categories_name="Pommelhauben" categories_description="" />
+    <categories categories_id="101" categories_status="1" categories_visibility="1" categories_image="" parent_id="99" sort_order="56" />
+    <categories_description categories_id="101" language_id="0" categories_name="Ponchos" categories_description="" />
+    <categories categories_id="29" categories_status="1" categories_visibility="1" categories_image="" parent_id="27" sort_order="57" />
+    <categories_description categories_id="29" language_id="0" categories_name="Pork Pie Hute" categories_description="" />
+    <categories categories_id="81" categories_status="1" categories_visibility="1" categories_image="" parent_id="36" sort_order="58" />
+    <categories_description categories_id="81" language_id="0" categories_name="Regenhute" categories_description="" />
+    <categories categories_id="76" categories_status="1" categories_visibility="1" categories_image="" parent_id="36" sort_order="59" />
+    <categories_description categories_id="76" language_id="0" categories_name="Schlapphut" categories_description="" />
+    <categories categories_id="80" categories_status="1" categories_visibility="1" categories_image="" parent_id="15" sort_order="60" />
+    <categories_description categories_id="80" language_id="0" categories_name="Scippis" categories_description="" />
+    <categories categories_id="24" categories_status="1" categories_visibility="1" categories_image="" parent_id="15" sort_order="61" />
+    <categories_description categories_id="24" language_id="0" categories_name="Seeberger" categories_description="" />
+    <categories categories_id="56" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="62" />
+    <categories_description categories_id="56" language_id="0" categories_name="Skull Cap" categories_description="" />
+    <categories categories_id="25" categories_status="1" categories_visibility="1" categories_image="" parent_id="15" sort_order="63" />
+    <categories_description categories_id="25" language_id="0" categories_name="Stetson" categories_description="" />
+    <categories categories_id="11" categories_status="1" categories_visibility="1" categories_image="" parent_id="9" sort_order="64" />
+    <categories_description categories_id="11" language_id="0" categories_name="Stoffhute" categories_description="" />
+    <categories categories_id="60" categories_status="1" categories_visibility="1" categories_image="" parent_id="27" sort_order="65" />
+    <categories_description categories_id="60" language_id="0" categories_name="Stoffhute" categories_description="" />
+    <categories categories_id="78" categories_status="1" categories_visibility="1" categories_image="" parent_id="36" sort_order="66" />
+    <categories_description categories_id="78" language_id="0" categories_name="Strand und Badehut" categories_description="" />
+    <categories categories_id="52" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="67" />
+    <categories_description categories_id="52" language_id="0" categories_name="Strickhauben" categories_description="" />
+    <categories categories_id="39" categories_status="1" categories_visibility="1" categories_image="" parent_id="36" sort_order="68" />
+    <categories_description categories_id="39" language_id="0" categories_name="Strickhute" categories_description="" />
+    <categories categories_id="120" categories_status="1" categories_visibility="1" categories_image="" parent_id="27" sort_order="69" />
+    <categories_description categories_id="120" language_id="0" categories_name="Strickmutze Herren" categories_description="" />
+    <categories categories_id="126" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="70" />
+    <categories_description categories_id="126" language_id="0" categories_name="Strickmutze mit Fellpompon" categories_description="" />
+    <categories categories_id="124" categories_status="1" categories_visibility="1" categories_image="" parent_id="36" sort_order="71" />
+    <categories_description categories_id="124" language_id="0" categories_name="Strickmutze mit Fellpompon" categories_description="" />
+    <categories categories_id="13" categories_status="1" categories_visibility="1" categories_image="" parent_id="9" sort_order="72" />
+    <categories_description categories_id="13" language_id="0" categories_name="Strickware" categories_description="" />
+    <categories categories_id="33" categories_status="1" categories_visibility="1" categories_image="" parent_id="27" sort_order="73" />
+    <categories_description categories_id="33" language_id="0" categories_name="Strohhute" categories_description="" />
+    <categories categories_id="14" categories_status="1" categories_visibility="1" categories_image="" parent_id="9" sort_order="74" />
+    <categories_description categories_id="14" language_id="0" categories_name="Strohhute" categories_description="" />
+    <categories categories_id="75" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="75" />
+    <categories_description categories_id="75" language_id="0" categories_name="Strohkappen" categories_description="" />
+    <categories categories_id="109" categories_status="1" categories_visibility="1" categories_image="" parent_id="36" sort_order="76" />
+    <categories_description categories_id="109" language_id="0" categories_name="Toque" categories_description="" />
+    <categories categories_id="118" categories_status="1" categories_visibility="1" categories_image="" parent_id="36" sort_order="77" />
+    <categories_description categories_id="118" language_id="0" categories_name="Trachtenhut" categories_description="" />
+    <categories categories_id="117" categories_status="1" categories_visibility="1" categories_image="" parent_id="27" sort_order="78" />
+    <categories_description categories_id="117" language_id="0" categories_name="Trachtenhut" categories_description="" />
+    <categories categories_id="31" categories_status="1" categories_visibility="1" categories_image="" parent_id="27" sort_order="79" />
+    <categories_description categories_id="31" language_id="0" categories_name="Travellerhute" categories_description="" />
+    <categories categories_id="28" categories_status="1" categories_visibility="1" categories_image="" parent_id="27" sort_order="80" />
+    <categories_description categories_id="28" language_id="0" categories_name="Trilby und Fedora Hute" categories_description="" />
+    <categories categories_id="110" categories_status="1" categories_visibility="1" categories_image="" parent_id="36" sort_order="81" />
+    <categories_description categories_id="110" language_id="0" categories_name="Trotteurhut" categories_description="" />
+    <categories categories_id="69" categories_status="1" categories_visibility="1" categories_image="" parent_id="44" sort_order="82" />
+    <categories_description categories_id="69" language_id="0" categories_name="Tweedkappe" categories_description="" />
+    <categories categories_id="82" categories_status="1" categories_visibility="1" categories_image="" parent_id="15" sort_order="83" />
+    <categories_description categories_id="82" language_id="0" categories_name="Vintimilla" categories_description="" />
+    <categories categories_id="72" categories_status="1" categories_visibility="1" categories_image="" parent_id="36" sort_order="84" />
+    <categories_description categories_id="72" language_id="0" categories_name="Walkhauben" categories_description="" />
+    <categories categories_id="40" categories_status="1" categories_visibility="1" categories_image="" parent_id="36" sort_order="85" />
+    <categories_description categories_id="40" language_id="0" categories_name="Walkhute" categories_description="" />
+    <categories categories_id="26" categories_status="1" categories_visibility="1" categories_image="" parent_id="15" sort_order="86" />
+    <categories_description categories_id="26" language_id="0" categories_name="Wigens" categories_description="" />
+    <categories categories_id="105" categories_status="1" categories_visibility="1" categories_image="" parent_id="27" sort_order="87" />
+    <categories_description categories_id="105" language_id="0" categories_name="Wollfilzhute" categories_description="" />
+    <categories categories_id="35" categories_status="1" categories_visibility="1" categories_image="" parent_id="27" sort_order="88" />
+    <categories_description categories_id="35" language_id="0" categories_name="Zylinder Melonen Bowler" categories_description="" />
+    <categories categories_id="102" categories_status="1" categories_visibility="1" categories_image="" parent_id="99" sort_order="89" />
+    <categories_description categories_id="102" language_id="0" categories_name="Damenhandtaschen" categories_description="" />
+    <categories categories_id="36" categories_status="1" categories_visibility="1" categories_image="" parent_id="0" sort_order="90" />
+    <categories_description categories_id="36" language_id="0" categories_name="Hutarten Damen" categories_description="" />
+    <categories categories_id="61" categories_status="1" categories_visibility="1" categories_image="" parent_id="0" sort_order="91" />
+    <categories_description categories_id="61" language_id="0" categories_name="Herren" categories_description="" />
+    <categories categories_id="103" categories_status="1" categories_visibility="1" categories_image="" parent_id="99" sort_order="92" />
+    <categories_description categories_id="103" language_id="0" categories_name="Reisegepack" categories_description="" />
+    <categories categories_id="104" categories_status="1" categories_visibility="1" categories_image="" parent_id="99" sort_order="93" />
+    <categories_description categories_id="104" language_id="0" categories_name="Handschuhe" categories_description="" />
+    <categories categories_id="27" categories_status="1" categories_visibility="1" categories_image="" parent_id="0" sort_order="94" />
+    <categories_description categories_id="27" language_id="0" categories_name="Hutarten Herren" categories_description="" />
+    <categories categories_id="44" categories_status="1" categories_visibility="1" categories_image="" parent_id="0" sort_order="95" />
+    <categories_description categories_id="44" language_id="0" categories_name="Hauben, Mutzen und Kappen" categories_description="" />
+    <categories categories_id="99" categories_status="1" categories_visibility="1" categories_image="" parent_id="0" sort_order="96" />
+    <categories_description categories_id="99" language_id="0" categories_name="Accessoires" categories_description="" />
+    <categories categories_id="90" categories_status="1" categories_visibility="1" categories_image="" parent_id="0" sort_order="97" />
+    <categories_description categories_id="90" language_id="0" categories_name="Startseite" categories_description="" />
+    <orders orders_id="100000322" orders_status="4" />
+	<orders orders_id="100000002" orders_status="2" /> 
+	<orders orders_id="100000003" orders_status="2" />
+    <manufacturers manufacturers_id="2" manufacturers_name="Akubra" manufacturers_status="1" />
+    <manufacturers manufacturers_id="9" manufacturers_name="Balke" manufacturers_status="1" />
+    <manufacturers manufacturers_id="4" manufacturers_name="Barmah" manufacturers_status="1" />
+    <manufacturers manufacturers_id="15" manufacturers_name="Borsalino" manufacturers_status="1" />
+    <manufacturers manufacturers_id="16" manufacturers_name="Charles Muller" manufacturers_status="1" />
+    <manufacturers manufacturers_id="14" manufacturers_name="City Sport" manufacturers_status="1" />
+    <manufacturers manufacturers_id="11" manufacturers_name="Coal" manufacturers_status="1" />
+    <manufacturers manufacturers_id="3" manufacturers_name="FLEUR DE LIS" manufacturers_status="1" />
+    <manufacturers manufacturers_id="18" manufacturers_name="Faustmann" manufacturers_status="1" />
+    <manufacturers manufacturers_id="10" manufacturers_name="Goorin Bros" manufacturers_status="1" />
+    <manufacturers manufacturers_id="13" manufacturers_name="Kangol" manufacturers_status="1" />
+    <manufacturers manufacturers_id="17" manufacturers_name="Mauerer" manufacturers_status="1" />
+    <manufacturers manufacturers_id="5" manufacturers_name="Mayser" manufacturers_status="1" />
+    <manufacturers manufacturers_id="7" manufacturers_name="Scippis" manufacturers_status="1" />
+    <manufacturers manufacturers_id="6" manufacturers_name="Seeberger" manufacturers_status="1" />
+    <manufacturers manufacturers_id="1" manufacturers_name="Stetson" manufacturers_status="1" />
+    <manufacturers manufacturers_id="8" manufacturers_name="Vintimilla" manufacturers_status="1" />
+    <manufacturers manufacturers_id="12" manufacturers_name="Wigens" manufacturers_status="1" />
+</root>

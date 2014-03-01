@@ -1,7 +1,8 @@
 <?php
 	namespace Rakuten\Handlers;
 	
-	use Rakuten;
+	use Rakuten, 
+		Gateway\Utils;
 	
 	class Categories extends \Rakuten\Rakuten {
 		var $category;
@@ -15,8 +16,8 @@
 		
 		public $error;
 		
-		function __construct(){
-			parent::__construct();	
+		function __construct($key, $domain){
+			parent::__construct($key, $domain);	
 			
 			$this->category = array(
 				'shop_category_id' => '',						// Integer: ID of the Shop Category
@@ -241,27 +242,32 @@
 			));
 			
 			if ($response['success'] == 1){
-				foreach ($response['categories']['category'] as $category)
-					$categories_array[] = $category;
-				
-				if ($response['categories']['paging']['pages'] > 1){
-					$page = 2;
-					
-					while ($page <= $response['categories']['paging']['pages']){
-						$response_other = parent::doRequest($url, $post, array(
-							'key' => $this->key, 
-							'page' => $page, 
-							'per_page' => $this->categories_page_limit
-						));
-						
-						$page++;
-						
-						foreach ($response_other['categories']['category'] as $category)
-							$categories_array[] = $category;
-					}
+				if ($response['categories']['paging']['total'] == 1){
+					$categories_array[0] = $response['categories']['category'];
 				}
+				else {
+					foreach ($response['categories']['category'] as $category)
+						$categories_array[] = $category;
+					
+					if ($response['categories']['paging']['pages'] > 1){
+						$page = 2;
+						
+						while ($page <= $response['categories']['paging']['pages']){
+							$response_other = parent::doRequest($url, $post, array(
+								'key' => $this->key, 
+								'page' => $page, 
+								'per_page' => $this->categories_page_limit
+							));
+							
+							$page++;
+							
+							foreach ($response_other['categories']['category'] as $category)
+								$categories_array[] = $category;
+						}
+					}
+				}			
 			}
-			
+
 			for ($i = 0; $i < count($categories_array); $i++){
 				if (is_array($categories_array[$i]['external_parent_shop_category_id']) && sizeof($categories_array[$i]['external_parent_shop_category_id']))
 					$categories_array[$i]['external_parent_shop_category_id'] = $categories_array[$i]['external_parent_shop_category_id'][0];
@@ -289,7 +295,31 @@
 		}
 		
 		function getErrorMessage($response){
-			return $this->errors[$response['errors']['error']['code']];
+			if ($response['success'] == 0)
+				return 'No error, just no results';
+			//echo "Response: " . print_r($response) . "<hr />";
+			
+			$error_message = 'An error occured...';
+			//return "an error occured";
+			try {
+				//print_r($response['errors']['error']);
+				$errors_array = array();
+				if (!isset($response['errors']['error']['code'])){
+					foreach ($response['errors']['error'] as $error)
+						$errors_array[] = $error['message'];
+					
+					$error_message = implode(', ', $errors_array);
+				}
+				else {
+					$error_message = (isset($this->errors[$response['errors']['error']['code']]) ? (isset($this->errors[$response['errors']['error']['code']]) ? $this->errors[$response['errors']['error']['code']] : "Some error occured") : $response['errors']['error']['message']);	
+				}				
+			}
+			catch (exception $ex){
+				
+			}
+			
+			Utils::log("Api call error: ". $error_message);
+			return $error_message;
 		}
 		
 		function getError(){

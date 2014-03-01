@@ -5,7 +5,10 @@ namespace ApiModule;
 use Nette\Application\Responses\TextResponse,
     Nette\Application\Responses\FileResponse,
     Yourface\Application\Responses\XmlResponse,
+    Gateway\Connection,
+    Gateway\Connections,
     Gateway\IConnection,
+    Gateway\Utils,
     Nette\Diagnostics\Debugger,
     Gateway\Handler\ISource;
 
@@ -92,7 +95,10 @@ abstract class BasePresenter extends \BasePresenter {
      * Downloads XML according to given connection name.
      * 
      */
-    public function actionGet() {
+    public function actionGet()
+    {
+		$this->generateXMLFiles($this->connection, $this->name);
+		
         try {
             // check if connection exists
             $this->validateConnection();
@@ -501,4 +507,44 @@ abstract class BasePresenter extends \BasePresenter {
         return new FileResponse($requestedFile->getRealPath(), $requestedFileName, 'application/octet-stream');
     }
 
+	protected function generateXMLFiles($conn, $name) {
+		try {
+			if (is_string($conn)) {
+	            $conn = $this->connections->get($conn); // Gateway\Connection instance
+	        }
+			
+			$destination = Connection::NODE_ERP;
+			$fromErpToShop = $destination == Connection::NODE_SHOP ? true : false;
+	         
+	       	$this->logger->logMessage(sprintf("Destination: %s. In %s: %s", $destination, $conn->name, $name));
+	
+	        $temp_name = explode(':', $name);
+			$name = strtolower($temp_name[1]);
+			
+	        // load connection's handler (both readers and writers)
+	        $readers = $conn->getHandlers($fromErpToShop ? Connection::NODE_ERP : Connection::NODE_SHOP, IConnection::STREAM_READER);
+			$writers = $conn->getHandlers($destination, IConnection::STREAM_WRITER);
+			
+			$reader = $readers[$name];
+			$writer = $writers[$name];
+	
+	        // if reader handler for this datasource exists
+	        if (isset($reader) && $reader) {
+	            // getting reader for this writer
+	            //$reader = $readers[$wKey];				
+				$ds = $reader->getDataSource();					
+				// and passing general datasource to writer to transform it to the destination's node format
+	            $this->logger->logMessage("Passing processed datasource from '%s' to '%s' writer.", get_class($reader), get_class($writer));
+	
+	            $writer->setDataSource($ds);			
+				$affectedAmount = $writer->process();
+			}
+			
+			$this->logger->logMessage(sprintf("Processed data: %d", $affectedAmount));
+			$this->logger->logMessage(sprintf("All done, exiting..."));
+		}
+		catch (Exception $e){
+			$this->logger->logMessage(sprintf("An error occured while trying to get %s from %s", $name, $conn->name));
+		}
+	}
 }

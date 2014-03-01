@@ -3,8 +3,8 @@
 namespace Gateway\Handler\Shop\Rakuten\API;
 
 use Gateway\IConnection, 
-	Rakuten\Engine\Rakuten, 
-	Rakuten\Configuration\Rakuten_Config;
+	Rakuten\Rakuten, 
+	Rakuten\Configuration;
 	
 require_once(WWW_DIR . "/../libs/Rakuten/Rakuten.php");
 
@@ -40,17 +40,21 @@ class Writer extends \Gateway\Handler\Writer {
     /*
     public function getClient() {
         if (!$this->client) {
-            //$domain = $this->options->get('domain');
-            //$user = $this->options->get('user');
+        	$domain = $this->options->get('domain');
+            $key = $this->options->get('key');
             //$password = $this->options->get('password');
             $options = array();
+
+            //$this->client = new \Gateway\Handler\Shop\Magento\SOAP($domain, $user, $password, $options);
 			
-            $this->client = new Rakuten();
+            $this->client = new Rakuten($key, $domain);
+			var_dump($this->client);
+			
+			die;
             //($domain, $user, $password, $options);
         }
 
         return $this->client;
-    }
-	*/
+    }*/
 }
 

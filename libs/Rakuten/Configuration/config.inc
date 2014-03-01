@@ -4,15 +4,15 @@
 	class Rakuten_Config {
 		private $config;
 		
-		function __construct(){
+		function __construct($key, $domain){
 			$this->config = array(
 				//'url' => 'http://webservice.rakuten.de',
-				'url' => 'webservice.rakuten.de',
+				'url' => $domain,
 				'url_patern' => '{url}/{version}/merchants/{group}/{method}', 
 				'version' => 'v2.05', 
 				'test_key' => 'b2c13098b167f878dfb9f903fd90ec6a',
 				//'test_key' => '123456789a123456789a123456789a12', 
-				'key' => '' 
+				'key' => $key 
 			);
 			
 		}

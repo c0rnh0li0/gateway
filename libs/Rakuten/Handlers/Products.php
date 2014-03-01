@@ -28,8 +28,8 @@
 		
 		var $existing_products;
 		
-		function __construct(){
-			parent::__construct();
+		function __construct($key, $domain){
+			parent::__construct($key, $domain);
 		
 			$this->product = array(
 				'product_id' => '', 			// int: ID of the product
@@ -546,7 +546,7 @@
 			//$product['delivery'] = $this->closestDelivery($product['delivery']);
 			
 			if (isset($product['description']) && $product['description'] == '')
-				$product['description'] = ' ';			
+				$product['description'] = '<p>&nbsp;</p>';			
 				//unset($product['description']);
 			
 			if (isset($product['tax']) && ($product['tax'] == '' || $product['tax'] == 0))			
@@ -742,6 +742,10 @@
 					}
 				}
 			}
+			
+			// foreach ($products_array as $pr){
+				// $this->deleteProduct($pr);
+			// }
 			
 			$this->existing_products = $products_array;
 			return $products_array;
@@ -1031,6 +1035,15 @@
 			if (isset($product_data['existing_images']) && is_array($product_data['existing_images']) && sizeof($product_data['existing_images']))
 				$has_existing_images = true;
 			
+			$product_existing_images = array();
+			if (!isset($product_data['existing_images'][0][0])){
+				$product_existing_images[] = $product_data['existing_images'][0];
+			}
+			else {
+				foreach ($product_data['existing_images'][0] as $img)
+					$product_existing_images[] = $img;
+			}
+			
 			foreach ($product_data['images'] as $image){
 				$image_prefix = substr($image, 0, 1);
 				
@@ -1038,12 +1051,11 @@
 					$this->addProductImage($product_art_no, substr($image, 1));
 				else if ($image_prefix == '-'){
 					$image_id = null;
+					
 					if ($has_existing_images){
-						if (isset($product_data['existing_images']['image']) && sizeof($product_data['existing_images']['image'])){
+						if (count($product_existing_images) > 0){
 							$image_to_delete = substr($image, 1);
-							
-							//print_r($product_data['existing_images']);
-							foreach ($product_data['existing_images']['image'] as $existing_image){
+							foreach ($product_existing_images as $existing_image){
 								if ($existing_image['comment'] == $image_to_delete)
 									$image_id = $existing_image['image_id'];	
 							}
@@ -1051,7 +1063,7 @@
 						
 						$this->deleteProductImage($image_id);	
 					}					
-				}
+				}				
 			}
 		}
 		
@@ -1074,7 +1086,7 @@
 				$request_array['product_id'] = $product['product_id'];
 			
 			// instead of deleting it, just make it unavailable
-			$request_array['available'] = 0;
+			//$request_array['available'] = 0;
 			
 			$result = parent::doRequest($url, $post, $request_array);
 			
@@ -1102,6 +1114,8 @@
 					}
 				}
 			}
+			
+			die;
 			
 			return !$has_errors;
 		}
@@ -1145,11 +1159,13 @@
 			$url = str_replace('{group}', $this->group, $this->url);
 			$url = str_replace('{method}', $method, $url);
 			
-			$result = parent::doRequest($url, $post, array(
+			$request_params = array(
 				'key' => $this->key, 
 				'image_id' => $image_id, 
 				//'product_id ' => ''
-			));
+			);
+			
+			$result = parent::doRequest($url, $post, $request_params);
 			
 			if ($result['success'] == 1)
 				return true;
